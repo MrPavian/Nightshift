@@ -340,3 +340,12 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Obtain/inspect the reprint and collate all pages, captions, edition data and visual formats; no copying or generative use.
 - [ ] Use the author excerpt as a period-text source only; independently verify quoted statistics and newspaper claims before factual publication.
 - [ ] Next: begin a page-level visual ledger from the authorized 2020 reprint or official exhibition viewer, then compare with *IRON CITY* and contemporary sources.
+
+
+## W02.27 — Dortmund 1987 local writing glossary (2026-11-14)
+
+- [x] Extracted the six-term “Writer-ABC” from Marianne Brentzel's official *Da kukse wa* excerpt.
+- [x] Mapped each term to NIGHTSHIFT's taxonomy without collapsing tag/piece, character/lettering, whole-car/style or blackbook/artwork.
+- [x] Added a dated glossary dossier, GRAFFITI_FORMATS.md cross-reference, VR-016, research index and changelog entry.
+- [ ] Verify the reproduced newspaper headlines and social statistics against original Dortmund newspaper issues / official data before public factual claims.
+- [ ] Add an archive glossary card only after editorial source review; preserve original German wording and identify it as a 1987 local snapshot.
