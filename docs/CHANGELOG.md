@@ -181,3 +181,10 @@
 - Verified all 25 registered parameter operations have matching semantics and declared write targets.
 - Clarified G's intended aperture identity versus unresolved legacy-import classification; the aperture-width operation now has explicit classification and calibration preconditions.
 - No runtime implementation or visual approval is claimed.
+
+
+## 2026-11-14 — Claude 0.7A implementation ticket pack
+
+- Broke the first A/B/G/R/S implementation slice into seven dependency-ordered tickets with explicit acceptance criteria and failure behavior.
+- Separated repository reconnaissance, legacy import, semantic mapping, geometry validation, topology-correct rendering, proof sheets and the first Three.js command loop.
+- Linked the ticket pack from the roadmap, implementation brief and research index. No implementation completion is claimed.
