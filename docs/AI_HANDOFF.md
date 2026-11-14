@@ -16,6 +16,7 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 - `README.md` — project summary and current state.
 - `docs/PROJECT_BRIEF.md` — product intent and current baseline.
 - `docs/ARCHITECTURE.md` — intended technical architecture.
+- `docs/GENERATOR_SYSTEM_RESPONSIBILITIES.md` — ownership boundaries and interfaces for the integrated Three.js editor.
 - `docs/ROADMAP.md` — main engine priorities and acceptance criteria.
 - `docs/STYLE_TAXONOMY.md` — terminology and research discipline.
 - `docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md` — full archive product and implementation brief.
