@@ -334,3 +334,11 @@
 - GitHub Actions CI (`.github/workflows/ci.yml`): unit tests, artifact freshness checks, headless-browser tests.
 - Tests: 86 passing.
 
+
+
+## Research deepening — Martha Cooper Library catalogue verification
+
+- Added an exact-title OPAC record check for *Eine Stadt wird bunt* (MCL 0003815) and Katrin Kaiser's *Graffiti in der gesellschaftlichen Kontroverse* (MCL 0003386).
+- Recorded catalogue metadata and displayed holding status separately from inspected publication content and image reuse rights.
+- Documented the MCL's closed-stack/reference-library access model and the live OPAC server limitation encountered during this pass.
+- Left serial-title holdings unconfirmed pending exact-title/issue searches against a functioning catalogue.
