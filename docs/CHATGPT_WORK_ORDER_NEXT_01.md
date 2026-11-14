@@ -282,3 +282,14 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a dossier and index/changelog links; kept individual-artist development distinct from a regional style profile.
 - [ ] Legitimate copy inspection, four-phase comparison, image-caption audit and practitioner review remain open.
 - [ ] Next: use the dated video and publication corpus to build a claim ledger for Dortmund's 1980s–1990s timeline; no style promotion before visual and oral-history cross-check.
+
+
+
+## W02.22 — Dortmund oral history and visual chronology (2026-11-14)
+
+- [x] Identified ATOM ONE #040 (2020) and TWISTER / JEZUS / PRIDE #059 (2021) as substantial first-person interview routes with topic metadata and source limitations.
+- [x] Identified *IRON CITY* (2002) as a high-value 1983–2002 visual-history source; added bibliographic / publisher description details.
+- [x] Added VR-011 and a dossier connecting interview routes, visual corpus and chronology.
+- [x] Kept editorial summaries separate from verified testimony and preserved the Episode 21 / trainwriting upload numbering discrepancy.
+- [ ] Listen to and timecode both podcasts; inspect *IRON CITY* page by page; verify dated works, captions and rights.
+- [ ] Next: build a claim ledger from directly inspected testimony and a visual item register from *IRON CITY*; do not promote generator style parameters before those gates.
