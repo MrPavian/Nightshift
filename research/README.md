@@ -41,6 +41,8 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 - [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md)
 - [INGRID ontology → NIGHTSHIFT crosswalk](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
 - [INGRID Research Record Model 01 — Provenance, dates, observations and rights](INGRID_RESEARCH_RECORD_MODEL_01.md)
+- [Machine-readable INGRID research record schema v1](../contracts/ingrid-research-record.v1.schema.json)
+- [Synthetic INGRID relationship fixture v1](../contracts/fixtures/ingrid-research-record.relationships.v1.json)
 - [INGRID regional SPARQL query pack — Dortmund pilot](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
 
 ## Current research files
@@ -497,6 +499,8 @@ NIGHTSHIFT's research library is also a continuous learning resource on writing 
 
 
 ### 2026-11 — INGRID research record model
+
+Added a machine-readable JSON Schema v1 and a synthetic relationship fixture covering multi-object photographs, alternate views, partial graffiti, photo series, near-duplicate edges, separate date claims, missingness and use-specific rights decisions. The fixture contains no real graffiti imagery or identifiable writer data.
 
 Added a provenance-aware data contract separating source archive records, photo assets, graffiti objects, partial graffiti, photo series, source annotations, normalized mappings, researcher observations, historical claims and item-level rights decisions. Added typed date claims, explicit missingness states, non-destructive duplicate edges, a research-to-editor promotion gate and a minimal synthetic fixture plan. The schema is a NIGHTSHIFT proposal; live EasyDB field availability remains unverified.
 
