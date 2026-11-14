@@ -1,0 +1,284 @@
+{
+  "glyphs": {
+    "A": {
+      "inner": [
+        {
+          "d": "M35 66 L35 48 L55 25 L70 48 L70 66 Z",
+          "sha256": "7941849156bdc34d802e5fa78c84b1fe99d8ab9d2981af4da2dea7308d40355f"
+        }
+      ],
+      "legacyRenderFillRule": "evenodd",
+      "outer": {
+        "d": "M8 132 L8 42 L39 8 L73 8 L96 42 L96 132 L70 132 L70 91 L34 91 L34 132 Z",
+        "sha256": "ebcf27bafc9d1f3e20888fa57ff55e59adce3d5de7d7a607d6b0360bda866296"
+      },
+      "sourceLine": 27,
+      "sourceTable": "M"
+    },
+    "B": {
+      "inner": [
+        {
+          "d": "M35 29 L35 57 L58 57 Q72 57 72 43 Q72 29 58 29 Z",
+          "sha256": "f7ae7c78ee0ba318de40ef5ad6a8e34276ad461b33ece1e8129146c120d68bd3"
+        },
+        {
+          "d": "M35 82 L35 111 L61 111 Q77 111 77 97 Q77 82 61 82 Z",
+          "sha256": "674894302f3c03c0dd4d187375b78f0e865fb0c010e36df4dfeace2ed50b91bf"
+        }
+      ],
+      "legacyRenderFillRule": "evenodd",
+      "outer": {
+        "d": "M10 8 L58 8 Q96 8 96 39 Q96 59 77 69 Q101 78 101 103 Q101 132 62 132 L10 132 Z",
+        "sha256": "8b39470e57406a501d32eb37eee91e6aeb25ad8c9169f9de6f3a116362006708"
+      },
+      "sourceLine": 28,
+      "sourceTable": "M"
+    },
+    "C": {
+      "combined": {
+        "d": "M92 22 Q55 -2 25 17 Q6 31 8 70 Q8 115 37 132 Q68 144 94 119 L76 101 Q60 116 43 105 Q28 95 30 68 Q31 40 51 37 Q69 34 79 47 Z",
+        "sha256": "21aa6ae1f01855c7cc371e410780086f2a612a912eeda3904df3aca4a9321e72"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 34,
+      "sourceTable": "F"
+    },
+    "D": {
+      "combined": {
+        "d": "M10 8 L10 132 L48 132 Q95 126 95 70 Q95 13 48 8 Z M34 32 L49 32 Q70 32 70 70 Q70 108 49 108 L34 108 Z",
+        "sha256": "d07e0591b7a0219166861eda2fa5bde56e8e537d981f6406f9446ee9279647ff"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 35,
+      "sourceTable": "F"
+    },
+    "E": {
+      "combined": {
+        "d": "M94 8 L10 8 L10 132 L96 132 L96 106 L37 106 L37 81 L82 81 L82 56 L37 56 L37 34 L94 34 Z",
+        "sha256": "7016bb54cd3ebf7e78d6e207a49bccd8f1afff3e871554b3f377f606b7ec7598"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 36,
+      "sourceTable": "F"
+    },
+    "F": {
+      "combined": {
+        "d": "M10 132 L10 8 L96 8 L96 34 L37 34 L37 58 L83 58 L83 84 L37 84 L37 132 Z",
+        "sha256": "46ae668f50db28014e8036c3c12686f38b74c3bda54bfda9ed082e60d92ae382"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 37,
+      "sourceTable": "F"
+    },
+    "G": {
+      "inner": [],
+      "legacyRenderFillRule": "nonzero",
+      "outer": {
+        "d": "M94 25 L75 12 L39 8 L12 31 L5 103 L29 132 L75 132 L98 111 L98 76 L59 76 L59 96 L73 96 L73 108 L39 108 L29 96 L29 43 L42 30 L70 33 L80 43 Z",
+        "sha256": "a5b4c6ca7c457ed1808d3b73d38c62b8129bdd9dff652eff56cd7fcc549d716d"
+      },
+      "sourceLine": 29,
+      "sourceTable": "M"
+    },
+    "H": {
+      "combined": {
+        "d": "M10 8 L37 8 L37 56 L72 56 L72 8 L99 8 L99 132 L72 132 L72 83 L37 83 L37 132 L10 132 Z",
+        "sha256": "efce458162f72719c0a35f2e9c748d95dbd6f117f0441bdb894d9c802dcadba7"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 38,
+      "sourceTable": "F"
+    },
+    "I": {
+      "combined": {
+        "d": "M12 8 L92 8 L92 33 L66 33 L66 107 L92 107 L92 132 L12 132 L12 107 L39 107 L39 33 L12 33 Z",
+        "sha256": "b83f0314d7f69b794ba87a6ea064deecf1c27c5694c4c4fa647b5f5e1177e3c9"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 39,
+      "sourceTable": "F"
+    },
+    "J": {
+      "combined": {
+        "d": "M72 8 L99 8 L99 96 Q99 136 54 136 Q19 136 7 110 L29 94 Q37 111 53 111 Q72 111 72 92 Z",
+        "sha256": "5b86298d5d886a275a19b382cb3d149a1395a91f3d3caab5521ac9f3568555c1"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 40,
+      "sourceTable": "F"
+    },
+    "K": {
+      "combined": {
+        "d": "M10 8 L37 8 L37 57 L76 8 L108 8 L61 67 L108 132 L75 132 L37 81 L37 132 L10 132 Z",
+        "sha256": "e4cb6a1c40620efae98e3fb726a5586a09f2dc8f6d95a02eccab6bce43dfffd1"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 41,
+      "sourceTable": "F"
+    },
+    "L": {
+      "combined": {
+        "d": "M10 8 L38 8 L38 105 L98 105 L98 132 L10 132 Z",
+        "sha256": "16fae8671a9ec19a53adbac1423fd711ddb705392b8092426c48bd29fd4da8dd"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 42,
+      "sourceTable": "F"
+    },
+    "M": {
+      "combined": {
+        "d": "M7 132 L7 8 L38 8 L55 55 L73 8 L104 8 L104 132 L77 132 L77 58 L62 99 L47 99 L32 58 L32 132 Z",
+        "sha256": "b7a4e143ebc6b0dbadbf9e7d6d9c190ee68a967d2cf637517d49beed35eb5a42"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 43,
+      "sourceTable": "F"
+    },
+    "N": {
+      "combined": {
+        "d": "M9 132 L9 8 L37 8 L76 81 L76 8 L103 8 L103 132 L77 132 L36 58 L36 132 Z",
+        "sha256": "744f7f73cd3c87210f6747776887701572db0a3bf120a728cecf36a66d5dc73b"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 44,
+      "sourceTable": "F"
+    },
+    "O": {
+      "combined": {
+        "d": "M51 7 Q101 7 101 70 Q101 133 51 133 Q2 133 2 70 Q2 7 51 7 Z M51 34 Q30 34 30 70 Q30 106 51 106 Q73 106 73 70 Q73 34 51 34 Z",
+        "sha256": "1e2048cf8861c7d6f322d2bd9f8acd67f1adb9bed441e4867b6e98f81d4b0053"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 45,
+      "sourceTable": "F"
+    },
+    "P": {
+      "combined": {
+        "d": "M10 132 L10 8 L61 8 Q101 8 101 48 Q101 86 61 86 L37 86 L37 132 Z M37 34 L37 60 L59 60 Q74 60 74 47 Q74 34 59 34 Z",
+        "sha256": "1dcc996c7ae710047b8fb44b404293de4436c38c6f716ed28a820aa66f46109b"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 46,
+      "sourceTable": "F"
+    },
+    "Q": {
+      "combined": {
+        "d": "M51 7 Q101 7 101 70 Q101 133 51 133 Q2 133 2 70 Q2 7 51 7 Z M51 34 Q30 34 30 70 Q30 106 51 106 Q73 106 73 70 Q73 34 51 34 Z M64 96 L104 139 L84 151 L51 116 Z",
+        "sha256": "70e58a7c8b5595f0018c2491def030056fcebfedbf8861421aff662597909679"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 47,
+      "sourceTable": "F"
+    },
+    "R": {
+      "inner": [
+        {
+          "d": "M36 30 L36 61 L59 61 Q73 61 73 45 Q73 30 59 30 Z",
+          "sha256": "a61f576ac60cc3806b9596fa33f0f668fd97244914174127979e394b4b6290d7"
+        }
+      ],
+      "legacyRenderFillRule": "evenodd",
+      "outer": {
+        "d": "M10 132 L10 8 L61 8 Q99 8 99 43 Q99 68 76 78 L103 132 L73 132 L51 84 L36 84 L36 132 Z",
+        "sha256": "6042fe102feecab01274c08966ac744eff54b6c4eba96c727b2c120650ab3ec7"
+      },
+      "sourceLine": 30,
+      "sourceTable": "M"
+    },
+    "S": {
+      "inner": [],
+      "legacyRenderFillRule": "nonzero",
+      "outer": {
+        "d": "M94 22 L75 8 L35 8 L10 28 L10 55 L30 72 L69 85 L73 101 L60 111 L29 105 L12 92 L5 119 L28 133 L72 133 L99 111 L99 83 L80 66 L42 53 L37 39 L49 29 L76 34 L90 45 Z",
+        "sha256": "630f385f27bf326f589d1d1498393cf5e63dc59b106286449e6c6a6856a25570"
+      },
+      "sourceLine": 31,
+      "sourceTable": "M"
+    },
+    "T": {
+      "combined": {
+        "d": "M5 8 L105 8 L105 35 L69 35 L69 132 L41 132 L41 35 L5 35 Z",
+        "sha256": "570ed3513b9de7bedd4509da303d9240aff35404431d144d89bdeb923003871c"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 48,
+      "sourceTable": "F"
+    },
+    "U": {
+      "combined": {
+        "d": "M9 8 L37 8 L37 91 Q37 108 54 108 Q72 108 72 91 L72 8 L100 8 L100 94 Q100 135 54 135 Q9 135 9 94 Z",
+        "sha256": "18985af4e0e1414ae0089c1fc1dafd8989415e3109ed9dd0fae38bd7d6b12404"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 49,
+      "sourceTable": "F"
+    },
+    "V": {
+      "combined": {
+        "d": "M5 8 L35 8 L55 94 L76 8 L106 8 L69 132 L41 132 Z",
+        "sha256": "319c76ca6eb5fffb141ab4883a1a8497781008c6f11e15529e0879eade5402e3"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 50,
+      "sourceTable": "F"
+    },
+    "W": {
+      "combined": {
+        "d": "M4 8 L31 8 L43 88 L56 37 L73 37 L86 88 L98 8 L125 8 L105 132 L77 132 L65 87 L52 132 L25 132 Z",
+        "sha256": "0aee21efbb16cbdb1c8f97b2609eab4b3f518046a9ddffa04ab9d0c2dab624ed"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 51,
+      "sourceTable": "F"
+    },
+    "X": {
+      "combined": {
+        "d": "M7 8 L39 8 L57 48 L76 8 L108 8 L75 69 L110 132 L77 132 L57 91 L37 132 L5 132 L39 69 Z",
+        "sha256": "15fb65ac15b3ed4df9d0e03df0682ad87ac74215944e49e59e98d920b8b49c3e"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 52,
+      "sourceTable": "F"
+    },
+    "Y": {
+      "combined": {
+        "d": "M5 8 L37 8 L57 52 L78 8 L109 8 L71 82 L71 132 L43 132 L43 82 Z",
+        "sha256": "3e3806d376dae17542b59340b31e928ae89b23980e339093ae56d2860d34b42c"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 53,
+      "sourceTable": "F"
+    },
+    "Z": {
+      "combined": {
+        "d": "M8 8 L103 8 L103 32 L42 105 L104 105 L104 132 L5 132 L5 108 L67 35 L8 35 Z",
+        "sha256": "7a162063cf5dd3d3b169ed409e830927adde72af45afb4b6f6cb924118bdad8b"
+      },
+      "legacyRenderFillRule": "nonzero",
+      "sourceLine": 54,
+      "sourceTable": "F"
+    }
+  },
+  "notes": [
+    "Exact verbatim copies of v0.6 path strings. Never edit by hand; regenerate with tools/extract-v06-paths.mjs.",
+    "Coordinates are the v0.6 local frame (y increases downward); not a production coordinate standard."
+  ],
+  "schemaVersion": "1.0",
+  "snapshotId": "nightshift.legacy.v06-glyph-paths",
+  "source": {
+    "path": "prototypes/nightshift_art_engine_v06.html",
+    "sha256": "2b5a6be891a9b98b8c6d930c57ca79b4f183bf373713a9cd93d4514bf4a5bc6d",
+    "tables": {
+      "F": {
+        "lineEnd": 54,
+        "lineStart": 33,
+        "role": "provisional combined path string"
+      },
+      "M": {
+        "lineEnd": 32,
+        "lineStart": 26,
+        "role": "custom outer path + hole array"
+      }
+    }
+  }
+}

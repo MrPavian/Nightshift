@@ -277,3 +277,60 @@
 - Added separate bibliographic records for all three DECADES volumes (1990–2020).
 - Recorded publisher-listed portrait subjects and historical framing with attribution.
 - Added regression tests preventing the trilogy from being flattened or its curated name lists treated as complete rosters.
+
+
+## 2026-11-14 — 0.7A-T01/T02: canonical glyph registry (first production code)
+
+- Added the T01 reconnaissance report and implementation plan (`docs/IMPLEMENTATION_PLAN_0_7A.md`) and decision D-011 (browser-native ES modules, Node test runner, dependency-free canonical model).
+- Added `tools/extract-v06-paths.mjs` and the hash-verified legacy snapshot `data/legacy/v06-glyph-paths.json` (exact v0.6 path strings with line locators).
+- Added the canonical glyph registry (`src/glyph/`): A/B/G/R/S as `x.master` at `authored-contour`; 21 letters as `x.provisional`, reference-only. Stable glyph/variant/contour/segment/node/negative-space IDs.
+- A/B/R inner paths imported as provisional counters (B: upper/lower by measured position); S `none-in-master`; G `apertureStatus: interpretation-required` with no synthesized geometry.
+- Added a schema/integrity validator (maturity requires passed reviews; legacy geometry drift and snapshot hash checks).
+- New measured findings: A's counter has the same winding as its outer contour; D/O/P/Q carry undeclared multi-subpath topology.
+- Tests: 22 passing (`npm test`). The v0.6 prototype is unchanged.
+
+### Known limitations
+
+- No geometry/topology validation yet (self-intersection, containment, clearance): ticket T04.
+- No semantic components, anchors or calibrated metrics yet: T03 and later calibration.
+- No renderer or editor yet; the modules have not been run in a browser.
+
+
+## 2026-11-14 — 0.7A-T03: semantic overlays and topology declarations
+
+- Added the A/B/G/R/S semantic overlay (`data/semantic/abgrs-semantic-overlay.v1.json`, `src/glyph/semantic-overlay.js`): contract component proposals with stable IDs, junction candidates, identity-invariant and counter-protection constraints, declared topology signatures.
+- Only counter boundaries are mapped to geometry; all other components are `provisional-unmapped` with reviewable candidate segments and a stated basis. Geometry is unchanged.
+- G aperture: explicit `interpretation-required` record with observations and blockers; `glyph.G.set-aperture-width` is gated and cannot commit.
+- Generated identity/topology report: `docs/reports/T03_TOPOLOGY_REPORT.md` (`npm run report:topology`).
+- Added a headless-browser smoke test (`npm run test:browser`); the model runs unchanged in Chrome with identical geometry hashes.
+- Tests: 37 passing.
+
+
+## 2026-11-14 — 0.7A-T04: geometry validator vertical slice
+
+- Added the geometry validator (`src/glyph/validate-geometry.js`) running all 10 contract stages, with certified curve flattening, exact line predicates, Jordan-curve crossing certificates, containment, fill-rule evaluation, negative-space classification, clearance measurement (closest points, error bound, filled/unfilled side) and identity checks.
+- Validator profile `data/validator-profiles/legacy-v06.v1.json`: numerical parameters only; no calibrated thresholds, so clearance is measured and reported, never passed or failed.
+- Results: A/B/G/R/S pass all hard checks; 25/26 letters pass; provisional Q fails with an undeclared crossing (tail). G's unfilled space is proven exterior-connected; its aperture stays unclassified. A's counter needs `evenodd`.
+- Contract fixtures implemented as tests (render parity deferred to T05; channel corridor analysis deferred).
+- Semantic overlay 1.1.0 records the G connectivity proof.
+- Report: `docs/reports/T04_VALIDATION_REPORT.md` (`npm run report:validation`). Tests: 61 passing.
+
+
+## 2026-11-14 — 0.7A-T05: topology-correct monochrome renderer
+
+- One derived render model (outer contours + declared counter holes, re-oriented for fill-rule independence) feeds SVG fill/outline and Three.js meshes (`src/render/`, `src/editor/three-glyph.js`).
+- Holes are genuine: no background-colour painting. Invalid (Q) or undeclared (D/O/P) topology is refused with structured errors.
+- Raster proof in headless Chrome: counters show light, dark and textured surfaces exactly in SVG and Three.js; silhouettes agree outside a 1-px edge band; the legacy paper-colour patch is detected as a negative control. Proof sheet and manifest in `docs/reports/proof/T05/` (`npm run proof:render`).
+- Added `three@0.187.0` as a pinned dependency used only in `src/editor/` (D-012).
+- Tests: 72 passing.
+
+
+## 2026-11-14 — 0.7A-T06: proof sheets, review package and test page
+
+- Proof run `run.0.7A-T06.1693b6ee52ef` in `docs/reports/proof/T06/`: manifest per contract, checksums, per-glyph validation reports, SVG plates (glyph identity + thumbnails, semantic/topology diagnostics, 12 pair and 8 word fixtures). `npm run proof:run`.
+- Mixed fixtures are marked `partial-provisional-coverage`; unrenderable provisional letters (D, O, Q) appear as explicit missing slots with reasons.
+- Review records (`src/proof/review.js`): protocol rubric enforced, review stored separately from automated results, maturity only proposed, never applied.
+- Build-free test & review page `review/index.html` (live A–Z, SVG + Three.js viewer, word tester, plates, review form with JSON export).
+- GitHub Actions CI (`.github/workflows/ci.yml`): unit tests, artifact freshness checks, headless-browser tests.
+- Tests: 86 passing.
+

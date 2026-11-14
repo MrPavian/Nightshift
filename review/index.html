@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIGHTSHIFT 0.7A — Test & Review</title>
+<script>
+  // Three.js: local node_modules during development, pinned CDN copy on static hosts (GitHub Pages, githack).
+  // The pinned version must equal package.json (checked by tests/review-page.test.js).
+  (function () {
+    var THREE_VERSION = '0.187.0';
+    var local = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') && location.search.indexOf('cdn') < 0;
+    var map = document.createElement('script');
+    map.type = 'importmap';
+    map.textContent = JSON.stringify({ imports: { three: local ? '../node_modules/three/build/three.module.js' : 'https://cdn.jsdelivr.net/npm/three@' + THREE_VERSION + '/build/three.module.js' } });
+    document.currentScript.after(map);
+  })();
+</script>
+<style>
+  :root { --bg: #f2efe6; --ink: #111; --mute: #6b675e; --line: #d6d1c4; --accent: #c62828; --ok: #2e7d32; --warn: #a15c00; --card: #fbfaf6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; background: var(--bg); color: var(--ink); }
+  header { padding: 14px 16px 6px; }
+  header h1 { margin: 0; font-size: 18px; letter-spacing: .04em; }
+  header p { margin: 2px 0 0; color: var(--mute); font-size: 12px; }
+  nav { display: flex; gap: 4px; padding: 8px 12px; position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line); z-index: 5; overflow-x: auto; }
+  nav button { border: 1px solid var(--line); background: var(--card); padding: 8px 14px; border-radius: 999px; font: inherit; cursor: pointer; white-space: nowrap; }
+  nav button[aria-selected="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  main { padding: 12px 16px 40px; max-width: 1200px; margin: 0 auto; }
+  section[hidden] { display: none; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 0 0 12px; }
+  .card h2 { font-size: 15px; margin: 0 0 8px; }
+  .muted { color: var(--mute); font-size: 12px; }
+  .plate img { width: 100%; height: auto; display: block; background: #fff; border-radius: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
+  .tile { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 6px; text-align: center; cursor: pointer; }
+  .tile[aria-pressed="true"] { outline: 2px solid var(--ink); }
+  .tile svg { width: 100%; height: 70px; display: block; }
+  .badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 999px; border: 1px solid currentColor; }
+  .b-authored { color: var(--ok); } .b-prov { color: var(--warn); } .b-missing { color: var(--accent); }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+  .row > * { flex: 1 1 320px; min-width: 0; }
+  .view { background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .view svg { width: 100%; height: 320px; display: block; }
+  #three { width: 100%; height: 320px; display: block; touch-action: none; }
+  label { font-size: 13px; }
+  select, input, textarea { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; max-width: 100%; }
+  textarea { width: 100%; min-height: 64px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  td, th { border-bottom: 1px solid var(--line); padding: 5px 4px; text-align: left; vertical-align: top; }
+  .msg-err { color: var(--accent); font-size: 12px; } .msg-ok { color: var(--ok); font-size: 12px; }
+  .btn { border: 1px solid var(--ink); background: var(--ink); color: #fff; padding: 8px 12px; border-radius: 6px; font: inherit; cursor: pointer; }
+  .btn.alt { background: #fff; color: var(--ink); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+  #status { font-size: 12px; color: var(--mute); }
+  code { font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>NIGHTSHIFT 0.7A — Test & Review</h1>
+  <p id="status">lade …</p>
+</header>
+<nav role="tablist">
+  <button role="tab" data-tab="live" aria-selected="true">Live A–Z</button>
+  <button role="tab" data-tab="word">Wort testen</button>
+  <button role="tab" data-tab="plates">Prüfbögen</button>
+  <button role="tab" data-tab="review">Bewertung</button>
+</nav>
+<main>
+  <section id="tab-live">
+    <div class="card">
+      <h2>Alle 26 Buchstaben — live aus dem Datenmodell</h2>
+      <p class="muted">Jeder Buchstabe wird im Browser importiert, geprüft und gerendert. Schwarz = gestalteter Master, grau = provisorisch, rot = wird verweigert (Grund beim Antippen).</p>
+      <div class="grid" id="az"></div>
+    </div>
+    <div class="card" id="detail">
+      <h2 id="detail-title">Details</h2>
+      <div class="controls">
+        <label>Untergrund <select id="surface"><option value="light">hell</option><option value="dark">dunkel</option><option value="texture">Textur</option></select></label>
+        <label><input type="checkbox" id="diag"> Diagnose</label>
+      </div>
+      <div class="row">
+        <div><div class="view" id="svgview"></div><p class="muted">SVG (Vektor, kanonisch)</p></div>
+        <div><div class="view"><canvas id="three"></canvas></div><p class="muted">Three.js — zum Drehen ziehen</p></div>
+      </div>
+      <div id="detail-info"></div>
+    </div>
+  </section>
+
+  <section id="tab-word" hidden>
+    <div class="card">
+      <h2>Eigenes Wort</h2>
+      <p class="muted">Naive Anordnung mit festem Abstand — es gibt noch keinen Verbindungs-/Abstandslöser. Fehlende Buchstaben werden markiert.</p>
+      <div class="controls"><input id="word" value="ABRA" maxlength="12" autocapitalize="characters"> <select id="word-surface"><option value="light">hell</option><option value="dark">dunkel</option><option value="texture">Textur</option></select></div>
+      <div class="view" id="wordview"></div>
+      <p class="muted" id="word-info"></p>
+    </div>
+  </section>
+
+  <section id="tab-plates" hidden>
+    <div class="card"><h2>Prüflauf</h2><div id="run-info" class="muted"></div></div>
+    <div id="plates"></div>
+  </section>
+
+  <section id="tab-review" hidden>
+    <div class="card">
+      <h2>Bewertung nach Review-Protokoll</h2>
+      <p class="muted">Rubrik 0–3 je Kriterium (0 kaputt · 1 schwach · 2 funktional · 3 stark), „—“ = nicht bewertet. Identität oder Topologie = 0 blockiert „bestanden“; jede 1 braucht einen Mangel-Eintrag. Speichert nur in diesem Browser; zum Übernehmen ins Repo als JSON exportieren. Der Reifegrad wird nie automatisch geändert.</p>
+      <div class="controls">
+        <label>Buchstabe <select id="rv-glyph"></select></label>
+        <button class="btn alt" id="rv-export">JSON exportieren</button>
+        <label class="btn alt">JSON importieren <input type="file" id="rv-import" accept="application/json" hidden></label>
+      </div>
+    </div>
+    <div class="card" id="rv-form"></div>
+  </section>
+</main>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

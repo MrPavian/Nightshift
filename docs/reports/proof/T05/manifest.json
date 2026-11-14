@@ -1,0 +1,109 @@
+{
+  "proofRunId": "proof.0.7A-T05.render",
+  "page": "/tools/proof/render-proof.html",
+  "result": "pass",
+  "renderSettings": {
+    "three": "187",
+    "scale": 3,
+    "ink": {
+      "light": "#111111",
+      "dark": "#ece8dd",
+      "texture": "#111111"
+    },
+    "surfaces": [
+      "light #f2efe6",
+      "dark #16181d",
+      "texture (deterministic SVG pattern)"
+    ],
+    "antialias": false
+  },
+  "inputs": {
+    "data/legacy/v06-glyph-paths.json": "3bc3954448a3c43789006f4550745d176d34d5a7686cfa6e921eb8b46972d0e4",
+    "data/semantic/abgrs-semantic-overlay.v1.json": "0556e58f97984ee3183d3e646293f1ffd0f05d7bf5c84deefa8aefab67b9da66",
+    "data/validator-profiles/legacy-v06.v1.json": "32a4cdb2424d5fa829de9f8a8e325d8dbc3e14a131c2f4edf46b85c9b48dd4c8"
+  },
+  "negativeControls": [
+    {
+      "control": "legacy-paper-colour-patch",
+      "surface": "dark",
+      "detected": true
+    },
+    {
+      "control": "legacy-paper-colour-patch",
+      "surface": "texture",
+      "detected": true
+    }
+  ],
+  "glyphs": [
+    {
+      "glyph": "A",
+      "revision": 2,
+      "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "parity": {
+        "inkPixels": 67371,
+        "differingPixels": 0,
+        "differingOutsideEdgeBand": 0
+      },
+      "probes": 8,
+      "probesPassed": 8
+    },
+    {
+      "glyph": "B",
+      "revision": 2,
+      "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+      "parity": {
+        "inkPixels": 73044,
+        "differingPixels": 42,
+        "differingOutsideEdgeBand": 0
+      },
+      "probes": 12,
+      "probesPassed": 12
+    },
+    {
+      "glyph": "G",
+      "revision": 2,
+      "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "parity": {
+        "inkPixels": 52929,
+        "differingPixels": 84,
+        "differingOutsideEdgeBand": 0
+      },
+      "probes": 4,
+      "probesPassed": 4
+    },
+    {
+      "glyph": "R",
+      "revision": 2,
+      "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+      "parity": {
+        "inkPixels": 69899,
+        "differingPixels": 20,
+        "differingOutsideEdgeBand": 0
+      },
+      "probes": 8,
+      "probesPassed": 8
+    },
+    {
+      "glyph": "S",
+      "revision": 2,
+      "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+      "parity": {
+        "inkPixels": 59313,
+        "differingPixels": 39,
+        "differingOutsideEdgeBand": 0
+      },
+      "probes": 4,
+      "probesPassed": 4
+    }
+  ],
+  "artifacts": {
+    "render-proof.png": {
+      "sha256": "7e73bafa437381d0da2a79a0768486958cb1b9aa4a1072ffc39c77318a8f1c92",
+      "note": "Screenshot bytes may vary across Chrome versions; pass/fail comes from the probe and parity checks."
+    }
+  },
+  "review": {
+    "status": "pending",
+    "note": "Automated proof only. No maturity change. Human review per research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md."
+  }
+}

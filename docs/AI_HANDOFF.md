@@ -32,11 +32,13 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 
 Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five authored contour masters (A, B, G, R, S), 21 provisional bases, early style profiles, basic word layout, layer controls, SVG export, browser-local archive and a Three.js wall preview.
 
-Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library and in-game archive are planned workstreams; do not claim they already exist as implemented features.
+Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
+
+Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays, geometry validator, topology-correct renderer, proof sheets and a test/review page (0.7A-T01–T06). Run `npm install` once (Three.js).. Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** Audit the actual prototype and glyph data, produce a letter inventory with status per glyph, then propose the data model and construction workflow for bespoke glyph masters.
+**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T07 (first end-to-end editor command loop). T01–T06 are in place: registry, legacy import, semantic overlays, geometry validator, monochrome SVG/Three.js renderer, proof run with review package, and the test page `review/index.html`. Human review of A/B/G/R/S is pending (`docs/reports/proof/T06/review/ratings.json`).
 
 ## Next archive task
 
