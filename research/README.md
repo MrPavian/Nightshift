@@ -269,3 +269,10 @@ The Smithsonian Chalfant record was available through search-indexed institution
 - [German Style Writing — History, Regional Scenes and the Ruhrgebiet 01](GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md) — regional histories, Dortmund Style, Silo Nation, Too Strong, Berlin, Hamburg, DAIM and Ma'Claim.
 - [German Writers, Crews and Networks 01](GERMAN_WRITERS_CREWS_AND_NETWORKS_01.md) — attributed starter register with alias, crew and evidence cautions.
 
+
+
+## German scene Blackbook content and tests
+
+- [German Scene Content Pilot 01](BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_01.md) — nine draft entries covering Dortmund Style, Silo Nation, Too Strong, ATOM ONE, Pure Doze, DAIM, Ma'Claim, ODEM and the Martha Cooper Library.
+- [BLACKBOOK Archive Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) now includes German-scene regressions for entity distinctions, regional coverage, source confidence and image rights.
+
