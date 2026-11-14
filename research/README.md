@@ -43,6 +43,11 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Visual Reference Database](VISUAL_REFERENCE_DATABASE.md)
 - [Glyph Construction Guide](GLYPH_CONSTRUCTION_GUIDE.md)
 - [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md)
+- [PHASE 2 and Bubble Lettering](PHASE_2_AND_BUBBLE_LETTERING.md)
+- [Wildstyle, TRACY 168 and Letter Connections](WILDSTYLE_TRACY168_AND_LETTER_CONNECTIONS.md)
+- [RAMMELLZEE, Gothic Futurism and KASE 2](RAMMELLZEE_AND_KASE2_LETTER_THEORY.md)
+- [3D and Blockbuster Lettering](THREE_D_AND_BLOCKBUSTER_LETTERING.md)
+- [Women Writers in Early New York](WOMEN_WRITERS_EARLY_NEW_YORK.md)
 
 ## Status
 
@@ -50,6 +55,10 @@ Initial source-backed research pass. This is a living research base, not a defin
 
 
 ## Research development log
+
+### 2026-11 — Deepening research dossiers
+
+Added five linked dossiers: PHASE 2 and bubble lettering; TRACY 168, Wild Style and inter-letter connections; RAMMELLZEE and KASE 2; 3D and blockbuster lettering; and women writers in early New York. The dossiers distinguish practitioner testimony, institutional records, scholarly synthesis and generator design inference. Contested invention claims and documentation gaps are explicitly preserved.
 
 ### 2026-11 — Synthesis 01
 
