@@ -50,6 +50,9 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Women Writers in Early New York](WOMEN_WRITERS_EARLY_NEW_YORK.md)
 - [New York Subway Decline and Afterlives](NYC_SUBWAY_DECLINE_AND_AFTERLIVES.md)
 - [European Style Writing in the 1980s](EUROPEAN_STYLE_WRITING_1980S.md)
+- [Graffiti Letter Anatomy and Composition](GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md)
+- [Blackbooks, Sketchbooks and Peer Learning](BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md)
+- [Aerosol Technology, Caps and Paint Practice](AEROSOL_TECHNOLOGY_CAPS_AND_PAINT_PRACTICE.md)
 
 ## Status
 
@@ -57,6 +60,10 @@ Initial source-backed research pass. This is a living research base, not a defin
 
 
 ## Research development log
+
+### 2026-11 — Letter anatomy, blackbooks and aerosol material culture
+
+Added three research dossiers: an anatomy and composition vocabulary grounded in computational graffiti research; blackbooks as practice, social exchange and archive; and aerosol cans, valves, caps, spray patterns and surface interaction. Generator proposals are explicitly marked as design inference and kept separate from historical claims.
 
 ### 2026-11 — Subway transition and European development
 
