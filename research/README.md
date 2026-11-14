@@ -428,3 +428,10 @@ Added two long-form ILOVEGRAFFITI interview routes (ATOM ONE #040 and TWISTER / 
 ### 2026-11 — Dortmund trainwriting contemporary sources, 1997–1999
 
 Added an inspected 1997 *BOMBER* issue review of Dortmund's *Rolling Thunder 001* train video and interactive *King of the Line* CD-ROM, plus a dated March 1999 *Endstation* report on Dortmund trainwriting in 1996–1999. Added VR-012 and an MCL catalogue search-result route for *IRON CITY*. Single-source estimates and rights limitations are explicit.
+
+
+- [Dortmund Moving-Image Archive — Rolling Thunder, King of the Line and Graffiti Dortmund 1994 (W02.24)](DORTMUND_MOVING_IMAGE_ARCHIVE_1994_1997_01.md)
+
+### 2026-11 — Dortmund moving-image archive and media access
+
+Added a provenance-aware access dossier for the 1997-reviewed *Rolling Thunder 001* VHS, the *King of the Line* two-CD-ROM archive and the unresolved *Graffiti Dortmund 1994* Google Video lead. A current specialist retailer listing provides a concrete used-VHS access route and credits MASmedia / SHARK TV; no media has been watched, digitized or cleared for reuse. Product availability is time-sensitive, and historical Google Video availability is not treated as a surviving copy.
