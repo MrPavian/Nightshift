@@ -250,3 +250,15 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a bibliography/provenance dossier and updated VR-009, research index and changelog.
 - [ ] Physical book inspection, page-level captions, item-level dating/locations, practitioner review and image permissions remain open.
 - [ ] Next: identify accessible first-person accounts from the named Dortmund writers and cross-check Amsterdam travel/influence claims without relying on retailer copy.
+
+
+
+## W02.19 — Dortmund scholarly style analysis and oral-history source map (2026-11-14)
+
+- [x] Located and verified the two Dortmund-specific *Dirty Hands* chapters (Hinz, pp. 253–267; Grothus, pp. 269–278) through official Springer records.
+- [x] Recorded Hinz's accessible three-part local-style summary (sharp contours, consistent stem thickness, opaque fill) as a provisional and non-universal hypothesis.
+- [x] Captured the dated oral-history leads explicitly cited by Hinz: SHARK (30.01.2020), Krell/COLE/CHANA (14.02.2020), David Radon (09.12.2020); no unavailable interview content inferred.
+- [x] Added Lintzen's 2025 *Wandel der Graffiti-Szene in Deutschland* as a broader longitudinal ethnography source route.
+- [x] Added a dossier and cross-reference; kept city-level style, individual MASON development and tag/handstyle evidence separate.
+- [ ] Full-text access, image/figure review, direct interview verification and practitioner feedback remain open.
+- [ ] Next: investigate the 2020 ARTE documentary through current catalogue/archive routes and locate accessible primary visual records for the named interviews.
