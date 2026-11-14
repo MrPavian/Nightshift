@@ -37,6 +37,8 @@ Read and follow:
 - `contracts/glyph-parameter-contract.v1.json`
 - `research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md`
 - `contracts/glyph-geometry-validation.v1.json`
+- `research/RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md`
+- `contracts/relationship-solver.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -59,6 +61,14 @@ Use `contracts/glyph-geometry-validation.v1.json` as the machine-readable valida
 Keep counters, apertures and channels distinct: counters are enclosed bounded faces; apertures remain connected to exterior space; channels are corridors and must not be implicitly classified as counters. Curve approximation must be adaptive and carry an error bound. A hard clearance pass requires the measured distance minus its error bound to meet a calibrated threshold. Thresholds are per glyph/variant/feature/context; do not invent global values. Uncalibrated required thresholds block production approval.
 
 Reject undeclared self-intersections/crossings and invalid topology atomically. Do not silently repair geometry, discard fragments or convert topology. Diagnostics must include stable codes, affected IDs, measured values, thresholds, error bounds and calibration status. Automated validation does not replace the visual proof-sheet review gate.
+
+## 3.3 Relationship solver and word composition contract
+
+Use `contracts/relationship-solver.v1.json` as the machine-readable relationship registry and `research/RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md` as its implementation specification. Generate pair candidates from stable anchor metadata and context; do not rely on a hardcoded 26×26 pair matrix. Store relationship type separately from its geometric realization. Deliberate open separation is a valid outcome.
+
+Implement in stages: Phase 1 open separation, near-touch and terminal-to-terminal; Phase 2 bar continuation, overlap and separate extension bridges; Phase 3 shared strokes and interlocks only after topology validation and visual review. A decorative bridge is never a structural join. Overlap/interlock requires explicit occlusion order. Every accepted edge has stable IDs and a validation report.
+
+Pair candidates must pass local hard gates and then be rechecked in whole-word context for non-adjacent collisions, counter/aperture occlusion, channel bottlenecks and contradictory layer order. Keep hard topology/identity checks separate from soft rhythm/flow/silhouette metrics. Three.js interaction previews candidates but commits only typed relationship commands to the canonical composition graph. Persist user overrides and revalidate them after dependent edits.
 
 ## 4. Current-state facts
 
