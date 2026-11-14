@@ -106,3 +106,11 @@
 - Audited the actual prototype glyph maps and SVG render pipeline.
 - Recorded counter/fill-rule and render-layer inconsistencies, background-colored counter patches, decorative bridge/join diagnostics, and the distinction between presentation presets and structural style grammars.
 - Added a normalized glyph-data proposal, remediation sequence and render-layer regression matrix. No prototype code was changed in this audit commit.
+
+
+## Architecture decision — Claude-led integrated Three.js generator
+
+- Recorded the project owner's decision to delegate production generator implementation to Claude with Three.js integrated into the actual generator workflow.
+- Clarified that Build 0.6 is a reference prototype, not the final architecture; do not build another HTML/JSON-only generator as the end product.
+- Retained editable vector geometry and SVG interoperability, with HTML as a possible shell and JSON as a possible project-data format.
+- Updated contributor guidance, architecture, project brief, roadmap and AI handoff so future implementation briefs align with this direction.
