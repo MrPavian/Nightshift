@@ -111,6 +111,9 @@ Three.js is part of the real generator interaction/rendering workflow, not merel
 
 ### Specification documents
 
+- [Claude Implementation Brief — Generator 0.7](CLAUDE_IMPLEMENTATION_BRIEF_0_7.md)
+- [Glyph Review Package — A–Z](../research/GLYPH_REVIEW_PACKAGE_A_Z.md)
+
 - [Glyph Master Specifications — A, B, G, R, S](../research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Glyph Data Contract — A–Z](../research/GLYPH_DATA_CONTRACT_A_Z.md)
 - [Generator System Responsibility Map](GENERATOR_SYSTEM_RESPONSIBILITIES.md)
