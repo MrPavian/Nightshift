@@ -36,6 +36,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 
 ## Current research files
 
+- [NYC Writers & Crews, 1990–1999 — Attributed Starter Chronology](NYC_WRITERS_CREWS_CHRONOLOGY_1990_1999_01.md)
+
 - [NYC Writing Culture in the 1990s — Transition, Continuity and New Circuits](NYC_WRITING_1990S_TRANSITION_01.md)
 
 - [NYC Graffiti History](NYC_GRAFFITI_HISTORY.md)
@@ -95,6 +97,10 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 ### 2026-11 — NYC writing culture in the 1990s
 
 Added a source-backed dossier on the post-subway transition, the growing distinction between bombing and piecing, zines and photographic circulation, freight-train mobility, and legal/permission contexts. It distinguishes scholarly interpretation, contemporary journalism and NIGHTSHIFT design inference; 1989 is treated as a major transition, not the end of NYC writing.
+
+### 2026-11 — NYC writers and crews, 1990–1999
+
+Added an attributed starter chronology for the post-subway NYC scene, including the 1990 Chalfant studio snapshot, Bronx networks around COPE 2 / KD and Spek / BTV-BTC, the 1995 TATS CRU commercial transition, late-1990s IRAK and the 1999 digital afterlife of the Writer's Bench. Membership and chronology are explicitly confidence-labelled; incomplete leads such as DMS, SANE/SMITH and FX are not promoted to settled facts.
 
 ## Status
 
