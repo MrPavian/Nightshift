@@ -213,3 +213,15 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** reference-only. The *Endstation* page carries copyright; no photos copied. The PDF is a third-party mirror; hosting rights unresolved.
 - **Caution:** activity totals, security deployment and operation names remain single-source reporter claims; *BOMBER* review is not an audited credit list; no writer list is a crew roster.
 - **Evidence:** A for publication date and text as displayed; B for reported events and estimates; individual image metadata and rights require source inspection.
+
+
+## VR-013 — Dortmund moving-image and interactive media sources, 1994–1997
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Moving image A:** *Rolling Thunder 001* VHS, 40 minutes. A current specialist retailer listing credits MASmedia / SHARK TV and describes Dortmund wholetrains, wholecars and panelpieces; DJ Sek 902 of Dortmunder Union is credited for music. A contemporary *BOMBER* #14 (1997) review independently describes the video and its trainwriting content.
+- **Interactive media B:** *King of the Line*, two CD-ROMs, Windows 95 / NT; *BOMBER* #14 describes interactive station/timetable navigation, audio and video elements. A secondary listing gives ISBN 978-3-89535-458-8.
+- **Unresolved lead C:** ILOVEGRAFFITI's Dortmund archive lists *Graffiti Dortmund 1994* and says the complete film was then available on Google Video. No verified surviving copy or original Google Video ID recovered.
+- **Records:** https://www.mrgraffiti.nl/product/vhs-rolling-thunder-1-used/ ; https://nzdr.ru/data/media/biblio/graffiti/Bomber.Graffiti.Magazine.Issue.14.-.1997.pdf ; https://ilovegraffiti.de/blog/tag/dortmund/ ; https://www.preispiraten.de/preisvergleich/software/hobby%2B%26%2Bfreizeit/edition%2Baragon%2Bking%2Bof%2Bthe%2Bline%2B2%2Bcd%2Broms%2Bgraffiti%2Bf%C3%BCr%2Bwindows%2B95%2Bnt-ean-9783895354588
+- **Value:** an unusually concrete route to inspect Dortmund trainwriting footage and a period interactive archive; supports future timecoded format/context research, not universal style claims.
+- **Rights:** reference-only / unresolved. A used VHS or CD-ROM purchase does not grant digitization, distribution, public-display or commercial reuse rights. No footage, stills, tags or music copied.
+- **Caution:** seller metadata is not production-credit verification; the *BOMBER* writer-name list is not a crew roster; the 1994 Google Video reference is a historical link lead, not proof of current access. No media has been watched in this pass.
+- **Evidence:** B for *Rolling Thunder 001* existence and metadata; B for the contemporary *King of the Line* description, C for its secondary ISBN listing; D for the unresolved *Graffiti Dortmund 1994* access lead.
