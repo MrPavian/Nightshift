@@ -36,6 +36,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 
 ## Current research files
 
+- [NYC Writing Culture in the 1990s — Transition, Continuity and New Circuits](NYC_WRITING_1990S_TRANSITION_01.md)
+
 - [NYC Graffiti History](NYC_GRAFFITI_HISTORY.md)
 - [Lettering Styles](LETTERING_STYLES.md)
 - [Graffiti Formats & Practices](GRAFFITI_FORMATS.md)
@@ -89,6 +91,10 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Visual Review Protocol 01 — A–Z](GLYPH_VISUAL_REVIEW_PROTOCOL_01.md)
 - [Style Grammar Specifications 01 — Bubble, Blockbuster, Straight Letter, Wildstyle Study](STYLE_GRAMMAR_SPECIFICATIONS_01.md)
 - [Style Grammar Compatibility & Parameter Contract](STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md)
+
+### 2026-11 — NYC writing culture in the 1990s
+
+Added a source-backed dossier on the post-subway transition, the growing distinction between bombing and piecing, zines and photographic circulation, freight-train mobility, and legal/permission contexts. It distinguishes scholarly interpretation, contemporary journalism and NIGHTSHIFT design inference; 1989 is treated as a major transition, not the end of NYC writing.
 
 ## Status
 
