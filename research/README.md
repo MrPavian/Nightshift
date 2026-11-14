@@ -71,6 +71,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable creative workflow contract v1](../contracts/creative-workflow.v1.json)
 - [Personal Style Engine 01 — Recipe Grammar, Blending and Application](PERSONAL_STYLE_ENGINE_01.md)
 - [Machine-readable personal style engine contract v1](../contracts/personal-style-engine.v1.json)
+- [A–Z Style Grammar Application Matrix 01](A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md)
+- [Machine-readable A–Z style grammar application contract v1](../contracts/az-style-grammar-application.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -180,3 +182,8 @@ Added a workflow specification for four structurally distinct concepts, determin
 ### 2026-11 — Personal Style Engine
 
 Added a versioned recipe model for original user-authored styles, with independent grammar axes, registered parameter scopes, deterministic precedence, conflict handling, glyph-aware application, controlled recipe merging/interpolation, explicit capture from edits, provenance and rights safeguards. Added a machine-readable contract. The specification explicitly excludes hidden preference learning, silent recipe mutation and automatic cloning of named writers' signatures.
+
+
+### 2026-11 — A–Z style grammar application
+
+Added a per-glyph matrix mapping the existing neutral A–Z structural checklist to candidate Bubble, Straight/Block and Wildstyle composition behavior. Added a machine-readable contract for the glyph-specific resolver. The document preserves the distinction between letterform, composition, practice/context and rendering axes, and explicitly marks candidate behaviors as design inference pending authored geometry and visual review.
