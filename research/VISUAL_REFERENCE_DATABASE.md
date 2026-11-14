@@ -201,3 +201,15 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** reference-only / unresolved; no podcast transcript, image or book scan copied.
 - **Caution:** editorial summaries do not verify interview claims or image captions. Keep ATOM ONE / DER LANGE distinct from Pure Doze; distinguish TUF, TOO STRONG and the wider Dortmund hip-hop scene.
 - **Evidence:** A for source existence and editorial metadata; individual spoken claims and visual observations require direct listening / book inspection.
+
+
+## VR-012 — Dortmund trainwriting: contemporary 1997–1999 sources
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Period source A:** *BOMBER* magazine issue 14 (October–December 1997), inspected PDF mirror. Includes a review of MASmedia's *King of the Line* interactive CD-ROM and *Rolling Thunder 001*, a 40-minute Dortmund trainwriting video; review names WUT, RIO, DNK, SAK, MAS, VOLA, SOB, DAR, PEST, ATOM, POEM and BASS.
+- **Period source B:** *Endstation* issue 14, “Dortmund - Haupt Bahn Hof” (8 March 1999), contemporary visiting-reporter account of 1996–1999 activity, 1998 security/cleaning changes and a claimed “Operation Silver Storm” around Christmas 1998 / New Year 1999.
+- **Institutional catalogue route:** MCL search result for *Iron City: Graffiti Dortmund* (2002), listing Hubert Moormann, Christina Soltani and Markus Wiese; OPAC server was unavailable on opening, so holding status is not confirmed.
+- **Records:** https://nzdr.ru/data/media/biblio/graffiti/Bomber.Graffiti.Magazine.Issue.14.-.1997.pdf ; https://www.graffiti.org/endstation/magazine/mag14/mag14.htm ; https://open.urban-nation.com/de-de/Mediensuche/Einfache-Suche?page=4&pagesize=20&searchhash=OCLC_f39d06322f9ef52511f377330f9a36b27f073fe6&top=y
+- **Value:** contemporary scene descriptions help cross-check later retrospective accounts and identify a 1997 moving-image archive; the 1999 report supplies a dated view of trainwriting context and claimed operational changes.
+- **Rights:** reference-only. The *Endstation* page carries copyright; no photos copied. The PDF is a third-party mirror; hosting rights unresolved.
+- **Caution:** activity totals, security deployment and operation names remain single-source reporter claims; *BOMBER* review is not an audited credit list; no writer list is a crew roster.
+- **Evidence:** A for publication date and text as displayed; B for reported events and estimates; individual image metadata and rights require source inspection.
