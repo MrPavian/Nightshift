@@ -44,6 +44,8 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 ## Current research files
 
+- [Handstyle, Motor Plans and Vector Generation — NIGHTSHIFT Model 01](HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md)
+
 - [Ruhrgebiet Writing — Dortmund, TUF and regional circulation](RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md)
 
 - [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
