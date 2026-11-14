@@ -21,8 +21,6 @@ Use four labels:
 
 SEEN (Richard “Richie” Mirando) is a major Bronx legacy figure whose career bridges the subway era and the 1990s. He began painting New York subway trains in 1973 with United Artists (UA), was associated with whole-car work, and continued painting trains until 1989 according to gallery biographies. His late-1980s Tattoo SEEN business, canvas work and international exhibitions provide a documented continuity into the 1990s beyond train painting. Treat him as a legacy / continuing-career figure, not as proof of a new-generation 1990s street crew.
 
-**HYN** is a project-owner-flagged research lead. Its identity and New York graffiti context remain unverified; preserve the exact spelling and do not assign a crew or borough until a reliable source is found.
-
 ## 2. Bronx — multiple generations and distinct networks
 
 ### 2.1 The post-subway generation
