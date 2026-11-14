@@ -234,3 +234,12 @@
 - Clarified that Silo Nation is treated as a hip-hop community/network and jam culture, not automatically as a graffiti crew; ATOM ONE and Pure Doze are separate people.
 - All entries remain research drafts. Crew memberships, dates and image rights require further item-level verification.
 
+
+
+## 2026-11-14 — German scene Blackbook content and QA
+
+- Added nine German-scene archive drafts: Dortmund Style, Silo Nation, Too Strong, ATOM ONE / Der Lange, Pure Doze / DOZE, DAIM, Ma'Claim, ODEM and Martha Cooper Library.
+- Added twelve regression fixtures covering entity distinctions, regional scene coverage, aliases, source confidence and rights handling.
+- Kept Silo Nation distinct from graffiti crews and ATOM ONE distinct from Pure Doze.
+- Content and tests remain editorial/test-design deliverables, not runtime implementation or publication approval.
+
