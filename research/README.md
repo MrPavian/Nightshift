@@ -226,3 +226,8 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 ## Specification integration audit
 
 - [Specification Integration Audit 01](SPECIFICATION_INTEGRATION_AUDIT_01.md) — cross-check of the A/B/G/R/S handoff against the canonical contracts, including the G aperture classification gate and operation registry verification.
+
+
+## Implementation handoff
+
+- [Claude Ticket Pack 0.7A 01](../docs/CLAUDE_TICKET_PACK_0_7A_01.md) — dependency-ordered implementation tickets for the first A/B/G/R/S production slice.
