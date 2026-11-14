@@ -31,7 +31,7 @@ The product listing does not establish current availability, disc integrity, com
 
 ## 3. Graffiti Dortmund 1994 — unresolved film lead
 
-ILOVEGRAFFITI's Dortmund archive contains an entry titled *Graffiti Dortmund 1994*. Its surviving archive text says the complete film was available through Google Video at the time of the post (approximately 18 years before the current check). The original Google Video destination is not exposed in the current archive listing, and no verified surviving copy or mirror was located in this pass.
+ILOVEGRAFFITI's Dortmund archive contains an entry titled *Graffiti Dortmund 1994*. Its surviving archive text says the complete film was available through Google Video at the time of the post (approximately 18 years before the current check). The original Google Video destination has now been recovered from the post's embedded link: https://video.google.de/videoplay?docid=-5734405700324025569 (Google Video docid **-5734405700324025569**). Following that exact link currently returns HTTP 404. No verified surviving copy or mirror was located in this pass.
 
 Archive route: https://ilovegraffiti.de/blog/tag/dortmund/
 
