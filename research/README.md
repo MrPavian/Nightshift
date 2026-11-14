@@ -40,6 +40,7 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 - [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md)
 - [INGRID ontology → NIGHTSHIFT crosswalk](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+- [INGRID Research Record Model 01 — Provenance, dates, observations and rights](INGRID_RESEARCH_RECORD_MODEL_01.md)
 - [INGRID regional SPARQL query pack — Dortmund pilot](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
 
 ## Current research files
@@ -493,6 +494,11 @@ Identified the University of Paderborn / KIT INGRID database as a free scholarly
 ## Standing research principle — graffiti literacy and editor learning
 
 NIGHTSHIFT's research library is also a continuous learning resource on writing culture, graffiti history, style development, materials and regional scenes. Each new research pass should deepen understanding first and translate it into editor design only where the evidence supports it. Distinguish historical fact, attributed practitioner testimony, scholarly interpretation, visual observation and engineering inference. Preserve local and period variation; never flatten individual handstyles into universal presets or clone identifiable writers' signatures. The work order records the six learning tracks, required research outputs and current sequence.
+
+
+### 2026-11 — INGRID research record model
+
+Added a provenance-aware data contract separating source archive records, photo assets, graffiti objects, partial graffiti, photo series, source annotations, normalized mappings, researcher observations, historical claims and item-level rights decisions. Added typed date claims, explicit missingness states, non-destructive duplicate edges, a research-to-editor promotion gate and a minimal synthetic fixture plan. The schema is a NIGHTSHIFT proposal; live EasyDB field availability remains unverified.
 
 
 ### 2026-11 — INGRID ontology, annotation and licensing review
