@@ -141,15 +141,16 @@ It is a retrospective interview, not a contemporaneous record. Attribute recolle
 
 ## 9. Follow-up verification — first train, crew dates and archive access
 
-A second source pass uncovered material contradictions that must remain visible:
+A second source pass refined the chronology and identified which apparent conflicts may be differences in wording:
 
-- The 2020 I Love Graffiti Podcast #43 profile says KANE sprayed his first train in **1986** and founded PHUNKMASTERS / TPM in **1991**.
-- A 2011 “Die Welt brennt” scene-history post says KANE, OMEN and HERO painted the first Heidelberg train in **early 1987**.
-- Pfeiffenberger's 2017 dissertation identifies a first **panelpiece** at Tennisplätze-Yard in **1987**; this wording is not necessarily equivalent to the first train ever painted in Heidelberg.
-- The dissertation dates TPM's founding to **1990**, one year earlier than the 2020 podcast profile.
-- Martin Stieber's 2014 recollection dates his group's first Autobahndreieck to **1988**, with trains following shortly afterwards.
+- The 2023 Freies Hip-Hop Institut publication, drawing on Torch / Frederik Hahn's account, says KANE (Gee-One), OMEN and HERO (Torch) painted the first train in Baden-Württemberg at the **end of 1986 / beginning of 1987**.
+- Pfeiffenberger's 2017 dissertation identifies the first Heidelberg **panelpiece** at Tennisplätze-Yard in **1987**, painted by KANE, OMEN and HERO. This may be the same event described in the 2023 source, but the underlying photograph and caption need inspection.
+- The 2020 I Love Graffiti Podcast #43 profile says KANE sprayed his first train in **1986**. This can be consistent with the late-1986 / early-1987 account depending on the month and whether he means his own first train or the first train in Heidelberg.
+- A 2011 “Die Welt brennt” scene-history post attributes the first Heidelberg train to the same trio in **early 1987**, broadly consistent with the 2023 institutional account.
+- The dissertation dates TPM's founding to **1990**, while the 2020 podcast profile says **1991**. This one-year crew-date discrepancy remains unresolved.
+- Martin Stieber's 2014 recollection dates his group's first Autobahndreieck to **1988**, with trains following shortly afterwards; this may refer to his group's activity rather than the city's first train.
 
-The 2024 event description by the Freies Hip-Hop Institut states that Bryan Vit reconstructed the first Heidelberg train using archive material and eyewitness accounts. A 2023 FHI publication also records Torch's account that KANE, OMEN and HERO painted the first train in Baden-Württemberg at the end of 1986 / beginning of 1987. This materially supports the working chronology, although the underlying photograph and full event evidence still need inspection. This makes the event recording, presentation notes or a direct conversation with the researchers the most valuable next source.
+The best current working chronology for the first Heidelberg train is therefore **late 1986 / early 1987**, with 1987 as the dissertation's date for the first Heidelberg panelpiece. The exact day/month and whether all sources refer to the identical train remain unverified. The original photograph / caption and the 2024 lecture materials are the highest-priority verification targets.
 
 The Freies Hip-Hop Institut states that the Frederik-Hahn collection is still being processed and that the Hip-Hop Archive is **not yet open to the public**. Therefore, do not describe the archive as freely accessible. The institute does accept enquiries about archival material for research and exhibitions.
 
