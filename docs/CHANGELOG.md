@@ -127,3 +127,10 @@
 - Added detailed source-code-grounded specifications for the five existing custom contour records.
 - Defined per-letter semantic construction proposals, identity invariants, counter/aperture handling, candidate anchors, variant families and isolated/pair/word test cases.
 - Explicitly separated verified v0.6 code facts from engineering proposals and unverified visual quality; no visual certification is claimed.
+
+
+## Normalized glyph data contract — A–Z
+
+- Added a versioned conceptual contract separating semantic glyph graphs, editable vector contours, counters/apertures, metrics, anchors, style variants, maturity/provenance and derived render state.
+- Defined deterministic regeneration, structured validation issues, SVG/Three.js synchronization principles and migration requirements for the v0.6 legacy glyph data.
+- Kept uncalibrated measurements explicitly pending rather than inventing production metrics.
