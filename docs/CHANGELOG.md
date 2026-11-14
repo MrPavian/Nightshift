@@ -261,3 +261,11 @@
 - Indexed five Stylefile issue records at differing evidence levels; explicitly preserved the conflicting Stylefile 1 date rather than silently reconciling it.
 - Added ten publication, OPAC, provenance and rights regression fixtures.
 - Specific Martha Cooper Library holdings remain unclaimed until exact OPAC records are inspected.
+
+
+
+## 2026-11-14 — Hamburg magazine bibliography
+
+- Added source-graded serial-publication records for Daily Bombs, Dosenspuk, Beastie Boyz, BACKSPIN, Sketches and Rock 'n' Roller.
+- Preserved the BACKSPIN 1993/1994 date conflict and title spelling variants pending primary issue inspection.
+- Added Hamburg-specific archive regression fixtures.
