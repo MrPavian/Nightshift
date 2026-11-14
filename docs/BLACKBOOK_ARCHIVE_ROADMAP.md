@@ -184,3 +184,18 @@ The Phase A design deliverables are documented in [Information Architecture 01](
 - Added archive regression test cases for content accuracy, evidence provenance, rights, search, navigation and capability-gated generator links.
 - These documents are research/editorial/test-design deliverables. They do not mean the archive UI, data pipeline or tests have been implemented or executed. Archive entries remain drafts.
 
+
+
+## Research expansion — Martha Cooper and German writing history
+
+The research library now includes dedicated dossiers for Martha Cooper's documentary work and the Martha Cooper Library, German regional scene history with emphasis on Dortmund/Ruhrgebiet, and an attributed German writers/crews starter register. This expands the archive beyond a predominantly New York-to-Europe narrative.
+
+Key editorial requirements:
+- treat Germany as a network of regional scenes, not a single style;
+- give Dortmund Style and Ruhrgebiet history their own timeline and visual study;
+- distinguish Too Strong (music group), Silo Nation (hip-hop community/network and jam culture), ATOM ONE / Der Lange and Pure Doze / DOZE (separate people);
+- distinguish DAIM's three-dimensional letterform exploration from Ma'Claim's photorealistic aerosol/character work;
+- use Martha Cooper's photographs as documentary evidence only with item-level attribution and rights review.
+
+The new dossiers are research drafts and do not constitute a complete national history or an image licence.
+
