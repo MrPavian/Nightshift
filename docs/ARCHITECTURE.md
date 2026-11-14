@@ -2,7 +2,9 @@
 
 ## Core pipeline
 
-`Word Input → Glyph Selection → Style Grammar → Glyph Transform → Relationship Solver → Layer Renderer → SVG → Three.js Presentation`
+The semantic/vector project model is canonical. Three.js is the live editor surface and spatial renderer; it does not own persistent geometry. SVG is an interchange/export representation, not the sole semantic source of truth.
+
+`Project Input → Canonical Semantic/Vector Model ↔ Three.js Editor Interaction → Typed Commands → Validation → Composition/Relationship Solver → Derived Rendering → SVG Interchange / Spatial Presentation`
 
 ### 1. Glyph data
 
@@ -14,7 +16,7 @@ Target data shape (conceptual):
 - `contours`: closed outer contours and explicit counter contours
 - `metrics`: advance width, cap height, baseline, side bearings
 - `anchors`: entry, exit, top, bottom, overlap and connection zones
-- `styleFamily`: supported construction families
+- `styleGrammars`: compatible letterform and composition grammar axes
 - `variants`: alternate authored shapes for the same letter
 - `metadata`: source notes, historical references, maturity status
 
@@ -45,12 +47,13 @@ The word-level solver should:
 
 A visual bridge or arrow is decoration; it must not be counted as a true letter connection.
 
-### 4. Rendering
+### 4. Editing, rendering and interchange
 
-- **SVG:** canonical, scalable source for contours, outlines, fills, highlights and export.
-- **Three.js:** scene presentation only—wall geometry, perspective, material response, lighting and camera.
-- **Canvas textures:** generated from SVG for real-time Three.js previews.
-- **Separation:** editing geometry must not depend on the Three.js scene.
+- **Canonical semantic/vector model:** authoritative source for glyph components, editable contours, topology, metrics, anchors, variants, style parameters and composition relationships.
+- **Three.js:** integrated live editor viewport and spatial presentation. It supports selection, handles, previews, scene context and wall composition. All edits submit typed commands against stable canonical IDs; scene objects and meshes are derived views, never the persistent source of truth.
+- **SVG:** scalable interchange and export representation. It must faithfully represent supported vector geometry; semantic metadata may require a versioned sidecar. SVG import/export must report unsupported semantics rather than silently flattening or losing them.
+- **Derived rendering:** meshes, textures, thumbnails, overlays and proof sheets are regenerated from canonical state.
+- **Separation:** canonical geometry remains independent of transient camera, lighting and scene objects, while the Three.js viewport remains the actual interactive editor—not a detached preview.
 
 ### 5. Persistence
 
@@ -89,3 +92,7 @@ The project still needs editable vector geometry and SVG interoperability. HTML 
 
 Do not assume that Three.js replaces the need for a semantic glyph model or reliable vector export. Equally, do not reduce Three.js to a texture preview detached from the composition editor.
 
+
+## Editor UX and tutorial
+
+The editor uses progressive disclosure with unrestricted feature availability. Quick lettering is the approachable default; Shape, Connect and precision authoring expose deeper control. Blackbook, Studio and Wall are views over one canonical project. An optional Guided/Adaptive/Off tutorial follows creative milestones but never gates tools. Compact/Full controls visibility is an independent setting. See `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md` and `research/EDITOR_WORKSPACE_LAYOUT_01.md`.
