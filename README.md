@@ -37,7 +37,7 @@ Important limitation: current "letter joins" are still largely decorative bridge
 - **0.9 — Blackbook Workflow:** sketch variants, per-letter editing, layer controls, save/load and export refinement.
 - **1.0 — Engine Integration:** reusable API/data model for the New York graffiti crew simulator.
 
-See [docs/ROADMAP.md](docs/ROADMAP.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), and [docs/CHANGELOG.md](docs/CHANGELOG.md).
+New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md). Also see [Project Brief](docs/PROJECT_BRIEF.md), [Roadmap](docs/ROADMAP.md), [Architecture](docs/ARCHITECTURE.md), [Style Taxonomy & Research Framework](docs/STYLE_TAXONOMY.md), [Decision Log](docs/DECISIONS.md), [Contributing](CONTRIBUTING.md), and [Changelog](docs/CHANGELOG.md).
 
 ## Prototype
 
