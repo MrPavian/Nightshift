@@ -158,3 +158,13 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Continue source verification for crew membership, dates, regional visual examples and overlooked participants.
 - [ ] Convert approved content to the canonical archive schema after its implementation is available.
 
+
+
+## W02.10 — Additional German scene research (2026-11-14)
+
+- [x] Added source-graded research on Stylefile, 1UP, Berlin Kidz, MOSES & TAPS, LOOMIT, OZ and CAN2.
+- [x] Added six further Blackbook draft entries and ten regression cases.
+- [x] Kept DARKO, VANDALZ and THE FÖNS as unresolved leads pending identity/source verification.
+- [ ] Build Stylefile issue-level index and inspect *EINE STADT WIRD BUNT* / Berlin DECADES as source pathways.
+- [ ] Expand interviews and dated visual references for the new profiles; rights remain item-specific.
+
