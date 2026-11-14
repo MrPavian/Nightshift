@@ -374,3 +374,12 @@
 - Preserved the *ALL SURFACE* page-count discrepancy (238 pages in the DNB vs. 244 in specialist retail and museum event descriptions) instead of silently selecting one.
 - Strengthened reprint provenance for *Da kukse wa* while keeping the retailer's “identical except preface” claim uncollated.
 - Clarified that the Amsterdam influence narrative is an attributed account and that tag contributors must not be conflated with TUF membership.
+
+
+## Research deepening — Dortmund scholarly style analysis and oral-history source map
+
+- Added the official Springer records for Harald Hinz's Dortmund local-style chapter and Rahel H. Grothus's longitudinal MASON analysis in *Dirty Hands* (2022).
+- Recorded the accessible summary's three formal attributes (sharp contours, consistent stem thickness, opaque fill) as a provisional, non-universal style hypothesis.
+- Extracted dated first-person source leads cited by Hinz (SHARK, 30 January 2020; Krell/COLE/CHANA, 14 February 2020; David Radon, 9 December 2020) without inventing interview content.
+- Added Laura Maria Lintzen's 2025 ethnography as a current, broader German scene-history source; full chapters remain access-limited.
+- No images, signatures or copyrighted chapter figures were copied; full-text inspection and practitioner review remain open.
