@@ -92,3 +92,15 @@ Reduce specification risk before Claude begins the first production implementati
 ## Immediate next action
 
 Complete W02.1, then proceed directly to W02.2. Do not ask the owner to re-approve the established Claude/Three.js architecture or the first A/B/G/R/S slice.
+
+
+## Execution status — 2026-11-14
+
+- [x] W02.1 — Initial specification integration audit completed; G aperture import/edit gate clarified; all 25 glyph parameter operations structurally checked.
+- [x] W02.2 — Claude implementation tickets 0.7A and 0.7B/0.8A created with dependency order, deliverables and acceptance criteria.
+- [x] W02.3 — A–Z glyph authoring waves and per-letter neutral construction briefs documented; machine-readable authoring contract added. This is a plan, not newly authored glyph geometry.
+- [x] W02.4 — First supported style grammar slice documented with axis separation, capability honesty, resolver outputs and proof gates.
+- [x] W02.5 — Relationship solver and procedural generator dependencies aligned; safe relationship phases and minimal deterministic generator vertical slice documented.
+- [ ] W02.6 — Continue focused historical/scene research and BLACKBOOK ARCHIVE coordination as a separate content workstream.
+
+Completion here means the research/specification deliverables exist and have been linked; it does not mean Claude implementation or human visual approval is complete.
