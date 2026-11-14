@@ -276,3 +276,11 @@ The Smithsonian Chalfant record was available through search-indexed institution
 - [German Scene Content Pilot 01](BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_01.md) — nine draft entries covering Dortmund Style, Silo Nation, Too Strong, ATOM ONE, Pure Doze, DAIM, Ma'Claim, ODEM and the Martha Cooper Library.
 - [BLACKBOOK Archive Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) now includes German-scene regressions for entity distinctions, regional coverage, source confidence and image rights.
 
+
+
+## Additional German scene research
+
+- [German Scene — Additional Research Leads 01](GERMAN_SCENE_ADDITIONAL_LEADS_01.md) — Stylefile, 1UP, Berlin Kidz, MOSES & TAPS, LOOMIT, OZ and CAN2; DARKO, VANDALZ and The Föns remain unresolved leads.
+- [German Scene Content Pilot 02](BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_02.md) — six additional draft entries with stable proposed IDs.
+- [Blackbook Archive Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) — extended with ten further German-scene regressions.
+
