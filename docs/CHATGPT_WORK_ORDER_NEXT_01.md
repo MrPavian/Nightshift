@@ -262,3 +262,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a dossier and cross-reference; kept city-level style, individual MASON development and tag/handstyle evidence separate.
 - [ ] Full-text access, image/figure review, direct interview verification and practitioner feedback remain open.
 - [ ] Next: investigate the 2020 ARTE documentary through current catalogue/archive routes and locate accessible primary visual records for the named interviews.
+
+
+
+## W02.20 — Dortmund oral-history documentary access map (2026-11-14)
+
+- [x] Recovered two accessible English-subtitled documentary uploads covering first-generation Dortmund / Berlin / Frankfurt writers and Dortmund / Frankfurt trainwriting.
+- [x] Cross-checked the documentary route against Hinz's dated SHARK interview citation (30.01.2020).
+- [x] Added episode metadata, URLs, evidence boundaries and a timecoded oral-history annotation protocol.
+- [ ] Watch and timecode the episodes; verify the exact direct URL for the separate “Into the Nineties” episode.
+- [ ] Compare first-person claims against dated publications, press and visual evidence before promoting historical or style conclusions.
