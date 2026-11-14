@@ -413,3 +413,13 @@
 - Inspected the dated *Endstation* #14 report “Dortmund - Haupt Bahn Hof” (8 March 1999), preserving its claims about 1996–1999 activity and 1998 security / cleaning changes as attributed reporter statements.
 - Located an MCL catalogue search result for *IRON CITY* (2002), but the catalogue server was unavailable on opening; current holding status remains unconfirmed.
 - Added VR-012 and a contemporary-source dossier; no photographs were copied and no unverified totals were promoted to facts.
+
+
+
+## Research deepening — Dortmund moving-image archive and media access
+
+- Added a provenance dossier for *Rolling Thunder 001*, *King of the Line* and the unresolved *Graffiti Dortmund 1994* film lead.
+- Located a current specialist retailer listing for a used *Rolling Thunder 001* VHS, with seller-supplied MASmedia / SHARK TV production metadata; cross-checked its 40-minute Dortmund trainwriting description against the 1997 *BOMBER* review.
+- Recorded the *King of the Line* ISBN lead and separated contemporary interface description from secondary catalogue metadata.
+- Preserved the 1994 Google Video reference as an unresolved historical link; no surviving copy or original ID is claimed.
+- Added VR-013. No media has been watched, copied, digitized or cleared for reuse.
