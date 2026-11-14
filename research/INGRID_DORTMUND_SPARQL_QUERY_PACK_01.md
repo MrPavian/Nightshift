@@ -215,3 +215,63 @@ Do not fill this table from estimates, article-wide corpus totals or search-resu
 - Upstream RDF converter (`jsonToRdf.py`, field translation and namespace mapping): https://github.com/dice-group/Ingrid/blob/4e776365d2bf30181cf98ffd6d3d1a36b060973f/jsonToRdf.py
 
 **Evidence grade:** A for documented query syntax and predicates shown in the official catalogue / article; no Dortmund execution evidence yet.
+
+
+## 7. Ontology and converter audit — 2026-11-14 follow-up
+
+The earlier namespace warning is now more precisely resolved as a **three-way version / serialization inconsistency**, not a reason to replace all catalogue prefixes wholesale.
+
+### Confirmed from the published ontology file
+
+The current dice-group/ingrid.github.io repository's ontology_v3.ttl declares the following properties in the grfo: namespace:
+- hasLetterStyle
+- hasTechnology
+- hasCarrierMedium
+- inInventory
+- hasDate
+- hasRecordingDate
+- hasType
+- hasStyleElement (spelled with the second “t”)
+
+The official query catalogue uses grfo: for its city, date, type, carrier-medium and style-element examples. It spells the style-element predicate hasSyleElement (missing the “t”), while the ontology declares hasStyleElement. Treat the catalogue's spelling as a likely typo unless the live graph proves it is actually materialized that way.
+
+### Confirmed from current upstream converter source
+
+The current dice-group/Ingrid/jsonToRdf.py defines:
+- ontology namespace: https://graffiti.data.dice-research.org/ontology/ (grfo)
+- resource namespace: https://graffiti.data.dice-research.org/resource/ (grfr)
+- additional annotation namespace: https://graffiti.data.dice-research.org/graffiti/ (bound as grfp)
+
+Its translation table maps buchstabenstil → hasLetterStyle, technik → hasTechnology, traegermedium → hasCarrierMedium, bestand → inInventory, datierung → hasDate, and stilelement → hasSyleElement. The converter then emits many annotation fields using the additional graffiti[...] namespace. This differs from the published ontology and catalogue, which place these properties in grfo:. The source code also defines the namespace with a trailing slash, while some catalogue examples bind grfp to a hash namespace.
+
+### Consequence
+
+- Keep official catalogue queries with grfo: as the documented query baseline.
+- Do not silently change them to grfp: or assume the converter's current branch is identical to the deployed 2022/2023 graph.
+- hasStyleElement vs hasSyleElement is a separate predicate-spelling inconsistency.
+- Before publishing any count, inspect the deployed graph/dump's actual predicates for a known resource or run a namespace-agnostic predicate discovery query.
+- Query fields that are declared in ontology but may be emitted under the converter's auxiliary namespace remain runtime-unverified until this check is completed.
+
+### Public dump route — confirmed, snapshot limitation
+
+The 2023 paper explicitly identifies a public RDF dump and its archived Zenodo record:
+- Zenodo record 10.5281/zenodo.7560242 (published 2023-01-23; version v2).
+- ingrid_public.ttl is listed at 334.8 MB on the Zenodo record page.
+- The paper's Table 2 describes the dump as public_rdfGraffiti.ttl, and Table 3 identifies the graph as version 4.0 dated 2022-07-05.
+
+These are not necessarily byte-identical file names or current snapshots. The Zenodo archive is a reproducible historical snapshot, not proof of the current live endpoint state. The browser research client returned HTTP 429 for the Zenodo record and could not fetch the raw HOBBIT host; no local dump was downloaded or parsed in this pass. Do not claim dump-level predicate counts.
+
+### Updated confidence
+
+- A: official ontology property names and namespaces as published in ontology_v3.ttl.
+- A: documented SPARQL examples and their exact prefixes/spelling on the official catalogue.
+- A: current upstream converter's declared namespaces, translation mappings and RDF emission behavior as visible in source.
+- Unresolved: which exact predicate IRIs are present in the deployed public graph and whether the current converter source corresponds to that deployment.
+- Blocked: actual city counts, because no query result rows or parsed RDF dump have been obtained.
+
+Sources inspected:
+- Ontology: https://github.com/dice-group/ingrid.github.io/blob/main/ontology_v3.ttl
+- Converter: https://github.com/dice-group/Ingrid/blob/main/jsonToRdf.py
+- Official query catalogue: https://dice-group.github.io/ingrid.github.io/
+- Paper and data availability: https://pmc.ncbi.nlm.nih.gov/articles/PMC10212912/
+- Zenodo snapshot: https://zenodo.org/records/7560242
