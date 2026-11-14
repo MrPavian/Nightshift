@@ -144,3 +144,8 @@ The complete authoring journey is specified in [Creative Workflow and Style Auth
 ### Personal Style Engine specification
 
 See [Personal Style Engine 01](../research/PERSONAL_STYLE_ENGINE_01.md) and [personal-style-engine.v1.json](../contracts/personal-style-engine.v1.json). The recipe library is a later creative-workflow slice, after canonical glyph editing, relationship validation and project persistence are reliable. Implement schema/resolver first, then explicit save/apply preview, glyph-aware compatibility, recipe merge/interpolation and library lifecycle. This is specification work only; no production engine is claimed.
+
+
+### A–Z style grammar application
+
+See [A–Z Style Grammar Application Matrix 01](../research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md) and [az-style-grammar-application.v1.json](../contracts/az-style-grammar-application.v1.json). Implement the resolver before broad style generation. Connect registered A/B/G/R/S controls first; author and review the remaining 21 glyph masters before claiming full A–Z grammar coverage. Bubble and Straight must differ in monochrome construction; Blockbuster remains multi-axis; Wildstyle is expressed through relationships and word composition. This is a specification, not implemented functionality.
