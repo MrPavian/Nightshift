@@ -62,6 +62,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
+- [Glyph Visual Review Protocol 01 — A–Z](GLYPH_VISUAL_REVIEW_PROTOCOL_01.md)
 - [Style Grammar Specifications 01 — Bubble, Blockbuster, Straight Letter, Wildstyle Study](STYLE_GRAMMAR_SPECIFICATIONS_01.md)
 - [Style Grammar Compatibility & Parameter Contract](STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md)
 
@@ -120,3 +121,8 @@ Added an implementation contract for independent letterform, composition, practi
 ### 2026-11 — Rights-aware visual reference analysis and construction brief
 
 Expanded the visual reference index with item-level provenance and rights cautions for the Martin Wong/MCNY collections, NYU Fales Martin Wong Papers, Smithsonian Jack Stewart Papers and Henry Chalfant subway photographs. Added a reusable annotation protocol, rights-status vocabulary and a construction-focused comparison matrix. Added an implementation-facing brief translating the research into glyph identity, topology, pair/word composition, surface constraints, Three.js editing and deterministic proof-sheet requirements. Publicly accessible archival images remain reference-only unless item-level permission is confirmed.
+
+
+### 2026-11 — Repeatable A–Z visual review protocol
+
+Added a staged review gate system for glyph source integrity, semantic construction, topology, geometry, silhouette, style construction, context, rendering, persistence and human approval. Added an A–Z identity/topology checklist, critical geometry failures, a 0–3 human review rubric, controlled style comparisons and a focused first review batch for A/B/G/R/S. This operationalizes existing glyph and style specifications without claiming historical universality or visual approval.
