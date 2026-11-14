@@ -1,7 +1,7 @@
-# INGRID — German Graffiti Research Database and Dortmund Corpus Route (W02.29)
+# INGRID — German Graffiti Research Database: Dortmund Pilot and Regional Corpus Route (W02.29)
 
 **Date:** 2026-11-14  
-**Purpose:** document INGRID as the strongest newly identified research infrastructure for testing Dortmund historical claims against a large, annotated German graffiti image corpus. This is an access and research-design dossier; no INGRID Dortmund records have yet been queried or visually inspected.
+**Purpose:** document INGRID as a core research infrastructure for studying graffiti writing, style development and regional differences. Dortmund is the initial pilot only; the programme expands across the Ruhrgebiet, NRW and Germany. No city-level record counts or visual samples have yet been verified. See [regional research scope](INGRID_REGIONAL_RESEARCH_SCOPE_01.md).
 
 ## 1. What INGRID is
 
