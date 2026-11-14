@@ -1,0 +1,458 @@
+{
+  "contractId": "nightshift.glyph-geometry-validation",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "scope": [
+    "canonical-vector-geometry",
+    "semantic-topology",
+    "glyph-metrics",
+    "anchors",
+    "derived-render-geometry"
+  ],
+  "authority": {
+    "canonical": "semantic-graph-and-editable-vector-geometry",
+    "derived": [
+      "threejs-meshes",
+      "svg-render-output",
+      "textures",
+      "diagnostic-overlays",
+      "proof-sheets"
+    ],
+    "note": "D-009 and production handoff govern over legacy architecture wording that described Three.js as presentation-only."
+  },
+  "pipeline": [
+    "schema-and-reference-integrity",
+    "curve-normalization",
+    "geometric-degeneracy",
+    "contour-intersection-analysis",
+    "planar-topology-classification",
+    "negative-space-classification",
+    "clearance-analysis",
+    "anchor-validation",
+    "glyph-identity-invariants",
+    "derived-render-consistency"
+  ],
+  "numericalPolicy": {
+    "tolerances": "named, versioned and stored with validator profile",
+    "units": "glyph-local unless explicitly output-space",
+    "noGlobalClearance": "thresholds are per glyph/variant/feature/context",
+    "curveApproximation": "adaptive subdivision with recorded error bound; coarse fixed sampling cannot certify narrow features",
+    "robustPredicates": "robust deterministic orientation/intersection/containment predicates",
+    "calibration": "uncalibrated thresholds emit VAL_UNCALIBRATED and cannot support production approval",
+    "rounding": "display/export only; preserve canonical precision"
+  },
+  "geometryPrimitives": {
+    "supportedSegments": [
+      "line",
+      "quadratic-bezier",
+      "cubic-bezier"
+    ],
+    "normalize": [
+      "explicit contour closure",
+      "segment endpoint continuity",
+      "explicit fill rule",
+      "declared or normalized winding"
+    ],
+    "degenerateCases": [
+      "zero-length line",
+      "zero-area contour",
+      "duplicate consecutive points",
+      "near-zero curve handles",
+      "non-finite coordinates",
+      "unclosed required contour"
+    ]
+  },
+  "topologyModel": {
+    "contourGraph": "contour boundaries and semantic components linked by containment, intersection, attachment and declared overlap",
+    "faceClassification": "planar arrangement; classify bounded/unbounded faces using declared fill rule and semantic negative-space records",
+    "counter": "bounded enclosed negative-space face",
+    "aperture": "exterior-connected negative-space region between terminals or contour boundaries",
+    "channel": "negative-space corridor between components or glyph instances",
+    "connectivity": "compare actual connectivity with declared variant topology signature",
+    "topologySignatureFields": [
+      "connectedComponentCount",
+      "requiredCounterIds",
+      "requiredApertureIds",
+      "requiredChannelRelations",
+      "declaredCrossings",
+      "declaredJunctions",
+      "fillRule"
+    ]
+  },
+  "checks": [
+    {
+      "code": "VAL_SCHEMA",
+      "stage": "schema-and-reference-integrity",
+      "severity": "error",
+      "description": "Malformed records, non-finite coordinates, duplicate IDs or missing semantic references."
+    },
+    {
+      "code": "VAL_CLOSURE",
+      "stage": "curve-normalization",
+      "severity": "error",
+      "description": "A contour declared closed is not closed within calibrated tolerance."
+    },
+    {
+      "code": "VAL_DEGENERATE",
+      "stage": "geometric-degeneracy",
+      "severity": "error",
+      "description": "A segment or contour is degenerate beyond configured tolerance."
+    },
+    {
+      "code": "VAL_SELF_INTERSECTION",
+      "stage": "contour-intersection-analysis",
+      "severity": "error",
+      "description": "A contour intersects itself outside explicitly declared zones."
+    },
+    {
+      "code": "VAL_UNDECLARED_CROSSING",
+      "stage": "contour-intersection-analysis",
+      "severity": "error",
+      "description": "Structural boundaries cross without explicit semantic crossing and order."
+    },
+    {
+      "code": "VAL_TOPOLOGY_MISMATCH",
+      "stage": "planar-topology-classification",
+      "severity": "error",
+      "description": "Actual components, faces or contour relations differ from declared topology."
+    },
+    {
+      "code": "VAL_COUNTER_MISSING",
+      "stage": "negative-space-classification",
+      "severity": "error",
+      "description": "A required protected counter is absent or not enclosed."
+    },
+    {
+      "code": "VAL_COUNTER_MERGED",
+      "stage": "negative-space-classification",
+      "severity": "error",
+      "description": "Two required counters have merged into one region."
+    },
+    {
+      "code": "VAL_APERTURE_CLOSED",
+      "stage": "negative-space-classification",
+      "severity": "error",
+      "description": "A required aperture is no longer connected to exterior space."
+    },
+    {
+      "code": "VAL_NEGATIVE_SPACE_CLEARANCE",
+      "stage": "clearance-analysis",
+      "severity": "error",
+      "description": "A protected counter/aperture/channel violates calibrated minimum clearance."
+    },
+    {
+      "code": "VAL_COMPONENT_DISCONNECTED",
+      "stage": "planar-topology-classification",
+      "severity": "error",
+      "description": "Required semantic components lose declared connectivity."
+    },
+    {
+      "code": "VAL_ANCHOR_DIRECTION",
+      "stage": "anchor-validation",
+      "severity": "error",
+      "description": "Anchor direction is zero, invalid or outside its declared envelope."
+    },
+    {
+      "code": "VAL_ANCHOR_CLEARANCE",
+      "stage": "anchor-validation",
+      "severity": "error",
+      "description": "Anchor usable zone collides with protected geometry or lacks calibrated clearance."
+    },
+    {
+      "code": "VAL_IDENTITY_INVARIANT",
+      "stage": "glyph-identity-invariants",
+      "severity": "error",
+      "description": "Glyph-specific identity requirements fail."
+    },
+    {
+      "code": "VAL_RENDER_TOPOLOGY_DRIFT",
+      "stage": "derived-render-consistency",
+      "severity": "error",
+      "description": "Derived SVG/Three.js output changes or obscures canonical topology."
+    },
+    {
+      "code": "VAL_NEAR_CLEARANCE",
+      "stage": "clearance-analysis",
+      "severity": "warning",
+      "description": "A valid feature approaches its calibrated clearance threshold."
+    },
+    {
+      "code": "VAL_ANCHOR_MARGINAL",
+      "stage": "anchor-validation",
+      "severity": "warning",
+      "description": "An anchor remains valid but has marginal connection room."
+    },
+    {
+      "code": "VAL_UNCALIBRATED",
+      "stage": "clearance-analysis",
+      "severity": "warning",
+      "description": "A required threshold has no calibrated value."
+    }
+  ],
+  "checksByFeature": {
+    "counter": {
+      "required": [
+        "bounded-face-exists",
+        "semantic-id-matches",
+        "clearance-measured"
+      ],
+      "forbidden": [
+        "exterior-connected"
+      ],
+      "measurements": [
+        "area",
+        "centroid",
+        "minimum-boundary-distance",
+        "local-width-profile"
+      ]
+    },
+    "aperture": {
+      "required": [
+        "exterior-connectivity",
+        "terminal-pair-or-boundary-definition",
+        "clearance-measured"
+      ],
+      "forbidden": [
+        "closed-bounded-face"
+      ],
+      "measurements": [
+        "throat-width",
+        "terminal-separation",
+        "minimum-clearance",
+        "exterior-path-connectivity"
+      ]
+    },
+    "channel": {
+      "required": [
+        "declared-boundary-components",
+        "corridor-connectivity",
+        "clearance-measured"
+      ],
+      "forbidden": [
+        "implicit-counter-classification"
+      ],
+      "measurements": [
+        "minimum-width",
+        "bottleneck-location",
+        "corridor-connectivity"
+      ]
+    },
+    "anchor": {
+      "required": [
+        "stable-id",
+        "nonzero-direction",
+        "role",
+        "allowed-connection-types"
+      ],
+      "measurements": [
+        "position",
+        "direction",
+        "usable-zone",
+        "clearance",
+        "boundary-proximity"
+      ]
+    }
+  },
+  "clearanceMethod": {
+    "preferred": "minimum Euclidean distance between relevant curve boundaries with conservative adaptive-subdivision error bounds",
+    "secondary": "signed-distance or medial-axis fields may accelerate candidates but must be checked against boundary geometry before hard pass",
+    "outputs": [
+      "minimumDistance",
+      "closestPointPair",
+      "featureIds",
+      "measurementErrorBound",
+      "calibrationProfileId"
+    ],
+    "scaleContexts": [
+      "glyph-local",
+      "rendered-thumbnail",
+      "target-output-size",
+      "surface-context"
+    ],
+    "rule": "A hard pass requires measured distance minus error bound to meet calibrated threshold."
+  },
+  "anchorMethod": {
+    "direction": "normalized tangent or authored vector with confidence/source",
+    "usableZone": "bounded semantic region, not a single point",
+    "collision": "test usable zone against protected negative spaces and structural geometry",
+    "compatibility": "check role and allowed connection types before composition solver acceptance",
+    "output": "anchor is a candidate; pair/word relationship must be independently validated"
+  },
+  "transactionIntegration": {
+    "validationInput": "candidate canonical model after typed edit command, before commit",
+    "rejectOn": [
+      "any error-severity check",
+      "missing calibration for required hard threshold used by operation"
+    ],
+    "commit": "atomic only after required hard checks pass",
+    "preview": "may show provisional geometry but cannot persist as committed canonical state",
+    "diagnostics": "stable code, severity, affected IDs, measured value, threshold, error bound, calibration status and actionable message"
+  },
+  "requiredFixtures": [
+    {
+      "id": "fixture.counter.enclosed",
+      "purpose": "closed counter remains a bounded face"
+    },
+    {
+      "id": "fixture.counter.merged",
+      "purpose": "two declared counters merge and fail"
+    },
+    {
+      "id": "fixture.aperture.open",
+      "purpose": "exterior-connected aperture passes"
+    },
+    {
+      "id": "fixture.aperture.closed",
+      "purpose": "aperture closure fails"
+    },
+    {
+      "id": "fixture.channel.corridor",
+      "purpose": "channel remains corridor, not counter"
+    },
+    {
+      "id": "fixture.self-intersection",
+      "purpose": "undeclared self-intersection fails"
+    },
+    {
+      "id": "fixture.declared-crossing",
+      "purpose": "declared crossing with explicit order passes"
+    },
+    {
+      "id": "fixture.clearance.pass",
+      "purpose": "calibrated minimum clearance passes with error bound"
+    },
+    {
+      "id": "fixture.clearance.fail",
+      "purpose": "clearance below threshold fails"
+    },
+    {
+      "id": "fixture.anchor.invalid",
+      "purpose": "zero-direction or colliding anchor fails"
+    },
+    {
+      "id": "fixture.determinism",
+      "purpose": "identical geometry/profile produce identical diagnostics"
+    },
+    {
+      "id": "fixture.render-parity",
+      "purpose": "SVG and Three.js preserve topology"
+    }
+  ],
+  "glyphFixtureCases": {
+    "A": [
+      "counter-enclosure",
+      "crossbar-junction",
+      "leg-balance",
+      "stance-clearance"
+    ],
+    "B": [
+      "two-counter-separation",
+      "waist-connectivity",
+      "upper-lower-bowl-attachment"
+    ],
+    "G": [
+      "aperture-exterior-connectivity",
+      "bar-attachment",
+      "C-O-confusion-review"
+    ],
+    "R": [
+      "counter-leg-clearance",
+      "leg-junction",
+      "bowl-counter-stress"
+    ],
+    "S": [
+      "continuous-contour",
+      "neck-bottleneck",
+      "terminal-tangent",
+      "directional-silhouette"
+    ]
+  },
+  "glyphIdentityProfiles": {
+    "latin.upper.A": {
+      "required": [
+        "two-descending-legs",
+        "apex-relationship",
+        "cross-structure-as-authored"
+      ],
+      "negativeSpace": {
+        "counterCount": 1,
+        "apertureCount": "variant-declared"
+      },
+      "checks": [
+        "counter-enclosed",
+        "crossbar-connected",
+        "leg-connectivity"
+      ]
+    },
+    "latin.upper.B": {
+      "required": [
+        "spine",
+        "upper-bowl",
+        "lower-bowl"
+      ],
+      "negativeSpace": {
+        "counterCount": 2,
+        "apertureCount": 0
+      },
+      "checks": [
+        "two-distinct-bounded-counters",
+        "waist-connectivity",
+        "bowl-spine-attachment"
+      ]
+    },
+    "latin.upper.G": {
+      "required": [
+        "open-bowl-family",
+        "internal-bar-or-terminal-feature"
+      ],
+      "negativeSpace": {
+        "counterCount": 0,
+        "apertureCount": 1
+      },
+      "checks": [
+        "aperture-exterior-connected",
+        "bar-attachment",
+        "distinction-from-C-and-O-review"
+      ]
+    },
+    "latin.upper.R": {
+      "required": [
+        "spine",
+        "upper-bowl",
+        "descending-leg"
+      ],
+      "negativeSpace": {
+        "counterCount": 1,
+        "apertureCount": 0
+      },
+      "checks": [
+        "counter-enclosed",
+        "leg-attached",
+        "leg-counter-clearance"
+      ]
+    },
+    "latin.upper.S": {
+      "required": [
+        "continuous-directional-contour",
+        "upper-and-lower-turns",
+        "middle-transition"
+      ],
+      "negativeSpace": {
+        "counterCount": 0,
+        "apertureCount": "variant-declared"
+      },
+      "checks": [
+        "single-required-connected-contour",
+        "neck-clearance",
+        "no-unintended-self-intersection"
+      ]
+    }
+  },
+  "releasePolicy": {
+    "automatedPassDoesNotEqualHumanApproval": true,
+    "topologyOrIdentityErrorBlocksGlyphApproval": true,
+    "uncalibratedMetricsPreventProductionApproval": true,
+    "humanReview": "research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md",
+    "noFalseCertification": "No render-reviewed or production-approved label without proof-sheet review and recorded reviewer decision."
+  }
+}
