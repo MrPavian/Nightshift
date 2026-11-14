@@ -361,3 +361,10 @@ Added a fourth crossover supplement documenting the reported SPORTS collective, 
 ### 2026-11 — NYC writing, skateboarding and independent media, 1987–1997
 
 Added a wider scene synthesis connecting downtown skate/hip-hop spaces, the Brooklyn Banks, the earlier Zoo York skate/graffiti identity and the 1993 company, named hardcore/skate/graffiti crossovers, VHS circulation and the post-train graffiti zine network. The dossier distinguishes organizations, people, places and media, and treats 1989 as an infrastructure transition rather than the end of NYC writing.
+
+
+- [NYC Graffiti, Skateboarding and Alternative Media Networks 01](NYC_GRAFFITI_SKATEBOARDING_AND_ALTERNATIVE_MEDIA_NETWORKS_01.md)
+
+### 2026-11 — NYC graffiti, skateboarding and alternative media networks
+
+Added a cross-scene dossier based on Abram Coetsee's Cornell dissertation, Letterform Archive's graffiti-zine research, Adam Gopnik's 1990 post-subway report, Eli Gesner's retrospective interview and the Harsh Forms graffiti/hardcore network investigation. It models subway routes, meeting points, zines, photo exchange and skateboarding as overlapping but distinct infrastructures; all participant recollections and design inferences are explicitly labelled.
