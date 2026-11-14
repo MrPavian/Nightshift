@@ -427,3 +427,19 @@ NIGHTSHIFT research is also a continuous learning programme on writing culture, 
 - [ ] Inspect representative records across dates and categories; record system IDs, captions, provenance, annotation confidence and license.
 - [ ] Compare observed examples with *ALL SURFACE*, *Da kukse wa*, *IRON CITY* and period sources before proposing style-history conclusions.
 - [ ] Next: build the first evidence-backed Dortmund style-development timeline and a visual learning outline for the editor, keeping all claims attributed and non-attributive.
+
+
+## W02.31 — INGRID promoted to P1: ontology crosswalk and empirical programme (2026-11-14)
+
+- [x] Confirmed the official corpus inventory: approx. 150,000 images; 99,962 with basic and/or deep annotation (July 2023).
+- [x] Confirmed the 2023 article's approx. 136,000 photographs from Mannheim, Munich, Cologne, Berlin, Leipzig, Hamm, Dortmund, Münster and Paderborn (1983–2019); Dirk Kreckel's Dortmund photography is explicitly described.
+- [x] Separated the July 2022 graph metrics (130,689 graffiti resources, 178 cities, 451 collections, 682,748 image files) from image and annotation counts.
+- [x] Clarified public subset and license layers: images CC BY-SA 4.0, annotations CC0, knowledge graph CC BY 4.0 per the 2023 paper; only a subset of images is public and commercial use needs rights clarification.
+- [x] Added an INGRID → NIGHTSHIFT ontology crosswalk and a staged empirical research programme.
+- [ ] **P1 NEXT:** run the first live Dortmund query in EasyDB; record result count, date coverage, annotation depth and source collections.
+- [ ] **P1:** produce a field dictionary and a missingness / annotation-coverage report before style-frequency claims.
+- [ ] **P1:** build a stratified visual sample by decade × graffiti type × source collection; preserve object/photo/part/photo-series relationships and near-duplicate links.
+- [ ] **P1:** develop an evidence-backed Dortmund style-development timeline and a cross-writer feature atlas.
+- [ ] **P1:** ask INGRID for written clarification on commercial use of any image or metadata-derived product feature; no images enter product assets without approval.
+- [ ] **P1:** translate validated findings into editor learning requirements and parameter hypotheses, then require human visual review.
+- [ ] Supporting research: continue *ALL SURFACE*, *Da kukse wa*, *IRON CITY*, period media and oral history as cross-checks, not substitutes for INGRID's corpus analysis.
