@@ -205,3 +205,9 @@ The new dossiers are research drafts and do not constitute a complete national h
 
 Added nine further editorial draft entries and twelve German-scene regression fixtures. The entries distinguish regional lettering tendencies, writers, music groups, crews, community networks and research institutions. They remain drafts pending source-level editorial review; no image reproduction rights are implied.
 
+
+
+## Additional German scene coverage
+
+The next research increment adds Stylefile as publication infrastructure, 1UP and Berlin Kidz as distinct crew/media records, MOSES & TAPS as an evolving artist collective, and dedicated records for LOOMIT, OZ and CAN2. DARKO, VANDALZ and THE FÖNS remain unresolved pending stronger identification and primary sources. Ten additional QA cases protect these distinctions.
+
