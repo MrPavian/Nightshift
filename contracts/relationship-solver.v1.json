@@ -1,0 +1,481 @@
+{
+  "contractId": "nightshift.relationship-solver",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "scope": {
+    "initialGlyphs": [
+      "latin.upper.A",
+      "latin.upper.B",
+      "latin.upper.G",
+      "latin.upper.R",
+      "latin.upper.S"
+    ],
+    "unitOfComposition": "ordered glyph instances in a word or authored composition"
+  },
+  "authority": {
+    "canonical": "composition-relationship-graph-and-glyph-instance-transforms",
+    "derived": [
+      "candidate-previews",
+      "threejs-render-objects",
+      "svg-output",
+      "diagnostics"
+    ],
+    "note": "The solver proposes and validates relationships; it does not rewrite glyph masters or mutate Three.js meshes."
+  },
+  "principles": [
+    "A connection is optional; deliberate open separation is a valid relationship.",
+    "Anchor compatibility creates candidates, not accepted connections.",
+    "Relationship type is stored separately from its geometric realization.",
+    "All accepted relationships are stable-ID graph records and reversible.",
+    "Glyph identity, protected negative spaces and declared topology outrank visual density.",
+    "No opaque single graffiti score; expose separate measurements and reasons.",
+    "Pair decisions must be rechecked in whole-word context.",
+    "Three.js interaction submits typed commands against canonical composition state."
+  ],
+  "relationshipTypes": [
+    {
+      "id": "open-separation",
+      "geometry": "no joining geometry; preserve deliberate inter-letter gap",
+      "phase": 1
+    },
+    {
+      "id": "near-touch",
+      "geometry": "contours approach within a declared proximity band but remain disjoint",
+      "phase": 1
+    },
+    {
+      "id": "terminal-to-terminal",
+      "geometry": "compatible terminals meet or align with declared continuity",
+      "phase": 1
+    },
+    {
+      "id": "bar-continuation",
+      "geometry": "two authored bars align as a visual continuation; distinct source components remain addressable",
+      "phase": 2
+    },
+    {
+      "id": "overlap",
+      "geometry": "glyph contours overlap with explicit occlusion/layer order; no semantic merge implied",
+      "phase": 2
+    },
+    {
+      "id": "extension-bridge",
+      "geometry": "separate authored extension links two declared roots; never counted as a glyph stroke",
+      "phase": 2
+    },
+    {
+      "id": "shared-stroke",
+      "geometry": "two glyph constructions reference a shared semantic/vector component; topology and identity review required",
+      "phase": 3
+    },
+    {
+      "id": "interlock",
+      "geometry": "multiple parts weave with explicit crossing order and validated negative-space channels",
+      "phase": 3
+    }
+  ],
+  "anchorContract": {
+    "anchorFields": [
+      "anchorId",
+      "glyphInstanceId",
+      "glyphId",
+      "variantId",
+      "role",
+      "anchorType",
+      "position",
+      "direction",
+      "usableZone",
+      "clearanceProfileRef",
+      "allowedConnectionTypes",
+      "compatibilityTags",
+      "sourceConfidence"
+    ],
+    "roles": [
+      "entry",
+      "exit",
+      "connection",
+      "overlap",
+      "extension-root",
+      "bar-end",
+      "terminal",
+      "corner",
+      "open-edge"
+    ],
+    "anchorTypes": [
+      "terminal",
+      "bar-end",
+      "corner",
+      "extension-root",
+      "open-edge"
+    ],
+    "rules": [
+      "Stable anchor IDs must survive geometry regeneration unless the authored variant changes the anchor identity.",
+      "Direction must be nonzero and normalized for comparison; authored and derived directions retain provenance.",
+      "An anchor is a bounded usable zone with clearance, not a naked point.",
+      "Allowed connection types and compatibility tags are explicit; no wildcard compatibility by default.",
+      "Anchors on provisional glyphs are advisory and cannot authorize production-grade joins."
+    ]
+  },
+  "candidateGeneration": {
+    "inputs": [
+      "adjacent glyph instance IDs",
+      "variant IDs",
+      "anchor metadata",
+      "glyph transforms",
+      "style grammar profile",
+      "spacing and composition constraints",
+      "neighbor context"
+    ],
+    "process": [
+      "enumerate compatible outgoing/incoming anchor pairs",
+      "filter by allowed relationship type",
+      "evaluate direction and positional envelopes",
+      "construct reversible candidate transform or relationship geometry",
+      "run local pair geometry/topology validation",
+      "retain candidates with structured measurements"
+    ],
+    "noHardcodedPairMatrix": "Do not use a 26x26 pair table as the sole compatibility source. Optional curated preferences may bias ranking but cannot bypass geometric checks.",
+    "candidateStatus": [
+      "proposed",
+      "accepted",
+      "rejected",
+      "superseded"
+    ],
+    "deterministic": "Stable candidate IDs derive from stable instance/anchor/type IDs and solver version, not array order or random values."
+  },
+  "pairMetrics": [
+    {
+      "id": "anchor-position-error",
+      "meaning": "distance between intended anchor contact/continuation positions"
+    },
+    {
+      "id": "direction-alignment",
+      "meaning": "angular relation between anchor directions and relationship tangent"
+    },
+    {
+      "id": "local-clearance",
+      "meaning": "minimum distance to protected geometry around both anchors"
+    },
+    {
+      "id": "contour-collision",
+      "meaning": "unintended intersections or collisions introduced by the candidate"
+    },
+    {
+      "id": "negative-space-integrity",
+      "meaning": "counter/aperture/channel preservation after candidate realization"
+    },
+    {
+      "id": "occlusion-validity",
+      "meaning": "declared front/back order and visible component continuity"
+    },
+    {
+      "id": "pair-silhouette",
+      "meaning": "measured local mass and gap behavior; review metric, not an identity override"
+    },
+    {
+      "id": "scale-rhythm",
+      "meaning": "relative cap-height, width and mass balance"
+    },
+    {
+      "id": "flow-continuity",
+      "meaning": "directional transition across the pair"
+    }
+  ],
+  "evaluationPolicy": {
+    "hardGates": [
+      "anchor IDs and glyph references resolve",
+      "relationship type allowed by both anchors",
+      "glyph transforms remain within declared constraints",
+      "no unintended contour collision or self-intersection",
+      "protected counters and apertures remain valid",
+      "required channel clearance passes calibrated profile",
+      "crossing/occlusion order explicit where applicable",
+      "glyph identity invariants pass"
+    ],
+    "softMetrics": [
+      "anchor-position-error",
+      "direction-alignment",
+      "pair-silhouette",
+      "scale-rhythm",
+      "flow-continuity",
+      "preferred-negative-space-rhythm"
+    ],
+    "ranking": "Use a transparent weighted vector or lexicographic preference profile declared by composition grammar. Always show component metrics; never hide trade-offs behind one uninspectable score.",
+    "rejection": "Any hard-gate failure rejects the candidate; a high soft score cannot override it.",
+    "experimental": "Experimental grammar combinations may be previewed with warnings but cannot be silently promoted to supported."
+  },
+  "graphModel": {
+    "nodes": [
+      "glyph-instance",
+      "semantic-component",
+      "anchor",
+      "extension-component"
+    ],
+    "edges": [
+      "relationship-edge"
+    ],
+    "relationshipEdgeFields": [
+      "relationshipId",
+      "relationshipType",
+      "sourceAnchorId",
+      "targetAnchorId",
+      "sourceInstanceId",
+      "targetInstanceId",
+      "geometryRefs",
+      "transformPatch",
+      "occlusionOrder",
+      "status",
+      "solverVersion",
+      "validationReportRef",
+      "userOverride",
+      "provenance"
+    ],
+    "graphConstraints": [
+      "No dangling references",
+      "No duplicate active relationship for same anchor pair unless explicitly multi-edge capable",
+      "No cycles that imply contradictory layer order",
+      "Shared-stroke edges require shared component references",
+      "Extension bridges remain separate semantic components",
+      "Open separation may be stored as an explicit user choice or inferred layout state but is not a geometric join"
+    ]
+  },
+  "wordSolver": {
+    "phases": [
+      "initialize glyph advances and transforms",
+      "propose adjacent-pair candidates",
+      "select pair relations under local hard constraints",
+      "build full word relationship graph",
+      "check non-adjacent collisions and occlusion cycles",
+      "recompute channels and protected negative spaces across entire word",
+      "evaluate word silhouette, rhythm and legibility metrics",
+      "persist reversible accepted graph and user overrides"
+    ],
+    "globalChecks": [
+      "non-adjacent contour collision",
+      "counter/aperture occlusion by any glyph or extension",
+      "negative-space channel bottlenecks",
+      "conflicting crossing order",
+      "surface-boundary or obstacle collision",
+      "word bounds and mass distribution"
+    ],
+    "localEditPolicy": "When one glyph changes, invalidate relationships incident to that glyph plus global checks affected by its changed bounds/geometry; preserve unrelated accepted edges when still valid and report invalidated edges."
+  },
+  "userInteraction": {
+    "selection": "Select a relationship edge or anchor by stable ID in Three.js viewport.",
+    "preview": "Drag creates an ephemeral candidate preview; it does not mutate canonical state.",
+    "commit": "Release emits one typed relationship command with expected composition revision.",
+    "override": "Manual accepted/rejected candidate decisions are stored as explicit overrides with rationale and are revalidated after dependent edits.",
+    "undoRedo": "Undo/redo replays canonical graph patches through the same validator.",
+    "diagnostics": "Show why candidate passed/failed, affected anchors/components and measured metrics.",
+    "controls": [
+      "relationship type",
+      "anchor selection",
+      "gap/offset",
+      "overlap depth where supported",
+      "front/back order where required"
+    ],
+    "forbidden": [
+      "direct mesh mutation as persisted relationship",
+      "decorative bridge counted as structural join",
+      "silent deletion of user override",
+      "automatic glyph-master mutation to force a join"
+    ]
+  },
+  "operationIds": [
+    "composition.relationship.propose",
+    "composition.relationship.accept",
+    "composition.relationship.reject",
+    "composition.relationship.remove",
+    "composition.relationship.set-type",
+    "composition.relationship.set-transform",
+    "composition.relationship.set-occlusion-order",
+    "composition.relationship.set-user-override",
+    "composition.solver.revalidate-pair",
+    "composition.solver.revalidate-word"
+  ],
+  "diagnostics": [
+    {
+      "code": "REL_ANCHOR_MISSING",
+      "severity": "error",
+      "meaning": "Relationship references an unknown anchor or glyph instance."
+    },
+    {
+      "code": "REL_TYPE_NOT_ALLOWED",
+      "severity": "error",
+      "meaning": "Relationship type is not permitted by both anchors."
+    },
+    {
+      "code": "REL_DIRECTION_INCOMPATIBLE",
+      "severity": "warning",
+      "meaning": "Anchor directions do not meet the selected relationship preference."
+    },
+    {
+      "code": "REL_POSITION_OUT_OF_RANGE",
+      "severity": "warning",
+      "meaning": "Candidate exceeds calibrated anchor position envelope."
+    },
+    {
+      "code": "REL_COUNTER_OCCLUDED",
+      "severity": "error",
+      "meaning": "Candidate obscures a protected counter."
+    },
+    {
+      "code": "REL_APERTURE_CLOSED",
+      "severity": "error",
+      "meaning": "Candidate closes a protected aperture."
+    },
+    {
+      "code": "REL_CHANNEL_COLLAPSED",
+      "severity": "error",
+      "meaning": "Candidate collapses a protected negative-space channel."
+    },
+    {
+      "code": "REL_UNDECLARED_COLLISION",
+      "severity": "error",
+      "meaning": "Candidate introduces an undeclared contour collision."
+    },
+    {
+      "code": "REL_OCCLUSION_ORDER_MISSING",
+      "severity": "error",
+      "meaning": "Crossing/interlock has no explicit valid layer order."
+    },
+    {
+      "code": "REL_OCCLUSION_CYCLE",
+      "severity": "error",
+      "meaning": "Relationship graph contains contradictory layer ordering."
+    },
+    {
+      "code": "REL_IDENTITY_DRIFT",
+      "severity": "error",
+      "meaning": "Relationship requires an invalid glyph identity change."
+    },
+    {
+      "code": "REL_WORD_FLOW_WARNING",
+      "severity": "warning",
+      "meaning": "Pair is valid but reduces preferred whole-word flow."
+    },
+    {
+      "code": "REL_MANUAL_OVERRIDE_STALE",
+      "severity": "warning",
+      "meaning": "A stored user override requires revalidation after a dependency changed."
+    },
+    {
+      "code": "REL_PROVISIONAL_GLYPH",
+      "severity": "warning",
+      "meaning": "Relationship relies on a provisional glyph/anchor and is not production-certified."
+    }
+  ],
+  "rollout": [
+    {
+      "phase": 1,
+      "name": "Safe adjacency",
+      "types": [
+        "open-separation",
+        "near-touch",
+        "terminal-to-terminal"
+      ],
+      "requirements": [
+        "A/B/G/R/S anchor candidates",
+        "pair proof sheets",
+        "local hard checks"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Controlled overlap and bridges",
+      "types": [
+        "bar-continuation",
+        "overlap",
+        "extension-bridge"
+      ],
+      "requirements": [
+        "explicit occlusion order",
+        "extension semantic component",
+        "word-level collision and channel checks"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Advanced structural weaving",
+      "types": [
+        "shared-stroke",
+        "interlock"
+      ],
+      "requirements": [
+        "shared component graph",
+        "planar topology and crossing validation",
+        "human visual review and experimental grammar gate"
+      ]
+    }
+  ],
+  "testFixtures": [
+    {
+      "id": "pair.open-separation",
+      "purpose": "intentional gap persists as explicit relationship"
+    },
+    {
+      "id": "pair.near-touch",
+      "purpose": "near-touch does not create false contour merge"
+    },
+    {
+      "id": "pair.terminal-compatible",
+      "purpose": "compatible terminals produce accepted candidate"
+    },
+    {
+      "id": "pair.direction-reject",
+      "purpose": "incompatible directions are rejected or warned per hard/soft policy"
+    },
+    {
+      "id": "pair.counter-occlusion",
+      "purpose": "candidate that obscures protected counter fails"
+    },
+    {
+      "id": "pair.aperture-closure",
+      "purpose": "candidate that closes G aperture fails"
+    },
+    {
+      "id": "pair.bar-continuation",
+      "purpose": "bar continuation preserves source component identities"
+    },
+    {
+      "id": "pair.extension-bridge",
+      "purpose": "bridge remains separate extension component"
+    },
+    {
+      "id": "pair.overlap-order",
+      "purpose": "overlap requires explicit occlusion order"
+    },
+    {
+      "id": "word.non-adjacent-collision",
+      "purpose": "non-neighbor collision detected globally"
+    },
+    {
+      "id": "word.occlusion-cycle",
+      "purpose": "contradictory layer order fails"
+    },
+    {
+      "id": "word.local-edit-invalidation",
+      "purpose": "editing one glyph invalidates dependent edges, preserves unaffected edges"
+    },
+    {
+      "id": "word.determinism",
+      "purpose": "same inputs and solver version reproduce candidates and diagnostics"
+    },
+    {
+      "id": "word.undo-redo",
+      "purpose": "relationship graph restores exactly after undo/redo"
+    }
+  ],
+  "acceptanceCriteria": [
+    "Pair candidates derive from anchors and context rather than a hardcoded pair table.",
+    "Open separation is represented as a valid intentional choice.",
+    "Relationship type is separate from its geometric realization.",
+    "Every accepted edge has stable IDs and a validation report.",
+    "No decorative bridge is counted as a true glyph join.",
+    "Hard topology and identity constraints override soft composition preferences.",
+    "Pair decisions are rechecked in whole-word context.",
+    "Three.js editing commits through typed commands and canonical graph patches.",
+    "Manual overrides survive save/load and are revalidated after dependencies change.",
+    "Phase 1 works before shared strokes and interlocking are attempted."
+  ]
+}
