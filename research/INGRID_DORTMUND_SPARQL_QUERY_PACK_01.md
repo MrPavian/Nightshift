@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-14  
 **Priority:** P1 — foundational empirical research  
-**Status:** Query templates transcribed from the official INGRID-KG query catalogue and adapted to Dortmund. Templates are not execution results. The live endpoint query did not return through the current research client; no Dortmund counts are claimed.
+**Status:** Official query catalogue and upstream RDF-conversion code inspected. Dortmund templates are adapted from documented examples, but no query has returned result rows. The public endpoint timed out through the available research client; a second direct query attempt was inaccessible. No Dortmund counts are claimed.
 
 ## 1. Why this matters
 
@@ -19,19 +19,27 @@ The query catalogue itself is accessible. A click-through execution of its examp
 The official catalogue and article demonstrate these predicates / classes:
 
 - `grfo:Graffiti`, `grfo:City`
-- `grfo:hasLocation`, `rdfs:label`
-- `grfo:hasRecordingDate`
-- `grfo:hasType`, `grfo:hasLetterStyle`
-- `grfo:hasCarrierMedium`, `grfo:hasTechnology`
-- `grfo:hasColour`, `grfo:hasItem`
-- `grfo:hasGraffitiSprayerCrew`, `grfo:inInventory`
-- `grfo:hasSyleElement` appears with this spelling in the official catalogue examples. It may be a source-schema spelling error; do not silently normalize it to `hasStyleElement`. Verify against the live ontology before relying on it.
+- `grfo:hasLocation`, `rdfs:label` (as used in official query-catalogue example 21)
+- `grfo:hasRecordingDate` (official query-catalogue example 20/21)
+- `grfo:hasType` (official query examples 22/23); `hasLetterStyle` is present in the upstream RDF converter's field translation table, but its query namespace must be verified
+- `grfo:hasCarrierMedium` (official query examples 22/23); `hasTechnology` is present in the upstream converter's translation table, but its query namespace must be verified
+- `grfo:hasColour`, `grfo:hasItem` (official query examples 18, 34/35)
+- `grfo:hasGraffitiSprayerCrew` (official query examples 9/10/17); `inInventory` is present in the converter's translation table, but its query namespace must be verified
+- `grfo:hasSyleElement` appears with this spelling in official catalogue examples 31/32. The upstream converter translation table also maps `stilelement` to `hasSyleElement`. Preserve this spelling unless the live ontology proves otherwise.
 
-The catalogue uses the city resource label (e.g. "Essen") and recording date for geographic/chronological counts. It distinguishes recording date from creation date. For historical scene analysis, a photo's recording date is not automatically the artwork's creation date.
+### Namespace reconciliation warning
+
+The official query catalogue consistently shows `grfo:` for query predicates. However, the upstream `dice-group/Ingrid` repository's `jsonToRdf.py` defines both an ontology namespace (`cvdo = .../ontology/`) and a separate graffiti namespace (`graffiti = .../graffiti/`), then writes many translated annotation fields using `graffiti[k]`. It also binds that namespace as `grfp`. This differs from the catalogue's `grfo:` examples. The live endpoint/dump must decide which namespace is actually present in the current public graph. Do not bulk-run queries with guessed prefix substitutions. Start with a minimal predicate-discovery query or inspect the current RDF dump/ontology, then pin the namespace in the execution log.
+
+The catalogue uses the city resource label (e.g. "Essen") and recording date for geographic/chronological counts. The upstream converter maps the handwritten date field `datierung` to `hasDate`, separately from `aufnahmedatum` → `hasRecordingDate`. This supports a crucial distinction: photo recording date is not automatically the artwork's creator-supplied date.
 
 ## 3. Query templates — adapt and execute in order
 
+**Execution prerequisite:** resolve the `grfo:` vs `grfp:` namespace discrepancy described above. Q01/Q02 are based directly on the official catalogue's city/date pattern; Q03 uses its documented type predicate. Q04/Q05/Q06 use upstream field mappings and remain provisional until predicate namespace confirmation.
+
 ### Q01 — Dortmund total corpus count
+
+Adapted from official catalogue query 21 (city + recording-date filter), with the date restriction removed. The `a grfo:Graffiti` constraint is intentionally omitted to match the catalogue's demonstrated pattern.
 
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
@@ -39,14 +47,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT (COUNT(DISTINCT ?g) AS ?count)
 WHERE {
-  ?g a grfo:Graffiti ;
-     grfo:hasLocation ?city .
+  ?g grfo:hasLocation ?city .
   ?city a grfo:City ;
         rdfs:label "Dortmund" .
 }
 ```
 
 ### Q02 — Dortmund records by recording year
+
+Adapted from official catalogue query 20/21. The city filter is the same documented pattern.
 
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
@@ -68,6 +77,8 @@ ORDER BY ?year
 
 ### Q03 — Dortmund records by graffiti type
 
+The official catalogue demonstrates `hasType` as a literal-valued field (query examples 22/23), so count the annotation labels rather than assuming a linked class resource.
+
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -85,6 +96,8 @@ ORDER BY DESC(?count)
 ```
 
 ### Q04 — Dortmund records by lettering-style label
+
+`hasLetterStyle` is present in the upstream converter translation table (`buchstabenstil` → `hasLetterStyle`), but the official query catalogue does not show a direct example. Treat this as provisional until the live namespace is confirmed.
 
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
@@ -104,6 +117,8 @@ ORDER BY DESC(?count)
 
 ### Q05 — Dortmund records by technique and carrier medium
 
+`hasCarrierMedium` is demonstrated in official catalogue examples 22/23. `hasTechnology` is in the upstream converter mapping; its namespace needs live confirmation.
+
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -122,6 +137,8 @@ ORDER BY DESC(?count)
 ```
 
 ### Q06 — Stratified record sample for manual visual inspection
+
+Discovery template only. Confirm each predicate and its namespace against the live graph before execution; in particular `inInventory` is not demonstrated as a catalogue query.
 
 ```sparql
 PREFIX grfo: <https://graffiti.data.dice-research.org/ontology/>
@@ -164,16 +181,26 @@ Q06 is a discovery sample, not a representative sample. Once Q01–Q05 establish
 - Which visual elements recur across multiple writers and periods, and which are individual signatures that must not be generalized?
 - What proportion of records has enough deep annotation to support a visual-style comparison?
 
-## 6. Execution log — not yet run
+## 6. Execution log — access blocked; no query results
+
+| Attempt | Route | Outcome |
+|---|---|---|
+| 1 | Official catalogue endpoint link | Timeout fetching SPARQL endpoint |
+| 2 | Direct SPARQL GET with minimal COUNT query | Endpoint URL not accessible through research client |
+| 3 | Local runtime direct request | DNS resolution failure in this runtime |
+
+These failures do not prove endpoint downtime. The official query catalogue remains accessible. A browser/EasyDB session or a separate machine with endpoint access is needed to execute the queries. The namespace discrepancy from the upstream converter must be resolved before trusting query results.
+
+
 
 | Query | Result | Status |
 |---|---:|---|
-| Q01 Dortmund total | — | Pending live endpoint / EasyDB |
-| Q02 year distribution | — | Pending |
-| Q03 type distribution | — | Pending |
-| Q04 lettering-style distribution | — | Pending |
-| Q05 technique × medium | — | Pending |
-| Q06 sample | — | Pending |
+| Q01 Dortmund total | — | Blocked: endpoint access + namespace verification |
+| Q02 year distribution | — | Blocked: endpoint access + namespace verification |
+| Q03 type distribution | — | Blocked: endpoint access + namespace verification |
+| Q04 lettering-style distribution | — | Blocked: endpoint access + namespace verification |
+| Q05 technique × medium | — | Blocked: endpoint access + namespace verification |
+| Q06 sample | — | Blocked: endpoint access + namespace verification |
 
 Do not fill this table from estimates, article-wide corpus totals or search-result counts.
 
@@ -182,5 +209,7 @@ Do not fill this table from estimates, article-wide corpus totals or search-resu
 - INGRID-KG official SPARQL query catalogue: https://dice-group.github.io/ingrid.github.io/
 - IngridKG: A FAIR Knowledge Graph of Graffiti, *Scientific Data* (2023): https://www.nature.com/articles/s41597-023-02199-8
 - Public SPARQL endpoint: https://graffiti.data.dice-research.org/sparql/
+- Official query catalogue (query 20–23 and 31–32): https://dice-group.github.io/ingrid.github.io/
+- Upstream RDF converter (`jsonToRdf.py`, field translation and namespace mapping): https://github.com/dice-group/Ingrid/blob/4e776365d2bf30181cf98ffd6d3d1a36b060973f/jsonToRdf.py
 
 **Evidence grade:** A for documented query syntax and predicates shown in the official catalogue / article; no Dortmund execution evidence yet.
