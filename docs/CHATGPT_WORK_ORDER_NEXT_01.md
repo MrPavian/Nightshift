@@ -311,7 +311,7 @@ The archive pilot is a draft, not approved publication content.
 
 - [x] Located a current used-VHS listing for *Rolling Thunder 001* with seller-supplied MASmedia / SHARK TV metadata and cross-checked its description against the 1997 *BOMBER* review.
 - [x] Recorded *King of the Line* as a distinct two-CD-ROM interactive archive and captured its secondary ISBN lead.
-- [x] Recovered the ILOVEGRAFFITI archive reference to *Graffiti Dortmund 1994* and historical Google Video availability; no surviving copy or original video ID is confirmed.
+- [x] Recovered the ILOVEGRAFFITI post permalink and exact historical Google Video docid for *Graffiti Dortmund 1994*; the old Google Video URL currently returns HTTP 404, and no surviving copy is confirmed.
 - [x] Added a source dossier, VR-013, research index and changelog entry; rights and inspection limits are explicit.
 - [ ] Inspect a legitimate VHS/CD-ROM copy and verify credits, dates, locations and media integrity; obtain permission before digitization or public reuse.
 - [ ] Recover the 1994 film's original post permalink / Google Video ID through archive metadata; do not conflate it with other Dortmund documentary uploads.
