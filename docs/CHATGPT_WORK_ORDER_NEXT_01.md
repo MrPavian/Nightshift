@@ -238,3 +238,15 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a source-access and visual-analysis plan that separates tag, piece, train and later compositional evidence.
 - [x] Added VR-009 to the visual-reference database; all images remain reference-only / rights unresolved.
 - [ ] Inspect individual pages and captions, verify dates/locations and seek item-level permissions before using images or promoting style rules.
+
+
+
+## W02.18 — Dortmund tagging archive and bibliographic verification (2026-11-14)
+
+- [x] Verified *ALL SURFACE* against the Deutsche Nationalbibliografie (ISBN 978-3-00-071073-5; DNB records 238 pages) and institutional SHMH event metadata (244 pages; edition of 500).
+- [x] Recorded the page-count discrepancy explicitly; no unsupported explanation is imposed.
+- [x] Strengthened *Da kukse wa* 2020 reprint provenance through the official Dortmunder U exhibition record and retained the uncollated retailer claim as attributed.
+- [x] Clarified the evidence boundary around the Amsterdam influence account and TUF membership; no complete crew roster inferred.
+- [x] Added a bibliography/provenance dossier and updated VR-009, research index and changelog.
+- [ ] Physical book inspection, page-level captions, item-level dating/locations, practitioner review and image permissions remain open.
+- [ ] Next: identify accessible first-person accounts from the named Dortmund writers and cross-check Amsterdam travel/influence claims without relying on retailer copy.
