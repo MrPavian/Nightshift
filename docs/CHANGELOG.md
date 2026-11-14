@@ -197,3 +197,11 @@
 - Added relationship solver and procedural generator integration readiness with safe relationship phases and deterministic four-concept acceptance.
 - Added machine-readable alphabet authoring contract and Claude ticket pack 0.7B/0.8A.
 - Marked specification work packages W02.1–W02.5 complete in the ChatGPT work order. No additional glyph geometry, production implementation or visual approval is claimed.
+
+
+## 2026-11-14 — BLACKBOOK ARCHIVE information architecture and pilot
+
+- Added archive audiences, multi-axis taxonomy, navigation, entry layout, learning paths, capability-based generator links and UX brief.
+- Added six source-linked editorial pilot drafts: handstyle, bubble lettering, Wildstyle, wholecar, aerosol caps and letter anatomy.
+- Added Claude implementation tickets for content schema/pipeline, search/navigation, visual learning, generator bridge and ingame integration.
+- Pilot content remains draft; claim-level source verification and image-rights review are explicitly outstanding.
