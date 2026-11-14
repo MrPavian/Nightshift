@@ -239,3 +239,8 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 - [Style Grammar — First Supported Slice 01](STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md) — truthful initial grammar capabilities, resolver behavior and proof requirements.
 - [Relationship Solver and Generator — Integration Readiness 01](SOLVER_GENERATOR_INTEGRATION_READINESS_01.md) — safe relationship rollout and deterministic generator vertical slice.
 - [Alphabet Authoring Plan Contract](../contracts/alphabet-authoring-plan.v1.json) — machine-readable waves, maturity and required record fields.
+
+
+## BLACKBOOK ARCHIVE pilot
+
+- [BLACKBOOK ARCHIVE Content Pilot 01](BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md) — six draft entries demonstrating the shared editorial schema; not yet publication-approved.
