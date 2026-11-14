@@ -55,6 +55,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Aerosol Technology, Caps and Paint Practice](AEROSOL_TECHNOLOGY_CAPS_AND_PAINT_PRACTICE.md)
 - [Letter-Pair Connections and Word Flow](LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md)
 - [Handstyle, Gesture and Motor Dynamics](HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md)
+- [Alphabet Test Matrix and Glyph Variants](ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md)
 
 ## Status
 
@@ -82,3 +83,7 @@ Added five linked dossiers: PHASE 2 and bubble lettering; TRACY 168, Wild Style 
 ### 2026-11 — Synthesis 01
 
 Added a cross-linked synthesis of early New York writing, oral-history networks, tag/throw-up/piece distinctions, subway-car formats, selected style terminology, the subway as communication infrastructure, and the transition into art institutions. It explicitly distinguishes source claims from design inferences and records open verification tasks.
+
+### 2026-11 — Alphabet structure and glyph variants
+
+Added a test-matrix dossier for all 26 Latin letters, grouping structural challenges and defining neutral per-letter checks, synthetic test words, glyph/word acceptance criteria and an illustrative variant data model. It draws on computational glyph segmentation and movement-centric generation research while explicitly labelling the matrix and implementation rules as NIGHTSHIFT design decisions, not historical graffiti taxonomy.
