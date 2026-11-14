@@ -516,3 +516,8 @@ Inspected the official INGRID-KG SPARQL query catalogue and upstream RDF-convers
 ## National German scene comparison — Munich, Stuttgart, Berlin / GDR and Hamburg
 
 - [German Writing Scenes — Munich, Stuttgart, Berlin / East Germany and Hamburg 01](GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md) — source-graded first synthesis of early scene chronologies, train culture, regional networks, Berlin/GDR distinctions, Hamburg's publication archive and neutral editor research questions.
+
+
+### Hamburg and Berlin deep research update
+
+The national scene dossier now contains a source-attributed deep pass on Hamburg's 1980s/1990s chronology and Simplestyle / DAIM's 3D development, the Hamburg museum archive and mapped historic locations, Berlin's divided-city chronology, Berlin's writing magazines (SPRAY CITY, OVERKILL, BACKJUMPS, DECADES), and a documented Dortmund–Berlin trainwriting connection attributed to SHARK in 1987. See [German Writing Scenes — Munich, Stuttgart, Berlin / East Germany and Hamburg 01](GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md), sections 9–10.
