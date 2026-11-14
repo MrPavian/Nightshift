@@ -1,0 +1,116 @@
+{
+  "contractId": "nightshift.glyph-construction-pipeline",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "canonicalAuthority": [
+    "semantic-construction-graph",
+    "editable-vector-geometry",
+    "metrics",
+    "anchors",
+    "constraints",
+    "provenance",
+    "maturity"
+  ],
+  "pipeline": [
+    "registry-definition-resolution",
+    "semantic-construction-graph",
+    "construction-plan-registered-operations",
+    "editable-vector-geometry",
+    "topology-identity-validation",
+    "metrics-anchor-resolution",
+    "glyph-instance-assembly",
+    "threejs-scene-adaptation",
+    "typed-command-interaction",
+    "derived-outputs-persistence"
+  ],
+  "geometry": {
+    "segments": [
+      "line",
+      "quadratic-bezier",
+      "cubic-bezier"
+    ],
+    "canonicalNot": [
+      "svg-path-string-only",
+      "bitmap",
+      "threejs-mesh",
+      "font-character"
+    ],
+    "negativeSpace": [
+      "counter",
+      "aperture",
+      "channel"
+    ],
+    "noSilentRepair": true
+  },
+  "threejs": {
+    "role": "integrated-live-editor-surface-and-derived-renderer",
+    "stableSemanticIdsRequired": true,
+    "meshMutationCanonical": false,
+    "previewCommitBoundary": "typed-command-with-expected-revision",
+    "rejectedCommandRestoresCommittedScene": true
+  },
+  "firstSlice": {
+    "glyphs": [
+      "latin.upper.A",
+      "latin.upper.B",
+      "latin.upper.G",
+      "latin.upper.R",
+      "latin.upper.S"
+    ],
+    "maturity": "authored-contour",
+    "slice1": "exact-legacy-snapshot-import-and-semantic-topology-declaration",
+    "slice2Operations": [
+      "A.stance",
+      "A.crossbar",
+      "B.bowl-balance",
+      "B.waist",
+      "G.aperture",
+      "G.bar",
+      "R.leg-angle",
+      "R.leg-length",
+      "S.mass",
+      "S.neck"
+    ],
+    "productionBoundsRequireApprovedCalibration": true
+  },
+  "stages": {
+    "hardGate": [
+      "schema-reference",
+      "curve-normalization",
+      "degeneracy",
+      "intersections",
+      "planar-topology",
+      "negative-space",
+      "clearance",
+      "anchors",
+      "identity",
+      "render-consistency"
+    ],
+    "failureAtomic": true
+  },
+  "tests": [
+    "schema",
+    "semantic",
+    "geometry",
+    "negative-space",
+    "anchors",
+    "commands",
+    "renderer",
+    "interaction",
+    "persistence",
+    "proof-sheets"
+  ],
+  "acceptance": [
+    "canonical-semantic-vector-model",
+    "threejs-stable-id-adapter",
+    "typed-command-only-edits",
+    "negative-space-type-distinction",
+    "glyph-specific-identity-invariants",
+    "atomic-failure",
+    "undo-redo-equivalence",
+    "svg-threejs-consistency",
+    "calibrated-parameter-bounds-only",
+    "maturity-transparency",
+    "deterministic-persistence"
+  ]
+}
