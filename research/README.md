@@ -244,3 +244,14 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 ## BLACKBOOK ARCHIVE pilot
 
 - [BLACKBOOK ARCHIVE Content Pilot 01](BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md) — six draft entries demonstrating the shared editorial schema; not yet publication-approved.
+
+
+## BLACKBOOK ARCHIVE — source deepening and content expansion
+
+- [NYC Graffiti Source Register 01](SOURCE_REGISTER_NYC_GRAFFITI_01.md) — six institutional/scholarly records with inspected scope, limitations, access date and claim-level cautions.
+- [NYC Writing History Evidence Map 01](NYC_WRITING_HISTORY_EVIDENCE_MAP_01.md) — no-single-origin framing, parallel cultural/policy timelines, blackbook preservation and explicit design implications.
+- [BLACKBOOK ARCHIVE Content Expansion 01](BLACKBOOK_ARCHIVE_CONTENT_EXPANSION_01.md) — six additional draft entries on writing, blackbooks, Clean Train, sequential photography, preservation and institutional recognition.
+- [BLACKBOOK ARCHIVE Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) — content, source/rights, search, navigation and generator-bridge regression cases; design only, not executed.
+
+The Smithsonian Chalfant record was available through search-indexed institutional metadata but direct retrieval failed on 2026-11-14. Its related content remains provisional pending direct repository verification. The MCNY educator guide's image/text rights restrictions are not permission for product reuse.
+
