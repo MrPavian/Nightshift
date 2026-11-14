@@ -50,6 +50,8 @@ Read and follow:
 - `contracts/az-style-grammar-application.v1.json`
 - `research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md`
 - `contracts/procedural-variant-generator.v1.json`
+- `research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md`
+- `contracts/visual-calibration.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -104,6 +106,11 @@ Use `research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md` and `contracts/az-styl
 ## 3.8 Procedural variant generator core
 
 Follow `research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md` and `contracts/procedural-variant-generator.v1.json`. Treat generation as deterministic constrained candidate search, not random distortion. Use a versioned seeded PRNG with isolated named streams; never use ambient randomness. Build glyph-specific operation plans from the A–Z matrix and registered operation contracts. Validate glyphs, relationships and whole-word geometry before candidate ranking. Keep quality as separate dimensions with hard gates; do not use an opaque single score. D-006 requires four structurally distinct concepts, but do not force four by duplicating outputs or silently relaxing thresholds: if the candidate pool cannot meet calibrated gates, report generation exhaustion. Diversity weights, thresholds and parameter ranges require reviewed calibration data.
+
+
+## 3.9 Visual calibration and comparative evaluation
+
+Follow `research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md` and `contracts/visual-calibration.v1.json`, alongside—not instead of—the existing `GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`. Calibrate each parameter and geometry threshold at its narrowest defensible scope. Use controlled, reproducible comparison plates with fixed render conditions and declared factors. Preserve individual human ratings and disagreement; identity/topology score 0 requires explicit defect review. Production parameter bounds and thresholds require approved calibration records with evidence and boundary regression fixtures. Do not expose invented numeric ranges or auto-approve from score averages.
 
 ## 4. Current-state facts
 
