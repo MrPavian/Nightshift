@@ -239,3 +239,14 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** unresolved. A historical low-resolution Issuu preview does not establish uploader authorization or reuse permission.
 - **Caution:** 80/160-page discrepancy unresolved; publisher/retailer descriptions are not image inspection; individual artist books cannot define a city-wide style.
 - **Evidence:** B for existence/ISBN and publisher metadata; C for page extents conflict and advertised scope; no page-level visual claims.
+
+
+## VR-015 — *Da kukse wa* (1987) and 2020 reprint access
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Original publication:** *Da kukse wa — Dortmunder Graffiti* (1987), texts by Marianne Brentzel, photographs by Hubert Moormann, interviews with CHINTZ, SHARK, CHANA and ZODIAK. The author's official page confirms publication year, roles and that the original edition is out of print.
+- **2020 reprint:** Mr. Graffiti lists a German A4 landscape second edition, 36 pages, at €75 and “in stock” at time checked (2026-11-14). The retailer says it was reprinted for the *I WAS HERE* exhibition and is identical except for the preface. The official Dortmunder U exhibition page independently confirms the online brochure and reprint provenance and thanks the authors for enabling it.
+- **Records:** https://www.mariannebrentzel.de/da-kukse-wa.html ; https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html ; https://dortmunder-u.de/i-was-here-360/ ; https://www.mrgraffiti.nl/product/da-kukse-wa-dortmunder-graffiti-2nd-edition/ ; https://ilovegraffiti.de/blog/2015/03/02/buch-da-kukse-wa-graffiti-in-dortmund-1987/
+- **Value:** legitimate-copy route for page-level analysis of early Dortmund writing and a contemporary glossary/social-context source.
+- **Rights:** purchase/viewing does not grant reproduction or derivative-use rights. No images copied; obtain author/photographer/rightsholder permission for public use.
+- **Caution:** 36 pages and “identical except preface” are retailer claims, not yet collated; author excerpt is not the full book; the glossary is a historical vocabulary snapshot, not universal taxonomy.
+- **Evidence:** A for original publication and institutional reprint provenance; B for retailer-supplied edition extent/condition; no page-level visual analysis yet.
