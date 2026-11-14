@@ -442,3 +442,10 @@ Added a provenance-aware access dossier for the 1997-reviewed *Rolling Thunder 0
 ### 2026-11 — Dortmund publication bibliography and visual corpus
 
 Audited the 1996 *Graffiti Dortmund* publication trail and identified an unresolved 80-page (2009 ILOVEGRAFFITI description) versus 160-page (ISBN retail catalogue) discrepancy. Distinguished it from *Da kukse wa* (1987), *IRON CITY* (2002), the MASON retrospective (2020) and *RIO — The Process of Writing* (2023). No page-level visual analysis or image rights are claimed.
+
+
+- [Da kukse wa (1987) — 2020 Reprint, Access and Bibliographic Verification (W02.26)](DORTMUND_DA_KUKSE_WA_2020_REPRINT_ACCESS_01.md)
+
+### 2026-11 — *Da kukse wa* reprint and legitimate visual access
+
+Verified the original 1987 publication against Marianne Brentzel's author page and the 2020 reprint's exhibition provenance against the official Dortmunder U *I WAS HERE* page. A specialist retailer lists a 36-page German A4 landscape second edition, currently €75/in stock at time checked; page count and “identical except preface” remain seller-supplied pending collation. This provides a practical legitimate-copy route for future page-level research; no images were copied.
