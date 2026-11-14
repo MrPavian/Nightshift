@@ -44,6 +44,8 @@ Read and follow:
 - `contracts/editor-interaction.v1.json`
 - `research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md`
 - `contracts/creative-workflow.v1.json`
+- `research/PERSONAL_STYLE_ENGINE_01.md`
+- `contracts/personal-style-engine.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -83,6 +85,11 @@ Follow `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md` and `contracts/editor-
 ## 3.5 End-to-end creative workflow
 
 Follow `research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md` and `contracts/creative-workflow.v1.json`. Generate exactly four deterministic, structurally distinct concepts; palette/effect-only variation does not satisfy D-006. Keep generated concepts immutable and branch the selected concept for editing. Support isolated glyph refinement, contextual relationship suggestions and whole-word revalidation. Assistance is optional (Off/Suggest/Preview); no silent auto-apply may overwrite a user decision. A personal style library stores versioned reusable recipes and resolved parameter snapshots, not flattened artwork. Keep rendering preferences separate from construction grammar. Do not clone named writers' signatures or exact protected works. Implement in the staged sequence in the workflow specification and report each acceptance fixture independently.
+
+
+## 3.6 Personal Style Engine and reusable recipes
+
+Follow `research/PERSONAL_STYLE_ENGINE_01.md` and `contracts/personal-style-engine.v1.json`. A style recipe is a versioned set of construction/composition rules and preferences, not a visual filter or flattened artwork. Preserve independent grammar axes and registered parameter ownership. Resolve values deterministically using the documented precedence stack; hard glyph identity and topology invariants cannot be overridden. Recipe merge creates a new draft with a conflict report; numeric interpolation is allowed only where the parameter registry explicitly supports it. Applying a recipe creates a preview branch and requires user acceptance. Capture from artwork is explicit and reviewable; no hidden preference learning or silent recipe mutation. Store recipe version, provenance and resolved values in project snapshots. Do not imitate named writers' signatures or exact protected works.
 
 ## 4. Current-state facts
 
