@@ -122,6 +122,8 @@ Added a source-led dossier on the NYHC/graffiti overlap, including HYPE/Mackie J
 
 - [Martha Cooper Library — OPAC Record Check 01](MCL_OPAC_RECORD_CHECK_01.md)
 
+- [German Graffiti Periodicals — Hamburg Network & Stylefile Continuity 01](GERMAN_GRAFFITI_PERIODICALS_HAMBURG_STYLEFILE_01.md)
+
 ## Status
 
 Initial source-backed research pass. This is a living research base, not a definitive or exhaustive history. Expand entries only with traceable sources and preserve disagreements.
