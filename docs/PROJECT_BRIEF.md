@@ -105,3 +105,11 @@ A successful NIGHTSHIFT concept should:
 - Remain editable letter by letter.
 - Export faithfully to SVG.
 - Be reproducible from its saved project data and seed.
+
+
+## Updated implementation ownership and technical direction
+
+The production generator will be implemented with Claude, using Three.js as an integrated part of the actual generator workflow. Build 0.6 remains a legacy/reference prototype and should not dictate the final architecture. The next work from this research/specification track is to deliver implementation-ready requirements, glyph definitions, geometry contracts, interaction behavior and regression criteria for Claude.
+
+This does not prohibit HTML as an application shell or JSON as a portable project-data format. It means the generator itself must not be reduced to a standalone HTML/JSON mock with Three.js added only as a preview. Three.js should support the real interactive composition and spatial presentation workflow. Editable vector geometry and SVG export/interoperability remain required unless explicitly revised.
+
