@@ -344,3 +344,11 @@
 - Left serial-title holdings unconfirmed pending exact-title/issue searches against a functioning catalogue.
 
 - Follow-up exact-title search identified the MCL holding *Stylefile — blackbook — sessions* (record 0003185, 2003); classified as a book, not a *Stylefile Magazin* issue.
+
+
+## Research deepening — Hamburg periodical network and Stylefile continuity
+
+- Added a source-graded dossier linking Daily Bombs, Dosenspuk, Beastie Boyz and Backspin through editor/writer biographies published by EINE STADT WIRD BUNT.
+- Recorded Daily Bombs #13 as a late-2025 issue reported in January 2026, without implying continuous publication since 1992.
+- Verified Stylefile #61 (2025 COMEBACKfile) and #62 (ROBOTfile, release 2026-11-01) against official publisher product pages; documented the publisher's own account of the 2025 trademark restart.
+- Kept retrospective zine catalogues at discovery/secondary evidence level and added issue-level verification and image-rights tasks.
