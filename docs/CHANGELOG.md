@@ -114,3 +114,9 @@
 - Clarified that Build 0.6 is a reference prototype, not the final architecture; do not build another HTML/JSON-only generator as the end product.
 - Retained editable vector geometry and SVG interoperability, with HTML as a possible shell and JSON as a possible project-data format.
 - Updated contributor guidance, architecture, project brief, roadmap and AI handoff so future implementation briefs align with this direction.
+
+
+## Autonomous research workflow
+
+- Added a persistent autonomous work prompt for the ChatGPT research/specification role, defining uninterrupted deliverables through the A–Z glyph contract, system responsibility map, Claude implementation brief and review package.
+- Linked the work prompt from the AI handoff so future sessions can resume the same workflow without re-establishing instructions.
