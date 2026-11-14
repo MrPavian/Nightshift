@@ -28,6 +28,7 @@ Read and follow:
 - `research/LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md`
 - `research/HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md`
 - `research/STYLE_GRAMMAR_SPECIFICATIONS_01.md`
+- `research/STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
