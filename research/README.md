@@ -291,3 +291,9 @@ The Smithsonian Chalfant record was available through search-indexed institution
 
 - [German Graffiti Publications & Archive Pathways 01](GERMAN_PUBLICATION_ARCHIVES_BIBLIOGRAPHY_01.md) — source-graded bibliography for *EINE STADT WIRD BUNT*, DECADES Vol. 1, Stylefile issue records and Martha Cooper Library; includes explicit limits on unverified holdings and image rights.
 - [BLACKBOOK ARCHIVE Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) — ten publication/archive provenance and metadata regression fixtures.
+
+
+
+## Hamburg scene publications
+
+- [Hamburg Graffiti & Hip-Hop Magazines — Bibliography 01](HAMBURG_GRAFFITI_MAGAZINES_BIBLIOGRAPHY_01.md) — source-graded records for Daily Bombs, Dosenspuk, Beastie Boyz, BACKSPIN, Sketches and Rock 'n' Roller; preserves unresolved issue dates and publication gaps.
