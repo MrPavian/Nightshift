@@ -112,3 +112,8 @@ The generator should represent these as independent, source-backed dimensions (c
 3. Check the full 2025 Lintzen study for Dortmund-specific findings and its exact sampling / fieldwork limits.
 4. Pursue the dated interviews documented by Hinz only through public, attributable sources or direct permission.
 5. Compare the chapter's MASON discussion with *The Essence of Writing 1986–2019* (2020) and *ALL SURFACE*; keep artist-specific and regional conclusions distinct.
+
+
+## Documentary access update — 2026-11-14
+
+The original ARTE page cited in the chapter currently returns an unavailable response, but two English-subtitled uploads of the documentary series are indexed through Spray Daily: [Dortmund, Berlin & Frankfurt](https://www.spraydaily.com/the-rise-of-graffiti-writing-dortmund-berlin-frankfurt/) and [Writing on Trains: Dortmund & Frankfurt](https://www.spraydaily.com/the-rise-of-graffiti-writing-writing-on-trains-dortmund-frankfurt-english-subtitles/). See [Dortmund Oral History — Documentary Episode Access Map 01](DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md). The videos have not yet been watched or transcribed in this pass.
