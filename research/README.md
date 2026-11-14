@@ -386,3 +386,10 @@ Added a source-graded Dortmund / Ruhrgebiet dossier using the KIT dissertation, 
 ### 2026-11 — Dortmund visual corpus and source access
 
 Added a rights-aware visual source map separating *Da kukse wa*'s piece / wall documentation from *ALL SURFACE*'s 1980s/1990s tag and handstyle corpus. Recorded the linked digital flipbook and exhibition access limitation, publication metadata, historical cross-checks and a staged visual-analysis protocol.
+
+
+- [Dortmund Tagging Archive — Bibliographic Verification and Research Implications 01](DORTMUND_TAGGING_ARCHIVE_AND_BIBLIOGRAPHY_01.md)
+
+### 2026-11 — Dortmund tagging archive and bibliography
+
+Added a source-graded bibliography dossier using the Deutsche Nationalbibliografie and the Stiftung Historische Museen Hamburg event record. Recorded the *ALL SURFACE* page-count discrepancy (238 DNB vs. 244 retail/event), strengthened *Da kukse wa* reprint provenance through the official Dortmunder U exhibition page, and clarified the limits of Amsterdam-influence and TUF membership claims.
