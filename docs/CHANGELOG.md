@@ -146,3 +146,13 @@
 
 - Added the A–Z review package with maturity inventory, pair/word-context matrices, style-family proof requirements, automated checks and human review criteria.
 - Added the phased Claude implementation brief for Build 0.7, including canonical model, topology, integrated Three.js editor, composition solver, SVG/persistence, test coverage and explicit release gates.
+
+
+## Research deepening — initial style grammar specifications
+
+- Added a four-family style grammar dossier for Bubble/Throw-up, Blockbuster, Straight Letter and Wildstyle Study.
+- Grounded the terminology and structural observations in Gottlieb's expert-classification research, Macdonald's ethnography, Joe Austin's historical study and DAIM's practitioner interview.
+- Explicitly documented disagreement over letterform versus piece-style categories.
+- Separated letterform grammar, composition grammar, practice/form context, surface and rendering treatment in the product model.
+- Added construction parameters, constraints, failure states and acceptance tests while marking implementation rules as NIGHTSHIFT design inference.
+- Updated the central style taxonomy and Claude handoff references.
