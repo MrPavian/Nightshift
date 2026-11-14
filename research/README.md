@@ -67,6 +67,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable relationship solver contract v1](../contracts/relationship-solver.v1.json)
 - [Three.js Editor Interaction and Progressive Creative UX 01](THREEJS_EDITOR_INTERACTION_AND_UX_01.md)
 - [Editor Workspace Layout 01](EDITOR_WORKSPACE_LAYOUT_01.md)
+- [Creative Workflow and Style Authoring 01](CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md)
+- [Machine-readable creative workflow contract v1](../contracts/creative-workflow.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -166,3 +168,8 @@ Added a staged interaction model that keeps quick lettering approachable while e
 ### 2026-11 — Workspace layout and architecture alignment
 
 Added the responsive workspace hierarchy for the live Three.js editor, including the dominant viewport, stable tool rail, contextual inspector, history strip, Compact/Full presentation and tablet behavior. Audited and clarified the architecture so the canonical semantic/vector project model—not an SVG file or Three.js mesh—is authoritative, while Three.js remains the actual interactive editor and SVG remains interchange/export. Added D-010 to explicitly qualify the older D-003 wording. These are specifications, not implemented functionality.
+
+
+### 2026-11 — End-to-end creative workflow
+
+Added a workflow specification for four structurally distinct concepts, deterministic comparison and branching, per-glyph refinement, optional assistance, relationship authoring and a versioned personal style-recipe library. Added a machine-readable contract for generation, branching, assistance and persistence. This is a design specification, not an implemented feature; concept diversity must be structural rather than cosmetic, and user edits must remain authoritative.
