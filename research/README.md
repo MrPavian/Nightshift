@@ -73,6 +73,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable personal style engine contract v1](../contracts/personal-style-engine.v1.json)
 - [A–Z Style Grammar Application Matrix 01](A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md)
 - [Machine-readable A–Z style grammar application contract v1](../contracts/az-style-grammar-application.v1.json)
+- [Procedural Variant Generator Core 01](PROCEDURAL_VARIANT_GENERATOR_CORE_01.md)
+- [Machine-readable procedural variant generator contract v1](../contracts/procedural-variant-generator.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -187,3 +189,8 @@ Added a versioned recipe model for original user-authored styles, with independe
 ### 2026-11 — A–Z style grammar application
 
 Added a per-glyph matrix mapping the existing neutral A–Z structural checklist to candidate Bubble, Straight/Block and Wildstyle composition behavior. Added a machine-readable contract for the glyph-specific resolver. The document preserves the distinction between letterform, composition, practice/context and rendering axes, and explicitly marks candidate behaviors as design inference pending authored geometry and visual review.
+
+
+### 2026-11 — Deterministic procedural variant generation
+
+Added the generator-core specification for immutable generation requests, glyph-specific operation planning, named seeded random streams, validated candidate construction, multi-dimensional quality diagnostics, structural feature signatures, four-way diversity selection, search exhaustion and reproducibility. Added a machine-readable contract. Numerical weights, diversity thresholds and parameter bounds remain uncalibrated until supported by reviewed examples; the engine must not silently relax constraints to force four concepts.
