@@ -39,6 +39,8 @@ Read and follow:
 - `contracts/glyph-geometry-validation.v1.json`
 - `research/RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md`
 - `contracts/relationship-solver.v1.json`
+- `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md`
+- `contracts/editor-interaction.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -69,6 +71,10 @@ Use `contracts/relationship-solver.v1.json` as the machine-readable relationship
 Implement in stages: Phase 1 open separation, near-touch and terminal-to-terminal; Phase 2 bar continuation, overlap and separate extension bridges; Phase 3 shared strokes and interlocks only after topology validation and visual review. A decorative bridge is never a structural join. Overlap/interlock requires explicit occlusion order. Every accepted edge has stable IDs and a validation report.
 
 Pair candidates must pass local hard gates and then be rechecked in whole-word context for non-adjacent collisions, counter/aperture occlusion, channel bottlenecks and contradictory layer order. Keep hard topology/identity checks separate from soft rhythm/flow/silhouette metrics. Three.js interaction previews candidates but commits only typed relationship commands to the canonical composition graph. Persist user overrides and revalidate them after dependent edits.
+
+## 3.4 Progressive editor interaction and UX
+
+Follow `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md` and `contracts/editor-interaction.v1.json`. The product requirement is easy entry with an open-ended creative ceiling: do not bury beginners in controls, but do not arbitrarily gate advanced authoring. Implement Quick lettering first, then contextual Shape and Connect modes, and finally precision/advanced authoring. Blackbook, Studio and Wall are views over one canonical project, not separate editors. Selection, handles, diagnostics, history and scene objects must resolve to stable canonical IDs. A drag is a preview followed by one typed, atomically validated command; rejected edits restore the committed scene. Undo/redo replays canonical commands. Camera and overlay changes do not dirty glyph geometry. Essential workflows must work without hover and have touch-friendly alternatives. The interaction contract contains the required event envelopes and 14 test fixtures. These are specifications, not implemented features.
 
 ## 4. Current-state facts
 
