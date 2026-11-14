@@ -375,3 +375,42 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Confirm item-level rights and original contributor conditions before retaining or reusing images; free research access is not commercial clearance.
 - [ ] Compare a stratified sample with *ALL SURFACE*, *Da kukse wa*, *IRON CITY* and first-person / period sources.
 - [ ] Next: inspect the live INGRID interface and produce a Dortmund record-count / metadata coverage report before drawing visual or stylistic conclusions.
+
+
+## Standing research mandate — Graffiti literacy as editor development (added 2026-11-14)
+
+NIGHTSHIFT research is also a continuous learning programme on writing culture, style development and graffiti history. The goal is not merely to collect references or fill the editor with presets. Research should build a progressively deeper, evidence-led understanding that improves the editor's visual grammar, educational value and historical credibility.
+
+### Learning tracks
+
+1. **Historical development:** chronology, scene formation, local and transnational influence, technological and social change.
+2. **Style literacy:** tags / handstyles, throw-ups, blockbusters, straight letters, wildstyle, 3D, characters, backgrounds and composition; record regional and period variation.
+3. **Letterform and gesture:** stroke order, rhythm, slant, compression, spacing, continuity, terminals, structure, counters and inter-letter relationships.
+4. **Materials and surfaces:** markers, aerosol, caps, paint behavior, walls, paper, trains and other supports; distinguish documented technique from visual inference.
+5. **Culture and infrastructure:** crews, meeting places, blackbooks, zines, photography, film, music, travel, institutions and commercial transitions.
+6. **Critical source reading:** practitioner testimony, scholarly interpretation, period journalism, archives, commercial descriptions and catalogues must remain distinguishable, with disagreements preserved.
+
+### Required output from each research pass
+
+- What did we learn about graffiti history, style or practice?
+- Which claims are directly evidenced, attributed, interpreted or still uncertain?
+- What new comparisons, terminology or historical connections should be retained?
+- What could this knowledge improve in NIGHTSHIFT (editor tools, vocabulary, learning prompts, composition logic, materials, contextual modes or reference navigation)?
+- What should explicitly **not** be implemented because the evidence is too weak, too local, too individual or rights-restricted?
+
+### Editor translation principles
+
+- Do not turn a historical style into a caricature or a single preset.
+- Distinguish style, practice, format, medium, surface, context and individual handstyle.
+- Learn from multiple writers, periods and regions before generalizing.
+- Translate source material into abstract, non-attributive design principles; never clone identifiable living writers' signatures, tags or pieces.
+- Keep the editor approachable while allowing deeper exploration: explain terminology and design choices without forcing a classroom workflow.
+- Historical accuracy and visual quality are complementary; neither substitutes for the other.
+
+### Current next learning sequence
+
+1. Use INGRID to establish Dortmund corpus coverage and inspect its ontology before making visual claims.
+2. Compare the Dortmund tag / handstyle corpus (*ALL SURFACE*) with period wall / piece sources (*Da kukse wa*) and later train / city corpora (*IRON CITY*).
+3. Build a dated, source-graded timeline of Dortmund writing and its links to Amsterdam, Berlin and other scenes; separate testimony from corroborated chronology.
+4. Extend outward to comparative German and European style development, then New York and other major writing traditions where comparison adds explanatory value.
+5. Convert the resulting knowledge into a style-history atlas and editor learning layer only after editorial review and human visual calibration.
