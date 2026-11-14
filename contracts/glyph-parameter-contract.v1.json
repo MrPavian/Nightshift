@@ -1,0 +1,885 @@
+{
+  "contractId": "nightshift.glyph-parameter-contract",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "scope": {
+    "glyphs": [
+      "latin.upper.A",
+      "latin.upper.B",
+      "latin.upper.G",
+      "latin.upper.R",
+      "latin.upper.S"
+    ],
+    "variantMatrix": "research/MASTER_GLYPH_VARIANT_MATRIX_01.md"
+  },
+  "principles": [
+    "Canonical semantic/vector model is authoritative; Three.js scene objects are derived.",
+    "Every user edit is a typed command with stable IDs and atomic validation/commit.",
+    "Numeric bounds remain uncalibrated until measured from reviewed geometry.",
+    "Topology-changing variants are explicit authored variants, never ordinary continuous controls.",
+    "Rendering parameters cannot mutate semantic geometry."
+  ],
+  "parameterValuePolicy": {
+    "numeric": {
+      "bounds": "calibration-reference-required",
+      "unit": "glyph-local-or-normalized; declared per parameter after calibration",
+      "defaultValue": "authored-master-or-grammar-default",
+      "clampPolicy": "never silently clamp; reject or return actionable warning"
+    },
+    "enum": {
+      "values": "declared per parameter"
+    },
+    "vector": {
+      "coordinateSpace": "glyph-local"
+    }
+  },
+  "commandEnvelope": {
+    "required": [
+      "commandId",
+      "operationId",
+      "glyphInstanceId",
+      "variantId",
+      "expectedRevision",
+      "parameterPatch"
+    ],
+    "fields": {
+      "commandId": "stable unique command identifier",
+      "operationId": "registered operation identifier",
+      "glyphInstanceId": "stable project instance identifier",
+      "variantId": "stable authored glyph variant identifier",
+      "expectedRevision": "revision used for optimistic concurrency",
+      "parameterPatch": "typed parameter values only; no direct mesh mutation",
+      "source": "ui|threejs-handle|automation|import",
+      "seed": "required only when operation explicitly uses deterministic procedural variation"
+    },
+    "transaction": {
+      "sequence": [
+        "resolve-target",
+        "check-revision",
+        "validate-input-types",
+        "derive-dependent-geometry",
+        "run-hard-constraints",
+        "run-soft-diagnostics",
+        "commit-canonical-state-atomically",
+        "increment-revision",
+        "invalidate-derived-views"
+      ],
+      "failure": "reject-entire-command; preserve prior canonical state and revision",
+      "undoRedo": "store inverse canonical patch and forward patch; replay through same validation pipeline",
+      "determinism": "same canonical input, command, seed and generator version must produce same canonical output"
+    }
+  },
+  "dependencyKinds": {
+    "geometry": "rebuild or update canonical vector geometry",
+    "metrics": "recompute glyph bounds/metrics",
+    "topology": "revalidate counter/aperture/channel topology",
+    "anchors": "recompute anchor positions/directions/clearance",
+    "composition": "invalidate pair/word relationships and collision analysis",
+    "diagnostics": "rerun named checks"
+  },
+  "diagnostics": [
+    {
+      "code": "GLYPH_IDENTITY_DRIFT",
+      "severity": "error",
+      "meaning": "glyph no longer satisfies its identity invariants"
+    },
+    {
+      "code": "COUNTER_COLLAPSED",
+      "severity": "error",
+      "meaning": "protected counter disappears or becomes invalid"
+    },
+    {
+      "code": "COUNTER_CLEARANCE_LOW",
+      "severity": "error",
+      "meaning": "counter clearance is below calibrated minimum"
+    },
+    {
+      "code": "APERTURE_CLOSED",
+      "severity": "error",
+      "meaning": "protected exterior-connected opening is closed"
+    },
+    {
+      "code": "COMPONENT_DISCONNECTED",
+      "severity": "error",
+      "meaning": "required semantic components lose required connectivity"
+    },
+    {
+      "code": "SELF_INTERSECTION",
+      "severity": "error",
+      "meaning": "prohibited contour self-intersection detected"
+    },
+    {
+      "code": "JUNCTION_INVALID",
+      "severity": "error",
+      "meaning": "component junction fails topology or local thickness constraints"
+    },
+    {
+      "code": "ANCHOR_OUT_OF_ENVELOPE",
+      "severity": "error",
+      "meaning": "anchor leaves its declared validity envelope"
+    },
+    {
+      "code": "PAIR_COLLISION",
+      "severity": "warning",
+      "meaning": "glyph geometry conflicts with a neighboring glyph"
+    },
+    {
+      "code": "WORD_FLOW_DEGRADED",
+      "severity": "warning",
+      "meaning": "word rhythm or negative-space channel falls outside preference"
+    },
+    {
+      "code": "SOFT_PREFERENCE_MISSED",
+      "severity": "warning",
+      "meaning": "non-critical stylistic preference is not met"
+    },
+    {
+      "code": "CALIBRATION_REQUIRED",
+      "severity": "warning",
+      "meaning": "a metric needed for a numeric threshold is not calibrated"
+    }
+  ],
+  "globalRules": [
+    {
+      "id": "rule.identity",
+      "kind": "hard",
+      "check": "identity-invariants"
+    },
+    {
+      "id": "rule.topology",
+      "kind": "hard",
+      "check": "protected-counter-aperture-connectivity"
+    },
+    {
+      "id": "rule.geometry",
+      "kind": "hard",
+      "check": "self-intersection-and-valid-contours"
+    },
+    {
+      "id": "rule.anchors",
+      "kind": "hard",
+      "check": "anchor-validity-envelopes"
+    },
+    {
+      "id": "rule.determinism",
+      "kind": "hard",
+      "check": "deterministic-regeneration"
+    },
+    {
+      "id": "rule.word-rhythm",
+      "kind": "soft",
+      "check": "preferred-width-spacing-and-silhouette"
+    },
+    {
+      "id": "rule.style-density",
+      "kind": "soft",
+      "check": "preferred-stylistic-density"
+    }
+  ],
+  "glyphs": [
+    {
+      "glyphId": "latin.upper.A",
+      "variantFamily": "A",
+      "identityInvariants": [
+        "single A-family apex and two descending legs",
+        "one protected enclosed counter in master-preserving and structural variants",
+        "crossbar remains semantically attached"
+      ],
+      "parameters": [
+        [
+          "stanceWidth",
+          "number",
+          "glyph-width-profile",
+          "geometry,metrics,topology,anchors,composition",
+          "counter-clearance,leg-balance,pair-clearance"
+        ],
+        [
+          "crossbarHeight",
+          "number",
+          "crossbar-position",
+          "geometry,topology,anchors",
+          "counter-shape,crossbar-junction"
+        ],
+        [
+          "crossbarThickness",
+          "number",
+          "crossbar-mass",
+          "geometry,topology",
+          "junction-strength,counter-clearance"
+        ],
+        [
+          "apexRoundness",
+          "number",
+          "terminal-treatment",
+          "geometry,anchors",
+          "apex-integrity,silhouette"
+        ],
+        [
+          "legMass",
+          "number",
+          "stem-profile",
+          "geometry,metrics,topology",
+          "counter-clearance,leg-balance"
+        ]
+      ],
+      "operations": [
+        "glyph.A.set-stance-width",
+        "glyph.A.set-crossbar-height",
+        "glyph.A.set-crossbar-thickness",
+        "glyph.A.set-apex-roundness",
+        "glyph.A.set-leg-mass"
+      ],
+      "topologyVariants": [
+        "a.open-apex"
+      ]
+    },
+    {
+      "glyphId": "latin.upper.B",
+      "variantFamily": "B",
+      "identityInvariants": [
+        "one connected spine-and-bowl structure",
+        "two distinct protected counters in master-preserving and structural variants",
+        "upper and lower bowls remain distinguishable"
+      ],
+      "parameters": [
+        [
+          "upperBowlWidth",
+          "number",
+          "bowl-width-profile",
+          "geometry,metrics,topology,anchors,composition",
+          "upper-counter-clearance,waist-integrity"
+        ],
+        [
+          "lowerBowlWidth",
+          "number",
+          "bowl-width-profile",
+          "geometry,metrics,topology,anchors,composition",
+          "lower-counter-clearance,waist-integrity"
+        ],
+        [
+          "upperLowerMassRatio",
+          "number",
+          "mass-balance",
+          "geometry,metrics,topology",
+          "counter-area,visual-balance"
+        ],
+        [
+          "waistWidth",
+          "number",
+          "junction-width",
+          "geometry,topology,anchors",
+          "counter-separation,neck-strength"
+        ],
+        [
+          "bowlRoundness",
+          "number",
+          "curve-profile",
+          "geometry,topology",
+          "silhouette,counter-boundary"
+        ]
+      ],
+      "operations": [
+        "glyph.B.set-upper-bowl-width",
+        "glyph.B.set-lower-bowl-width",
+        "glyph.B.set-mass-ratio",
+        "glyph.B.set-waist-width",
+        "glyph.B.set-bowl-roundness"
+      ],
+      "topologyVariants": [
+        "b.open-bowl-study"
+      ]
+    },
+    {
+      "glyphId": "latin.upper.G",
+      "variantFamily": "G",
+      "identityInvariants": [
+        "master has an exterior-connected aperture, not an enclosed counter",
+        "bar/terminal relationship distinguishes G from C and O",
+        "bar attachment is semantic, not decorative"
+      ],
+      "parameters": [
+        [
+          "apertureWidth",
+          "number",
+          "aperture-profile",
+          "geometry,metrics,topology,anchors,composition",
+          "aperture-continuity,g-c-identity"
+        ],
+        [
+          "barHeight",
+          "number",
+          "bar-position",
+          "geometry,topology,anchors",
+          "aperture-shape,g-c-identity"
+        ],
+        [
+          "barLength",
+          "number",
+          "bar-extent",
+          "geometry,topology,anchors",
+          "bar-attachment,local-clearance"
+        ],
+        [
+          "barAngle",
+          "number",
+          "bar-orientation",
+          "geometry,anchors",
+          "attachment-validity,aperture-shape"
+        ],
+        [
+          "terminalDirection",
+          "vector2",
+          "terminal-tangent",
+          "geometry,anchors,composition",
+          "aperture-continuity,pair-compatibility"
+        ]
+      ],
+      "operations": [
+        "glyph.G.set-aperture-width",
+        "glyph.G.set-bar-height",
+        "glyph.G.set-bar-length",
+        "glyph.G.set-bar-angle",
+        "glyph.G.set-terminal-direction"
+      ],
+      "topologyVariants": [
+        "g.aperture-variant"
+      ]
+    },
+    {
+      "glyphId": "latin.upper.R",
+      "variantFamily": "R",
+      "identityInvariants": [
+        "spine, upper bowl and descending leg remain distinguishable",
+        "one protected enclosed counter in master-preserving and structural variants",
+        "leg remains attached through an authored junction"
+      ],
+      "parameters": [
+        [
+          "bowlWidth",
+          "number",
+          "bowl-width-profile",
+          "geometry,metrics,topology,anchors,composition",
+          "counter-clearance,leg-origin"
+        ],
+        [
+          "counterScale",
+          "number",
+          "counter-profile",
+          "geometry,topology",
+          "counter-clearance,identity"
+        ],
+        [
+          "legAngle",
+          "number",
+          "leg-direction",
+          "geometry,metrics,anchors,composition",
+          "junction-validity,pair-clearance"
+        ],
+        [
+          "legLength",
+          "number",
+          "leg-extent",
+          "geometry,metrics,anchors,composition",
+          "bounds,neighbor-collision"
+        ],
+        [
+          "junctionTreatment",
+          "enum",
+          "junction-profile",
+          "geometry,topology,anchors",
+          "component-connectivity,counter-clearance"
+        ]
+      ],
+      "operations": [
+        "glyph.R.set-bowl-width",
+        "glyph.R.set-counter-scale",
+        "glyph.R.set-leg-angle",
+        "glyph.R.set-leg-length",
+        "glyph.R.set-junction-treatment"
+      ],
+      "topologyVariants": []
+    },
+    {
+      "glyphId": "latin.upper.S",
+      "variantFamily": "S",
+      "identityInvariants": [
+        "one continuous connected contour",
+        "no enclosed counter in master",
+        "upper and lower directional turns remain legible with a constricted middle transition"
+      ],
+      "parameters": [
+        [
+          "upperLowerMassRatio",
+          "number",
+          "mass-balance",
+          "geometry,metrics,topology,composition",
+          "silhouette,directional-flow"
+        ],
+        [
+          "overallWidth",
+          "number",
+          "width-profile",
+          "geometry,metrics,anchors,composition",
+          "silhouette,word-rhythm"
+        ],
+        [
+          "neckWidth",
+          "number",
+          "neck-profile",
+          "geometry,topology,anchors",
+          "minimum-neck-clearance,outline-stability"
+        ],
+        [
+          "curveTension",
+          "number",
+          "curve-profile",
+          "geometry,topology,anchors",
+          "self-intersection,silhouette"
+        ],
+        [
+          "terminalTangentStart",
+          "vector2",
+          "terminal-tangent",
+          "geometry,anchors,composition",
+          "anchor-direction,pair-compatibility"
+        ],
+        [
+          "terminalTangentEnd",
+          "vector2",
+          "terminal-tangent",
+          "geometry,anchors,composition",
+          "anchor-direction,pair-compatibility"
+        ]
+      ],
+      "operations": [
+        "glyph.S.set-mass-ratio",
+        "glyph.S.set-overall-width",
+        "glyph.S.set-neck-width",
+        "glyph.S.set-curve-tension",
+        "glyph.S.set-terminal-tangents"
+      ],
+      "topologyVariants": []
+    }
+  ],
+  "operationSemantics": {
+    "glyph.A.set-stance-width": {
+      "writes": [
+        "stanceWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry",
+        "rule.anchors"
+      ]
+    },
+    "glyph.A.set-crossbar-height": {
+      "writes": [
+        "crossbarHeight"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.A.set-crossbar-thickness": {
+      "writes": [
+        "crossbarThickness"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.A.set-apex-roundness": {
+      "writes": [
+        "apexRoundness"
+      ],
+      "invalidates": [
+        "geometry",
+        "anchors",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry"
+      ]
+    },
+    "glyph.A.set-leg-mass": {
+      "writes": [
+        "legMass"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.B.set-upper-bowl-width": {
+      "writes": [
+        "upperBowlWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.B.set-lower-bowl-width": {
+      "writes": [
+        "lowerBowlWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.B.set-mass-ratio": {
+      "writes": [
+        "upperLowerMassRatio"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.B.set-waist-width": {
+      "writes": [
+        "waistWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.B.set-bowl-roundness": {
+      "writes": [
+        "bowlRoundness"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.G.set-aperture-width": {
+      "writes": [
+        "apertureWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.G.set-bar-height": {
+      "writes": [
+        "barHeight"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.G.set-bar-length": {
+      "writes": [
+        "barLength"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.G.set-bar-angle": {
+      "writes": [
+        "barAngle"
+      ],
+      "invalidates": [
+        "geometry",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry"
+      ]
+    },
+    "glyph.G.set-terminal-direction": {
+      "writes": [
+        "terminalDirection"
+      ],
+      "invalidates": [
+        "geometry",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.R.set-bowl-width": {
+      "writes": [
+        "bowlWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.R.set-counter-scale": {
+      "writes": [
+        "counterScale"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.R.set-leg-angle": {
+      "writes": [
+        "legAngle"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry",
+        "rule.anchors"
+      ]
+    },
+    "glyph.R.set-leg-length": {
+      "writes": [
+        "legLength"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry",
+        "rule.anchors"
+      ]
+    },
+    "glyph.R.set-junction-treatment": {
+      "writes": [
+        "junctionTreatment"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.S.set-mass-ratio": {
+      "writes": [
+        "upperLowerMassRatio"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "topology",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.S.set-overall-width": {
+      "writes": [
+        "overallWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "metrics",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry",
+        "rule.anchors"
+      ]
+    },
+    "glyph.S.set-neck-width": {
+      "writes": [
+        "neckWidth"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.S.set-curve-tension": {
+      "writes": [
+        "curveTension"
+      ],
+      "invalidates": [
+        "geometry",
+        "topology",
+        "anchors",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.topology",
+        "rule.geometry"
+      ]
+    },
+    "glyph.S.set-terminal-tangents": {
+      "writes": [
+        "terminalTangentStart",
+        "terminalTangentEnd"
+      ],
+      "invalidates": [
+        "geometry",
+        "anchors",
+        "composition",
+        "diagnostics"
+      ],
+      "validates": [
+        "rule.identity",
+        "rule.geometry",
+        "rule.anchors"
+      ]
+    }
+  },
+  "forbiddenMutationPaths": [
+    "Three.js mesh vertex mutation as canonical edit",
+    "direct scene-object mutation bypassing a model command",
+    "background-colour counter patches",
+    "implicit topology changes from continuous parameter controls",
+    "render-effect mutation of semantic/vector geometry"
+  ]
+}
