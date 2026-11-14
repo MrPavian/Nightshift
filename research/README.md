@@ -61,6 +61,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
+- [Style Grammar Specifications 01 — Bubble, Blockbuster, Straight Letter, Wildstyle Study](STYLE_GRAMMAR_SPECIFICATIONS_01.md)
 
 ## Status
 
@@ -102,3 +103,8 @@ Added a technical specification for semantic stroke graphs, primitive roles, jun
 ### 2026-11 — Build 0.6 glyph and renderer audit
 
 Audited the actual v0.6 HTML prototype, distinguishing five custom glyph path records from 21 provisional path strings. Recorded topology/fill-rule inconsistencies, background-colored counter patches, render-layer mismatches, heuristic join/time diagnostics, and style-preset limitations. Added a remediation sequence and regression matrix. Findings are code observations; recommended schema and fixes are engineering proposals, not yet applied to the prototype.
+
+
+### 2026-11 — Initial style grammar specifications
+
+Added a research-grounded specification for Bubble/Throw-up, Blockbuster, Straight Letter and Wildstyle Study. Incorporated Lisa Gottlieb's expert-classification research, Nancy Macdonald's ethnography, Joe Austin's history and DAIM's practitioner interview. Documented terminology conflicts and separated letterform, composition, practice/form, surface and rendering dimensions. Parameter ranges and engine rules are explicitly marked as NIGHTSHIFT design inference.
