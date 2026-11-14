@@ -400,3 +400,10 @@ Added a source-graded bibliography dossier using the Deutsche Nationalbibliograf
 ### 2026-11 — Dortmund style analysis and first-person source map
 
 Added source-level analysis of the Dortmund chapters in *Dirty Hands* (2022), including Hinz's published formal criteria, Grothus's longitudinal MASON case and the dated 2020 interview trail cited in the chapter. Added Lintzen's 2025 ethnography as a major scene-history source route. Full paid chapters and figures remain uninspected; design implications remain provisional.
+
+
+- [Dortmund Oral History — Documentary Episode Access Map 01](DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md)
+
+### 2026-11 — Dortmund oral-history documentary access
+
+Recovered two accessible English-subtitled uploads from *The Rise of Graffiti Writing* covering first-generation Dortmund, Berlin and Frankfurt writers and Dortmund trainwriting. Cross-linked the dated SHARK interview citation in Hinz (2022). Episode metadata is verified; video contents have not yet been watched or transcribed.
