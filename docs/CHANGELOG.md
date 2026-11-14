@@ -397,3 +397,11 @@
 - Added source mapping for *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), *MASON — The Essence of Writing 1986–2019* (2020) and Grothus's 2022 longitudinal study.
 - Added VR-010 with bibliographic metadata, access routes and item-level rights cautions.
 - Kept the individual MASON corpus separate from city-level style claims; no third-party Issuu upload or preview was treated as licensed source material.
+
+
+## Research deepening — Dortmund oral history and visual chronology
+
+- Added ATOM ONE #040 and TWISTER / JEZUS / PRIDE #059 as first-person interview source routes, with their editorial topic summaries and transcription limitations.
+- Identified *IRON CITY — Graffiti Dortmund* (2002) as a key regional visual chronology covering advertised material from 1983 through the early 2000s.
+- Added VR-011 and a source-graded dossier; kept audio claims and image-level observations unverified until direct inspection.
+- Clarified that Episode 21's description and the separately linked “Writing on Trains” YouTube upload are not yet proven to be the same numbered episode.
