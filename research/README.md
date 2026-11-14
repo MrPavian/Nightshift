@@ -75,6 +75,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable A–Z style grammar application contract v1](../contracts/az-style-grammar-application.v1.json)
 - [Procedural Variant Generator Core 01](PROCEDURAL_VARIANT_GENERATOR_CORE_01.md)
 - [Machine-readable procedural variant generator contract v1](../contracts/procedural-variant-generator.v1.json)
+- [Visual Calibration and Comparative Evaluation 01](VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md)
+- [Machine-readable visual calibration contract v1](../contracts/visual-calibration.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -194,3 +196,8 @@ Added a per-glyph matrix mapping the existing neutral A–Z structural checklist
 ### 2026-11 — Deterministic procedural variant generation
 
 Added the generator-core specification for immutable generation requests, glyph-specific operation planning, named seeded random streams, validated candidate construction, multi-dimensional quality diagnostics, structural feature signatures, four-way diversity selection, search exhaustion and reproducibility. Added a machine-readable contract. Numerical weights, diversity thresholds and parameter bounds remain uncalibrated until supported by reviewed examples; the engine must not silently relax constraints to force four concepts.
+
+
+### 2026-11 — Visual calibration and comparative evaluation
+
+Added a controlled comparison protocol for calibrating parameter bounds, geometry thresholds and generator diversity/ranking. It extends the existing glyph visual review rubric without replacing it. The protocol preserves individual reviewer ratings and disagreement, requires fixed render conditions and reproducible specimen metadata, and prevents uncalibrated values from becoming production controls. Added a machine-readable calibration contract.
