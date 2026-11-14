@@ -189,3 +189,12 @@ The archive pilot is a draft, not approved publication content.
 - [x] Preserved BACKSPIN first-issue date conflict (1993 timeline vs August 1994 issue-history/founder evidence).
 - [x] Added Hamburg serial-publication regression fixtures.
 - [ ] Next: compare DECADES Vol. 2 and Vol. 3; inspect issue-level records for Hamburg serials; search MCL OPAC by exact title and record item identifiers.
+
+
+
+## W02.13 — Berlin DECADES trilogy comparison (2026-11-14)
+
+- [x] Compared publisher descriptions for Vol. 1 (1990–2000), Vol. 2 (2000–2010) and Vol. 3 (2010–2020).
+- [x] Recorded separate bibliographic metadata, attributed portrait lists and decade-specific publisher framing.
+- [x] Added archive regression fixtures for decade separation, roster limitations and attribution.
+- [ ] Next: exact-title MCL OPAC search and item-level holding records; continue primary issue/contents verification for Hamburg serials.
