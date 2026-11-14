@@ -487,3 +487,10 @@ Inspected INGRID's official ontology and illustrated manual, documenting its dis
 ### 2026-11 — INGRID as NIGHTSHIFT's foundational research stream
 
 Promoted INGRID to P1. Added an ontology crosswalk, a Dortmund-first corpus inventory plan, a stratified visual study protocol and a six-deliverable research programme. Clarified the 150,000-image / 99,962 annotated-image official inventory snapshot, the 2023 article's approximately 136,000-image multi-city snapshot including Dortmund, and the distinct July 2022 knowledge-graph metrics. License layers and public-image restrictions are explicitly separated.
+
+
+- [INGRID-KG — Dortmund SPARQL Query Pack 01 (W02.32)](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
+
+### 2026-11 — INGRID query engineering and empirical inventory preparation
+
+Inspected the official INGRID-KG SPARQL query catalogue and transcribed documented predicates for city/date filtering, graffiti type, lettering style, technique, carrier medium, colour and lettering text. Added six Dortmund-adapted query templates and an execution log. The endpoint did not return query results through the current research client; no Dortmund counts or trends are claimed. Recording date is explicitly distinguished from artwork creation date.
