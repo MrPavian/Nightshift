@@ -441,3 +441,10 @@
 - Confirmed the 2020 reprint / online brochure provenance through the official Dortmunder U *I WAS HERE* exhibition page.
 - Located a current specialist-retailer listing for the 36-page German A4 landscape second edition (€75, listed in stock at time checked); page count and “identical except preface” remain seller claims pending collation.
 - Added VR-015 and a dedicated access dossier; no images were copied and no reproduction rights inferred.
+
+
+## Research deepening — Dortmund 1987 local writing glossary
+
+- Extracted the six-term “Writer-ABC” from Marianne Brentzel's official *Da kukse wa* excerpt: black-book, charakter, getting fame, piece, tag and whole car.
+- Mapped terms to distinct archive/practice, figurative, motivation, artwork/lettering and train-format concepts; no universal definitions or generator parameters inferred.
+- Added a dedicated glossary dossier, cross-reference in GRAFFITI_FORMATS.md and VR-016.
