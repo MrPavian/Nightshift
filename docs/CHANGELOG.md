@@ -489,3 +489,11 @@
 - Added six Dortmund-adapted SPARQL templates: corpus count, recording-year distribution, type distribution, lettering-style distribution, technique × medium and a manual-inspection sample.
 - Recorded the endpoint execution failure in the current research client as an access limitation, not as endpoint downtime; no Dortmund result counts are claimed.
 - Added explicit safeguards for recording date vs. creation date, missing annotation values, collection bias, and type/style distinctions.
+
+
+## 2026-11-14 — INGRID query audit and C01 kickoff
+
+- Re-audited the Dortmund SPARQL query pack against the official INGRID-KG query catalogue (examples 18, 20–23, 31–32) and the upstream `dice-group/Ingrid` RDF converter.
+- Identified a namespace discrepancy between the catalogue's `grfo:` query examples and the converter's `grfp:` annotation-property namespace. Marked dependent queries provisional pending live graph confirmation.
+- Recorded two public-endpoint access failures and local DNS failure; no result counts are claimed.
+- Opened GitHub issue #4 for Claude's C01 / 0.7A-T07 canonical Three.js edit loop, with required behavior and acceptance criteria.
