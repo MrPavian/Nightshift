@@ -157,3 +157,86 @@ Do not implement “Munich style”, “Stuttgart style”, “Berlin style” o
 - [ ] Build a cross-city feature atlas from multiple writers and periods, with item-level image rights.
 
 **Evidence rule:** this dossier is a comparative source map, not a definitive national history. Dates and “first” claims remain attributed where sources disagree. No source images are cleared for commercial NIGHTSHIFT use.
+
+
+## 9. Deep source pass — Hamburg and Berlin (2026-11-14)
+
+This section upgrades the Hamburg and Berlin lanes from broad source leads to a more precise, source-attributed working chronology. The key historical source is Pfeiffenberger's KIT dissertation (2017), pp. 89–94, cross-read with the Hamburg museum / book project, the AdJ archive and East Side Gallery oral histories.
+
+### 9.1 Hamburg — chronology and visual vocabulary
+
+The KIT dissertation records the following:
+- The first Hamburg writer generation began in the early 1980s, drawing on New York writing and Dutch styles; contacts included Mainz, Dortmund, Munich and Amsterdam.
+- Hamburg writers began painting S-Bahn trains from **1984**, earlier than many other German cities in the dissertation's comparison. The first wholecar is dated to **1988**.
+- The local high phase is placed around **1986–1987**. The dissertation links a subsequent stagnation to the arrest of several writers in 1988. Treat this as the dissertation's interpretation of the scene's development, not as a complete causal account.
+- A characteristic late-1980s / early-1990s tendency is called **Simplestyle**: large, cleanly executed block letters, alongside a high quantity of tags and throw-ups. Pieces appeared on walls and trains; elaborate concept walls also became increasingly popular.
+- DAIM / Mirko Reisser began writing in **1989**. The dissertation describes his later personal 3D development as a highly coloured, elaborate spatial lettering approach using light, shadow, chiaroscuro, different letter widths and colour gradations / fadings. It notes that by 1991/92 the letters became increasingly three-dimensional and that Hamburg became known for large-format letter images, especially conceived wall pieces, from 1993.
+
+**Important distinction:** “Hamburg Simplestyle” and DAIM's 3D personal development are not one style. The former is a broad local tendency described in the dissertation; the latter is an individual artist's distinctive development. Do not collapse the two or create a generic “Hamburg style” preset.
+
+### 9.2 Hamburg — archive, locations and social context
+
+The Hamburg project has an unusually rich evidentiary base:
+- The curators report that the book project drew on more than **40,000 photographs, sketches, documents and objects**; the 2021 book selected more than **1,300 photographs** across 560 pages.
+- The 2022–2024 Museum für Hamburgische Geschichte exhibition presented almost **500 exhibits**, including photographs, texts, sketchbooks, spray cans, newspapers, magazines, vinyl and accessories.
+- The exhibition's location app connected historical places including the **Jungfernstieg corner**, the meeting point at **Königsstraße**, and the former graffiti gallery at **Altona high school**.
+- The project includes essays on urban development and temporary spaces, youth subculture, scene formation, media / youth work and the relationship between graffiti and the other hip-hop elements. This makes it useful for understanding not just images, but the conditions that made a scene possible.
+- Specific documented visual examples on the museum page include King Zack at Jungfernstieg (1987), Cisco's S-Bahn Window-Down panel at Bergedorf yard (1987), and Platsch's rooftop piece (c. 1985). These captions are valuable leads for image provenance and chronology, but the photographs themselves are not cleared for reuse.
+
+A 2023 press document about the exhibition describes the early scene as a small group of around 20 active writers, growing to around 200 by the end of the 1990s. It also records a 1989 S-Bahn graffiti competition at Langenfelde / Diebsteich. Treat these figures as the exhibition's contextual account, not as a complete census.
+
+### 9.3 Berlin — stronger chronology and a critical Ruhrgebiet connection
+
+Pfeiffenberger's KIT dissertation gives a useful chronology:
+- **1983:** first tags appear in Berlin; **1984:** the author considers a recognisable writer scene to have formed.
+- The Wall and the city's division contributed to distinct north and south scene geographies.
+- The dissertation reports early stylistic influences from New York, followed by Amsterdam, Munich and Paris.
+- A significant Ruhrgebiet connection appears in the dissertation's account of trainwriting: **SHARK from Dortmund is attributed an alleged one-man wholecar in Berlin in 1987**, and is credited with introducing Berlin writers to trainwriting. The dissertation says train pieces increased through 1988 and identifies a first crew wholecar in May 1989 by MAXIM, SARE and ASEK.
+- These are not necessarily contradictory dates: a one-man wholecar (1987) and a crew wholecar (1989) are different claims. Both remain attributed to the dissertation's cited sources and require contemporary photographic corroboration.
+- The dissertation says Berlin's eastern scene had a special position before 1989, with limited contact to writers in other cities. A new generation formed from around 1988; after the Wall opened, a distinct East Berlin writing scene developed. It describes material scarcity and limited access to spray cans as factors shaping earlier practice.
+- Trainbombing increased markedly from 1988/89. The dissertation dates a later wholecar by MAXIM, SARE and ASEK to 1989 and says trainbombing expanded through 1993.
+- From 1995, Berlin writers travelled to cities including Hamburg, Bremen, Hannover, Bielefeld, Frankfurt, Munich, Stuttgart, Mannheim and Heidelberg. This is a documented network route to compare with local scene histories.
+- For the mid/late 1990s, the dissertation distinguishes a New York Wildstyle-oriented line from a more abstract Berlin line. It describes the latter as using irregularly thick and thin letters, a closed / introverted overall composition and relatively rare characters. Treat this as one scholarly typology, not a universal description of every Berlin writer.
+
+### 9.4 Berlin — media infrastructure and archive priorities
+
+The Berlin scene's own media should be treated as primary historical evidence:
+- **SPRAY CITY — Graffiti in Berlin (1994):** accompanying book to the X94 exhibition; the AdJ / Martha Cooper Library overview says it included ten chapters, interviews / portraits and, importantly, writers from East Berlin and women writers. It is a key bridge between West and East scene histories.
+- **OVERKILL (1992–1999):** the 2024 *Overkill Legacy* publication brings together ten Berlin writing magazines and new interviews; the source describes the magazine as a writer-produced photographic archive rooted in the late-1980s / early-1990s scene. It is a priority source for dated train and wall photographs.
+- **BACKJUMPS (1994–2000):** 16 original issues have been re-edited as an 840-page, three-volume archive. The publisher describes it as an international platform connecting European and US scenes, with photographs, interviews, essays and editorial layouts. This is not just an image source: it documents how the scene debated itself and built transnational networks.
+- **DECADES vol. 1 (1990–2000):** Peter Stelzig's book combines private analog photo archives and first-person writer accounts, with a strong focus on train writing. It provides an additional decade-specific source layer.
+
+### 9.5 Cross-city finding: Dortmund → Berlin → national network
+
+The most useful finding for NIGHTSHIFT is not a supposed city style but the movement of practices:
+- Dortmund and Munich are described in the dissertation as two early German graffiti centres, with Dortmund's proximity to Amsterdam and Munich's proximity to Basel shaping different external influences.
+- The SHARK account gives a specific Dortmund-to-Berlin trainwriting connection in 1987.
+- Berlin writers later travelled widely through Germany from 1995, including to Hamburg, Stuttgart, Mannheim and Heidelberg.
+- Hamburg's first generation is described as having contacts with Dortmund, Mainz, Munich and Amsterdam.
+
+This suggests a research graph should record **person / crew / city / date / medium / source**, not just a city label. A claimed influence should be directional only when the source establishes who encountered whom, where and when.
+
+### 9.6 Editor translation — neutral mechanics to investigate
+
+The new source detail suggests the following editor-relevant systems:
+1. **Simplestyle construction:** wide block-letter proportions, clear counters, controlled spacing and high legibility at distance. Study as a general letter-construction exercise, not a Hamburg preset.
+2. **3D light-and-shadow lettering:** volume derived from value grouping, shadow direction, colour gradation, variable stroke thickness and controlled outline use. This can inform a separate 3D lettering subsystem; it must not clone DAIM's personal visual language.
+3. **Train composition:** distinguish single panel, window-down panel, one-man wholecar, crew wholecar and end-to-end. Each has different width, height, segmentation, reading distance and composition constraints.
+4. **Scene network:** represent influence claims as sourced edges between cities / writers / crews / publications. Do not infer stylistic causation from geographical proximity.
+5. **Historical archive mode:** allow date, place, medium, photographer, source publication, rights and confidence to accompany visual references.
+
+## 10. Source register — deep pass
+
+- Pfeiffenberger, Heidi (2017), *Style Writing*, KIT dissertation, especially pp. 89–94 (Hamburg, Berlin, Dortmund and German scene chronology): https://publikationen.bibliothek.kit.edu/1000079409/6209138
+- EINE STADT WIRD BUNT, official book and exhibition archive: https://einestadtwirdbunt.de/en/
+- EINE STADT WIRD BUNT, detailed table of contents: https://einestadtwirdbunt.de/infos/inhaltsverzeichnis/
+- Stiftung Historische Museen Hamburg, exhibition record: https://www.shmh.de/ausstellungen/eswb/
+- AdJ Pop- und Subkulturarchiv, Graffiti and collection overview: https://popundsub.jugendkulturen.de/graffiti.html
+- East Side Gallery, oral histories and writing on the Wall / West Side Gallery: https://www.eastsidegalleryausstellung.de/themen/und-auf-der-rueckseite/graffiti-und-writings-an-der-east-side-gallery/
+- SPRAY CITY 1994 retrospective, Martha Cooper Library / URBAN NATION: https://open.urban-nation.com/de-de/Buchvorstellungen/Rezensionen-2022
+- OVERKILL Legacy (1992–1999) source / publication details: https://berlingraffiti.de/2024/04/12/overkill-legacy-1990-1999/
+- BACKJUMPS 1994–2000 archive publication: https://backjumps.net/
+- DECADES vol. 1 (1990–2000), Peter Stelzig: https://www.urbanpresents.net/en/2021/04/peter-stelzig-berlin-graffiti-book-decades-vol-1-1990-2000/
+- Hamburg exhibition press dossier with Langenfelde competition and scene size estimates: https://tk-kulturmarketing.de/files/tk-kulturmarketing/pdf/230731_Graffiti-Ausstellung-eine-Stadt-wird-bunt.pdf
+
+**Evidence note:** all historical dates above are attributed to the named source. The SHARK 1987 one-man wholecar and the 1989 MAXIM/SARE/ASEK crew wholecar are separate claims, not a resolved definitive first-train chronology. No image rights are granted by inclusion in this research document.
