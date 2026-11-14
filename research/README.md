@@ -414,3 +414,10 @@ Recovered two accessible English-subtitled uploads from *The Rise of Graffiti Wr
 ### 2026-11 — Dortmund MASON longitudinal publication corpus
 
 Mapped the 1996 *Graffiti Dortmund* book, the 2020 *MASON — The Essence of Writing 1986–2019* catalogue and Grothus's 2022 longitudinal study. Added VR-010 with explicit access and rights limitations; the individual MASON case remains separate from a general Dortmund style profile.
+
+
+- [Dortmund Oral History and Visual Chronology — ATOM ONE, TWISTER and IRON CITY 01](DORTMUND_ORAL_HISTORY_AND_VISUAL_CHRONOLOGY_01.md)
+
+### 2026-11 — Dortmund oral history and visual chronology
+
+Added two long-form ILOVEGRAFFITI interview routes (ATOM ONE #040 and TWISTER / JEZUS / PRIDE #059), and identified *IRON CITY* (2002) as a key 1983–2002 regional visual chronology. Added VR-011 and clarified that podcast summaries and publisher descriptions are not substitutes for listening or page-level inspection. Corrected the unresolved Episode 21 / trainwriting upload numbering distinction.
