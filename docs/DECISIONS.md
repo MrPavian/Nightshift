@@ -33,3 +33,8 @@ This is the current record of explicit project direction and architecture decisi
 ## D-008 — Original fictional assets
 **Decision:** Use original fictional marks and assets in the game world rather than real-world brand logos, copied signatures or recognizable branded packaging.  
 **Implication:** Keep cultural atmosphere through architecture, surface, local detail and original graphic language.
+
+D-009 — Claude-led Three.js generator implementation
+**Decision:** The production generator implementation will be developed with Claude, with Three.js as an integrated part of the generator rather than as a separate wall-preview add-on. The current standalone HTML prototype is a reference/prototype, not the target implementation architecture.
+**Implication:** Research and specifications should define behavior, geometry, data contracts and acceptance criteria; Claude will implement the generator. Do not spend effort building another HTML/JSON-only generator as the final product. HTML may still serve as an application shell and JSON may still serve as a project/data format where useful, but neither is the generator architecture by itself. Three.js should participate in the actual interactive composition/rendering workflow. Preserve editable vector geometry and SVG export/interoperability unless a later decision changes that requirement.
+
