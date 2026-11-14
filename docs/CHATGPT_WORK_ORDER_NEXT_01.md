@@ -137,3 +137,15 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Convert fixture definitions into runtime test data after Claude's canonical IDs and validator interfaces are available.
 - [ ] Execute tests and review generated proof artifacts; preparation is not execution or visual approval.
 
+
+
+## W02.8 — Martha Cooper and German scene research (2026-11-14)
+
+- [x] Added Martha Cooper / photographic archive dossier and MCL research pathway.
+- [x] Added German regional history dossier, with Ruhrgebiet/Dortmund treated as a core scene rather than a footnote.
+- [x] Added German writer/crew starter register with source-attributed distinctions and alias cautions.
+- [x] Clarified Silo Nation as a hip-hop community/network and jam culture; separated ATOM ONE / Der Lange from Pure Doze / DOZE.
+- [ ] Continue source-level research into Silo Nation, TRD/TUF, regional crews, ODEM and the named German writers.
+- [ ] Inspect MCL catalogue records and build item-level visual-reference records; no image rights assumed.
+- [ ] Expand German content entries and test fixtures after claim-level source review.
+
