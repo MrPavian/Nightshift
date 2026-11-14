@@ -231,3 +231,11 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 ## Implementation handoff
 
 - [Claude Ticket Pack 0.7A 01](../docs/CLAUDE_TICKET_PACK_0_7A_01.md) — dependency-ordered implementation tickets for the first A/B/G/R/S production slice.
+
+
+## Next authoring and integration plans
+
+- [A–Z Glyph Authoring and Priority Plan 01](A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md) — per-letter neutral construction briefs, staged authoring waves and maturity gates.
+- [Style Grammar — First Supported Slice 01](STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md) — truthful initial grammar capabilities, resolver behavior and proof requirements.
+- [Relationship Solver and Generator — Integration Readiness 01](SOLVER_GENERATOR_INTEGRATION_READINESS_01.md) — safe relationship rollout and deterministic generator vertical slice.
+- [Alphabet Authoring Plan Contract](../contracts/alphabet-authoring-plan.v1.json) — machine-readable waves, maturity and required record fields.
