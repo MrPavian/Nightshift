@@ -79,3 +79,8 @@ A broad term for a wall-based artwork, often commissioned or community-based, bu
 - **The Bronx Museum**, Henry Chalfant archive/exhibition: subway-car documentation and historical formats. https://bronxmuseum.org/exhibition/henry-chalfant-art-vs-transit-1977-1987/. [A]
 
 **Research gaps:** practitioner definitions for throw-up, burner, wholecar, end-to-end and top-to-bottom need further corroboration from period literature, oral histories and specialist publications. These definitions are provisional and should not be presented as universally fixed.
+
+
+## Cross-reference: Research Synthesis 01
+
+For the connected historical argument, source hierarchy, terminology cautions and NIGHTSHIFT data-model implications, see [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md). It cross-links the current topic with oral histories, subway formats, style development and generator design.
