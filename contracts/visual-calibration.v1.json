@@ -1,0 +1,107 @@
+{
+  "contractId": "nightshift.visual-calibration",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "statuses": [
+    "draft",
+    "reviewed",
+    "approved",
+    "superseded"
+  ],
+  "scopeKeys": [
+    "glyph",
+    "variant",
+    "parameter",
+    "protected-feature",
+    "grammar",
+    "relationship",
+    "test-word",
+    "surface-context"
+  ],
+  "experiment": {
+    "freeze": [
+      "source-revision",
+      "engine-build",
+      "grammar-version",
+      "renderer-version",
+      "camera",
+      "scale",
+      "background",
+      "lighting",
+      "render-layers"
+    ],
+    "changePolicy": "declared-factor-only",
+    "includeNeutralBaseline": true,
+    "includeRepeatedBaseline": true,
+    "randomizeReviewerPresentation": true,
+    "recordSeedsAndArtifactHashes": true
+  },
+  "review": {
+    "rubricSource": "research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md",
+    "retainOriginalDimensions": true,
+    "comparativeChoices": [
+      "A",
+      "B",
+      "tie",
+      "neither",
+      "cannot-judge"
+    ],
+    "preserveIndividualRatings": true,
+    "identityOrTopologyZeroRequiresDefectReview": true,
+    "majorDisagreementRequiresFurtherReview": true
+  },
+  "calibrationRequirements": [
+    "registered-operation",
+    "dependency-list",
+    "controlled-sweep",
+    "automated-geometry-measurements",
+    "human-context-review",
+    "accepted-interval-and-failure-boundaries",
+    "versioned-evidence-record",
+    "boundary-regression-fixtures"
+  ],
+  "thresholdPolicy": {
+    "scoped": true,
+    "unitsRequired": true,
+    "errorBoundsRequired": true,
+    "hardSeparateFromSoft": true,
+    "uncalibratedRequiredThresholdBlocksApproval": true,
+    "noSilentGlobalFallback": true
+  },
+  "diversityCorpus": {
+    "labels": [
+      "structural-difference",
+      "layout-relationship-difference",
+      "cosmetic-only-difference",
+      "near-duplicate",
+      "valid-but-weak",
+      "hard-invalid"
+    ],
+    "qualityDimensionsRemainSeparate": true,
+    "calibrateOnlyAgainstReviewedCorpus": true
+  },
+  "proofPlates": [
+    "parameter-sweep",
+    "topology-negative-space",
+    "grammar-comparison",
+    "pair-context",
+    "word-context",
+    "finish-isolation",
+    "thumbnail-resilience",
+    "boundary-regression"
+  ],
+  "acceptance": [
+    "approved-record-for-production-parameter-bounds",
+    "scoped-geometry-thresholds",
+    "no-uncalibrated-production-slider",
+    "controlled-comparison",
+    "reproducible-render-conditions",
+    "neutral-comparative-options",
+    "individual-rating-preservation",
+    "critical-failure-escalation",
+    "diversity-label-corpus",
+    "traceable-ranking-calibration",
+    "versioned-regression-evidence",
+    "no-automatic-maturity-promotion"
+  ]
+}
