@@ -470,3 +470,8 @@ Added a focused source dossier for *ALL SURFACE* (2022), separating publisher me
 ### 2026-11 — INGRID research database and Dortmund corpus route
 
 Identified the University of Paderborn / KIT INGRID database as a free scholarly access route with more than 100,000 annotated graffiti records (official project-page figure), including Dortmund in the research corpus. Preserved dated corpus-size snapshots from DBIS and a 2023 article. Added a stratified query protocol and item-level rights cautions; the JavaScript interface and SPARQL endpoint were not accessible for record-level inspection in this pass.
+
+
+## Standing research principle — graffiti literacy and editor learning
+
+NIGHTSHIFT's research library is also a continuous learning resource on writing culture, graffiti history, style development, materials and regional scenes. Each new research pass should deepen understanding first and translate it into editor design only where the evidence supports it. Distinguish historical fact, attributed practitioner testimony, scholarly interpretation, visual observation and engineering inference. Preserve local and period variation; never flatten individual handstyles into universal presets or clone identifiable writers' signatures. The work order records the six learning tracks, required research outputs and current sequence.
