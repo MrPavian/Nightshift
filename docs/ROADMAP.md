@@ -139,3 +139,8 @@ Three.js is part of the real generator interaction/rendering workflow, not merel
 ## Creative workflow specification — implementation handoff
 
 The complete authoring journey is specified in [Creative Workflow and Style Authoring 01](../research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md), with its machine-readable contract at [creative-workflow.v1.json](../contracts/creative-workflow.v1.json). This refines the 0.9 Blackbook Workflow milestone into five slices: (A) four deterministic concepts and branching; (B) word/glyph refinement and persistence; (C) relationship authoring; (D) optional assistance; (E) personal style recipes. The specification does not claim these features are implemented. Keep the existing 0.7 glyph-first and 0.8 relationship validation gates intact.
+
+
+### Personal Style Engine specification
+
+See [Personal Style Engine 01](../research/PERSONAL_STYLE_ENGINE_01.md) and [personal-style-engine.v1.json](../contracts/personal-style-engine.v1.json). The recipe library is a later creative-workflow slice, after canonical glyph editing, relationship validation and project persistence are reliable. Implement schema/resolver first, then explicit save/apply preview, glyph-aware compatibility, recipe merge/interpolation and library lifecycle. This is specification work only; no production engine is claimed.
