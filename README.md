@@ -53,6 +53,10 @@ New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [doc
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](docs/CHANGELOG.md)
 
+## Research library
+
+The first source-backed research pass is now committed under [`research/`](research/README.md): NYC history, lettering styles, practices/formats, writers and crews, visual-reference records, and glyph-construction implications. Entries are provisional where the source base is not yet deep enough; see the research README for evidence labels and editorial rules.
+
 ## Prototype
 
 The runnable 0.6 prototype is committed at [`prototypes/nightshift_art_engine_v06.html`](prototypes/nightshift_art_engine_v06.html). Open it locally in a modern browser with internet access (Three.js is loaded from jsDelivr). Future builds should be added as new versioned files rather than silently overwriting prior prototypes.
