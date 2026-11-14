@@ -53,6 +53,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Graffiti Letter Anatomy and Composition](GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md)
 - [Blackbooks, Sketchbooks and Peer Learning](BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md)
 - [Aerosol Technology, Caps and Paint Practice](AEROSOL_TECHNOLOGY_CAPS_AND_PAINT_PRACTICE.md)
+- [Letter-Pair Connections and Word Flow](LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md)
+- [Handstyle, Gesture and Motor Dynamics](HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md)
 
 ## Status
 
@@ -60,6 +62,10 @@ Initial source-backed research pass. This is a living research base, not a defin
 
 
 ## Research development log
+
+### 2026-11 — Letter-pair logic and handstyle movement
+
+Added two generator-focused dossiers: contextual pair compatibility, connection types and whole-word validation; and the movement dimension of handstyle, including trajectory, velocity, stroke order and the distinction between gesture-first and shape-first authoring. The sources support movement-centric computational models, while pair rules and implementation structures are explicitly identified as NIGHTSHIFT design hypotheses.
 
 ### 2026-11 — Letter anatomy, blackbooks and aerosol material culture
 
