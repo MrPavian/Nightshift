@@ -102,3 +102,10 @@ Represent a composition with independent layers:
 7. **Surface presentation** — paper/blackbook, wall, train-car panel or other target.
 
 A selected format should constrain available options where appropriate without forcing every artwork into a rigid template.
+
+
+## 6. Current NIGHTSHIFT grammar specification
+
+See [Style Grammar Specifications 01](../research/STYLE_GRAMMAR_SPECIFICATIONS_01.md) for the evidence-led construction rules, parameters, failure states and acceptance tests for Bubble/Throw-up, Blockbuster, Straight Letter and Wildstyle Study.
+
+The dossier explicitly distinguishes source observations from NIGHTSHIFT design inference. Its cross-grammar model separates letterform, composition, practice/form, surface and rendering axes. Do not simplify these into one exclusive style selector in the production data model.
