@@ -277,3 +277,10 @@
 - Added separate bibliographic records for all three DECADES volumes (1990–2020).
 - Recorded publisher-listed portrait subjects and historical framing with attribution.
 - Added regression tests preventing the trilogy from being flattened or its curated name lists treated as complete rosters.
+
+
+## 2026-11-14 — Claude 0.7A-T01 reconnaissance and implementation plan
+
+- Added `docs/IMPLEMENTATION_PLAN_0_7A.md`: actual repository and runtime state, v0.6 import-relevant code facts (prototype SHA-256, path command vocabulary, provisional counter winding dependency, R/S absent from the provisional map), proposed module boundaries and a per-ticket plan for T02–T07.
+- Recorded D-011 (TypeScript + Vite + Vitest + Playwright, pinned three, no UI framework) as **proposed, pending owner confirmation**.
+- No production code, package manifest or dependency was added. The v0.6 prototype is unchanged.

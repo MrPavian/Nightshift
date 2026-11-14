@@ -196,3 +196,11 @@ For each ticket, return:
 - exact next ticket.
 
 Never report a ticket complete from compilation alone.
+
+## Execution status
+
+| Ticket | Status | Report |
+|---|---|---|
+| T01 | complete (report) | `docs/IMPLEMENTATION_PLAN_0_7A.md` |
+| T02 | blocked on D-011 owner confirmation | — |
+| T03–T07 | not started | — |

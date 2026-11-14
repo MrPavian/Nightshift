@@ -42,3 +42,9 @@ D-009 — Claude-led Three.js generator implementation
 D-010 — Canonical semantic/vector model with integrated Three.js editor
 **Decision:** The canonical source of truth is the semantic/vector project model, including glyph structure, editable geometry, topology, metrics, anchors, variants and composition relationships. Three.js is the live interactive editor and spatial renderer; its scene objects and meshes are derived and all edits commit through typed, validated commands. SVG is an interchange/export format, not the sole canonical model.
 **Clarification:** This qualifies the earlier wording in D-003. “Vector geometry is canonical” means editable vector geometry inside the canonical semantic project model; it does not mean an SVG document or transient Three.js mesh is the whole project model. D-009 remains in force.
+
+
+D-011 — Production toolchain for the 0.7 generator (PROPOSED, pending owner confirmation)
+**Proposal:** TypeScript (strict), Vite, Vitest for Node unit/geometry tests, Playwright for browser render/interaction tests, `three` as a pinned npm dependency. No UI framework. No geometry library for 0.7A.
+**Reason:** The repository currently has no build, package or test setup. D-009/D-010 require typed contracts, deterministic tests and a real Three.js module dependency, which a single inline HTML file cannot provide reproducibly. Full rationale and rejected alternatives: `docs/IMPLEMENTATION_PLAN_0_7A.md` §3.
+**Implication if confirmed:** `src/core/` stays free of DOM and Three.js imports, enforced by a test. `prototypes/` remains untouched (D-007).
