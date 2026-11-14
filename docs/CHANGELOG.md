@@ -277,3 +277,21 @@
 - Added separate bibliographic records for all three DECADES volumes (1990–2020).
 - Recorded publisher-listed portrait subjects and historical framing with attribution.
 - Added regression tests preventing the trilogy from being flattened or its curated name lists treated as complete rosters.
+
+
+## 2026-11-14 — 0.7A-T01/T02: canonical glyph registry (first production code)
+
+- Added the T01 reconnaissance report and implementation plan (`docs/IMPLEMENTATION_PLAN_0_7A.md`) and decision D-011 (browser-native ES modules, Node test runner, dependency-free canonical model).
+- Added `tools/extract-v06-paths.mjs` and the hash-verified legacy snapshot `data/legacy/v06-glyph-paths.json` (exact v0.6 path strings with line locators).
+- Added the canonical glyph registry (`src/glyph/`): A/B/G/R/S as `x.master` at `authored-contour`; 21 letters as `x.provisional`, reference-only. Stable glyph/variant/contour/segment/node/negative-space IDs.
+- A/B/R inner paths imported as provisional counters (B: upper/lower by measured position); S `none-in-master`; G `apertureStatus: interpretation-required` with no synthesized geometry.
+- Added a schema/integrity validator (maturity requires passed reviews; legacy geometry drift and snapshot hash checks).
+- New measured findings: A's counter has the same winding as its outer contour; D/O/P/Q carry undeclared multi-subpath topology.
+- Tests: 22 passing (`npm test`). The v0.6 prototype is unchanged.
+
+### Known limitations
+
+- No geometry/topology validation yet (self-intersection, containment, clearance): ticket T04.
+- No semantic components, anchors or calibrated metrics yet: T03 and later calibration.
+- No renderer or editor yet; the modules have not been run in a browser.
+

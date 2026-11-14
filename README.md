@@ -10,7 +10,9 @@ The wider game concept is a grounded New York graffiti crew simulator. The edito
 
 ## Current development status
 
-**Latest prototype: Build 0.6 — Full Alphabet / Glyph Relationships**
+**Production code: 0.7A in progress** — canonical glyph registry with an exact, hash-verified import of the v0.6 glyphs (tickets T01/T02 done). See [docs/IMPLEMENTATION_PLAN_0_7A.md](docs/IMPLEMENTATION_PLAN_0_7A.md). Run the tests with `npm test` (Node ≥ 20, no dependencies).
+
+**Latest prototype (legacy reference): Build 0.6 — Full Alphabet / Glyph Relationships**
 
 - A–Z glyph addressing is available.
 - Five hand-authored contour masters exist: A, B, G, R, S.

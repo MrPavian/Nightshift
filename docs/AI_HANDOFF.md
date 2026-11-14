@@ -32,11 +32,13 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 
 Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five authored contour masters (A, B, G, R, S), 21 provisional bases, early style profiles, basic word layout, layer controls, SVG export, browser-local archive and a Three.js wall preview.
 
-Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library and in-game archive are planned workstreams; do not claim they already exist as implemented features.
+Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
+
+Production implementation has started: `src/` contains the canonical glyph registry and legacy v0.6 import (0.7A-T01/T02). Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** Audit the actual prototype and glyph data, produce a letter inventory with status per glyph, then propose the data model and construction workflow for bespoke glyph masters.
+**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T03 (semantic overlays). The glyph inventory and data model from T01/T02 are in place.
 
 ## Next archive task
 
