@@ -1,0 +1,329 @@
+{
+  "contractId": "nightshift.proof-sheet-fixtures",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "authority": {
+    "canonical": "semantic-graph-and-editable-vector-geometry",
+    "derived": [
+      "threejs-render",
+      "svg-preview",
+      "diagnostic-overlays",
+      "proof-images"
+    ],
+    "humanApprovalRequired": true
+  },
+  "runManifestRequired": [
+    "runId",
+    "schemaVersion",
+    "sourceRevision",
+    "canonicalSnapshotHash",
+    "engineVersions",
+    "rootSeed",
+    "seedDerivationVersion",
+    "fixtureId",
+    "specimenId",
+    "sourceGlyphVariantIds",
+    "resolvedOperations",
+    "resolvedParameters",
+    "renderConfiguration",
+    "validationReport",
+    "artifactHashes",
+    "reviewRecords"
+  ],
+  "renderDefaults": {
+    "background": "neutral-light",
+    "lighting": "flat-neutral",
+    "projection": "orthographic",
+    "silhouette": "monochrome",
+    "effectsDisabled": true,
+    "normalizedAndNativeViews": true,
+    "dimensions": "versioned-implementation-setting"
+  },
+  "proofSheetFamilies": [
+    "glyph-identity",
+    "semantic-topology",
+    "parameter-sweep",
+    "grammar-comparison",
+    "pair-context",
+    "word-context",
+    "finish-isolation",
+    "thumbnail-boundary"
+  ],
+  "fixtures": {
+    "isolatedGlyphs": [
+      {
+        "fixtureId": "glyph-a",
+        "text": "A",
+        "maturity": "authored-contour"
+      },
+      {
+        "fixtureId": "glyph-b",
+        "text": "B",
+        "maturity": "authored-contour"
+      },
+      {
+        "fixtureId": "glyph-c",
+        "text": "C",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-d",
+        "text": "D",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-e",
+        "text": "E",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-f",
+        "text": "F",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-g",
+        "text": "G",
+        "maturity": "authored-contour"
+      },
+      {
+        "fixtureId": "glyph-h",
+        "text": "H",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-i",
+        "text": "I",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-j",
+        "text": "J",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-k",
+        "text": "K",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-l",
+        "text": "L",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-m",
+        "text": "M",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-n",
+        "text": "N",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-o",
+        "text": "O",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-p",
+        "text": "P",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-q",
+        "text": "Q",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-r",
+        "text": "R",
+        "maturity": "authored-contour"
+      },
+      {
+        "fixtureId": "glyph-s",
+        "text": "S",
+        "maturity": "authored-contour"
+      },
+      {
+        "fixtureId": "glyph-t",
+        "text": "T",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-u",
+        "text": "U",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-v",
+        "text": "V",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-w",
+        "text": "W",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-x",
+        "text": "X",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-y",
+        "text": "Y",
+        "maturity": "provisional"
+      },
+      {
+        "fixtureId": "glyph-z",
+        "text": "Z",
+        "maturity": "provisional"
+      }
+    ],
+    "pairs": [
+      {
+        "fixtureId": "pair-av",
+        "text": "AV",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "pair-ar",
+        "text": "AR",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-ba",
+        "text": "BA",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-br",
+        "text": "BR",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-go",
+        "text": "GO",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "pair-gr",
+        "text": "GR",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-ra",
+        "text": "RA",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-ro",
+        "text": "RO",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "pair-sa",
+        "text": "SA",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-sb",
+        "text": "SB",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-gs",
+        "text": "GS",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "pair-ns",
+        "text": "NS",
+        "coverage": "partial-provisional-coverage"
+      }
+    ],
+    "words": [
+      {
+        "fixtureId": "word-abra",
+        "text": "ABRA",
+        "coverage": "authored-subset"
+      },
+      {
+        "fixtureId": "word-bomb",
+        "text": "BOMB",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-ghost",
+        "text": "GHOST",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-kraze",
+        "text": "KRAZE",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-mind",
+        "text": "MIND",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-nyx",
+        "text": "NYX",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-risk",
+        "text": "RISK",
+        "coverage": "partial-provisional-coverage"
+      },
+      {
+        "fixtureId": "word-sque",
+        "text": "SQUE",
+        "coverage": "partial-provisional-coverage"
+      }
+    ],
+    "grammars": [
+      "bubble-throw-up",
+      "blockbuster",
+      "straight-letter",
+      "wildstyle-study"
+    ]
+  },
+  "review": {
+    "rubric": "research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md",
+    "comparativeChoices": [
+      "A",
+      "B",
+      "tie",
+      "neither",
+      "cannot-judge"
+    ],
+    "automatedMaturityPromotion": false,
+    "immutableArtifacts": true,
+    "blindMappingSeparate": true
+  },
+  "reproducibility": {
+    "immutableRun": true,
+    "changedInputCreatesNewRun": true,
+    "recordContentHashes": true,
+    "canonicalGeometryDeterministic": true
+  },
+  "acceptance": [
+    "stable-fixture-specimen-ids",
+    "reproducible-run",
+    "fixed-render-conditions",
+    "maturity-preserved",
+    "partial-coverage-labelled",
+    "topology-types-distinct",
+    "structure-before-finish",
+    "no-finish-diversity-credit",
+    "human-decisions-preserved",
+    "no-automatic-maturity-promotion",
+    "artifact-hashes",
+    "rights-provenance"
+  ]
+}
