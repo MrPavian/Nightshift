@@ -333,3 +333,10 @@ The Smithsonian Chalfant record was available through search-indexed institution
 ## Berlin DECADES trilogy
 
 - [Berlin DECADES Trilogy Bibliography 01](BERLIN_DECADES_TRILOGY_BIBLIOGRAPHY_01.md) — publisher-level comparison of Vol. 1 (1990–2000), Vol. 2 (2000–2010) and Vol. 3 (2010–2020), with attributed portrait lists and caution against treating them as complete rosters.
+
+
+- [NYC Graffiti–Hardcore Crossover: People, Bands and Evidence 02](NYC_GRAFFITI_HARDCORE_CROSSOVER_02.md)
+
+### 2026-11 — NYC graffiti and hardcore crossover: evidence deepening
+
+Added a second dossier separating writing, band membership, crew affiliation, artwork credits and social networks. It documents Frontline/HYPE, Adam 12/REVS, TMR bands, DIE 116, Dmize/MQ/JERE, SMOG and FCEE using specialist reporting and first-person interviews. SEEN/Richard Mirando is retained as a major Bronx/UA writer profile, while no direct NYHC crossover is asserted without evidence. Original flyers, demos and zine scans remain an explicit verification queue.
