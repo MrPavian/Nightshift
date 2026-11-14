@@ -61,6 +61,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Master Audit — Build 0.6](GLYPH_MASTER_AUDIT_V06.md)
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Master Glyph Variant Matrix 01 — A/B/G/R/S](MASTER_GLYPH_VARIANT_MATRIX_01.md)
+- [Glyph Parameter Dependency Contract 01](GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md)
+- [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
 - [Glyph Visual Review Protocol 01 — A–Z](GLYPH_VISUAL_REVIEW_PROTOCOL_01.md)
@@ -132,3 +134,8 @@ Added a staged review gate system for glyph source integrity, semantic construct
 ### 2026-11 — Controlled master glyph variant matrix
 
 Added a first controlled variant plan for A/B/G/R/S. Each glyph now has named master-preserving, structural and topology-variant candidates; explicit identity invariants; parameter ownership and dependencies; hard-failure conditions; style compatibility status; staged implementation order; and proof-sheet requirements. Numerical parameter bounds remain intentionally uncalibrated until geometry is measured and visually reviewed. The document is a design proposal, not implemented functionality.
+
+
+### 2026-11 — Typed glyph parameter operations
+
+Added a machine-readable A/B/G/R/S parameter registry and an implementation-facing dependency contract. The contract defines stable command envelopes, atomic validation/commit, derived-view invalidation, hard/soft diagnostics, per-glyph coupling and Three.js handle behavior. Numeric bounds remain explicitly uncalibrated; topology-changing variants stay separately authored. This is a specification, not implemented functionality.
