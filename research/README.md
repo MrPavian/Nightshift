@@ -65,6 +65,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Geometry and Topology Validation Contract 01](GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md)
 - [Relationship Solver and Word Composition 01](RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md)
 - [Machine-readable relationship solver contract v1](../contracts/relationship-solver.v1.json)
+- [Three.js Editor Interaction and Progressive Creative UX 01](THREEJS_EDITOR_INTERACTION_AND_UX_01.md)
+- [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
@@ -153,3 +155,8 @@ Added a machine-readable validator profile and implementation dossier for contou
 ### 2026-11 — Relationship solver and word composition
 
 Added a machine-readable relationship graph/solver contract and implementation dossier. It distinguishes deliberate separation, near-touch, terminal contact, bar continuation, overlap, extension bridges, shared strokes and interlocks; defines anchor-driven candidate generation, hard/soft evaluation, reversible graph edits, whole-word validation and a staged rollout. Pair compatibility is explicitly treated as NIGHTSHIFT design inference, not a historical universal rulebook.
+
+
+### 2026-11 — Progressive Three.js editor interaction and UX
+
+Added a staged interaction model that keeps quick lettering approachable while exposing structural editing, relationship construction and advanced authoring progressively. Defined Blackbook, Studio and Wall views over one canonical project; stable-ID selection, direct-manipulation handles, preview/commit transactions, contextual diagnostics, layers, undo/redo, touch accessibility and 14 interaction fixtures. This is a design specification, not implemented functionality.
