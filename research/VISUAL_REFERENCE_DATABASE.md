@@ -250,3 +250,14 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** purchase/viewing does not grant reproduction or derivative-use rights. No images copied; obtain author/photographer/rightsholder permission for public use.
 - **Caution:** 36 pages and “identical except preface” are retailer claims, not yet collated; author excerpt is not the full book; the glossary is a historical vocabulary snapshot, not universal taxonomy.
 - **Evidence:** A for original publication and institutional reprint provenance; B for retailer-supplied edition extent/condition; no page-level visual analysis yet.
+
+
+## VR-016 — *Da kukse wa* (1987) text excerpt and local glossary
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Source:** Marianne Brentzel's official excerpt from *Da kukse wa — Dortmunder Graffiti* (1987), including a period “Writer-ABC” and a reproduced contemporary newspaper debate around 1986/87.
+- **Directly visible textual terms:** black-book, charakter, getting fame, piece, tag, whole car, with short local explanations.
+- **Record:** https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+- **Value:** primary published vocabulary snapshot that can inform dated archive glossary content and support taxonomy separation.
+- **Rights:** text/image rights remain with the respective rights holders; quote only short terms/definitions with attribution and permission where required. No images copied.
+- **Caution:** excerpt is not the whole publication; local definitions are not universal; newspaper headlines/social statistics are author-presented historical material and need independent verification before factual reuse.
+- **Evidence:** A for excerpt wording and publication provenance; B for interpretation and design mapping.
