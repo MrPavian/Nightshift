@@ -164,3 +164,8 @@ See [Visual Calibration and Comparative Evaluation 01](../research/VISUAL_CALIBR
 ### Proof-sheet and test-fixture infrastructure
 
 See [Proof-Sheet and Test-Fixture Infrastructure 01](../research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md) and [proof-sheet-fixtures.v1.json](../contracts/proof-sheet-fixtures.v1.json). Implement the fixture registry and immutable run manifest first, then deterministic Three.js/SVG proof rendering, sheet assembly, review capture and calibration/CI integration. Preserve the current authored-contour/provisional distinction and mark incomplete pair/word coverage honestly. Generated sheets are evidence for human review, not automatic approvals.
+
+
+### Glyph construction pipeline
+
+See [Glyph Construction Pipeline 01](../research/GLYPH_CONSTRUCTION_PIPELINE_01.md) and [glyph-construction-pipeline.v1.json](../contracts/glyph-construction-pipeline.v1.json). Implementation order: canonical schema/registry, exact A/B/G/R/S snapshot import, semantic graph/vector adapters, geometry validator, typed operation/command bus, metrics/anchors, Three.js stable-ID scene adapter, preview/commit/undo/redo, SVG/persistence and proof harness. The first slice is monochrome, editable and topology-valid; effects and extrusion are explicitly downstream.
