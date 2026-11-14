@@ -316,3 +316,15 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Inspect a legitimate VHS/CD-ROM copy and verify credits, dates, locations and media integrity; obtain permission before digitization or public reuse.
 - [ ] Recover the 1994 film's original post permalink / Google Video ID through archive metadata; do not conflate it with other Dortmund documentary uploads.
 - [ ] Next: build a timecoded train-format ledger from directly inspected footage and reconcile it with *IRON CITY*, *BOMBER* #14 and *Endstation* #14.
+
+
+
+## W02.25 — Dortmund publication bibliography and visual corpus (2026-11-14)
+
+- [x] Recovered the 2009 ILOVEGRAFFITI note identifying the 1996 Markus Wiese book as 80 pages and naming its contributor mix.
+- [x] Cross-checked the same title/author combination against ISBN 978-3-89535-431-1 catalogue records reporting 160 pages; preserved the discrepancy as unresolved.
+- [x] Separated *Da kukse wa* (1987), *IRON CITY* (2002), *MASON — The Essence of Writing* (2020) and *RIO — The Process of Writing* (2023) as distinct corpora.
+- [x] Added a bibliography dossier, VR-014, research index and changelog link.
+- [ ] Collate the physical 1996 book's title page, colophon and final numbered page; recover/inspect the Issuu preview only within its current access and rights conditions.
+- [ ] Inspect *IRON CITY* page by page and build item-level caption/date/location records; no image extraction or generative copying.
+- [ ] Next: develop a visual chronology only from directly inspected, attributable material; keep artist-specific monographs separate from city-wide claims.
