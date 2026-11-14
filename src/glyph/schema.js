@@ -60,6 +60,8 @@ export function validateGlyphDefinition(g) {
 
   // Variants and geometry.
   const contourIds = new Set();
+  const segmentIds = new Set();
+  const nodeIds = new Set();
   const scoped = ID_PATTERNS.scoped(ch);
   if (req(Array.isArray(g.variants) && g.variants.length > 0, 'variants', 'at least one variant required')) {
     for (const v of g.variants) {
@@ -77,6 +79,10 @@ export function validateGlyphDefinition(g) {
         req(scoped.test(c.contourId ?? ''), `contour ${c.contourId}`, `ID must be scoped to glyph.${ch}`);
         req(CONTOUR_ROLES.includes(c.role), `contour ${c.contourId}.role`, 'invalid role');
         contourIds.add(c.contourId);
+        for (const s of c.segments ?? []) {
+          segmentIds.add(s.segmentId);
+          if (s.nodeId) nodeIds.add(s.nodeId);
+        }
         validateSegments(c, req);
       }
       validateLegacySnapshot(v, err);
@@ -94,6 +100,7 @@ export function validateGlyphDefinition(g) {
         err('VAL_SCHEMA', [n.id], `negativeSpace geometryRef ${n.geometryRef} does not resolve to a contour`);
       }
     }
+    validateSemanticRefs(sg, { ch, scoped, contourIds, segmentIds, nodeIds, err, req });
     const t = sg.topology;
     if (req(t && typeof t === 'object', 'semanticGraph.topology', 'required')) {
       req(APERTURE_STATUS.includes(t.apertureStatus), 'topology.apertureStatus', 'invalid value');
@@ -114,6 +121,53 @@ export function validateGlyphDefinition(g) {
     }
   }
   return out;
+}
+
+const COMPONENT_ROLES = ['stem', 'bar', 'diagonal', 'bowl', 'arc', 'loop', 'crossbar', 'leg', 'tail', 'terminal',
+  'junction', 'connector', 'counter-boundary', 'aperture-boundary', 'extension', 'other'];
+const MAPPING_STATUS = ['mapped', 'provisional-unmapped', 'pending-classification'];
+const JUNCTION_KINDS = ['endpoint', 'continuation', 'branch', 'crossing', 'attachment', 'overlap', 'near-contact'];
+const CONSTRAINT_KINDS = ['preserve-counter', 'preserve-aperture', 'minimum-clearance', 'avoid-self-intersection',
+  'preserve-component-order', 'identity-invariant'];
+
+/** Components, junctions, constraints and negative-space boundaries must reference existing IDs. */
+function validateSemanticRefs(sg, { scoped, contourIds, segmentIds, nodeIds, err, req }) {
+  const geomRef = (id) => contourIds.has(id) || segmentIds.has(id);
+  const components = sg.components ?? [];
+  const compIds = new Set(components.map((c) => c.id));
+  const negIds = new Set((sg.negativeSpaces ?? []).map((n) => n.id));
+
+  for (const c of components) {
+    req(scoped.test(c.id ?? '') && c.id.includes('.component.'), `component ${c.id}`, 'ID must be glyph.X.component.*');
+    req(COMPONENT_ROLES.includes(c.role), `component ${c.id}.role`, 'invalid role');
+    req(MAPPING_STATUS.includes(c.mappingStatus), `component ${c.id}.mappingStatus`, 'invalid value');
+    const refs = c.geometryRefs ?? [];
+    if (c.mappingStatus === 'mapped') req(refs.length > 0, `component ${c.id}`, 'mapped component needs geometryRefs');
+    else req(refs.length === 0, `component ${c.id}`, 'unmapped component must not claim geometryRefs');
+    for (const r of [...refs, ...(c.candidateGeometryRefs ?? [])]) {
+      if (!geomRef(r)) err('VAL_SCHEMA', [c.id, r], `component ${c.id} references unknown geometry ${r}`);
+    }
+    for (const r of c.connectsTo ?? []) if (!compIds.has(r)) err('VAL_SCHEMA', [c.id, r], `connectsTo unknown component ${r}`);
+  }
+  for (const j of sg.junctions ?? []) {
+    req(JUNCTION_KINDS.includes(j.kind), `junction ${j.id}.kind`, 'invalid value');
+    for (const r of j.componentIds ?? []) if (!compIds.has(r)) err('VAL_SCHEMA', [j.id, r], `junction references unknown component ${r}`);
+    for (const r of j.candidateNodeRefs ?? []) if (!nodeIds.has(r)) err('VAL_SCHEMA', [j.id, r], `junction references unknown node ${r}`);
+  }
+  for (const n of sg.negativeSpaces ?? []) {
+    for (const r of n.boundaryComponentIds ?? []) if (!compIds.has(r)) err('VAL_SCHEMA', [n.id, r], `boundary references unknown component ${r}`);
+  }
+  for (const k of sg.constraints ?? []) {
+    req(CONSTRAINT_KINDS.includes(k.kind), `constraint ${k.id}.kind`, 'invalid value');
+    for (const r of k.targetIds ?? []) if (!compIds.has(r) && !negIds.has(r)) err('VAL_SCHEMA', [k.id, r], `constraint targets unknown entity ${r}`);
+  }
+  // Gated operations: an aperture operation may only commit once the aperture is classified.
+  const ai = sg.apertureInterpretation;
+  if (ai && sg.topology?.apertureStatus !== 'classified') {
+    for (const op of ai.gatedOperations ?? []) {
+      if (op.commitAllowed) err('VAL_TOPOLOGY_MISMATCH', [op.operationId], `${op.operationId} cannot commit while the aperture is unclassified`);
+    }
+  }
 }
 
 function validateSegments(c, req) {
@@ -172,7 +226,8 @@ export function validateRecords(records) {
         for (const s of c.segments ?? []) claim(`${v.variantId}:${s.segmentId}`, g.glyphId);
       }
     }
-    for (const n of g.semanticGraph?.negativeSpaces ?? []) claim(n.id, g.glyphId);
+    const sg = g.semanticGraph ?? {};
+    for (const e of [...(sg.negativeSpaces ?? []), ...(sg.components ?? []), ...(sg.junctions ?? []), ...(sg.constraints ?? [])]) claim(e.id, g.glyphId);
   }
   return out;
 }

@@ -34,11 +34,11 @@ Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five aut
 
 Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
 
-Production implementation has started: `src/` contains the canonical glyph registry and legacy v0.6 import (0.7A-T01/T02). Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
+Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import and semantic overlays (0.7A-T01–T03). Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T03 (semantic overlays). The glyph inventory and data model from T01/T02 are in place.
+**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T04 (geometry validator). Registry, legacy import and semantic overlays (T01–T03) are in place; see `docs/reports/T03_TOPOLOGY_REPORT.md` for what still needs human semantic review.
 
 ## Next archive task
 

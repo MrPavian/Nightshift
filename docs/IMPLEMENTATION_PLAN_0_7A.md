@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 (reconnaissance) · includes the completion report for 0.7A-T02  
 **Author:** Claude (implementation role per D-009)  
 **Date:** 2026-11-14  
-**Status:** T01 complete · T02 complete · T03–T07 not started
+**Status:** T01 complete · T02 complete · T03 complete · T04–T07 not started
 
 ## 1. Repository reconnaissance (facts at commit `585715d`)
 
@@ -40,7 +40,7 @@
 | GlyphValidator (schema layer) | `src/glyph/schema.js` | **T02 done** (schema/reference/maturity/snapshot integrity) |
 | VectorGeometry | `src/geometry/svg-path.js` | parse/serialize/bounds done; flattening + error bounds in T04 |
 | GlyphValidator (geometry/topology) | `src/geometry/topology.js`, `src/glyph/validate-geometry.js` | T04 |
-| Semantic graph overlay | `src/glyph/semantic-abgrs.js` | T03 |
+| Semantic graph overlay | `src/glyph/semantic-overlay.js`, `data/semantic/abgrs-semantic-overlay.v1.json` | **T03 done** |
 | SvgInterchange | `src/render/svg.js` | T05 |
 | ThreeEditorAdapter | `src/editor/three-adapter.js` | T05/T07 |
 | EditCommandBus | `src/model/commands.js` | T07 |
@@ -66,10 +66,9 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 
 ## 5. Next tickets and known risks
 
-- **T03 — semantic overlays.** Attach the component proposals from `contracts/abgrs-glyph-construction.v1.json`; map to segment IDs only where unambiguous, otherwise `provisional-unmapped`.
 - **T04 — geometry validator.** Adaptive flattening with error bounds, segment intersection, planar topology and containment. Risk: robust predicates without a library. Mitigation: exact arithmetic is possible for the line-only parts of the legacy data, plus conservative error-bounded checks for quadratics.
 - **G aperture (AUD-01).** Because G is a single closed, simple(-looking) contour without holes, every unfilled region inside its silhouette is connected to the exterior if T04 proves the contour simple. That proves exterior connectivity but **not** the semantic aperture boundary or a measurement line. The plan is to report connectivity as measured and keep `apertureStatus: interpretation-required` until an aperture boundary is authored and reviewed.
-- **Browser execution of the model is not yet exercised.** The modules use only `TextEncoder` and `structuredClone` (available in all modern browsers), but no browser test exists until T05.
+- **Browser execution:** covered by `npm run test:browser` (headless Chrome loads the registry from the same JSON files; geometry hashes match Node). Added in T03.
 
 ## 6. T02 completion report
 
@@ -85,3 +84,21 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 | Maturity | A/B/G/R/S `authored-contour`; 21 others `provisional`, `reference-only`. No review records; validator rejects maturity claims without passed reviews. |
 | Not verified | Geometric validity (self-intersection, containment, clearance) — that is T04. Browser execution. Any visual quality. |
 | Next | **0.7A-T03** semantic graph overlays and topology declarations. |
+
+## 7. T03 completion report
+
+| Item | Result |
+|---|---|
+| Status | **complete** |
+| Files | `data/semantic/abgrs-semantic-overlay.v1.json`, `src/glyph/semantic-overlay.js`, `src/glyph/load-node.js`, `src/glyph/schema.js` (semantic reference checks), `src/glyph/registry.js` (`GlyphRegistry.build`), `tools/report-topology.mjs`, `docs/reports/T03_TOPOLOGY_REPORT.md`, `tools/browser-smoke.mjs`, `tests/browser/smoke.html`, `tests/semantic-overlay.test.js` |
+| Tests | `npm test`: **37 passed, 0 failed** · `npm run test:browser`: **SMOKE-PASS** (headless Chrome) |
+| Geometry | Unchanged: geometry hashes and legacy snapshots are identical before and after the overlay (tested). Overlaid glyphs move to revision 2 with a `derived` provenance record. |
+| Components | Exactly the contract proposals (A 5, B 6, G 6, R 5, S 5) with stable IDs `glyph.X.component.*`. |
+| Mapping | Only topologically determined counter boundaries are `mapped` (A 1, B 2, R 1). All positive-mass components are `provisional-unmapped` with reviewable `candidateGeometryRefs` and a stated geometric basis; candidates partition each outer contour (every segment proposed exactly once). G `aperture-boundary` is `pending-classification`. |
+| Junctions | Declared per contract invariants with `position: null` and candidate node references; no coordinates invented. |
+| Constraints | Identity invariants copied verbatim from the parameter contract plus `preserve-counter` per counter, all `declared-unverified`; G `preserve-aperture` is `pending-classification`. |
+| Topology | Declared signatures (connected components = 1, required counters/apertures, junctions, fill rule) are `declared-unverified`. Reports keep counters, apertures and channels separate. |
+| G | `TOPO_APERTURE_UNRESOLVED` warning with blockers; `glyph.G.set-aperture-width` is gated (`commitAllowed: false`); the validator rejects attempts to open the gate while unclassified. |
+| Needs human review | All `candidateGeometryRefs` (component boundaries are interpretations), junction kinds, and the G aperture observation. |
+| Not verified | Any geometric property (connectivity, containment, self-intersection, clearance) — that is T04. |
+| Next | **0.7A-T04** geometry validator vertical slice. |

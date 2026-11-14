@@ -2,7 +2,7 @@
   "name": "nightshift-art-engine",
   "version": "0.7.0-dev",
   "private": true,
-  "description": "NIGHTSHIFT procedural graffiti lettering engine — canonical glyph model (0.7A)",
+  "description": "NIGHTSHIFT procedural graffiti lettering engine \u2014 canonical glyph model (0.7A)",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -10,6 +10,8 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "extract:v06": "node tools/extract-v06-paths.mjs",
-    "check:v06": "node tools/extract-v06-paths.mjs --check"
+    "check:v06": "node tools/extract-v06-paths.mjs --check",
+    "test:browser": "node tools/browser-smoke.mjs",
+    "report:topology": "node tools/report-topology.mjs"
   }
 }

@@ -5,6 +5,7 @@ import { deepFreeze, stableStringify } from '../core/stable-json.js';
 import { ALPHABET, glyphId as toGlyphId } from './ids.js';
 import { importLegacyV06, IMPORTER_VERSION, GLYPH_SCHEMA_VERSION } from './import-v06.js';
 import { validateRecords } from './schema.js';
+import { applySemanticOverlay, OVERLAY_APPLIER_VERSION } from './semantic-overlay.js';
 
 export const REGISTRY_SCHEMA_VERSION = '1.0';
 
@@ -23,6 +24,21 @@ export class GlyphRegistry {
       source: snapshot.snapshotId,
       sourceSha256: snapshot.source.sha256,
       importer: IMPORTER_VERSION,
+    });
+  }
+
+  /**
+   * Import v0.6 and apply the A/B/G/R/S semantic overlay (T03).
+   * @param {{snapshot:object, overlay:object, parameterContract:object, validationContract:object}} inputs
+   */
+  static build({ snapshot, overlay, parameterContract, validationContract }) {
+    const records = applySemanticOverlay(importLegacyV06(snapshot), overlay, { parameterContract, validationContract });
+    return new GlyphRegistry(records, {
+      source: snapshot.snapshotId,
+      sourceSha256: snapshot.source.sha256,
+      importer: IMPORTER_VERSION,
+      semanticOverlay: `${overlay.overlayId}@${overlay.version}`,
+      overlayApplier: OVERLAY_APPLIER_VERSION,
     });
   }
 
@@ -63,6 +79,8 @@ export class GlyphRegistry {
         counters: t.counterIds.length,
         counterStatus: t.counterStatus,
         apertureStatus: t.apertureStatus,
+        components: g.semanticGraph.components.length,
+        componentsMapped: g.semanticGraph.components.filter((c) => c.mappingStatus === 'mapped').length,
         warnings: g.importDiagnostics.filter((d) => d.severity === 'warning').map((d) => d.code),
       };
     });

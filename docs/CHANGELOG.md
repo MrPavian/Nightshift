@@ -295,3 +295,13 @@
 - No semantic components, anchors or calibrated metrics yet: T03 and later calibration.
 - No renderer or editor yet; the modules have not been run in a browser.
 
+
+## 2026-11-14 — 0.7A-T03: semantic overlays and topology declarations
+
+- Added the A/B/G/R/S semantic overlay (`data/semantic/abgrs-semantic-overlay.v1.json`, `src/glyph/semantic-overlay.js`): contract component proposals with stable IDs, junction candidates, identity-invariant and counter-protection constraints, declared topology signatures.
+- Only counter boundaries are mapped to geometry; all other components are `provisional-unmapped` with reviewable candidate segments and a stated basis. Geometry is unchanged.
+- G aperture: explicit `interpretation-required` record with observations and blockers; `glyph.G.set-aperture-width` is gated and cannot commit.
+- Generated identity/topology report: `docs/reports/T03_TOPOLOGY_REPORT.md` (`npm run report:topology`).
+- Added a headless-browser smoke test (`npm run test:browser`); the model runs unchanged in Chrome with identical geometry hashes.
+- Tests: 37 passing.
+
