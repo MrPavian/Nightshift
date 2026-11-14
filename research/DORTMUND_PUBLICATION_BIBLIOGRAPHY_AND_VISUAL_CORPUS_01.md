@@ -73,3 +73,7 @@ This is a potentially valuable later primary/artist-controlled visual corpus for
 - Hitzerot, *RIO — The Process of Writing*: https://hitzerot.com/shop/rio/
 
 **Evidence grade:** B for the 1996 book's existence, authorship and ISBN; C for the conflicting page extents; B for the existence/advertised scope of *IRON CITY* and *RIO*; no page-level visual evidence is claimed.
+
+
+## Access update — *Da kukse wa* 2020 reprint
+The original 1987 *Da kukse wa* is distinct from the 1996 *Graffiti Dortmund* ISBN record and its 80/160-page discrepancy. Marianne Brentzel's official site confirms the 1987 publication and credits; the official Dortmunder U *I WAS HERE* page confirms a 2020 reprint and online exhibition browsing. Mr. Graffiti currently lists the second edition as 36 pages, German, A4 landscape, €75 and in stock; the retailer says it is identical to the original except for the preface. Those extent/identity details remain uncollated seller metadata. See [W02.26 access dossier](DORTMUND_DA_KUKSE_WA_2020_REPRINT_ACCESS_01.md).
