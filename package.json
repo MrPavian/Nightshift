@@ -12,6 +12,7 @@
     "extract:v06": "node tools/extract-v06-paths.mjs",
     "check:v06": "node tools/extract-v06-paths.mjs --check",
     "test:browser": "node tools/browser-smoke.mjs",
-    "report:topology": "node tools/report-topology.mjs"
+    "report:topology": "node tools/report-topology.mjs",
+    "report:validation": "node tools/report-validation.mjs"
   }
 }

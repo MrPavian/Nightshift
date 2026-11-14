@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 (reconnaissance) · includes the completion report for 0.7A-T02  
 **Author:** Claude (implementation role per D-009)  
 **Date:** 2026-11-14  
-**Status:** T01 complete · T02 complete · T03 complete · T04–T07 not started
+**Status:** T01–T04 complete · T05–T07 not started
 
 ## 1. Repository reconnaissance (facts at commit `585715d`)
 
@@ -38,8 +38,8 @@
 | GlyphRegistry | `src/glyph/registry.js` | **T02 done** |
 | (legacy migration) | `src/glyph/import-v06.js`, `tools/extract-v06-paths.mjs` | **T02 done** |
 | GlyphValidator (schema layer) | `src/glyph/schema.js` | **T02 done** (schema/reference/maturity/snapshot integrity) |
-| VectorGeometry | `src/geometry/svg-path.js` | parse/serialize/bounds done; flattening + error bounds in T04 |
-| GlyphValidator (geometry/topology) | `src/geometry/topology.js`, `src/glyph/validate-geometry.js` | T04 |
+| VectorGeometry | `src/geometry/svg-path.js`, `flatten.js`, `area.js`, `predicates.js` | **done** (parse/serialize, exact bounds/area, certified flattening) |
+| GlyphValidator (geometry/topology) | `src/geometry/topology.js`, `src/glyph/validate-geometry.js`, `data/validator-profiles/legacy-v06.v1.json` | **T04 done** |
 | Semantic graph overlay | `src/glyph/semantic-overlay.js`, `data/semantic/abgrs-semantic-overlay.v1.json` | **T03 done** |
 | SvgInterchange | `src/render/svg.js` | T05 |
 | ThreeEditorAdapter | `src/editor/three-adapter.js` | T05/T07 |
@@ -66,8 +66,8 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 
 ## 5. Next tickets and known risks
 
-- **T04 — geometry validator.** Adaptive flattening with error bounds, segment intersection, planar topology and containment. Risk: robust predicates without a library. Mitigation: exact arithmetic is possible for the line-only parts of the legacy data, plus conservative error-bounded checks for quadratics.
-- **G aperture (AUD-01).** Because G is a single closed, simple(-looking) contour without holes, every unfilled region inside its silhouette is connected to the exterior if T04 proves the contour simple. That proves exterior connectivity but **not** the semantic aperture boundary or a measurement line. The plan is to report connectivity as measured and keep `apertureStatus: interpretation-required` until an aperture boundary is authored and reviewed.
+- **G aperture (AUD-01).** T04 proved that G's unfilled space is exterior-connected (simple contour, no holes). The semantic aperture boundary and the width measurement line (AUD-03) still need authoring and review, so `apertureStatus` stays `interpretation-required`.
+- **T05 renderer:** must build holes from declared topology. The validator shows A's counter only opens under `evenodd` (`GEO_FILL_RULE_SENSITIVE`).
 - **Browser execution:** covered by `npm run test:browser` (headless Chrome loads the registry from the same JSON files; geometry hashes match Node). Added in T03.
 
 ## 6. T02 completion report
@@ -102,3 +102,22 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 | Needs human review | All `candidateGeometryRefs` (component boundaries are interpretations), junction kinds, and the G aperture observation. |
 | Not verified | Any geometric property (connectivity, containment, self-intersection, clearance) — that is T04. |
 | Next | **0.7A-T04** geometry validator vertical slice. |
+
+## 8. T04 completion report
+
+| Item | Result |
+|---|---|
+| Status | **complete** (vertical slice; channel corridor analysis and render parity deferred, see below) |
+| Files | `src/geometry/flatten.js`, `src/geometry/predicates.js`, `src/geometry/topology.js`, `src/geometry/area.js`, `src/glyph/validate-geometry.js`, `data/validator-profiles/legacy-v06.v1.json`, `tools/report-validation.mjs`, `docs/reports/T04_VALIDATION_REPORT.md`, `tests/fixtures/geometry-fixtures.js`, `tests/geometry-validator.test.js` |
+| Tests | `npm test`: **61 passed, 0 failed** (≈3 s) · `npm run test:browser`: **SMOKE-PASS** |
+| Pipeline | All 10 contract stages run in order and report `passed / failed / measured-uncalibrated / partial / not-run`. Nothing is silently passed. |
+| Numerics | Curves are flattened adaptively with a **certified** error bound (convex-hull argument, tested). Line geometry uses exact orientation predicates. Near-contacts closer than the bound trigger refinement (≤ 3 rounds); crossings between contours are certified by a Jordan-curve node-straddle test; anything still undecidable is an error (`GEO_INTERSECTION_UNCERTAIN`), never a pass. |
+| Legacy result | A, B, G, R, S pass every hard check: certified simple contours, A/B/R counters are enclosed bounded faces, one connected component each. 25 of 26 letters pass; **Q fails** (`VAL_UNDECLARED_CROSSING`: its tail crosses the outer ring and counter, undeclared). |
+| G | Proven: all unfilled space is exterior-connected (`GEO_UNFILLED_SPACE_EXTERIOR_CONNECTED`). The aperture entity remains unclassified (`TOPO_APERTURE_UNRESOLVED` warning); the identity check `aperture-exterior-connected` is `not-evaluable`, not passed. The overlay (v1.1.0) records this evidence and drops the resolved blocker. |
+| Fill rule | A's counter is reproduced only by `evenodd`; under `nonzero` it would be filled (`GEO_FILL_RULE_SENSITIVE`). B and R work under both. |
+| Clearance | Measured with closest-point pair, segment IDs, error bound and side (filled wall vs unfilled gap). E.g. A counter wall 17, A legs 26, G wall 18, G pocket under the bar 12 (unfilled). All `uncalibrated` → `VAL_UNCALIBRATED`; no pass/fail. With an approved threshold the rule "distance − error bound ≥ threshold" applies (fixture-tested, incl. near-clearance warning). |
+| Identity checks | Geometry-decidable checks pass (`counter-enclosed`, `two-distinct-bounded-counters`, `single-required-connected-contour`, `no-unintended-self-intersection`). Mapping-dependent checks are `not-evaluable` with reasons. |
+| Contract fixtures | counter.enclosed ✓, counter.merged ✓, aperture.open ✓, aperture.closed ✓, channel.corridor (partial: never a counter; corridor analysis deferred), self-intersection ✓, declared-crossing ✓, clearance.pass ✓, clearance.fail ✓, anchor.invalid ✓, determinism ✓, render-parity → T05. |
+| Atomicity | `checkCandidate()` validates a candidate record and returns `commitAllowed`; the committed record is untouched (tested with a counter moved outside the glyph). |
+| Not done | Channel corridor analysis; render parity (T05); anchors (none declared yet); calibrated thresholds (need human calibration records). |
+| Next | **0.7A-T05** topology-correct monochrome renderer (SVG first), then Three.js. |

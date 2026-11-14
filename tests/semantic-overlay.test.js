@@ -86,7 +86,8 @@ test('G aperture is explicitly unresolved, reported with reasons, and its operat
   const sg = g.semanticGraph;
   assert.equal(sg.topology.apertureStatus, 'interpretation-required');
   assert.equal(sg.components.find((c) => c.label === 'aperture-boundary').mappingStatus, 'pending-classification');
-  assert.ok(sg.apertureInterpretation.blockers.length >= 3);
+  assert.ok(sg.apertureInterpretation.blockers.length >= 2);
+  assert.ok(sg.apertureInterpretation.blockers.some((b) => b.includes('AUD-03')));
   assert.deepEqual(sg.apertureInterpretation.gatedOperations, [{ operationId: 'glyph.G.set-aperture-width', commitAllowed: false }]);
   const report = topologyReport(g);
   const f = report.findings.find((x) => x.code === 'TOPO_APERTURE_UNRESOLVED');

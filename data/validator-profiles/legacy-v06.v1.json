@@ -1,0 +1,20 @@
+{
+  "profileId": "nightshift.validator-profile.legacy-v06",
+  "version": "1.0.0",
+  "contract": "contracts/glyph-geometry-validation.v1.json",
+  "units": "legacy-v06 glyph-local units (y down)",
+  "numerical": {
+    "flatteningTolerance": 0.01,
+    "refinementFactor": 8,
+    "maxRefinements": 3,
+    "status": "numerical-approximation-parameters",
+    "note": "Controls curve flattening accuracy only. Every derived measurement reports its own error bound. These are not design thresholds."
+  },
+  "thresholds": [],
+  "requiredThresholds": [
+    { "kind": "counter-wall-clearance", "scope": "per glyph/variant/counter", "usedBy": "preserve-counter, counter clearance checks" },
+    { "kind": "boundary-self-proximity", "scope": "per glyph/variant/feature", "usedBy": "neck, bar and leg thickness checks" }
+  ],
+  "calibrationStatus": "none-approved",
+  "calibrationNote": "No calibrated thresholds exist yet (research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md). Clearance is measured and reported, never passed or failed."
+}

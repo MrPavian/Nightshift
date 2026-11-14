@@ -1,6 +1,6 @@
 {
   "overlayId": "nightshift.semantic-overlay.abgrs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "provisional-engineering-proposal",
   "sources": [
     "contracts/abgrs-glyph-construction.v1.json#componentProposals",
@@ -17,164 +17,590 @@
   "glyphs": {
     "A": {
       "components": [
-        { "name": "left-leg", "role": "leg", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#01", "outer#09", "outer#10"],
+        {
+          "name": "left-leg",
+          "role": "leg",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#01",
+            "outer#09",
+            "outer#10"
+          ],
           "basis": "Leftmost vertical edge x=8 (y 132->42), inner edge x=34 below the crossbar, and the foot at y=132.",
-          "connectsTo": ["apex-zone", "crossbar-zone"] },
-        { "name": "right-leg", "role": "leg", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#05", "outer#06", "outer#07"],
+          "connectsTo": [
+            "apex-zone",
+            "crossbar-zone"
+          ]
+        },
+        {
+          "name": "right-leg",
+          "role": "leg",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ],
           "basis": "Rightmost vertical edge x=96, foot at y=132, inner edge x=70 below the crossbar.",
-          "connectsTo": ["apex-zone", "crossbar-zone"] },
-        { "name": "apex-zone", "role": "junction", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#02", "outer#03", "outer#04"],
+          "connectsTo": [
+            "apex-zone",
+            "crossbar-zone"
+          ]
+        },
+        {
+          "name": "apex-zone",
+          "role": "junction",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04"
+          ],
           "basis": "Two diagonal shoulders and the flat top above y=42. Leg/apex boundary at the y=42 nodes is an interpretation.",
-          "connectsTo": ["left-leg", "right-leg"] },
-        { "name": "crossbar-zone", "role": "crossbar", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#08", "counter.primary#05"],
+          "connectsTo": [
+            "left-leg",
+            "right-leg"
+          ]
+        },
+        {
+          "name": "crossbar-zone",
+          "role": "crossbar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#08",
+            "counter.primary#05"
+          ],
           "basis": "Underside y=91 (x 70->34) and the counter's closing bottom edge y=66. Whether the crossbar is an independent bar or an integrated contour transition is undecided (spec §4 A).",
-          "connectsTo": ["left-leg", "right-leg"] },
-        { "name": "counter-boundary", "role": "counter-boundary", "required": true, "mapping": "mapped",
-          "refs": ["counter.primary"],
+          "connectsTo": [
+            "left-leg",
+            "right-leg"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "refs": [
+            "counter.primary"
+          ],
           "basis": "Topologically determined: the only inner contour.",
-          "connectsTo": [] }
+          "connectsTo": []
+        }
       ],
-      "negativeSpaceBoundaries": { "counter.primary": ["counter-boundary"] },
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
       "junctions": [
-        { "name": "left-leg-apex", "kind": "continuation", "components": ["left-leg", "apex-zone"], "candidateNodeRefs": ["outer@01"] },
-        { "name": "right-leg-apex", "kind": "continuation", "components": ["right-leg", "apex-zone"], "candidateNodeRefs": ["outer@04"] },
-        { "name": "crossbar-left", "kind": "attachment", "components": ["crossbar-zone", "left-leg"], "candidateNodeRefs": ["outer@08"] },
-        { "name": "crossbar-right", "kind": "attachment", "components": ["crossbar-zone", "right-leg"], "candidateNodeRefs": ["outer@07"] }
+        {
+          "name": "left-leg-apex",
+          "kind": "continuation",
+          "components": [
+            "left-leg",
+            "apex-zone"
+          ],
+          "candidateNodeRefs": [
+            "outer@01"
+          ]
+        },
+        {
+          "name": "right-leg-apex",
+          "kind": "continuation",
+          "components": [
+            "right-leg",
+            "apex-zone"
+          ],
+          "candidateNodeRefs": [
+            "outer@04"
+          ]
+        },
+        {
+          "name": "crossbar-left",
+          "kind": "attachment",
+          "components": [
+            "crossbar-zone",
+            "left-leg"
+          ],
+          "candidateNodeRefs": [
+            "outer@08"
+          ]
+        },
+        {
+          "name": "crossbar-right",
+          "kind": "attachment",
+          "components": [
+            "crossbar-zone",
+            "right-leg"
+          ],
+          "candidateNodeRefs": [
+            "outer@07"
+          ]
+        }
       ],
       "expectedConnectedComponents": 1
     },
     "B": {
       "components": [
-        { "name": "spine", "role": "stem", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#07", "counter.upper#01", "counter.lower#01"],
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#07",
+            "counter.upper#01",
+            "counter.lower#01"
+          ],
           "basis": "Left edge x=10 (closing segment) and the counters' left edges at x=35.",
-          "connectsTo": ["upper-bowl", "lower-bowl"] },
-        { "name": "upper-bowl", "role": "bowl", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#01", "outer#02", "outer#03"],
+          "connectsTo": [
+            "upper-bowl",
+            "lower-bowl"
+          ]
+        },
+        {
+          "name": "upper-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03"
+          ],
           "basis": "Top edge y=8 and the two quadratics down to the waist node (77,69). The top edge is shared with the spine region.",
-          "connectsTo": ["spine", "waist-junction"] },
-        { "name": "lower-bowl", "role": "bowl", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#04", "outer#05", "outer#06"],
+          "connectsTo": [
+            "spine",
+            "waist-junction"
+          ]
+        },
+        {
+          "name": "lower-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06"
+          ],
           "basis": "Quadratics from the waist node down to y=132 and the bottom edge, shared with the spine region.",
-          "connectsTo": ["spine", "waist-junction"] },
-        { "name": "waist-junction", "role": "junction", "required": true, "mapping": "provisional-unmapped",
+          "connectsTo": [
+            "spine",
+            "waist-junction"
+          ]
+        },
+        {
+          "name": "waist-junction",
+          "role": "junction",
+          "required": true,
+          "mapping": "provisional-unmapped",
           "candidateRefs": [],
           "basis": "Concave outer node (77,69) between the bowls; its extent is not a segment.",
-          "connectsTo": ["upper-bowl", "lower-bowl"] },
-        { "name": "counter-upper", "role": "counter-boundary", "required": true, "mapping": "mapped",
-          "refs": ["counter.upper"], "basis": "Topologically determined: upper inner contour by measured position.", "connectsTo": [] },
-        { "name": "counter-lower", "role": "counter-boundary", "required": true, "mapping": "mapped",
-          "refs": ["counter.lower"], "basis": "Topologically determined: lower inner contour by measured position.", "connectsTo": [] }
+          "connectsTo": [
+            "upper-bowl",
+            "lower-bowl"
+          ]
+        },
+        {
+          "name": "counter-upper",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "refs": [
+            "counter.upper"
+          ],
+          "basis": "Topologically determined: upper inner contour by measured position.",
+          "connectsTo": []
+        },
+        {
+          "name": "counter-lower",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "refs": [
+            "counter.lower"
+          ],
+          "basis": "Topologically determined: lower inner contour by measured position.",
+          "connectsTo": []
+        }
       ],
-      "negativeSpaceBoundaries": { "counter.upper": ["counter-upper"], "counter.lower": ["counter-lower"] },
+      "negativeSpaceBoundaries": {
+        "counter.upper": [
+          "counter-upper"
+        ],
+        "counter.lower": [
+          "counter-lower"
+        ]
+      },
       "junctions": [
-        { "name": "waist", "kind": "attachment", "components": ["upper-bowl", "lower-bowl", "waist-junction"], "candidateNodeRefs": ["outer@03"] },
-        { "name": "spine-upper-bowl", "kind": "continuation", "components": ["spine", "upper-bowl"], "candidateNodeRefs": ["outer@00"] },
-        { "name": "spine-lower-bowl", "kind": "continuation", "components": ["spine", "lower-bowl"], "candidateNodeRefs": ["outer@06"] }
+        {
+          "name": "waist",
+          "kind": "attachment",
+          "components": [
+            "upper-bowl",
+            "lower-bowl",
+            "waist-junction"
+          ],
+          "candidateNodeRefs": [
+            "outer@03"
+          ]
+        },
+        {
+          "name": "spine-upper-bowl",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "upper-bowl"
+          ],
+          "candidateNodeRefs": [
+            "outer@00"
+          ]
+        },
+        {
+          "name": "spine-lower-bowl",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "lower-bowl"
+          ],
+          "candidateNodeRefs": [
+            "outer@06"
+          ]
+        }
       ],
       "expectedConnectedComponents": 1
     },
     "G": {
       "components": [
-        { "name": "outer-bowl", "role": "bowl", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#02", "outer#03", "outer#04", "outer#05", "outer#06", "outer#14", "outer#15", "outer#16"],
+        {
+          "name": "outer-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04",
+            "outer#05",
+            "outer#06",
+            "outer#14",
+            "outer#15",
+            "outer#16"
+          ],
           "basis": "Outer left/top/bottom edges and the inner left wall x=29 with its chamfers.",
-          "connectsTo": ["upper-terminal", "lower-terminal"] },
-        { "name": "upper-terminal", "role": "terminal", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#01", "outer#17", "outer#18", "outer#19"],
+          "connectsTo": [
+            "upper-terminal",
+            "lower-terminal"
+          ]
+        },
+        {
+          "name": "upper-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#01",
+            "outer#17",
+            "outer#18",
+            "outer#19"
+          ],
           "basis": "Upper right edges ending in the closing end cap (80,43)->(94,25).",
-          "connectsTo": ["outer-bowl"] },
-        { "name": "lower-terminal", "role": "terminal", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#07", "outer#08"],
+          "connectsTo": [
+            "outer-bowl"
+          ]
+        },
+        {
+          "name": "lower-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#07",
+            "outer#08"
+          ],
           "basis": "Lower right edges up to the bar top (98,76). In this contour the lower bowl end merges into the bar attachment; the boundary between them is undetermined.",
-          "connectsTo": ["outer-bowl", "bar-attachment"] },
-        { "name": "internal-bar", "role": "bar", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#09", "outer#10", "outer#11"],
+          "connectsTo": [
+            "outer-bowl",
+            "bar-attachment"
+          ]
+        },
+        {
+          "name": "internal-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#09",
+            "outer#10",
+            "outer#11"
+          ],
           "basis": "Bar top y=76 (x 98->59), inner end x=59, underside y=96.",
-          "connectsTo": ["bar-attachment"] },
-        { "name": "bar-attachment", "role": "connector", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#12", "outer#13"],
+          "connectsTo": [
+            "bar-attachment"
+          ]
+        },
+        {
+          "name": "bar-attachment",
+          "role": "connector",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#12",
+            "outer#13"
+          ],
           "basis": "Spur x=73 (y 96->108) and inner bottom edge y=108 joining bar and bowl.",
-          "connectsTo": ["internal-bar", "lower-terminal"] },
-        { "name": "aperture-boundary", "role": "aperture-boundary", "required": true, "mapping": "pending-classification",
+          "connectsTo": [
+            "internal-bar",
+            "lower-terminal"
+          ]
+        },
+        {
+          "name": "aperture-boundary",
+          "role": "aperture-boundary",
+          "required": true,
+          "mapping": "pending-classification",
           "candidateRefs": [],
           "basis": "Not mapped: the aperture is not yet classified (AUD-01). No boundary is synthesised.",
-          "connectsTo": [] }
+          "connectsTo": []
+        }
       ],
       "negativeSpaceBoundaries": {},
       "junctions": [
-        { "name": "bar-to-bowl", "kind": "attachment", "components": ["internal-bar", "bar-attachment", "lower-terminal"], "candidateNodeRefs": ["outer@11", "outer@12"] }
+        {
+          "name": "bar-to-bowl",
+          "kind": "attachment",
+          "components": [
+            "internal-bar",
+            "bar-attachment",
+            "lower-terminal"
+          ],
+          "candidateNodeRefs": [
+            "outer@11",
+            "outer@12"
+          ]
+        }
       ],
       "apertureInterpretation": {
         "status": "interpretation-required",
         "intendedIdentity": "Exterior-connected opening that distinguishes G from C and O (identity profile: apertureCount 1).",
         "observations": [
           "Single closed outer contour; legacy hole array is empty.",
-          "Observed (unreviewed): the unfilled interior bounded by the inner wall (outer#15), inner top (outer#16/#17) and the bar (outer#09) meets the outside on the right, between the upper terminal end cap (outer#19) and the bar top edge (outer#09)."
+          "Observed (unreviewed): the unfilled interior bounded by the inner wall (outer#15), inner top (outer#16/#17) and the bar (outer#09) meets the outside on the right, between the upper terminal end cap (outer#19) and the bar top edge (outer#09).",
+          "Proven by the T04 geometry validator (GEO_UNFILLED_SPACE_EXTERIOR_CONNECTED): the single outer contour is simple and there are no inner contours, so all unfilled space is exterior-connected. This does not define the aperture boundary or its width."
         ],
         "blockers": [
-          "Exterior connectivity not yet proven by planar topology analysis (T04).",
           "aperture-boundary component has no reviewed geometry mapping.",
           "Measurement construction for apertureWidth is undefined (AUD-03)."
         ],
-        "gatedOperations": ["glyph.G.set-aperture-width"]
+        "gatedOperations": [
+          "glyph.G.set-aperture-width"
+        ]
       },
       "expectedConnectedComponents": 1
     },
     "R": {
       "components": [
-        { "name": "spine", "role": "stem", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#01", "outer#09", "outer#10", "counter.primary#01"],
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#01",
+            "outer#09",
+            "outer#10",
+            "counter.primary#01"
+          ],
           "basis": "Left edge x=10, inner edge x=36 below the bowl, foot y=132, counter's left edge x=36.",
-          "connectsTo": ["upper-bowl", "bowl-leg-junction"] },
-        { "name": "upper-bowl", "role": "bowl", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#02", "outer#03", "outer#04"],
+          "connectsTo": [
+            "upper-bowl",
+            "bowl-leg-junction"
+          ]
+        },
+        {
+          "name": "upper-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04"
+          ],
           "basis": "Top edge y=8 and two quadratics down to node (76,78).",
-          "connectsTo": ["spine", "bowl-leg-junction"] },
-        { "name": "bowl-leg-junction", "role": "junction", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#08"],
+          "connectsTo": [
+            "spine",
+            "bowl-leg-junction"
+          ]
+        },
+        {
+          "name": "bowl-leg-junction",
+          "role": "junction",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#08"
+          ],
           "basis": "Bowl underside y=84 between leg (51,84) and spine (36,84); outer node (76,78) is the outer side of the junction.",
-          "connectsTo": ["spine", "upper-bowl", "descending-leg"] },
-        { "name": "descending-leg", "role": "leg", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#05", "outer#06", "outer#07"],
+          "connectsTo": [
+            "spine",
+            "upper-bowl",
+            "descending-leg"
+          ]
+        },
+        {
+          "name": "descending-leg",
+          "role": "leg",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ],
           "basis": "Diagonal from (76,78) to (103,132), foot y=132, inner diagonal back up to (51,84).",
-          "connectsTo": ["bowl-leg-junction"] },
-        { "name": "counter-boundary", "role": "counter-boundary", "required": true, "mapping": "mapped",
-          "refs": ["counter.primary"], "basis": "Topologically determined: the only inner contour.", "connectsTo": [] }
+          "connectsTo": [
+            "bowl-leg-junction"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "refs": [
+            "counter.primary"
+          ],
+          "basis": "Topologically determined: the only inner contour.",
+          "connectsTo": []
+        }
       ],
-      "negativeSpaceBoundaries": { "counter.primary": ["counter-boundary"] },
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
       "junctions": [
-        { "name": "bowl-leg", "kind": "branch", "components": ["upper-bowl", "descending-leg", "bowl-leg-junction"], "candidateNodeRefs": ["outer@04", "outer@07"] },
-        { "name": "spine-bowl", "kind": "continuation", "components": ["spine", "upper-bowl"], "candidateNodeRefs": ["outer@01"] }
+        {
+          "name": "bowl-leg",
+          "kind": "branch",
+          "components": [
+            "upper-bowl",
+            "descending-leg",
+            "bowl-leg-junction"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@07"
+          ]
+        },
+        {
+          "name": "spine-bowl",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "upper-bowl"
+          ],
+          "candidateNodeRefs": [
+            "outer@01"
+          ]
+        }
       ],
       "expectedConnectedComponents": 1
     },
     "S": {
       "components": [
-        { "name": "upper-terminal", "role": "terminal", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#01", "outer#21", "outer#22"],
+        {
+          "name": "upper-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#01",
+            "outer#21",
+            "outer#22"
+          ],
           "basis": "Upper right edges ending in the closing end cap (90,45)->(94,22).",
-          "connectsTo": ["upper-curve-mass"] },
-        { "name": "upper-curve-mass", "role": "arc", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#02", "outer#03", "outer#04", "outer#18", "outer#19", "outer#20"],
+          "connectsTo": [
+            "upper-curve-mass"
+          ]
+        },
+        {
+          "name": "upper-curve-mass",
+          "role": "arc",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04",
+            "outer#18",
+            "outer#19",
+            "outer#20"
+          ],
           "basis": "Top and upper-left outer edges with the matching inner edges.",
-          "connectsTo": ["upper-terminal", "middle-transition"] },
-        { "name": "middle-transition", "role": "connector", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#05", "outer#06", "outer#16", "outer#17"],
+          "connectsTo": [
+            "upper-terminal",
+            "middle-transition"
+          ]
+        },
+        {
+          "name": "middle-transition",
+          "role": "connector",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#16",
+            "outer#17"
+          ],
           "basis": "The diagonal band between (10,55)-(69,85) and (99,83)-(42,53). Neck location is not yet measured.",
-          "connectsTo": ["upper-curve-mass", "lower-curve-mass"] },
-        { "name": "lower-curve-mass", "role": "arc", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#07", "outer#08", "outer#13", "outer#14", "outer#15"],
+          "connectsTo": [
+            "upper-curve-mass",
+            "lower-curve-mass"
+          ]
+        },
+        {
+          "name": "lower-curve-mass",
+          "role": "arc",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#07",
+            "outer#08",
+            "outer#13",
+            "outer#14",
+            "outer#15"
+          ],
           "basis": "Lower right inner/outer edges and the bottom edge y=133.",
-          "connectsTo": ["middle-transition", "lower-terminal"] },
-        { "name": "lower-terminal", "role": "terminal", "required": true, "mapping": "provisional-unmapped",
-          "candidateRefs": ["outer#09", "outer#10", "outer#11", "outer#12"],
+          "connectsTo": [
+            "middle-transition",
+            "lower-terminal"
+          ]
+        },
+        {
+          "name": "lower-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "candidateRefs": [
+            "outer#09",
+            "outer#10",
+            "outer#11",
+            "outer#12"
+          ],
           "basis": "Lower left edges with the end cap (12,92)->(5,119).",
-          "connectsTo": ["lower-curve-mass"] }
+          "connectsTo": [
+            "lower-curve-mass"
+          ]
+        }
       ],
       "negativeSpaceBoundaries": {},
       "junctions": [],

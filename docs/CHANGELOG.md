@@ -305,3 +305,13 @@
 - Added a headless-browser smoke test (`npm run test:browser`); the model runs unchanged in Chrome with identical geometry hashes.
 - Tests: 37 passing.
 
+
+## 2026-11-14 — 0.7A-T04: geometry validator vertical slice
+
+- Added the geometry validator (`src/glyph/validate-geometry.js`) running all 10 contract stages, with certified curve flattening, exact line predicates, Jordan-curve crossing certificates, containment, fill-rule evaluation, negative-space classification, clearance measurement (closest points, error bound, filled/unfilled side) and identity checks.
+- Validator profile `data/validator-profiles/legacy-v06.v1.json`: numerical parameters only; no calibrated thresholds, so clearance is measured and reported, never passed or failed.
+- Results: A/B/G/R/S pass all hard checks; 25/26 letters pass; provisional Q fails with an undeclared crossing (tail). G's unfilled space is proven exterior-connected; its aperture stays unclassified. A's counter needs `evenodd`.
+- Contract fixtures implemented as tests (render parity deferred to T05; channel corridor analysis deferred).
+- Semantic overlay 1.1.0 records the G connectivity proof.
+- Report: `docs/reports/T04_VALIDATION_REPORT.md` (`npm run report:validation`). Tests: 61 passing.
+
