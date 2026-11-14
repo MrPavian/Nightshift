@@ -456,3 +456,11 @@
 - Added VR-017 and an item-level inspection protocol separating tags/handstyles from pieces and train formats.
 - Identified Stadtarchiv Dortmund / Archive.NRW as a contextual photograph, film and press archive route; recorded the online CC BY-SA 4.0 statement without assuming that a specific graffiti holding exists or that off-site items share that license.
 - No book pages or images copied; no signature cloning or reuse rights inferred.
+
+
+## Research deepening — INGRID database and Dortmund image corpus route
+
+- Identified the DFG-funded University of Paderborn / KIT INGRID database as a free scholarly access route with more than 100,000 annotated graffiti records on the official project page and explicit Dortmund coverage in research literature.
+- Preserved corpus-size snapshots from DBIS and a 2023 research article rather than forcing one total; added a stratified Dortmund query and item-level rights protocol.
+- Recorded the JavaScript-only database interface and timed-out SPARQL endpoint as access limitations; no Dortmund records or images were inspected.
+- Added VR-018 and a separate MK&G Dortmund urban-photography context route (VR-019); explicitly did not claim graffiti content or reuse rights for those contextual photographs.
