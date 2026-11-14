@@ -243,3 +243,12 @@
 - Kept Silo Nation distinct from graffiti crews and ATOM ONE distinct from Pure Doze.
 - Content and tests remain editorial/test-design deliverables, not runtime implementation or publication approval.
 
+
+
+## 2026-11-14 — Additional German scene research
+
+- Added research on Stylefile as a German publication platform, 1UP, Berlin Kidz, MOSES & TAPS, LOOMIT, OZ and CAN2.
+- Added six Blackbook draft entries and ten further archive regression fixtures.
+- Added City of OZ and scholarly context to avoid flattening OZ's work into sensationalist press accounts.
+- DARKO, VANDALZ and THE FÖNS are recorded as unresolved leads only; no unverified profiles or crew affiliations were invented.
+
