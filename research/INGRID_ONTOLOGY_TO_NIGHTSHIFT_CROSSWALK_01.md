@@ -6,6 +6,8 @@
 
 ## 1. Why INGRID is foundational
 
+**Geographic scope:** Dortmund is the pilot, not the boundary. Research expands outward through the Ruhrgebiet, NRW and then national comparison scenes. See [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md).
+
 INGRID is not simply a source of reference pictures. It is a curated, interdisciplinary, annotated research corpus with a formal ontology, image provenance, chronology, location, graffiti type, material/technique, lettering style, design elements and contextual relationships. It enables comparative questions that isolated books and image searches cannot answer reliably.
 
 For NIGHTSHIFT, use INGRID in two complementary ways:
