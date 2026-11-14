@@ -44,6 +44,8 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 ## Current research files
 
+- [Ruhrgebiet Writing — Dortmund, TUF and regional circulation](RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md)
+
 - [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
 
 - [NYC Graffiti Zine and Media Network, 1990–1999 — Research Dossier 01](NYC_GRAFFITI_ZINES_AND_MEDIA_NETWORK_1990_1999_01.md)
