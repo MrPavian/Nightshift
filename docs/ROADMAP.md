@@ -154,3 +154,8 @@ See [A–Z Style Grammar Application Matrix 01](../research/A_Z_STYLE_GRAMMAR_AP
 ### Procedural variant generator core
 
 See [Procedural Variant Generator Core 01](../research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md) and [procedural-variant-generator.v1.json](../contracts/procedural-variant-generator.v1.json). Implement in sequence: deterministic seed service; glyph-specific operation planner; validated A/B/G/R/S candidate builder; word/layout candidate builder; structural feature extraction and four-way selection; quality/proof harness. Four concepts must be structurally distinct. Do not claim calibrated diversity or quality scores before reviewed examples exist, and do not weaken hard validity gates to fill the result set.
+
+
+### Visual calibration and comparative evaluation
+
+See [Visual Calibration and Comparative Evaluation 01](../research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md) and [visual-calibration.v1.json](../contracts/visual-calibration.v1.json). This workstream precedes production parameter tuning and diversity-score calibration. Build the proof specimen manifest, reviewer capture, calibration registry, deterministic parameter sweep harness, labelled diversity corpus and release-gate integration. Keep the established visual review rubric and maturity gates; this specification does not constitute visual review or calibration evidence.
