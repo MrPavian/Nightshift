@@ -109,3 +109,63 @@ Treat the editor as a learning instrument: research first, extract hypotheses se
 - Official INGRID-KG catalogue and SPARQL examples: https://dice-group.github.io/ingrid.github.io/
 
 **Evidence rule:** a city is a confirmed corpus location only when supported by a published corpus statement or live query result. A planned collection city, linked city resource or city name in an article is not automatically a confirmed, useful visual corpus.
+
+## 7. Expanded national research lanes — Berlin, East Germany, Hamburg, Stuttgart, Munich and MA'CLAIM
+
+The national comparison layer is now an explicit workstream, not a small appendix to the Ruhrgebiet pilot.
+
+### Berlin and East Germany: two histories that must not be collapsed
+
+Research Berlin in at least three distinct layers:
+- West Berlin's 1970s/1980s wall, political murals, early tags, crews and the arrival of US-influenced hip-hop writing.
+- East Berlin and the GDR: political inscriptions, youth subcultures, restricted access to spray cans and public surfaces, improvised media, surveillance and removal.
+- The post-1989 transition: access to spray paint and new surfaces, the former border strip, the East Side Gallery and rapid scene expansion.
+
+Then extend beyond Berlin to Leipzig and other East German cities. Do not treat "East German graffiti" as one uniform style or assume that pre-1989 political wall writing is equivalent to hip-hop name-writing. The 2024 study of MfS photographic records in Leipzig (1980–1989) is a particularly valuable archival route into the distinction between visible dissent, state documentation and the later writing scene.
+
+### Munich and Stuttgart: southern German comparison
+
+Munich deserves a dedicated early-history lane. Published scholarship describes it as one of the earliest and largest German writing scenes, alongside Dortmund, and notes early exchange with Berlin from 1986. Track local writers, crews, train culture, magazines, jams, municipal policy and the evolution from name-writing to broader mural and urban-art practices.
+
+Stuttgart is a required independent case, not a proxy for "southern Germany". Build its chronology from local first-person accounts, archives, publications, train/yard histories and documented walls. Compare it with Munich and the Rhine-Neckar region without assuming the same chronology or stylistic vocabulary.
+
+### Hamburg: northern German scene
+
+Hamburg is a distinct national research lane. Establish its chronology through local writers' accounts, early hip-hop networks, crew histories, train writing, publications and preserved photographic material. Do not infer Hamburg's development from Berlin or general northern-German summaries. Separate classic writing culture from later commissioned mural and street-art activity.
+
+### MA'CLAIM / Maclaim: a dedicated visual-language study
+
+MA'CLAIM is important to NIGHTSHIFT because it demonstrates a major expansion of graffiti practice beyond conventional letter-centred writing. Research its formation, members and working methods through first-person sources and documented works. The crew emerged around 2000; its members developed a distinctive photorealistic, character-led approach often described as "Graffoto". First-person accounts describe the early character-crew intention and the use of computer planning for complex wall production.
+
+For the editor, study this as a separate visual system:
+- photographic reference and image-to-wall translation;
+- value grouping, tonal range, edge control and depth;
+- anatomy, gesture, overlap and foreshortening;
+- aerosol handling, masking, layering and scale management;
+- composition across monumental wall surfaces;
+- digital previsualisation and production planning.
+
+Do not turn identifiable MA'CLAIM works, CASE's hands, or any member's signature imagery into a cloneable preset. Extract general, non-attributive production principles and original exercises. Keep photorealistic/character workflows distinct from the semantic letter-construction engine, while allowing them to coexist in a wider blackbook/editor workspace.
+
+### Research protocol for every city and scene
+
+For Berlin, Hamburg, Munich, Stuttgart, Leipzig and further East German cities, use the same evidence ledger:
+1. dated first-person testimony and interviews;
+2. contemporary photographs, blackbooks, zines, books and magazines;
+3. museum, archive and institutional records;
+4. peer-reviewed research and documented local histories;
+5. clearly labelled visual analysis and engineering hypotheses.
+
+Record date, place, creator/source, medium, rights, scene context and confidence. Distinguish a writer's recollection from independently corroborated chronology. A city is not "covered" merely because a few famous murals are documented.
+
+## 8. Additional source leads
+
+- AdJ / Pop- und Subkulturarchiv, Graffiti overview and archival holdings: https://popundsub.jugendkulturen.de/graffiti.html
+- East Side Gallery exhibition, oral-history material on writing and the Wall: https://www.eastsidegalleryausstellung.de/themen/und-auf-der-rueckseite/graffiti-und-writings-an-der-east-side-gallery/
+- Anke Schwarz (2024), "Capturing dissent: forensic photography of graffiti in the late German Democratic Republic", Leipzig 1980–1989: https://doi.org/10.1080/21622671.2024.2419367
+- KIT publication, "Style Writing. Skripturale Ästhetik zwischen Text und Bild am Beispiel von Karlsruhe und Mannheim" (historical comparison including Munich, Dortmund, Berlin and Hamburg): https://publikationen.bibliothek.kit.edu/1000079409/6209138
+- Case / MA'CLAIM profile and crew context: https://www.stadt-wand-kunst.de/case-maclaim/
+- AKUT's first-person account of MA'CLAIM formation and digital planning: https://www.akut1.com/painting/maclaim/
+- Case interview, first-person account of crew formation and character focus: https://newurbanera.org/portfolio-items/interview-with-case-mclain/
+
+**Scope update:** national research now explicitly includes Berlin, East Germany, Hamburg, Munich, Stuttgart and MA'CLAIM. Their INGRID corpus status must still be verified city by city; cultural/historical importance does not imply a particular database holding.
