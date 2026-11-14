@@ -481,3 +481,8 @@ Do not ask the owner routine questions. Make reasonable implementation choices, 
 ## 3.12 A/B/G/R/S construction implementation specification
 
 Use [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) and [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json) as the glyph-specific handoff. Preserve exact v0.6 snapshots; treat component segmentation and anchors as provisional engineering proposals; do not infer gesture order. Import A/B/R counters, G's exterior-connected aperture semantics (or explicitly unresolved interpretation), and S's no-counter state correctly. All render passes and SVG must consume one validated topology; remove fixed paper-colour counter painting. Use only registered operation IDs from the parameter contract, with no invented bounds or silent clamping. Keep all five glyphs at authored-contour until explicit review. Run the listed canonical pair/word fixtures and report partial coverage where other glyphs remain provisional.
+
+
+## 3.13 Specification integration audit gate
+
+Before implementing G aperture controls, follow [Specification Integration Audit 01](../research/SPECIFICATION_INTEGRATION_AUDIT_01.md). The G master identity describes an intended exterior-connected opening, but the imported v0.6 contour must remain `interpretation-required` until topology analysis establishes it. The `glyph.G.set-aperture-width` operation now requires a classified aperture, validated boundary/measurement construction and approved calibration. Reject canonical commits otherwise. Do not synthesize an aperture polygon or infer it from an empty hole array.
