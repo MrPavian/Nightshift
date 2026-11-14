@@ -36,6 +36,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 
 ## Current research files
 
+- [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
+
 - [NYC Graffiti Zine and Media Network, 1990–1999 — Research Dossier 01](NYC_GRAFFITI_ZINES_AND_MEDIA_NETWORK_1990_1999_01.md)
 
 - [NYC Writing in the 1990s — Borough and Scene Map 01](NYC_1990S_BOROUGH_SCENE_MAP_01.md)
@@ -113,6 +115,10 @@ Added an evidence-led borough map distinguishing Bronx peer/crew networks, Manha
 ### 2026-11 — NYC graffiti zines and media networks, 1990–1999
 
 Added a source-backed dossier on Skills, Styles for Miles, Move, G.S.E.L., Twelve Ounce Prophet, Videograf and the mail-based flick economy, including issue/run figures and archival evidence. Added the Brooklyn Eastern District Terminal as a documented but retrospectively sourced painting/media node. Corrected the famous SANE/SMITH Brooklyn Bridge production date to 1988 based on Roger Smith's first-person 2019 interview; the conflicting 2017 secondary date is retained as a source discrepancy.
+
+### 2026-11 — NYC graffiti and hardcore crossover
+
+Added a source-led dossier on the NYHC/graffiti overlap, including HYPE/Mackie Jayson, SANE/SMITH, MQ/MKUE and DMS, SMOG, FCEE, HUSH and JERE; band/venue/flyer and skate connections; and a clear distinction between documented individual links and unverified complete crew chronologies. The Brooklyn Bridge date uses Roger Smith's 2019 first-person recollection (1988), retaining the conflicting 2017 secondary date as a discrepancy.
 
 ## Status
 
