@@ -159,3 +159,15 @@ For each selected source image, create an analysis record before using it to inf
 - **Caution:** confirm exact holdings and item-level access before citing a particular object.
 - **Evidence:** A for the institution's collection profile; individual item claims require catalogue records.
 
+
+## VR-009 — Dortmund writing: *Da kukse wa* and *ALL SURFACE*
+
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Primary publication A:** *Da kukse wa — Dortmunder Graffiti* (Tapir Verlag, 1987), texts by Marianne Brentzel, photographs by Hubert Moormann. The author page and specialist retrospective confirm interviews with CHINTZ, SHARK, CHANA and ZODIAK; the photographer reportedly documented the scene over approximately two years.
+- **Access:** author excerpt; ILOVEGRAFFITI article with linked flipbook; Dortmund U's *I WAS HERE* digital exhibition page says the brochure can be browsed online. Direct exhibition access was blocked by a verification layer during this research pass.
+- **Primary publication B:** *ALL SURFACE — Tagging in Dortmund* (Holger Wiese / Tobias Sawitzki, November 2022), 244 pages, German, edition of 500. Dedicated to marker and aerosol tags from the 1980s/1990s; publisher description reports hundreds of photographs and contemporary-witness recollections.
+- **Records:** https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html ; https://ilovegraffiti.de/blog/2015/03/02/buch-da-kukse-wa-graffiti-in-dortmund-1987/ ; https://dortmunder-u.de/i-was-here-360/ ; https://hitzerot.com/shop/all-surface/
+- **Value:** keep piece / wall / train evidence (*Da kukse wa*) separate from tag / handstyle evidence (*ALL SURFACE*). This split supports separate research profiles rather than a single regional preset.
+- **Rights:** reference-only / permission required / unresolved at item level. Public flipbooks, retailer product pages and catalogue metadata do not grant image reuse rights.
+- **Caution:** verify captions, dates, locations, creators and pagination in the publications themselves. Do not copy any identifiable signature or specific piece into a generator template.
+- **Evidence:** A for the existence and bibliographic metadata of the publications; individual visual claims require page-level inspection and attribution.
