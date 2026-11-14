@@ -36,3 +36,10 @@
 - Added the archive masterprompt and a dedicated phased roadmap.
 - Established the research library under `research/` as the editorial source of truth and the in-game archive as its presentation layer.
 - Added archive onboarding links to the README and AI handoff.
+
+
+## Research library — first populated pass
+
+- Added the research index, source/evidence methodology and rights-handling rules.
+- Added initial source-backed notes on NYC history, lettering styles, practices/formats, writers/crews, visual references and glyph construction.
+- Marked provisional definitions and open research gaps rather than presenting them as settled universal terminology.
