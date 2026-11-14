@@ -199,3 +199,9 @@ Key editorial requirements:
 
 The new dossiers are research drafts and do not constitute a complete national history or an image licence.
 
+
+
+## German scene content pilot
+
+Added nine further editorial draft entries and twelve German-scene regression fixtures. The entries distinguish regional lettering tendencies, writers, music groups, crews, community networks and research institutions. They remain drafts pending source-level editorial review; no image reproduction rights are implied.
+
