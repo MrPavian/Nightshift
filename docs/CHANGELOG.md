@@ -29,3 +29,10 @@
 - Added project brief, AI handoff, style taxonomy/research framework and decision log.
 - Expanded the roadmap with concrete 0.7 work packages and release gates.
 - Linked onboarding documentation from the repository README.
+
+
+## THE BLACKBOOK ARCHIVE — project definition
+
+- Added the archive masterprompt and a dedicated phased roadmap.
+- Established the research library under `research/` as the editorial source of truth and the in-game archive as its presentation layer.
+- Added archive onboarding links to the README and AI handoff.
