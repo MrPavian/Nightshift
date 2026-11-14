@@ -443,3 +443,15 @@ NIGHTSHIFT research is also a continuous learning programme on writing culture, 
 - [ ] **P1:** ask INGRID for written clarification on commercial use of any image or metadata-derived product feature; no images enter product assets without approval.
 - [ ] **P1:** translate validated findings into editor learning requirements and parameter hypotheses, then require human visual review.
 - [ ] Supporting research: continue *ALL SURFACE*, *Da kukse wa*, *IRON CITY*, period media and oral history as cross-checks, not substitutes for INGRID's corpus analysis.
+
+
+## W02.32 — INGRID Dortmund query engineering (2026-11-14)
+
+- [x] Inspected the official INGRID-KG SPARQL query catalogue and confirmed documented predicates for location, recording date, type, lettering style, carrier medium, technique, colour, item text and inventory provenance.
+- [x] Added `research/INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md` with six Dortmund-adapted query templates and an execution log.
+- [x] Distinguished recording date from artwork creation date; flagged the source catalogue's `hasSyleElement` spelling for ontology verification rather than silently correcting it.
+- [ ] Execute Q01–Q06 against the live SPARQL endpoint or official EasyDB UI; record query, timestamp, counts and failures.
+- [ ] Build a decade × type × collection sample, then manually inspect a small rights-cleared set of records and document annotation depth.
+- [ ] Convert repeated cross-writer observations into candidate NIGHTSHIFT feature hypotheses only after visual review; no writer-specific tag cloning.
+
+**W02.32 result:** query engineering and documentation complete; empirical Dortmund counts and visual analysis remain pending. Official query catalogue: https://dice-group.github.io/ingrid.github.io/ (inspected 2026-11-14).
