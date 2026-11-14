@@ -67,6 +67,8 @@ npm run dev      # editor at http://localhost:5173
 npm test         # unit and geometry tests
 ```
 
+Live: **https://mrpavian.github.io/Nightshift/** (deployed by GitHub Actions on every push to `main`).
+
 Current state: canonical A–Z glyph registry imported from v0.6 and an A–Z diagnostic outline view in Three.js. See `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Prototype

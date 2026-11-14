@@ -294,3 +294,11 @@
 - 23 unit tests pass; the browser check passed at desktop and phone width with no console errors.
 - Found that A's counter shares the outer contour's winding and Q's tail is an overlapping second shape; the renderer must not derive holes from winding.
 - The v0.6 prototype is unchanged.
+
+
+## 2026-11-14 — Editor deployable on GitHub Pages
+
+- Added `.github/workflows/deploy-pages.yml`: on every push to `main` it installs, runs the unit tests, builds with Vite and deploys `dist/` to GitHub Pages.
+- Added `.github/workflows/ci.yml`: tests and build on other branches and pull requests.
+- Set Vite `base: './'` so the build works under the `/Nightshift/` Pages sub-path; verified locally by serving the build under that path in headless Chromium (26 glyphs, no errors).
+- Requires the one-time repository setting Settings → Pages → Source: GitHub Actions.
