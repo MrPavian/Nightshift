@@ -379,3 +379,10 @@ Added a cross-scene dossier based on Abram Coetsee's Cornell dissertation, Lette
 ### 2026-11 — Dortmund Style evidence and generator translation
 
 Added a source-graded Dortmund / Ruhrgebiet dossier using the KIT dissertation, the 1987 *Da kukse wa* author record, 1989 contemporary press, the KWI regional essay, ATOM ONE's first-person retrospective and a Too Strong interview. The generator implications are explicitly marked as design hypotheses; no fixed metrics, letter topology or image rights are inferred.
+
+
+- [Dortmund Visual Corpus — Source Access and Analysis Plan 01](DORTMUND_VISUAL_CORPUS_AND_SOURCE_ACCESS_01.md)
+
+### 2026-11 — Dortmund visual corpus and source access
+
+Added a rights-aware visual source map separating *Da kukse wa*'s piece / wall documentation from *ALL SURFACE*'s 1980s/1990s tag and handstyle corpus. Recorded the linked digital flipbook and exhibition access limitation, publication metadata, historical cross-checks and a staged visual-analysis protocol.
