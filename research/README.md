@@ -36,6 +36,16 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 
 ## Current research files
 
+- [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
+
+- [NYC Graffiti Zine and Media Network, 1990–1999 — Research Dossier 01](NYC_GRAFFITI_ZINES_AND_MEDIA_NETWORK_1990_1999_01.md)
+
+- [NYC Writing in the 1990s — Borough and Scene Map 01](NYC_1990S_BOROUGH_SCENE_MAP_01.md)
+
+- [NYC Writers & Crews, 1990–1999 — Attributed Starter Chronology](NYC_WRITERS_CREWS_CHRONOLOGY_1990_1999_01.md)
+
+- [NYC Writing Culture in the 1990s — Transition, Continuity and New Circuits](NYC_WRITING_1990S_TRANSITION_01.md)
+
 - [NYC Graffiti History](NYC_GRAFFITI_HISTORY.md)
 - [Lettering Styles](LETTERING_STYLES.md)
 - [Graffiti Formats & Practices](GRAFFITI_FORMATS.md)
@@ -89,6 +99,26 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Visual Review Protocol 01 — A–Z](GLYPH_VISUAL_REVIEW_PROTOCOL_01.md)
 - [Style Grammar Specifications 01 — Bubble, Blockbuster, Straight Letter, Wildstyle Study](STYLE_GRAMMAR_SPECIFICATIONS_01.md)
 - [Style Grammar Compatibility & Parameter Contract](STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md)
+
+### 2026-11 — NYC writing culture in the 1990s
+
+Added a source-backed dossier on the post-subway transition, the growing distinction between bombing and piecing, zines and photographic circulation, freight-train mobility, and legal/permission contexts. It distinguishes scholarly interpretation, contemporary journalism and NIGHTSHIFT design inference; 1989 is treated as a major transition, not the end of NYC writing.
+
+### 2026-11 — NYC writers and crews, 1990–1999
+
+Added an attributed starter chronology for the post-subway NYC scene, including the 1990 Chalfant studio snapshot, Bronx networks around COPE 2 / KD and Spek / BTV-BTC, the 1995 TATS CRU commercial transition, late-1990s IRAK and the 1999 digital afterlife of the Writer's Bench. Membership and chronology are explicitly confidence-labelled; incomplete leads such as DMS, SANE/SMITH and FX are not promoted to settled facts.
+
+### 2026-11 — NYC borough and scene map, 1990s
+
+Added an evidence-led borough map distinguishing Bronx peer/crew networks, Manhattan's downtown IRAK orbit and historic writer locations, Queens' zine/archive infrastructure, and Brooklyn's documented but still incomplete record. Includes media nodes, temporal and relationship cautions, confidence boundaries and a primary-source research queue; avoids assigning borough stereotypes or unsupported crew territories.
+
+### 2026-11 — NYC graffiti zines and media networks, 1990–1999
+
+Added a source-backed dossier on Skills, Styles for Miles, Move, G.S.E.L., Twelve Ounce Prophet, Videograf and the mail-based flick economy, including issue/run figures and archival evidence. Added the Brooklyn Eastern District Terminal as a documented but retrospectively sourced painting/media node. Corrected the famous SANE/SMITH Brooklyn Bridge production date to 1988 based on Roger Smith's first-person 2019 interview; the conflicting 2017 secondary date is retained as a source discrepancy.
+
+### 2026-11 — NYC graffiti and hardcore crossover
+
+Added a source-led dossier on the NYHC/graffiti overlap, including HYPE/Mackie Jayson, SANE/SMITH, MQ/MKUE and DMS, SMOG, FCEE, HUSH and JERE; band/venue/flyer and skate connections; and a clear distinction between documented individual links and unverified complete crew chronologies. The Brooklyn Bridge date uses Roger Smith's 2019 first-person recollection (1988), retaining the conflicting 2017 secondary date as a discrepancy.
 
 ## Status
 
@@ -303,3 +333,24 @@ The Smithsonian Chalfant record was available through search-indexed institution
 ## Berlin DECADES trilogy
 
 - [Berlin DECADES Trilogy Bibliography 01](BERLIN_DECADES_TRILOGY_BIBLIOGRAPHY_01.md) — publisher-level comparison of Vol. 1 (1990–2000), Vol. 2 (2000–2010) and Vol. 3 (2010–2020), with attributed portrait lists and caution against treating them as complete rosters.
+
+
+- [NYC Graffiti–Hardcore Crossover: People, Bands and Evidence 02](NYC_GRAFFITI_HARDCORE_CROSSOVER_02.md)
+
+### 2026-11 — NYC graffiti and hardcore crossover: evidence deepening
+
+Added a second dossier separating writing, band membership, crew affiliation, artwork credits and social networks. It documents Frontline/HYPE, Adam 12/REVS, TMR bands, DIE 116, Dmize/MQ/JERE, SMOG and FCEE using specialist reporting and first-person interviews. SEEN/Richard Mirando is retained as a major Bronx/UA writer profile, while no direct NYHC crossover is asserted without evidence. Original flyers, demos and zine scans remain an explicit verification queue.
+
+
+- [NYC Graffiti–Hardcore Crossover: Queens Networks, Band Roles and DIY Print 03](NYC_GRAFFITI_HARDCORE_CROSSOVER_03_QUEENS_AND_ZINES.md)
+
+### 2026-11 — Queens networks, band roles and DIY print
+
+Added a source-deepening dossier based on Beto Rosario's and Chiqui Rodriguez's first-person Dmize interviews, Freddy Alva's band-by-band writer list, the Queens fanzine retrospective, the Urban Styles event description and discographic listings. It expands the named network to HESA/STAFF, NOW, WOES and YOURS 174; dates Yes Zista to 1988–1989; preserves the attributed Dmize lineup chronology; and distinguishes band membership, crew affiliation, artwork credit and zine work. Original flyers, demo sleeves and zine scans remain uninspected and are not presented as primary evidence.
+
+
+- [NYC Graffiti–Hardcore Crossover: SPORTS, Outburst and the DIY Visual Layer 04](NYC_GRAFFITI_HARDCORE_CROSSOVER_04_SPORTS_OUTBURST_ZINES.md)
+
+### 2026-11 — SPORTS, Outburst and Queens DIY print
+
+Added a fourth crossover supplement documenting the reported SPORTS collective, the JAY R / Outburst writer-guitarist-artwork link, and Queens zine production around The Village Noize, Yes Zista and In Effect. Artifact captions and creator recollections are attributed to specialist reporting; original artifacts and rights remain unverified.
