@@ -435,3 +435,10 @@ Added an inspected 1997 *BOMBER* issue review of Dortmund's *Rolling Thunder 001
 ### 2026-11 — Dortmund moving-image archive and media access
 
 Added a provenance-aware access dossier for the 1997-reviewed *Rolling Thunder 001* VHS, the *King of the Line* two-CD-ROM archive and the unresolved *Graffiti Dortmund 1994* Google Video lead. A current specialist retailer listing provides a concrete used-VHS access route and credits MASmedia / SHARK TV; no media has been watched, digitized or cleared for reuse. Product availability is time-sensitive, and historical Google Video availability is not treated as a surviving copy.
+
+
+- [Dortmund Graffiti Publications — 1996 Bibliographic Discrepancy and Later Visual Corpus (W02.25)](DORTMUND_PUBLICATION_BIBLIOGRAPHY_AND_VISUAL_CORPUS_01.md)
+
+### 2026-11 — Dortmund publication bibliography and visual corpus
+
+Audited the 1996 *Graffiti Dortmund* publication trail and identified an unresolved 80-page (2009 ILOVEGRAFFITI description) versus 160-page (ISBN retail catalogue) discrepancy. Distinguished it from *Da kukse wa* (1987), *IRON CITY* (2002), the MASON retrospective (2020) and *RIO — The Process of Writing* (2023). No page-level visual analysis or image rights are claimed.
