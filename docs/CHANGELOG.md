@@ -472,3 +472,12 @@
 - Recorded the human annotation method and the manual's explicit caution about ambiguity in style and genre labels.
 - Clarified the 2023 article's licensing report: original images CC BY-SA 4.0, generated metadata CC0, knowledge graph CC BY 4.0, subject to current item-level credit and license checks.
 - Added a proposed INGRID-to-NIGHTSHIFT crosswalk as a research aid only; no editor implementation or record-level visual analysis is claimed.
+
+
+## INGRID promoted to P1 — corpus coverage, rights and editor research workflow
+
+- Promoted INGRID to NIGHTSHIFT's foundational research stream rather than treating it as one source among many.
+- Added the INGRID → NIGHTSHIFT ontology crosswalk and Dortmund-first research workflow, including image-level distinctions, annotation depth, missingness, near-duplicate handling and stratified sampling.
+- Corrected corpus metrics: official page approx. 150,000 images / 99,962 annotated as of July 2023; 2023 article approx. 136,000 photographs across nine named cities including Dortmund; July 2022 graph snapshot 130,689 graffiti resources / 178 cities / 682,748 image files. These are distinct snapshots and units.
+- Clarified public subset and license layers (images CC BY-SA 4.0, metadata CC0, graph CC BY 4.0 in the 2023 paper); commercial product use requires written rights clarification.
+- No Dortmund query result count or record-level visual sample is claimed yet.
