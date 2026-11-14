@@ -84,3 +84,8 @@ Sources:
 - Seek practitioner review of any abstract handstyle observations.
 - Obtain explicit permissions before any image reproduction or derivative display.
 - Revisit the Amsterdam influence narrative against first-person interviews, not retailer copy alone.
+
+
+## Further analytical cross-reference
+
+For a separate scholarly analysis of Dortmund's local style and an individual longitudinal study of MASON, see [Dortmund Style Analysis — Scholarly Chapters, Interviews and Source Limits 01](DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md). This analytical source layer must not be conflated with the book-level visual corpus descriptions above.
