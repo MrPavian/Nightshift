@@ -1,0 +1,225 @@
+{
+  "contractId": "nightshift.abgrs-glyph-construction",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "sourceBaseline": {
+    "prototype": "prototypes/nightshift_art_engine_v06.html",
+    "sourceOfTruth": "immutable legacy path snapshots",
+    "maturity": "authored-contour"
+  },
+  "canonicalModel": [
+    "semanticConstructionGraph",
+    "editableVectorGeometry",
+    "topology",
+    "metrics",
+    "anchors",
+    "identityInvariants",
+    "provenance",
+    "maturity"
+  ],
+  "legacyImport": {
+    "preserveExact": true,
+    "noAutomaticRepair": true,
+    "glyphs": [
+      {
+        "glyphId": "latin.upper.A",
+        "variantId": "a.master",
+        "outerContours": 1,
+        "innerContours": 1,
+        "topology": {
+          "counters": 1,
+          "apertures": 0
+        }
+      },
+      {
+        "glyphId": "latin.upper.B",
+        "variantId": "b.master",
+        "outerContours": 1,
+        "innerContours": 2,
+        "topology": {
+          "counters": 2,
+          "apertures": 0
+        }
+      },
+      {
+        "glyphId": "latin.upper.G",
+        "variantId": "g.master",
+        "outerContours": 1,
+        "innerContours": 0,
+        "topology": {
+          "counters": 0,
+          "apertures": "provisional-exterior-connected-or-unresolved"
+        }
+      },
+      {
+        "glyphId": "latin.upper.R",
+        "variantId": "r.master",
+        "outerContours": 1,
+        "innerContours": 1,
+        "topology": {
+          "counters": 1,
+          "apertures": 0
+        }
+      },
+      {
+        "glyphId": "latin.upper.S",
+        "variantId": "s.master",
+        "outerContours": 1,
+        "innerContours": 0,
+        "topology": {
+          "counters": 0,
+          "apertures": 0
+        }
+      }
+    ]
+  },
+  "componentProposals": {
+    "latin.upper.A": [
+      "left-leg",
+      "right-leg",
+      "apex-zone",
+      "crossbar-zone",
+      "counter-boundary"
+    ],
+    "latin.upper.B": [
+      "spine",
+      "upper-bowl",
+      "lower-bowl",
+      "waist-junction",
+      "counter-upper",
+      "counter-lower"
+    ],
+    "latin.upper.G": [
+      "outer-bowl",
+      "upper-terminal",
+      "lower-terminal",
+      "internal-bar",
+      "bar-attachment",
+      "aperture-boundary"
+    ],
+    "latin.upper.R": [
+      "spine",
+      "upper-bowl",
+      "bowl-leg-junction",
+      "descending-leg",
+      "counter-boundary"
+    ],
+    "latin.upper.S": [
+      "upper-terminal",
+      "upper-curve-mass",
+      "middle-transition",
+      "lower-curve-mass",
+      "lower-terminal"
+    ]
+  },
+  "operationIds": {
+    "latin.upper.A": [
+      "glyph.A.set-stance-width",
+      "glyph.A.set-crossbar-height",
+      "glyph.A.set-crossbar-thickness",
+      "glyph.A.set-apex-roundness",
+      "glyph.A.set-leg-mass"
+    ],
+    "latin.upper.B": [
+      "glyph.B.set-upper-bowl-width",
+      "glyph.B.set-lower-bowl-width",
+      "glyph.B.set-mass-ratio",
+      "glyph.B.set-waist-width",
+      "glyph.B.set-bowl-roundness"
+    ],
+    "latin.upper.G": [
+      "glyph.G.set-aperture-width",
+      "glyph.G.set-bar-height",
+      "glyph.G.set-bar-length",
+      "glyph.G.set-bar-angle",
+      "glyph.G.set-terminal-direction"
+    ],
+    "latin.upper.R": [
+      "glyph.R.set-bowl-width",
+      "glyph.R.set-counter-scale",
+      "glyph.R.set-leg-angle",
+      "glyph.R.set-leg-length",
+      "glyph.R.set-junction-treatment"
+    ],
+    "latin.upper.S": [
+      "glyph.S.set-mass-ratio",
+      "glyph.S.set-overall-width",
+      "glyph.S.set-neck-width",
+      "glyph.S.set-curve-tension",
+      "glyph.S.set-terminal-tangents"
+    ]
+  },
+  "topologyVariantIds": [
+    "a.open-apex",
+    "b.open-bowl-study",
+    "g.aperture-variant"
+  ],
+  "rendering": {
+    "singleValidatedTopologyForAllPasses": true,
+    "backgroundColorHolePainting": false,
+    "counterUsesUnderlyingSurface": true,
+    "apertureMustRemainExteriorConnected": true,
+    "emptyCounterSetDoesNotImplyAperture": false
+  },
+  "anchors": {
+    "coordinateValues": "not-specified",
+    "status": "derived-provisional-until-measured-and-reviewed",
+    "requiresDirection": true,
+    "requiresClearanceEnvelope": true
+  },
+  "parameterBounds": {
+    "status": "uncalibrated",
+    "inventBounds": false,
+    "clamp": "never-silent"
+  },
+  "commandTransaction": [
+    "resolve-target",
+    "check-revision",
+    "validate-input-types",
+    "derive-dependent-geometry",
+    "run-hard-constraints",
+    "run-soft-diagnostics",
+    "commit-canonical-state-atomically",
+    "increment-revision",
+    "invalidate-derived-views"
+  ],
+  "threejs": {
+    "liveEditorSurface": true,
+    "stableCanonicalIds": true,
+    "dragPreviewThenTypedCommand": true,
+    "oneDragOneUndoableCommand": true,
+    "persistentDirectMeshMutation": false
+  },
+  "fixtures": {
+    "pairs": [
+      "AV",
+      "AR",
+      "BA",
+      "BR",
+      "GO",
+      "GR",
+      "RA",
+      "RO",
+      "SA",
+      "SB",
+      "GS",
+      "NS"
+    ],
+    "words": [
+      "ABRA",
+      "BOMB",
+      "GHOST",
+      "KRAZE",
+      "MIND",
+      "NYX",
+      "RISK",
+      "SQUE"
+    ]
+  },
+  "maturity": {
+    "initial": "authored-contour",
+    "automaticPromotion": false,
+    "renderReviewedRequiresHumanInspection": true,
+    "contextReviewedRequiresPairAndWordReview": true
+  }
+}
