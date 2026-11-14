@@ -393,3 +393,10 @@ Added a rights-aware visual source map separating *Da kukse wa*'s piece / wall d
 ### 2026-11 — Dortmund tagging archive and bibliography
 
 Added a source-graded bibliography dossier using the Deutsche Nationalbibliografie and the Stiftung Historische Museen Hamburg event record. Recorded the *ALL SURFACE* page-count discrepancy (238 DNB vs. 244 retail/event), strengthened *Da kukse wa* reprint provenance through the official Dortmunder U exhibition page, and clarified the limits of Amsterdam-influence and TUF membership claims.
+
+
+- [Dortmund Style Analysis — Scholarly Chapters, Interviews and Source Limits 01](DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md)
+
+### 2026-11 — Dortmund style analysis and first-person source map
+
+Added source-level analysis of the Dortmund chapters in *Dirty Hands* (2022), including Hinz's published formal criteria, Grothus's longitudinal MASON case and the dated 2020 interview trail cited in the chapter. Added Lintzen's 2025 ethnography as a major scene-history source route. Full paid chapters and figures remain uninspected; design implications remain provisional.
