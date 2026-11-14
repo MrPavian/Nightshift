@@ -52,6 +52,8 @@ Read and follow:
 - `contracts/procedural-variant-generator.v1.json`
 - `research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md`
 - `contracts/visual-calibration.v1.json`
+- `research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md`
+- `contracts/proof-sheet-fixtures.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -111,6 +113,11 @@ Follow `research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md` and `contracts/procedu
 ## 3.9 Visual calibration and comparative evaluation
 
 Follow `research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md` and `contracts/visual-calibration.v1.json`, alongside—not instead of—the existing `GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`. Calibrate each parameter and geometry threshold at its narrowest defensible scope. Use controlled, reproducible comparison plates with fixed render conditions and declared factors. Preserve individual human ratings and disagreement; identity/topology score 0 requires explicit defect review. Production parameter bounds and thresholds require approved calibration records with evidence and boundary regression fixtures. Do not expose invented numeric ranges or auto-approve from score averages.
+
+
+## 3.10 Proof-sheet and test-fixture infrastructure
+
+Follow `research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md` and `contracts/proof-sheet-fixtures.v1.json`. Build immutable proof runs over canonical project snapshots; record source revision, engine versions, seeds, operations, resolved parameters, render conditions, validation reports and artifact hashes. Use the existing A–Z, pair and word inventories without changing maturity. Label fixtures involving provisional glyphs as partial coverage. Generate neutral monochrome structure plates before finish plates. Automated rendering must never advance human-review maturity; preserve the existing rubric and explicit reviewer decisions.
 
 ## 4. Current-state facts
 
