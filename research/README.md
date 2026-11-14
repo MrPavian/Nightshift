@@ -69,6 +69,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Editor Workspace Layout 01](EDITOR_WORKSPACE_LAYOUT_01.md)
 - [Creative Workflow and Style Authoring 01](CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md)
 - [Machine-readable creative workflow contract v1](../contracts/creative-workflow.v1.json)
+- [Personal Style Engine 01 — Recipe Grammar, Blending and Application](PERSONAL_STYLE_ENGINE_01.md)
+- [Machine-readable personal style engine contract v1](../contracts/personal-style-engine.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -173,3 +175,8 @@ Added the responsive workspace hierarchy for the live Three.js editor, including
 ### 2026-11 — End-to-end creative workflow
 
 Added a workflow specification for four structurally distinct concepts, deterministic comparison and branching, per-glyph refinement, optional assistance, relationship authoring and a versioned personal style-recipe library. Added a machine-readable contract for generation, branching, assistance and persistence. This is a design specification, not an implemented feature; concept diversity must be structural rather than cosmetic, and user edits must remain authoritative.
+
+
+### 2026-11 — Personal Style Engine
+
+Added a versioned recipe model for original user-authored styles, with independent grammar axes, registered parameter scopes, deterministic precedence, conflict handling, glyph-aware application, controlled recipe merging/interpolation, explicit capture from edits, provenance and rights safeguards. Added a machine-readable contract. The specification explicitly excludes hidden preference learning, silent recipe mutation and automatic cloning of named writers' signatures.
