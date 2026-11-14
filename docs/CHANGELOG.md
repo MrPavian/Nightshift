@@ -92,3 +92,10 @@
 - Added a 26-letter structural test matrix and per-glyph construction checklist.
 - Defined synthetic regression words, glyph-level and word-level acceptance criteria, provenance fields and a staged implementation sequence.
 - Grounded computational methods in Berio et al.'s StrokeStyles and AutoGraff research while clearly separating NIGHTSHIFT design inference from historical claims.
+
+
+## Research deepening — semantic glyph construction library
+
+- Added a technical specification for semantic glyph graphs, stroke primitives, junction/topology relationships, counters/apertures, width profiles and connection anchors.
+- Defined per-glyph graph templates, an authoring workflow, validation requirements and a staged path from the five existing authored masters to a complete alphabet.
+- Grounded computational concepts in StrokeStyles, Sketching and Layering Graffiti Primitives, and AutoGraff; distinguished NIGHTSHIFT engineering proposals from historical claims.
