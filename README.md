@@ -10,9 +10,9 @@ The wider game concept is a grounded New York graffiti crew simulator. The edito
 
 ## Current development status
 
-**Production code: 0.7A in progress** — canonical glyph registry with an exact, hash-verified import of the v0.6 glyphs semantic component overlays for A/B/G/R/S a geometry/topology validator a topology-correct monochrome SVG/Three.js renderer, and proof sheets with a review package (tickets T01–T06 done). See [docs/IMPLEMENTATION_PLAN_0_7A.md](docs/IMPLEMENTATION_PLAN_0_7A.md). Run `npm install` once (Three.js), then `npm test` (Node ≥ 20) and `npm run test:browser` (headless Chrome).
+**Production code: 0.7A in progress** — canonical glyph registry with an exact, hash-verified import of the v0.6 glyphs semantic component overlays for A/B/G/R/S a geometry/topology validator a topology-correct monochrome SVG/Three.js renderer, proof sheets with a review package, and a Three.js editor with a validated edit loop (0.7A T01–T07 done). See [docs/IMPLEMENTATION_PLAN_0_7A.md](docs/IMPLEMENTATION_PLAN_0_7A.md). Run `npm install` once (Three.js), then `npm test` (Node ≥ 20) and `npm run test:browser` (headless Chrome).
 
-**Try it:** open [`review/`](review/index.html) from any static server at the repository root (e.g. `python3 -m http.server`, then `http://localhost:8000/review/`): live A–Z, SVG and Three.js views, word tester, proof sheets and review form. Proof sheets: [`docs/reports/proof/T06/plates/`](docs/reports/proof/T06/plates/).
+**Try it:** open [`review/`](review/index.html) from any static server at the repository root (e.g. `python3 -m http.server`, then `http://localhost:8000/review/`): live A–Z, SVG and Three.js views, word tester, proof sheets and review form; [`editor/`](editor/index.html) lets you drag contour nodes of A/B/G/R/S with validation, undo/redo and save. Live: https://mrpavian.github.io/Nightshift/ Proof sheets: [`docs/reports/proof/T06/plates/`](docs/reports/proof/T06/plates/).
 
 **Latest prototype (legacy reference): Build 0.6 — Full Alphabet / Glyph Relationships**
 

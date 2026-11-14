@@ -34,11 +34,11 @@ Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five aut
 
 Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
 
-Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays, geometry validator, topology-correct renderer, proof sheets and a test/review page (0.7A-T01–T06). Run `npm install` once (Three.js).. Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
+Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays, geometry validator, topology-correct renderer, proof sheets, a test/review page and a Three.js editor with a validated edit loop (0.7A-T01–T07). Run `npm install` once (Three.js).. Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T07 (first end-to-end editor command loop). T01–T06 are in place: registry, legacy import, semantic overlays, geometry validator, monochrome SVG/Three.js renderer, proof run with review package, and the test page `review/index.html`. Human review of A/B/G/R/S is pending (`docs/reports/proof/T06/review/ratings.json`).
+**Build 0.7 — Authentic Letter Construction.** 0.7A (T01–T07) is complete; the first-slice release gate is met. Next: `docs/CLAUDE_TICKET_PACK_0_7B_01.md` (remaining alphabet construction, style rules, first relationship slice). Open owner actions: human review of A/B/G/R/S (`docs/reports/proof/T06/review/ratings.json`), G aperture boundary (AUD-01/AUD-03), topology of D/O/P/Q.
 
 ## Next archive task
 

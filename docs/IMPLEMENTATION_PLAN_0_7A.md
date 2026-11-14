@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 (reconnaissance) · includes the completion report for 0.7A-T02  
 **Author:** Claude (implementation role per D-009)  
 **Date:** 2026-11-14  
-**Status:** T01–T06 complete · T07 not started
+**Status:** T01–T07 complete (0.7A first-slice gate met, see §12)
 
 ## 1. Repository reconnaissance (facts at commit `585715d`)
 
@@ -43,9 +43,9 @@
 | Semantic graph overlay | `src/glyph/semantic-overlay.js`, `data/semantic/abgrs-semantic-overlay.v1.json` | **T03 done** |
 | Render topology | `src/render/render-model.js` | **T05 done** |
 | SvgInterchange (export side) | `src/render/svg.js` | **T05 done** (import side later) |
-| ThreeEditorAdapter | `src/editor/three-glyph.js` (meshes, T05 done); interaction adapter T07 |
-| EditCommandBus | `src/model/commands.js` | T07 |
-| ProjectSerializer | `src/project/serializer.js` | T07 (registry serialization already round-trips) |
+| ThreeEditorAdapter | `src/editor/three-glyph.js` (meshes) + `editor/editor.js` (interaction) | **T07 done** |
+| EditCommandBus | `src/model/editor-store.js`, `src/model/operations.js` | **T07 done** |
+| ProjectSerializer | `EditorStore.save()/load()` | **T07 done** |
 | DiagnosticRunner / proof sheets | `src/proof/` (`specimens.js`, `plates.js`, `run.js`, `review.js`), `tools/proof-run.mjs` | **T06 done** |
 | StyleGrammarRegistry, CompositionSolver, RelationshipGraph | — | 0.7B / 0.8A |
 
@@ -160,3 +160,33 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 `review/index.html` runs the real pipeline in the browser without a build step: live A–Z grid (import → validation → render, with refusal reasons), detail view with SVG (light/dark/texture, diagnostics) and a rotatable Three.js viewport, a word tester (naive layout), the committed T06 plates, and the review form (exports `ratings.json`). Three.js comes from `node_modules` on localhost and from the pinned jsDelivr copy (`three@0.187.0`) elsewhere; a test keeps both versions equal.
 
 Run locally: `npm install`, then serve the repository root (e.g. `python3 -m http.server`) and open `http://localhost:8000/review/`.
+
+## 12. T07 completion report
+
+| Item | Result |
+|---|---|
+| Status | **complete** |
+| Files | `src/model/operations.js`, `src/model/editor-store.js`, `editor/index.html`, `editor/editor.js`, `tools/editor-smoke.mjs`, `tests/editor-store.test.js`; review page links to the editor; Pages workflow deploys `editor/`; decision D-013 |
+| Tests | `npm test`: **98 passed, 0 failed** · `npm run test:browser`: SMOKE-PASS, REVIEW-PAGE-PASS, **EDITOR-PASS** (13/13 scripted steps incl. real PointerEvents) |
+| Operation | `contour.move-node` (D-013): no numeric bounds, accepted only if all hard validator checks pass. All 20+ parameter operations of the parameter contract are registered **disabled** (`CMD_OPERATION_DISABLED`) and shown as disabled controls. Provisional glyphs → `OP_NOT_EDITABLE`. |
+| Commands | Envelope per `contracts/editor-interaction.v1.json` (`command_id`, `operation_id`, `target_ids`, `expected_revision`, `payload`, `source_interaction_id`). Malformed → `CMD_BAD_ENVELOPE`; stale revision → `CMD_REVISION_CONFLICT`; invalid candidate → `CMD_VALIDATION_FAILED` with validator diagnostics. Rejections leave canonical state and history byte-identical (tested). |
+| Patches | Operations return canonical patches on authored fields only; the store recomputes geometry hash, visible bounds and revision. History entries carry the contract fields plus the patch. Undo/redo replay patches through the validator and commit new, monotonic revisions; a full undo restores the exact legacy geometry hash and empty `deliberateChanges`. A drag is one command. |
+| Preview | Built through the same candidate path, marked provisional, never persisted; invalid previews draw the candidate outline dashed red with the would-be rejection codes. Release commits; Escape/pointer-cancel restore the committed scene. |
+| Scene | Rebuilt from the committed record (or the preview candidate) on every change; scene root carries glyph ID, revision and geometry hash; handles carry node IDs; no mesh is ever written back. Camera, zoom and pan live in a separate view state (tested not to dirty the model). |
+| Selection | Glyph › contour › node breadcrumb with stable IDs and the semantic component proposals that reference the node's segment. Selection survives scene rebuild and project reload. |
+| Input | Mouse and touch drag; drag on empty space pans; wheel/buttons zoom; arrow keys/buttons nudge by one unit as the drag alternative; selected handle is larger with an extra ring (not colour-only). |
+| Save/reload | `EditorStore.save()/load()` round-trips canonical geometry, IDs and revisions exactly; browser storage and file download. |
+| Not done | Component-level (semantic) operations, multi-select, anchors, blackbook/wall views, history persistence across reloads, tutorial system. |
+
+### 0.7A first-slice release gate
+
+| Requirement | State |
+|---|---|
+| Imported editable monochrome A/B/G/R/S | ✓ |
+| Topology-correct negative space | ✓ (T04/T05) |
+| Stable IDs | ✓ |
+| Structured diagnostics | ✓ |
+| Deterministic proof artifacts | ✓ (T05/T06) |
+| At least one complete validated Three.js edit loop | ✓ (T07) |
+
+Maturity of every glyph is unchanged (A/B/G/R/S `authored-contour`, others `provisional`). Human review of A/B/G/R/S is still pending.
