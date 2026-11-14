@@ -407,3 +407,10 @@ Added source-level analysis of the Dortmund chapters in *Dirty Hands* (2022), in
 ### 2026-11 — Dortmund oral-history documentary access
 
 Recovered two accessible English-subtitled uploads from *The Rise of Graffiti Writing* covering first-generation Dortmund, Berlin and Frankfurt writers and Dortmund trainwriting. Cross-linked the dated SHARK interview citation in Hinz (2022). Episode metadata is verified; video contents have not yet been watched or transcribed.
+
+
+- [Dortmund — MASON and the Longitudinal Publication Corpus 01](DORTMUND_MASON_LONGITUDINAL_PUBLICATION_CORPUS_01.md)
+
+### 2026-11 — Dortmund MASON longitudinal publication corpus
+
+Mapped the 1996 *Graffiti Dortmund* book, the 2020 *MASON — The Essence of Writing 1986–2019* catalogue and Grothus's 2022 longitudinal study. Added VR-010 with explicit access and rights limitations; the individual MASON case remains separate from a general Dortmund style profile.
