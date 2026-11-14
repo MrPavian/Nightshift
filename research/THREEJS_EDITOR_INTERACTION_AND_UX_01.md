@@ -245,3 +245,70 @@ Technical acceptance:
 ## 16. Design boundary
 
 NIGHTSHIFT rewards experimentation, not one “correct” graffiti style. Diagnostics explain consequences; they do not dictate taste. Presets teach possibilities; they do not define a ceiling. The first good result should be easy; the hundredth distinctive result should remain possible.
+
+
+## 17. Optional, adaptive in-game tutorial — never a feature lock
+
+The tutorial is a companion that follows the player's progress through the game. It teaches tools in context as the player encounters new creative challenges, but it never owns permission to use those tools.
+
+**Non-negotiable rule:** every editor feature is available from the beginning, regardless of tutorial state, career rank, chapter or playtime. Tutorial progression changes what is explained, suggested or highlighted; it never unlocks or disables editor functionality.
+
+### Guidance modes
+
+Offer three clear choices in settings and during first launch:
+
+- **Guided:** step-by-step introductions, optional practice prompts and contextual explanations. The player can skip any step and continue working.
+- **Adaptive:** the editor notices relevant milestones (for example, first selected glyph, first structural edit, first connection, first layer stack) and offers a short, dismissible tip. It avoids repeating concepts the player already uses confidently.
+- **Off:** no unsolicited tutorial prompts. A searchable/reopenable help index remains available unless the player explicitly disables help entirely.
+
+A separate **Advanced controls visibility** setting controls whether the full toolset is shown immediately or contextual controls are kept compact. It is independent from tutorial mode. This prevents the false choice between “learn slowly” and “use everything now”.
+
+### Settings model
+
+Expose settings in onboarding and in the editor at any time:
+- Tutorial: Guided / Adaptive / Off.
+- Tool layout: Compact / Full.
+- Contextual hints: On / Off.
+- Practice prompts: On / Off.
+- Replay completed lessons: available from Help.
+- Reset tutorial progress: resets teaching state only, never projects or artwork.
+
+Suggested defaults for a first session: Adaptive tutorial, Compact tool layout, contextual hints on. These are defaults, not restrictions. A player can choose Guided + Full tools, Off + Compact, or Off + Full; every combination remains valid.
+
+### Tutorial as a progression companion
+
+Organize lessons around real creative milestones, not arbitrary levels:
+1. Make a first tag/word and navigate the Blackbook.
+2. Adjust letter width, height, slant and spacing.
+3. Shape a glyph component and understand counters/apertures.
+4. Build pair relationships and manage overlap/negative space.
+5. Work with layers, outlines, inline and depth.
+6. Construct more complex style grammars and inspect diagnostics.
+7. Move the same editable piece into a wall/spatial composition.
+
+The game may introduce these ideas through missions, crew feedback, commissions or a new surface/context. The tutorial prompt is attached to the relevant task and can be dismissed, postponed or opened as a practice exercise. It must never block the main task or force the player to complete a lesson before using the associated tool.
+
+### Hint behavior
+
+- One prompt at a time; never stack tutorial popups.
+- Explain one action and its visible result, not a long technical lecture.
+- Prefer highlighting the relevant tool/handle over modal dialogs.
+- Provide “Try it”, “Not now” and “Don't show this again” actions where appropriate.
+- A skipped lesson remains available in Help.
+- Re-offer a hint only when context makes it useful; respect dismissed/disabled preferences.
+- Advanced users can inspect all lessons from the help index without changing their tutorial state.
+
+### Progress and privacy
+
+Store tutorial completion, dismissed hints and settings separately from canonical artwork. Tutorial state must not affect generated geometry, deterministic seeds, project exports or validation. Resetting tutorial progress must not reset a project. If settings are project-specific, allow a user-level default and a per-project override.
+
+### Acceptance tests
+
+- A brand-new profile can select Guided, Adaptive or Off during onboarding.
+- The user can change tutorial mode and tool layout at any time without restarting.
+- Full tool access is available with every tutorial setting.
+- A skipped lesson never blocks its feature or the active mission.
+- Completed lessons can be replayed without changing project data.
+- Tutorial prompts do not appear when Off is selected.
+- Resetting tutorial progress leaves artwork, saves and seeds unchanged.
+- Tutorial events do not alter canonical model revision.
