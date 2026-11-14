@@ -109,6 +109,12 @@ The production generator will be implemented with Claude and integrated Three.js
 
 Three.js is part of the real generator interaction/rendering workflow, not merely a separate wall-preview widget. Preserve editable vector geometry and SVG interoperability; use HTML as a possible application shell and JSON as a possible project-data format, not as substitutes for the integrated generator architecture.
 
+### Specification documents
+
+- [Glyph Master Specifications — A, B, G, R, S](../research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
+- [Glyph Data Contract — A–Z](../research/GLYPH_DATA_CONTRACT_A_Z.md)
+- [Generator System Responsibility Map](GENERATOR_SYSTEM_RESPONSIBILITIES.md)
+
 ### Updated next deliverables
 - Master specifications for the five existing authored glyphs A, B, G, R and S.
 - A normalized A–Z glyph data contract with explicit maturity/provenance status.
