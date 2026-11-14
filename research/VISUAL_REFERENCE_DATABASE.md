@@ -177,3 +177,15 @@ For each selected source image, create an analysis record before using it to inf
 - The Deutsche Nationalbibliografie (2023 B 14, p. 26) records *All surface* as 238 pages, ISBN 978-3-00-071073-5, 24 cm, paperback, published by Holger Wiese and Tobias Sawitzki in 2022.
 - Specialist listings and the Stiftung Historische Museen Hamburg event page state 244 pages and an edition of 500. Page count remains a documented metadata discrepancy; use the DNB figure for formal catalogue citation and preserve the retail/event figure as attributed metadata.
 - No page-level visual inspection, pagination collation or image-rights clearance has been performed.
+
+
+## VR-010 — Dortmund longitudinal publications: MASON and regional scene
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Publication A:** *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (Markus Wiese, Barbara Uduwerella, Bernhard van Treeck; Aragon, 1996), ISBN 978-3-89535-431-1, 160 pages according to catalogue listings. A 2009 blog post records a third-party Issuu scan, but the upload's rights status is unknown and the platform did not resolve in this pass.
+- **Publication B:** *MASON — The Essence of Writing 1986–2019* (announced 2020), 144 pages, numbered edition of 400, four work phases, texts by Robert Kaltenhäuser, François Chastanet and MOSES. ILOVEGRAFFITI's post contains an Issuu preview embed that could not be inspected in this pass.
+- **Related analysis:** Rahel H. Grothus, “Stilbeschreibung des Œuvres des Künstlers Mason,” in *Dirty Hands* (2022), pp. 269–278; official Springer chapter record: https://link.springer.com/chapter/10.1007/978-3-658-37799-1_16
+- **Records:** https://berlingraffiti.de/2009/09/09/graffiti-dortmund/ ; https://ilovegraffiti.de/blog/2020/02/02/mason-the-essence-of-writing-1986-2019/ ; https://link.springer.com/chapter/10.1007/978-3-658-37799-1_16
+- **Value:** pair the 1996 regional history source with the 2020 MASON visual chronology and 2022 scholarly analysis, while keeping city-level and individual-artist claims distinct.
+- **Rights:** reference-only / unresolved. Third-party Issuu uploads and previews do not grant reproduction rights.
+- **Caution:** no page-level inspection, image extraction, signature copying or commercial-use permission is claimed.
+- **Evidence:** A for publication existence / metadata where publisher or catalogue records support it; visual contents require legitimate copy and item-level inspection.
