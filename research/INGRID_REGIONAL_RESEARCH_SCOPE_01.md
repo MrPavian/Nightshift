@@ -205,3 +205,18 @@ Additional sources:
 - Freies Hip-Hop Institut, event on graffiti and street art in Heidelberg 1960–2000: https://www.freieshiphopinstitut.de/events/
 - Hip Hop Heidelberg e.V., local scene and projects: https://www.hiphopheidelberg.de/
 - Heidelberg University, exhibition "The Early Days. Hip-Hop in the GDR" (comparative historical context): https://www.uni-heidelberg.de/presse/news2013/pm20130308_hiphop_en.html
+
+
+## 9. Witten — priority hip-hop-history node, separate from INGRID coverage
+
+Witten is elevated from a generic Ruhrgebiet discovery target to a priority **cultural-history** node because of the Bunkerwelt and its role in the local 1990s hip-hop network. Research the Bunkerwelt as scene infrastructure (venue, rehearsal / recording context, parties, jams, peer exchange and regional networks) alongside a separate chronology of Witten graffiti writing.
+
+This is not a change to INGRID evidence status: Witten remains an unconfirmed corpus location until a live graph query or authoritative corpus statement establishes records. Nor should the Bunkerwelt's rap / music network automatically be treated as a list of graffiti writers or as evidence for a distinct Witten lettering style.
+
+Sources and leads:
+- *Mapping Hip Hop Culture in the Ruhr Area*, Bunkerwelt history and DIKE account: https://hiphopruhr.wordpress.com/2016/08/24/witten-hip-hop-und-der-bunker-die-geburtsstatte-der-lokalen-hip-hop-szene/
+- 2026 local-history talk announcement with historian Dr. Thomas Throckmorton: https://trotzallem.noblogs.org/
+- WERK°STADT / Kulturforum Witten, 2021 *Bring the Beat Back* documentation: https://www.kulturforum-witten.de/media/pdf/Kultursommer_Witten_2021_Dokumentation_digital.pdf
+- UrbanArtWitten legal surfaces and Crengeldanz Hall of Fame: https://www.urbanartwitten.com/freifl%C3%A4chen/
+
+Research priority: seek contemporary 1990s flyers, jam photographs, local press, recordings and first-person interviews; then identify which connections specifically involved graffiti writing rather than the wider hip-hop scene.
