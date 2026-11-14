@@ -284,3 +284,10 @@ The Smithsonian Chalfant record was available through search-indexed institution
 - [German Scene Content Pilot 02](BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_02.md) — six additional draft entries with stable proposed IDs.
 - [Blackbook Archive Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) — extended with ten further German-scene regressions.
 
+
+
+
+## German publication and archive bibliography
+
+- [German Graffiti Publications & Archive Pathways 01](GERMAN_PUBLICATION_ARCHIVES_BIBLIOGRAPHY_01.md) — source-graded bibliography for *EINE STADT WIRD BUNT*, DECADES Vol. 1, Stylefile issue records and Martha Cooper Library; includes explicit limits on unverified holdings and image rights.
+- [BLACKBOOK ARCHIVE Test Cases 01](BLACKBOOK_ARCHIVE_TEST_CASES_01.md) — ten publication/archive provenance and metadata regression fixtures.
