@@ -115,3 +115,15 @@ Completion here means the research/specification deliverables exist and have bee
 - [ ] Continue targeted historical research only where it changes archive claims, scene context or generator design.
 
 The archive pilot is a draft, not approved publication content.
+
+
+## W02.6 progress — source register and archive expansion (2026-11-14)
+
+- [x] Added source register for six scholarly/institutional records with inspected scope, access dates, verification limitations and rights cautions.
+- [x] Added NYC writing history evidence map; explicitly separates writing culture from municipal/transit policy and the subway-fleet milestone from the wider culture.
+- [x] Added six archive-entry drafts: writing, blackbook, Clean Train campaign, sequential train photography, preservation network and institutional recognition.
+- [x] Prepared archive test cases for historical accuracy, evidence provenance, image rights, search, navigation and generator capability links.
+- [ ] Direct Smithsonian Chalfant record verification remains open; related entry remains provisional.
+- [ ] Existing six pilot entries still require claim-level source mapping and editorial review.
+- [ ] Next: add cross-domain glyph/word/grammar fixtures and test data contracts; no runtime tests are claimed until Claude's implementation exists.
+
