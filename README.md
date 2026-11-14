@@ -41,4 +41,4 @@ See [docs/ROADMAP.md](docs/ROADMAP.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE
 
 ## Prototype
 
-The current 0.6 prototype was generated as a standalone HTML file during development. The next repository update should add the runnable prototype source under `prototypes/`, then keep subsequent builds versioned there.
+The runnable 0.6 prototype is committed at [`prototypes/nightshift_art_engine_v06.html`](prototypes/nightshift_art_engine_v06.html). Open it locally in a modern browser with internet access (Three.js is loaded from jsDelivr). Future builds should be added as new versioned files rather than silently overwriting prior prototypes.
