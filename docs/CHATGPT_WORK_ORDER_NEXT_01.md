@@ -349,3 +349,16 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a dated glossary dossier, GRAFFITI_FORMATS.md cross-reference, VR-016, research index and changelog entry.
 - [ ] Verify the reproduced newspaper headlines and social statistics against original Dortmund newspaper issues / official data before public factual claims.
 - [ ] Add an archive glossary card only after editorial source review; preserve original German wording and identify it as a 1987 local snapshot.
+
+
+## W02.28 — Dortmund *ALL SURFACE* tagging and handstyle corpus (2026-11-14)
+
+- [x] Verified publisher-supplied publication metadata and advertised tag/handstyle scope for *ALL SURFACE* (2022).
+- [x] Recorded the Amsterdam influence account as publisher-reproduced SHARK recollection, not independently verified history.
+- [x] Added a dedicated dossier, VR-017, research index and changelog entry.
+- [x] Identified Stadtarchiv Dortmund / Archive.NRW as an institutional route for contextual photographs, film and local press; recorded item-level rights requirements.
+- [ ] Obtain and inspect a legitimate *ALL SURFACE* copy; collate captions, credits, page references and item-level rights.
+- [ ] Query the Stadtarchiv for photo/film/press holdings relevant to Dortmund public space and rail infrastructure, 1980–2000; do not assume a graffiti collection exists.
+- [ ] Verify SHARK's Amsterdam account through direct testimony and period sources.
+- [ ] Build a neutral, multi-writer handstyle feature matrix only after page-level review and human calibration; no direct signature cloning.
+- [ ] Next: prioritize tag/handstyle visual inspection, then compare with *Da kukse wa*, *IRON CITY* and the 1996 city-history publication without merging their distinct scopes.
