@@ -77,3 +77,11 @@
 - Added a material-culture dossier on aerosol cans, valves, caps, spray patterns and surface interaction, distinguishing manufacturer retrospectives from ethnographic and academic sources.
 - Added explicit NIGHTSHIFT data-model and generator implications without presenting them as historical facts.
 - Updated the research index.
+
+
+## Research deepening — pair logic and handstyle movement
+
+- Added a contextual model for letter-pair compatibility, anchor zones, connection types, occlusion and whole-word validation.
+- Added a handstyle dossier covering gesture trajectories, stroke order, velocity, motor dynamics and gesture-first versus shape-first generation.
+- Grounded movement-centric findings in Daniel Berio and Frederic Fol Leymarie’s computational research; explicitly labelled pair-logic rules as NIGHTSHIFT engineering hypotheses.
+- Updated the research index and related-file links.
