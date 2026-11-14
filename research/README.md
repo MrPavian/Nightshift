@@ -502,3 +502,12 @@ Promoted INGRID to P1. Added an ontology crosswalk, a Dortmund-first corpus inve
 ### 2026-11 — INGRID query engineering and empirical inventory preparation
 
 Inspected the official INGRID-KG SPARQL query catalogue and upstream RDF-conversion code. Confirmed the catalogue's city/date query pattern (examples 20–21), type/carrier-medium/color queries (18, 22–23), and the documented `hasSyleElement` spelling (31–32). The converter maps German annotation fields to `hasLetterStyle`, `hasTechnology` and `inInventory`, but its `grfp:` namespace mapping differs from the catalogue's `grfo:` examples; live graph reconciliation is required before trusting those templates. Two endpoint access attempts timed out/inaccessible and the local runtime could not resolve the host. No Dortmund counts or trends are claimed. Recording date is distinguished from creator-supplied date.
+
+
+### Heidelberg writing history and southern German influence
+
+- [Heidelberg Writing — History, Regional Influence and Editor Research 01](HEIDELBERG_WRITING_HISTORY_AND_STYLE_RESEARCH_01.md) — source-graded chronology, Heidelberg Style characteristics, regional exchange with Mannheim/Karlsruhe, Torch archive leads, first-train verification and non-attributive editor exercises.
+
+### INGRID ontology audit update
+
+- [INGRID Regional SPARQL Query Pack 01](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md) — updated with direct inspection of the published ontology and current upstream RDF converter; records the precise namespace and style-element spelling inconsistencies, the Zenodo snapshot route and remaining live-graph verification blocker.
