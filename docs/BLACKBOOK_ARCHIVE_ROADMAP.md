@@ -211,3 +211,10 @@ Added nine further editorial draft entries and twelve German-scene regression fi
 
 The next research increment adds Stylefile as publication infrastructure, 1UP and Berlin Kidz as distinct crew/media records, MOSES & TAPS as an evolving artist collective, and dedicated records for LOOMIT, OZ and CAN2. DARKO, VANDALZ and THE FÖNS remain unresolved pending stronger identification and primary sources. Ten additional QA cases protect these distinctions.
 
+
+
+---
+
+## 1.0 scope cap — binding from 2026-11-14
+
+The earlier phases A–H describe the long-term archive vision. They are not all required for the first release. For NIGHTSHIFT 1.0, follow [Final Roadmap and Joint Work Order 01](FINAL_ROADMAP_AND_WORK_ORDER_01.md): deliver a curated 25–35-entry MVP, two learning paths, validated search/navigation, source and rights metadata, offline bundled content, original or cleared visuals, and links to at least three relevant editor studies. Full encyclopedia coverage, complex graph visualization, progression systems and exhaustive biographies are deferred. This cap prevents the archive from keeping the editor release open indefinitely.
