@@ -134,3 +134,8 @@ Three.js is part of the real generator interaction/rendering workflow, not merel
 - Implement the style grammar parameter dependency model and compatibility rules from the four initial grammar specifications.
 - Define the first supported combinations of letterform grammar, composition grammar, practice/form context and rendering treatment.
 - Expand period- and region-specific references where current evidence remains broad or contested.
+
+
+## Creative workflow specification — implementation handoff
+
+The complete authoring journey is specified in [Creative Workflow and Style Authoring 01](../research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md), with its machine-readable contract at [creative-workflow.v1.json](../contracts/creative-workflow.v1.json). This refines the 0.9 Blackbook Workflow milestone into five slices: (A) four deterministic concepts and branching; (B) word/glyph refinement and persistence; (C) relationship authoring; (D) optional assistance; (E) personal style recipes. The specification does not claim these features are implemented. Keep the existing 0.7 glyph-first and 0.8 relationship validation gates intact.
