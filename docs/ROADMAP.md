@@ -159,3 +159,8 @@ See [Procedural Variant Generator Core 01](../research/PROCEDURAL_VARIANT_GENERA
 ### Visual calibration and comparative evaluation
 
 See [Visual Calibration and Comparative Evaluation 01](../research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md) and [visual-calibration.v1.json](../contracts/visual-calibration.v1.json). This workstream precedes production parameter tuning and diversity-score calibration. Build the proof specimen manifest, reviewer capture, calibration registry, deterministic parameter sweep harness, labelled diversity corpus and release-gate integration. Keep the established visual review rubric and maturity gates; this specification does not constitute visual review or calibration evidence.
+
+
+### Proof-sheet and test-fixture infrastructure
+
+See [Proof-Sheet and Test-Fixture Infrastructure 01](../research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md) and [proof-sheet-fixtures.v1.json](../contracts/proof-sheet-fixtures.v1.json). Implement the fixture registry and immutable run manifest first, then deterministic Three.js/SVG proof rendering, sheet assembly, review capture and calibration/CI integration. Preserve the current authored-contour/provisional distinction and mark incomplete pair/word coverage honestly. Generated sheets are evidence for human review, not automatic approvals.
