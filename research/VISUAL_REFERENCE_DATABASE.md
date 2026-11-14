@@ -294,3 +294,11 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** P1981.78 is not displayed because it is not digitized or images cannot be shown for rights reasons. Contact the museum before requesting or reusing images.
 - **Caution:** no graffiti content is claimed from this record; collection search metadata is not image inspection.
 - **Evidence:** A for object metadata and collection search results; no visual inspection of P1981.78.
+
+
+### VR-018 update — ontology, annotation method and reuse terms
+- The official ontology and illustrated manual have now been inspected. INGRID records image level, context relation, graffiti type, lettering style, design elements, directionality, figure style, color, technique/material, language/function, place/date and source provenance.
+- The manual says photo date/location are contributor-supplied; other annotations are based on visual inspection. The described workflow normally uses two annotators, one from linguistics and one from art history. The manual acknowledges interpretive ambiguity in style/genre terms.
+- The 2023 *Scientific Data* article reports original images under CC BY-SA 4.0, generated metadata under CC0 and the knowledge graph under CC BY 4.0, based on contributor agreements transferring rights for public use to INGRID. Check the current license and credit data on each record; CC BY-SA reuse requires attribution and ShareAlike compliance.
+- This clarifies the earlier general rights caution: INGRID is not simply “research-only”, but record-level compliance remains mandatory. No record has yet been inspected and no image reused.
+- Records: https://www.uni-paderborn.de/forschungsprojekte/ingrid/ontologie ; https://www.uni-paderborn.de/fileadmin/ingrid/Illustriertes_Recherchemanual.pdf ; https://www.nature.com/articles/s41597-023-02199-8
