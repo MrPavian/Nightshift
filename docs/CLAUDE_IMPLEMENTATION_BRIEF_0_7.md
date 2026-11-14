@@ -42,6 +42,8 @@ Read and follow:
 - `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md`
 - `research/EDITOR_WORKSPACE_LAYOUT_01.md`
 - `contracts/editor-interaction.v1.json`
+- `research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md`
+- `contracts/creative-workflow.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -76,6 +78,11 @@ Pair candidates must pass local hard gates and then be rechecked in whole-word c
 ## 3.4 Progressive editor interaction and UX
 
 Follow `research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md` and `contracts/editor-interaction.v1.json`. The product requirement is easy entry with an open-ended creative ceiling: do not bury beginners in controls, but do not arbitrarily gate advanced authoring. Implement Quick lettering first, then contextual Shape and Connect modes, and finally precision/advanced authoring. Blackbook, Studio and Wall are views over one canonical project, not separate editors. Selection, handles, diagnostics, history and scene objects must resolve to stable canonical IDs. A drag is a preview followed by one typed, atomically validated command; rejected edits restore the committed scene. Undo/redo replays canonical commands. Camera and overlay changes do not dirty glyph geometry. Essential workflows must work without hover and have touch-friendly alternatives. The interaction contract contains the required event envelopes and interaction fixtures. The tutorial is a non-blocking companion with Guided, Adaptive and Off modes; tool layout is an independent Compact/Full setting. All features are available from first launch, lessons are skippable/replayable, and tutorial state never changes canonical artwork or geometry. These are specifications, not implemented features. Follow `research/EDITOR_WORKSPACE_LAYOUT_01.md` for the responsive workspace hierarchy: dominant Three.js viewport, stable left tool rail, selection-aware inspector, optional history strip, and Compact/Full presentation modes. Compact and Full must expose identical capabilities. Tablet layouts must preserve core actions without hover or obstructing the active edit target.
+
+
+## 3.5 End-to-end creative workflow
+
+Follow `research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md` and `contracts/creative-workflow.v1.json`. Generate exactly four deterministic, structurally distinct concepts; palette/effect-only variation does not satisfy D-006. Keep generated concepts immutable and branch the selected concept for editing. Support isolated glyph refinement, contextual relationship suggestions and whole-word revalidation. Assistance is optional (Off/Suggest/Preview); no silent auto-apply may overwrite a user decision. A personal style library stores versioned reusable recipes and resolved parameter snapshots, not flattened artwork. Keep rendering preferences separate from construction grammar. Do not clone named writers' signatures or exact protected works. Implement in the staged sequence in the workflow specification and report each acceptance fixture independently.
 
 ## 4. Current-state facts
 
