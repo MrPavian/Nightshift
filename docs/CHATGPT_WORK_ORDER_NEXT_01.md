@@ -414,3 +414,16 @@ NIGHTSHIFT research is also a continuous learning programme on writing culture, 
 3. Build a dated, source-graded timeline of Dortmund writing and its links to Amsterdam, Berlin and other scenes; separate testimony from corroborated chronology.
 4. Extend outward to comparative German and European style development, then New York and other major writing traditions where comparison adds explanatory value.
 5. Convert the resulting knowledge into a style-history atlas and editor learning layer only after editorial review and human visual calibration.
+
+
+## W02.30 — INGRID ontology, annotation method and licensing review (2026-11-14)
+
+- [x] Read the official INGRID ontology and illustrated search manual.
+- [x] Mapped image level, context relation, graffiti type, lettering style, design elements, directionality, figure style, color, technique/material, language/function and provenance fields.
+- [x] Recorded the human annotation method: contributor-supplied place/date plus visual annotation, normally by two interdisciplinary annotators; style/genre ambiguity is explicitly acknowledged.
+- [x] Clarified published licensing: original INGRID images CC BY-SA 4.0, generated metadata CC0, knowledge graph CC BY 4.0 according to the 2023 *Scientific Data* article; record-level license and credit checks remain mandatory.
+- [x] Added a proposed INGRID-to-NIGHTSHIFT research crosswalk without claiming implementation.
+- [ ] Use a JavaScript-capable browser to query Dortmund and establish actual record counts / decade coverage.
+- [ ] Inspect representative records across dates and categories; record system IDs, captions, provenance, annotation confidence and license.
+- [ ] Compare observed examples with *ALL SURFACE*, *Da kukse wa*, *IRON CITY* and period sources before proposing style-history conclusions.
+- [ ] Next: build the first evidence-backed Dortmund style-development timeline and a visual learning outline for the editor, keeping all claims attributed and non-attributive.
