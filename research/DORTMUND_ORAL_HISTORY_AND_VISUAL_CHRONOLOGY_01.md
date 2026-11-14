@@ -104,3 +104,10 @@ Sources:
 - Obtain and inspect *IRON CITY* (2002); create item-level records for 1983, 1986, 1990s train documentation and early 2000s.
 - Resolve the Episode 21 / trainwriting upload numbering discrepancy by comparing actual video content and credits.
 - Cross-check Amsterdam and Berlin influence claims across Hinz, ATOM ONE, SHARK and dated visual sources.
+
+
+## Contemporary visual and media archive leads — 2026-11-14
+
+Two near-period sources now strengthen the 1997–1999 part of the chronology: *BOMBER* #14 (1997) reviews the Dortmund train video *Rolling Thunder 001* and interactive *King of the Line* CD-ROM; *Endstation* #14 publishes a dated Dortmund report on 8 March 1999. See [Dortmund Trainwriting — Contemporary 1997–1999 Evidence and Archive Access 01](DORTMUND_TRAINWRITING_CONTEMPORARY_SOURCES_1997_1999_01.md). The 1999 report's numerical estimates and security claims remain attributed to its reporter.
+
+The Martha Cooper Library search results also list *IRON CITY: Graffiti Dortmund* (2002) with Hubert Moormann, Christina Soltani and Markus Wiese, but the live catalogue server returned an error when opened; current holding status is not confirmed.
