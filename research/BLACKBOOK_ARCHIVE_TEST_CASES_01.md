@@ -130,3 +130,14 @@ No UI or automated tests were executed here. Mark cases only after implementatio
 | BA-HM03 | Open Beastie Boyz | Title variants, format changes and sketch-only issues recorded with catalogue provenance | Sketch-only supplements conflated with separate Sketches magazine |
 | BA-HM04 | Open BACKSPIN | Founder testimony and issue-history record cited; 1993/1994 conflict remains visible | Conflicting founding/first-issue dates silently reconciled |
 | BA-HM05 | Search Sketches and Rock 'n' Roller | Single-source leads remain low-confidence until corroborated | Full publication profiles invented from timeline mention |
+
+
+
+### Berlin DECADES trilogy regression fixtures
+
+| ID | Fixture/action | Expected | Failure |
+|---|---|---|---|
+| BA-BD01 | Open DECADES Vol. 1–3 | Three distinct decade records with separate source metadata | Trilogy flattened into one undated publication |
+| BA-BD02 | Search portrait subject | Presence attributed to publisher's portrait list | Portrait appearance treated as complete biography or crew membership |
+| BA-BD03 | Compare publisher historical framing | Interpretations attributed and cross-check required | Publisher narrative presented as uncontested historical fact |
+| BA-BD04 | Link ODEM to Vol. 1 | Publication link does not overwrite memoir/first-person sources | One publication treated as sole biography source |
