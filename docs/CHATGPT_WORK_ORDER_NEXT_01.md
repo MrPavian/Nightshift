@@ -328,3 +328,15 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Collate the physical 1996 book's title page, colophon and final numbered page; recover/inspect the Issuu preview only within its current access and rights conditions.
 - [ ] Inspect *IRON CITY* page by page and build item-level caption/date/location records; no image extraction or generative copying.
 - [ ] Next: develop a visual chronology only from directly inspected, attributable material; keep artist-specific monographs separate from city-wide claims.
+
+
+
+## W02.26 — *Da kukse wa* (1987) reprint and legitimate visual access (2026-11-14)
+
+- [x] Verified the 1987 original's authorship, photographer, interviewees and out-of-print status against Marianne Brentzel's official page.
+- [x] Verified the 2020 *I WAS HERE* reprint provenance against the official Dortmunder U exhibition page.
+- [x] Located a specialist retailer listing for the 36-page A4 landscape second edition (€75, listed in stock at time checked); retained extent and “identical except preface” as seller claims.
+- [x] Added a dedicated dossier, VR-015, research index and changelog entry.
+- [ ] Obtain/inspect the reprint and collate all pages, captions, edition data and visual formats; no copying or generative use.
+- [ ] Use the author excerpt as a period-text source only; independently verify quoted statistics and newspaper claims before factual publication.
+- [ ] Next: begin a page-level visual ledger from the authorized 2020 reprint or official exhibition viewer, then compare with *IRON CITY* and contemporary sources.
