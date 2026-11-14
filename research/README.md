@@ -475,3 +475,8 @@ Identified the University of Paderborn / KIT INGRID database as a free scholarly
 ## Standing research principle — graffiti literacy and editor learning
 
 NIGHTSHIFT's research library is also a continuous learning resource on writing culture, graffiti history, style development, materials and regional scenes. Each new research pass should deepen understanding first and translate it into editor design only where the evidence supports it. Distinguish historical fact, attributed practitioner testimony, scholarly interpretation, visual observation and engineering inference. Preserve local and period variation; never flatten individual handstyles into universal presets or clone identifiable writers' signatures. The work order records the six learning tracks, required research outputs and current sequence.
+
+
+### 2026-11 — INGRID ontology, annotation and licensing review
+
+Inspected INGRID's official ontology and illustrated manual, documenting its distinction between graffiti type, lettering style, design elements, context, materiality, technique, language/function and provenance. Recorded the interdisciplinary human annotation process and its stated ambiguity limits. Clarified the published CC BY-SA 4.0 image / CC0 metadata / CC BY 4.0 knowledge-graph licensing, with mandatory item-level checks. Added a proposed crosswalk to NIGHTSHIFT as a research aid, not implemented editor functionality.
