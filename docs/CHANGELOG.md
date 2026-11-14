@@ -140,3 +140,9 @@
 
 - Defined subsystem ownership and interfaces for semantic glyph construction, style grammar, composition solving, integrated Three.js editing, vector/SVG interchange, project persistence and diagnostics.
 - Resolved the D-003/D-009 architecture relationship: Three.js is a first-class live editor surface, while canonical semantic/vector state remains authoritative and edits flow through model commands.
+
+
+## Glyph review package and Claude handoff
+
+- Added the A–Z review package with maturity inventory, pair/word-context matrices, style-family proof requirements, automated checks and human review criteria.
+- Added the phased Claude implementation brief for Build 0.7, including canonical model, topology, integrated Three.js editor, composition solver, SVG/persistence, test coverage and explicit release gates.
