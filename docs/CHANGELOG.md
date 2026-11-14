@@ -134,3 +134,9 @@
 - Added a versioned conceptual contract separating semantic glyph graphs, editable vector contours, counters/apertures, metrics, anchors, style variants, maturity/provenance and derived render state.
 - Defined deterministic regeneration, structured validation issues, SVG/Three.js synchronization principles and migration requirements for the v0.6 legacy glyph data.
 - Kept uncalibrated measurements explicitly pending rather than inventing production metrics.
+
+
+## Generator responsibility map
+
+- Defined subsystem ownership and interfaces for semantic glyph construction, style grammar, composition solving, integrated Three.js editing, vector/SVG interchange, project persistence and diagnostics.
+- Resolved the D-003/D-009 architecture relationship: Three.js is a first-class live editor surface, while canonical semantic/vector state remains authoritative and edits flow through model commands.
