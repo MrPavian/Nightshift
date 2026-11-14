@@ -362,3 +362,16 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Verify SHARK's Amsterdam account through direct testimony and period sources.
 - [ ] Build a neutral, multi-writer handstyle feature matrix only after page-level review and human calibration; no direct signature cloning.
 - [ ] Next: prioritize tag/handstyle visual inspection, then compare with *Da kukse wa*, *IRON CITY* and the 1996 city-history publication without merging their distinct scopes.
+
+
+## W02.29 — INGRID German graffiti database and Dortmund corpus route (2026-11-14)
+
+- [x] Located the official University of Paderborn INGRID project page and DBIS access record.
+- [x] Verified the DFG-funded Paderborn / KIT project, free scholarly access route, public manuals, ontology and Linked Data / SPARQL architecture.
+- [x] Confirmed Dortmund is represented in the multi-city corpus through the 2023 research article; preserved >80k / >100k / approx. 136k corpus-size snapshots as dated differences.
+- [x] Added a dedicated dossier, VR-018, separate contextual MK&G urban-photography record VR-019, research index and changelog entry.
+- [ ] Use a JavaScript-capable browser to run a Dortmund-only query; record counts by decade and annotation category.
+- [ ] Read the official ontology and illustrated search manual before mapping source categories into NIGHTSHIFT.
+- [ ] Confirm item-level rights and original contributor conditions before retaining or reusing images; free research access is not commercial clearance.
+- [ ] Compare a stratified sample with *ALL SURFACE*, *Da kukse wa*, *IRON CITY* and first-person / period sources.
+- [ ] Next: inspect the live INGRID interface and produce a Dortmund record-count / metadata coverage report before drawing visual or stylistic conclusions.
