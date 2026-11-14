@@ -204,6 +204,7 @@ The archive pilot is a draft, not approved publication content.
 
 - [x] Verified the MCL OPAC record for *Eine Stadt wird bunt: Hamburg Graffiti History 1980–1999* (record 0003815; ISBN 978-3-9824951-0-1), including its displayed reference holding.
 - [x] Verified the MCL OPAC record for Katrin Kaiser's *Graffiti in der gesellschaftlichen Kontroverse* (record 0003386; ISBN 978-3-8366-5114-1), keeping its secondary/contextual role explicit.
+- [x] Added *Stylefile — blackbook — sessions* (record 0003185; 2003) as a Stylefile-associated **book**, explicitly not evidence of periodical issue holdings.
 - [x] Added `research/MCL_OPAC_RECORD_CHECK_01.md`, indexed it in `research/README.md` and logged the work in `docs/CHANGELOG.md`.
 - [x] Re-fetched all three changed files and verified the new content and resulting blob SHAs.
 - [ ] Exact-title searches for Hamburg serials and individual *Stylefile* issues remain open. The live OPAC returned a library-server connection error during this pass, so the two records above rely on indexed detail pages and their availability should be rechecked before an on-site visit.
