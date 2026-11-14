@@ -101,3 +101,17 @@ Do not advance a milestone merely because its UI controls exist. Advance when it
 ## Parallel workstream — THE BLACKBOOK ARCHIVE
 
 The in-game graffiti lexicon is a separate product workstream. Follow [docs/BLACKBOOK_ARCHIVE_ROADMAP.md](BLACKBOOK_ARCHIVE_ROADMAP.md) and its [masterprompt](BLACKBOOK_ARCHIVE_MASTERPROMPT.md). The research library under `research/` is its editorial source of truth. Do not duplicate the archive roadmap's content milestones here; coordinate shared architecture and generator integration at the relevant main-engine milestones.
+
+
+## Updated implementation direction — Claude + integrated Three.js
+
+The production generator will be implemented with Claude and integrated Three.js support. Build 0.6 is retained as a reference prototype; do not treat another standalone HTML/JSON-only generator as the end product. The research/specification workstream should produce implementation-ready glyph specifications, semantic geometry/data contracts, interaction requirements, visual reference guidance and regression tests for Claude.
+
+Three.js is part of the real generator interaction/rendering workflow, not merely a separate wall-preview widget. Preserve editable vector geometry and SVG interoperability; use HTML as a possible application shell and JSON as a possible project-data format, not as substitutes for the integrated generator architecture.
+
+### Updated next deliverables
+- Master specifications for the five existing authored glyphs A, B, G, R and S.
+- A normalized A–Z glyph data contract with explicit maturity/provenance status.
+- A clear division of responsibility between glyph construction, composition solving, Three.js rendering/interaction, vector export and project persistence.
+- Claude-ready implementation brief and acceptance tests before production generator coding.
+
