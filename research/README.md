@@ -56,6 +56,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Letter-Pair Connections and Word Flow](LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md)
 - [Handstyle, Gesture and Motor Dynamics](HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md)
 - [Alphabet Test Matrix and Glyph Variants](ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md)
+- [Glyph Construction Library](GLYPH_CONSTRUCTION_LIBRARY.md)
 
 ## Status
 
@@ -87,3 +88,8 @@ Added a cross-linked synthesis of early New York writing, oral-history networks,
 ### 2026-11 — Alphabet structure and glyph variants
 
 Added a test-matrix dossier for all 26 Latin letters, grouping structural challenges and defining neutral per-letter checks, synthetic test words, glyph/word acceptance criteria and an illustrative variant data model. It draws on computational glyph segmentation and movement-centric generation research while explicitly labelling the matrix and implementation rules as NIGHTSHIFT design decisions, not historical graffiti taxonomy.
+
+
+### 2026-11 — Semantic glyph construction library
+
+Added a technical specification for semantic stroke graphs, primitive roles, junction/topology metadata, protected counters and apertures, width profiles, anchors, authoring workflow and validation gates. The research basis is Berio et al.'s StrokeStyles, Sketching and Layering Graffiti Primitives, and AutoGraff. The A–Z graph templates and NIGHTSHIFT data/implementation rules are explicitly marked as design inference, not historical universals.
