@@ -304,3 +304,15 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added VR-012, a source dossier and research index/changelog links.
 - [ ] Obtain a legitimate copy of *BOMBER* #14 and *Rolling Thunder 001*; confirm the MCL holding; corroborate 1998 security/cleaning claims; inspect *IRON CITY* item by item.
 - [ ] Next: develop a dated 1996–1999 claim ledger from contemporary reports and first-person oral history, keeping all quantitative claims attributed until independently verified.
+
+
+
+## W02.24 — Dortmund moving-image archive and media access (2026-11-14)
+
+- [x] Located a current used-VHS listing for *Rolling Thunder 001* with seller-supplied MASmedia / SHARK TV metadata and cross-checked its description against the 1997 *BOMBER* review.
+- [x] Recorded *King of the Line* as a distinct two-CD-ROM interactive archive and captured its secondary ISBN lead.
+- [x] Recovered the ILOVEGRAFFITI archive reference to *Graffiti Dortmund 1994* and historical Google Video availability; no surviving copy or original video ID is confirmed.
+- [x] Added a source dossier, VR-013, research index and changelog entry; rights and inspection limits are explicit.
+- [ ] Inspect a legitimate VHS/CD-ROM copy and verify credits, dates, locations and media integrity; obtain permission before digitization or public reuse.
+- [ ] Recover the 1994 film's original post permalink / Google Video ID through archive metadata; do not conflate it with other Dortmund documentary uploads.
+- [ ] Next: build a timecoded train-format ledger from directly inspected footage and reconcile it with *IRON CITY*, *BOMBER* #14 and *Endstation* #14.
