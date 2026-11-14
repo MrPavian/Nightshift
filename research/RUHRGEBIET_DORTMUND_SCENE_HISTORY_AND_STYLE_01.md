@@ -143,3 +143,51 @@ For each image record: creator / crew if explicitly attributed, city, date or da
 - Bochum, Duisburg and Essen are confirmed in the KWI article as places with legal walls, not as equally documented early Writing centres.
 - No source image has been copied, ingested into the generator or cleared for commercial use.
 - No current INGRID city counts are asserted here.
+
+
+## 9. Witten — Bunkerwelt as a regional hip-hop anchor
+
+Witten must be treated as a priority Ruhrgebiet research node, not merely as a small neighbouring town. The **Bunkerwelt** matters because it was a local meeting, rehearsal, party, jam and recording environment through which Witten's hip-hop culture gained wider reach. It is an important cultural context for graffiti writing even where a direct graffiti production history has not yet been documented.
+
+### What the sources currently support
+
+- A local-history account published by *Mapping Hip Hop Culture in the Ruhr Area* describes the Bunkerwelt as originating in the 1990s around Dike Uchegbu (DIKE), who rented a rehearsal room in an old bunker in Witten-Annen. It became a place for hip-hop parties and jam sessions, bringing together rappers, musicians and other artists. The account says the bunker was no longer in use after the turn of the millennium and describes rent increases around 2000 as a factor in leaving the premises. This is a secondary account and should be cross-checked with interviews and contemporary material.
+- A 2026 announcement for a talk at the Märkisches Museum says historian Dr. Thomas Throckmorton researched the emergence and national significance of Witten's Bunkerwelt scene using varied sources and background conversations with key participants. This is a promising lead for a more robust local history, not itself a transcript of the talk.
+- A Bunkerwelt profile lists a network of participants and associated acts including Terence Chill, OnAnOn, Lakmann One, Flipstar, Till Tomorrow / Creutzfeld & Jakob, Dike D, El9Six, Pahel and Das TagTeam. Treat this as a scene-network lead; verify individual roles and dates against first-person sources.
+- Witten's 2021 *Bring the Beat Back* documentation explicitly describes the Ruhrgebiet and Witten as nationally known for their flourishing 1990s hip-hop scene and jams. The event brought together DJing, graffiti writing, rap and breakdance, with participants from Witten and other cities. This supports a broad, interconnected hip-hop ecology, but does not by itself prove that the Bunkerwelt hosted every graffiti event or that all listed artists were graffiti writers.
+
+### Keep three Witten histories distinct
+
+1. **Bunkerwelt / hip-hop network:** a social and cultural infrastructure for rap, music, parties, jams and cross-disciplinary exchange.
+2. **Witten graffiti / writing practice:** requires its own dated evidence: writers, crews, pieces, photos, jams, walls, magazines and oral histories. Do not infer a local graffiti style from the Bunkerwelt's musical reputation.
+3. **Contemporary legal walls and urban art:** UrbanArtWitten documents the Crengeldanz Hall of Fame, opened in 2019, with a long public wall and supported youth / community activity. This is a contemporary legal infrastructure, not evidence of 1980s/1990s writing history.
+
+### Why this matters to NIGHTSHIFT
+
+The Bunkerwelt is a useful case study in how a scene is built by more than lettering alone:
+- physical meeting and rehearsal spaces;
+- jam sessions and mixed-discipline events;
+- peer learning and informal skill exchange;
+- local identity and regional / national collaboration;
+- the transition from local infrastructure to wider cultural networks.
+
+For the research model, add a **scene infrastructure** layer alongside writers, crews, cities, styles and works. Record venues, events, collectives, media and their dated relationships. For the editor, this is contextual and educational content; it must not be converted into a visual “Bunkerwelt style” preset without independent visual evidence.
+
+### Witten research backlog
+
+- Obtain / inspect the 2026 Throckmorton talk materials or recording, if published.
+- Identify the bunker building and establish its dates and use from reliable local-history sources; avoid publishing sensitive access details for disused premises.
+- Find first-person interviews with DIKE, Terence Chill, Lakmann, Flipstar, El9Six and other participants, preserving exact role descriptions.
+- Search contemporary flyers, jam posters, local press, photographs and recordings from the 1990s.
+- Build a separate Witten graffiti chronology; identify writers and dated works rather than assuming the Bunkerwelt music network equals the writing network.
+- Compare the Bunkerwelt network with Dortmund's TUF network and wider Ruhrgebiet exchange.
+
+### Sources
+
+- *Mapping Hip Hop Culture in the Ruhr Area*, “Witten, HipHop und der Bunker: Die Geburtsstätte der lokalen HipHop-Szene” (2016): https://hiphopruhr.wordpress.com/2016/08/24/witten-hip-hop-und-der-bunker-die-geburtsstatte-der-lokalen-hip-hop-szene/
+- Märkisches Museum / local-history talk announcement, “Trotz Allem Witten” (21 August 2026): https://trotzallem.noblogs.org/
+- WERK°STADT / Kulturforum Witten, *Kultursommer Witten 2021 — Dokumentation*, “Bring the Beat Back”: https://www.kulturforum-witten.de/media/pdf/Kultursommer_Witten_2021_Dokumentation_digital.pdf
+- UrbanArtWitten, legal surfaces and Crengeldanz Hall of Fame: https://www.urbanartwitten.com/freifl%C3%A4chen/
+- Bunkerwelt network profile (discovery lead, verify against primary sources): https://barsbarsbatigol.de/register_eintrag/bunkerwelt/
+
+**Evidence boundary:** Witten is now a priority regional hip-hop-history node. Its INGRID corpus status remains unconfirmed, and no specific historical Witten graffiti style is asserted in this dossier.
