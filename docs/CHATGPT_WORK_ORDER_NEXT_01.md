@@ -272,3 +272,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added episode metadata, URLs, evidence boundaries and a timecoded oral-history annotation protocol.
 - [ ] Watch and timecode the episodes; verify the exact direct URL for the separate “Into the Nineties” episode.
 - [ ] Compare first-person claims against dated publications, press and visual evidence before promoting historical or style conclusions.
+
+
+
+## W02.21 — Dortmund MASON longitudinal publication corpus (2026-11-14)
+
+- [x] Mapped *Graffiti Dortmund* (1996), *MASON — The Essence of Writing 1986–2019* (2020) and Grothus's 2022 chapter as a longitudinal source set.
+- [x] Added VR-010 with metadata, source routes and rights/access limitations.
+- [x] Added a dossier and index/changelog links; kept individual-artist development distinct from a regional style profile.
+- [ ] Legitimate copy inspection, four-phase comparison, image-caption audit and practitioner review remain open.
+- [ ] Next: use the dated video and publication corpus to build a claim ledger for Dortmund's 1980s–1990s timeline; no style promotion before visual and oral-history cross-check.
