@@ -169,3 +169,8 @@ See [Proof-Sheet and Test-Fixture Infrastructure 01](../research/PROOF_SHEET_AND
 ### Glyph construction pipeline
 
 See [Glyph Construction Pipeline 01](../research/GLYPH_CONSTRUCTION_PIPELINE_01.md) and [glyph-construction-pipeline.v1.json](../contracts/glyph-construction-pipeline.v1.json). Implementation order: canonical schema/registry, exact A/B/G/R/S snapshot import, semantic graph/vector adapters, geometry validator, typed operation/command bus, metrics/anchors, Three.js stable-ID scene adapter, preview/commit/undo/redo, SVG/persistence and proof harness. The first slice is monochrome, editable and topology-valid; effects and extrusion are explicitly downstream.
+
+
+### A/B/G/R/S construction handoff
+
+See [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) and [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json). The next implementation task is Slice 1: exact legacy snapshot import, provisional semantic graph mapping, explicit topology records, validator diagnostics and neutral proof output. Do not expose uncalibrated controls or promote maturity. The first renderer gate is topology-correct negative space across every render pass and SVG, without paper-colour patches.
