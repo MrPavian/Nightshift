@@ -36,6 +36,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 
 ## Current research files
 
+- [NYC Writing in the 1990s — Borough and Scene Map 01](NYC_1990S_BOROUGH_SCENE_MAP_01.md)
+
 - [NYC Writers & Crews, 1990–1999 — Attributed Starter Chronology](NYC_WRITERS_CREWS_CHRONOLOGY_1990_1999_01.md)
 
 - [NYC Writing Culture in the 1990s — Transition, Continuity and New Circuits](NYC_WRITING_1990S_TRANSITION_01.md)
@@ -101,6 +103,10 @@ Added a source-backed dossier on the post-subway transition, the growing distinc
 ### 2026-11 — NYC writers and crews, 1990–1999
 
 Added an attributed starter chronology for the post-subway NYC scene, including the 1990 Chalfant studio snapshot, Bronx networks around COPE 2 / KD and Spek / BTV-BTC, the 1995 TATS CRU commercial transition, late-1990s IRAK and the 1999 digital afterlife of the Writer's Bench. Membership and chronology are explicitly confidence-labelled; incomplete leads such as DMS, SANE/SMITH and FX are not promoted to settled facts.
+
+### 2026-11 — NYC borough and scene map, 1990s
+
+Added an evidence-led borough map distinguishing Bronx peer/crew networks, Manhattan's downtown IRAK orbit and historic writer locations, Queens' zine/archive infrastructure, and Brooklyn's documented but still incomplete record. Includes media nodes, temporal and relationship cautions, confidence boundaries and a primary-source research queue; avoids assigning borough stereotypes or unsupported crew territories.
 
 ## Status
 
