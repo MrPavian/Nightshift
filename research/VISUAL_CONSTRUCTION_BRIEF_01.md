@@ -156,3 +156,18 @@ Do not expand the alphabet or add advanced paint effects first:
 
 ## 8. Claude report
 Report files/modules changed, model/command contract, tests and pass/fail counts, proof sheets, human review status, known defects and the next smallest vertical slice. Compilation or a static screenshot alone is not production readiness.
+
+
+## 9. Handstyle subsystem cross-reference
+
+Handstyles are a separate construction and interaction family, not a rounded / simplified Piece Generator mode. Use the evidence-led model in [HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01](HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md).
+
+The canonical representation separates:
+- user-authored name / glyph sequence;
+- ordered structural motor plan with stable stroke IDs and explicit lifts;
+- parametric stroke behaviour (width, opacity, curvature, speed profile);
+- tool / substrate rendering (marker, aerosol, digital pen).
+
+Do not infer a real writer's identity, trace named signatures, or use archival tags as presets. Preserve the distinction between recorded movement and inferred movement. Build deterministic vector strokes first; only then consider movement playback and more advanced motor models.
+
+**Acceptance additions:** stable stroke IDs; explicit pen lifts; crossings distinct from joins; same-seed determinism; bounded seeded variation; marker/aerosol rendering that does not mutate canonical paths; SVG round-trip preserving path order and metadata.
