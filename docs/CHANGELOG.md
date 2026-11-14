@@ -68,3 +68,12 @@
 - Distinguished documented policy milestones from broader cultural claims and attributed retrospective firsts.
 - Documented transnational circulation through media, travel, exhibitions, crews and writer contacts.
 - Updated the research index and cross-links.
+
+
+## Research deepening — lettering, blackbooks and aerosol practice
+
+- Added a structural vocabulary and composition model for graffiti lettering, based on Daniel Berio’s computational research and qualified as analytical rather than universal practitioner terminology.
+- Added a dossier on blackbooks as sketch space, peer-learning environment, social object and archive, using Janice Rahn’s ethnography and Getty documentation.
+- Added a material-culture dossier on aerosol cans, valves, caps, spray patterns and surface interaction, distinguishing manufacturer retrospectives from ethnographic and academic sources.
+- Added explicit NIGHTSHIFT data-model and generator implications without presenting them as historical facts.
+- Updated the research index.
