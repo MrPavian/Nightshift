@@ -1,0 +1,128 @@
+{
+  "contractId": "nightshift.procedural-variant-generator",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "generation": {
+    "requiredConceptCount": 4,
+    "returnFourOnlyIfGatesPass": true,
+    "otherwise": "generation-failure-with-best-available-diagnostics",
+    "candidateIs": "canonical-project-branch",
+    "cosmeticOnlyDiversityCredit": 0
+  },
+  "random": {
+    "algorithm": "versioned-seeded-prng-required",
+    "ambientRandomAllowed": false,
+    "namedStreams": [
+      "variant-selection",
+      "glyph-parameter-choice",
+      "word-layout",
+      "relationship-candidates",
+      "controlled-asymmetry",
+      "candidate-retry"
+    ],
+    "deriveFrom": [
+      "request-fingerprint",
+      "candidate-slot",
+      "subsystem-label",
+      "stream-version"
+    ],
+    "persistAlgorithmAndVersion": true
+  },
+  "stages": [
+    "preflight",
+    "glyph-construction-plans",
+    "candidate-glyph-instantiation",
+    "word-layout",
+    "relationship-solving",
+    "canonical-validation",
+    "structural-feature-extraction",
+    "four-way-selection"
+  ],
+  "qualityDimensions": [
+    "identity-legibility",
+    "topology-geometry",
+    "grammar-coherence",
+    "composition",
+    "negative-space-quality",
+    "structural-originality",
+    "surface-fit",
+    "review-maturity"
+  ],
+  "hardGates": [
+    "glyph-identity",
+    "topology",
+    "geometry",
+    "anchor-validity",
+    "whole-word-collision",
+    "recipe-locks",
+    "compatibility"
+  ],
+  "diversity": {
+    "features": [
+      "variant-and-operation-distribution",
+      "glyph-proportions-and-mass",
+      "word-rhythm",
+      "spacing-and-baseline",
+      "relationship-graph",
+      "negative-space",
+      "composition-density-and-silhouette"
+    ],
+    "excludeAsPrimary": [
+      "palette",
+      "texture",
+      "lighting",
+      "camera-framing",
+      "micro-coordinate-noise"
+    ],
+    "pairwiseComparison": true,
+    "deterministicTieBreak": "candidate-id",
+    "thresholdsRequireCalibration": true
+  },
+  "search": {
+    "poolSizeVersioned": true,
+    "retryBudgetVersioned": true,
+    "recordAttempts": true,
+    "recordRejectionsByCode": true,
+    "noSilentThresholdRelaxation": true
+  },
+  "failureHandling": {
+    "recordStage": true,
+    "recordDiagnosticCode": true,
+    "recordAffectedStableIds": true,
+    "recordMeasurementsAndThresholds": true,
+    "explainExhaustion": true
+  },
+  "persistence": [
+    "requestFingerprint",
+    "normalizedInput",
+    "engineAndDependencyVersions",
+    "rootSeed",
+    "seedDerivationVersion",
+    "candidateSlotSeeds",
+    "randomStreamVersions",
+    "resolvedOperations",
+    "resolvedParameters",
+    "searchPolicy",
+    "attemptCounts",
+    "candidateOutcomes",
+    "structuralSignatures",
+    "canonicalSnapshots"
+  ],
+  "acceptance": [
+    "deterministic-replay",
+    "isolated-random-streams",
+    "registered-operations-only",
+    "no-uncalibrated-randomization",
+    "hard-validation",
+    "atomic-rejection",
+    "four-gated-concepts",
+    "structural-diversity",
+    "inspectable-signatures",
+    "vector-quality-not-scalar",
+    "honest-search-exhaustion",
+    "recipe-invariants",
+    "persisted-seed-and-parameters",
+    "maturity-transparency",
+    "diagnostic-persistence"
+  ]
+}
