@@ -62,6 +62,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Master Glyph Variant Matrix 01 — A/B/G/R/S](MASTER_GLYPH_VARIANT_MATRIX_01.md)
 - [Glyph Parameter Dependency Contract 01](GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md)
+- [Glyph Geometry and Topology Validation Contract 01](GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md)
+- [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
@@ -139,3 +141,8 @@ Added a first controlled variant plan for A/B/G/R/S. Each glyph now has named ma
 ### 2026-11 — Typed glyph parameter operations
 
 Added a machine-readable A/B/G/R/S parameter registry and an implementation-facing dependency contract. The contract defines stable command envelopes, atomic validation/commit, derived-view invalidation, hard/soft diagnostics, per-glyph coupling and Three.js handle behavior. Numeric bounds remain explicitly uncalibrated; topology-changing variants stay separately authored. This is a specification, not implemented functionality.
+
+
+### 2026-11 — Geometry and topology validation contract
+
+Added a machine-readable validator profile and implementation dossier for contour integrity, planar topology, counter/aperture/channel classification, curve approximation error, clearance measurement, anchor validity and A/B/G/R/S identity checks. Thresholds remain calibrated per feature and context; automated success is explicitly separated from human visual approval. This is a design specification, not implemented functionality.
