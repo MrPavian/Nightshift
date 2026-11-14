@@ -55,3 +55,8 @@ Avoid copying recognizable signatures or recreating a living artist's exact styl
 2. **The Bronx Museum**, “Henry Chalfant: Art vs. Transit, 1977–1987”: https://bronxmuseum.org/exhibition/henry-chalfant-art-vs-transit-1977-1987/. [A]
 3. **Museum of the City of New York**, “Above Ground: Art from the Martin Wong Graffiti Collection”: https://www.mcny.org/exhibition/above-ground-art-martin-wong-graffiti-collection. [A]
 4. **Katrin Görler**, “Eine kurze Geschichte des Stylewriting,” SCHIRN Kunsthalle, 2013: https://www.schirn.de/schirnmag/eine-kurze-geschichte-des-stylewriting/. [B]
+
+
+## Cross-reference: Research Synthesis 01
+
+For the connected historical argument, source hierarchy, terminology cautions and NIGHTSHIFT data-model implications, see [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md). It cross-links the current topic with oral histories, subway formats, style development and generator design.
