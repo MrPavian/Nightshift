@@ -168,3 +168,14 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Build Stylefile issue-level index and inspect *EINE STADT WIRD BUNT* / Berlin DECADES as source pathways.
 - [ ] Expand interviews and dated visual references for the new profiles; rights remain item-specific.
 
+
+
+
+## W02.11 — German publication/archive source mapping (2026-11-14)
+
+- [x] Inspected the official *EINE STADT WIRD BUNT* overview, contents and editor biographies; recorded its Hamburg 1980–1999 scope and serial-publication research leads.
+- [x] Inspected DECADES Vol. 1 publisher/catalogue description; recorded scope and attributed name list.
+- [x] Built a partial Stylefile issue index for issues 1, 2, 12, 61 and 62 with differing evidence grades; preserved conflicting issue-1 dates.
+- [x] Verified the Martha Cooper Library collection scope and access model; did not claim specific German titles are held without item-level OPAC evidence.
+- [x] Added ten regression fixtures and indexed the dossier.
+- [ ] Next: title-level bibliography for Hamburg serials; compare DECADES Vol. 2/3; exact MCL OPAC searches; source-level profile revisions only where claim support is explicit.
