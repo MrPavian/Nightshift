@@ -486,3 +486,8 @@ Use [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/A
 ## 3.13 Specification integration audit gate
 
 Before implementing G aperture controls, follow [Specification Integration Audit 01](../research/SPECIFICATION_INTEGRATION_AUDIT_01.md). The G master identity describes an intended exterior-connected opening, but the imported v0.6 contour must remain `interpretation-required` until topology analysis establishes it. The `glyph.G.set-aperture-width` operation now requires a classified aperture, validated boundary/measurement construction and approved calibration. Reject canonical commits otherwise. Do not synthesize an aperture polygon or infer it from an empty hole array.
+
+
+## 3.14 Executable ticket sequence
+
+Use [Claude Ticket Pack 0.7A 01](CLAUDE_TICKET_PACK_0_7A_01.md) to execute the first A/B/G/R/S slice in dependency order. Do not collapse import, topology, renderer and editor interaction into one untestable task. Each ticket has explicit acceptance criteria and a completion report. Read the specification integration audit before implementing G aperture behavior.
