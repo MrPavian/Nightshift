@@ -1,10 +1,12 @@
-# INGRID-KG — Dortmund SPARQL Query Pack 01 (W02.32)
+# INGRID-KG — Regional SPARQL Query Pack 01 (Dortmund pilot; W02.32)
 
 **Date:** 2026-11-14  
 **Priority:** P1 — foundational empirical research  
-**Status:** Official query catalogue and upstream RDF-conversion code inspected. Dortmund templates are adapted from documented examples, but no query has returned result rows. The public endpoint timed out through the available research client; a second direct query attempt was inaccessible. No Dortmund counts are claimed.
+**Status:** Official query catalogue and upstream RDF-conversion code inspected. Dortmund-first templates are adapted from documented examples and should be parameterized for every confirmed Ruhrgebiet/NRW city; no query has returned result rows. The public endpoint timed out through the available research client; a second direct query attempt was inaccessible. No Dortmund counts are claimed.
 
 ## 1. Why this matters
+
+Dortmund is the pilot location, not the corpus boundary. Apply the same validated query protocol to Hamm, Münster, Cologne and Paderborn (published corpus cities), then discover further Ruhrgebiet and NRW city resources. See `INGRID_REGIONAL_RESEARCH_SCOPE_01.md`.
 
 The official INGRID-KG project site publishes executable SPARQL examples for city/date filtering, type and carrier-medium comparisons, colour counts, lettering-item analysis and style-element counts. This means the Dortmund corpus inventory can be approached through the documented RDF model rather than guessed filters.
 
