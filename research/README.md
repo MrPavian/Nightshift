@@ -372,3 +372,10 @@ Added a wider scene synthesis connecting downtown skate/hip-hop spaces, the Broo
 ### 2026-11 — NYC graffiti, skateboarding and alternative media networks
 
 Added a cross-scene dossier based on Abram Coetsee's Cornell dissertation, Letterform Archive's graffiti-zine research, Adam Gopnik's 1990 post-subway report, Eli Gesner's retrospective interview and the Harsh Forms graffiti/hardcore network investigation. It models subway routes, meeting points, zines, photo exchange and skateboarding as overlapping but distinct infrastructures; all participant recollections and design inferences are explicitly labelled.
+
+
+- [Dortmund Style — Historical Evidence and Generator Translation 01](DORTMUND_STYLE_EVIDENCE_AND_GENERATOR_TRANSLATION_01.md)
+
+### 2026-11 — Dortmund Style evidence and generator translation
+
+Added a source-graded Dortmund / Ruhrgebiet dossier using the KIT dissertation, the 1987 *Da kukse wa* author record, 1989 contemporary press, the KWI regional essay, ATOM ONE's first-person retrospective and a Too Strong interview. The generator implications are explicitly marked as design hypotheses; no fixed metrics, letter topology or image rights are inferred.
