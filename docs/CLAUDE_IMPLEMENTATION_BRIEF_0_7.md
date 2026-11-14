@@ -29,10 +29,16 @@ Read and follow:
 - `research/HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md`
 - `research/STYLE_GRAMMAR_SPECIFICATIONS_01.md`
 - `research/STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md`
+- `research/VISUAL_REFERENCE_DATABASE.md`
+- `research/VISUAL_CONSTRUCTION_BRIEF_01.md`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
-## 3. Current-state facts
+## 3. Visual construction requirements
+
+Before implementing composition and style expansion, follow `research/VISUAL_CONSTRUCTION_BRIEF_01.md`. It defines the evidence-led construction layers, grammar-specific visual criteria, Three.js editor requirements, six deterministic proof-sheet families and acceptance criteria. Consult `research/VISUAL_REFERENCE_DATABASE.md` for provenance and rights status. Do not bundle or trace archival images without item-level permission. The visual brief is a design specification, not evidence that these features are implemented.
+
+## 4. Current-state facts
 
 Build 0.6 is a standalone HTML prototype with:
 - A–Z input addressing;
@@ -58,7 +64,7 @@ Important source-level findings:
 
 These facts are code inspection observations. They are not visual quality certification.
 
-## 4. Architecture constraints
+## 5. Architecture constraints
 
 ### Canonical state
 Canonical project state consists of:
@@ -95,7 +101,7 @@ Keep geometry editable and independent of transient scene state. SVG export must
 ### Versioning
 Keep v0.6 unchanged as a legacy reference. Do not overwrite it. Any new prototype or implementation branch must be versioned and documented.
 
-## 5. Non-goals for the first slice
+## 6. Non-goals for the first slice
 
 Do not prioritize:
 - advanced chrome, drips, particles or surface weathering;
@@ -105,7 +111,7 @@ Do not prioritize:
 - automatic historical authenticity claims;
 - a polished archive/marketing UI before glyph editing works.
 
-## 6. Implementation phases
+## 7. Implementation phases
 
 ### Phase 0 — Repository and implementation plan
 
@@ -262,7 +268,7 @@ Exit criteria:
 - provisional forms are not mislabeled as authored masters;
 - proof sheets and regression results are available.
 
-## 7. Required tests
+## 8. Required tests
 
 ### Unit tests
 - schema validation;
@@ -325,7 +331,7 @@ Use the existing test matrix, including:
 
 Also test pair cases around the five authored masters: AV, AR, BA, BR, GO, GR, RA, RO, SA, SB, GS, NS.
 
-## 8. Required visual proof sheets
+## 9. Required visual proof sheets
 
 Generate repeatable proof sheets containing:
 1. each glyph silhouette;
@@ -341,7 +347,7 @@ Generate repeatable proof sheets containing:
 
 Do not mark a glyph render-reviewed until a human has inspected the sheet. Record reviewer, date, build, seed and outcome.
 
-## 9. Delivery protocol
+## 10. Delivery protocol
 
 For each phase:
 - state files/modules created or changed;
@@ -354,7 +360,7 @@ For each phase:
 
 Do not report “done” based only on compilation. Test actual behavior.
 
-## 10. Definition of done for first production slice
+## 11. Definition of done for first production slice
 
 A user can:
 1. open a project with one of the five authored-contour glyphs;
@@ -369,7 +375,7 @@ A user can:
 
 If any of these steps is missing, describe the result as a partial prototype, not the production generator.
 
-## 11. Claude completion report format
+## 12. Claude completion report format
 
 Return:
 - implementation summary;
