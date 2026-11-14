@@ -120,6 +120,8 @@ Added a source-backed dossier on Skills, Styles for Miles, Move, G.S.E.L., Twelv
 
 Added a source-led dossier on the NYHC/graffiti overlap, including HYPE/Mackie Jayson, SANE/SMITH, MQ/MKUE and DMS, SMOG, FCEE, HUSH and JERE; band/venue/flyer and skate connections; and a clear distinction between documented individual links and unverified complete crew chronologies. The Brooklyn Bridge date uses Roger Smith's 2019 first-person recollection (1988), retaining the conflicting 2017 secondary date as a discrepancy.
 
+- [Martha Cooper Library — OPAC Record Check 01](MCL_OPAC_RECORD_CHECK_01.md)
+
 ## Status
 
 Initial source-backed research pass. This is a living research base, not a definitive or exhaustive history. Expand entries only with traceable sources and preserve disagreements.
