@@ -120,3 +120,10 @@
 
 - Added a persistent autonomous work prompt for the ChatGPT research/specification role, defining uninterrupted deliverables through the A–Z glyph contract, system responsibility map, Claude implementation brief and review package.
 - Linked the work prompt from the AI handoff so future sessions can resume the same workflow without re-establishing instructions.
+
+
+## Glyph master specifications — A, B, G, R, S
+
+- Added detailed source-code-grounded specifications for the five existing custom contour records.
+- Defined per-letter semantic construction proposals, identity invariants, counter/aperture handling, candidate anchors, variant families and isolated/pair/word test cases.
+- Explicitly separated verified v0.6 code facts from engineering proposals and unverified visual quality; no visual certification is claimed.
