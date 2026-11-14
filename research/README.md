@@ -456,3 +456,10 @@ Verified the original 1987 publication against Marianne Brentzel's author page a
 ### 2026-11 — Dortmund 1987 local writing glossary
 
 Extracted the “Writer-ABC” in Marianne Brentzel's official *Da kukse wa* excerpt and mapped its six terms to NIGHTSHIFT's existing separation of archive/practice, figurative content, motivation, lettering/artwork and vehicle format. The glossary is retained as a dated local vocabulary snapshot, not a universal taxonomy. Historical newspaper framing is distinguished from independently verified statistics or events.
+
+
+- [Dortmund ALL SURFACE — Tagging and Handstyle Corpus (W02.28)](DORTMUND_ALL_SURFACE_TAGGING_CORPUS_01.md)
+
+### 2026-11 — Dortmund ALL SURFACE tagging and handstyle corpus
+
+Added a focused source dossier for *ALL SURFACE* (2022), separating publisher metadata and attributed SHARK recollection from direct visual evidence. Defined an item-level handstyle inspection protocol and rights safeguards. Added Stadtarchiv Dortmund / Archive.NRW as a contextual photo, film and press archive route, while explicitly avoiding claims that a specific graffiti collection exists.
