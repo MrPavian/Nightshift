@@ -58,6 +58,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Alphabet Test Matrix and Glyph Variants](ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md)
 - [Glyph Construction Library](GLYPH_CONSTRUCTION_LIBRARY.md)
 - [Glyph Master Audit — Build 0.6](GLYPH_MASTER_AUDIT_V06.md)
+- [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 
 ## Status
 
