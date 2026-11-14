@@ -172,3 +172,12 @@
 - Documented exact v0.6 contour counts, provisional component proposals, topology distinctions, anchor review requirements and registered operation IDs.
 - Specified topology-consistent rendering, typed Three.js edits, acceptance fixtures and maturity gates.
 - No production glyph geometry, visual review, calibration or implementation is claimed by this documentation update.
+
+
+## 2026-11-14 — Specification integration audit and work order
+
+- Added a persistent ChatGPT research/specification work order with dependency-ordered deliverables and role boundaries.
+- Audited the A/B/G/R/S handoff against the glyph parameter, construction and geometry contracts.
+- Verified all 25 registered parameter operations have matching semantics and declared write targets.
+- Clarified G's intended aperture identity versus unresolved legacy-import classification; the aperture-width operation now has explicit classification and calibration preconditions.
+- No runtime implementation or visual approval is claimed.
