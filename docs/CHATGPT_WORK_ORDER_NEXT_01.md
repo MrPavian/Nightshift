@@ -219,3 +219,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Verified Stylefile #61 (2025) and #62 (release 2026-11-01) via official publisher product pages; recorded publisher's 2025 trademark restart statement as attributed publisher history.
 - [x] Added research index and changelog links.
 - [ ] Issue-level mastheads, contributor rosters, serial holdings at MCL and image-rights status remain open; retrospective catalogues are not treated as primary evidence.
+
+
+## W02.16 — Dortmund Style evidence and generator translation (2026-11-14)
+
+- [x] Cross-checked Dortmund's early chronology and TUF context against the KIT dissertation and the 1987 *Da kukse wa* author record.
+- [x] Added contemporary 1989 press context and the KWI regional synthesis.
+- [x] Captured ATOM ONE's attributed account of Berlin influence and letter-combination development, 1994–1998.
+- [x] Added a provisional Dortmund Block grammar translation with historical claims separated from design hypotheses and engineering gates.
+- [x] Indexed and logged the dossier.
+- [ ] Inspect the complete 1987 book / page-level scans, establish dated image corpus, verify TUF membership and obtain practitioner review before promoting the profile.
