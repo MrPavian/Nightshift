@@ -302,3 +302,12 @@ For each selected source image, create an analysis record before using it to inf
 - The 2023 *Scientific Data* article reports original images under CC BY-SA 4.0, generated metadata under CC0 and the knowledge graph under CC BY 4.0, based on contributor agreements transferring rights for public use to INGRID. Check the current license and credit data on each record; CC BY-SA reuse requires attribution and ShareAlike compliance.
 - This clarifies the earlier general rights caution: INGRID is not simply “research-only”, but record-level compliance remains mandatory. No record has yet been inspected and no image reused.
 - Records: https://www.uni-paderborn.de/forschungsprojekte/ingrid/ontologie ; https://www.uni-paderborn.de/fileadmin/ingrid/Illustriertes_Recherchemanual.pdf ; https://www.nature.com/articles/s41597-023-02199-8
+
+
+### VR-018 update — corpus coverage and city-level evidence
+- The official collection page reports approx. 150,000 images and 99,962 images with basic and/or deep annotation (July 2023); named collections include Mannheim Police, Peter Kreuzer / Munich, Cologne Police, Munich Graffiti Coordination Group and Dirk Kreckel.
+- The 2023 *Scientific Data* article reports approx. 136,000 photographs from 1983–2019 and explicitly lists Dortmund among the represented cities; it says Dirk Kreckel photographed important German hotspots including Dortmund.
+- The article's July 2022 graph snapshot separately reports 130,689 graffiti resources, 178 cities, 451 collections and 682,748 image files. These metrics are not interchangeable.
+- The article distinguishes public images (CC BY-SA 4.0), annotations (CC0) and knowledge graph (CC BY 4.0); only a subset of photographs is public, and some police holdings are not visible. The official Paderborn page frames usage under the licenses for scientific purposes. Commercial editor use requires written clarification; no image ingestion or model training authorized by this research note.
+- No Dortmund result count has yet been established. Dortmund presence is confirmed, local coverage and image access remain unmeasured.
+- Records: https://www.uni-paderborn.de/forschungsprojekte/ingrid/bestand ; https://www.nature.com/articles/s41597-023-02199-8
