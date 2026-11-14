@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contractId": "nightshift.alphabet-authoring-plan",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "scope": {
+    "glyphs": "A-Z",
+    "existingAuthoredContour": [
+      "A",
+      "B",
+      "G",
+      "R",
+      "S"
+    ],
+    "remainingProvisional": 21
+  },
+  "waves": [
+    {
+      "id": "wave-0",
+      "glyphs": [
+        "A",
+        "B",
+        "G",
+        "R",
+        "S"
+      ],
+      "goal": "resolve existing source snapshots, semantic mapping, topology and neutral proofs"
+    },
+    {
+      "id": "wave-1",
+      "glyphs": [
+        "C",
+        "O",
+        "D",
+        "P",
+        "Q"
+      ],
+      "goal": "author aperture, counter, attached-bowl and tail structures"
+    },
+    {
+      "id": "wave-2",
+      "glyphs": [
+        "E",
+        "F",
+        "H",
+        "I",
+        "L",
+        "T"
+      ],
+      "goal": "author bar and stem systems"
+    },
+    {
+      "id": "wave-3",
+      "glyphs": [
+        "K",
+        "M",
+        "N",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "goal": "author diagonal, branch, valley and crossing systems"
+    },
+    {
+      "id": "wave-4",
+      "glyphs": [
+        "J",
+        "U"
+      ],
+      "goal": "author descender, foot and open-top/base-curve systems"
+    }
+  ],
+  "maturityPolicy": {
+    "initialAuthored": [
+      "A",
+      "B",
+      "G",
+      "R",
+      "S"
+    ],
+    "remaining": "provisional",
+    "automaticPromotion": false
+  },
+  "requiredPerGlyph": [
+    "stableGlyphVariantIds",
+    "immutableSourceAndProvenance",
+    "semanticComponentGraph",
+    "editableVectorGeometry",
+    "topologySignature",
+    "measuredMetricsWithUnitsAndError",
+    "derivedProvisionalAnchors",
+    "identityInvariants",
+    "validationReport",
+    "neutralProofReference",
+    "pairWordCoverage",
+    "reviewState"
+  ],
+  "negativeSpaceTypes": [
+    "counter",
+    "aperture",
+    "channel"
+  ],
+  "hardRules": [
+    "no-invented-coordinates",
+    "no-inferred-stroke-order-from-closed-contours",
+    "no-silent-repair",
+    "no-generic-font-fallback-as-authored-master",
+    "topology-variants-authored-separately",
+    "human-review-required-for-maturity-transition"
+  ],
+  "fixturePairs": [
+    "AV",
+    "AR",
+    "BA",
+    "BR",
+    "GO",
+    "GR",
+    "RA",
+    "RO",
+    "SA",
+    "SB",
+    "GS",
+    "NS"
+  ],
+  "fixtureWords": [
+    "ABRA",
+    "BOMB",
+    "GHOST",
+    "KRAZE",
+    "MIND",
+    "NYX",
+    "RISK",
+    "SQUE"
+  ]
+}
