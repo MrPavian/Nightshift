@@ -1,0 +1,169 @@
+{
+  "contractId": "nightshift.proof-sheet-run",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "authority": {
+    "canonical": "semantic-graph-and-editable-vector-geometry",
+    "derived": [
+      "threejs-render",
+      "svg-preview",
+      "diagnostic-overlays",
+      "proof-images"
+    ],
+    "visualApprovalRequiresHumanReview": true
+  },
+  "run": {
+    "required": [
+      "runId",
+      "schemaVersion",
+      "sourceRevision",
+      "canonicalSnapshotRef",
+      "engineVersions",
+      "rootSeed",
+      "seedDerivationVersion",
+      "fixtureIds",
+      "specimens",
+      "renderProfile",
+      "validationReportRefs",
+      "artifactHashes"
+    ],
+    "timestampIsSeedInput": false
+  },
+  "engineVersions": [
+    "glyphLibrary",
+    "grammar",
+    "generator",
+    "relationshipSolver",
+    "geometryValidator",
+    "renderer"
+  ],
+  "proofFamilies": [
+    "parameter-sweep",
+    "topology-negative-space",
+    "grammar-comparison",
+    "pair-context",
+    "word-context",
+    "finish-isolation",
+    "thumbnail-resilience",
+    "boundary-regression"
+  ],
+  "renderProfiles": {
+    "neutral": {
+      "layers": [
+        "silhouette"
+      ],
+      "effects": false,
+      "requiredSizes": [
+        "full",
+        "thumbnail"
+      ],
+      "background": "neutral-light"
+    },
+    "semantic": {
+      "layers": [
+        "components",
+        "contours",
+        "anchors",
+        "counter-mask",
+        "aperture-mask",
+        "channel-mask",
+        "relationships",
+        "diagnostics"
+      ]
+    },
+    "finish": {
+      "layers": [
+        "fill-outline",
+        "inline-highlight",
+        "depth",
+        "dark-textured-surface"
+      ],
+      "canonicalGeometryMustRemainIdentical": true
+    },
+    "context": {
+      "layers": [
+        "pair-neighbors",
+        "word-layout",
+        "relationship-outcomes",
+        "maturity-coverage"
+      ]
+    }
+  },
+  "fixtures": {
+    "pairs": [
+      "AV",
+      "AR",
+      "BA",
+      "BR",
+      "GO",
+      "GR",
+      "RA",
+      "RO",
+      "SA",
+      "SB",
+      "GS",
+      "NS"
+    ],
+    "words": [
+      "ABRA",
+      "BOMB",
+      "GHOST",
+      "KRAZE",
+      "MIND",
+      "NYX",
+      "RISK",
+      "SQUE"
+    ],
+    "initialAuthoredContourGlyphs": [
+      "A",
+      "B",
+      "G",
+      "R",
+      "S"
+    ],
+    "provisionalCoverageMustBeReported": true
+  },
+  "review": {
+    "blindAliasesOptional": true,
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "neither",
+      "cannot-judge"
+    ],
+    "rubricRange": [
+      0,
+      3
+    ],
+    "preserveIndividualRatings": true,
+    "criticalIdentityOrTopologyZeroEscalates": true
+  },
+  "storage": {
+    "recommended": [
+      "manifest.json",
+      "specimens/<specimen-id>/canonical-snapshot.json",
+      "specimens/<specimen-id>/validation.json",
+      "plates/<plate-id>.png",
+      "plates/<plate-id>.svg",
+      "review/ratings.json",
+      "review/blind-map.json",
+      "checksums.json"
+    ],
+    "largeRenderBatchesDefault": "external-build-artifacts"
+  },
+  "acceptance": [
+    "immutable-versioned-manifest",
+    "canonical-snapshot-linkage",
+    "deterministic-input-record",
+    "eight-proof-families",
+    "existing-pair-and-word-fixtures",
+    "partial-maturity-transparency",
+    "separate-render-profiles",
+    "finish-geometry-invariance",
+    "blind-review-alias-support",
+    "stable-artifact-hashes",
+    "explicit-human-approval",
+    "artifact-storage-discipline"
+  ]
+}
