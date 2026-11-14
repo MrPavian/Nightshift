@@ -183,6 +183,35 @@
             "superseded",
             "unknown"
           ]
+        },
+        "imageRole": {
+          "type": "string",
+          "enum": [
+            "original",
+            "crop",
+            "derivative",
+            "thumbnail",
+            "unknown"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aspectRatio": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fileExtension": {
+          "type": "string"
+        },
+        "sourceAccessUri": {
+          "type": "string",
+          "format": "uri"
         }
       },
       "additionalProperties": true
@@ -284,7 +313,8 @@
         "archiveRecordId",
         "sourceFieldName",
         "annotationDepth",
-        "annotatorProvenance"
+        "annotatorProvenance",
+        "valueStatus"
       ],
       "properties": {
         "annotationId": {
@@ -338,6 +368,20 @@
         },
         "sourceCitation": {
           "type": "string"
+        },
+        "valueStatus": {
+          "type": "string",
+          "enum": [
+            "present",
+            "unknown",
+            "notAnnotated",
+            "notVisible",
+            "notApplicable",
+            "withheld",
+            "inaccessible",
+            "disputed",
+            "unmapped"
+          ]
         }
       },
       "additionalProperties": true
@@ -408,7 +452,8 @@
         "featureId",
         "visibility",
         "confidence",
-        "reviewerStatus"
+        "reviewerStatus",
+        "valueStatus"
       ],
       "properties": {
         "observationId": {
@@ -501,6 +546,20 @@
         },
         "reviewerNote": {
           "type": "string"
+        },
+        "valueStatus": {
+          "type": "string",
+          "enum": [
+            "present",
+            "unknown",
+            "notAnnotated",
+            "notVisible",
+            "notApplicable",
+            "withheld",
+            "inaccessible",
+            "disputed",
+            "unmapped"
+          ]
         }
       },
       "additionalProperties": true
