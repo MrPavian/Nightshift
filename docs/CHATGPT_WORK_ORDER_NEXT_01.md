@@ -229,3 +229,12 @@ The archive pilot is a draft, not approved publication content.
 - [x] Added a provisional Dortmund Block grammar translation with historical claims separated from design hypotheses and engineering gates.
 - [x] Indexed and logged the dossier.
 - [ ] Inspect the complete 1987 book / page-level scans, establish dated image corpus, verify TUF membership and obtain practitioner review before promoting the profile.
+
+
+## W02.17 — Dortmund visual corpus and rights-aware source access (2026-11-14)
+
+- [x] Identified *Da kukse wa* (1987) as a period piece / wall documentation source and mapped its author excerpt, linked flipbook and Dortmund U exhibition route.
+- [x] Identified *ALL SURFACE* (2022) as a distinct Dortmund tag / handstyle corpus with publication metadata and scene recollections.
+- [x] Added a source-access and visual-analysis plan that separates tag, piece, train and later compositional evidence.
+- [x] Added VR-009 to the visual-reference database; all images remain reference-only / rights unresolved.
+- [ ] Inspect individual pages and captions, verify dates/locations and seek item-level permissions before using images or promoting style rules.
