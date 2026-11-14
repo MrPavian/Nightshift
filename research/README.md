@@ -297,3 +297,9 @@ The Smithsonian Chalfant record was available through search-indexed institution
 ## Hamburg scene publications
 
 - [Hamburg Graffiti & Hip-Hop Magazines — Bibliography 01](HAMBURG_GRAFFITI_MAGAZINES_BIBLIOGRAPHY_01.md) — source-graded records for Daily Bombs, Dosenspuk, Beastie Boyz, BACKSPIN, Sketches and Rock 'n' Roller; preserves unresolved issue dates and publication gaps.
+
+
+
+## Berlin DECADES trilogy
+
+- [Berlin DECADES Trilogy Bibliography 01](BERLIN_DECADES_TRILOGY_BIBLIOGRAPHY_01.md) — publisher-level comparison of Vol. 1 (1990–2000), Vol. 2 (2000–2010) and Vol. 3 (2010–2020), with attributed portrait lists and caution against treating them as complete rosters.
