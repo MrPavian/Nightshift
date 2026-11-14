@@ -55,7 +55,7 @@ New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [doc
 
 ## Research library
 
-The first source-backed research pass is now committed under [`research/`](research/README.md): NYC history, lettering styles, practices/formats, writers and crews, visual-reference records, and glyph-construction implications. Entries are provisional where the source base is not yet deep enough; see the research README for evidence labels and editorial rules.
+The source-backed research library and its first cross-linked deep synthesis are committed under [`research/`](research/README.md): NYC history, lettering styles, practices/formats, writers and crews, visual-reference records, and glyph-construction implications. Entries are provisional where the source base is not yet deep enough; see the research README for evidence labels and editorial rules.
 
 ## Prototype
 
