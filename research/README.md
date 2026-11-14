@@ -463,3 +463,10 @@ Extracted the “Writer-ABC” in Marianne Brentzel's official *Da kukse wa* exc
 ### 2026-11 — Dortmund ALL SURFACE tagging and handstyle corpus
 
 Added a focused source dossier for *ALL SURFACE* (2022), separating publisher metadata and attributed SHARK recollection from direct visual evidence. Defined an item-level handstyle inspection protocol and rights safeguards. Added Stadtarchiv Dortmund / Archive.NRW as a contextual photo, film and press archive route, while explicitly avoiding claims that a specific graffiti collection exists.
+
+
+- [INGRID — German Graffiti Research Database and Dortmund Corpus Route (W02.29)](INGRID_GERMAN_GRAFFITI_DATABASE_DORTMUND_CORPUS_01.md)
+
+### 2026-11 — INGRID research database and Dortmund corpus route
+
+Identified the University of Paderborn / KIT INGRID database as a free scholarly access route with more than 100,000 annotated graffiti records (official project-page figure), including Dortmund in the research corpus. Preserved dated corpus-size snapshots from DBIS and a 2023 article. Added a stratified query protocol and item-level rights cautions; the JavaScript interface and SPARQL endpoint were not accessible for record-level inspection in this pass.
