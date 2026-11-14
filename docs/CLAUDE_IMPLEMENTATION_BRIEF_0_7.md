@@ -476,3 +476,8 @@ Return:
 - exact next implementation task.
 
 Do not ask the owner routine questions. Make reasonable implementation choices, document them and proceed. Escalate only genuine product-direction conflicts, unavailable access or high-impact ambiguity that cannot be resolved from the specifications.
+
+
+## 3.12 A/B/G/R/S construction implementation specification
+
+Use [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) and [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json) as the glyph-specific handoff. Preserve exact v0.6 snapshots; treat component segmentation and anchors as provisional engineering proposals; do not infer gesture order. Import A/B/R counters, G's exterior-connected aperture semantics (or explicitly unresolved interpretation), and S's no-counter state correctly. All render passes and SVG must consume one validated topology; remove fixed paper-colour counter painting. Use only registered operation IDs from the parameter contract, with no invented bounds or silent clamping. Keep all five glyphs at authored-contour until explicit review. Run the listed canonical pair/word fixtures and report partial coverage where other glyphs remain provisional.
