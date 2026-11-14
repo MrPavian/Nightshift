@@ -224,3 +224,13 @@
 - Extended proof-sheet recommendations for negative-space masks, clearance, maturity, grammar isolation and rejected candidates.
 - Test cases are prepared for Claude implementation; no execution or maturity promotion is claimed.
 
+
+
+## 2026-11-14 — Martha Cooper and German graffiti research
+
+- Added a dedicated Martha Cooper dossier and identified the Martha Cooper Library at URBAN NATION as a core research gateway for rare books, fanzines and 1980s/1990s graffiti periodicals.
+- Added a German scene history dossier with a substantial Dortmund/Ruhrgebiet section, alongside Berlin, Hamburg, Munich, Cologne/Düsseldorf and eastern Germany.
+- Added a source-attributed writer/crew register covering Too Strong, ATOM ONE / Der Lange, Pure Doze / DOZE, Silo Nation, TUF/TRD, ODEM, DAIM and Ma'Claim participants.
+- Clarified that Silo Nation is treated as a hip-hop community/network and jam culture, not automatically as a graffiti crew; ATOM ONE and Pure Doze are separate people.
+- All entries remain research drafts. Crew memberships, dates and image rights require further item-level verification.
+
