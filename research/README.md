@@ -66,6 +66,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Relationship Solver and Word Composition 01](RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md)
 - [Machine-readable relationship solver contract v1](../contracts/relationship-solver.v1.json)
 - [Three.js Editor Interaction and Progressive Creative UX 01](THREEJS_EDITOR_INTERACTION_AND_UX_01.md)
+- [Editor Workspace Layout 01](EDITOR_WORKSPACE_LAYOUT_01.md)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -160,3 +161,8 @@ Added a machine-readable relationship graph/solver contract and implementation d
 ### 2026-11 — Progressive Three.js editor interaction and UX
 
 Added a staged interaction model that keeps quick lettering approachable while exposing structural editing, relationship construction and advanced authoring progressively. Defined Blackbook, Studio and Wall views over one canonical project; stable-ID selection, direct-manipulation handles, preview/commit transactions, contextual diagnostics, layers, undo/redo, touch accessibility and interaction fixtures. Added an optional adaptive tutorial with Guided/Adaptive/Off modes and an independent Compact/Full tool layout. Every editor feature remains available from first launch; lessons are skippable and replayable. This is a design specification, not implemented functionality.
+
+
+### 2026-11 — Workspace layout and architecture alignment
+
+Added the responsive workspace hierarchy for the live Three.js editor, including the dominant viewport, stable tool rail, contextual inspector, history strip, Compact/Full presentation and tablet behavior. Audited and clarified the architecture so the canonical semantic/vector project model—not an SVG file or Three.js mesh—is authoritative, while Three.js remains the actual interactive editor and SVG remains interchange/export. Added D-010 to explicitly qualify the older D-003 wording. These are specifications, not implemented functionality.
