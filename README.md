@@ -6,7 +6,7 @@ A procedural graffiti lettering and blackbook composition tool, developed as a s
 
 NIGHTSHIFT is not intended to be a generic text-to-graffiti filter. Its core is a **letter-construction engine**: individual glyph geometry, style-specific construction rules, word-level relationships, fill treatments, and a blackbook workflow.
 
-The visual setting of the wider game concept is New York. The editor itself is a standalone creative tool that can later feed the game's in-world blackbook and artwork workflow.
+The wider game concept is a grounded New York graffiti crew simulator. The editor is the central creative system. The game also includes **THE BLACKBOOK ARCHIVE**, a visual, interactive, in-game graffiti knowledge library.
 
 ## Current development status
 
@@ -29,6 +29,7 @@ Important limitation: current "letter joins" are still largely decorative bridge
 4. **Word-level composition.** The engine should analyze rhythm, spacing, negative space, overlaps and silhouette across the whole word.
 5. **Hybrid graphics architecture.** SVG/vector geometry is the source of truth; Three.js handles spatial presentation, wall surfaces, lighting and scene integration.
 6. **Honest diagnostics.** Report actual geometry relationships separately from heuristic complexity or sketch-time estimates.
+7. **One knowledge base.** The `research/` library is the editorial source of truth; THE BLACKBOOK ARCHIVE is its in-game presentation, not a separately maintained encyclopedia.
 
 ## Roadmap
 
@@ -36,8 +37,21 @@ Important limitation: current "letter joins" are still largely decorative bridge
 - **0.8 — Relationship Solver:** build overlap/connection candidates, negative-space checks, collision handling and legibility scoring.
 - **0.9 — Blackbook Workflow:** sketch variants, per-letter editing, layer controls, save/load and export refinement.
 - **1.0 — Engine Integration:** reusable API/data model for the New York graffiti crew simulator.
+- **THE BLACKBOOK ARCHIVE 0.1–1.0:** research library, content pilot, versioned data pipeline, interactive archive, visual learning, generator bridge and in-game release.
 
-New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md). Also see [Project Brief](docs/PROJECT_BRIEF.md), [Roadmap](docs/ROADMAP.md), [Architecture](docs/ARCHITECTURE.md), [Style Taxonomy & Research Framework](docs/STYLE_TAXONOMY.md), [Decision Log](docs/DECISIONS.md), [Contributing](CONTRIBUTING.md), and [Changelog](docs/CHANGELOG.md).
+## Project documentation
+
+New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md).
+
+- [Project Brief](docs/PROJECT_BRIEF.md)
+- [Main Roadmap](docs/ROADMAP.md)
+- [Blackbook Archive Masterprompt](docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md)
+- [Blackbook Archive Roadmap](docs/BLACKBOOK_ARCHIVE_ROADMAP.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Style Taxonomy & Research Framework](docs/STYLE_TAXONOMY.md)
+- [Decision Log](docs/DECISIONS.md)
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](docs/CHANGELOG.md)
 
 ## Prototype
 
