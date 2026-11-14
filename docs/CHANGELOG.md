@@ -366,3 +366,11 @@
 - Mapped *Da kukse wa* (1987) as a period piece / wall / scene document and *ALL SURFACE* (2022) as a separate tag / handstyle corpus.
 - Added VR-009 to the visual-reference database with item-level rights cautions and a prohibition on copying identifiable tags or pieces into generator templates.
 - Recorded the Dortmund U / ILOVEGRAFFITI digital access route and its current browser-verification limitation; no image inspection or reuse is claimed.
+
+
+## Research deepening — Dortmund tagging archive and bibliographic verification
+
+- Added a bibliography and provenance dossier for *ALL SURFACE* and *Da kukse wa* using the Deutsche Nationalbibliografie and institutional Dortmunder U / Stiftung Historische Museen Hamburg records.
+- Preserved the *ALL SURFACE* page-count discrepancy (238 pages in the DNB vs. 244 in specialist retail and museum event descriptions) instead of silently selecting one.
+- Strengthened reprint provenance for *Da kukse wa* while keeping the retailer's “identical except preface” claim uncollated.
+- Clarified that the Amsterdam influence narrative is an attributed account and that tag contributors must not be conflated with TUF membership.
