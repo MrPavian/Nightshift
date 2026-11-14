@@ -215,3 +215,12 @@
 - Added archive regression cases for historical nuance, source integrity, image rights, search, navigation and capability-gated generator handoff.
 - Chalfant Smithsonian record remains provisional because direct page retrieval failed; no image rights are inferred. No archive runtime or tests are claimed as implemented/executed.
 
+
+
+## 2026-11-14 — Cross-domain test preparation
+
+- Added glyph-level stress cases for A/B/G/R/S counters, apertures, joins and identity.
+- Added 12 pair-level relationship probes, eight controlled word fixtures, grammar isolation tests and generator determinism/rejection tests.
+- Extended proof-sheet recommendations for negative-space masks, clearance, maturity, grammar isolation and rejected candidates.
+- Test cases are prepared for Claude implementation; no execution or maturity promotion is claimed.
+
