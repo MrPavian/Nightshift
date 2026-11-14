@@ -289,6 +289,88 @@
     {
       "id": "stable-id-after-rebuild",
       "expect": "selection-and-history-survive-derived-scene-rebuild"
+    },
+    {
+      "id": "all-features-from-start",
+      "expect": "advanced-tools-available-without-tutorial-completion"
+    },
+    {
+      "id": "guided-tutorial-skippable",
+      "expect": "skipping-lesson-does-not-block-tool-or-mission"
+    },
+    {
+      "id": "adaptive-hints",
+      "expect": "contextual-hints-trigger-on-relevant-milestones-and-can-be-dismissed"
+    },
+    {
+      "id": "tutorial-off",
+      "expect": "no-unsolicited-tutorial-prompts"
+    },
+    {
+      "id": "tutorial-layout-independent",
+      "expect": "full-tool-layout-works-with-guided-adaptive-and-off"
+    },
+    {
+      "id": "change-settings-live",
+      "expect": "tutorial-and-layout-settings-apply-without-restart"
+    },
+    {
+      "id": "replay-lesson",
+      "expect": "lesson-replay-does-not-mutate-project"
+    },
+    {
+      "id": "reset-tutorial-only",
+      "expect": "tutorial-reset-preserves-projects-artwork-and-seeds"
     }
-  ]
+  ],
+  "tutorial": {
+    "feature_access_policy": "all-editor-features-available-from-first-launch",
+    "tutorial_never_gates_features": true,
+    "guidance_modes": [
+      "guided",
+      "adaptive",
+      "off"
+    ],
+    "tool_layout_modes": [
+      "compact",
+      "full"
+    ],
+    "independent_settings": [
+      "contextual_hints",
+      "practice_prompts",
+      "replay_lessons",
+      "reset_tutorial_progress"
+    ],
+    "default_preferences": {
+      "guidance_mode": "adaptive",
+      "tool_layout": "compact",
+      "contextual_hints": true,
+      "practice_prompts": true
+    },
+    "onboarding_and_runtime_settings": true,
+    "lesson_milestones": [
+      "first-word-and-blackbook-navigation",
+      "glyph-transform-and-spacing",
+      "semantic-shape-and-negative-space",
+      "pair-relationships-and-overlap",
+      "layers-and-render-finishes",
+      "advanced-style-grammar-and-diagnostics",
+      "wall-spatial-composition"
+    ],
+    "prompt_rules": {
+      "one_prompt_at_a_time": true,
+      "dismissible": true,
+      "skippable": true,
+      "never_blocks_mission": true,
+      "skipped_lessons_replayable": true,
+      "off_suppresses_unsolicited_prompts": true
+    },
+    "persistence": {
+      "separate_from_canonical_artwork": true,
+      "does_not_change_model_revision": true,
+      "does_not_change_seed_or_generated_geometry": true,
+      "reset_does_not_delete_projects": true,
+      "supports_user_default_and_project_override": true
+    }
+  }
 }
