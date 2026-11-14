@@ -209,3 +209,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Re-fetched all three changed files and verified the new content and resulting blob SHAs.
 - [ ] Exact-title searches for Hamburg serials and individual *Stylefile* issues remain open. The live OPAC returned a library-server connection error during this pass, so the two records above rely on indexed detail pages and their availability should be rechecked before an on-site visit.
 - [ ] Next: retry exact serial-title/issue searches when the OPAC is available; meanwhile continue with accessible primary publisher, archive and interview sources. No image rights are inferred from catalogue presence.
+
+
+## W02.15 — Hamburg periodical network and Stylefile continuity (2026-11-14)
+
+- [x] Added source-graded Hamburg periodical dossier using official editor biographies for Cario, Davis One and Frank Petering.
+- [x] Recorded title-level distinctions between Daily Bombs, Dosenspuk, Beastie Boyz and the broader hip-hop publication Backspin.
+- [x] Verified Daily Bombs #13 as a late-2025 release via specialist coverage, preserving the gap/continuity caveat.
+- [x] Verified Stylefile #61 (2025) and #62 (release 2026-11-01) via official publisher product pages; recorded publisher's 2025 trademark restart statement as attributed publisher history.
+- [x] Added research index and changelog links.
+- [ ] Issue-level mastheads, contributor rosters, serial holdings at MCL and image-rights status remain open; retrospective catalogues are not treated as primary evidence.
