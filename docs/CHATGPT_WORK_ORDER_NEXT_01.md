@@ -455,3 +455,12 @@ NIGHTSHIFT research is also a continuous learning programme on writing culture, 
 - [ ] Convert repeated cross-writer observations into candidate NIGHTSHIFT feature hypotheses only after visual review; no writer-specific tag cloning.
 
 **W02.32 result:** query engineering and documentation complete; empirical Dortmund counts and visual analysis remain pending. Official query catalogue: https://dice-group.github.io/ingrid.github.io/ (inspected 2026-11-14).
+
+
+---
+
+## Superseded by the finite NIGHTSHIFT 1.0 plan (2026-11-14)
+
+This document records the earlier specification sequence and remains useful as historical task provenance. The binding current plan is [Final Roadmap and Joint Work Order 01](FINAL_ROADMAP_AND_WORK_ORDER_01.md); Claude's implementation handoff is [Claude Final Release Ticket Pack 01](CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md).
+
+ChatGPT's active work is now limited to the finite INGRID/Dortmund deliverables, evidence audit of shipped claims, A–Z proof/review support, implementation-contract audit, release QA and closure. Do not continue adding broad research dossiers unless a specific 1.0 blocker requires them. Claude must follow the C01–C07 sequence in the final ticket pack. No scope expansion without owner approval.
