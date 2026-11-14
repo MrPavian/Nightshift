@@ -405,3 +405,11 @@
 - Identified *IRON CITY — Graffiti Dortmund* (2002) as a key regional visual chronology covering advertised material from 1983 through the early 2000s.
 - Added VR-011 and a source-graded dossier; kept audio claims and image-level observations unverified until direct inspection.
 - Clarified that Episode 21's description and the separately linked “Writing on Trains” YouTube upload are not yet proven to be the same numbered episode.
+
+
+## Research deepening — Dortmund trainwriting contemporary sources, 1997–1999
+
+- Inspected *BOMBER* magazine #14 (October–December 1997), including its review of *Rolling Thunder 001* and *King of the Line*.
+- Inspected the dated *Endstation* #14 report “Dortmund - Haupt Bahn Hof” (8 March 1999), preserving its claims about 1996–1999 activity and 1998 security / cleaning changes as attributed reporter statements.
+- Located an MCL catalogue search result for *IRON CITY* (2002), but the catalogue server was unavailable on opening; current holding status remains unconfirmed.
+- Added VR-012 and a contemporary-source dossier; no photographs were copied and no unverified totals were promoted to facts.
