@@ -127,3 +127,13 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Existing six pilot entries still require claim-level source mapping and editorial review.
 - [ ] Next: add cross-domain glyph/word/grammar fixtures and test data contracts; no runtime tests are claimed until Claude's implementation exists.
 
+
+
+## W02.7 — Cross-domain test preparation (2026-11-14)
+
+- [x] Added A/B/G/R/S geometry stress fixtures.
+- [x] Added 12 relationship pair probes and eight word integration fixtures with maturity/partial-coverage rules.
+- [x] Added grammar isolation, generator determinism, failure/retry and proof-sheet requirements.
+- [ ] Convert fixture definitions into runtime test data after Claude's canonical IDs and validator interfaces are available.
+- [ ] Execute tests and review generated proof artifacts; preparation is not execution or visual approval.
+
