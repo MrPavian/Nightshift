@@ -32,7 +32,7 @@ There are multiple conflicting / adjacent historical claims:
 4. Martin Stieber recalls that his group's first Autobahndreieck was in 1988 and that the first trains followed shortly afterwards.
 5. A 2024 event by the Freies Hip-Hop Institut and University of Heidelberg presented an archival / eyewitness reconstruction of the first train sprayed in Heidelberg, but the public event description does not state the final date.
 
-Do not merge these into one date or event. The full KANE interview and the 2024 lecture / source materials are now the highest-priority verification targets.
+The best current working chronology is therefore **late 1986 / early 1987**, with 1987 as the dissertation's date for the first Heidelberg panelpiece. The exact day/month and whether all sources refer to the identical train remain unverified. The original photo / caption and the 2024 lecture materials are the highest-priority verification targets.
 
 ## 3. Heidelberg Style — documented visual characteristics
 
@@ -149,7 +149,7 @@ A second source pass uncovered material contradictions that must remain visible:
 - The dissertation dates TPM's founding to **1990**, one year earlier than the 2020 podcast profile.
 - Martin Stieber's 2014 recollection dates his group's first Autobahndreieck to **1988**, with trains following shortly afterwards.
 
-The 2024 event description by the Freies Hip-Hop Institut states that Bryan Vit reconstructed the first Heidelberg train using archive material and eyewitness accounts. The public event page does not publish the final date or the underlying evidence. This makes the event recording, presentation notes or a direct conversation with the researchers the most valuable next source.
+The 2024 event description by the Freies Hip-Hop Institut states that Bryan Vit reconstructed the first Heidelberg train using archive material and eyewitness accounts. A 2023 FHI publication also records Torch's account that KANE, OMEN and HERO painted the first train in Baden-Württemberg at the end of 1986 / beginning of 1987. This materially supports the working chronology, although the underlying photograph and full event evidence still need inspection. This makes the event recording, presentation notes or a direct conversation with the researchers the most valuable next source.
 
 The Freies Hip-Hop Institut states that the Frederik-Hahn collection is still being processed and that the Hip-Hop Archive is **not yet open to the public**. Therefore, do not describe the archive as freely accessible. The institute does accept enquiries about archival material for research and exhibitions.
 
@@ -157,6 +157,7 @@ Additional source leads:
 - I Love Graffiti Podcast #43: KANE TPM (20 Dec 2020): https://berlingraffiti.de/2020/12/20/i-love-graffiti-podcast-43-kane-tpm/
 - “HERO SCM 193” (Die Welt brennt, 17 Sep 2011): https://dieweltbrennt.wordpress.com/2011/09/17/hero-scm-193/
 - Freies Hip-Hop Institut, 2024 event archive: https://www.freieshiphopinstitut.de/events/
+- Freies Hip-Hop Institut, publication / archival essay featuring Torch's account: https://www.freieshiphopinstitut.de/wp-content/uploads/go-x/u/85cb6200-26b8-4c52-a3da-ce2707d4af0c/AC_PosseDerPioniere_Vit_2023.pdf
 - Freies Hip-Hop Institut, archive overview: https://www.freieshiphopinstitut.de/archiv/
 - Freies Hip-Hop Institut, Heidelberg Hip-Hop Archive access status: https://www.freieshiphopinstitut.de/archiv/hip-hop-archiv/
 
