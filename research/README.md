@@ -340,3 +340,10 @@ The Smithsonian Chalfant record was available through search-indexed institution
 ### 2026-11 — NYC graffiti and hardcore crossover: evidence deepening
 
 Added a second dossier separating writing, band membership, crew affiliation, artwork credits and social networks. It documents Frontline/HYPE, Adam 12/REVS, TMR bands, DIE 116, Dmize/MQ/JERE, SMOG and FCEE using specialist reporting and first-person interviews. SEEN/Richard Mirando is retained as a major Bronx/UA writer profile, while no direct NYHC crossover is asserted without evidence. Original flyers, demos and zine scans remain an explicit verification queue.
+
+
+- [NYC Graffiti–Hardcore Crossover: Queens Networks, Band Roles and DIY Print 03](NYC_GRAFFITI_HARDCORE_CROSSOVER_03_QUEENS_AND_ZINES.md)
+
+### 2026-11 — Queens networks, band roles and DIY print
+
+Added a source-deepening dossier based on Beto Rosario's and Chiqui Rodriguez's first-person Dmize interviews, Freddy Alva's band-by-band writer list, the Queens fanzine retrospective, the Urban Styles event description and discographic listings. It expands the named network to HESA/STAFF, NOW, WOES and YOURS 174; dates Yes Zista to 1988–1989; preserves the attributed Dmize lineup chronology; and distinguishes band membership, crew affiliation, artwork credit and zine work. Original flyers, demo sleeves and zine scans remain uninspected and are not presented as primary evidence.
