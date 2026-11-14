@@ -390,3 +390,10 @@
 - Recovered accessible English-subtitled video routes for *The Rise of Graffiti Writing — Dortmund, Berlin & Frankfurt* and *Writing on Trains: Dortmund & Frankfurt*.
 - Cross-checked the documentary trail against Harald Hinz's 2022 chapter, which cites SHARK's 30 January 2020 communication and the series.
 - Added an episode access map and a timecoded claim-verification protocol; no interview statements are quoted or inferred before viewing.
+
+
+## Research deepening — Dortmund MASON longitudinal publication corpus
+
+- Added source mapping for *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), *MASON — The Essence of Writing 1986–2019* (2020) and Grothus's 2022 longitudinal study.
+- Added VR-010 with bibliographic metadata, access routes and item-level rights cautions.
+- Kept the individual MASON corpus separate from city-level style claims; no third-party Issuu upload or preview was treated as licensed source material.
