@@ -255,3 +255,9 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 
 The Smithsonian Chalfant record was available through search-indexed institutional metadata but direct retrieval failed on 2026-11-14. Its related content remains provisional pending direct repository verification. The MCNY educator guide's image/text rights restrictions are not permission for product reuse.
 
+
+
+## Cross-domain test fixtures 02
+
+- [Cross-Domain Test Fixtures 02](CROSS_DOMAIN_TEST_FIXTURES_02.md) — additional A/B/G/R/S geometry probes, 12 pair stress cases, 8 word integration fixtures, grammar isolation, generator determinism and proof-sheet additions. Design only; no runtime execution or visual approval claimed.
+
