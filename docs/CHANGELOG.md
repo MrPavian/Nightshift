@@ -423,3 +423,12 @@
 - Recorded the *King of the Line* ISBN lead and separated contemporary interface description from secondary catalogue metadata.
 - Preserved the 1994 Google Video reference as an unresolved historical link; no surviving copy or original ID is claimed.
 - Added VR-013. No media has been watched, copied, digitized or cleared for reuse.
+
+
+
+## Research deepening — Dortmund publication bibliography and visual corpus
+
+- Added a source-audited dossier distinguishing *Da kukse wa* (1987), *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), *IRON CITY* (2002), the MASON retrospective (2020) and *RIO — The Process of Writing* (2023).
+- Recorded the 1996 title's unresolved 80-page (ILOVEGRAFFITI 2009) versus 160-page (retail catalogue) discrepancy; no extent was silently selected.
+- Documented the low-resolution Issuu preview trail without treating historical free viewing as a license or current access guarantee.
+- Added VR-014; page-level visual inspection and item-level image permissions remain outstanding.
