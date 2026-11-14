@@ -464,3 +464,11 @@
 - Preserved corpus-size snapshots from DBIS and a 2023 research article rather than forcing one total; added a stratified Dortmund query and item-level rights protocol.
 - Recorded the JavaScript-only database interface and timed-out SPARQL endpoint as access limitations; no Dortmund records or images were inspected.
 - Added VR-018 and a separate MK&G Dortmund urban-photography context route (VR-019); explicitly did not claim graffiti content or reuse rights for those contextual photographs.
+
+
+## Research deepening — INGRID ontology, annotation and licensing
+
+- Inspected the official INGRID ontology and illustrated research manual; documented its dimensions for graffiti type, lettering style, design elements, context, materiality, technique, language/function, chronology and provenance.
+- Recorded the human annotation method and the manual's explicit caution about ambiguity in style and genre labels.
+- Clarified the 2023 article's licensing report: original images CC BY-SA 4.0, generated metadata CC0, knowledge graph CC BY 4.0, subject to current item-level credit and license checks.
+- Added a proposed INGRID-to-NIGHTSHIFT crosswalk as a research aid only; no editor implementation or record-level visual analysis is claimed.
