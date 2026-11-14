@@ -178,3 +178,8 @@ THE BLACKBOOK ARCHIVE ist erst als erste spielbare Version abnahmefähig, wenn:
 - Tests, bekannte Einschränkungen und nicht belegte Bereiche dokumentiert sind.
 
 **Leitgedanke:** Das Archiv soll Graffiti nicht auf ein paar Namen und Effekte reduzieren. Es soll die kulturelle, historische und gestalterische Vielschichtigkeit sichtbar machen – und daraus ein besseres Spiel und einen besseren Generator entstehen lassen.
+
+
+## Current implementation handoff
+
+Use [Information Architecture 01](BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md), [Content Pilot 01](../research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md) and [Claude Ticket Pack Blackbook 01](CLAUDE_TICKET_PACK_BLACKBOOK_01.md) as the first concrete execution package. Content entries remain editorial drafts until claim-level source checks and rights review are complete.
