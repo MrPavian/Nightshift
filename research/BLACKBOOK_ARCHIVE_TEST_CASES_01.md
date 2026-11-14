@@ -84,3 +84,20 @@ No UI or automated tests were executed here. Mark cases only after implementatio
 | BA-DE11 | Timeline 1979–2001 | Parallel regional developments and cross-border networks shown with date precision | Single linear national origin story |
 | BA-DE12 | Search Dortmund Style | Links to Ruhrgebiet, TUF/CHINTZ/SHARK and later scene records with source-specific confidence | Crew membership or style claims shown without attribution |
 
+
+
+## I. Additional German-scene research regression fixtures
+
+| ID | Fixture/action | Expected | Failure |
+|---|---|---|---|
+| BA-DE13 | Open Stylefile | Magazine/publication with issue-level evidence | Treated as crew or style |
+| BA-DE14 | Open 1UP | Crew history, collective identity, attributed founding date | Assumed all Berlin Kidz are 1UP |
+| BA-DE15 | Open Berlin Kidz | Film/media representation with uncertain roster | Film depiction treated as verified crew directory |
+| BA-DE16 | Open MOSES & TAPS | Evolving artist collective and conceptual practice | Reduced to one graffiti style preset |
+| BA-DE17 | Open LOOMIT | First-person dates and crew affiliations attributed to interview | Retrospective testimony shown as independently verified fact |
+| BA-DE18 | Open OZ | City of OZ archive and contested reception presented with nuance | Sensationalist press labels repeated as neutral fact |
+| BA-DE19 | Open CAN2 | 1983 first-piece claim attributed to 2010 interview | Unsupported location or crew details invented |
+| BA-DE20 | Search DARKO / VANDALZ / THE FÖNS | Unresolved lead status or disambiguation request | Unverified profile or crew claims published |
+| BA-DE21 | Search Stylefile issue | Issue/date/featured city metadata if catalogued | Unlicensed scan displayed as cleared asset |
+| BA-DE22 | Compare DAIM, LOOMIT and MOSES & TAPS | Separate 3D letterform, individual writer and conceptual collective practices | All collapsed into generic 3D style category |
+
