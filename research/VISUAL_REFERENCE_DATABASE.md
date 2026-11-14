@@ -261,3 +261,16 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** text/image rights remain with the respective rights holders; quote only short terms/definitions with attribution and permission where required. No images copied.
 - **Caution:** excerpt is not the whole publication; local definitions are not universal; newspaper headlines/social statistics are author-presented historical material and need independent verification before factual reuse.
 - **Evidence:** A for excerpt wording and publication provenance; B for interpretation and design mapping.
+
+
+## VR-017 — *ALL SURFACE – Tagging in Dortmund* (2022)
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Source:** *ALL SURFACE – Tagging in Dortmund*, published November 2022 by Holger Wiese and Tobias Sawitzki. Hitzerot lists 244 pages, 17 × 24 cm, German, open-spine binding, blind embossing and an edition of 500. These are publisher/shop metadata; no physical copy or page has been inspected in this pass.
+- **Advertised corpus:** marker and aerosol tags from Dortmund in the 1980s/1990s; hundreds of mostly unknown photographs; short recollections by named writers. The publisher attributes an Amsterdam-influence recollection to SHARK. Treat this as publisher-reproduced practitioner testimony, not independently verified causal history.
+- **Record:** https://hitzerot.com/shop/all-surface/
+- **Value:** high-priority handstyle/tag corpus, distinct from piece, panel and train-focused sources. Potentially supports comparison of stroke rhythm, slant, compression, continuity and terminals only after multi-example page-level inspection.
+- **Rights:** reference-only. Purchase does not grant reproduction, scanning, display, training or derivative-use rights. No pages/images copied. Never clone identifiable living writers' tags or signatures.
+- **Related archive route:** Stadtarchiv Dortmund holds broad photo, film, graphic and local press collections; Archive.NRW publishes an item-level CC BY-SA 4.0 rights statement for its online digitized holdings. No specific graffiti holding has been identified. Check each item's archival signature, creator credit and rights before use.
+- **Records:** https://www.dortmund.de/rathaus/verwaltung/kulturbetriebe/stadtarchiv/ ; https://www.archive.nrw.de/stadtarchiv-dortmund
+- **Caution:** publisher descriptions are not visual inspection; contributor names are not a crew roster; tags are not interchangeable with pieces; no city-wide style rules inferred.
+- **Evidence:** B for publication metadata and advertised scope; C for historical narrative reproduced from attributed recollection; A for archive remit / online rights statement, no matching graffiti item confirmed.
