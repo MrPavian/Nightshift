@@ -46,6 +46,8 @@ Read and follow:
 - `contracts/creative-workflow.v1.json`
 - `research/PERSONAL_STYLE_ENGINE_01.md`
 - `contracts/personal-style-engine.v1.json`
+- `research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md`
+- `contracts/az-style-grammar-application.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -90,6 +92,11 @@ Follow `research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md` and `contracts/cre
 ## 3.6 Personal Style Engine and reusable recipes
 
 Follow `research/PERSONAL_STYLE_ENGINE_01.md` and `contracts/personal-style-engine.v1.json`. A style recipe is a versioned set of construction/composition rules and preferences, not a visual filter or flattened artwork. Preserve independent grammar axes and registered parameter ownership. Resolve values deterministically using the documented precedence stack; hard glyph identity and topology invariants cannot be overridden. Recipe merge creates a new draft with a conflict report; numeric interpolation is allowed only where the parameter registry explicitly supports it. Applying a recipe creates a preview branch and requires user acceptance. Capture from artwork is explicit and reviewable; no hidden preference learning or silent recipe mutation. Store recipe version, provenance and resolved values in project snapshots. Do not imitate named writers' signatures or exact protected works.
+
+
+## 3.7 A–Z grammar application
+
+Use `research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md` and `contracts/az-style-grammar-application.v1.json` to resolve grammar behavior per glyph. Do not apply one global distortion to the alphabet. The matrix maps the existing neutral structural checklist to candidate Bubble, Straight/Block and Wildstyle composition behavior; it does not claim that all variants exist. Preserve the taxonomy: Bubble/Straight are letterform grammars, Blockbuster combines straight/block construction with context/coverage, and Wildstyle Study is primarily a composition/relationship grammar. Keep the 21 provisional glyphs visibly provisional; first connect reviewed A/B/G/R/S controls, then author and review remaining masters. Rendering never substitutes for construction differences.
 
 ## 4. Current-state facts
 
