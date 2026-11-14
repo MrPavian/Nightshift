@@ -354,3 +354,10 @@ Added a source-deepening dossier based on Beto Rosario's and Chiqui Rodriguez's 
 ### 2026-11 — SPORTS, Outburst and Queens DIY print
 
 Added a fourth crossover supplement documenting the reported SPORTS collective, the JAY R / Outburst writer-guitarist-artwork link, and Queens zine production around The Village Noize, Yes Zista and In Effect. Artifact captions and creator recollections are attributed to specialist reporting; original artifacts and rights remain unverified.
+
+
+- [NYC Writing, Skateboarding and Independent Media 1987–1997 — Research Dossier 01](NYC_WRITING_SKATEBOARDING_AND_INDEPENDENT_MEDIA_1987_1997_01.md)
+
+### 2026-11 — NYC writing, skateboarding and independent media, 1987–1997
+
+Added a wider scene synthesis connecting downtown skate/hip-hop spaces, the Brooklyn Banks, the earlier Zoo York skate/graffiti identity and the 1993 company, named hardcore/skate/graffiti crossovers, VHS circulation and the post-train graffiti zine network. The dossier distinguishes organizations, people, places and media, and treats 1989 as an infrastructure transition rather than the end of NYC writing.
