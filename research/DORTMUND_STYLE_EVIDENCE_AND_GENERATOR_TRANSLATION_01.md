@@ -112,3 +112,8 @@ Do not merge crew, person, event, publication and style entities. Store alias cl
 ## 6. Editorial conclusion
 
 The strongest defensible NIGHTSHIFT use is a **regional construction study**: heavy, angular, legible block-letter tendencies with restrained ornament, situated within Dortmund's early TUF network and later inter-city exchange. The profile must remain a hypothesis-driven grammar, not a claim that all Dortmund writers shared one template. The 1987 book is the priority visual source to inspect next.
+
+
+## Further source development
+
+The two Dortmund-specific analytical chapters in *Dirty Hands* (2022), including Hinz's formal local-style summary and Grothus's longitudinal MASON study, are assessed in [Dortmund Style Analysis — Scholarly Chapters, Interviews and Source Limits 01](DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md). The full chapters remain access-limited; do not promote the provisional generator translation without full-text and visual review.
