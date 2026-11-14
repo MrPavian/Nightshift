@@ -2,18 +2,25 @@
 
 This document is a working vocabulary and research framework, not a definitive history. Terms vary by city, period, crew and practitioner. Do not treat the categories below as mutually exclusive or as a universal classification system.
 
-## 1. Separate practice, format and lettering style
+## 1. Separate the dimensions — and preserve disputed terminology
 
-A common design mistake is to put every graffiti term into one dropdown. They describe different dimensions:
+A common design mistake is to put every graffiti term in one dropdown. Research by Lisa Gottlieb, based on questionnaires with eleven graffiti experts, documents that even practitioners do not always agree whether terms such as Blockbuster, Wild and Dimensional describe letterforms, whole-piece styles or other facets. NIGHTSHIFT must represent the dimensions independently and allow combinations.
 
-- **Practice / mark type:** tag, throw-up, piece, stencil, poster, sticker, mural, character.
+- **Practice / mark type:** tag, throw-up, piece, bombing, stencil, poster, sticker, mural, character.
+- **Letterform grammar:** bubble/rounded, straight/squared, hybrid and other authored construction families.
+- **Composition grammar:** compact, block-fit, interlocking/wildstyle study and other word-level strategies.
 - **Scale / placement format:** panel, wholecar, end-to-end, trackside wall, rooftop, street wall.
-- **Lettering grammar:** bubble, blockbuster, straight letter, wildstyle, 3D, abstract.
 - **Execution / finish:** outline, inline, fill, highlights, forcefield, drop shadow, chrome effect, drips.
-- **Context / scene:** borough, crew, era, surface, local tradition and subcultural setting.
+- **Surface / medium:** blackbook paper, wall, train-car panel, aerosol, marker, roller and other media.
+- **Context / scene:** borough, crew, era, local tradition and subcultural setting.
 
-The engine should model these dimensions separately. A wholecar is not a lettering style; a burner is not simply a colour preset; a character is not a letter family.
+The four initial NIGHTSHIFT generator profiles are therefore not four mutually exclusive historical species:
+- Bubble is primarily a rounded letterform grammar; Throw-up remains a separate practice/form context.
+- Blockbuster may refer to straight/block letterforms and, in some accounts, a broader piece or coverage approach.
+- Straight Letter is a letterform grammar and overlaps with Blockbuster terminology.
+- Wildstyle Study is primarily a composition/relationship grammar and may operate on straight, rounded or hybrid glyphs.
 
+A wholecar is not a lettering style; a burner is not simply a colour preset; a character is not a letter family; 3D is not automatically a letterform grammar.
 ## 2. Working glossary
 
 The descriptions below are practical starting points for product modelling. Each needs source-backed refinement before being presented as authoritative history.
