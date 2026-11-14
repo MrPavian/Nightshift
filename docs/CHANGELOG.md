@@ -269,3 +269,11 @@
 - Added source-graded serial-publication records for Daily Bombs, Dosenspuk, Beastie Boyz, BACKSPIN, Sketches and Rock 'n' Roller.
 - Preserved the BACKSPIN 1993/1994 date conflict and title spelling variants pending primary issue inspection.
 - Added Hamburg-specific archive regression fixtures.
+
+
+
+## 2026-11-14 — Berlin DECADES trilogy bibliography
+
+- Added separate bibliographic records for all three DECADES volumes (1990–2020).
+- Recorded publisher-listed portrait subjects and historical framing with attribution.
+- Added regression tests preventing the trilogy from being flattened or its curated name lists treated as complete rosters.
