@@ -43,3 +43,10 @@
 - Added the research index, source/evidence methodology and rights-handling rules.
 - Added initial source-backed notes on NYC history, lettering styles, practices/formats, writers/crews, visual references and glyph construction.
 - Marked provisional definitions and open research gaps rather than presenting them as settled universal terminology.
+
+
+## Research deepening — Synthesis 01
+
+- Added a cross-linked research synthesis connecting early New York writing, Bronx oral histories, tag/throw-up/piece distinctions, subway-car formats, selected style terminology and generator implications.
+- Added and attributed further primary/institutional and scholarly sources: Joe Austin, Bronx County Historical Society oral histories, Anna Waclawek, Abram Coetsee and MFA Boston.
+- Recorded disputed/secondary attributions and open primary-source verification tasks rather than presenting them as settled fact.
