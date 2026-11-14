@@ -275,3 +275,19 @@ Sources inspected:
 - Official query catalogue: https://dice-group.github.io/ingrid.github.io/
 - Paper and data availability: https://pmc.ncbi.nlm.nih.gov/articles/PMC10212912/
 - Zenodo snapshot: https://zenodo.org/records/7560242
+
+
+## 8. Published historical graph baseline — do not confuse with city results
+
+The 2023 *Scientific Data* paper's Table 4 reports the graph snapshot dated **5 July 2022**:
+- 130,689 distinct graffiti resources;
+- 178 distinct city resources;
+- 682,748 distinct image-file resources;
+- 451 collections;
+- 840,420 distinct resources overall.
+
+The paper also reports approximately 136,000 photographs in the broader INGRID image database, from nine named city areas (Mannheim, Munich, Cologne, Berlin, Leipzig, Hamm, Dortmund, Münster and Paderborn) over 1983–2019. These are different measures: graph graffiti resources, image-file resources and database photographs are not interchangeable.
+
+The 178 city-resource count proves that the graph's geographic model is broader than the nine-city photo summary, but it does **not** establish that Heidelberg is present, nor that each city has a meaningful number of graffiti records. A city-level resource/count query is still required.
+
+Source: Sherif et al. (2023), Table 4 and Background & Summary, https://pmc.ncbi.nlm.nih.gov/articles/PMC10212912/
