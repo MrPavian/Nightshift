@@ -101,3 +101,20 @@ No UI or automated tests were executed here. Mark cases only after implementatio
 | BA-DE21 | Search Stylefile issue | Issue/date/featured city metadata if catalogued | Unlicensed scan displayed as cleared asset |
 | BA-DE22 | Compare DAIM, LOOMIT and MOSES & TAPS | Separate 3D letterform, individual writer and conceptual collective practices | All collapsed into generic 3D style category |
 
+
+
+
+## J. Publication and archive bibliography regression fixtures
+
+| ID | Fixture/action | Expected | Failure |
+|---|---|---|---|
+| BA-PUB01 | Open EINE STADT WIRD BUNT | Hamburg 1980–1999 book/project with scope, contents and contributor provenance | Reduced to photo book or treated as complete scene roster |
+| BA-PUB02 | Search Hamburg serial titles | Daily Bombs, Dosenspuk, Beastie Boyz and Backspin stored as distinct publications | Serial titles conflated or unsupported issue data invented |
+| BA-PUB03 | Open DECADES Vol. 1 | Berlin 1990–2000 scope, listed names attributed to publisher description | Listed names treated as complete scene census or verified crew membership |
+| BA-PUB04 | Open Stylefile 1 | September 1999 issue record with JOAN / TOWN & FASER / JUNK fields | Conflicting reseller date silently overwrites issue record |
+| BA-PUB05 | Open Stylefile 2 | March 2000 / SAFIR / AOD / GLOCK fields | Issue 1 metadata copied to issue 2 |
+| BA-PUB06 | Open Stylefile 12 | July 2003 review and stated contents treated as secondary review evidence | Review mistaken for direct physical inspection |
+| BA-PUB07 | Open Stylefile 61 / 62 | Issue 61 description separated from issue 62 existence-only listing | Unverified issue 62 contents fabricated |
+| BA-PUB08 | Search Martha Cooper Library OPAC | Collection scope distinguished from exact title-level holdings | Specific issue claimed held without OPAC record |
+| BA-PUB09 | Record MCL access | Reading-room access, closed stacks and reproduction rights stored separately | Access treated as image reuse permission |
+| BA-PUB10 | Compare publication metadata | Conflicting dates and source types preserved with provenance | Conflicts silently reconciled |
