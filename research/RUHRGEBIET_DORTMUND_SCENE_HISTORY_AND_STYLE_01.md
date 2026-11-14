@@ -191,3 +191,58 @@ For the research model, add a **scene infrastructure** layer alongside writers, 
 - Bunkerwelt network profile (discovery lead, verify against primary sources): https://barsbarsbatigol.de/register_eintrag/bunkerwelt/
 
 **Evidence boundary:** Witten is now a priority regional hip-hop-history node. Its INGRID corpus status remains unconfirmed, and no specific historical Witten graffiti style is asserted in this dossier.
+
+
+## 10. New city evidence — Essen and Witten (source pass 2026-11-14)
+
+### 10.1 Essen — early origins are contested; the 1990s leave traceable evidence
+
+A TU Dortmund seminar project, *Mapping Hip Hop Culture in the Ruhr Area*, interviewed local artists and organisers about Essen's graffiti history. Its most useful result is that it **does not pretend the origin story is settled**:
+- The writer / graphic designer The Top Notch identifies Essen-Steele as the starting point and says the first local writers came from there.
+- Bud MH offers a different account, locating the beginnings more broadly along the S-Bahn route.
+- The researchers explicitly say they could not verify either claim at the time of the seminar.
+- A surviving piece at the Hünninghausener Weg youth centre is described as dating from **1992**. This is a promising dated object lead; the original photograph, current survival and exact inscription/date attribution need independent confirmation.
+- The account describes The Top Notch's later network in Steele and the initiative that led to Essen's legal-surface programme around **2010**.
+- The same article dates the start of the Hafendampf festival to **2013**, with invited writers from inside and outside the Ruhrgebiet.
+
+**Research implication:** Essen should not be represented as a simple extension of Dortmund Style. Its earliest local geography is disputed, and the available evidence points to a Steele / S-Bahn corridor question that needs oral histories and dated images. The 1992 youth-centre piece may become an anchor record if verified.
+
+### 10.2 Witten — first-person evidence connects tagging, graffiti and Bunkerwelt's social network
+
+A 2005 *Hip Hop Wont Stop* interview with Terence Chill is useful because it is first-person and specific:
+- He says he began as a skater, tagged and painted a few pieces before turning to the microphone.
+- He explicitly says he would not call himself a writer. Preserve that self-description; do not promote him to a graffiti-writer record.
+- He describes meeting Dike around 1994 and forming Reimwärtz with Paul; after Dike went solo, Terence and Paul continued as OnAnOn.
+- He says the Bunkerwelt jams were full, but visitors did not all come from Witten; he names Dike, OnAnOn, Creutzfeld & Jakob, Os and Mess as Witten-associated acts, and says part of RAG had lived in Witten for a time.
+- His account of how he found the Bunkerwelt is comic / deliberately absurd (including the line that he “invented” it). It must not be used as a literal factual account of the venue's founding.
+
+This is a valuable reminder that the Bunkerwelt was not a closed local clique: it was a point in a wider Ruhrgebiet network. But the interview also reinforces our evidence boundary: a musician's past tagging and pieces are not proof of professional or sustained writer activity.
+
+The official WERK°STADT documentation of *Bring the Beat Back* (2021) names Witten-associated graffiti participants including SKOR82, Akzent One, Lucky Lou and EI9six, alongside artists from Bochum, Cologne, Bremen, Berlin and New York. It explicitly frames the event as reconnecting the four hip-hop elements and recalls Witten / Ruhrgebiet's 1990s jam culture. This is evidence of contemporary scene continuity and cross-city participation, not a substitute for 1990s event documentation.
+
+### 10.3 Bochum — an early visual lead, but not yet a scene chronology
+
+A digitised academic publication contains a captioned photograph titled **“Graffiti in Bochum 1982”**, credited to Grajetzky et al. (2004). This is an important lead because it may push the regional visual record earlier than the mid-1980s general chronology. However, a caption alone does not establish whether the image depicts US-style Writing, political graffiti, a mural, or another form of wall inscription. The original publication and photograph context must be inspected before classifying it as Style Writing.
+
+A Bochum municipal youth-services report documents the legal-wall programme's policy origin in 2001 and reports 26 available free surfaces in the report's 2020 context. This belongs in the contemporary institutional history, not the early-scene chronology.
+
+## 11. Revised regional comparison — evidence status
+
+| City | Historical writing evidence currently in hand | Confidence / next step |
+|---|---|---|
+| Dortmund | 1987 *Da kukse wa* contemporary photo / interview book; 1989 press; KIT dissertation; KWI synthesis | Strongest early Ruhrgebiet case; inspect book images and *Iron City* |
+| Witten | 2005 first-person interview with a participant who describes tagging / pieces but rejects “writer” label; 2021 official jam documentation; Bunkerwelt secondary history | Strong hip-hop infrastructure evidence; graffiti-specific 1990s chronology still incomplete |
+| Essen | Oral-history-based seminar article; competing origin accounts; attributed 1992 youth-centre piece; legal programme / Hafendampf history | Early origins contested; verify the 1992 image and interview additional Steele / S-Bahn participants |
+| Bochum | 1982 photo-caption lead; legal-surface programme documented from 2001 | Early image context unresolved; search local archives and original photo source |
+| Duisburg | Legal wall at Landschaftspark confirmed in KWI account | Early local scene history still missing |
+| Hamm | Published INGRID corpus city; city-specific historical writing chronology not yet established | Query graph and seek local photographic / oral-history sources |
+
+## 12. Additional sources — Essen, Witten and Bochum
+
+- TU Dortmund seminar project, “Graffiti-Geschichte in Essen: Kreative statt kriminelle Energie” (2016), including interviews, the contested Steele / S-Bahn origin accounts, the attributed 1992 youth-centre piece, legal-surface initiative and Hafendampf: https://hiphopruhr.wordpress.com/2016/10/29/die-geschichte-von-graffiti-in-essen-kreative-statt-kriminelle-energie/
+- Terence Chill, first-person interview, *Hip Hop Wont Stop* (2005–2010 archive), especially his account of tagging, early pieces, Reimwärtz / OnAnOn and Bunkerwelt: https://hiphopwontstop.sendercity.de/interview-area/terence-chill/
+- WERK°STADT Witten, *Kultursommer Witten 2021* documentation, “Bring the Beat Back”: https://www.kulturforum-witten.de/media/pdf/Kultursommer_Witten_2021_Dokumentation_digital.pdf
+- Bochum municipal youth-services annual report 2020, Graffiti project (legal-surface programme established by JHA concept in 2001; 26 free surfaces reported): https://www.bochum.de/C125830C0042AB74/vwContentByKey/W2C4A9XR829BOCMDE/$FILE/JahresberichtJugendhilfe_2020.pdf
+- Digitised academic source with caption “Graffiti in Bochum 1982”, credited to Grajetzky et al. (2004): https://tuniproductions.com/wp-content/uploads/2021/12/Raum_fur_Soziale_Bewegungen_Paradoxien_2007-comp.pdf
+
+**Evidence rule:** participant testimony is evidence of that participant's own experience and perspective. It is not automatically evidence for the full history of a city, venue, crew or style.
