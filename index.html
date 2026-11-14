@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIGHTSHIFT Editor 0.7</title>
+  <style>
+    :root { --bg:#14181e; --panel:#1c222b; --line:#36404d; --text:#e8e4da; --muted:#8d97a4;
+            --authored:#d7ff45; --provisional:#6f7a88; --select:#ff6847; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; height:100%; background:var(--bg); color:var(--text); font:14px/1.4 system-ui, sans-serif; }
+    #app { display:grid; grid-template-columns: 1fr 300px; height:100%; }
+    #viewport { position:relative; min-height:0; }
+    #viewport canvas { display:block; width:100%; height:100%; }
+    aside { background:var(--panel); border-left:1px solid var(--line); padding:16px; overflow:auto; }
+    h1 { font-size:15px; letter-spacing:.08em; margin:0 0 4px; }
+    .sub { color:var(--muted); font-size:12px; margin-bottom:16px; }
+    .legend span { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:6px; vertical-align:middle; }
+    dl { display:grid; grid-template-columns:auto 1fr; gap:4px 10px; margin:0; font-size:13px; }
+    dt { color:var(--muted); } dd { margin:0; word-break:break-word; }
+    .note { margin-top:16px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:12px; }
+    @media (max-width: 720px) { #app { grid-template-columns:1fr; grid-template-rows: 60vh auto; } aside { border-left:0; border-top:1px solid var(--line); } }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="viewport"></div>
+    <aside>
+      <h1>NIGHTSHIFT · GLYPH REGISTRY</h1>
+      <div class="sub">Build 0.7 · Diagnose-Ansicht der kanonischen Umrisse</div>
+      <div class="legend">
+        <div><span style="background:var(--authored)"></span>authored-contour (A B G R S)</div>
+        <div><span style="background:var(--provisional)"></span>provisional (21 Basen aus v0.6)</div>
+      </div>
+      <h1 style="margin-top:20px">Auswahl</h1>
+      <dl id="info"><dt>—</dt><dd>Buchstaben anklicken</dd></dl>
+      <div class="note">Nur Umrisslinien: Füllung und echte Negativformen kommen mit dem topologie-geprüften Renderer (T05). Bearbeitung kommt mit T07. Ziehen = verschieben, Mausrad = Zoom.</div>
+    </aside>
+  </div>
+  <script type="module" src="/src/editor/main.ts"></script>
+</body>
+</html>

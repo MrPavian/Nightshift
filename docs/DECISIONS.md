@@ -44,7 +44,13 @@ D-010 — Canonical semantic/vector model with integrated Three.js editor
 **Clarification:** This qualifies the earlier wording in D-003. “Vector geometry is canonical” means editable vector geometry inside the canonical semantic project model; it does not mean an SVG document or transient Three.js mesh is the whole project model. D-009 remains in force.
 
 
-D-011 — Production toolchain for the 0.7 generator (PROPOSED, pending owner confirmation)
+D-011 — Production toolchain for the 0.7 generator (CONFIRMED 2026-11-14)
 **Proposal:** TypeScript (strict), Vite, Vitest for Node unit/geometry tests, Playwright for browser render/interaction tests, `three` as a pinned npm dependency. No UI framework. No geometry library for 0.7A.
 **Reason:** The repository currently has no build, package or test setup. D-009/D-010 require typed contracts, deterministic tests and a real Three.js module dependency, which a single inline HTML file cannot provide reproducibly. Full rationale and rejected alternatives: `docs/IMPLEMENTATION_PLAN_0_7A.md` §3.
-**Implication if confirmed:** `src/core/` stays free of DOM and Three.js imports, enforced by a test. `prototypes/` remains untouched (D-007).
+**Confirmation:** The project owner confirmed on 2026-11-14 that the generator must run with Three.js and approved starting implementation. Pinned versions are recorded in `package.json` and `docs/IMPLEMENTATION_PLAN_0_7A.md` §8.
+**Implication:** `src/core/` stays free of DOM and Three.js imports, enforced by a test. `prototypes/` remains untouched (D-007).
+
+
+D-012 — Role split: Claude builds the game and editor, ChatGPT researches and writes work orders (2026-11-14)
+**Decision:** The project owner clarified that the ChatGPT-built HTML prototype was an experiment ("Spielerei"). Claude develops the actual game and editor; ChatGPT does research and writes the work orders, specifications and tickets.
+**Implication:** Production code lives in `src/` (Vite + TypeScript + Three.js). `prototypes/` is kept unchanged as a historical reference and import source only. ChatGPT's contracts and ticket packs remain the requirements input; where they conflict with what the code proves, Claude reports the conflict instead of silently deviating.

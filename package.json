@@ -1,0 +1,27 @@
+{
+  "name": "nightshift-art-engine",
+  "version": "0.7.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "NIGHTSHIFT ART ENGINE — canonical glyph model with integrated Three.js editor (Build 0.7 production slice).",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "extract:v06": "node --experimental-strip-types tools/extract-v06-snapshot.ts"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/three": "0.187.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}

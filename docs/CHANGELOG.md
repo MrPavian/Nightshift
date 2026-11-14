@@ -284,3 +284,13 @@
 - Added `docs/IMPLEMENTATION_PLAN_0_7A.md`: actual repository and runtime state, v0.6 import-relevant code facts (prototype SHA-256, path command vocabulary, provisional counter winding dependency, R/S absent from the provisional map), proposed module boundaries and a per-ticket plan for T02–T07.
 - Recorded D-011 (TypeScript + Vite + Vitest + Playwright, pinned three, no UI framework) as **proposed, pending owner confirmation**.
 - No production code, package manifest or dependency was added. The v0.6 prototype is unchanged.
+
+
+## 2026-11-14 — Build 0.7 production slice begins (0.7A-T02)
+
+- Confirmed D-011 (TypeScript, Vite, Vitest, pinned `three` 0.187.0) and recorded D-012 (Claude builds game/editor; ChatGPT researches and writes work orders).
+- Added the production source tree: canonical glyph schema 1.0, strict legacy path importer, exact geometry measurements, verbatim v0.6 snapshot with SHA-256, A–Z glyph registry (5 authored-contour masters, 21 provisional bases) and deterministic serialisation.
+- Added the first Three.js editor surface: A–Z diagnostic outline view with stable-ID picking and a canonical record inspector. Outlines only; no fill or negative-space claim yet.
+- 23 unit tests pass; the browser check passed at desktop and phone width with no console errors.
+- Found that A's counter shares the outer contour's winding and Q's tail is an overlapping second shape; the renderer must not derive holes from winding.
+- The v0.6 prototype is unchanged.

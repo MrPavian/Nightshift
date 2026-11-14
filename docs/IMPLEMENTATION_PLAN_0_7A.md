@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 — Repository/runtime reconnaissance
 **Date:** 2026-11-14
 **Author role:** Claude (implementation)
-**Status:** T01 complete as a report. No production code, package manifest or dependency has been added. The tooling proposal (D-011) is **proposed, pending owner confirmation**.
+**Status:** T01 complete. D-011 confirmed by the owner on 2026-11-14 ("it must run with Three.js"); T02 has started — see §8.
 
 ## 1. What was inspected
 
@@ -35,7 +35,7 @@ Not yet read in full and required before the ticket that depends on them: `contr
 - File: 90 lines of minified inline HTML/CSS/JS, one `<script type="module">`.
 - SHA-256 of the file at commit `585715d`: `2b5a6be891a9b98b8c6d930c57ca79b4f183bf373713a9cd93d4514bf4a5bc6d`. T02 must re-hash at import time and record the commit it read from.
 - `M` holds the five custom records as `[outerPath, innerPaths[]]`: A (1 inner), B (2 inner), G (0), R (1), S (0). Confirms brief §4.
-- `F` holds 19 provisional single-string paths (C, D, E, F, H–Q, T–Z). **R and S are absent from `F`** because they exist in `M`; any letter missing from both falls back to `F.N`.
+- `F` holds 21 provisional single-string paths (C, D, E, F, H–Q, T–Z). **R and S are absent from `F`** because they exist in `M`; any letter missing from both falls back to `F.N`. (Corrected from "19" in the first version of this report.)
 - Provisional D, O, P, Q encode counters as additional subpaths inside one string and are drawn with `fill-rule="nonzero"` (because `holes` is empty for non-custom letters). Their counters therefore depend on subpath winding direction. Whether every such subpath winds opposite to its outer contour is **unverified**; the T02/T04 importer must record winding explicitly rather than inherit it.
 - Custom counters use `evenodd` for fill and are then overpainted with the fixed paper colour `#eee9dc` (confirms the audit finding; T05 must not repeat this).
 - Path vocabulary in use: absolute `M`, `L`, `Q`, `Z` only. No cubic, arc or relative commands occur in the glyph data, which keeps the legacy parser small. The canonical model must still support cubic segments (pipeline contract).
@@ -119,3 +119,42 @@ tools/
 | Conforms to D-009 and the responsibility map | Yes: canonical core is Three.js-free; Three.js is the editor adapter; all edits go through `EditCommandBus`. |
 
 **Next ticket:** 0.7A-T02, blocked on D-011 confirmation.
+
+## 8. T02 progress report (2026-11-14)
+
+**Status: complete for the registry/import scope.** A first Three.js diagnostic viewport was added ahead of T05 so the canonical data can be inspected in the real editor surface; it draws outlines only and makes no negative-space claim.
+
+### Files
+- `package.json`, `package-lock.json`, `tsconfig.json`, `vite.config.ts`, `index.html`, `.gitignore`
+- `tools/v06-extract.ts`, `tools/extract-v06-snapshot.ts`, `tools/winding-report.ts`
+- `src/core/schema/types.ts` — schema 1.0 with documented deviations (nullable uncalibrated metrics, `unclassified` contour role, stable segment IDs, `apertureStatus`)
+- `src/core/geometry/path.ts` — strict M/L/Q/Z parser and byte-exact formatter
+- `src/core/geometry/measure.ts` — exact signed area (line/quadratic/cubic) and exact quadratic bounds
+- `src/core/legacy/v06-snapshot.ts` (generated), `src/core/legacy/import.ts`
+- `src/core/registry/registry.ts`, `src/core/registry/serialize.ts`
+- `src/editor/main.ts`, `src/editor/three/glyph-scene.ts`
+- `tests/unit/*.test.ts`
+
+### Pinned dependencies
+`three` 0.187.0; dev: `typescript` 7.0.2, `vite` 8.3.8, `vitest` 5.1.0, `@types/three` 0.187.0, `@types/node` 22.20.5. Playwright is not yet a project dependency; browser checks used the environment's pre-installed Playwright and are not yet committed tests (planned for T05).
+
+### Tests run
+- `npm test`: 4 files, 23 tests, all passing — snapshot equals a fresh extraction of the untouched prototype (SHA-256 checked); byte-exact parse→format round trip for all 26 glyphs; strict rejection of unsupported commands; A–Z maturity inventory (5 authored-contour, 21 provisional); master-only variants; counter declarations A1/B2/R1, none for G/S; G aperture `interpretation-required`; no calibrated metrics invented; provenance on every glyph; deterministic import and serialisation; duplicate-ID and schema-version rejection; exact area against numerical integration (quadratic and cubic); `src/core` free of three.js, DOM and Node imports.
+- `tsc --noEmit`: clean. `vite build`: succeeds (single chunk ≈ 500 kB because of three.js; code splitting deferred).
+- Headless Chromium (1280×800 and 390×844): 26 glyph objects, 35 line loops (26 outer + 4 authored counters + 5 provisional extra subpaths), stable glyph IDs on scene objects, clicking G and A shows the correct canonical record, no page or console errors (only SwiftShader ReadPixels performance warnings caused by screenshotting).
+
+### New finding for T04/T05 (measured, exact signed area, +y down)
+| Glyph | Contours (role: winding) |
+|---|---|
+| A | outer: cw · counter: **cw** |
+| B | outer: cw · counters: ccw, ccw |
+| R | outer: cw · counter: ccw |
+| D | outer: **ccw** · subpath 2: cw |
+| O, P | outer: cw · subpath 2: ccw |
+| Q | outer: cw · subpath 2: ccw · subpath 3 (tail): **cw, overlapping the outer** |
+
+Consequences: A's counter only appears because v0.6 uses `evenodd`; under `nonzero` it would be filled. The renderer must derive holes from the validated topology (declared counters / planar analysis), never from winding alone. Q's tail is a second, overlapping filled shape, so Q is not a single simple contour plus counter; T04 must report the overlap rather than union it silently.
+
+### Not done / deferred
+- No semantic components (T03), no validator (T04), no filled rendering (T05), no editing (T07).
+- Display polylines in the viewport sample curves at 16 steps for drawing only; canonical data stays exact.

@@ -57,6 +57,18 @@ New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [doc
 
 The source-backed research library and its first cross-linked deep synthesis are committed under [`research/`](research/README.md): NYC history, lettering styles, practices/formats, writers and crews, visual-reference records, and glyph-construction implications. Entries are provisional where the source base is not yet deep enough; see the research README for evidence labels and editorial rules.
 
+## Production editor (Build 0.7, in progress)
+
+The real game/editor is developed in `src/` with TypeScript, Vite and Three.js (decisions D-011, D-012).
+
+```bash
+npm install
+npm run dev      # editor at http://localhost:5173
+npm test         # unit and geometry tests
+```
+
+Current state: canonical A–Z glyph registry imported from v0.6 and an A–Z diagnostic outline view in Three.js. See `docs/IMPLEMENTATION_PLAN_0_7A.md`.
+
 ## Prototype
 
 The runnable 0.6 prototype is committed at [`prototypes/nightshift_art_engine_v06.html`](prototypes/nightshift_art_engine_v06.html). Open it locally in a modern browser with internet access (Three.js is loaded from jsDelivr). Future builds should be added as new versioned files rather than silently overwriting prior prototypes.
