@@ -481,3 +481,11 @@
 - Corrected corpus metrics: official page approx. 150,000 images / 99,962 annotated as of July 2023; 2023 article approx. 136,000 photographs across nine named cities including Dortmund; July 2022 graph snapshot 130,689 graffiti resources / 178 cities / 682,748 image files. These are distinct snapshots and units.
 - Clarified public subset and license layers (images CC BY-SA 4.0, metadata CC0, graph CC BY 4.0 in the 2023 paper); commercial product use requires written rights clarification.
 - No Dortmund query result count or record-level visual sample is claimed yet.
+
+
+## 2026-11-14 — INGRID Dortmund SPARQL query pack (W02.32)
+
+- Inspected the official INGRID-KG SPARQL query catalogue and its documented examples for city/date, type, style, carrier medium, technique, colour and lettering text.
+- Added six Dortmund-adapted SPARQL templates: corpus count, recording-year distribution, type distribution, lettering-style distribution, technique × medium and a manual-inspection sample.
+- Recorded the endpoint execution failure in the current research client as an access limitation, not as endpoint downtime; no Dortmund result counts are claimed.
+- Added explicit safeguards for recording date vs. creation date, missing annotation values, collection bias, and type/style distinctions.
