@@ -35,6 +35,23 @@ The indexed catalogue record lists subject terms including graffiti, youth cultu
 
 Source: [Martha Cooper Library OPAC — record 0003386](https://open.urban-nation.com/de-de/Mediensuche/Einfache-Suche?detail=0&searchhash=OCLC_f82f7a848d4634de10343fb16e8786b48549606a&top=y).
 
+
+
+### 3. *Stylefile — blackbook — sessions* [graffiti on paper]
+
+**Catalogue record:** MCL no. 0003185  
+**ISBN:** 3-9807478-2-4  
+**Editorial responsibility:** Markus Christl  
+**Year:** 2003  
+**Edition / extent:** 3rd edition, 155 pages, predominantly illustrated  
+**Language:** German and English  
+**Record type:** Book (not a periodical issue)  
+**Holding status shown:** Available; library reference collection; zero reservations in the indexed record.
+
+This is a relevant Stylefile-associated blackbook publication, but it must not be conflated with the *Stylefile Magazin* serial or used to claim that particular magazine issues are held by the MCL.
+
+Source: [Martha Cooper Library OPAC — record 0003185](https://open.urban-nation.com/en-us/Search/Search?detail=0&searchhash=OCLC_0614051bb8fbbcec35166d13fec74860431fef0c&top=y).
+
 ## What the records establish — and what they do not
 
 - These two exact catalogue records establish that the MCL catalogue lists the titles and displays the stated holding information.
