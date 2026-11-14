@@ -59,3 +59,12 @@
 - Preserved disagreements around invention/priority claims and documented underrepresentation.
 - Added explicit generator design inferences while keeping them separate from historical evidence.
 - Cross-linked the new dossiers through the research index and related files.
+
+
+## Research deepening — subway transition and Europe
+
+- Added a source-led account of New York’s Clean Car/Clean Train campaign, the spring 1989 graffiti-free declaration and the continued cultural life of writing beyond subway cars.
+- Added a regional account of 1980s European style writing, focusing on Amsterdam, Paris, Cologne-Düsseldorf and Hamburg.
+- Distinguished documented policy milestones from broader cultural claims and attributed retrospective firsts.
+- Documented transnational circulation through media, travel, exhibitions, crews and writer contacts.
+- Updated the research index and cross-links.
