@@ -274,3 +274,23 @@ For each selected source image, create an analysis record before using it to inf
 - **Records:** https://www.dortmund.de/rathaus/verwaltung/kulturbetriebe/stadtarchiv/ ; https://www.archive.nrw.de/stadtarchiv-dortmund
 - **Caution:** publisher descriptions are not visual inspection; contributor names are not a crew roster; tags are not interchangeable with pieces; no city-wide style rules inferred.
 - **Evidence:** B for publication metadata and advertised scope; C for historical narrative reproduced from attributed recollection; A for archive remit / online rights statement, no matching graffiti item confirmed.
+
+
+## VR-018 — INGRID: Informationssystem Graffiti in Deutschland
+- **Region:** Germany-wide; Dortmund explicitly included in the research corpus.
+- **Project:** DFG-funded collaboration between Universität Paderborn and KIT. The official project page says more than 100,000 digitized and annotated graffiti from 1980 to present; DBIS reports more than 80,000, and a 2023 article reports approximately 136,000 across several cities including Dortmund. Preserve these as dated / differently rounded snapshots, not a single exact total.
+- **Access:** official page describes free access, a public demonstration login and registered Shibboleth access; includes search manuals, ontology, research guide, video tutorial, Linked Data and SPARQL / Zenodo routes.
+- **Records:** https://www.uni-paderborn.de/forschungsprojekte/ingrid/ ; https://dbis.ur.de/FUH/resources/104565?lang=de ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10212912/
+- **Value:** potentially the strongest cross-city annotated image corpus for testing Dortmund chronology, format distinctions and cross-writer patterns against publications and oral history.
+- **Rights:** scholarly access is not commercial reuse permission. Confirm item-level rights and original contributor terms; do not extract or reproduce images without authorization. Never clone identifiable living writers' tags/signatures.
+- **Caution:** Dortmund record count, date distribution, contributor coverage and bias are unknown until a Dortmund query is run. Browser renderer requires JavaScript; record-level interface and SPARQL endpoint were not inspected in this pass.
+- **Evidence:** A for official project scope/access and database architecture; B for Dortmund coverage and corpus snapshots in research literature; no record-level visual evidence yet.
+
+## VR-019 — Museum für Kunst und Gewerbe Hamburg: Dortmund urban photography, 1980–1981
+- **Region:** Dortmund, Germany; collection held in Hamburg.
+- **Source:** MK&G's Dortmund-filtered online photography collection returns 19 records, including 1980–1981 photographs by Wilhelm Schürmann and Ulf Erdmann Ziegler. One catalogued object is Ulf Erdmann Ziegler, “Dortmund, Nähe Westfalenpark, 1. Mai 1980”, inventory P1981.78, with urban-life, street, bridge and railway subject metadata.
+- **Records:** https://www.mkg-hamburg.de/en/collection/online?filter%5Bplace%5D%5B0%5D=Dortmund&filter%5Bplace%5D%5Bpath%5D= ; https://www.mkg-hamburg.de/sammlung/objekt/dortmund-nahe-westfalenpark-1-mai-1980/P1981.78/mkg-e00174712
+- **Value:** contextual visual history for urban infrastructure and public space around the emergence of Dortmund writing; not evidence of graffiti unless individual objects explicitly show it.
+- **Rights:** P1981.78 is not displayed because it is not digitized or images cannot be shown for rights reasons. Contact the museum before requesting or reusing images.
+- **Caution:** no graffiti content is claimed from this record; collection search metadata is not image inspection.
+- **Evidence:** A for object metadata and collection search results; no visual inspection of P1981.78.
