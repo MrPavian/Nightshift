@@ -448,3 +448,11 @@
 - Extracted the six-term “Writer-ABC” from Marianne Brentzel's official *Da kukse wa* excerpt: black-book, charakter, getting fame, piece, tag and whole car.
 - Mapped terms to distinct archive/practice, figurative, motivation, artwork/lettering and train-format concepts; no universal definitions or generator parameters inferred.
 - Added a dedicated glossary dossier, cross-reference in GRAFFITI_FORMATS.md and VR-016.
+
+
+## Research deepening — Dortmund *ALL SURFACE* tagging and handstyle corpus
+
+- Added a dedicated dossier for *ALL SURFACE – Tagging in Dortmund* (2022), recording publisher metadata, advertised 1980s/1990s tag corpus and attributed SHARK / Amsterdam recollection with explicit evidence limits.
+- Added VR-017 and an item-level inspection protocol separating tags/handstyles from pieces and train formats.
+- Identified Stadtarchiv Dortmund / Archive.NRW as a contextual photograph, film and press archive route; recorded the online CC BY-SA 4.0 statement without assuming that a specific graffiti holding exists or that off-site items share that license.
+- No book pages or images copied; no signature cloning or reuse rights inferred.
