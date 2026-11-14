@@ -88,3 +88,9 @@ When contributing to the in-game graffiti lexicon:
 - Do not copy identifiable artist signatures or specific artworks into generator outputs.
 - Mark draft, provisional, disputed and reviewed content honestly.
 - Follow the dedicated archive roadmap's acceptance criteria; a visual shell with placeholder entries is not a completed archive.
+
+
+## Generator implementation ownership and Three.js direction
+
+The project owner has decided that the production generator will be implemented with Claude and integrated Three.js support. The existing standalone HTML prototype is a reference and audit target, not the final generator architecture. Do not build another HTML/JSON-only generator as the intended end product. Continue producing source-backed research, precise functional specifications, data contracts, test cases and acceptance criteria for Claude to implement. Three.js is part of the actual generator workflow, not merely a decorative wall-preview widget. Preserve editable vector geometry and SVG interoperability unless the project owner explicitly changes that requirement. HTML can still be an application shell and JSON can still be a project/data format; they are not substitutes for the generator architecture.
+
