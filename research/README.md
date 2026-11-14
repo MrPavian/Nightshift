@@ -45,6 +45,7 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 ## Current research files
 
 - [Handstyle, Motor Plans and Vector Generation — NIGHTSHIFT Model 01](HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md)
+- [Handstyle Proof Sheet Specification 01 — Deterministic fixtures and acceptance tests](HANDSTYLE_PROOF_SHEET_SPEC_01.md)
 
 - [Ruhrgebiet Writing — Dortmund, TUF and regional circulation](RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md)
 
@@ -142,6 +143,11 @@ Initial source-backed research pass. This is a living research base, not a defin
 
 
 ## Research development log
+
+### 2026-11 — Deterministic handstyle proof specification
+
+Added a bounded implementation contract for synthetic I/L/S/A/R fixtures, stable stroke IDs, explicit lifts and crossings, width-profile rendering, seeded variation, canonical edit commands, SVG round-trip tests and six proof sheets. HST-01 is tracked as GitHub issue #5 and depends on completion of the canonical edit loop in issue #4.
+
 
 ### 2026-11 — Letter-pair logic and handstyle movement
 
