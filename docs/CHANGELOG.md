@@ -359,3 +359,10 @@
 - Added a source-backed dossier on Dortmund writing from 1983 onward, TUF, the 1987 *Da kukse wa* publication, block-letter tendencies, trainwriting context and the 1994–1998 compositional development recalled by ATOM ONE.
 - Translated the evidence into a provisional Dortmund Block grammar study with explicit hypothesis labels, calibration questions and human-review gates.
 - Preserved distinctions among crew, person, publication, style and hip-hop network; no image reuse rights are inferred.
+
+
+## Research deepening — Dortmund visual corpus and archive access
+
+- Mapped *Da kukse wa* (1987) as a period piece / wall / scene document and *ALL SURFACE* (2022) as a separate tag / handstyle corpus.
+- Added VR-009 to the visual-reference database with item-level rights cautions and a prohibition on copying identifiable tags or pieces into generator templates.
+- Recorded the Dortmund U / ILOVEGRAFFITI digital access route and its current browser-verification limitation; no image inspection or reuse is claimed.
