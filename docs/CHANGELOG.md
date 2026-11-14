@@ -252,3 +252,12 @@
 - Added City of OZ and scholarly context to avoid flattening OZ's work into sensationalist press accounts.
 - DARKO, VANDALZ and THE FÖNS are recorded as unresolved leads only; no unverified profiles or crew affiliations were invented.
 
+
+
+
+## 2026-11-14 — German publication and archive bibliography
+
+- Added a publication-level source map for *EINE STADT WIRD BUNT*, DECADES Vol. 1, Stylefile and the Martha Cooper Library.
+- Indexed five Stylefile issue records at differing evidence levels; explicitly preserved the conflicting Stylefile 1 date rather than silently reconciling it.
+- Added ten publication, OPAC, provenance and rights regression fixtures.
+- Specific Martha Cooper Library holdings remain unclaimed until exact OPAC records are inspected.
