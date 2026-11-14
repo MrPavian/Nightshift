@@ -118,3 +118,15 @@ No UI or automated tests were executed here. Mark cases only after implementatio
 | BA-PUB08 | Search Martha Cooper Library OPAC | Collection scope distinguished from exact title-level holdings | Specific issue claimed held without OPAC record |
 | BA-PUB09 | Record MCL access | Reading-room access, closed stacks and reproduction rights stored separately | Access treated as image reuse permission |
 | BA-PUB10 | Compare publication metadata | Conflicting dates and source types preserved with provenance | Conflicts silently reconciled |
+
+
+
+### Additional Hamburg serial-publication fixtures
+
+| ID | Fixture/action | Expected | Failure |
+|---|---|---|---|
+| BA-HM01 | Open Daily Bombs | Editor period 1992–1999 attributed to official project biography; broader catalogue run flagged for verification | Catalogue run treated as continuous publication without issue evidence |
+| BA-HM02 | Search Dosenspuk / Dosen Spuk | Alias/spelling variants preserved pending masthead check | Variants silently merged or split without evidence |
+| BA-HM03 | Open Beastie Boyz | Title variants, format changes and sketch-only issues recorded with catalogue provenance | Sketch-only supplements conflated with separate Sketches magazine |
+| BA-HM04 | Open BACKSPIN | Founder testimony and issue-history record cited; 1993/1994 conflict remains visible | Conflicting founding/first-issue dates silently reconciled |
+| BA-HM05 | Search Sketches and Rock 'n' Roller | Single-source leads remain low-confidence until corroborated | Full publication profiles invented from timeline mention |
