@@ -449,3 +449,10 @@ Audited the 1996 *Graffiti Dortmund* publication trail and identified an unresol
 ### 2026-11 — *Da kukse wa* reprint and legitimate visual access
 
 Verified the original 1987 publication against Marianne Brentzel's author page and the 2020 reprint's exhibition provenance against the official Dortmunder U *I WAS HERE* page. A specialist retailer lists a 36-page German A4 landscape second edition, currently €75/in stock at time checked; page count and “identical except preface” remain seller-supplied pending collation. This provides a practical legitimate-copy route for future page-level research; no images were copied.
+
+
+- [Dortmund Writing Vocabulary — 1987 Local Glossary and Taxonomy Notes (W02.27)](DORTMUND_WRITING_VOCABULARY_1987_01.md)
+
+### 2026-11 — Dortmund 1987 local writing glossary
+
+Extracted the “Writer-ABC” in Marianne Brentzel's official *Da kukse wa* excerpt and mapped its six terms to NIGHTSHIFT's existing separation of archive/practice, figurative content, motivation, lettering/artwork and vehicle format. The glossary is retained as a dated local vocabulary snapshot, not a universal taxonomy. Historical newspaper framing is distinguished from independently verified statistics or events.
