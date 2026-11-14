@@ -156,3 +156,11 @@
 - Separated letterform grammar, composition grammar, practice/form context, surface and rendering treatment in the product model.
 - Added construction parameters, constraints, failure states and acceptance tests while marking implementation rules as NIGHTSHIFT design inference.
 - Updated the central style taxonomy and Claude handoff references.
+
+
+## Style grammar compatibility and parameter contract
+
+- Added independent profile axes for letterform grammar, composition grammar, practice/form context, surface and rendering.
+- Defined compatibility levels, parameter ownership and dependency graphs for Bubble, Straight/Block, Compact, Block-fit and Interlocking behavior.
+- Distinguished hard topology/identity constraints from soft preferences and specified override/validation behavior.
+- Defined explicit preset serialization and compatibility test fixtures.
