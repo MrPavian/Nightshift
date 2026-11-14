@@ -20,3 +20,12 @@
 ## Project initialization
 
 - Added project README, architecture and roadmap documentation.
+
+
+## Documentation and collaboration foundation
+
+- Added `AGENTS.md` for AI coding-agent instructions.
+- Added `CONTRIBUTING.md` for human and AI collaboration.
+- Added project brief, AI handoff, style taxonomy/research framework and decision log.
+- Expanded the roadmap with concrete 0.7 work packages and release gates.
+- Linked onboarding documentation from the repository README.
