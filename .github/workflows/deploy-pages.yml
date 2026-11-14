@@ -1,0 +1,50 @@
+name: Deploy test page to GitHub Pages
+
+# Publishes the build-free test & review page (review/) with the data it reads.
+# The github-pages environment only accepts deployments from main, so this runs
+# on pushes to main or manually (workflow_dispatch) from an allowed branch.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Assemble static site
+        run: |
+          mkdir -p _site/docs/reports
+          cp -r review src data contracts _site/
+          cp -r docs/reports/proof _site/docs/reports/
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=review/"><a href="review/">NIGHTSHIFT test &amp; review page</a>\n' > _site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
