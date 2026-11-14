@@ -225,3 +225,17 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** reference-only / unresolved. A used VHS or CD-ROM purchase does not grant digitization, distribution, public-display or commercial reuse rights. No footage, stills, tags or music copied.
 - **Caution:** seller metadata is not production-credit verification; the *BOMBER* writer-name list is not a crew roster; the 1994 Google Video reference is a historical link lead, not proof of current access. No media has been watched in this pass.
 - **Evidence:** B for *Rolling Thunder 001* existence and metadata; B for the contemporary *King of the Line* description, C for its secondary ISBN listing; D for the unresolved *Graffiti Dortmund 1994* access lead.
+
+
+## VR-014 — Dortmund publication corpus and bibliographic cross-check
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **1987:** *Da kukse wa*, Marianne Brentzel / Hubert Moormann, with interviews identified by ILOVEGRAFFITI as CHINTZ, SHARK, CHANA and ZODIAK; separate from later books.
+- **1996:** *Graffiti Dortmund: Die Kunst der Sachbeschädigung*, Markus Wiese / Barbara Uduwerella / Bernhard van Treeck, Aragon, ISBN 978-3-89535-431-1. ILOVEGRAFFITI (2009) calls the book 80 pages and says a low-resolution Issuu preview was available; retail catalogue records report 160 pages. Extent unresolved pending collation of a physical copy / colophon.
+- **2002:** *IRON CITY — Graffiti Dortmund*, MASmedia, 128 pages, German/English; advertised coverage 1983–2002, with 1983 beginnings, 1986 colour panels and 1990s railway-system documentation.
+- **2020:** *MASON — The Essence of Writing 1986–2019*, artist-specific retrospective, separate from city histories.
+- **2023:** *RIO — The Process of Writing*, 224 pages, bilingual, ISBN 978-3-00-074818-9, artist-specific chronological retrospective; not a city-wide style sample.
+- **Records:** https://ilovegraffiti.de/blog/2009/09/08/wer-ist-eigentlich-chintz/ ; https://berlingraffiti.de/2009/09/09/graffiti-dortmund/ ; https://diebuchsuche.at/buch-isbn-9783895354311.html ; https://ilovegraffiti.de/blog/2015/03/02/buch-da-kukse-wa-graffiti-in-dortmund-1987/ ; https://hitzerot.com/shop/iron-city/ ; https://shop.mason.de/product/iron-city-graffiti-dortmund-2002-signed ; https://hitzerot.com/shop/rio/
+- **Value:** separates overlapping publication records and prioritizes legitimate page-level inspection before visual claims.
+- **Rights:** unresolved. A historical low-resolution Issuu preview does not establish uploader authorization or reuse permission.
+- **Caution:** 80/160-page discrepancy unresolved; publisher/retailer descriptions are not image inspection; individual artist books cannot define a city-wide style.
+- **Evidence:** B for existence/ISBN and publisher metadata; C for page extents conflict and advertised scope; no page-level visual claims.
