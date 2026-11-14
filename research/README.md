@@ -421,3 +421,10 @@ Mapped the 1996 *Graffiti Dortmund* book, the 2020 *MASON — The Essence of Wri
 ### 2026-11 — Dortmund oral history and visual chronology
 
 Added two long-form ILOVEGRAFFITI interview routes (ATOM ONE #040 and TWISTER / JEZUS / PRIDE #059), and identified *IRON CITY* (2002) as a key 1983–2002 regional visual chronology. Added VR-011 and clarified that podcast summaries and publisher descriptions are not substitutes for listening or page-level inspection. Corrected the unresolved Episode 21 / trainwriting upload numbering distinction.
+
+
+- [Dortmund Trainwriting — Contemporary 1997–1999 Evidence and Archive Access 01](DORTMUND_TRAINWRITING_CONTEMPORARY_SOURCES_1997_1999_01.md)
+
+### 2026-11 — Dortmund trainwriting contemporary sources, 1997–1999
+
+Added an inspected 1997 *BOMBER* issue review of Dortmund's *Rolling Thunder 001* train video and interactive *King of the Line* CD-ROM, plus a dated March 1999 *Endstation* report on Dortmund trainwriting in 1996–1999. Added VR-012 and an MCL catalogue search-result route for *IRON CITY*. Single-source estimates and rights limitations are explicit.
