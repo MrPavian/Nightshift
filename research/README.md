@@ -60,6 +60,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Master Audit — Build 0.6](GLYPH_MASTER_AUDIT_V06.md)
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
+- [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
 
 ## Status
 
