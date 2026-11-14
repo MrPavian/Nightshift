@@ -62,6 +62,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
 - [Style Grammar Specifications 01 — Bubble, Blockbuster, Straight Letter, Wildstyle Study](STYLE_GRAMMAR_SPECIFICATIONS_01.md)
+- [Style Grammar Compatibility & Parameter Contract](STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md)
 
 ## Status
 
@@ -108,3 +109,8 @@ Audited the actual v0.6 HTML prototype, distinguishing five custom glyph path re
 ### 2026-11 — Initial style grammar specifications
 
 Added a research-grounded specification for Bubble/Throw-up, Blockbuster, Straight Letter and Wildstyle Study. Incorporated Lisa Gottlieb's expert-classification research, Nancy Macdonald's ethnography, Joe Austin's history and DAIM's practitioner interview. Documented terminology conflicts and separated letterform, composition, practice/form, surface and rendering dimensions. Parameter ranges and engine rules are explicitly marked as NIGHTSHIFT design inference.
+
+
+### 2026-11 — Style grammar compatibility and parameter dependencies
+
+Added an implementation contract for independent letterform, composition, practice/form, surface and rendering axes. Defined compatibility levels, parameter ownership, dependency graphs, hard constraints versus soft preferences, preset serialization and compatibility validation. These are NIGHTSHIFT engineering rules derived from the research-led grammar dossier, not universal graffiti taxonomies.
