@@ -54,6 +54,8 @@ Read and follow:
 - `contracts/visual-calibration.v1.json`
 - `research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md`
 - `contracts/proof-sheet-fixtures.v1.json`
+- `research/GLYPH_CONSTRUCTION_PIPELINE_01.md`
+- `contracts/glyph-construction-pipeline.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -118,6 +120,11 @@ Follow `research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md` and `contr
 ## 3.10 Proof-sheet and test-fixture infrastructure
 
 Follow `research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md` and `contracts/proof-sheet-fixtures.v1.json`. Build immutable proof runs over canonical project snapshots; record source revision, engine versions, seeds, operations, resolved parameters, render conditions, validation reports and artifact hashes. Use the existing A–Z, pair and word inventories without changing maturity. Label fixtures involving provisional glyphs as partial coverage. Generate neutral monochrome structure plates before finish plates. Automated rendering must never advance human-review maturity; preserve the existing rubric and explicit reviewer decisions.
+
+
+## 3.11 Glyph construction pipeline
+
+Implement `research/GLYPH_CONSTRUCTION_PIPELINE_01.md` and `contracts/glyph-construction-pipeline.v1.json` as the end-to-end stage contract. Preserve the canonical semantic graph and editable vector geometry; Three.js meshes are derived and all edits return through typed commands and validation. Do not infer stroke order from closed contours. First import/preserve exact A/B/G/R/S legacy snapshots, declare semantic topology, then implement only the minimal registered edits after calibration. The first visible milestone is a valid monochrome editable A/B/G/R/S set in the live Three.js editor—not extrusion or effects.
 
 ## 4. Current-state facts
 
