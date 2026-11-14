@@ -33,12 +33,22 @@ Read and follow:
 - `research/VISUAL_CONSTRUCTION_BRIEF_01.md`
 - `research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`
 - `research/MASTER_GLYPH_VARIANT_MATRIX_01.md`
+- `research/GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md`
+- `contracts/glyph-parameter-contract.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
 ## 3. Visual construction and review requirements
 
 Before implementing composition and style expansion, follow `research/VISUAL_CONSTRUCTION_BRIEF_01.md`. It defines the evidence-led construction layers, grammar-specific visual criteria, Three.js editor requirements, six deterministic proof-sheet families and acceptance criteria. Consult `research/VISUAL_REFERENCE_DATABASE.md` for provenance and rights status. Do not bundle or trace archival images without item-level permission. The visual brief, glyph review protocol and master glyph variant matrix are design specifications, not evidence that these features are implemented. Use the variant matrix to implement only Slice 1 and the minimal Slice 2 controls first; preserve master snapshots, calibrate bounds from reviewed geometry, and keep topology-changing variants separately named. Apply the staged review gates and 0–3 human rubric from `research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`. Do not promote glyph maturity without recorded proof-sheet review; identity or topology failure blocks approval.
+
+## 3.1 Typed parameter operations and Three.js command contract
+
+Use `contracts/glyph-parameter-contract.v1.json` as the machine-readable registry and `research/GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md` for its execution semantics. Implement registered operation IDs rather than generic untyped property mutation. Every command carries stable command/operation/glyph-instance/variant IDs and an expected model revision. Validate a candidate canonical model and commit atomically; on failure preserve the prior model and revision. Undo/redo must replay canonical patches through the same validator.
+
+Three.js handles bind to stable semantic component/anchor IDs. Dragging may preview a candidate, but pointer release submits one typed model command. Never persist direct mesh-vertex or scene-object mutations as canonical edits. Regenerate meshes, SVG and diagnostics from committed canonical state. Apply each operation's declared invalidation classes and validation rules.
+
+Do not invent production numeric bounds, defaults or slider steps. Keep numeric controls uncalibrated until bounds are measured from authored geometry and reviewed fixtures. Do not silently clamp. Topology changes require a separately named authored variant and topology review; they are not continuous slider operations. Keep hard identity/topology/geometry/anchor constraints separate from soft style and word-rhythm diagnostics.
 
 ## 4. Current-state facts
 
