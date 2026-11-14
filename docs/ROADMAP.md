@@ -96,3 +96,8 @@ Each milestone should have:
 - an explicit list of deferred work.
 
 Do not advance a milestone merely because its UI controls exist. Advance when its underlying system meets the acceptance criteria.
+
+
+## Parallel workstream — THE BLACKBOOK ARCHIVE
+
+The in-game graffiti lexicon is a separate product workstream. Follow [docs/BLACKBOOK_ARCHIVE_ROADMAP.md](BLACKBOOK_ARCHIVE_ROADMAP.md) and its [masterprompt](BLACKBOOK_ARCHIVE_MASTERPROMPT.md). The research library under `research/` is its editorial source of truth. Do not duplicate the archive roadmap's content milestones here; coordinate shared architecture and generator integration at the relevant main-engine milestones.
