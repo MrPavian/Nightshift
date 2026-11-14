@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract": "nightshift.editor-interaction",
+  "version": "1.0.0",
+  "status": "design-specification-not-implemented",
+  "principles": {
+    "progressive_disclosure": true,
+    "no_arbitrary_level_gating": true,
+    "canonical_model_is_authoritative": true,
+    "threejs_objects_are_derived": true,
+    "all_edits_use_typed_commands": true,
+    "diagnostics_do_not_define_taste": true
+  },
+  "entity_kinds": [
+    "project",
+    "word",
+    "glyph-instance",
+    "semantic-component",
+    "contour",
+    "segment",
+    "anchor",
+    "relationship-edge",
+    "surface-object"
+  ],
+  "modes": [
+    "select",
+    "transform",
+    "shape",
+    "connect",
+    "contour",
+    "layers",
+    "view"
+  ],
+  "selection": {
+    "stable_identity_required": true,
+    "transient_scene_uuid_is_identity": false,
+    "contextual_priority": {
+      "select": [
+        "glyph-instance",
+        "word"
+      ],
+      "transform": [
+        "glyph-instance",
+        "word",
+        "semantic-component"
+      ],
+      "shape": [
+        "semantic-component",
+        "glyph-instance",
+        "anchor"
+      ],
+      "connect": [
+        "anchor",
+        "relationship-edge",
+        "glyph-instance"
+      ],
+      "contour": [
+        "segment",
+        "contour"
+      ]
+    },
+    "supports_multi_select": true,
+    "supports_hierarchy_breadcrumbs": true,
+    "escape_behavior": [
+      "parent-selection",
+      "clear-selection"
+    ]
+  },
+  "interaction_events": {
+    "pointer_down": {
+      "required": [
+        "pointer_id",
+        "target_entity_id",
+        "target_entity_kind",
+        "model_revision",
+        "tool_mode"
+      ]
+    },
+    "preview_update": {
+      "required": [
+        "interaction_id",
+        "target_entity_id",
+        "candidate_patch",
+        "base_revision"
+      ]
+    },
+    "pointer_up": {
+      "required": [
+        "interaction_id",
+        "candidate_patch",
+        "base_revision"
+      ]
+    },
+    "cancel": {
+      "required": [
+        "interaction_id",
+        "reason"
+      ]
+    }
+  },
+  "command_envelope": {
+    "required": [
+      "command_id",
+      "operation_id",
+      "target_ids",
+      "expected_revision",
+      "payload",
+      "source_interaction_id"
+    ],
+    "commit_policy": "atomic-validate-then-commit",
+    "on_revision_conflict": "reject-and-refresh",
+    "on_validation_failure": "preserve-previous-canonical-state-and-restore-derived-view",
+    "preview_is_persisted": false
+  },
+  "transaction": {
+    "continuous_drag": "single-command",
+    "multi_entity_single_intent": "single-transaction",
+    "cancel_restores_start_state": true,
+    "authoritative_validation_on_commit": true
+  },
+  "handle_kinds": [
+    "transform",
+    "semantic-parameter",
+    "anchor",
+    "relationship",
+    "contour-control"
+  ],
+  "diagnostics": {
+    "display_levels": [
+      "quiet",
+      "contextual",
+      "inspection"
+    ],
+    "classes": [
+      "hard-blocker",
+      "soft-guidance",
+      "preview-provisional"
+    ],
+    "required_fields": [
+      "diagnostic_id",
+      "code",
+      "severity",
+      "affected_entity_ids",
+      "message"
+    ],
+    "hard_blockers_prevent_commit": true,
+    "soft_guidance_prevents_commit": false,
+    "preview_must_be_marked_provisional": true
+  },
+  "history": {
+    "canonical_commands_only": true,
+    "required_fields": [
+      "command_id",
+      "operation_id",
+      "affected_entity_ids",
+      "before_revision",
+      "after_revision",
+      "description",
+      "validation_status"
+    ],
+    "coalesce_drag": true,
+    "camera_and_overlay_state_in_geometry_history": false,
+    "deterministic_replay": true
+  },
+  "view_state": {
+    "views": [
+      "blackbook",
+      "studio",
+      "wall"
+    ],
+    "shared_canonical_project": true,
+    "blackbook_fields": [
+      "camera",
+      "page-background",
+      "page-guides",
+      "sketch-visibility"
+    ],
+    "studio_fields": [
+      "camera",
+      "overlay-visibility",
+      "inspector-layout"
+    ],
+    "wall_fields": [
+      "camera",
+      "lighting",
+      "surface-transform",
+      "environment",
+      "spatial-placement"
+    ],
+    "view_state_mutates_glyph_geometry": false,
+    "switching_flattens_or_duplicates_artwork": false
+  },
+  "layer_categories": {
+    "composition": [
+      "fill",
+      "outline",
+      "inline-highlight",
+      "depth",
+      "shadow",
+      "sketch-reference",
+      "surface-treatment"
+    ],
+    "editor_overlay": [
+      "selection",
+      "bounds",
+      "anchors",
+      "handles",
+      "relationships",
+      "negative-space-guides",
+      "collision-clearance",
+      "grid-rulers"
+    ]
+  },
+  "input": {
+    "modalities": [
+      "mouse-pointer",
+      "touch",
+      "keyboard"
+    ],
+    "essential_actions_require_hover": false,
+    "drag_alternative_required": true,
+    "touch_camera_and_edit_gestures_must_be_disambiguated": true,
+    "colour_only_cues_forbidden": true
+  },
+  "implementation_phases": [
+    "stable-selection-and-hierarchy",
+    "transform-handles-and-command-transactions",
+    "contextual-inspector-and-basic-shape-operations",
+    "preview-diagnostics-and-commit-validation",
+    "layers-and-overlays",
+    "undo-redo-and-history",
+    "blackbook-wall-continuity",
+    "connect-mode",
+    "advanced-contour-anchor-authoring-and-touch-refinement"
+  ],
+  "test_fixtures": [
+    {
+      "id": "select-whole-glyph",
+      "expect": "selects-glyph-not-nearest-handle-in-default-mode"
+    },
+    {
+      "id": "select-component-in-shape-mode",
+      "expect": "stable-semantic-component-id-resolved"
+    },
+    {
+      "id": "selection-cycle-overlap",
+      "expect": "cycles-eligible-entities-deterministically"
+    },
+    {
+      "id": "drag-one-transaction",
+      "expect": "continuous-drag-creates-one-history-entry"
+    },
+    {
+      "id": "cancel-drag",
+      "expect": "canonical-model-and-render-return-to-start-state"
+    },
+    {
+      "id": "invalid-command-rollback",
+      "expect": "rejected-command-does-not-leave-scene-divergent"
+    },
+    {
+      "id": "preview-diagnostic-label",
+      "expect": "preview-only-diagnostics-marked-provisional"
+    },
+    {
+      "id": "hard-vs-soft-diagnostic",
+      "expect": "hard-blocks-commit-soft-does-not"
+    },
+    {
+      "id": "undo-redo-canonical",
+      "expect": "undo-redo-replays-canonical-command-and-validator"
+    },
+    {
+      "id": "camera-not-geometry",
+      "expect": "camera-change-does-not-dirty-glyph-model"
+    },
+    {
+      "id": "blackbook-wall-shared-model",
+      "expect": "both-views-reference-same-canonical-project"
+    },
+    {
+      "id": "layer-hide-preserves-data",
+      "expect": "visibility-toggle-does-not-delete-model-data"
+    },
+    {
+      "id": "touch-no-hover",
+      "expect": "core-actions-available-without-hover"
+    },
+    {
+      "id": "stable-id-after-rebuild",
+      "expect": "selection-and-history-survive-derived-scene-rebuild"
+    }
+  ]
+}
