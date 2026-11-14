@@ -73,3 +73,56 @@ A Museum für Kunst und Gewerbe Hamburg search filtered to Dortmund returns 19 p
 - Museum für Kunst und Gewerbe Hamburg, Dortmund-filtered collection: https://www.mkg-hamburg.de/en/collection/online?filter%5Bplace%5D%5B0%5D=Dortmund&filter%5Bplace%5D%5Bpath%5D=
 
 **Evidence grade:** A for official project scope, access route and research infrastructure; B for reported city coverage and corpus size in research literature; no Dortmund record-level visual evidence yet.
+
+
+## 7. Ontology and annotation method — direct documentation review (W02.30)
+
+The official INGRID ontology and illustrated search manual have now been inspected. This is a substantial step beyond simply locating the database.
+
+The ontology deliberately combines linguistic / art-historical description with scene terminology. It records:
+- **General context:** object type, actors, place, date / dating, technique, content, site materiality and relation to the surrounding environment.
+- **Image level:** photograph, graffiti, partial graffiti and photo series.
+- **Context relation:** isolated, aggregated, integrated and environment-related.
+- **Graffiti type:** Piece/Writing/Style, Tag(s), Throw Up, Comment, Character, Stencil, sketch, composition, co-construction and slogan / concept call.
+- **Lettering style:** Bubble Style, Simple Style, Tag Style and Wild Style.
+- **Design elements:** arrows, breaks, bubbles, crowns, drips, highlights and quotes.
+- **Additional visual / linguistic features:** sign type, directionality, figure style, color, embedded additions, language and communicative function.
+- **Provenance:** image contributor/source collection, recording date and editorial annotation.
+
+The illustrated manual explains that location and photograph date are supplied by image contributors, while other annotations are assigned through visual inspection. In the described workflow, two annotators—one from linguistics and one from art history—normally inspect and annotate an image together. The manual explicitly acknowledges interpretive ambiguity in style and genre terminology.
+
+**Critical methodological implication:** INGRID is not a neutral machine-generated ground truth. It is a carefully structured, interdisciplinary human annotation system. Its categories are an excellent research map, but category labels still need to be read in context and uncertainty must be preserved.
+
+## 8. Licensing clarification from the INGRID-KG research article
+
+The 2023 *Scientific Data* article explains that image contributors entered agreements with the University of Paderborn that transferred rights for public use of contributed images to the INGRID project. It reports:
+- original images: **CC BY-SA 4.0**;
+- generated metadata: **CC0**;
+- INGRID knowledge graph: **CC BY 4.0**.
+
+This is more informative than the general warning that free research access does not itself grant reuse permission. It suggests that many images in the published INGRID corpus have an explicit reuse license. Nevertheless, NIGHTSHIFT must check the current license / credit information for each individual record and comply with attribution and ShareAlike conditions for CC BY-SA images. Do not assume every related external archive item, later contribution or linked resource shares the same terms.
+
+Sources:
+- Official ontology: https://www.uni-paderborn.de/forschungsprojekte/ingrid/ontologie
+- Illustrated research manual: https://www.uni-paderborn.de/fileadmin/ingrid/Illustriertes_Recherchemanual.pdf
+- INGRID-KG article: https://www.nature.com/articles/s41597-023-02199-8
+
+## 9. NIGHTSHIFT ontology crosswalk — proposed, not implemented
+
+Use INGRID's fields as a discovery and comparison framework, not as a replacement for NIGHTSHIFT's own semantic model.
+
+| INGRID dimension | NIGHTSHIFT research / editor question |
+|---|---|
+| Graffiti type | Is the object a tag, throw-up, piece, character, comment, sketch or multi-part composition? |
+| Lettering style | Which period / scene style label is supported, and how confident is the attribution? |
+| Design elements | Which optional visual devices are present, and how do they relate to letter structure? |
+| Directionality | What is the composition's dominant orientation? |
+| Figure style | Is figurative imagery present, and how is it rendered? |
+| Technique / material | What tool and surface evidence is actually visible or captioned? |
+| Context relation | Is the work isolated, part of a cluster, integrated with earlier work, or responding to its surroundings? |
+| Place / date / source | What can be said about chronology and scene geography without inferring missing data? |
+| Linguistic function | Is the writing a name, greeting, dedication, comment, slogan or another communicative act? |
+
+**Do not conflate:** graffiti type is not lettering style; lettering style is not a list of design elements; directionality is not letter slant; image context is not the same as a writer's social network; technique is not inferred solely from appearance if the evidence is ambiguous.
+
+This crosswalk is a proposed NIGHTSHIFT research aid. It does not claim that the current editor implements these categories.
