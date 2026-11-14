@@ -189,3 +189,15 @@ For each selected source image, create an analysis record before using it to inf
 - **Rights:** reference-only / unresolved. Third-party Issuu uploads and previews do not grant reproduction rights.
 - **Caution:** no page-level inspection, image extraction, signature copying or commercial-use permission is claimed.
 - **Evidence:** A for publication existence / metadata where publisher or catalogue records support it; visual contents require legitimate copy and item-level inspection.
+
+
+## VR-011 — Dortmund oral history and visual chronology: podcasts and *IRON CITY*
+- **Region:** Dortmund / Ruhrgebiet, Germany.
+- **Oral history A:** ILOVEGRAFFITI Podcast #040, ATOM ONE / DER LANGE (7 December 2020). Editorial summary identifies topics including early/later graffiti years, blocky Dortmund style, first New York trip, Amsterdam influence, Berlin visits and generational conflicts. The publisher says the conversation was recorded for *The Rise of Graffiti Writing*.
+- **Oral history B:** ILOVEGRAFFITI Podcast #059, TWISTER / JEZUS / PRIDE (20 October 2021). Editorial summary identifies Ruhrgebiet graffiti, wholecars, block letters, fat caps and later train-panel work; it notes audio-quality decline and deliberate voice distortion.
+- **Visual publication:** *IRON CITY — Graffiti Dortmund* (MASmedia, 2002), 128 pages, German/English. Publisher description reports early images from 1983, colour panels from 1986, 1990s train-system documentation and an early-2000s section.
+- **Records:** https://ilovegraffiti.de/blog/2020/12/07/podcast-040-atom-one-ueber-graffiti-in-dortmund-new-york-too-strong-the-real-deal/ ; https://ilovegraffiti.de/blog/2021/10/20/podcast-059-smalltalk-mit-twister-a-k-a-jezus-aus-dortmund/ ; https://hitzerot.com/iron-city/ ; https://shop.mason.de/product/iron-city-graffiti-dortmund-2002-signed
+- **Value:** interview routes support a timecoded oral-history ledger; *IRON CITY* is the most promising single visual chronology from 1983–2002 identified so far.
+- **Rights:** reference-only / unresolved; no podcast transcript, image or book scan copied.
+- **Caution:** editorial summaries do not verify interview claims or image captions. Keep ATOM ONE / DER LANGE distinct from Pure Doze; distinguish TUF, TOO STRONG and the wider Dortmund hip-hop scene.
+- **Evidence:** A for source existence and editorial metadata; individual spoken claims and visual observations require direct listening / book inspection.
