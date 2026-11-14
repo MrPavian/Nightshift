@@ -69,3 +69,12 @@ Do not generate a crew roster from everyone appearing in the documentary. Partic
 - Recover the exact direct URL for *Into the Nineties — Dortmund & Frankfurt*.
 - Compare SHARK's video statements with the Amsterdam influence account in *ALL SURFACE* and any first-person recollection cited by Hinz.
 - Record only claims that can be distinguished from editorial narration and corroborated where possible.
+
+
+## Additional first-person interview sources — 2026-11-14
+
+Two substantial ILOVEGRAFFITI interviews now extend the documentary route:
+- [ATOM ONE #040](https://ilovegraffiti.de/blog/2020/12/07/podcast-040-atom-one-ueber-graffiti-in-dortmund-new-york-too-strong-the-real-deal/) — early/later Dortmund years, blocky local style, New York, Amsterdam, Berlin and generational conflicts. The page says the interview was recorded for the documentary series; the audio still requires timecoded listening.
+- [TWISTER / JEZUS / PRIDE #059](https://ilovegraffiti.de/blog/2021/10/20/podcast-059-smalltalk-mit-twister-a-k-a-jezus-aus-dortmund/) — Ruhrgebiet, wholecars, block letters, fat caps and later train panels. The publisher notes reduced audio quality and deliberately distorted voice.
+
+For a broader visual chronology, see *IRON CITY* (2002), described at https://hitzerot.com/iron-city/ as covering early material from 1983, colour panels from 1986, 1990s train documentation and early-2000s writing. See [Dortmund Oral History and Visual Chronology 01](DORTMUND_ORAL_HISTORY_AND_VISUAL_CHRONOLOGY_01.md). No audio transcript or book image has been inspected in this metadata pass.
