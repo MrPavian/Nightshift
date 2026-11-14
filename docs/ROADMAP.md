@@ -174,3 +174,8 @@ See [Glyph Construction Pipeline 01](../research/GLYPH_CONSTRUCTION_PIPELINE_01.
 ### A/B/G/R/S construction handoff
 
 See [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) and [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json). The next implementation task is Slice 1: exact legacy snapshot import, provisional semantic graph mapping, explicit topology records, validator diagnostics and neutral proof output. Do not expose uncalibrated controls or promote maturity. The first renderer gate is topology-correct negative space across every render pass and SVG, without paper-colour patches.
+
+
+### Specification integration and ChatGPT work order
+
+The active research/specification sequence is tracked in [ChatGPT Work Order 02](CHATGPT_WORK_ORDER_NEXT_01.md). The initial [Specification Integration Audit 01](../research/SPECIFICATION_INTEGRATION_AUDIT_01.md) identified and clarified the G aperture import/edit gate. Claude must read this audit before implementing the first A/B/G/R/S slice.
