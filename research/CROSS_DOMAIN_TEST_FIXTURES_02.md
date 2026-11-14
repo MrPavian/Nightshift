@@ -67,7 +67,7 @@ Add controlled integration words:
 | ID | Word | Main coverage | Maturity note |
 |---|---|---|---|
 | WX-01 | ABGRS | all five authored-contour masters | suitable first authored-subset integration probe; not proof of natural-language/style authenticity |
-| WX-02 | BRAGS | authored B/R/A/G/S plus provisional letters? | all letters are in authored subset; use as full A/B/G/R/S coverage |
+| WX-02 | BRAGS | authored B/R/A/G/S | all letters are in authored subset; use as full A/B/G/R/S coverage |
 | WX-03 | GRABS | G/R/A/B/S order permutation | same subset, different pair contexts |
 | WX-04 | SUGAR | S/G/A/R authored; U provisional | partial coverage |
 | WX-05 | RABBIT | R/A/B authored; I/T provisional | partial coverage |
