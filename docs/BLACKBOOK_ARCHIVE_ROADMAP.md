@@ -174,3 +174,13 @@ Vor einer Änderung Repository und aktuelle Implementierung prüfen. Nur die kle
 ## Work completed — information architecture and content pilot
 
 The Phase A design deliverables are documented in [Information Architecture 01](BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md): audiences, taxonomy, facets, navigation, entry layout, learning paths, generator capability links and visual/interaction direction. A six-entry editorial draft pilot is in [Content Pilot 01](../research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md). The pilot is not publication-approved; claim-level source verification and image rights review remain required. Claude's implementation handoff for Archive 0.1–0.3 is [Ticket Pack Blackbook 01](CLAUDE_TICKET_PACK_BLACKBOOK_01.md).
+
+
+## Work completed — source deepening and content expansion (2026-11-14)
+
+- Added a six-record source register with source type, directly inspected scope, access date, confidence limits and rights cautions.
+- Added a historical evidence map separating writing culture from institutional response, and transit-fleet milestones from the wider survival of graffiti culture.
+- Added six further editorial drafts covering writing, blackbooks, Clean Train, sequential train photography, preservation networks and institutional recognition.
+- Added archive regression test cases for content accuracy, evidence provenance, rights, search, navigation and capability-gated generator links.
+- These documents are research/editorial/test-design deliverables. They do not mean the archive UI, data pipeline or tests have been implemented or executed. Archive entries remain drafts.
+
