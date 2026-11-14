@@ -70,3 +70,7 @@ Neither is a generic Dortmund style template. MASON is an individual case.
 2. Obtain *The Essence of Writing 1986–2019* through a legitimate copy and compare its four phases with Grothus's analysis.
 3. Check whether the 2020 catalogue's preview or selected images have an authorized public version.
 4. Ask for practitioner review before converting any longitudinal observations into generalizable style dimensions.
+
+
+## Bibliographic clarification — 1996 *Graffiti Dortmund* extent
+A 2009 ILOVEGRAFFITI post describes a Markus Wiese book titled *Graffiti Dortmund* as 80 pages and identifies contributions by SHARK, Barbara Uduwerella and Bernhard van Treeck. The ISBN record for *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), ISBN 978-3-89535-431-1, matches the named author group but retail catalogue records report 160 pages. The discrepancy is unresolved; no physical copy has been collated. See [Dortmund publication bibliography and visual corpus](DORTMUND_PUBLICATION_BIBLIOGRAPHY_AND_VISUAL_CORPUS_01.md).
