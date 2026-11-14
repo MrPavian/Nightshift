@@ -169,3 +169,39 @@ Record date, place, creator/source, medium, rights, scene context and confidence
 - Case interview, first-person account of crew formation and character focus: https://newurbanera.org/portfolio-items/interview-with-case-mclain/
 
 **Scope update:** national research now explicitly includes Berlin, East Germany, Hamburg, Munich, Stuttgart and MA'CLAIM. Their INGRID corpus status must still be verified city by city; cultural/historical importance does not imply a particular database holding.
+
+
+## 9. Heidelberg — southern German writing-history anchor
+
+Heidelberg is promoted to a dedicated research case, not merely another city in the national discovery queue.
+
+Why it matters:
+- Heidelberg's hip-hop culture has been practised since the 1980s and was added to Germany's nationwide inventory of intangible cultural heritage in 2023. The official description explicitly includes graffiti alongside rap, DJing, beatboxing, cyphers, jams and breakdance.
+- Local and scholarly histories identify an influential early writing scene. A KIT study describes Heidelberg as a comparatively small scene whose city-specific style was known in writer circles and whose influence was discussed in nearby Mannheim and Karlsruhe.
+- The same study identifies train writing and motorway walls as important local fields of practice, and discusses a distinct local scene ethos. Treat these as attributed findings from that study, not timeless facts about every Heidelberg writer.
+- The first sprayed Heidelberg train is a documented local-history research lead. The Freies Hip-Hop Institut and Heidelberg University hosted a 2024 event on graffiti and street art in Heidelberg from 1960–2000, including archival material and eyewitness accounts.
+- Heidelberg's city archive is developing a Hip-Hop archive from a substantial Torch collection: around 5,000 objects including photographs, records, posters, flyers, magazines, drawings and material relating to early graffiti trains. This is a particularly valuable primary-source route; access, cataloguing status and reproduction rights must be checked before use.
+
+Research tasks:
+1. Build a chronology from early local wall writing and pre-hip-hop street inscriptions through the 1980s writing scene, the 1990s/early-2000s high phase and contemporary practice.
+2. Identify first-hand accounts and archive records for King Kane / KANE, Torch, local crews and the first sprayed train; verify names, dates and attributions before publication.
+3. Compare Heidelberg with Mannheim and Karlsruhe as a connected regional field, while retaining each city's own chronology and style.
+4. Study panels, train writing, motorway walls, wildstyle construction, local handstyles and the relation between writing, rap, DJing and breakdance.
+5. Separate classic writing from later commissioned mural and street-art work; document legal walls and current community practice as a different period/context.
+6. Contact or investigate the Freies Hip-Hop Institut, Hip Hop Heidelberg e.V., Heidelberg City Archive and relevant university researchers for oral histories, blackbooks, photographs and source permissions.
+
+Editor relevance:
+- Heidelberg is a valuable case for studying how a relatively small scene can exert influence beyond its city.
+- Its writing history can inform letter complexity, interlocking wildstyle structures, train-panel composition and the relationship between local style identity and cross-city exchange.
+- Do not reproduce a named writer's signature style. Extract general principles from multiple documented examples and construct original letter exercises.
+
+INGRID status:
+- Heidelberg is **not** currently promoted to confirmed INGRID corpus coverage by the evidence in this scope. Add it to the city-resource discovery queue and only upgrade its database status after a live graph query or authoritative corpus statement confirms records.
+
+Additional sources:
+- German UNESCO Commission, "Hip-Hop-Kultur in Heidelberg und ihre Vernetzung in Deutschland": https://www.unesco.de/staette/hip-hop-kultur-in-heidelberg-und-ihre-vernetzung-in-deutschland/
+- KIT study, "Style Writing. Skripturale Ästhetik zwischen Text und Bild am Beispiel von Karlsruhe und Mannheim" (includes Heidelberg discussion): https://publikationen.bibliothek.kit.edu/1000079409/6209138
+- Heidelberg City Archive / Torch archive materials: https://www.heidelberg.de/hd,Lds/HD/Rathaus/herzstueck+des+hip-hop-archivs.html
+- Freies Hip-Hop Institut, event on graffiti and street art in Heidelberg 1960–2000: https://www.freieshiphopinstitut.de/events/
+- Hip Hop Heidelberg e.V., local scene and projects: https://www.hiphopheidelberg.de/
+- Heidelberg University, exhibition "The Early Days. Hip-Hop in the GDR" (comparative historical context): https://www.uni-heidelberg.de/presse/news2013/pm20130308_hiphop_en.html
