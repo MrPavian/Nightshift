@@ -42,7 +42,15 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Writers & Influences](WRITERS_AND_INFLUENCES.md)
 - [Visual Reference Database](VISUAL_REFERENCE_DATABASE.md)
 - [Glyph Construction Guide](GLYPH_CONSTRUCTION_GUIDE.md)
+- [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md)
 
 ## Status
 
 Initial source-backed research pass. This is a living research base, not a definitive or exhaustive history. Expand entries only with traceable sources and preserve disagreements.
+
+
+## Research development log
+
+### 2026-11 — Synthesis 01
+
+Added a cross-linked synthesis of early New York writing, oral-history networks, tag/throw-up/piece distinctions, subway-car formats, selected style terminology, the subway as communication infrastructure, and the transition into art institutions. It explicitly distinguishes source claims from design inferences and records open verification tasks.
