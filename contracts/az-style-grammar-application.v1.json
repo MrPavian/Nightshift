@@ -1,0 +1,264 @@
+{
+  "contractId": "nightshift.az-style-grammar-application",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "scope": "latin.upper.A-Z",
+  "sourceChecklist": "research/ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md",
+  "grammarAxes": {
+    "letterform": [
+      "bubble",
+      "straight",
+      "hybrid",
+      "authored"
+    ],
+    "composition": [
+      "neutral",
+      "compact",
+      "block-fit",
+      "interlocking"
+    ],
+    "practiceContext": [
+      "tag",
+      "throw-up",
+      "piece",
+      "panel",
+      "wholecar",
+      "none"
+    ],
+    "surface": [
+      "blackbook",
+      "wall",
+      "train-car",
+      "paper",
+      "custom"
+    ],
+    "rendering": [
+      "fill",
+      "outline",
+      "inline",
+      "depth",
+      "highlights",
+      "texture"
+    ]
+  },
+  "taxonomyRules": {
+    "blockbuster": "straight-letterform plus block-fit/scale/coverage context; not an exclusive alphabet",
+    "wildstyle": "composition-and-relationship grammar",
+    "throwup": "practice/form context",
+    "renderingSeparate": true
+  },
+  "glyphs": {
+    "A": {
+      "structuralBasis": "apex; two legs; crossbar; triangular counter",
+      "protectedIdentity": "protect apex and two-leg identity; preserve counter unless named topology variant",
+      "bubbleCandidate": "round/soften apex and terminals; controlled mass expansion; counter clearance",
+      "straightBlockCandidate": "straighten or clip apex/junctions; disciplined stem and crossbar hierarchy",
+      "wildstyleCandidate": "diagonal leg rhythm; crossbar/leg anchor candidates; interlock only after counter-safe validation"
+    },
+    "B": {
+      "structuralBasis": "spine; upper/lower bowls; two counters",
+      "protectedIdentity": "preserve spine attachment and two distinct counters",
+      "bubbleCandidate": "round bowls independently; retain upper/lower distinction",
+      "straightBlockCandidate": "square bowl transitions; align spine and bar hierarchy",
+      "wildstyleCandidate": "bowl/spine anchors and selective overlaps; protect both counters"
+    },
+    "C": {
+      "structuralBasis": "open curve; two terminals; open aperture",
+      "protectedIdentity": "preserve open aperture and terminal direction",
+      "bubbleCandidate": "continuous rounded curve; soften terminals without closing opening",
+      "straightBlockCandidate": "controlled straight/curved segments; clipped terminals",
+      "wildstyleCandidate": "terminal-led extensions and open-channel flow; no forced closure"
+    },
+    "D": {
+      "structuralBasis": "spine; bowl; one counter",
+      "protectedIdentity": "preserve spine-to-bowl connection and counter",
+      "bubbleCandidate": "round bowl and transition; maintain broad negative space",
+      "straightBlockCandidate": "straight spine and squared bowl transitions",
+      "wildstyleCandidate": "bowl-to-neighbor overlaps with counter protection"
+    },
+    "E": {
+      "structuralBasis": "spine; upper/middle/lower bars",
+      "protectedIdentity": "preserve three-bar hierarchy and bar attachments",
+      "bubbleCandidate": "softened bar ends and junctions; optional bar curvature",
+      "straightBlockCandidate": "straight bar alignment and deliberate length hierarchy",
+      "wildstyleCandidate": "bar continuation candidates; avoid merging all bars into one mass"
+    },
+    "F": {
+      "structuralBasis": "spine; upper/middle bars; open lower side",
+      "protectedIdentity": "preserve open lower structure and bar order",
+      "bubbleCandidate": "rounded terminals; softened junctions",
+      "straightBlockCandidate": "straight bar hierarchy; strong top/mid alignment",
+      "wildstyleCandidate": "bar continuation and terminal extensions; keep open side legible"
+    },
+    "G": {
+      "structuralBasis": "open bowl; aperture; internal bar/terminal",
+      "protectedIdentity": "preserve G-specific aperture and bar logic; do not collapse to C/O",
+      "bubbleCandidate": "rounded bowl while retaining aperture and bar distinction",
+      "straightBlockCandidate": "squared bowl and controlled terminal/bar geometry",
+      "wildstyleCandidate": "aperture-safe terminal connections; no channel blockage"
+    },
+    "H": {
+      "structuralBasis": "two stems; crossbar",
+      "protectedIdentity": "preserve two stems and crossbar connection",
+      "bubbleCandidate": "round transitions while keeping crossbar legible",
+      "straightBlockCandidate": "parallel stem and crossbar alignment",
+      "wildstyleCandidate": "crossbar continuation and stem overlaps; preserve interior gap"
+    },
+    "I": {
+      "structuralBasis": "stem; optional bars/serifs are authored choices",
+      "protectedIdentity": "preserve intentional simplicity; do not invent ornament by default",
+      "bubbleCandidate": "rounded terminal treatment only where authored",
+      "straightBlockCandidate": "straight stem; optional bars remain explicit variant traits",
+      "wildstyleCandidate": "extension only from declared anchors; avoid forced joins"
+    },
+    "J": {
+      "structuralBasis": "upper terminal; descending stem; curved foot",
+      "protectedIdentity": "preserve descender direction and curve-to-stem transition",
+      "bubbleCandidate": "smooth lower curve and terminal rounding",
+      "straightBlockCandidate": "angular or clipped transition with clear descender",
+      "wildstyleCandidate": "tail/terminal flow into next glyph; avoid false shared stroke"
+    },
+    "K": {
+      "structuralBasis": "stem; upper/lower diagonals; branch junction",
+      "protectedIdentity": "preserve branch junction and distinct diagonal arms",
+      "bubbleCandidate": "soften acute junctions without closing negative wedges",
+      "straightBlockCandidate": "straight diagonals and controlled branch angle",
+      "wildstyleCandidate": "branch anchors and crossing order; validate wedge clearances"
+    },
+    "L": {
+      "structuralBasis": "stem; foot; terminal",
+      "protectedIdentity": "preserve stem-to-foot connection and foot direction",
+      "bubbleCandidate": "round inside/outside corner selectively",
+      "straightBlockCandidate": "square foot and stem; proportion foot intentionally",
+      "wildstyleCandidate": "foot continuation or terminal extension; avoid decorative bridge"
+    },
+    "M": {
+      "structuralBasis": "multiple stems/diagonals; central valley",
+      "protectedIdentity": "preserve central valley and distinct stems",
+      "bubbleCandidate": "round valleys and outer shoulders without collapsing gaps",
+      "straightBlockCandidate": "straight stems/diagonals; consistent but not identical widths",
+      "wildstyleCandidate": "valley/diagonal anchors; preserve internal channels during overlap"
+    },
+    "N": {
+      "structuralBasis": "two stems; diagonal connector",
+      "protectedIdentity": "preserve diagonal direction and both junctions",
+      "bubbleCandidate": "soften diagonal-to-stem transitions",
+      "straightBlockCandidate": "straight stems and diagonal with clear junction hierarchy",
+      "wildstyleCandidate": "diagonal continuation candidates; no ambiguous crossing"
+    },
+    "O": {
+      "structuralBasis": "closed contour; one counter",
+      "protectedIdentity": "preserve enclosed counter and non-generic silhouette",
+      "bubbleCandidate": "rounded mass with controlled asymmetry; counter clearance",
+      "straightBlockCandidate": "squared/rectilinear contour option; maintain counter",
+      "wildstyleCandidate": "counter-safe overlap; no crossing through protected counter"
+    },
+    "P": {
+      "structuralBasis": "spine; upper bowl; one counter; open lower termination",
+      "protectedIdentity": "preserve single counter and bowl attachment",
+      "bubbleCandidate": "round upper bowl; maintain open lower structure",
+      "straightBlockCandidate": "square bowl/spine transition; disciplined bar",
+      "wildstyleCandidate": "bowl and terminal relationships; protect counter"
+    },
+    "Q": {
+      "structuralBasis": "O-like closed contour; counter; tail",
+      "protectedIdentity": "preserve counter and explicit tail origin/direction",
+      "bubbleCandidate": "round contour while keeping tail distinct",
+      "straightBlockCandidate": "squared contour and controlled tail attachment",
+      "wildstyleCandidate": "tail may connect outward only from declared anchor; counter protected"
+    },
+    "R": {
+      "structuralBasis": "spine; bowl; diagonal leg; one counter",
+      "protectedIdentity": "preserve counter, bowl and leg attachment",
+      "bubbleCandidate": "round bowl; keep leg directional and distinct",
+      "straightBlockCandidate": "square bowl; clear leg angle and junction",
+      "wildstyleCandidate": "leg/neighbor anchor opportunities; protect counter and leg junction"
+    },
+    "S": {
+      "structuralBasis": "continuous directional curve; upper/lower mass",
+      "protectedIdentity": "preserve continuous flow and neck; no counter assumed for current master",
+      "bubbleCandidate": "smooth curve tension; maintain upper/lower distinction",
+      "straightBlockCandidate": "angular-flow authored variant; preserve continuous directional read",
+      "wildstyleCandidate": "terminal-led flow; interlock must not pinch neck"
+    },
+    "T": {
+      "structuralBasis": "top crossbar; descending stem",
+      "protectedIdentity": "preserve crossbar/stem junction and hierarchy",
+      "bubbleCandidate": "round terminals and soften junction",
+      "straightBlockCandidate": "straight top bar and vertical stem alignment",
+      "wildstyleCandidate": "bar continuation and top/bottom anchors; avoid accidental extra stem"
+    },
+    "U": {
+      "structuralBasis": "two stems; continuous base; open top",
+      "protectedIdentity": "preserve open top and continuous base",
+      "bubbleCandidate": "round base transition and terminal treatment",
+      "straightBlockCandidate": "straight stems with controlled base geometry",
+      "wildstyleCandidate": "open-terminal flow and base adjacency; don't close opening"
+    },
+    "V": {
+      "structuralBasis": "two diagonals; converging vertex",
+      "protectedIdentity": "preserve vertex and diagonal distinction",
+      "bubbleCandidate": "soften vertex without rounding into U",
+      "straightBlockCandidate": "straight diagonals; controlled acute angle",
+      "wildstyleCandidate": "vertex clearance and diagonal continuation; avoid fragile slivers"
+    },
+    "W": {
+      "structuralBasis": "repeated diagonals; central valleys",
+      "protectedIdentity": "preserve multiple valleys and distinct diagonal rhythm",
+      "bubbleCandidate": "round valleys while retaining repeated structure",
+      "straightBlockCandidate": "straight diagonal rhythm; manage overall width",
+      "wildstyleCandidate": "valley-aware interlocks; preserve internal channels"
+    },
+    "X": {
+      "structuralBasis": "crossing diagonals; central intersection",
+      "protectedIdentity": "preserve crossing order and four-arm identity",
+      "bubbleCandidate": "soften central junction; preserve four arms",
+      "straightBlockCandidate": "straight diagonals with explicit crossing/over-under choice",
+      "wildstyleCandidate": "explicit crossing order; no implicit shared stroke"
+    },
+    "Y": {
+      "structuralBasis": "upper fork; lower stem; branch junction",
+      "protectedIdentity": "preserve fork and descending stem continuity",
+      "bubbleCandidate": "round fork transition while retaining branch identity",
+      "straightBlockCandidate": "straight fork arms and stem alignment",
+      "wildstyleCandidate": "fork anchors and stem flow; explicit crossing order if overlapped"
+    },
+    "Z": {
+      "structuralBasis": "top/bottom bars; diagonal connector",
+      "protectedIdentity": "preserve bar/diagonal attachments and corner integrity",
+      "bubbleCandidate": "soften corners and terminals without losing diagonal",
+      "straightBlockCandidate": "straight bars and diagonal with controlled junctions",
+      "wildstyleCandidate": "bar continuation and diagonal flow; preserve corner clearance"
+    }
+  },
+  "resolutionOrder": [
+    "glyph-identity-and-maturity",
+    "letterform-compatibility",
+    "registered-glyph-operations",
+    "glyph-validation",
+    "composition-and-relationship-solver",
+    "whole-word-validation",
+    "surface-constraints",
+    "derived-rendering",
+    "persist-resolved-operations"
+  ],
+  "missingCapability": [
+    "neutral-fallback",
+    "unchanged-glyph",
+    "experimental-preview"
+  ],
+  "acceptance": [
+    "stable-A-Z-identity",
+    "registered-operations-only",
+    "negative-space-preservation",
+    "structural-bubble-straight-difference",
+    "blockbuster-multi-axis-model",
+    "wildstyle-relationship-grammar",
+    "maturity-transparency",
+    "deterministic-replay",
+    "whole-word-validation",
+    "proof-sheet-coverage",
+    "human-review-separate",
+    "persist-operation-provenance"
+  ]
+}
