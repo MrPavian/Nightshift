@@ -50,3 +50,12 @@
 - Added a cross-linked research synthesis connecting early New York writing, Bronx oral histories, tag/throw-up/piece distinctions, subway-car formats, selected style terminology and generator implications.
 - Added and attributed further primary/institutional and scholarly sources: Joe Austin, Bronx County Historical Society oral histories, Anna Waclawek, Abram Coetsee and MFA Boston.
 - Recorded disputed/secondary attributions and open primary-source verification tasks rather than presenting them as settled fact.
+
+
+## Research deepening — five specialist dossiers
+
+- Added source-led dossiers on PHASE 2 and bubble lettering; TRACY 168, Wild Style and inter-letter connections; RAMMELLZEE and KASE 2; 3D and blockbuster lettering; and women writers in early New York.
+- Distinguished historical crew/name usage from later visual style terminology.
+- Preserved disagreements around invention/priority claims and documented underrepresentation.
+- Added explicit generator design inferences while keeping them separate from historical evidence.
+- Cross-linked the new dossiers through the research index and related files.
