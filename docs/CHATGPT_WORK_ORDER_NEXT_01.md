@@ -293,3 +293,14 @@ The archive pilot is a draft, not approved publication content.
 - [x] Kept editorial summaries separate from verified testimony and preserved the Episode 21 / trainwriting upload numbering discrepancy.
 - [ ] Listen to and timecode both podcasts; inspect *IRON CITY* page by page; verify dated works, captions and rights.
 - [ ] Next: build a claim ledger from directly inspected testimony and a visual item register from *IRON CITY*; do not promote generator style parameters before those gates.
+
+
+
+## W02.23 — Dortmund trainwriting contemporary sources, 1997–1999 (2026-11-14)
+
+- [x] Inspected *BOMBER* #14 (1997) and recorded its review of the Dortmund video *Rolling Thunder 001* and interactive archive *King of the Line*.
+- [x] Inspected *Endstation* #14's dated Dortmund report (08.03.1999), separating contemporaneous observations from unverified totals and enforcement claims.
+- [x] Located the MCL catalogue search-result record for *IRON CITY* (2002); the OPAC server error prevents confirmation of current availability.
+- [x] Added VR-012, a source dossier and research index/changelog links.
+- [ ] Obtain a legitimate copy of *BOMBER* #14 and *Rolling Thunder 001*; confirm the MCL holding; corroborate 1998 security/cleaning claims; inspect *IRON CITY* item by item.
+- [ ] Next: develop a dated 1996–1999 claim ledger from contemporary reports and first-person oral history, keeping all quantitative claims attributed until independently verified.
