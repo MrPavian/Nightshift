@@ -1,0 +1,718 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nightshift.example/contracts/ingrid-research-record.v1.schema.json",
+  "title": "NIGHTSHIFT INGRID Research Record Manifest",
+  "description": "Provenance-aware research manifest. It stores archive records and research claims; it is not a production style or image-training schema.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "source",
+    "records",
+    "dateClaims",
+    "sourceAnnotations",
+    "normalizedMappings",
+    "observations",
+    "duplicateRelations",
+    "rightsDecisions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "minItems": 1
+    },
+    "dateClaims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dateClaim"
+      }
+    },
+    "sourceAnnotations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceAnnotation"
+      }
+    },
+    "normalizedMappings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/normalizedMapping"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "researchClaims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/researchClaim"
+      }
+    },
+    "duplicateRelations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/duplicateRelation"
+      }
+    },
+    "rightsDecisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rightsDecision"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "sourceName",
+        "sourceVersion",
+        "retrievedAt"
+      ],
+      "properties": {
+        "sourceId": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceRecordUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceVersion": {
+          "type": "string"
+        },
+        "snapshotDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "sourceLicenseStatement": {
+          "type": "string"
+        },
+        "sourceDocumentationUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievalMethod": {
+          "type": "string"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "recordId",
+        "sourceRecordId",
+        "sourceEntityType",
+        "parentRecordIds",
+        "relatedRecordIds"
+      ],
+      "properties": {
+        "recordId": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceEntityType": {
+          "enum": [
+            "photo",
+            "graffiti",
+            "partialGraffiti",
+            "photoSeries",
+            "imageFile",
+            "city",
+            "collection",
+            "crew",
+            "personOrAlias",
+            "unknown"
+          ]
+        },
+        "parentRecordIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "relatedRecordIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "sourcePayloadHash": {
+          "type": "string"
+        },
+        "sourceVersion": {
+          "type": "string"
+        },
+        "recordStatus": {
+          "enum": [
+            "active",
+            "withdrawn",
+            "inaccessible",
+            "superseded",
+            "unknown"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "dateClaim": {
+      "type": "object",
+      "required": [
+        "dateClaimId",
+        "subjectRecordId",
+        "dateKind",
+        "precision",
+        "source",
+        "certainty"
+      ],
+      "properties": {
+        "dateClaimId": {
+          "$ref": "#/$defs/id"
+        },
+        "subjectRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "dateKind": {
+          "enum": [
+            "photoRecordingDate",
+            "graffitiCreationDate",
+            "sourcePublicationDate",
+            "annotationDate",
+            "archiveImportDate",
+            "researchObservationDate"
+          ]
+        },
+        "value": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "day",
+            "month",
+            "year",
+            "decade",
+            "range",
+            "unknown"
+          ]
+        },
+        "source": {
+          "enum": [
+            "contributor",
+            "actant",
+            "archive",
+            "publication",
+            "researcher",
+            "system",
+            "unknown"
+          ]
+        },
+        "certainty": {
+          "enum": [
+            "confirmed",
+            "attributed",
+            "estimated",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "evidenceRef": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "value"
+              ]
+            },
+            {
+              "required": [
+                "start",
+                "end"
+              ]
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true
+    },
+    "sourceAnnotation": {
+      "type": "object",
+      "required": [
+        "annotationId",
+        "archiveRecordId",
+        "sourceFieldName",
+        "annotationDepth",
+        "annotatorProvenance"
+      ],
+      "properties": {
+        "annotationId": {
+          "$ref": "#/$defs/id"
+        },
+        "archiveRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "categoryPath": {
+          "type": "string"
+        },
+        "sourceFieldName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceValueId": {
+          "type": "string"
+        },
+        "sourceValueLabel": {
+          "type": "string"
+        },
+        "sourceFreeText": {
+          "type": "string"
+        },
+        "annotationDepth": {
+          "enum": [
+            "basic",
+            "inDepth",
+            "unknown"
+          ]
+        },
+        "annotatorProvenance": {
+          "enum": [
+            "contributor",
+            "annotator",
+            "system",
+            "unknown"
+          ]
+        },
+        "sourceConfidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sourceManualVersion": {
+          "type": "string"
+        },
+        "sourceAnnotationDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "sourceCitation": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "normalizedMapping": {
+      "type": "object",
+      "required": [
+        "mappingId",
+        "archiveRecordId",
+        "sourceCategoryPath",
+        "targetConceptId",
+        "mappingRelation",
+        "mappingVersion"
+      ],
+      "properties": {
+        "mappingId": {
+          "$ref": "#/$defs/id"
+        },
+        "archiveRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceCategoryPath": {
+          "type": "string"
+        },
+        "sourceValueId": {
+          "type": "string"
+        },
+        "sourceValueLabel": {
+          "type": "string"
+        },
+        "targetConceptId": {
+          "$ref": "#/$defs/id"
+        },
+        "mappingRelation": {
+          "enum": [
+            "exact",
+            "closeMatch",
+            "broader",
+            "narrower",
+            "related",
+            "unmapped"
+          ]
+        },
+        "mappingRationale": {
+          "type": "string"
+        },
+        "mappingVersion": {
+          "type": "string"
+        },
+        "reviewedBy": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "observationId",
+        "archiveRecordId",
+        "observerId",
+        "observedAt",
+        "observationMode",
+        "featureId",
+        "visibility",
+        "confidence",
+        "reviewerStatus"
+      ],
+      "properties": {
+        "observationId": {
+          "$ref": "#/$defs/id"
+        },
+        "archiveRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "imageRefId": {
+          "type": "string"
+        },
+        "observerId": {
+          "$ref": "#/$defs/id"
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "observationMode": {
+          "enum": [
+            "visual",
+            "textual",
+            "documentary",
+            "comparative"
+          ]
+        },
+        "featureId": {
+          "$ref": "#/$defs/id"
+        },
+        "value": {},
+        "valueType": {
+          "type": "string"
+        },
+        "visibility": {
+          "enum": [
+            "clear",
+            "partial",
+            "obscured",
+            "notAssessable"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "evidenceNote": {
+          "type": "string"
+        },
+        "imageRegion": {
+          "type": "object",
+          "properties": {
+            "coordinateSystem": {
+              "type": "string"
+            },
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "height": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "coordinateSystem",
+            "x",
+            "y",
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "reviewerStatus": {
+          "enum": [
+            "unreviewed",
+            "reviewed",
+            "disputed",
+            "accepted",
+            "rejected"
+          ]
+        },
+        "reviewerNote": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "researchClaim": {
+      "type": "object",
+      "required": [
+        "claimId",
+        "claimText",
+        "claimType",
+        "supportingObservationIds",
+        "counterEvidenceIds",
+        "scope",
+        "confidence",
+        "status"
+      ],
+      "properties": {
+        "claimId": {
+          "$ref": "#/$defs/id"
+        },
+        "claimText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claimType": {
+          "enum": [
+            "historical",
+            "stylistic",
+            "regional",
+            "technical",
+            "contextual"
+          ]
+        },
+        "supportingObservationIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "supportingSourceAnnotationIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "counterEvidenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "scope": {
+          "enum": [
+            "object",
+            "writerAttributedCorpus",
+            "collection",
+            "city",
+            "region",
+            "period"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "contested"
+          ]
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "underReview",
+            "accepted",
+            "rejected",
+            "superseded"
+          ]
+        },
+        "author": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "duplicateRelation": {
+      "type": "object",
+      "required": [
+        "relationId",
+        "subjectRecordId",
+        "objectRecordId",
+        "relation",
+        "source"
+      ],
+      "properties": {
+        "relationId": {
+          "$ref": "#/$defs/id"
+        },
+        "subjectRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "objectRecordId": {
+          "$ref": "#/$defs/id"
+        },
+        "relation": {
+          "enum": [
+            "exact",
+            "near",
+            "relatedView",
+            "unknown"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "similarityScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reviewStatus": {
+          "enum": [
+            "unreviewed",
+            "confirmed",
+            "rejected",
+            "disputed"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "rightsDecision": {
+      "type": "object",
+      "required": [
+        "rightsDecisionId",
+        "imageRefId",
+        "intendedUse",
+        "decision",
+        "decisionDate"
+      ],
+      "properties": {
+        "rightsDecisionId": {
+          "$ref": "#/$defs/id"
+        },
+        "imageRefId": {
+          "$ref": "#/$defs/id"
+        },
+        "intendedUse": {
+          "enum": [
+            "research",
+            "citation",
+            "teaching",
+            "editorPreview",
+            "marketing",
+            "training",
+            "redistribution"
+          ]
+        },
+        "decision": {
+          "enum": [
+            "allowed",
+            "allowedWithConditions",
+            "permissionRequired",
+            "prohibited",
+            "unresolved"
+          ]
+        },
+        "legalBasis": {
+          "type": "string"
+        },
+        "licenseUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "attributionRequirements": {
+          "type": "string"
+        },
+        "shareAlikeRequirements": {
+          "type": "string"
+        },
+        "thirdPartyRightsCheck": {
+          "enum": [
+            "passed",
+            "failed",
+            "notChecked",
+            "unknown"
+          ]
+        },
+        "decisionOwner": {
+          "type": "string"
+        },
+        "decisionDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "evidenceUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "expiryOrReviewDate": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
