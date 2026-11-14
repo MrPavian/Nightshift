@@ -246,3 +246,82 @@ A Bochum municipal youth-services report documents the legal-wall programme's po
 - Digitised academic source with caption “Graffiti in Bochum 1982”, credited to Grajetzky et al. (2004): https://tuniproductions.com/wp-content/uploads/2021/12/Raum_fur_Soziale_Bewegungen_Paradoxien_2007-comp.pdf
 
 **Evidence rule:** participant testimony is evidence of that participant's own experience and perspective. It is not automatically evidence for the full history of a city, venue, crew or style.
+
+
+## 13. New Ruhrgebiet city pass — Hamm, Gelsenkirchen and Herne (2026-11-14)
+
+### 13.1 Hamm — a local chronology and early youth-work support
+
+HammWiki gives a concise local account:
+- Graffiti in Hamm is dated to **1988/89**.
+- The first local piece is said to have appeared in the Hammer Westen and read **SCOTT**.
+- Named local crews include **SouthHammPosse**, **ManStopArtists**, **Mafiastuffcolors** and **Downtownkrew**.
+- The **Auditorium** in the city centre and sidings at the freight yard are described as later painting locations; the latter have since been destroyed.
+- The Jugendzentrum Südstraße (now Kubus) is credited with early efforts to frame graffiti beyond illegality and with organising competitions.
+
+This is a useful local-history lead with specific names, places and dates, but HammWiki is a community-maintained source. Treat the 1988/89 date, SCOTT attribution and crew spellings as provisional until checked against contemporary photos, flyers, local press and interviews. The destroyed freight-yard setting is historical context only; do not publish access instructions or operational details.
+
+**Research task:** contact the Hamm local-history / youth-work community and seek the original SCOTT photograph, the Auditorium archive, Kubus / Südstraße event records and interviews with members of the named crews.
+
+### 13.2 Gelsenkirchen — a documented first crew and a living municipal archive trail
+
+The City of Gelsenkirchen's 2026 exhibition announcement for **“Writing my Name — Graffiti Letters by SPONK & DAN DRK”** includes unusually concrete first-person / artist-biographical information:
+- DAN DRK says that between **1991 and 1994** he formed the city's first graffiti crew with ONIX, WIXONE and SEK: **DRK — Die RappelKannen**.
+- The early phase is described as an intensive, exclusively illegal period.
+- From **1993**, DAN and crew members also moved into legal and socially engaged projects.
+- Early official works named include a Schalke-themed graffiti at the fan pub on Uechtingstraße and a “Stoppt die Gewalt” memorial at Gesamtschule Berger Feld.
+- From 1997 he received commissions beyond the region, including work on Love Parade sound-system trucks in Berlin.
+- The exhibition paired DAN DRK with SPONK and was hosted by werkstatt e.V. from January to March 2026.
+
+This is a strong lead because the municipal page names people, crew, date range, activity shift and works. Still, it is a retrospective artist biography published for an exhibition, not an independently verified contemporary crew record. Seek DAN's original photographs, sketches and crew documentation, and cross-check the 1991–94 dates.
+
+The city's Streetart page also identifies a likely oldest surviving graffiti at the Grillo-Gymnasium, restored in 2023, and documents supported contemporary projects in Bismarck, Buer and around the main station. It is a promising municipal route into local image provenance and preservation history. Do not assume the restored work is hip-hop Writing until its date, authorship and original context are established.
+
+### 13.3 Herne — contemporary bridge between early Berlin and Ruhrgebiet writing
+
+The City of Herne's official graffiti page documents a 2025 wall at Schlachthofstraße / Herne-Wanne. It was produced in cooperation with Pottporus and lists:
+- Berlin: POET, KHAN and FLASH;
+- Ruhrgebiet: SNOB, 2LATE and TEACH.
+
+The city's description explicitly frames the wall as a meeting of classic early-generation Berlin Style Writing and New-School Ruhrgebiet elements, with abstracted letters contrasted against illustrative / comic-like wall painting.
+
+This is not evidence for Herne's early scene history. It is, however, a rare municipal description of a deliberate cross-generational and cross-regional stylistic encounter. It can be used as a contemporary case study of how regional writing languages are consciously combined.
+
+### 13.4 Pottporus — a key contemporary regional institution
+
+Pottporus states that since **2007** it has worked from the Ruhrgebiet across hip-hop culture, including urban-arts festivals, battles, public-space graffiti initiatives, concerts, exhibitions and youth projects. It describes itself as internationally networked and works with artists, theatres, municipal partners and communities.
+
+Pottporus is a valuable institutional contact for:
+- oral-history leads and regional artist networks;
+- historic and contemporary jam documentation;
+- legal-wall projects and public commissions;
+- the relationship between graffiti writing and wider urban arts;
+- potential expert review of NIGHTSHIFT's educational taxonomy.
+
+It should not be treated as a proxy for the whole Ruhrgebiet scene. Its programme is one important institutional lens.
+
+## 14. Updated regional comparison — working evidence map
+
+| City | Earliest current lead | Specific evidence | Current confidence |
+|---|---:|---|---|
+| Dortmund | 1983 | TUF, contemporary 1987 book, 1989 press, scholarly chronology | Strong |
+| Bochum | 1982 caption | A photo caption in a digitised academic publication; context unresolved | Low / lead only |
+| Essen | 1992 object lead | Competing origin accounts; attributed youth-centre piece; oral-history seminar | Moderate-low |
+| Hamm | 1988/89 | SCOTT, named crews, Auditorium, youth-centre competitions | Moderate-low; community source |
+| Gelsenkirchen | 1991 | DRK / Die RappelKannen, named members, early legal projects | Moderate; municipal retrospective bio |
+| Witten | early/mid-1990s context | Bunkerwelt, first-person interview, 2021 jam documentation; graffiti-specific history incomplete | Moderate for hip-hop network, low for Writing chronology |
+| Herne | contemporary documented project | 2025 Berlin–Ruhrgebiet collaboration, artist names and stylistic framing | Strong for current project, no early-history claim |
+| Duisburg | current legal-wall lead | Landschaftspark legal painting context | Low for historical Writing |
+
+**Important:** “earliest current lead” is not a definitive first. It is the earliest date currently surfaced in this source pass and may change as contemporary archives are found.
+
+## 15. Sources — Hamm, Gelsenkirchen, Herne and Pottporus
+
+- HammWiki, “Graffiti in Hamm” (community-maintained local history; last edit 2020): https://www.hammwiki.info/wiki/Graffiti_in_Hamm
+- City of Gelsenkirchen, “Writing my Name — Graffiti Letters by SPONK & DAN DRK” (2026 exhibition announcement and artist biography): https://www.gelsenkirchen.de/de/_meta/veranstaltungskalender/93625-writing-my-name-graffiti-letters-by-sponk-dan-drk
+- City of Gelsenkirchen, Streetart / urban art and restored historic graffiti: https://www.gelsenkirchen.de/de/Kultur/Bildende_Kunst__Literatur__Tanz/Streetart/index.aspx
+- City of Herne, “Graffiti und Street Art in Herne”, including the 2025 Schlachthofstraße collaboration: https://www.herne.de/Kultur-und-Freizeit/Kulturorte/Graffiti/
+- Pottporus, institutional history and regional urban-arts programme (since 2007): https://www.pottporus.de/
+- Ruhrbarone, Mason / RIO exhibition and publication “RIO — The Process of Writing” (2023): https://www.ruhrbarone.de/der-alte-wartesaal-in-herne-zeigt-werkschau-des-graffiti-kuenstlers-mason/219616/
+
+**Research boundary:** contemporary commissioned murals, legal-wall programmes, historic Sgraffiti and hip-hop Style Writing are separate categories. Do not classify a restored school mural, a 1950s Sgraffito or a modern public commission as a graffiti-writing piece without evidence of the practice and context.
