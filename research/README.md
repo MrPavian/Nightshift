@@ -77,6 +77,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable procedural variant generator contract v1](../contracts/procedural-variant-generator.v1.json)
 - [Visual Calibration and Comparative Evaluation 01](VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md)
 - [Machine-readable visual calibration contract v1](../contracts/visual-calibration.v1.json)
+- [Proof-Sheet and Test-Fixture Infrastructure 01](PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md)
+- [Machine-readable proof-sheet fixture registry v1](../contracts/proof-sheet-fixtures.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -201,3 +203,8 @@ Added the generator-core specification for immutable generation requests, glyph-
 ### 2026-11 — Visual calibration and comparative evaluation
 
 Added a controlled comparison protocol for calibrating parameter bounds, geometry thresholds and generator diversity/ranking. It extends the existing glyph visual review rubric without replacing it. The protocol preserves individual reviewer ratings and disagreement, requires fixed render conditions and reproducible specimen metadata, and prevents uncalibrated values from becoming production controls. Added a machine-readable calibration contract.
+
+
+### 2026-11 — Proof-sheet and test-fixture infrastructure
+
+Added a reproducible run-manifest specification and fixture registry for 26 isolated glyphs, 12 existing pairs, 8 existing synthetic words and four grammar families. The registry preserves current glyph maturity and labels provisional pair/word coverage as partial. It defines eight proof-sheet families, immutable artifact hashes, deterministic inputs and explicit human-review gates. No proof images or visual approvals are claimed.
