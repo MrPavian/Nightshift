@@ -342,3 +342,5 @@
 - Recorded catalogue metadata and displayed holding status separately from inspected publication content and image reuse rights.
 - Documented the MCL's closed-stack/reference-library access model and the live OPAC server limitation encountered during this pass.
 - Left serial-title holdings unconfirmed pending exact-title/issue searches against a functioning catalogue.
+
+- Follow-up exact-title search identified the MCL holding *Stylefile — blackbook — sessions* (record 0003185, 2003); classified as a book, not a *Stylefile Magazin* issue.
