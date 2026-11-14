@@ -71,3 +71,21 @@ The prototype currently uses browser local storage for its local blackbook archi
 - Negative-space diagnostics must be derived from actual rendered geometry, not a formula based only on slider values.
 - Four generated variants must be structurally distinct, not cosmetic recolors.
 - SVG export must preserve the selected design without relying on external runtime state.
+
+
+## Updated implementation direction — Claude + integrated Three.js
+
+The production generator is planned for implementation with Claude. The existing 0.6 standalone HTML file is a reference prototype and audit target, not the architecture to extend indefinitely.
+
+Three.js is to be integrated into the actual generator workflow: interactive composition, scene-aware rendering and spatial presentation should be part of the same product rather than a separate decorative preview panel. Keep the glyph/letter construction model independent of transient scene state so geometry can be edited, tested and exported reliably.
+
+The project still needs editable vector geometry and SVG interoperability. HTML may provide the browser application shell; JSON may carry versioned project data, seeds, glyph variants and relationship graphs. Neither HTML nor JSON alone defines the generator architecture. The implementation brief for Claude should specify the responsibilities and interfaces between:
+
+1. **Glyph/construction model:** semantic parts, contours, counters, junctions, anchors and constraints.
+2. **Composition engine:** word layout, pair relationships, overlap, negative-space and legibility checks.
+3. **Three.js interaction/rendering:** live composition view, spatial preview, materials, lighting, camera and scene integration.
+4. **Vector interchange:** editable geometry and faithful SVG export/import where supported.
+5. **Project persistence:** versioned, reproducible project data and stable assets.
+
+Do not assume that Three.js replaces the need for a semantic glyph model or reliable vector export. Equally, do not reduce Three.js to a texture preview detached from the composition editor.
+
