@@ -179,3 +179,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Verified the Martha Cooper Library collection scope and access model; did not claim specific German titles are held without item-level OPAC evidence.
 - [x] Added ten regression fixtures and indexed the dossier.
 - [ ] Next: title-level bibliography for Hamburg serials; compare DECADES Vol. 2/3; exact MCL OPAC searches; source-level profile revisions only where claim support is explicit.
+
+
+
+## W02.12 — Hamburg scene magazine bibliography (2026-11-14)
+
+- [x] Added source-graded bibliography for Daily Bombs, Dosenspuk, Beastie Boyz, BACKSPIN, Sketches and Rock 'n' Roller.
+- [x] Recorded attributed editor periods, available publication-run descriptions and issue-history claims.
+- [x] Preserved BACKSPIN first-issue date conflict (1993 timeline vs August 1994 issue-history/founder evidence).
+- [x] Added Hamburg serial-publication regression fixtures.
+- [ ] Next: compare DECADES Vol. 2 and Vol. 3; inspect issue-level records for Hamburg serials; search MCL OPAC by exact title and record item identifiers.
