@@ -221,3 +221,8 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 
 - [A/B/G/R/S Glyph Construction Implementation Specification 01](ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) — Claude-ready construction handoff for exact legacy import, provisional semantic components, topology, anchors, registered operations, Three.js command interaction and acceptance fixtures.
 - Machine-readable contract: [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json).
+
+
+## Specification integration audit
+
+- [Specification Integration Audit 01](SPECIFICATION_INTEGRATION_AUDIT_01.md) — cross-check of the A/B/G/R/S handoff against the canonical contracts, including the G aperture classification gate and operation registry verification.
