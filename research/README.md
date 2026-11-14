@@ -511,3 +511,8 @@ Inspected the official INGRID-KG SPARQL query catalogue and upstream RDF-convers
 ### INGRID ontology audit update
 
 - [INGRID Regional SPARQL Query Pack 01](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md) — updated with direct inspection of the published ontology and current upstream RDF converter; records the precise namespace and style-element spelling inconsistencies, the Zenodo snapshot route and remaining live-graph verification blocker.
+
+
+## National German scene comparison — Munich, Stuttgart, Berlin / GDR and Hamburg
+
+- [German Writing Scenes — Munich, Stuttgart, Berlin / East Germany and Hamburg 01](GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md) — source-graded first synthesis of early scene chronologies, train culture, regional networks, Berlin/GDR distinctions, Hamburg's publication archive and neutral editor research questions.
