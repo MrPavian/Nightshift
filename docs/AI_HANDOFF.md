@@ -20,6 +20,7 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 - `docs/CLAUDE_IMPLEMENTATION_BRIEF_0_7.md` — phased production implementation handoff and acceptance criteria.
 - `docs/ROADMAP.md` — main engine priorities and acceptance criteria.
 - `docs/STYLE_TAXONOMY.md` — terminology and research discipline.
+- `research/STYLE_GRAMMAR_SPECIFICATIONS_01.md` — evidence-led construction and composition grammars for the first four profiles.
 - `docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md` — full archive product and implementation brief.
 - `docs/BLACKBOOK_ARCHIVE_ROADMAP.md` — archive phases and release gates.
 - `docs/DECISIONS.md` — agreed decisions.
