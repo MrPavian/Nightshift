@@ -95,3 +95,8 @@ Working description: lettering that uses constructed depth, perspective or extru
 4. **Museum of the City of New York**, Above Ground: Art from the Martin Wong Graffiti Collection. https://www.mcny.org/exhibition/above-ground-art-martin-wong-graffiti-collection. [A]
 
 **Open research tasks:** deepen period-specific evidence for bubble/throw-up, blockbuster and straight-letter forms; compare visual examples across boroughs and decades; collect practitioner testimony about terminology.
+
+
+## Cross-reference: Research Synthesis 01
+
+For the connected historical argument, source hierarchy, terminology cautions and NIGHTSHIFT data-model implications, see [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md). It cross-links the current topic with oral histories, subway formats, style development and generator design.
