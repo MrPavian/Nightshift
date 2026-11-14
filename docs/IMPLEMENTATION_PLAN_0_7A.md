@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 (reconnaissance) · includes the completion report for 0.7A-T02  
 **Author:** Claude (implementation role per D-009)  
 **Date:** 2026-11-14  
-**Status:** T01–T05 complete · T06–T07 not started
+**Status:** T01–T06 complete · T07 not started
 
 ## 1. Repository reconnaissance (facts at commit `585715d`)
 
@@ -46,7 +46,7 @@
 | ThreeEditorAdapter | `src/editor/three-glyph.js` (meshes, T05 done); interaction adapter T07 |
 | EditCommandBus | `src/model/commands.js` | T07 |
 | ProjectSerializer | `src/project/serializer.js` | T07 (registry serialization already round-trips) |
-| DiagnosticRunner / proof sheets | `src/proof/` | T06 |
+| DiagnosticRunner / proof sheets | `src/proof/` (`specimens.js`, `plates.js`, `run.js`, `review.js`), `tools/proof-run.mjs` | **T06 done** |
 | StyleGrammarRegistry, CompositionSolver, RelationshipGraph | — | 0.7B / 0.8A |
 
 Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.js`.
@@ -138,3 +138,25 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 | Maturity | Unchanged (`authored-contour`). Automated proof does not count as render review. |
 | Not done | Extrusion/depth, inline, highlights and other finish passes (explicit non-goals of T05); SVG import; the stroke-outline pass is in SVG only. |
 | Next | **0.7A-T06** neutral proof sheets and review package (pair/word fixtures). |
+
+## 10. T06 completion report
+
+| Item | Result |
+|---|---|
+| Status | **complete** |
+| Files | `src/proof/specimens.js`, `src/proof/plates.js`, `src/proof/run.js`, `src/proof/review.js`, `tools/proof-run.mjs`, `docs/reports/proof/T06/` (manifest, checksums, 4 plates, 16 validation reports, review template, `ratings.json`), `review/index.html`, `review/app.js`, `tools/review-smoke.mjs`, `.github/workflows/ci.yml`, `tests/proof.test.js`, `tests/review-page.test.js` |
+| Tests | `npm test`: **86 passed, 0 failed** · `npm run test:browser`: SMOKE-PASS + REVIEW-PAGE-PASS · `npm run proof:render`: PROOF-PASS |
+| Run | `run.0.7A-T06.1693b6ee52ef`. Manifest has every field `contracts/proof-sheet-run.v1.json` requires; `sourceRevision` is the SHA-256 of the serialized registry (content-addressed, so re-running after a commit does not churn). No timestamps or randomness are inputs (`rootSeed: 0`, documented). |
+| Plates | `glyph-identity` (A/B/G/R/S native + 0.18× thumbnail), `semantic-topology` (component proposals coloured per candidate segment, counters, junction candidates, G aperture flag, validator summary), `pair-context` (12 pairs), `word-context` (8 words). SVG, viewable directly on GitHub. Every plate carries the run ID and its specimen IDs. |
+| Fixtures | All 12 pairs and 8 words from `contracts/proof-sheet-fixtures.v1.json`; computed coverage equals the contract coverage for every fixture (tested). |
+| Partial coverage | Provisional letters render grey; letters that cannot be rendered (D, O: undeclared topology; Q: invalid topology) keep their slot as a red dashed **missing — provisional** box with the reason in the manifest. Nothing is dropped silently. |
+| Layout | `neutral-naive-layout/1.0.0`: fixed 12-unit gap between visible bounds. Labelled on every context plate; it is not designed spacing (no relationship solver yet). |
+| Reproducibility | Identical inputs reproduce run ID, specimen IDs, plates and hashes byte-for-byte; changing one glyph's geometry changes only the specimens that contain it (tested). CI checks that committed artifacts are current. |
+| Review | Review records are separate from automated results (`review/ratings.json`, human-owned, never overwritten by the runner). Validation implements the protocol rubric: 10 dimensions 0–3 or cannot-judge; identity/topology 0 or an open critical defect blocks `pass`; any score 1 needs a defect; stale geometry or a foreign run is rejected. `proposeMaturity()` only returns a proposal (`applied: false`). |
+| Not implemented (declared in manifest) | parameter-sweep, grammar-comparison, finish-isolation, boundary-regression proof families; blind-review aliases. |
+
+## 11. Test & review page
+
+`review/index.html` runs the real pipeline in the browser without a build step: live A–Z grid (import → validation → render, with refusal reasons), detail view with SVG (light/dark/texture, diagnostics) and a rotatable Three.js viewport, a word tester (naive layout), the committed T06 plates, and the review form (exports `ratings.json`). Three.js comes from `node_modules` on localhost and from the pinned jsDelivr copy (`three@0.187.0`) elsewhere; a test keeps both versions equal.
+
+Run locally: `npm install`, then serve the repository root (e.g. `python3 -m http.server`) and open `http://localhost:8000/review/`.

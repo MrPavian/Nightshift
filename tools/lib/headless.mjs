@@ -29,5 +29,5 @@ export async function chrome(args, { timeout = 120000 } = {}) {
   return stdout;
 }
 
-export const preText = (dom, id) => dom.match(new RegExp(`<pre id="${id}">([^<]*)</pre>`))?.[1]
+export const preText = (dom, id) => dom.match(new RegExp(`<pre id="${id}"[^>]*>([^<]*)</pre>`))?.[1]
   ?.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&') ?? null;

@@ -324,3 +324,13 @@
 - Added `three@0.187.0` as a pinned dependency used only in `src/editor/` (D-012).
 - Tests: 72 passing.
 
+
+## 2026-11-14 — 0.7A-T06: proof sheets, review package and test page
+
+- Proof run `run.0.7A-T06.1693b6ee52ef` in `docs/reports/proof/T06/`: manifest per contract, checksums, per-glyph validation reports, SVG plates (glyph identity + thumbnails, semantic/topology diagnostics, 12 pair and 8 word fixtures). `npm run proof:run`.
+- Mixed fixtures are marked `partial-provisional-coverage`; unrenderable provisional letters (D, O, Q) appear as explicit missing slots with reasons.
+- Review records (`src/proof/review.js`): protocol rubric enforced, review stored separately from automated results, maturity only proposed, never applied.
+- Build-free test & review page `review/index.html` (live A–Z, SVG + Three.js viewer, word tester, plates, review form with JSON export).
+- GitHub Actions CI (`.github/workflows/ci.yml`): unit tests, artifact freshness checks, headless-browser tests.
+- Tests: 86 passing.
+

@@ -1,0 +1,290 @@
+{
+  "clearance": {
+    "boundarySelfProximity": [
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            8,
+            91
+          ],
+          [
+            34,
+            91
+          ]
+        ],
+        "featureId": "glyph.A.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 26,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.01",
+          "glyph.A.contour.outer.seg.08"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            8,
+            111.5
+          ],
+          [
+            34,
+            111.5
+          ]
+        ],
+        "featureId": "glyph.A.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 26,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.01",
+          "glyph.A.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            96,
+            111.5
+          ],
+          [
+            70,
+            111.5
+          ]
+        ],
+        "featureId": "glyph.A.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 26,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.05",
+          "glyph.A.contour.outer.seg.07"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            96,
+            91
+          ],
+          [
+            70,
+            91
+          ]
+        ],
+        "featureId": "glyph.A.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 26,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.05",
+          "glyph.A.contour.outer.seg.08"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            70,
+            132
+          ],
+          [
+            34,
+            132
+          ]
+        ],
+        "featureId": "glyph.A.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 36,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.06",
+          "glyph.A.contour.outer.seg.09"
+        ],
+        "side": "unfilled"
+      }
+    ],
+    "counterWalls": [
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            55,
+            8
+          ],
+          [
+            55,
+            25
+          ]
+        ],
+        "featureId": "glyph.A.negative.counter.primary",
+        "measurementErrorBound": 0,
+        "minimumDistance": 17,
+        "segmentIds": [
+          "glyph.A.contour.outer.seg.03",
+          "glyph.A.contour.counter.primary.seg.02"
+        ],
+        "side": "filled"
+      }
+    ]
+  },
+  "diagnostics": [
+    {
+      "affectedIds": [
+        "glyph.A.contour.counter.primary"
+      ],
+      "code": "GEO_FILL_RULE_SENSITIVE",
+      "glyphId": "latin.upper.A",
+      "message": "Under nonzero fill these contours would render incorrectly; renderers must use the declared topology.",
+      "severity": "info",
+      "stage": "planar-topology-classification",
+      "variantId": "a.master"
+    },
+    {
+      "affectedIds": [
+        "glyph.A.negative.counter.primary",
+        "glyph.A.contour.outer"
+      ],
+      "code": "VAL_UNCALIBRATED",
+      "glyphId": "latin.upper.A",
+      "message": "6 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
+      "severity": "warning",
+      "stage": "clearance-analysis",
+      "variantId": "a.master"
+    }
+  ],
+  "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+  "glyphId": "latin.upper.A",
+  "hardChecksPassed": true,
+  "identityChecks": [
+    {
+      "name": "counter-enclosed",
+      "reason": "declared counter is a certified enclosed bounded face",
+      "status": "passed"
+    },
+    {
+      "name": "crossbar-connected",
+      "reason": "requires reviewed component-to-geometry mapping (components are provisional-unmapped)",
+      "status": "not-evaluable"
+    },
+    {
+      "name": "leg-connectivity",
+      "reason": "requires reviewed component-to-geometry mapping (components are provisional-unmapped)",
+      "status": "not-evaluable"
+    }
+  ],
+  "negativeSpace": {
+    "apertures": [],
+    "channels": [],
+    "counters": [
+      {
+        "area": 1032.5,
+        "boundedFace": true,
+        "contourId": "glyph.A.contour.counter.primary",
+        "id": "glyph.A.negative.counter.primary",
+        "samplePoint": [
+          52.5,
+          50.78349
+        ]
+      }
+    ]
+  },
+  "numerical": {
+    "flatteningTolerance": 0.01,
+    "maxFlatteningError": 0,
+    "refinementRounds": 0
+  },
+  "profileId": "nightshift.validator-profile.legacy-v06@1.0.0",
+  "stages": [
+    {
+      "stage": "schema-and-reference-integrity",
+      "status": "passed"
+    },
+    {
+      "stage": "curve-normalization",
+      "status": "passed"
+    },
+    {
+      "stage": "geometric-degeneracy",
+      "status": "passed"
+    },
+    {
+      "stage": "contour-intersection-analysis",
+      "status": "passed"
+    },
+    {
+      "stage": "planar-topology-classification",
+      "status": "passed"
+    },
+    {
+      "stage": "negative-space-classification",
+      "status": "passed"
+    },
+    {
+      "stage": "clearance-analysis",
+      "status": "measured-uncalibrated"
+    },
+    {
+      "note": "No anchors declared (anchorStatus: not-yet-derived).",
+      "stage": "anchor-validation",
+      "status": "not-run"
+    },
+    {
+      "stage": "glyph-identity-invariants",
+      "status": "partial"
+    },
+    {
+      "note": "No renderer exists yet (T05).",
+      "stage": "derived-render-consistency",
+      "status": "not-run"
+    }
+  ],
+  "topology": {
+    "connectedComponents": 1,
+    "containment": [
+      {
+        "contourId": "glyph.A.contour.outer",
+        "parent": null
+      },
+      {
+        "contourId": "glyph.A.contour.counter.primary",
+        "parent": "glyph.A.contour.outer"
+      }
+    ],
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
+    "facePoints": {
+      "glyph.A.contour.counter.primary": {
+        "margin": 15.032064,
+        "point": [
+          52.5,
+          50.78349
+        ]
+      },
+      "glyph.A.contour.outer": {
+        "margin": 13.5,
+        "point": [
+          21.5,
+          50.014141
+        ]
+      }
+    },
+    "fillRules": {
+      "evenodd": {
+        "mismatchedContours": [],
+        "reproducesDeclaredTopology": true
+      },
+      "nonzero": {
+        "mismatchedContours": [
+          "glyph.A.contour.counter.primary"
+        ],
+        "reproducesDeclaredTopology": false
+      }
+    }
+  },
+  "validatorVersion": "geometry-validator/1.0.0",
+  "variantId": "a.master"
+}

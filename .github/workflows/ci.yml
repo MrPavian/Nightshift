@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'claude/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Unit and acceptance tests
+        run: npm test
+      - name: Generated artifacts are up to date
+        run: |
+          node tools/extract-v06-paths.mjs --check
+          node tools/report-topology.mjs --check
+          node tools/report-validation.mjs --check
+          node tools/proof-run.mjs --check
+      - name: Browser tests (headless Chrome)
+        run: |
+          CHROME=$(command -v google-chrome || command -v chromium) npm run -s test:browser
+          CHROME=$(command -v google-chrome || command -v chromium) node tools/render-proof.mjs --no-capture
