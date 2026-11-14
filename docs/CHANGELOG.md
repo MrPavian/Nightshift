@@ -85,3 +85,10 @@
 - Added a handstyle dossier covering gesture trajectories, stroke order, velocity, motor dynamics and gesture-first versus shape-first generation.
 - Grounded movement-centric findings in Daniel Berio and Frederic Fol Leymarie’s computational research; explicitly labelled pair-logic rules as NIGHTSHIFT engineering hypotheses.
 - Updated the research index and related-file links.
+
+
+## Research deepening — alphabet test matrix and glyph variants
+
+- Added a 26-letter structural test matrix and per-glyph construction checklist.
+- Defined synthetic regression words, glyph-level and word-level acceptance criteria, provenance fields and a staged implementation sequence.
+- Grounded computational methods in Berio et al.'s StrokeStyles and AutoGraff research while clearly separating NIGHTSHIFT design inference from historical claims.
