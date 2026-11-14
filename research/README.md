@@ -79,6 +79,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Machine-readable visual calibration contract v1](../contracts/visual-calibration.v1.json)
 - [Proof-Sheet and Test-Fixture Infrastructure 01](PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md)
 - [Machine-readable proof-sheet fixture registry v1](../contracts/proof-sheet-fixtures.v1.json)
+- [Glyph Construction Pipeline 01 — Semantic Model to Three.js](GLYPH_CONSTRUCTION_PIPELINE_01.md)
+- [Machine-readable glyph construction pipeline contract v1](../contracts/glyph-construction-pipeline.v1.json)
 - [Machine-readable editor interaction contract v1](../contracts/editor-interaction.v1.json)
 - [Machine-readable geometry validation contract v1](../contracts/glyph-geometry-validation.v1.json)
 - [Machine-readable glyph parameter contract v1](../contracts/glyph-parameter-contract.v1.json)
@@ -208,3 +210,8 @@ Added a controlled comparison protocol for calibrating parameter bounds, geometr
 ### 2026-11 — Proof-sheet and test-fixture infrastructure
 
 Added a reproducible run-manifest specification and fixture registry for 26 isolated glyphs, 12 existing pairs, 8 existing synthetic words and four grammar families. The registry preserves current glyph maturity and labels provisional pair/word coverage as partial. It defines eight proof-sheet families, immutable artifact hashes, deterministic inputs and explicit human-review gates. No proof images or visual approvals are claimed.
+
+
+### 2026-11 — Glyph construction pipeline
+
+Added a staged construction pipeline from stable glyph definition and semantic graph through registered operations, editable vector geometry, topology/identity validation, metrics/anchors, glyph instances, Three.js scene adaptation, typed-command interaction and persistence. The first implementation slice is limited to A/B/G/R/S, preserves exact legacy snapshots, and prohibits uncalibrated production controls. Added a machine-readable contract.
