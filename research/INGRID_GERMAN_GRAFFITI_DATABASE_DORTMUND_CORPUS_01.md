@@ -126,3 +126,33 @@ Use INGRID's fields as a discovery and comparison framework, not as a replacemen
 **Do not conflate:** graffiti type is not lettering style; lettering style is not a list of design elements; directionality is not letter slant; image context is not the same as a writer's social network; technique is not inferred solely from appearance if the evidence is ambiguous.
 
 This crosswalk is a proposed NIGHTSHIFT research aid. It does not claim that the current editor implements these categories.
+
+
+## Critical update — exact collection coverage, corpus figures and license layers (W02.31)
+
+The official INGRID “Bestand” page provides a more precise inventory snapshot than the project's short landing-page headline:
+
+- approximately **150,000 images** across collections;
+- **99,962** images fully processed with basic and/or deep annotation and released for scientific use (status July 2023);
+- the named collections include Police Mannheim, Peter Kreuzer's Munich collection, Police Cologne, the Munich Graffiti Coordination Group and Dirk Kreckel's collection.
+
+The 2023 *Scientific Data* article reports approximately **136,000 photographs** in the database at publication time, from Mannheim, Munich, Cologne, Berlin, Leipzig, Hamm, Dortmund, Münster and Paderborn (1983–2019). It explicitly says Dirk Kreckel had photographed graffiti at important German hotspots including Dortmund for decades. This is the concrete basis for Dortmund's inclusion. It does **not** tell us how many Dortmund records exist, how many are accessible as images, or how they divide by decade/type/style.
+
+The article's graph snapshot is another dated view: its July 2022 table reports 130,689 graffiti resources, 178 cities, 451 collections and 682,748 image files. These are graph entities and linked image files, not equivalent to the official page's 150,000 photographs or 99,962 annotated images. Preserve the metrics with their dates and definitions; never combine them into one headline number.
+
+### License clarification — important for NIGHTSHIFT
+
+The 2023 article distinguishes:
+- public original image subset: **CC BY-SA 4.0**;
+- annotation metadata: **CC0**;
+- INGRID knowledge graph: **CC BY 4.0**.
+
+It also states that only a subset of photographs is public because of different contributor contracts; police-provided images from Mannheim, Munich and Cologne are not publicly visible, while Peter Kreuzer's photographs are publicly available. The official Paderborn collection page describes use under the indicated licenses for scientific purposes. For NIGHTSHIFT, metadata research and statistical analysis are the primary route. Do not bundle images in a commercial product or use them for model training merely because a public dump exists. For any product-facing image use, obtain written confirmation from INGRID / the relevant rights holder about commercial scope, attribution, ShareAlike and any third-party restrictions.
+
+### Research consequence
+
+The Dortmund-first query remains essential. The presence of Dortmund in the 2023 corpus does not guarantee that the relevant images are all publicly visible in the EasyDB interface or the public dump. First measure the city sample and its annotation coverage; then decide which visual research can be performed from accessible records.
+
+Sources:
+- Official collection inventory: https://www.uni-paderborn.de/forschungsprojekte/ingrid/bestand
+- Sherif et al. (2023): https://www.nature.com/articles/s41597-023-02199-8
