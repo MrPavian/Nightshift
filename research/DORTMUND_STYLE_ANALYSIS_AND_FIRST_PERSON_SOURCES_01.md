@@ -117,3 +117,8 @@ The generator should represent these as independent, source-backed dimensions (c
 ## Documentary access update — 2026-11-14
 
 The original ARTE page cited in the chapter currently returns an unavailable response, but two English-subtitled uploads of the documentary series are indexed through Spray Daily: [Dortmund, Berlin & Frankfurt](https://www.spraydaily.com/the-rise-of-graffiti-writing-dortmund-berlin-frankfurt/) and [Writing on Trains: Dortmund & Frankfurt](https://www.spraydaily.com/the-rise-of-graffiti-writing-writing-on-trains-dortmund-frankfurt-english-subtitles/). See [Dortmund Oral History — Documentary Episode Access Map 01](DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md). The videos have not yet been watched or transcribed in this pass.
+
+
+## Longitudinal publication cross-reference
+
+For the regional 1996 visual/history book and MASON's 2020 four-phase catalogue, see [Dortmund — MASON and the Longitudinal Publication Corpus 01](DORTMUND_MASON_LONGITUDINAL_PUBLICATION_CORPUS_01.md). These are separate source layers and neither makes MASON's individual signature a generic Dortmund style.
