@@ -34,6 +34,14 @@ Always distinguish:
 
 Terms vary across eras, boroughs, crews and individual writers. Record variation instead of forcing false universal definitions.
 
+## INGRID regional research programme
+
+Dortmund is the starting pilot, not the limit. The INGRID programme expands from Dortmund through the Ruhrgebiet and NRW into national comparison scenes. Published INGRID corpus cities include Hamm, Dortmund, Münster, Cologne and Paderborn alongside Berlin, Leipzig, Mannheim and Munich; other regional cities remain discovery targets until verified by live query. The programme treats graffiti research as continuous education in writing culture and style development, translating findings into editor requirements only after evidence review.
+
+- [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md)
+- [INGRID ontology → NIGHTSHIFT crosswalk](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+- [INGRID regional SPARQL query pack — Dortmund pilot](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
+
 ## Current research files
 
 - [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
