@@ -57,6 +57,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Handstyle, Gesture and Motor Dynamics](HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md)
 - [Alphabet Test Matrix and Glyph Variants](ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md)
 - [Glyph Construction Library](GLYPH_CONSTRUCTION_LIBRARY.md)
+- [Glyph Master Audit — Build 0.6](GLYPH_MASTER_AUDIT_V06.md)
 
 ## Status
 
@@ -93,3 +94,8 @@ Added a test-matrix dossier for all 26 Latin letters, grouping structural challe
 ### 2026-11 — Semantic glyph construction library
 
 Added a technical specification for semantic stroke graphs, primitive roles, junction/topology metadata, protected counters and apertures, width profiles, anchors, authoring workflow and validation gates. The research basis is Berio et al.'s StrokeStyles, Sketching and Layering Graffiti Primitives, and AutoGraff. The A–Z graph templates and NIGHTSHIFT data/implementation rules are explicitly marked as design inference, not historical universals.
+
+
+### 2026-11 — Build 0.6 glyph and renderer audit
+
+Audited the actual v0.6 HTML prototype, distinguishing five custom glyph path records from 21 provisional path strings. Recorded topology/fill-rule inconsistencies, background-colored counter patches, render-layer mismatches, heuristic join/time diagnostics, and style-preset limitations. Added a remediation sequence and regression matrix. Findings are code observations; recommended schema and fixes are engineering proposals, not yet applied to the prototype.
