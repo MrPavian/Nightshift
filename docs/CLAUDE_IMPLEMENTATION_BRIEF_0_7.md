@@ -48,6 +48,8 @@ Read and follow:
 - `contracts/personal-style-engine.v1.json`
 - `research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md`
 - `contracts/az-style-grammar-application.v1.json`
+- `research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md`
+- `contracts/procedural-variant-generator.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -97,6 +99,11 @@ Follow `research/PERSONAL_STYLE_ENGINE_01.md` and `contracts/personal-style-engi
 ## 3.7 A–Z grammar application
 
 Use `research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md` and `contracts/az-style-grammar-application.v1.json` to resolve grammar behavior per glyph. Do not apply one global distortion to the alphabet. The matrix maps the existing neutral structural checklist to candidate Bubble, Straight/Block and Wildstyle composition behavior; it does not claim that all variants exist. Preserve the taxonomy: Bubble/Straight are letterform grammars, Blockbuster combines straight/block construction with context/coverage, and Wildstyle Study is primarily a composition/relationship grammar. Keep the 21 provisional glyphs visibly provisional; first connect reviewed A/B/G/R/S controls, then author and review remaining masters. Rendering never substitutes for construction differences.
+
+
+## 3.8 Procedural variant generator core
+
+Follow `research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md` and `contracts/procedural-variant-generator.v1.json`. Treat generation as deterministic constrained candidate search, not random distortion. Use a versioned seeded PRNG with isolated named streams; never use ambient randomness. Build glyph-specific operation plans from the A–Z matrix and registered operation contracts. Validate glyphs, relationships and whole-word geometry before candidate ranking. Keep quality as separate dimensions with hard gates; do not use an opaque single score. D-006 requires four structurally distinct concepts, but do not force four by duplicating outputs or silently relaxing thresholds: if the candidate pool cannot meet calibrated gates, report generation exhaustion. Diversity weights, thresholds and parameter ranges require reviewed calibration data.
 
 ## 4. Current-state facts
 
