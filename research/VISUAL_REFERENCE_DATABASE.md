@@ -148,3 +148,14 @@ For each selected source image, create an analysis record before using it to inf
 ## Cross-references
 - [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md)
 - [Visual Construction Brief 01](VISUAL_CONSTRUCTION_BRIEF_01.md)
+
+
+## VR-008 — Martha Cooper Library / URBAN NATION
+- **Institution:** Stiftung Berliner Leben / URBAN NATION Museum, Berlin
+- **Scope:** Specialist library on urban art, street art and graffiti since the 1960s; focus on U.S.-tradition style writing from the 1970s onward. Collection includes Martha Cooper's donation and permanent loans, rare books, fanzines, graffiti magazines from the 1980s/1990s, monographs and scholarly literature.
+- **Record:** https://urban-nation.com/de/ueber-uns/martha-cooper-library/
+- **Value:** research gateway for New York documentation and international publication networks; catalogue should be searched for German regional material title by title.
+- **Rights:** Library access and catalogue metadata do not grant reproduction rights for photographs or publications.
+- **Caution:** confirm exact holdings and item-level access before citing a particular object.
+- **Evidence:** A for the institution's collection profile; individual item claims require catalogue records.
+
