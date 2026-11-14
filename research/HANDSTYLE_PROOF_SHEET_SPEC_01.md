@@ -15,6 +15,14 @@ AutoGraff describes a movement-centric model: shape is generated from a dynamic 
 
 NIGHTSHIFT should borrow the separable representation and testable rendering ideas, not copy AutoGraff's complete Sigma-Lognormal implementation. The first proof should use deterministic geometric primitives and explicit stroke order.
 
+## Source references and evidence boundary
+
+- Daniel Berio and Frederic Fol Leymarie, “Computational Models for the Analysis and Synthesis of Graffiti Tag Strokes” (2015), *Computational Aesthetics*, DOI: https://doi.org/10.2312/exp.20151177. The authors describe movement dynamics as a major contributor to tag style and demonstrate interactive construction, curve reconstruction and multiple synthetic instances. This supports the movement-centric representation; it does not establish that one computational model captures all handstyles.
+- Daniel Berio, Paul Asente, Jose Echevarria and Frederic Fol Leymarie, “Sketching and Layering Graffiti Primitives” (2019), *Expressive*, DOI: https://doi.org/10.2312/exp.20191076. The paper describes fold-aware stylisation and non-global layering/self-overlap in vector output. This supports explicit layer/crossing tests; it does not make any one overlap pattern historically universal.
+- Daniel Berio, *AutoGraff: towards a computational understanding of graffiti writing and related art forms* (PhD thesis, Goldsmiths, University of London, 2021), DOI: https://doi.org/10.25602/GOLD.00029999. The thesis combines stroke primitives with recovery from vector input geometry and parametric variation.
+
+Evidence boundary: the cited research is a computational-method foundation. The I/L/S/A/R fixtures, data contract, parameter list, acceptance criteria and proof-sheet design are NIGHTSHIFT engineering proposals, not historical claims or a validated universal grammar.
+
 ## Proof scope
 
 Use only abstract test glyphs and synthetic stroke paths. No real writer names, signatures, archival traces, or identifiable pieces.
