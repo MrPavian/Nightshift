@@ -179,3 +179,8 @@ See [A/B/G/R/S Glyph Construction Implementation Specification 01](../research/A
 ### Specification integration and ChatGPT work order
 
 The active research/specification sequence is tracked in [ChatGPT Work Order 02](CHATGPT_WORK_ORDER_NEXT_01.md). The initial [Specification Integration Audit 01](../research/SPECIFICATION_INTEGRATION_AUDIT_01.md) identified and clarified the G aperture import/edit gate. Claude must read this audit before implementing the first A/B/G/R/S slice.
+
+
+### Claude implementation tickets — 0.7A
+
+The first production slice is decomposed into dependency-ordered tickets in [Claude Ticket Pack 0.7A 01](CLAUDE_TICKET_PACK_0_7A_01.md): repository reconnaissance, canonical registry/import, semantic graph, geometry validator, topology-correct monochrome renderer, proof sheets and the first validated Three.js command loop. The ticket pack is a handoff, not evidence that implementation has started or passed.
