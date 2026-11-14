@@ -48,6 +48,8 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [RAMMELLZEE, Gothic Futurism and KASE 2](RAMMELLZEE_AND_KASE2_LETTER_THEORY.md)
 - [3D and Blockbuster Lettering](THREE_D_AND_BLOCKBUSTER_LETTERING.md)
 - [Women Writers in Early New York](WOMEN_WRITERS_EARLY_NEW_YORK.md)
+- [New York Subway Decline and Afterlives](NYC_SUBWAY_DECLINE_AND_AFTERLIVES.md)
+- [European Style Writing in the 1980s](EUROPEAN_STYLE_WRITING_1980S.md)
 
 ## Status
 
@@ -55,6 +57,10 @@ Initial source-backed research pass. This is a living research base, not a defin
 
 
 ## Research development log
+
+### 2026-11 — Subway transition and European development
+
+Added two historical dossiers: the New York Clean Car/Clean Train campaign and the cultural afterlives of subway writing; and the development of European style writing through Amsterdam, Paris and selected German scenes. Both distinguish institutional accounts, scholarly synthesis, practitioner recollection and game-design inference. Regional variation and chronology confidence are retained.
 
 ### 2026-11 — Deepening research dossiers
 
