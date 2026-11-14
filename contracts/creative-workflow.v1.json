@@ -1,0 +1,100 @@
+{
+  "contractId": "nightshift.creative-workflow",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "generation": {
+    "conceptsPerAction": 4,
+    "distinctnessRequired": true,
+    "cosmeticOnlyDifferenceAllowed": false,
+    "deterministic": true,
+    "conceptSnapshotsImmutable": true,
+    "regeneratePreservesPriorSets": true,
+    "dimensions": [
+      "glyph-variant-selection",
+      "glyph-structure",
+      "word-rhythm",
+      "spacing-and-slant",
+      "relationship-strategy",
+      "composition-grammar",
+      "negative-space-distribution"
+    ]
+  },
+  "assistance": {
+    "default": "suggest",
+    "modes": [
+      "off",
+      "suggest",
+      "preview"
+    ],
+    "silentAutoApply": false,
+    "manualDecisionAlwaysWins": true,
+    "previewRequiresExplicitCommit": true
+  },
+  "branching": {
+    "selectConceptCreatesBranch": true,
+    "retainSiblingConcepts": true,
+    "branchReferencesParentRevision": true,
+    "recipeApplicationCreatesProjectSnapshot": true
+  },
+  "styleRecipe": {
+    "stores": [
+      "letterformGrammars",
+      "compositionGrammars",
+      "parameterValues",
+      "variantPreferences",
+      "spacingRhythmSlantMass",
+      "relationshipPreferences",
+      "renderingPreferences",
+      "compatibilityNotes",
+      "provenance",
+      "version"
+    ],
+    "renderingSeparateFromConstruction": true,
+    "sourceArtworkImmutableOnSave": true,
+    "projectStoresResolvedRecipeSnapshot": true,
+    "lockableParameters": true,
+    "noNamedArtistSignatureCloning": true
+  },
+  "projectPersistence": {
+    "required": [
+      "projectId",
+      "schemaVersion",
+      "generatorVersion",
+      "sourceText",
+      "canvasContext",
+      "seed",
+      "generationSettings",
+      "conceptSet",
+      "selectedBranch",
+      "glyphInstances",
+      "semanticVectorGeometry",
+      "metrics",
+      "anchors",
+      "compositionGraph",
+      "transforms",
+      "layers",
+      "recipeReferences",
+      "resolvedRecipeValues",
+      "manualOverrides",
+      "historyMetadata",
+      "reviewStatus"
+    ]
+  },
+  "acceptance": [
+    "exactly-four",
+    "structural-diversity",
+    "deterministic-replay",
+    "immutable-concepts",
+    "isolated-glyph-edit",
+    "typed-atomic-commit",
+    "optional-relationships",
+    "whole-word-revalidation",
+    "no-silent-assistance",
+    "versioned-reusable-recipes",
+    "recipe-snapshot",
+    "shared-canonical-views",
+    "tutorial-layout-nondeterministic-neutral",
+    "complete-persistence",
+    "svg-parity"
+  ]
+}
