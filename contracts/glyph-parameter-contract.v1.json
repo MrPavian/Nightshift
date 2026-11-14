@@ -293,7 +293,8 @@
       "glyphId": "latin.upper.G",
       "variantFamily": "G",
       "identityInvariants": [
-        "master has an exterior-connected aperture, not an enclosed counter",
+        "intended master construction includes an exterior-connected opening that distinguishes G from C and O",
+        "legacy import must classify the aperture from validated contour topology or retain an explicit interpretation-required state",
         "bar/terminal relationship distinguishes G from C and O",
         "bar attachment is semantic, not decorative"
       ],
@@ -642,7 +643,13 @@
         "rule.identity",
         "rule.topology",
         "rule.geometry"
-      ]
+      ],
+      "preconditions": [
+        "aperture entity exists and is classified as exterior-connected",
+        "aperture boundary mapping and width measurement construction are validated",
+        "parameter calibration record is approved for this glyph/variant/context"
+      ],
+      "failureBehavior": "reject canonical commit with APERTURE_CLASSIFICATION_REQUIRED or CALIBRATION_REQUIRED; preserve prior revision"
     },
     "glyph.G.set-bar-height": {
       "writes": [
