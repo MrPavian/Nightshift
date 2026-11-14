@@ -205,3 +205,13 @@
 - Added six source-linked editorial pilot drafts: handstyle, bubble lettering, Wildstyle, wholecar, aerosol caps and letter anatomy.
 - Added Claude implementation tickets for content schema/pipeline, search/navigation, visual learning, generator bridge and ingame integration.
 - Pilot content remains draft; claim-level source verification and image-rights review are explicitly outstanding.
+
+
+## 2026-11-14 — BLACKBOOK ARCHIVE research deepening
+
+- Added a six-record NYC source register with source limitations, inspected scope, access dates and rights cautions.
+- Added a historical evidence map covering multiple origins, writing culture vs. policy, the 1989 transit-fleet milestone, blackbook preservation and institutional recognition.
+- Added six further draft archive entries on writing, blackbooks, Clean Train, sequential train photography, preservation networks and institutional recognition.
+- Added archive regression cases for historical nuance, source integrity, image rights, search, navigation and capability-gated generator handoff.
+- Chalfant Smithsonian record remains provisional because direct page retrieval failed; no image rights are inferred. No archive runtime or tests are claimed as implemented/executed.
+
