@@ -1,0 +1,99 @@
+{
+  "contractId": "nightshift.personal-style-engine",
+  "version": "1.0.0",
+  "status": "design-specification",
+  "axes": [
+    "letterformGrammar",
+    "compositionGrammar",
+    "practiceContext",
+    "surface",
+    "rendering"
+  ],
+  "ruleScopes": [
+    "global",
+    "glyph-class",
+    "glyph-id",
+    "word-position",
+    "pair-context",
+    "composition"
+  ],
+  "precedence": [
+    "glyph-identity-topology",
+    "authored-variant-constraints",
+    "base-grammar",
+    "recipe-rules",
+    "project-overrides",
+    "instance-relationship-overrides",
+    "rendering-finish"
+  ],
+  "conflictPolicies": [
+    "reject",
+    "skip-with-report",
+    "preview-alternatives"
+  ],
+  "operations": {
+    "combineAxes": {
+      "createsNewProfile": true,
+      "axesRemainIndependent": true
+    },
+    "mergeRecipes": {
+      "createsNewDraft": true,
+      "preservesSources": true,
+      "requiresConflictReport": true
+    },
+    "interpolate": {
+      "numericOnly": true,
+      "requiresRegistryDeclaredInterpolation": true,
+      "requiresCalibratedDomain": true,
+      "forbidden": [
+        "topology",
+        "variant-identity",
+        "categorical-grammar",
+        "relationship-type"
+      ]
+    }
+  },
+  "application": {
+    "createsPreviewBranch": true,
+    "sourceArtworkMutation": false,
+    "requiresUserAcceptance": true,
+    "perGlyphCompatibility": true,
+    "missingVariantFabrication": false,
+    "recordsResolvedSnapshot": true
+  },
+  "learning": {
+    "explicitCaptureOnly": true,
+    "requiresUserReview": true,
+    "silentRecipeMutation": false,
+    "hiddenBehaviouralLearning": false
+  },
+  "lifecycle": [
+    "draft",
+    "active",
+    "deprecated",
+    "incompatible"
+  ],
+  "provenance": {
+    "requiredField": true,
+    "unknownRightsMarkedUnknown": true,
+    "namedArtistSignatureCloning": false
+  },
+  "acceptance": [
+    "independent-versioned-axes",
+    "rendering-geometry-separation",
+    "registered-parameter-rules",
+    "deterministic-precedence",
+    "hard-invariant-protection",
+    "explicit-conflict-report",
+    "non-destructive-merge",
+    "registered-numeric-interpolation",
+    "no-topology-blending",
+    "preview-branch-application",
+    "per-glyph-compatibility",
+    "resolved-snapshot",
+    "confirmed-capture",
+    "immutable-recipe-versions",
+    "rights-provenance",
+    "deterministic-replay"
+  ]
+}
