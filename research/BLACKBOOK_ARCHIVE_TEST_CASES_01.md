@@ -65,3 +65,22 @@ Every content build must validate stable IDs, internal links, evidence status in
 
 ## G. Execution record
 No UI or automated tests were executed here. Mark cases only after implementation exists and a reproducible result is recorded. Editorial review is not runtime QA.
+
+
+## H. German scene and Martha Cooper regression fixtures
+
+| ID | Fixture/action | Expected | Failure |
+|---|---|---|---|
+| BA-DE01 | Open Dortmund Style | Regional tendency with attributed characteristics and individual variation | Presented as a universal German alphabet/style |
+| BA-DE02 | Open Silo Nation | Classified as hip-hop community/network and jam culture | Automatically typed as graffiti crew or style preset |
+| BA-DE03 | Search ATOM ONE / Der Lange | Resolves to one person record with aliases | Split into duplicate people without reason |
+| BA-DE04 | Search Pure Doze / DOZE | Resolves to separate person from ATOM ONE | Alias collision with ATOM ONE |
+| BA-DE05 | Search Too Strong | Music group linked to Dortmund scene and Silo Nation | Music group conflated with TRD/TUF graffiti crews |
+| BA-DE06 | Open DAIM | Hamburg writer and 3D letterform research | Generic 3D effect or DAIM clone preset |
+| BA-DE07 | Open Ma'Claim | Photorealistic collaborative aerosol/character practice, formed 2001 per attributed accounts | Treated as classic letter grammar or invention myth repeated uncritically |
+| BA-DE08 | Open ODEM | Berlin scene narrative with retrospective/source attribution | Memoir treated as exhaustive neutral chronology |
+| BA-DE09 | Open Martha Cooper Library | Research institution with catalogue/reading-room access and separate rights status | Library access treated as photo licence |
+| BA-DE10 | Search German graffiti history | Results cover multiple regional scenes, not Berlin only | German history reduced to one city |
+| BA-DE11 | Timeline 1979–2001 | Parallel regional developments and cross-border networks shown with date precision | Single linear national origin story |
+| BA-DE12 | Search Dortmund Style | Links to Ruhrgebiet, TUF/CHINTZ/SHARK and later scene records with source-specific confidence | Crew membership or style claims shown without attribution |
+
