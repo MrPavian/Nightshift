@@ -261,3 +261,11 @@ The Smithsonian Chalfant record was available through search-indexed institution
 
 - [Cross-Domain Test Fixtures 02](CROSS_DOMAIN_TEST_FIXTURES_02.md) — additional A/B/G/R/S geometry probes, 12 pair stress cases, 8 word integration fixtures, grammar isolation, generator determinism and proof-sheet additions. Design only; no runtime execution or visual approval claimed.
 
+
+
+## Martha Cooper and German scene research
+
+- [Martha Cooper and Photographic Archives 01](MARTHA_COOPER_AND_PHOTOGRAPHIC_ARCHIVES_01.md) — Cooper's documentary practice, publications, the Martha Cooper Library and rights-aware use of photographs.
+- [German Style Writing — History, Regional Scenes and the Ruhrgebiet 01](GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md) — regional histories, Dortmund Style, Silo Nation, Too Strong, Berlin, Hamburg, DAIM and Ma'Claim.
+- [German Writers, Crews and Networks 01](GERMAN_WRITERS_CREWS_AND_NETWORKS_01.md) — attributed starter register with alias, crew and evidence cautions.
+
