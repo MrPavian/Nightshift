@@ -188,3 +188,12 @@
 - Broke the first A/B/G/R/S implementation slice into seven dependency-ordered tickets with explicit acceptance criteria and failure behavior.
 - Separated repository reconnaissance, legacy import, semantic mapping, geometry validation, topology-correct rendering, proof sheets and the first Three.js command loop.
 - Linked the ticket pack from the roadmap, implementation brief and research index. No implementation completion is claimed.
+
+
+## 2026-11-14 — A–Z, style grammar and solver/generator work packages
+
+- Added a staged A–Z glyph authoring plan with neutral construction briefs, topology risks, wave priorities and maturity gates.
+- Added a first supported style grammar slice with independent axes, resolver-only behavior and honest capability statuses.
+- Added relationship solver and procedural generator integration readiness with safe relationship phases and deterministic four-concept acceptance.
+- Added machine-readable alphabet authoring contract and Claude ticket pack 0.7B/0.8A.
+- Marked specification work packages W02.1–W02.5 complete in the ChatGPT work order. No additional glyph geometry, production implementation or visual approval is claimed.
