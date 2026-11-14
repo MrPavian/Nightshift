@@ -99,3 +99,10 @@
 - Added a technical specification for semantic glyph graphs, stroke primitives, junction/topology relationships, counters/apertures, width profiles and connection anchors.
 - Defined per-glyph graph templates, an authoring workflow, validation requirements and a staged path from the five existing authored masters to a complete alphabet.
 - Grounded computational concepts in StrokeStyles, Sketching and Layering Graffiti Primitives, and AutoGraff; distinguished NIGHTSHIFT engineering proposals from historical claims.
+
+
+## Build 0.6 implementation audit — glyphs and SVG layers
+
+- Audited the actual prototype glyph maps and SVG render pipeline.
+- Recorded counter/fill-rule and render-layer inconsistencies, background-colored counter patches, decorative bridge/join diagnostics, and the distinction between presentation presets and structural style grammars.
+- Added a normalized glyph-data proposal, remediation sequence and render-layer regression matrix. No prototype code was changed in this audit commit.
