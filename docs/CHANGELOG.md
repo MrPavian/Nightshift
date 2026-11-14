@@ -164,3 +164,11 @@
 - Defined compatibility levels, parameter ownership and dependency graphs for Bubble, Straight/Block, Compact, Block-fit and Interlocking behavior.
 - Distinguished hard topology/identity constraints from soft preferences and specified override/validation behavior.
 - Defined explicit preset serialization and compatibility test fixtures.
+
+
+## 2026-11-14 — A/B/G/R/S construction handoff
+
+- Added a Claude-ready glyph-specific implementation specification and machine-readable contract.
+- Documented exact v0.6 contour counts, provisional component proposals, topology distinctions, anchor review requirements and registered operation IDs.
+- Specified topology-consistent rendering, typed Three.js edits, acceptance fixtures and maturity gates.
+- No production glyph geometry, visual review, calibration or implementation is claimed by this documentation update.
