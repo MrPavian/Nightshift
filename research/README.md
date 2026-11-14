@@ -215,3 +215,9 @@ Added a reproducible run-manifest specification and fixture registry for 26 isol
 ### 2026-11 — Glyph construction pipeline
 
 Added a staged construction pipeline from stable glyph definition and semantic graph through registered operations, editable vector geometry, topology/identity validation, metrics/anchors, glyph instances, Three.js scene adaptation, typed-command interaction and persistence. The first implementation slice is limited to A/B/G/R/S, preserves exact legacy snapshots, and prohibits uncalibrated production controls. Added a machine-readable contract.
+
+
+## A/B/G/R/S construction implementation spec
+
+- [A/B/G/R/S Glyph Construction Implementation Specification 01](ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md) — Claude-ready construction handoff for exact legacy import, provisional semantic components, topology, anchors, registered operations, Three.js command interaction and acceptance fixtures.
+- Machine-readable contract: [abgrs-glyph-construction.v1.json](../contracts/abgrs-glyph-construction.v1.json).
