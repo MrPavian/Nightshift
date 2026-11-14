@@ -60,6 +60,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Glyph Construction Library](GLYPH_CONSTRUCTION_LIBRARY.md)
 - [Glyph Master Audit — Build 0.6](GLYPH_MASTER_AUDIT_V06.md)
 - [Glyph Master Specifications — A, B, G, R, S](GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
+- [Master Glyph Variant Matrix 01 — A/B/G/R/S](MASTER_GLYPH_VARIANT_MATRIX_01.md)
 - [Glyph Data Contract — A–Z](GLYPH_DATA_CONTRACT_A_Z.md)
 - [Glyph Review Package — A–Z](GLYPH_REVIEW_PACKAGE_A_Z.md)
 - [Glyph Visual Review Protocol 01 — A–Z](GLYPH_VISUAL_REVIEW_PROTOCOL_01.md)
@@ -126,3 +127,8 @@ Expanded the visual reference index with item-level provenance and rights cautio
 ### 2026-11 — Repeatable A–Z visual review protocol
 
 Added a staged review gate system for glyph source integrity, semantic construction, topology, geometry, silhouette, style construction, context, rendering, persistence and human approval. Added an A–Z identity/topology checklist, critical geometry failures, a 0–3 human review rubric, controlled style comparisons and a focused first review batch for A/B/G/R/S. This operationalizes existing glyph and style specifications without claiming historical universality or visual approval.
+
+
+### 2026-11 — Controlled master glyph variant matrix
+
+Added a first controlled variant plan for A/B/G/R/S. Each glyph now has named master-preserving, structural and topology-variant candidates; explicit identity invariants; parameter ownership and dependencies; hard-failure conditions; style compatibility status; staged implementation order; and proof-sheet requirements. Numerical parameter bounds remain intentionally uncalibrated until geometry is measured and visually reviewed. The document is a design proposal, not implemented functionality.
