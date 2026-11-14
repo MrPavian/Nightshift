@@ -35,6 +35,8 @@ Read and follow:
 - `research/MASTER_GLYPH_VARIANT_MATRIX_01.md`
 - `research/GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md`
 - `contracts/glyph-parameter-contract.v1.json`
+- `research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md`
+- `contracts/glyph-geometry-validation.v1.json`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
@@ -49,6 +51,14 @@ Use `contracts/glyph-parameter-contract.v1.json` as the machine-readable registr
 Three.js handles bind to stable semantic component/anchor IDs. Dragging may preview a candidate, but pointer release submits one typed model command. Never persist direct mesh-vertex or scene-object mutations as canonical edits. Regenerate meshes, SVG and diagnostics from committed canonical state. Apply each operation's declared invalidation classes and validation rules.
 
 Do not invent production numeric bounds, defaults or slider steps. Keep numeric controls uncalibrated until bounds are measured from authored geometry and reviewed fixtures. Do not silently clamp. Topology changes require a separately named authored variant and topology review; they are not continuous slider operations. Keep hard identity/topology/geometry/anchor constraints separate from soft style and word-rhythm diagnostics.
+
+## 3.2 Geometry and topology validator contract
+
+Use `contracts/glyph-geometry-validation.v1.json` as the machine-readable validator profile and `research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md` for its rationale and acceptance requirements. Validate candidate canonical geometry before committing a model command. The ordered pipeline covers schema/reference integrity, curve normalization, degeneracy, intersections, planar topology, negative-space classification, clearance, anchors, glyph identity and derived-render consistency.
+
+Keep counters, apertures and channels distinct: counters are enclosed bounded faces; apertures remain connected to exterior space; channels are corridors and must not be implicitly classified as counters. Curve approximation must be adaptive and carry an error bound. A hard clearance pass requires the measured distance minus its error bound to meet a calibrated threshold. Thresholds are per glyph/variant/feature/context; do not invent global values. Uncalibrated required thresholds block production approval.
+
+Reject undeclared self-intersections/crossings and invalid topology atomically. Do not silently repair geometry, discard fragments or convert topology. Diagnostics must include stable codes, affected IDs, measured values, thresholds, error bounds and calibration status. Automated validation does not replace the visual proof-sheet review gate.
 
 ## 4. Current-state facts
 
