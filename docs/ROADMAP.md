@@ -113,6 +113,7 @@ Three.js is part of the real generator interaction/rendering workflow, not merel
 
 - [Claude Implementation Brief — Generator 0.7](CLAUDE_IMPLEMENTATION_BRIEF_0_7.md)
 - [Glyph Review Package — A–Z](../research/GLYPH_REVIEW_PACKAGE_A_Z.md)
+- [Style Grammar Specifications 01](../research/STYLE_GRAMMAR_SPECIFICATIONS_01.md)
 
 - [Glyph Master Specifications — A, B, G, R, S](../research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md)
 - [Glyph Data Contract — A–Z](../research/GLYPH_DATA_CONTRACT_A_Z.md)
@@ -124,3 +125,11 @@ Three.js is part of the real generator interaction/rendering workflow, not merel
 - A clear division of responsibility between glyph construction, composition solving, Three.js rendering/interaction, vector export and project persistence.
 - Claude-ready implementation brief and acceptance tests before production generator coding.
 
+
+
+### Next research/specification deliverables
+
+- Build visual comparison plates for the five authored glyphs in neutral monochrome and diagnostic modes; do not mark them visually reviewed until inspected.
+- Develop the style grammar parameter dependency model and compatibility rules from the four initial grammar specifications.
+- Define the first supported combinations of letterform grammar, composition grammar, practice/form context and rendering treatment.
+- Expand period- and region-specific references where current evidence remains broad or contested.
