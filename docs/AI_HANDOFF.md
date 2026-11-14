@@ -46,3 +46,9 @@ Do not mistake the provisional bases or style labels for a finished graffiti alp
 ## Collaboration standard
 
 Make small changes, preserve prior versions, test real behavior, update docs and clearly state what was and was not verified.
+
+
+## Confirmed implementation direction
+
+The production generator will be implemented with Claude and integrated Three.js support. Treat `prototypes/nightshift_art_engine_v06.html` as a legacy/reference prototype and audit target, not as the target production architecture. Do not continue building the final generator as a standalone HTML/JSON-only tool. The model's role in this workflow is to produce research-backed specifications, geometry/data contracts, test matrices, visual/functional requirements and implementation briefs that Claude can execute. Three.js belongs in the interactive generator itself, not only in a separate wall-preview pane. Keep editable vector geometry and SVG interoperability in the design unless the owner explicitly changes that requirement. JSON remains available as a suitable project-data format where needed.
+
