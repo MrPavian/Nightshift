@@ -491,3 +491,8 @@ Before implementing G aperture controls, follow [Specification Integration Audit
 ## 3.14 Executable ticket sequence
 
 Use [Claude Ticket Pack 0.7A 01](CLAUDE_TICKET_PACK_0_7A_01.md) to execute the first A/B/G/R/S slice in dependency order. Do not collapse import, topology, renderer and editor interaction into one untestable task. Each ticket has explicit acceptance criteria and a completion report. Read the specification integration audit before implementing G aperture behavior.
+
+
+## 3.15 Next implementation handoff after 0.7A
+
+After the 0.7A first slice passes its hard gates, proceed with [Claude Ticket Pack 0.7B / 0.8A](CLAUDE_TICKET_PACK_0_7B_01.md). Use the [A–Z authoring plan](../research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md), [first supported grammar slice](../research/STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md) and [solver/generator integration readiness](../research/SOLVER_GENERATOR_INTEGRATION_READINESS_01.md). Do not start advanced interlocking or claim full A–Z grammar coverage while glyph masters remain provisional.
