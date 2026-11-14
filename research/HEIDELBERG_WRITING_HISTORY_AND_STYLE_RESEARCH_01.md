@@ -18,19 +18,21 @@ The dissertation describes Heidelberg as a comparatively small scene with a dist
 | 1986 | HCA is identified as the first Heidelberg writing crew, focused on street pieces. | KIT dissertation; source trail includes early scene publications and interview questionnaires. |
 | 1987 | The dissertation identifies a first Heidelberg panelpiece, painted by KANE, OMEN and HERO at the so-called Tennisplätze-Yard. | KIT dissertation; attribution relies on cited scene sources and interview material. Treat as a documented historical claim, not yet independently verified against an original photograph. |
 | 1988 | Heidelberg's scene enters a flowering phase; trains are increasingly painted. Martin Stieber dates his group's first motorway-triangle piece to 1988 and says the first trains followed shortly afterwards. | KIT dissertation plus first-person interview. These are related but not necessarily the same first-train event. |
-| 1988–1990 | SCM, TAT and TPM appear in the documented crew history. The dissertation dates SCM to 1988, TAT to 1989 and TPM's founding by KANE to 1990. | KIT dissertation; crew dates and line-ups should be cross-checked against original magazines, blackbooks and oral histories before treating them as definitive. |
+| 1988–1991 | SCM, TAT and TPM appear in the documented crew history. The KIT dissertation dates SCM to 1988, TAT to 1989 and TPM's founding by KANE to 1990; the 2020 KANE podcast profile says he founded PHUNKMASTERS / TPM in 1991. | This one-year discrepancy remains unresolved; check the full interview and contemporaneous crew material. |
 | 1990s | Heidelberg's Wildstyle / typography reputation grows; KANE, SCOTTY76, SERZ, TIME, SKARE and PORE ONE are among the names discussed in the historical account. | KIT dissertation, drawing on scene publications and interviews. Avoid turning a list of prominent names into a complete roster. |
 | 1990 onward | Increased protection of train yards is described as shifting activity toward nearby regional yards. | KIT dissertation cites earlier scene literature. This is a historical account, not a complete map of trainwriting activity. |
 | 2000s–2010s | Trainwriting remains a major regional practice; newer crews and generations distinguish themselves from the classic Heidelberg style. | KIT dissertation's contemporary section and cited interviews. Requires updated post-2015 sources for present-day status. |
 
 ### Important distinction: the first train
 
-There are at least three separate historical claims in the sources:
-1. a first panelpiece at Tennisplätze-Yard in 1987;
-2. Stieber's account that his group painted an Autobahndreieck in 1988 and that trains followed shortly after;
-3. a later archival / oral-history reconstruction of the first train sprayed in Heidelberg, presented at a 2024 event by the Freies Hip-Hop Institut and University of Heidelberg.
+There are multiple conflicting / adjacent historical claims:
+1. KANE's 2020 podcast profile says he sprayed his first train in 1986.
+2. A 2011 scene-history post says KANE, OMEN and HERO painted the first train in early 1987.
+3. The KIT dissertation identifies a first panelpiece at Tennisplätze-Yard in 1987; that may or may not be the same event as the first train claim.
+4. Martin Stieber recalls that his group's first Autobahndreieck was in 1988 and that the first trains followed shortly afterwards.
+5. A 2024 event by the Freies Hip-Hop Institut and University of Heidelberg presented an archival / eyewitness reconstruction of the first train sprayed in Heidelberg, but the public event description does not state the final date.
 
-Do not merge these into one date or event. The 2024 event is a priority route for corroboration and may clarify the chronology.
+Do not merge these into one date or event. The full KANE interview and the 2024 lecture / source materials are now the highest-priority verification targets.
 
 ## 3. Heidelberg Style — documented visual characteristics
 
@@ -135,3 +137,27 @@ It is a retrospective interview, not a contemporaneous record. Attribute recolle
 - Deutsche UNESCO-Kommission, “Hip-Hop-Kultur in Heidelberg und ihre Vernetzung in Deutschland”: https://www.unesco.de/staette/hip-hop-kultur-in-heidelberg-und-ihre-vernetzung-in-deutschland/
 
 **Evidence rule:** this dossier records what the inspected sources say. Historical attributions based on interviews or older scene publications remain attributed until independently corroborated. No image has been copied or cleared for NIGHTSHIFT use.
+
+
+## 9. Follow-up verification — first train, crew dates and archive access
+
+A second source pass uncovered material contradictions that must remain visible:
+
+- The 2020 I Love Graffiti Podcast #43 profile says KANE sprayed his first train in **1986** and founded PHUNKMASTERS / TPM in **1991**.
+- A 2011 “Die Welt brennt” scene-history post says KANE, OMEN and HERO painted the first Heidelberg train in **early 1987**.
+- Pfeiffenberger's 2017 dissertation identifies a first **panelpiece** at Tennisplätze-Yard in **1987**; this wording is not necessarily equivalent to the first train ever painted in Heidelberg.
+- The dissertation dates TPM's founding to **1990**, one year earlier than the 2020 podcast profile.
+- Martin Stieber's 2014 recollection dates his group's first Autobahndreieck to **1988**, with trains following shortly afterwards.
+
+The 2024 event description by the Freies Hip-Hop Institut states that Bryan Vit reconstructed the first Heidelberg train using archive material and eyewitness accounts. The public event page does not publish the final date or the underlying evidence. This makes the event recording, presentation notes or a direct conversation with the researchers the most valuable next source.
+
+The Freies Hip-Hop Institut states that the Frederik-Hahn collection is still being processed and that the Hip-Hop Archive is **not yet open to the public**. Therefore, do not describe the archive as freely accessible. The institute does accept enquiries about archival material for research and exhibitions.
+
+Additional source leads:
+- I Love Graffiti Podcast #43: KANE TPM (20 Dec 2020): https://berlingraffiti.de/2020/12/20/i-love-graffiti-podcast-43-kane-tpm/
+- “HERO SCM 193” (Die Welt brennt, 17 Sep 2011): https://dieweltbrennt.wordpress.com/2011/09/17/hero-scm-193/
+- Freies Hip-Hop Institut, 2024 event archive: https://www.freieshiphopinstitut.de/events/
+- Freies Hip-Hop Institut, archive overview: https://www.freieshiphopinstitut.de/archiv/
+- Freies Hip-Hop Institut, Heidelberg Hip-Hop Archive access status: https://www.freieshiphopinstitut.de/archiv/hip-hop-archiv/
+
+**Research integrity note:** do not select one date because it appears most often. Resolve the discrepancy by identifying what each source means by “first train”, “first panelpiece” and “first trainwriting action”, and by checking the underlying dated photographs / eyewitness accounts.
