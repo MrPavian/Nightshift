@@ -347,3 +347,10 @@ Added a second dossier separating writing, band membership, crew affiliation, ar
 ### 2026-11 — Queens networks, band roles and DIY print
 
 Added a source-deepening dossier based on Beto Rosario's and Chiqui Rodriguez's first-person Dmize interviews, Freddy Alva's band-by-band writer list, the Queens fanzine retrospective, the Urban Styles event description and discographic listings. It expands the named network to HESA/STAFF, NOW, WOES and YOURS 174; dates Yes Zista to 1988–1989; preserves the attributed Dmize lineup chronology; and distinguishes band membership, crew affiliation, artwork credit and zine work. Original flyers, demo sleeves and zine scans remain uninspected and are not presented as primary evidence.
+
+
+- [NYC Graffiti–Hardcore Crossover: SPORTS, Outburst and the DIY Visual Layer 04](NYC_GRAFFITI_HARDCORE_CROSSOVER_04_SPORTS_OUTBURST_ZINES.md)
+
+### 2026-11 — SPORTS, Outburst and Queens DIY print
+
+Added a fourth crossover supplement documenting the reported SPORTS collective, the JAY R / Outburst writer-guitarist-artwork link, and Queens zine production around The Village Noize, Yes Zista and In Effect. Artifact captions and creator recollections are attributed to specialist reporting; original artifacts and rights remain unverified.
