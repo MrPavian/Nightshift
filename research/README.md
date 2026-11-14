@@ -480,3 +480,10 @@ NIGHTSHIFT's research library is also a continuous learning resource on writing 
 ### 2026-11 — INGRID ontology, annotation and licensing review
 
 Inspected INGRID's official ontology and illustrated manual, documenting its distinction between graffiti type, lettering style, design elements, context, materiality, technique, language/function and provenance. Recorded the interdisciplinary human annotation process and its stated ambiguity limits. Clarified the published CC BY-SA 4.0 image / CC0 metadata / CC BY 4.0 knowledge-graph licensing, with mandatory item-level checks. Added a proposed crosswalk to NIGHTSHIFT as a research aid, not implemented editor functionality.
+
+
+- [INGRID → NIGHTSHIFT — Ontology Crosswalk and Research Workflow (W02.31)](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+
+### 2026-11 — INGRID as NIGHTSHIFT's foundational research stream
+
+Promoted INGRID to P1. Added an ontology crosswalk, a Dortmund-first corpus inventory plan, a stratified visual study protocol and a six-deliverable research programme. Clarified the 150,000-image / 99,962 annotated-image official inventory snapshot, the 2023 article's approximately 136,000-image multi-city snapshot including Dortmund, and the distinct July 2022 knowledge-graph metrics. License layers and public-image restrictions are explicitly separated.
