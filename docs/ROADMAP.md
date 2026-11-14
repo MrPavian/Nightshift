@@ -149,3 +149,8 @@ See [Personal Style Engine 01](../research/PERSONAL_STYLE_ENGINE_01.md) and [per
 ### A–Z style grammar application
 
 See [A–Z Style Grammar Application Matrix 01](../research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md) and [az-style-grammar-application.v1.json](../contracts/az-style-grammar-application.v1.json). Implement the resolver before broad style generation. Connect registered A/B/G/R/S controls first; author and review the remaining 21 glyph masters before claiming full A–Z grammar coverage. Bubble and Straight must differ in monochrome construction; Blockbuster remains multi-axis; Wildstyle is expressed through relationships and word composition. This is a specification, not implemented functionality.
+
+
+### Procedural variant generator core
+
+See [Procedural Variant Generator Core 01](../research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md) and [procedural-variant-generator.v1.json](../contracts/procedural-variant-generator.v1.json). Implement in sequence: deterministic seed service; glyph-specific operation planner; validated A/B/G/R/S candidate builder; word/layout candidate builder; structural feature extraction and four-way selection; quality/proof harness. Four concepts must be structurally distinct. Do not claim calibrated diversity or quality scores before reviewed examples exist, and do not weaken hard validity gates to fill the result set.
