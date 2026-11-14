@@ -383,3 +383,10 @@
 - Extracted dated first-person source leads cited by Hinz (SHARK, 30 January 2020; Krell/COLE/CHANA, 14 February 2020; David Radon, 9 December 2020) without inventing interview content.
 - Added Laura Maria Lintzen's 2025 ethnography as a current, broader German scene-history source; full chapters remain access-limited.
 - No images, signatures or copyrighted chapter figures were copied; full-text inspection and practitioner review remain open.
+
+
+## Research deepening — Dortmund oral-history documentary access
+
+- Recovered accessible English-subtitled video routes for *The Rise of Graffiti Writing — Dortmund, Berlin & Frankfurt* and *Writing on Trains: Dortmund & Frankfurt*.
+- Cross-checked the documentary trail against Harald Hinz's 2022 chapter, which cites SHARK's 30 January 2020 communication and the series.
+- Added an episode access map and a timecoded claim-verification protocol; no interview statements are quoted or inferred before viewing.
