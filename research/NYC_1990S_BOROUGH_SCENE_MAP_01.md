@@ -86,11 +86,15 @@ Queens should not be represented merely as a peripheral residential borough. It 
 The current source set supports several specific Brooklyn-related facts, but not a reliable full borough chronology for 1990–1999:
 
 - The Brooklyn Writers Bench at Atlantic Avenue and the Brooklyn Bridge bench are described in the Writers Bench Collection's retrospective account of the earlier bench network. The same source explains how the 149th Street bench connected Bronx and Brooklyn writers through lines serving both boroughs. This is a historical network context, not proof that the benches operated with the same role throughout the 1990s.
-- The i-D article reports SANE/SMITH's Brooklyn Bridge production in 1990. This is a landmark event lead, not a borough-wide crew map.
+- The i-D article (2017) reports SANE/SMITH's Brooklyn Bridge production as 1990, but Roger Smith's 2019 first-person interview dates the famous first production to 1988. Use 1988 as the preferred date and retain the 2017 report as a conflicting secondary account. This is a landmark event lead, not a borough-wide crew map.
 - GQ's IRAK account says Martins' family moved to East New York, Brooklyn, before the downtown network took shape. That is biographical geography, not evidence that IRAK was a Brooklyn-based crew.
 - Jenkins' account of the Bronx networks includes references to subway-line and yard geography connecting boroughs; the exact locations and activity need individual verification.
 
 **Research gap:** a Brooklyn-specific 1990s register needs contemporary local reporting, dated photographs, zine issues, oral histories and named writer testimony. Do not fill the gap by assigning citywide writers to Brooklyn based on one event or residence.
+
+### 5.1 Brooklyn Eastern District Terminal (BEDT)
+
+A retrospective LTVSquad history reports that the abandoned Brooklyn Eastern District Terminal waterfront property in Williamsburg/Greenpoint became a major informal painting site from the late 1980s. It identifies a 1990s photograph by Lady Pink and lists Sane/Smith, Lady Pink, Cycle, Muze, Natz, Hush, Rebel, Vor and DBI Crew among writers associated with the property. The article notes that different groups used different names for parts of the site. This is a specialist retrospective account, not a contemporaneous crew roster; it does not prove that all named writers painted there in the same year or belonged to one crew. See the dedicated zine/media dossier for further source context.
 
 ## 6. Cross-borough media and network map
 
