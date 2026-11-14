@@ -1,0 +1,22 @@
+# Changelog
+
+## Build 0.6 — Full Alphabet / Glyph Relationships
+
+- Added A–Z glyph addressing.
+- Carried forward authored contour masters for A, B, G, R and S.
+- Added provisional geometric bases for remaining letters.
+- Added four style-profile variants and basic word-level spacing/overlap.
+- Added Solid, Fade, Chrome and Split fill treatments.
+- Retained SVG export, local blackbook archive and Three.js wall preview.
+
+### Known limitations
+
+- Only five letters have authored contour masters.
+- The other 21 letters are provisional bases.
+- Style families are early visual profiles, not yet complete historical/style grammars.
+- Current letter bridges are mostly decorative; they are not genuine contour joins.
+- Diagnostics such as join count and sketch estimate are heuristic, not geometric quality measurements.
+
+## Project initialization
+
+- Added project README, architecture and roadmap documentation.
