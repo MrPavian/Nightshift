@@ -2,6 +2,10 @@
 
 This is the short onboarding brief for a new AI assistant or coding agent.
 
+## Autonomous work instruction
+
+For the current uninterrupted research/specification workstream, follow [AUTONOMOUS_WORK_PROMPT.md](AUTONOMOUS_WORK_PROMPT.md). It defines the role boundaries, deliverables, repository workflow and conditions under which owner input is genuinely required.
+
 ## What is this project?
 
 NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lettering / blackbook editor as its central creative system. A second major component is **THE BLACKBOOK ARCHIVE**, a visual, interactive, in-game graffiti knowledge library.
