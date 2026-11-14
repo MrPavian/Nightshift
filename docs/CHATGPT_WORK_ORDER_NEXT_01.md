@@ -104,3 +104,14 @@ Complete W02.1, then proceed directly to W02.2. Do not ask the owner to re-appro
 - [ ] W02.6 — Continue focused historical/scene research and BLACKBOOK ARCHIVE coordination as a separate content workstream.
 
 Completion here means the research/specification deliverables exist and have been linked; it does not mean Claude implementation or human visual approval is complete.
+
+
+## W02.6 progress — BLACKBOOK ARCHIVE coordination
+
+- [x] Archive Phase A information architecture documented: audiences, taxonomy, navigation, learning paths, generator link rules and interaction brief.
+- [x] Six content-pilot drafts created from existing research dossiers.
+- [x] Claude implementation tickets for Archive 0.1–0.3 prepared.
+- [ ] Claim-level source re-audit, source register normalization and item-level image-rights review remain open.
+- [ ] Continue targeted historical research only where it changes archive claims, scene context or generator design.
+
+The archive pilot is a draft, not approved publication content.
