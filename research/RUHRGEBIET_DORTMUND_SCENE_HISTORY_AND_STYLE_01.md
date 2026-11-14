@@ -325,3 +325,80 @@ It should not be treated as a proxy for the whole Ruhrgebiet scene. Its programm
 - Ruhrbarone, Mason / RIO exhibition and publication “RIO — The Process of Writing” (2023): https://www.ruhrbarone.de/der-alte-wartesaal-in-herne-zeigt-werkschau-des-graffiti-kuenstlers-mason/219616/
 
 **Research boundary:** contemporary commissioned murals, legal-wall programmes, historic Sgraffiti and hip-hop Style Writing are separate categories. Do not classify a restored school mural, a 1950s Sgraffito or a modern public commission as a graffiti-writing piece without evidence of the practice and context.
+
+
+## 16. Visual archive breakthrough — Dortmund tags, RIO and Bochum iOR
+
+### 16.1 ALL SURFACE — a rare documentation layer for Dortmund handstyles
+
+The 2022 book **ALL SURFACE — Tagging in Dortmund in the 1980s and 1990s** is a major addition to the source base. Its publisher / stockist description reports:
+- 244 pages and more than 500 photographs;
+- a focus specifically on marker and aerosol tags from Dortmund in the 1980s and 1990s;
+- documentation assembled over more than ten years;
+- contributions / recollections from LOOMIT, ZEBSTER, BABAK, MASON, DRY, KLEH, SALZ, DAM, BALOO, SER, SHYE/SATYR, DENAR and KEY;
+- historical context in which SHARK's visit to Amsterdam in the mid-1980s is described as a major influence on the ambition and visual culture of Dortmund tagging.
+
+This source corrects a major archive imbalance: early pieces and trains are much more frequently photographed than everyday tags. The book's focus on tags and handstyles gives NIGHTSHIFT a way to study a missing layer of writing culture. It may be the most useful current visual source for the handstyle module.
+
+**Important:** the book's promotional description is not a substitute for inspecting the actual photographs and captions. We need a page-level visual index and must distinguish attributed writer names from uncertain / anonymous tags.
+
+### 16.2 Da kukse wa — original and second edition
+
+The author's own page confirms the 1987 publication, Hubert Moormann's photographs and interviews with CHINTZ, SHARK, CHANA and ZODIAK. It also includes a period glossary:
+- blackbook: sketchbook for painted and planned works;
+- character: comic-like sprayed figure;
+- piece: large graffiti image;
+- tag: writer's name lettering;
+- whole car: fully painted train.
+
+A 2020 second edition was published on the occasion of the Dortmund exhibition **I WAS HERE** and is described by the specialist retailer as identical to the 1987 original except for the preface. This is a practical route to inspect the contemporary source without depending on a scarce first edition. Check exact reproduction / rights conditions before reproducing scans or images in any public NIGHTSHIFT feature.
+
+### 16.3 RIO / MASON — a concrete case study in reduction and construction
+
+The 2023 exhibition article and the artist's official page establish MASON's activity since the mid-1980s and his role in the Dortmund scene. The RIO book description and exhibition text characterise the name's visual development through:
+- dynamically deployed, quasi-constructivist elements;
+- geometric reduction;
+- a small number of extremely precise lines;
+- minimal, meticulous and highly controlled execution;
+- compositions capable of spanning entire train-car sides.
+
+This is a strong design-research case, but it must remain a study of general construction principles. Do not create an RIO preset, trace the name, or reproduce his letterforms. Instead, ask: how can a lettering system express structural economy, controlled geometry, consistent line placement and large-format balance using original glyph designs?
+
+The artist's official exhibition list also confirms a 2024 group exhibition **Metamorphose Graffiti — Ästhetik der Auflehnung** at the Märkisches Museum in Witten. This provides a direct Witten–Dortmund institutional connection worth following.
+
+### 16.4 Bochum — iOR interview adds crew chronology and a practitioner's critique
+
+The 2017 TU Dortmund / Mapping Hip Hop Culture interview with an anonymous iOR member adds local names and a useful distinction between legal walls and street practice:
+- The interviewee names **BMW (Bochum's Most Wanted)** as the first crew he knew, followed by **Shema**, the **DOS guys**, **iOR** and **BH**, and later **MLPT** and the **EGAL posse**.
+- He describes Dortmund as a regional shorthand / destination for the Ruhrgebiet scene, not merely a city boundary.
+- He says Bochum's scene remained comparatively small and socially connected.
+- He is critical of the local Hall-of-Fame culture: legal walls offer practice time but, in his view, remove the timing, situational judgement and location-specific decision-making that are part of graffiti practice.
+- He describes graffiti's gradual separation from a strictly hip-hop identity as a normal evolution rather than a loss of authenticity.
+
+This is a single anonymous practitioner's retrospective account. The crew sequence is a lead, not a definitive founding chronology. The value is in preserving the insider's perspective and his distinction between **lettering practice**, **painting context** and **scene norms**.
+
+## 17. Implications for NIGHTSHIFT — handstyle is now a first-class research track
+
+The Dortmund material shows that a graffiti editor focused only on large pieces and train compositions would miss a central part of writing culture. Add a dedicated handstyle research and interaction track:
+
+1. **Tag anatomy:** entry stroke, exit stroke, letter skeleton, stroke order, joins, rhythm, slant, compression, spacing and baseline.
+2. **Marker vs aerosol:** tool-specific stroke endings, line width, opacity, edge character and movement.
+3. **Repeatability vs variation:** how a writer's name remains recognisable across repeated executions while individual tags vary.
+4. **Surface and scale:** paper / blackbook, smooth wall, rough wall and other surfaces affect line behaviour; represent only as a neutral material model.
+5. **Attribution confidence:** named and captioned, attributed by a witness, anonymous, uncertain, or disputed.
+6. **Practice separation:** tag, throw-up, piece, character and train format must remain separate entities in the content model.
+
+Do not train a model on named individuals' signatures or turn real tags into selectable presets. The research output should be a neutral parameter system and original letterform library.
+
+## 18. Additional source register — visual archive and practitioner account
+
+- ALL SURFACE — Tagging in Dortmund in the 1980s and 1990s (2022), publisher / book description and source context: https://hitzerot.com/shop/all-surface/
+- ALL SURFACE, alternate specialist publication listing: https://www.legrandj.eu/products/all-surface-tagging-in-dortmund-in-den-1980er-und-1990er-jahren
+- Da kukse wa (1987), Marianne Brentzel / Hubert Moormann — author's page, glossary and original context: https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+- Da kukse wa, 2020 second edition (bibliographic and reproduction note): https://www.mrgraffiti.nl/product/da-kukse-wa-dortmunder-graffiti-2nd-edition/
+- RIO — The Process of Writing, official artist / publisher description: https://shop.mason.de/product/rio-the-process-of-writing
+- MASON official biography and exhibition chronology: https://shop.mason.de/about
+- MASON / RIO exhibition coverage, Ruhrbarone (20 April 2023): https://www.ruhrbarone.de/der-alte-wartesaal-in-herne-zeigt-werkschau-des-graffiti-kuenstlers-mason/219616/
+- Bochum iOR interview, TU Dortmund seminar project (26 January 2017): https://hiphopruhr.wordpress.com/2017/01/26/style-skill-interview/
+
+**Evidence boundary:** publisher and artist pages establish publication / exhibition details and describe the artist's own work; they do not independently validate every stylistic interpretation. The iOR interview is one anonymous participant's account, not a complete Bochum scene history.
