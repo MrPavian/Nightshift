@@ -13,6 +13,10 @@
     "check:v06": "node tools/extract-v06-paths.mjs --check",
     "test:browser": "node tools/browser-smoke.mjs",
     "report:topology": "node tools/report-topology.mjs",
-    "report:validation": "node tools/report-validation.mjs"
+    "report:validation": "node tools/report-validation.mjs",
+    "proof:render": "node tools/render-proof.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
   }
 }

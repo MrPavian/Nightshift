@@ -34,11 +34,11 @@ Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five aut
 
 Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
 
-Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays and geometry validator (0.7A-T01–T04). Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
+Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays, geometry validator and topology-correct renderer (0.7A-T01–T05). Run `npm install` once (Three.js).. Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T05 (topology-correct monochrome renderer). Registry, legacy import, semantic overlays and the geometry validator (T01–T04) are in place; see `docs/reports/T03_TOPOLOGY_REPORT.md` and `docs/reports/T04_VALIDATION_REPORT.md`.
+**Build 0.7 — Authentic Letter Construction.** Continue `docs/CLAUDE_TICKET_PACK_0_7A_01.md` at ticket T06 (proof sheets and review package). Registry, legacy import, semantic overlays, geometry validator and the monochrome SVG/Three.js renderer (T01–T05) are in place; see `docs/reports/` and `docs/reports/proof/T05/`.
 
 ## Next archive task
 

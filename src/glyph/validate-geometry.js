@@ -242,6 +242,8 @@ export function validateGlyphGeometry(glyph, profile, opts = {}) {
       connectedComponents,
       expectedConnectedComponents: expected ?? null,
       containment: a.containment.map(({ contourId, parent }) => ({ contourId, parent })),
+      // Certified interior point of each contour's own face (inside it, outside its children).
+      facePoints: Object.fromEntries(a.samples.filter((s) => s.point).map((s) => [s.contourId, { point: roundPt(s.point), margin: round(s.margin) }])),
       fillRules,
       declaredFillRule: declaredRule,
     },

@@ -10,7 +10,7 @@ The wider game concept is a grounded New York graffiti crew simulator. The edito
 
 ## Current development status
 
-**Production code: 0.7A in progress** — canonical glyph registry with an exact, hash-verified import of the v0.6 glyphs semantic component overlays for A/B/G/R/S and a geometry/topology validator (tickets T01–T04 done). See [docs/IMPLEMENTATION_PLAN_0_7A.md](docs/IMPLEMENTATION_PLAN_0_7A.md). Run the tests with `npm test` (Node ≥ 20, no dependencies) and `npm run test:browser` (headless Chrome).
+**Production code: 0.7A in progress** — canonical glyph registry with an exact, hash-verified import of the v0.6 glyphs semantic component overlays for A/B/G/R/S a geometry/topology validator and a topology-correct monochrome SVG/Three.js renderer (tickets T01–T05 done). See [docs/IMPLEMENTATION_PLAN_0_7A.md](docs/IMPLEMENTATION_PLAN_0_7A.md). Run `npm install` once (Three.js), then `npm test` (Node ≥ 20) and `npm run test:browser` (headless Chrome).
 
 **Latest prototype (legacy reference): Build 0.6 — Full Alphabet / Glyph Relationships**
 

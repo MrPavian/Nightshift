@@ -315,3 +315,12 @@
 - Semantic overlay 1.1.0 records the G connectivity proof.
 - Report: `docs/reports/T04_VALIDATION_REPORT.md` (`npm run report:validation`). Tests: 61 passing.
 
+
+## 2026-11-14 — 0.7A-T05: topology-correct monochrome renderer
+
+- One derived render model (outer contours + declared counter holes, re-oriented for fill-rule independence) feeds SVG fill/outline and Three.js meshes (`src/render/`, `src/editor/three-glyph.js`).
+- Holes are genuine: no background-colour painting. Invalid (Q) or undeclared (D/O/P) topology is refused with structured errors.
+- Raster proof in headless Chrome: counters show light, dark and textured surfaces exactly in SVG and Three.js; silhouettes agree outside a 1-px edge band; the legacy paper-colour patch is detected as a negative control. Proof sheet and manifest in `docs/reports/proof/T05/` (`npm run proof:render`).
+- Added `three@0.187.0` as a pinned dependency used only in `src/editor/` (D-012).
+- Tests: 72 passing.
+

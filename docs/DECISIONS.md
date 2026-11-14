@@ -47,3 +47,7 @@ D-011 — Browser-native module stack for the 0.7 production code
 **Decision:** Production code is written as plain ES modules (JavaScript with JSDoc), runnable unchanged in the browser and in Node. Tests use Node's built-in runner (`npm test`). The canonical model (`src/core`, `src/geometry`, `src/glyph`) has no runtime dependencies and no DOM/Three.js imports. Three.js is added as a pinned npm dependency confined to `src/editor/` when the editor tickets (0.7A-T05/T07) start; a dev server/bundler is proposed with that ticket.
 **Implication:** Legacy v0.6 geometry is consumed only through the generated, hash-verified snapshot `data/legacy/v06-glyph-paths.json` (`npm run extract:v06`). Any new dependency needs a documented reason first. See `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
+D-012 — Three.js dependency and no bundler for 0.7A
+**Decision:** Three.js is a pinned npm dependency (`three@0.187.0`, exact version in `package.json`/`package-lock.json`). It is imported only from `src/editor/`. Browser pages resolve the bare `three` import with an import map pointing at `node_modules/three/build/three.module.js`; no bundler or dev-server dependency is added. Headless-Chrome tooling (`tools/lib/headless.mjs`) serves the repository with a minimal built-in Node static server.
+**Implication:** The canonical model, validator and SVG renderer stay dependency-free. A bundler is reconsidered only when the editor application (T07) needs production packaging. The v0.6 prototype keeps its own CDN import of three@0.160.0 and is unaffected.
+

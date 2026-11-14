@@ -3,7 +3,7 @@
 **Ticket:** 0.7A-T01 (reconnaissance) · includes the completion report for 0.7A-T02  
 **Author:** Claude (implementation role per D-009)  
 **Date:** 2026-11-14  
-**Status:** T01–T04 complete · T05–T07 not started
+**Status:** T01–T05 complete · T06–T07 not started
 
 ## 1. Repository reconnaissance (facts at commit `585715d`)
 
@@ -28,7 +28,7 @@
 1. **Plain browser-native ES modules (JavaScript + JSDoc), no framework, no transpiler.** The same modules run in Node (tests, tools) and in the browser (editor). This follows AGENTS.md ("small, understandable, browser-native modules") and keeps the canonical model inspectable.
 2. **Tests with Node's built-in runner (`node --test`).** No test dependency. `npm test`.
 3. **No runtime dependencies in the canonical model.** Path parsing, exact bounds, signed area and SHA-256 are implemented in-house (small, fully tested). A computational-geometry library will be evaluated in T04 only if robust intersection/planar-topology code proves impractical; any addition is recorded first.
-4. **Three.js enters at T05/T07 as a pinned npm dependency, confined to `src/editor/`.** A dev server/bundler (likely Vite) will be proposed with that ticket, not before.
+4. **Three.js is a pinned npm dependency confined to `src/editor/`** (D-012, `three@0.187.0`); browser pages use an import map, no bundler.
 5. **Legacy geometry is a generated, verifiable snapshot.** `tools/extract-v06-paths.mjs` reads the immutable v0.6 file and writes `data/legacy/v06-glyph-paths.json` with per-path SHA-256 hashes and line locators. Tests re-extract and compare byte-for-byte.
 
 ## 3. Module map (responsibility seams from `GENERATOR_SYSTEM_RESPONSIBILITIES.md` §7)
@@ -41,8 +41,9 @@
 | VectorGeometry | `src/geometry/svg-path.js`, `flatten.js`, `area.js`, `predicates.js` | **done** (parse/serialize, exact bounds/area, certified flattening) |
 | GlyphValidator (geometry/topology) | `src/geometry/topology.js`, `src/glyph/validate-geometry.js`, `data/validator-profiles/legacy-v06.v1.json` | **T04 done** |
 | Semantic graph overlay | `src/glyph/semantic-overlay.js`, `data/semantic/abgrs-semantic-overlay.v1.json` | **T03 done** |
-| SvgInterchange | `src/render/svg.js` | T05 |
-| ThreeEditorAdapter | `src/editor/three-adapter.js` | T05/T07 |
+| Render topology | `src/render/render-model.js` | **T05 done** |
+| SvgInterchange (export side) | `src/render/svg.js` | **T05 done** (import side later) |
+| ThreeEditorAdapter | `src/editor/three-glyph.js` (meshes, T05 done); interaction adapter T07 |
 | EditCommandBus | `src/model/commands.js` | T07 |
 | ProjectSerializer | `src/project/serializer.js` | T07 (registry serialization already round-trips) |
 | DiagnosticRunner / proof sheets | `src/proof/` | T06 |
@@ -67,7 +68,6 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 ## 5. Next tickets and known risks
 
 - **G aperture (AUD-01).** T04 proved that G's unfilled space is exterior-connected (simple contour, no holes). The semantic aperture boundary and the width measurement line (AUD-03) still need authoring and review, so `apertureStatus` stays `interpretation-required`.
-- **T05 renderer:** must build holes from declared topology. The validator shows A's counter only opens under `evenodd` (`GEO_FILL_RULE_SENSITIVE`).
 - **Browser execution:** covered by `npm run test:browser` (headless Chrome loads the registry from the same JSON files; geometry hashes match Node). Added in T03.
 
 ## 6. T02 completion report
@@ -121,3 +121,20 @@ Shared helpers: `src/core/sha256.js`, `src/core/stable-json.js`, `src/glyph/ids.
 | Atomicity | `checkCandidate()` validates a candidate record and returns `commitAllowed`; the committed record is untouched (tested with a counter moved outside the glyph). |
 | Not done | Channel corridor analysis; render parity (T05); anchors (none declared yet); calibrated thresholds (need human calibration records). |
 | Next | **0.7A-T05** topology-correct monochrome renderer (SVG first), then Three.js. |
+
+## 9. T05 completion report
+
+| Item | Result |
+|---|---|
+| Status | **complete** |
+| Files | `src/render/render-model.js`, `src/render/svg.js`, `src/editor/three-glyph.js`, `tools/proof/render-proof.html`, `tools/render-proof.mjs`, `tools/lib/headless.mjs`, `docs/reports/proof/T05/render-proof.png`, `docs/reports/proof/T05/manifest.json`, `tests/render.test.js`; validator report now exposes certified face points; decision D-012 |
+| Tests | `npm test`: **72 passed, 0 failed** · `npm run test:browser`: **SMOKE-PASS** · `npm run proof:render`: **PROOF-PASS** |
+| One topology | A single render model (outer + declared holes) feeds SVG fill, SVG outline and Three.js meshes. Holes come from declared counters, never from source winding. Derived contours are re-oriented (outer clockwise, holes counter-clockwise), so the compound path is correct under **both** `evenodd` and `nonzero` (tested by re-validating the derived geometry). A's same-winding counter is reversed in the derived copy only. |
+| No paint patches | The SVG output contains exactly the ink, optional surface and `none`; no paper-colour or background-colour hole painting (tested). |
+| Structured refusal | Glyphs that fail hard validation (Q) → `RENDER_INVALID_TOPOLOGY` with the validator errors; glyphs with undeclared subpath roles (D, O, P) → `RENDER_UNDECLARED_TOPOLOGY`; a stale or foreign validation report is rejected. 22/26 letters render. |
+| Three.js parity (Node) | Triangulated mesh area equals canonical area exactly for polygon glyphs and within perimeter × flattening tolerance for curved ones; certified probe points: filled faces covered, counters uncovered; meshes carry canonical IDs in `userData`. |
+| Raster proof (Chrome, SwiftShader WebGL) | For A/B/G/R/S on light, dark and textured surfaces: every counter probe shows the exact surface pixel and every filled probe shows ink, in SVG and in Three.js (36/36 probes). SVG vs Three.js silhouettes differ in **0 pixels outside a 1-px edge band** (edge-band differences 0–84 px from rasterisation rules). Negative control: the v0.6 paper-colour patch is detected on dark and textured surfaces. |
+| Proof artifacts | `docs/reports/proof/T05/render-proof.png` (proof sheet incl. diagnostic column with G's unresolved-aperture flag) and `manifest.json` (input hashes, render settings, per-glyph geometry hash and results, review `pending`). A test fails if the proof's geometry hashes no longer match the registry. |
+| Maturity | Unchanged (`authored-contour`). Automated proof does not count as render review. |
+| Not done | Extrusion/depth, inline, highlights and other finish passes (explicit non-goals of T05); SVG import; the stroke-outline pass is in SVG only. |
+| Next | **0.7A-T06** neutral proof sheets and review package (pair/word fixtures). |
