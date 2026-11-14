@@ -149,3 +149,12 @@ The archive pilot is a draft, not approved publication content.
 - [ ] Inspect MCL catalogue records and build item-level visual-reference records; no image rights assumed.
 - [ ] Expand German content entries and test fixtures after claim-level source review.
 
+
+
+## W02.9 — German Blackbook content and regression fixtures (2026-11-14)
+
+- [x] Added nine German-scene editorial drafts with stable proposed IDs.
+- [x] Added twelve archive regression cases for German regional coverage, entity typing, aliases, source confidence and rights.
+- [ ] Continue source verification for crew membership, dates, regional visual examples and overlooked participants.
+- [ ] Convert approved content to the canonical archive schema after its implementation is available.
+
