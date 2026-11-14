@@ -107,3 +107,13 @@ For a game set in New York, these European developments can appear through media
 - [3D and Blockbuster Lettering](THREE_D_AND_BLOCKBUSTER_LETTERING.md)
 - [Visual Reference Database](VISUAL_REFERENCE_DATABASE.md)
 - [Glyph Construction Guide](GLYPH_CONSTRUCTION_GUIDE.md)
+
+
+## Further German scene research
+
+The earlier European overview is complemented by two dedicated dossiers:
+- [German Style Writing — History, Regional Scenes and the Ruhrgebiet 01](GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md)
+- [German Writers, Crews and Networks 01](GERMAN_WRITERS_CREWS_AND_NETWORKS_01.md)
+
+These expand the regional scope and add Dortmund Style, Too Strong/Silo Nation, Berlin, Hamburg/DAIM and Ma'Claim. They should be read as source-led research drafts, not a final exhaustive history.
+
