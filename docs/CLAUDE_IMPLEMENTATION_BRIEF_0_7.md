@@ -32,12 +32,13 @@ Read and follow:
 - `research/VISUAL_REFERENCE_DATABASE.md`
 - `research/VISUAL_CONSTRUCTION_BRIEF_01.md`
 - `research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`
+- `research/MASTER_GLYPH_VARIANT_MATRIX_01.md`
 
 If any source is missing or conflicts with this brief, report the conflict and preserve explicit owner decisions. Do not invent missing content.
 
 ## 3. Visual construction and review requirements
 
-Before implementing composition and style expansion, follow `research/VISUAL_CONSTRUCTION_BRIEF_01.md`. It defines the evidence-led construction layers, grammar-specific visual criteria, Three.js editor requirements, six deterministic proof-sheet families and acceptance criteria. Consult `research/VISUAL_REFERENCE_DATABASE.md` for provenance and rights status. Do not bundle or trace archival images without item-level permission. The visual brief and glyph review protocol are design specifications, not evidence that these features are implemented. Apply the staged review gates and 0–3 human rubric from `research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`. Do not promote glyph maturity without recorded proof-sheet review; identity or topology failure blocks approval.
+Before implementing composition and style expansion, follow `research/VISUAL_CONSTRUCTION_BRIEF_01.md`. It defines the evidence-led construction layers, grammar-specific visual criteria, Three.js editor requirements, six deterministic proof-sheet families and acceptance criteria. Consult `research/VISUAL_REFERENCE_DATABASE.md` for provenance and rights status. Do not bundle or trace archival images without item-level permission. The visual brief, glyph review protocol and master glyph variant matrix are design specifications, not evidence that these features are implemented. Use the variant matrix to implement only Slice 1 and the minimal Slice 2 controls first; preserve master snapshots, calibrate bounds from reviewed geometry, and keep topology-changing variants separately named. Apply the staged review gates and 0–3 human rubric from `research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md`. Do not promote glyph maturity without recorded proof-sheet review; identity or topology failure blocks approval.
 
 ## 4. Current-state facts
 
