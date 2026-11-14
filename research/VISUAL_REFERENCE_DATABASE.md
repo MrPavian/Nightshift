@@ -60,3 +60,8 @@ For every new visual:
 - Structural observations (letter skeleton, proportions, counters, connections, rhythm, fill, outline, surface constraints):
 - What cannot safely be inferred:
 - Evidence label:
+
+
+## Cross-reference: Research Synthesis 01
+
+For the connected historical argument, source hierarchy, terminology cautions and NIGHTSHIFT data-model implications, see [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md). It cross-links the current topic with oral histories, subway formats, style development and generator design.
