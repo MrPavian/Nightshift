@@ -198,3 +198,13 @@ The archive pilot is a draft, not approved publication content.
 - [x] Recorded separate bibliographic metadata, attributed portrait lists and decade-specific publisher framing.
 - [x] Added archive regression fixtures for decade separation, roster limitations and attribution.
 - [ ] Next: exact-title MCL OPAC search and item-level holding records; continue primary issue/contents verification for Hamburg serials.
+
+
+## W02.14 — Martha Cooper Library exact-title catalogue check (2026-11-14)
+
+- [x] Verified the MCL OPAC record for *Eine Stadt wird bunt: Hamburg Graffiti History 1980–1999* (record 0003815; ISBN 978-3-9824951-0-1), including its displayed reference holding.
+- [x] Verified the MCL OPAC record for Katrin Kaiser's *Graffiti in der gesellschaftlichen Kontroverse* (record 0003386; ISBN 978-3-8366-5114-1), keeping its secondary/contextual role explicit.
+- [x] Added `research/MCL_OPAC_RECORD_CHECK_01.md`, indexed it in `research/README.md` and logged the work in `docs/CHANGELOG.md`.
+- [x] Re-fetched all three changed files and verified the new content and resulting blob SHAs.
+- [ ] Exact-title searches for Hamburg serials and individual *Stylefile* issues remain open. The live OPAC returned a library-server connection error during this pass, so the two records above rely on indexed detail pages and their availability should be rechecked before an on-site visit.
+- [ ] Next: retry exact serial-title/issue searches when the OPAC is available; meanwhile continue with accessible primary publisher, archive and interview sources. No image rights are inferred from catalogue presence.
