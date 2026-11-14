@@ -192,3 +192,11 @@ The first production slice is decomposed into dependency-ordered tickets in [Cla
 - [Style Grammar — First Supported Slice 01](../research/STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md) defines the initial resolver/capability boundary and prevents Bubble/Straight, Blockbuster and Wildstyle from collapsing into cosmetic presets.
 - [Relationship Solver and Generator — Integration Readiness 01](../research/SOLVER_GENERATOR_INTEGRATION_READINESS_01.md) defines Phase 1 safe adjacency, later overlap/interlock gates and the deterministic four-concept vertical slice.
 - Claude's next implementation handoff is [Ticket Pack 0.7B / 0.8A](CLAUDE_TICKET_PACK_0_7B_01.md), dependent on 0.7A completion.
+
+
+### THE BLACKBOOK ARCHIVE — first product/content package
+
+- [Information Architecture 01](BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md) documents audiences, taxonomy, navigation, learning paths and generator bridge rules.
+- [Content Pilot 01](../research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md) contains six editorial draft entries based on the existing research library.
+- [Claude Ticket Pack Blackbook 01](CLAUDE_TICKET_PACK_BLACKBOOK_01.md) decomposes schema/pipeline, navigation, visual learning, generator bridge and ingame integration.
+- Claim-level editorial verification and image-rights review remain open; the pilot is not approved for publication.
