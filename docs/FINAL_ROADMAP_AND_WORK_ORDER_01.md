@@ -339,3 +339,16 @@ At that point, the active roadmap is closed. No new phase starts automatically. 
 - Every task has an owner, output, acceptance gate and stop condition.
 - No duplicate specifications, speculative features or endless research expansion.
 - Report actual progress, blockers and uncompleted work plainly.
+
+
+## Execution log — 2026-11-14
+
+### ChatGPT research / QA
+- [x] Rechecked current 0.7A implementation report and confirmed the documented handoff point is T07; implementation source for the command bus / T07 interaction is not yet present at the inspected paths.
+- [x] Inspected the official INGRID-KG query catalogue and upstream RDF converter. Updated the Dortmund query pack with the documented examples and an explicit `grfo:` vs `grfp:` namespace reconciliation warning.
+- [x] Attempted public SPARQL endpoint access via catalogue link and direct query URL; both failed in the current research client. Local runtime DNS also failed. No Dortmund result counts are claimed.
+- [x] Created GitHub issue [#4 — C01 / 0.7A-T07](https://github.com/MrPavian/Nightshift/issues/4) with the implementation requirements and acceptance tests for Claude.
+
+### Next actions
+- Claude: implement C01 against issue #4 and return the required test/proof report.
+- ChatGPT: continue INGRID schema reconciliation through published source artifacts and prepare a fallback dataset-access path; resume empirical city analysis when endpoint or EasyDB access is available.
