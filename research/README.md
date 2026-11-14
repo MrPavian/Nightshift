@@ -41,6 +41,7 @@ Terms vary across eras, boroughs, crews and individual writers. Record variation
 - [Graffiti Formats & Practices](GRAFFITI_FORMATS.md)
 - [Writers & Influences](WRITERS_AND_INFLUENCES.md)
 - [Visual Reference Database](VISUAL_REFERENCE_DATABASE.md)
+- [Visual Construction Brief 01 — Evidence-led lettering and composition](VISUAL_CONSTRUCTION_BRIEF_01.md)
 - [Glyph Construction Guide](GLYPH_CONSTRUCTION_GUIDE.md)
 - [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md)
 - [PHASE 2 and Bubble Lettering](PHASE_2_AND_BUBBLE_LETTERING.md)
@@ -114,3 +115,8 @@ Added a research-grounded specification for Bubble/Throw-up, Blockbuster, Straig
 ### 2026-11 — Style grammar compatibility and parameter dependencies
 
 Added an implementation contract for independent letterform, composition, practice/form, surface and rendering axes. Defined compatibility levels, parameter ownership, dependency graphs, hard constraints versus soft preferences, preset serialization and compatibility validation. These are NIGHTSHIFT engineering rules derived from the research-led grammar dossier, not universal graffiti taxonomies.
+
+
+### 2026-11 — Rights-aware visual reference analysis and construction brief
+
+Expanded the visual reference index with item-level provenance and rights cautions for the Martin Wong/MCNY collections, NYU Fales Martin Wong Papers, Smithsonian Jack Stewart Papers and Henry Chalfant subway photographs. Added a reusable annotation protocol, rights-status vocabulary and a construction-focused comparison matrix. Added an implementation-facing brief translating the research into glyph identity, topology, pair/word composition, surface constraints, Three.js editing and deterministic proof-sheet requirements. Publicly accessible archival images remain reference-only unless item-level permission is confirmed.
