@@ -432,3 +432,12 @@
 - Recorded the 1996 title's unresolved 80-page (ILOVEGRAFFITI 2009) versus 160-page (retail catalogue) discrepancy; no extent was silently selected.
 - Documented the low-resolution Issuu preview trail without treating historical free viewing as a license or current access guarantee.
 - Added VR-014; page-level visual inspection and item-level image permissions remain outstanding.
+
+
+
+## Research deepening — *Da kukse wa* 2020 reprint access
+
+- Verified original 1987 publication roles and interviewees against Marianne Brentzel's author page and excerpt.
+- Confirmed the 2020 reprint / online brochure provenance through the official Dortmunder U *I WAS HERE* exhibition page.
+- Located a current specialist-retailer listing for the 36-page German A4 landscape second edition (€75, listed in stock at time checked); page count and “identical except preface” remain seller claims pending collation.
+- Added VR-015 and a dedicated access dossier; no images were copied and no reproduction rights inferred.
