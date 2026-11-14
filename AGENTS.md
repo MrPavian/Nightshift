@@ -73,3 +73,18 @@ Every substantial contribution should include:
 - Suggested next task
 
 If requirements conflict, preserve the project's non-negotiable priorities and ask the project owner before making a major product-direction change.
+
+
+## THE BLACKBOOK ARCHIVE
+
+When contributing to the in-game graffiti lexicon:
+
+- Read `docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md` and `docs/BLACKBOOK_ARCHIVE_ROADMAP.md`.
+- Treat `research/` as the editorial source of truth. Never create a separately hand-maintained in-game encyclopedia.
+- Research and cite before writing historical claims. Separate documented facts, disputed accounts, interpretation and generator design inference.
+- Distinguish practices, lettering styles, formats/surfaces, techniques/media, people and crews.
+- Record source metadata and image rights. Publicly viewable does not mean reusable.
+- Build content quality and taxonomy before UI polish or large-scale content volume.
+- Do not copy identifiable artist signatures or specific artworks into generator outputs.
+- Mark draft, provisional, disputed and reviewed content honestly.
+- Follow the dedicated archive roadmap's acceptance criteria; a visual shell with placeholder entries is not a completed archive.
