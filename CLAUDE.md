@@ -421,3 +421,30 @@ The approved image is the visual target, not a license to copy other artists' wo
 
 **Style-standard commit:** `2c8e3714121e23fe854b21f3d5b39a427d03f765`  
 **Master-prompt v1.2 commit:** `589b41a0119b48091bdd72c7ddcaf71a360e712d`.
+
+
+### A study — first blackbook-style SVG implementation (15 November 2026)
+
+The owner asked to proceed with the approved graffiti blackbook reference. A new vector-first implementation has replaced the previous sterile A study in `assets/design/letter-study_A_01.svg`.
+
+**Implemented in the current SVG:**
+- A4 landscape vector canvas (297 × 210 mm; 1680 × 1188 viewBox).
+- NIGHTSHIFT masthead, A study title, master-reference panel and footer.
+- Nine numbered learning panels in a three-column / three-row composition.
+- Warm paper, speckle/grain overlay, bold black marker-style panel bars, yellow numbered markers, violet construction lines and restrained edge paint.
+- Neutral A construction, anatomy, character-specific proportions, five form variations, form-character comparison, calligraphy/tool comparison and practical learning tasks.
+- Three original, visually differentiated graffiti directions in panel 8: throw-up-oriented, block-style and piece/Wildstyle-oriented.
+- Construction panel revised to show five explicit stages: skeleton, stroke body, crossbar, contour and fill.
+- Editable SVG text and vector paths; no external image dependencies.
+
+**Commits:**
+- Initial blackbook redesign: `759403376d4db46b3b72a544a59dc5439f07ad67`
+- Five-stage construction clarification: `77ca12ccdfa4f2e5ef897741e467b44d0ae3122b`
+
+**QA status: PARTIAL — not print-approved.**
+- Repository file was re-fetched after the update and current blob confirmed.
+- Structural content is present: nine numbered panels, three graffiti directions and five construction stages.
+- Exact rendered visual inspection at A4 and 100% has not yet been completed in this session. Therefore do not claim print readiness or owner approval.
+- Before handoff, render the exact current SVG (not a reconstruction), inspect text collisions/clipping, anatomy leader targets, panel 4 sequence, graffiti silhouettes and print contrast. If needed, adjust text sizing and panel 8 composition.
+- Check that the paper texture filter renders acceptably in target SVG/PDF renderers; provide a clean print variant with texture disabled if it compromises output.
+- Do not proceed to B until the owner has reviewed and approved the A sheet.
