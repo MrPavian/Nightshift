@@ -393,3 +393,31 @@ Owner feedback clarified that the Academy must teach graffiti lettering as its d
 - A study SVG commit: `63aba05c04b7c3c2aeb77ffbc1af689dbf4b4181`.
 
 This is a new content/layout direction, not print approval. The current SVG still requires exact rendered-size visual inspection and further refinement of the graffiti examples: ensure they read as distinct, convincing original letter constructions rather than schematic placeholders. Do not begin B until the owner has reviewed and approved A.
+
+
+### Owner-approved visual direction — blackbook reference (15 November 2026)
+
+The owner explicitly selected the supplied gritty nine-panel graffiti infographic as the preferred Academy reference. This supersedes the sterile/light technical worksheet look of the previous SVG prototype.
+
+**New binding visual standard:** `docs/lettering/GRAFFITI_ACADEMY_VISUAL_STYLE_STANDARD_01.md`  
+**Updated master prompt:** `docs/lettering/MASTER_CONTROL_PROMPT_01.md`, version 1.2.
+
+Visual requirements:
+- A4 landscape; expressive NIGHTSHIFT masthead and character-study title.
+- Three-column × three-row arrangement of nine numbered panels, plus header and footer.
+- Warm distressed paper / concrete-like texture; bold black marker headings and outlines.
+- Yellow highlighter as the dominant accent; violet/purple for construction lines, arrows and selected paint accents.
+- Original graffiti blackbook character, controlled spray splashes and drips; never sacrifice legibility.
+- Panels 5 and 8 must contain substantial original graffiti lettering, not typed glyphs or token decorative effects.
+- Panel 8 for A should include clearly distinct throw-up-oriented, block-style and piece/Wildstyle-oriented design directions. They are parallel approaches, not a mandatory progression.
+
+**Factual corrections required when translating the reference into teaching content:**
+- Treat all percentage ratios as example values for the drawn letter, not universal proportions.
+- Do not use “X = Mittellinie” as a generic uppercase-A guide. Explain guides by function; x-height belongs to lowercase proportion systems.
+- Do not state that an A universally consists of three main movements. Static diagrams do not establish stroke count/order, pressure, speed, tool angle or aerosol process.
+- Correct and character-specific anatomy takes priority over literal copying of errors in the reference image.
+
+The approved image is the visual target, not a license to copy other artists' work. All graffiti letterforms must remain original fictional designs. The previous A SVG is not yet a faithful implementation of this new look and must be redesigned against the visual standard. Keep the owner approval gate: do not scale to B until A is reviewed and approved.
+
+**Style-standard commit:** `2c8e3714121e23fe854b21f3d5b39a427d03f765`  
+**Master-prompt v1.2 commit:** `589b41a0119b48091bdd72c7ddcaf71a360e712d`.
