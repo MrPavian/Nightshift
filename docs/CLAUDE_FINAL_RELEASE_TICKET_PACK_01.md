@@ -5,6 +5,10 @@
 **Status:** ordered implementation sequence; not evidence of completion  
 **Rule:** inspect current repository state before each package. Do not repeat completed work.
 
+## Owner-approved sequencing override — 2026-11-15
+
+The original C01 → C02 → C03 → C04 → C05 → C06 → C07 order has one explicit exception: **after C01, execute C06 immediately.** C02–C05 are temporarily deferred, not cancelled. C06 must be independently useful and must not wait for the editor packages. Build a versioned editor-bridge contract and integrate only capabilities verified to exist. Do not fake future controls, duplicate editor logic or claim unfinished features. After C06, resume C02 → C03 → C04 → C05, then C07 completes real bidirectional integration and release hardening. This override is owner-approved and supersedes conflicting sequencing language in older C06 text.
+
 ## Mandatory first action
 
 Read:
@@ -113,7 +117,9 @@ Acceptance:
 - corrupted/unsupported project files fail safely with useful messages;
 - no user edit is lost on style/word-level recomputation.
 
-## C06 — BLACKBOOK ARCHIVE MVP
+## C06 — BLACKBOOK ARCHIVE MVP (execute immediately after C01 under the owner-approved sequencing override)
+
+**Dependency rule:** C02–C05 are temporarily deferred and do not block this package. Build the archive independently. Prepare versioned bridge contracts for future editor features; connect only verified capabilities already implemented. Do not fake controls, duplicate editor logic or claim unavailable features.
 
 **Goal:** deliver a polished, source-backed, visual graffiti lexicon that introduces modern hip-hop writing from its New York emergence through international circulation, distinct regional adaptations and contemporary global practice. This is a curated launch edition, not an exhaustive encyclopedia of every country or writer.
 
@@ -127,7 +133,7 @@ Implement the existing archive phases and scope:
 - a navigable timeline and at least two guided learning paths;
 - stable IDs, source records, claim-level evidence labels, editorial states and rights metadata;
 - original diagrams or rights-cleared visual assets;
-- links between at least three entries and relevant editor studies;
+- a documented, versioned editor-bridge contract; connect only to editor capabilities that are verified as implemented at the time of C06; record future C02–C05-dependent links as unavailable rather than simulating them;
 - bundled offline access.
 
 **Editorial and visual quality requirements:**
@@ -147,7 +153,7 @@ Implement the existing archive phases and scope:
 - timeline and two learning paths work end-to-end;
 - search and navigation have no dead ends;
 - visual design is polished, responsive and accessible;
-- at least three generator links target implemented capabilities, with unsupported links honestly disabled;
+- all active editor links target real, verified capabilities; unavailable future links are honestly marked unavailable; the final requirement for at least three genuine bidirectional archive/editor links is completed and tested in C07 after C02–C05;
 - no placeholder text, unsupported claims or unlicensed embedded images;
 - content is generated from the research library, not duplicated manually.
 
