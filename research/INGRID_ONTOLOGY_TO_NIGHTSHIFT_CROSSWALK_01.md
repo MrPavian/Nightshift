@@ -217,3 +217,39 @@ Do not auto-train a generator on the INGRID image dump or turn source annotation
 - INGRID-KG public query examples: https://dice-group.github.io/ingrid.github.io/
 
 **Evidence status:** source ontology and manual directly inspected; public knowledge-graph architecture and license descriptions checked against the 2023 article; no live Dortmund result set has yet been queried. All NIGHTSHIFT feature dimensions and workflow proposals are design/research inferences, not INGRID facts.
+
+
+## 9. Corpus status update — official holdings page checked 2026-11-15
+
+The current University of Paderborn INGRID holdings page makes an important distinction between the overall image holdings and the subset with completed annotation / research release:
+
+- The page describes approximately **150,000 images** in the system.
+- It reports **99,962 images** with complete basic and/or deep annotation and released for research use, explicitly dated **July 2023**.
+- It names the first-phase collections as Mannheim police photographs (1998–2014) and Peter Kreuzer's Munich collection (1980s).
+- It names second-phase collections as Cologne police, the Munich coordination group for graffiti, and gallery owner Dirk Kreckel.
+- The page says all already processed images from these collections are accessible on a continuously updated basis.
+- It describes captured metadata as photo collection, recording date, recording location and, if legible in the image, the writer pseudonym; further description is based on what is visible in the photograph.
+- Its user guidance says the images are CC BY-SA and annotated metadata CC; this general statement does not replace item-level rights review for any intended reuse.
+
+### Reconciliation with the 2023 paper
+
+The 2023 *Scientific Data* paper describes a corpus of roughly 136,000 photographs and a public KG snapshot dated 2022-07-05 (version 4.0). It identifies city holdings including Dortmund, Hamm, Cologne, Mannheim, Munich, Berlin, Leipzig, Münster and Paderborn. These numbers are not directly interchangeable with the current holdings page's approximately 150,000 images or its 99,962 annotated/released subset: they refer to different dates, system layers and counting concepts.
+
+**Operational consequence:** do not use “150,000” as the size of the annotated public sample, and do not treat “99,962” as a current exact count. The latter is a dated July 2023 figure. The official current page establishes that Dortmund is part of the research project's historical corpus description via the 2023 paper, but it does not provide a current Dortmund result count or prove the current EasyDB query result.
+
+### Revised live-query priority
+
+1. Enter the official EasyDB interface using the public access route described by the University of Paderborn.
+2. Record the interface's actual current result count and timestamp before filtering.
+3. Query Dortmund explicitly; record the exact city field, exact value, result count and whether the results are images, graffiti objects or another entity level.
+4. Repeat for Hamm, Cologne, Mannheim, Munich, Münster and Paderborn only after the Dortmund field/value has been confirmed.
+5. Record whether the five collections named on the holdings page appear as selectable inventory values; do not infer a mapping from collection names to city.
+6. Compare EasyDB result totals with the public KG only after matching entity type, release status, graph version and date.
+
+**Evidence boundary:** the official holdings page and 2023 paper have been inspected; no live EasyDB session or current Dortmund search has been performed in this update. No city-level count is asserted.
+
+### Sources added
+
+- Universität Paderborn, INGRID — Bestand: https://www.uni-paderborn.de/en/forschungsprojekte/ingrid/bestand
+- Universität Paderborn, INGRID — project and public access information: https://www.uni-paderborn.de/forschungsprojekte/ingrid
+- Sherif et al. (2023), *IngridKG: A FAIR Knowledge Graph of Graffiti*: https://pmc.ncbi.nlm.nih.gov/articles/PMC10212912/
