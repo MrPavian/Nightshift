@@ -141,3 +141,50 @@ The library catalogue is a concrete research route, but the search result alone 
 | INGRID | Official corpus / ontology / SPARQL documentation | No live Dortmund records | Metadata-led stratified discovery |
 
 **Research decision:** do not make a synthetic visual sample from product thumbnails, search-result images or a handful of famous works. The next meaningful step is access to at least one full publication and a documented page-level sample. Until then, the visual coding rubric remains ready but unpopulated.
+
+
+## 9. Access follow-up — 2026-11-15 (second pass)
+
+This pass found a further digital documentation route and checked the institutional catalogue page itself. It does **not** add any visual coding observations.
+
+### Da kukse wa: full digital documentation route identified, rights explicitly reserved
+
+A WordPress page titled *Da kukse wa – Dortmunder Graffiti* reproduces a digital documentation of the 1987 book and explicitly states that it is provided for documentation only; it also states that rights remain with the authors or publisher and that page layout was modified in places:
+
+- https://aphoristhma.wordpress.com/da-kukse-wa/
+
+This establishes that a full digital reproduction route is publicly discoverable. It does **not** establish permission to download, extract, republish, train on, or incorporate the photographs into NIGHTSHIFT. Treat it as a restricted research lead. Do not mirror the scan or copy images into the repository. For any visual research, record only bibliographic/page references and independently authored observations; seek permission from the relevant rights holders before any reuse beyond what applicable law permits.
+
+The official author page remains the strongest accessible source for the publication's bibliographic details and excerpt:
+- https://www.mariannebrentzel.de/da-kukse-wa.html
+- https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+
+### IRON CITY: institutional catalogue entry confirmed; live availability not confirmed
+
+The Martha Cooper Library / URBAN NATION catalogue search result identifies *Iron City — Graffiti Dortmund* (2002), with Hubert Moormann, Christina Soltani and Markus Wiese listed as authors/contributors and MASmedia, Dortmund as publisher. The catalogue page opened during this pass, but it displayed a server-connection warning (“Keine Verbindung zum Bibliotheksserver”). Its item-level availability could therefore not be verified.
+
+- Catalogue result: https://open.urban-nation.com/de-de/Mediensuche/Einfache-Suche?page=4&pagesize=20&searchhash=OCLC_f39d06322f9ef52511f377330f9a36b27f073fe6&top=y
+- The catalogue entry is evidence of bibliographic holding/cataloguing, not proof of current lendability, on-site access, or digital download.
+
+Next step: contact the Martha Cooper Library directly and ask whether *Iron City* can be consulted on site, whether reproductions for private research are possible, and what item-level image permissions apply. Do not report it as available until staff confirm.
+
+### ALL SURFACE: acquisition lead remains strong, but inspect a physical copy
+
+The Hitzerot listing describes the 2022 book as 244 pages, German-language, edition of 500, with 244 pages of Dortmund tag documentation and participant recollections:
+- https://hitzerot.com/shop/all-surface/
+
+The Mr. Graffiti and Le Grand Jeu listings also describe the book and its Dortmund 1980s/1990s scope:
+- https://www.mrgraffiti.nl/product/all-surface-tagging-in-dortmund-in-the-1980s-and-1990s/
+- https://www.legrandj.eu/products/all-surface-tagging-in-dortmund-in-den-1980er-und-1990er-jahren
+
+Retailer metadata contains a page-count discrepancy (some listings describe 244 pages; another product field reports 288). Treat the exact pagination as unverified until the physical copy is checked. Availability and price are time-sensitive. Product previews are not a representative sample.
+
+### Updated access decision
+
+| Source | New finding | What remains unverified |
+|---|---|---|
+| *Da kukse wa* | Full digital documentation route located; page explicitly reserves authors'/publisher's rights | Permission for any reuse; reliable page-level visual inspection/coding |
+| *IRON CITY* | Institutional catalogue entry and bibliographic metadata confirmed | Current copy status, consultation terms and reproduction permission |
+| *ALL SURFACE* | Multiple current specialist listings provide acquisition routes | Exact pagination and page-level visual sample |
+
+**No images were downloaded, copied, published or coded in this pass. No Dortmund visual frequencies or style rules are claimed.**
