@@ -63,6 +63,7 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 - [NYC Writing Culture in the 1990s — Transition, Continuity and New Circuits](NYC_WRITING_1990S_TRANSITION_01.md)
 
+- [NYC Modern Writing Emergence — Claim Ledger 01](NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md)
 - [NYC Graffiti History](NYC_GRAFFITI_HISTORY.md)
 - [Lettering Styles](LETTERING_STYLES.md)
 - [Graffiti Formats & Practices](GRAFFITI_FORMATS.md)
