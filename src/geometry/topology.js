@@ -17,9 +17,10 @@ const EPS = 1e-9;
  */
 export function analyseContours(contours, numerical, { isDeclaredCrossing = () => false } = {}) {
   let tol = numerical.flatteningTolerance;
-  let polys, intersections, round = 0;
+  let polys, basePolys, intersections, round = 0;
   for (; ; round++) {
     polys = contours.map((c) => ({ ...flattenContour(c, tol), role: c.role, contour: c }));
+    basePolys ??= polys;
     intersections = certifyStraddlingCrossings(findIntersections(polys), polys);
     const uncertain = intersections.some((x) => x.certainty === 'uncertain');
     // Refinement can only turn "uncertain" into "certainly disjoint". If a certain,
@@ -34,7 +35,11 @@ export function analyseContours(contours, numerical, { isDeclaredCrossing = () =
     degeneracies: contours.flatMap(degeneracies),
     intersections,
     ...containmentAndFill(polys),
-    proximity: boundaryProximity(polys),
+    // Proximity is measured at the base flattening tolerance; every measurement
+    // carries its own error bound. Measuring on refined polylines made a single
+    // candidate cost tens of seconds (reported editor freeze) without changing
+    // any committed result (all committed reports use 0 refinement rounds).
+    proximity: boundaryProximity(basePolys),
     flatteningTolerance: tol,
     refinementRounds: round,
     _polys: polys,
@@ -272,7 +277,7 @@ const arcAt = (poly, cum, i, p) => {
 
 // Boundary pairs farther apart than this are not reported (reporting radius in
 // glyph units; wall/gap measurements of interest are far smaller).
-export const PROXIMITY_SEARCH_RADIUS = 70;
+export const PROXIMITY_SEARCH_RADIUS = 128; // above the largest measured gap in the committed reports (≈99), so no existing measurement is dropped
 
 function boundaryProximity(polys) {
   const best = new Map();
@@ -295,7 +300,9 @@ function boundaryProximity(polys) {
     }
     const key = `${A.contourId}|${B.contourId}|${e.segmentId}|${f.segmentId}`;
     const errorBound = e.errorBound + f.errorBound;
-    if (!best.has(key) || r.distance < best.get(key).distance) {
+    const prev = best.get(key);
+    // Deterministic tie-break: equal distance keeps the tighter error bound, independent of visiting order.
+    if (!prev || r.distance < prev.distance - 1e-12 || (Math.abs(r.distance - prev.distance) <= 1e-12 && errorBound < prev.errorBound)) {
       best.set(key, { contourIds: A === B ? [A.contourId] : [A.contourId, B.contourId], segmentIds: [e.segmentId, f.segmentId], distance: r.distance, closestPointPair: r.pair, errorBound });
     }
   });

@@ -1,9 +1,85 @@
 {
   "clearance": {
-    "boundarySelfProximity": [],
+    "boundarySelfProximity": [
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            99.522949,
+            50.204834
+          ],
+          [
+            3.196289,
+            51.850586
+          ]
+        ],
+        "featureId": "glyph.O.contour.outer",
+        "measurementErrorBound": 0.014175,
+        "minimumDistance": 96.340718,
+        "segmentIds": [
+          "glyph.O.contour.outer.seg.01",
+          "glyph.O.contour.outer.seg.04"
+        ],
+        "side": "unfilled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            100.996134,
+            69.381351
+          ],
+          [
+            2,
+            70
+          ]
+        ],
+        "featureId": "glyph.O.contour.outer",
+        "measurementErrorBound": 0.01218,
+        "minimumDistance": 98.998067,
+        "segmentIds": [
+          "glyph.O.contour.outer.seg.01",
+          "glyph.O.contour.outer.seg.03"
+        ],
+        "side": "unfilled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            100.996134,
+            70.618649
+          ],
+          [
+            2,
+            70
+          ]
+        ],
+        "featureId": "glyph.O.contour.outer",
+        "measurementErrorBound": 0.01218,
+        "minimumDistance": 98.998067,
+        "segmentIds": [
+          "glyph.O.contour.outer.seg.02",
+          "glyph.O.contour.outer.seg.04"
+        ],
+        "side": "unfilled"
+      }
+    ],
     "counterWalls": []
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "affectedIds": [
+        "glyph.O.contour.outer"
+      ],
+      "code": "VAL_UNCALIBRATED",
+      "glyphId": "latin.upper.O",
+      "message": "3 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
+      "severity": "warning",
+      "stage": "clearance-analysis",
+      "variantId": "o.provisional"
+    }
+  ],
   "geometryHash": "16651d1aa5b4dbae1cf81177d3ccb60775357e2c82ec685d222aad3944b776b9",
   "glyphId": "latin.upper.O",
   "hardChecksPassed": true,
@@ -46,7 +122,7 @@
     },
     {
       "stage": "clearance-analysis",
-      "status": "passed"
+      "status": "measured-uncalibrated"
     },
     {
       "note": "No anchors declared (anchorStatus: not-yet-derived).",

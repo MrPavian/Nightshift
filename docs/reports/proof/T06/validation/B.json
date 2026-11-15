@@ -142,7 +142,7 @@
           ]
         ],
         "featureId": "glyph.B.negative.counter.lower",
-        "measurementErrorBound": 0.01863,
+        "measurementErrorBound": 0.011235,
         "minimumDistance": 16.3005,
         "segmentIds": [
           "glyph.B.contour.outer.seg.03",

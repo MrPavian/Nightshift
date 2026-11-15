@@ -16,7 +16,8 @@
     "report:validation": "node tools/report-validation.mjs",
     "proof:render": "node tools/render-proof.mjs",
     "proof:run": "node tools/proof-run.mjs",
-    "proof:editor": "node tools/editor-smoke.mjs --capture"
+    "proof:editor": "node tools/editor-smoke.mjs --capture",
+    "perf:editor": "node tools/editor-perf.mjs --grid 5 --budget-ms 600"
   },
   "dependencies": {
     "three": "0.187.0"
