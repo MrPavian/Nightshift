@@ -4,6 +4,22 @@
 **Scope:** Visual language, information hierarchy, navigation, interaction, responsive behavior, accessibility, timeline, visual learning and content presentation.  
 **Product principle:** A premium digital blackbook and research archive — not a wiki skin, admin dashboard or faux-grunge scrapbook.
 
+## 0. Verbindliche Sprachregelung — Deutsch
+
+**Das gesamte Lexikon ist deutschsprachig.** Diese Regel gilt für die sichtbare Oberfläche, Navigation, Bedienelemente, Hilfetexte, Fehlermeldungen, Filter, Suchhinweise, Timeline, Lernpfade, Artikeltexte, Bildunterschriften, Diagramme und redaktionelle Statusanzeigen.
+
+- Standardsprache ist klares, gut lesbares Deutsch (de-DE). Keine parallele englische UI und kein Sprachumschalter in Version 1.0.
+- Englische Begriffe aus der Writing-Kultur bleiben dort im Original, wo sie als Fachbegriffe, historische Eigenbezeichnungen, lokale Ausdrücke oder etablierte Szenebegriffe gebraucht werden. Bei der ersten Nennung werden sie auf Deutsch erklärt.
+- Titel von Büchern, Filmen, Ausstellungen, Publikationen, Institutionen und Originalquellen bleiben in ihrer offiziellen Originalschreibweise.
+- Direkte Zitate bleiben in der Originalsprache; unmittelbar anschließend folgt bei Bedarf eine deutsche Übersetzung. Übersetzungen werden als solche kenntlich gemacht.
+- Eigennamen, Writer-Namen, Crew-Namen, Ortsnamen und historische Bezeichnungen werden nicht eingedeutscht.
+- Englische UI-Begriffe sind nicht zulässig, nur weil sie in der Softwarebranche üblich sind. Verwende beispielsweise „Entdecken“, „Zeitleiste“, „Szenen“, „Stile & Buchstaben“, „Praktiken & Formate“, „Werkzeuge & Materialien“, „Personen & Crews“, „Begriffslexikon“ und „Bildarchiv“.
+- Auch Statuswerte und Metadaten werden deutsch angezeigt: „Entwurf“, „Quellen geprüft“, „Redaktionell geprüft“, „Für das Archiv freigegeben“, „Überholt“; „stark“, „gut“, „kontextuell“, „unbestätigter Hinweis“; „nur verlinkt“, „Rechte ungeklärt“, „Freigabe angefragt“, „Nutzung geklärt“, „nicht verwenden“.
+- Technische Schlüssel, Dateinamen, IDs, Code-Bezeichner und Datenbankschemata dürfen englisch bleiben, sofern sie nicht direkt in der Benutzeroberfläche erscheinen.
+- Die Bezeichnung **THE BLACKBOOK ARCHIVE** darf als Eigenname/Marke bestehen bleiben. Die erklärende Produktbezeichnung und alle Navigationselemente sind deutsch.
+
+**Abnahmeregel:** Ein Nutzer muss das gesamte Lexikon bedienen und verstehen können, ohne Englischkenntnisse zu benötigen. Fachbegriffe der Graffiti-Kultur werden im Lexikon selbst verständlich erklärt.
+
 ## 1. Product character
 
 The archive should feel like opening a carefully curated writer's blackbook inside a modern research studio. It combines:
@@ -66,7 +82,7 @@ Every page provides:
 - relevant next steps;
 - no dead-end states.
 
-## 4. Discover / archive home
+## 4. Startseite / Entdecken
 
 The home screen is a curated starting point, not a dashboard full of metrics.
 
@@ -123,7 +139,7 @@ Every entry uses the same recognizable structure, with optional sections hidden 
 
 Progressive disclosure is mandatory: the opening should be useful in 20–40 seconds; deeper evidence should be available without overwhelming the first read.
 
-## 7. Timeline experience
+## 7. Zeitleiste
 
 The timeline is a core exploration mode, not a decorative horizontal strip.
 
@@ -148,7 +164,7 @@ The timeline is a core exploration mode, not a decorative horizontal strip.
 - No drag-only interaction; all timeline actions need buttons or keyboard alternatives.
 - Provide a plain chronological list as an accessible alternative to the visual track.
 
-## 8. Scenes, maps and regional comparison
+## 8. Szenen, Karten und regionale Vergleiche
 
 - Present scenes as locally grounded histories, not country flags or generic region tiles.
 - A scene page should explain local chronology, terminology, actors, media channels, social/spatial context and external exchanges.
@@ -178,7 +194,7 @@ Interaction rules:
 - Respect reduced-motion settings.
 - Do not make a diagram imply a universal construction sequence where sources do not support one.
 
-## 10. Learning paths and relationship navigation
+## 10. Lernpfade und Verknüpfungen
 
 Launch with at least three complete, curated paths:
 - From name to piece.
@@ -215,7 +231,7 @@ Target WCAG 2.2 AA as the release baseline:
 - zoom/reflow without horizontal page scrolling at narrow widths;
 - accessible list alternative for timeline and diagrams.
 
-## 13. Content states and trust signals
+## 13. Inhaltsstatus und Vertrauensmerkmale
 
 Keep three independent state systems visible where relevant:
 - **Editorial:** draft / source-checked / editorial-reviewed / approved-for-archive / superseded.
