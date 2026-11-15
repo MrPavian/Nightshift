@@ -1,10 +1,10 @@
 {
   "artifactHashes": {
-    "plates/glyph-identity.svg": "b1bcc8462006f74e6e98bca8f334c3bda74f78984f8305f246f45df54a997839",
-    "plates/pair-context.svg": "be30e078d578c4c61648bd608c0dc44764f555293a9138537e66f8096cfce465",
-    "plates/semantic-topology.svg": "3b80e2930d1d4dd833d538421fb4561ff2b43f2b0cac2eedac2414f450ff8c3f",
-    "plates/word-context.svg": "23ba56ac470f4566e4f35f2bdcbd2dfc5029948f34fe28308d200a2b87af4fa9",
-    "review/review-template.json": "585df6f9de6e4dbb722fd36fd182acb87184e7f9d4054e34cc8a90a63adfab6b",
+    "plates/glyph-identity.svg": "e474dec4bfeb0fde9f95e2fc5e00e93f34bf34049db4c80ea9c2b79ef457a9b3",
+    "plates/pair-context.svg": "247bad548b4908aa80c09fb62e73afd5ad563000a907771ccb4c6c617ed006f9",
+    "plates/semantic-topology.svg": "72329669841d0817d9fc449a90c1d8f3255682585b52553da5a9e7e63beda958",
+    "plates/word-context.svg": "1a07f8e9805861abb5a6e88acb95c5bc97bca629efc58743469a5cdf0065db32",
+    "review/review-template.json": "aefc6033ded7635288acdfc69e6a3b4f190dfd23eae8fe6f5dc37a2087246e79",
     "validation/A.json": "61611981536f041656147fbf7b05a8b6413be5ae8191e24fa293f0c6eac2d126",
     "validation/B.json": "227170a1dc1f7e6c24dcfff3603363bbf72b41323f95847548e1167a74c31cae",
     "validation/C.json": "f6a82df9af517eb71b7a4ae585aca3d8cd5ad5a32ef5de0a214169648ee8ee0a",
@@ -14,6 +14,7 @@
     "validation/G.json": "de7819e573f137144cfaa3a1fcff49266df7f6afcbafa2ae70d234c96d3516c2",
     "validation/H.json": "a883fd22d9dc8d6c57833444e5c27be80c5a6fa1c746a8107f754658e66a42fa",
     "validation/I.json": "8542d4199e12b09ce777fc58fa7117626fce7659c8208006e35aff22c4387e96",
+    "validation/J.json": "6553e242dd1164e08d0635fbccd7d4732ddc3290ec44e73ccf210ca096734145",
     "validation/K.json": "1e904f1652f729395ac107add2d8c482d838563c2f10ec4ab65673b32aa0090b",
     "validation/L.json": "c7873cc80036c67e6f4a8b017b366a9f6f18bad1891b1fe99558d958a3148177",
     "validation/M.json": "0abbbeeea117b1c9647f8d63b63c3bba904e53fff61928b92f866f326226091d",
@@ -24,7 +25,7 @@
     "validation/R.json": "dbe7f9fd44346e8020517d446c5587b2f61c2466144e5b998b3342af234ee3a8",
     "validation/S.json": "57ae24c974051d79e1e074d7c559c0cc20366fd37d772f0806fa8cbe66f80f24",
     "validation/T.json": "5e735e3b3b3c52f1f3fb5576528bc4e7d4dd927b2485a204a02f062eef0a8cd4",
-    "validation/U.json": "28c2c179a67d5b1e09d648be4681d54ca3c8777f2c0b60371976652cc08f164f",
+    "validation/U.json": "143d71fcdd234d87d453393464f44493b895920155030cb6d2d71bc7bbe926f8",
     "validation/V.json": "d20c92818dcb5d283853f05b8c0f31b2873949782bf5cbaa6db97d26c22b973b",
     "validation/W.json": "fc480d0eaa4732eee97b73b756832c86c5cd86c91c840775f98a08095afd5ba0",
     "validation/X.json": "cd603f9c1d3184d6987fd7a58bac0e50098e45d54b93a607ef9253478dfe2ace",
@@ -50,6 +51,7 @@
       "G",
       "H",
       "I",
+      "J",
       "K",
       "L",
       "M",
@@ -60,6 +62,7 @@
       "R",
       "S",
       "T",
+      "U",
       "V",
       "W",
       "X",
@@ -116,6 +119,11 @@
         "contract": "partial-provisional-coverage",
         "current": "authored-subset",
         "fixtureId": "word-risk"
+      },
+      {
+        "contract": "partial-provisional-coverage",
+        "current": "authored-subset",
+        "fixtureId": "word-sque"
       }
     ],
     "missingGlyphs": [],
@@ -141,13 +149,13 @@
       "MIND": "authored-subset",
       "NYX": "authored-subset",
       "RISK": "authored-subset",
-      "SQUE": "partial-provisional-coverage"
+      "SQUE": "authored-subset"
     }
   },
   "engineVersions": {
     "generator": "none (legacy import, no procedural generation)",
     "geometryValidator": "geometry-validator/1.0.0; nightshift.validator-profile.legacy-v06@1.0.0",
-    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.authored.c02-wave2@1.0.0; nightshift.authored.c02-wave3@1.0.0; nightshift.semantic-overlay.abgrs@1.4.0",
+    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.authored.c02-wave2@1.0.0; nightshift.authored.c02-wave3@1.0.0; nightshift.authored.c02-wave4@1.0.0; nightshift.semantic-overlay.abgrs@1.5.0",
     "grammar": "none (no style grammar in 0.7A)",
     "relationshipSolver": "none — neutral-naive-layout/1.0.0",
     "renderer": "render-model/1.0.0; proof-plates/1.0.0"
@@ -162,6 +170,7 @@
     "glyph-g",
     "glyph-h",
     "glyph-i",
+    "glyph-j",
     "glyph-k",
     "glyph-l",
     "glyph-m",
@@ -172,6 +181,7 @@
     "glyph-r",
     "glyph-s",
     "glyph-t",
+    "glyph-u",
     "glyph-v",
     "glyph-w",
     "glyph-x",
@@ -236,12 +246,12 @@
     "template": "review/review-template.json"
   },
   "rootSeed": 0,
-  "runId": "run.0.7A-T06.da171a9bbfcd",
+  "runId": "run.0.7A-T06.2f8b095537c4",
   "schemaVersion": "1.0",
   "seedDerivationVersion": "none — no randomness is used in 0.7A proof runs",
   "sourceRevision": {
     "kind": "registry-content-sha256",
-    "value": "6c0ddf6a7a0c3660ffd0b2937d1b013749d5b34a6855ec0bcdf9dfba42b6a57f"
+    "value": "409b86f863aea9cf0d57b57afe1edcd89a9a511718caefdceb3895069e6e27a0"
   },
   "specimens": [
     {
@@ -594,6 +604,45 @@
         "validation/I.json"
       ],
       "width": 58
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-j",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "J",
+          "geometryHash": "63e904ddd616e368495e309a2134c057479bed4b31f2e4c26b22ece719d6b704",
+          "glyphId": "latin.upper.J",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -8,
+            "translateY": 0
+          },
+          "variantId": "j.master"
+        }
+      ],
+      "specimenId": "spec.glyph-j.540d3731d68f",
+      "text": "J",
+      "validationReportRefs": [
+        "validation/J.json"
+      ],
+      "width": 92
     },
     {
       "coverage": "authored-subset",
@@ -984,6 +1033,45 @@
         "validation/T.json"
       ],
       "width": 92
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-u",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "U",
+          "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "glyphId": "latin.upper.U",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "u.master"
+        }
+      ],
+      "specimenId": "spec.glyph-u.a58df59a3ac7",
+      "text": "U",
+      "validationReportRefs": [
+        "validation/U.json"
+      ],
+      "width": 90
     },
     {
       "coverage": "authored-subset",
@@ -2479,7 +2567,7 @@
       "width": 377
     },
     {
-      "coverage": "partial-provisional-coverage",
+      "coverage": "authored-subset",
       "family": "word-context",
       "fixtureId": "word-sque",
       "layout": {
@@ -2526,19 +2614,19 @@
         },
         {
           "character": "U",
-          "geometryHash": "473538c6d85ef8e47ee3c8a2e973dd602cb25512b9d48f931574cb971d8ef299",
+          "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
           "glyphId": "latin.upper.U",
           "hardChecksPassed": true,
           "index": 2,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 220,
+            "translateX": 219,
             "translateY": 0
           },
-          "variantId": "u.provisional"
+          "variantId": "u.master"
         },
         {
           "character": "E",
@@ -2551,13 +2639,13 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 322,
+            "translateX": 321,
             "translateY": 0
           },
           "variantId": "e.master"
         }
       ],
-      "specimenId": "spec.word-sque.99fa09413116",
+      "specimenId": "spec.word-sque.199c3f84aaa7",
       "text": "SQUE",
       "validationReportRefs": [
         "validation/S.json",
@@ -2565,7 +2653,7 @@
         "validation/U.json",
         "validation/E.json"
       ],
-      "width": 416
+      "width": 415
     }
   ],
   "validationReportRefs": {
@@ -2620,6 +2708,12 @@
     "latin.upper.I": {
       "hardChecksPassed": true,
       "path": "validation/I.json",
+      "refusal": null,
+      "renderStatus": "rendered"
+    },
+    "latin.upper.J": {
+      "hardChecksPassed": true,
+      "path": "validation/J.json",
       "refusal": null,
       "renderStatus": "rendered"
     },
@@ -2687,7 +2781,7 @@
       "hardChecksPassed": true,
       "path": "validation/U.json",
       "refusal": null,
-      "renderStatus": "rendered-provisional"
+      "renderStatus": "rendered"
     },
     "latin.upper.V": {
       "hardChecksPassed": true,

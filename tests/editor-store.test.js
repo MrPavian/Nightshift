@@ -2,7 +2,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { loadRegistry } from '../src/glyph/load-node.js';
+import { loadRegistry, readInputs, DEFAULT_INPUTS } from '../src/glyph/load-node.js';
+import { GlyphRegistry } from '../src/glyph/registry.js';
 import { EditorStore, moveNodeCommand } from '../src/model/editor-store.js';
 import { disabledParameterOperations, findNode } from '../src/model/operations.js';
 import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
@@ -70,8 +71,12 @@ test('uncalibrated parameter operations are registered but disabled', () => {
 
 test('provisional reference-only glyphs cannot be edited; malformed envelopes are rejected', () => {
   const s = fresh();
-  const c = { ...cmd('c', 'glyph.J.contour.outer.node.01', { x: 1, y: 1 }, s.revision('latin.upper.J')), payload: { glyphId: 'latin.upper.J', nodeId: 'glyph.J.contour.outer.node.01', to: { x: 1, y: 1 } } };
-  assert.equal(s.submit(c).code, 'OP_NOT_EDITABLE');
+  // Since C02 wave 4 every letter has an editable master; the protection is tested on the pure v0.6
+  // import, where every master is a reference-only provisional base.
+  const legacy = new EditorStore(GlyphRegistry.build(readInputs(DEFAULT_INPUTS, [])).list(), profile, disabledParameterOperations(paramContract));
+  assert.equal(legacy.get('latin.upper.J').variants[0].geometry.editability, 'reference-only');
+  const c = { ...cmd('c', 'glyph.J.contour.outer.node.01', { x: 1, y: 1 }, legacy.revision('latin.upper.J')), payload: { glyphId: 'latin.upper.J', nodeId: 'glyph.J.contour.outer.node.01', to: { x: 1, y: 1 } } };
+  assert.equal(legacy.submit(c).code, 'OP_NOT_EDITABLE');
   const { expected_revision: _drop, ...noRev } = cmd('c', APEX, { x: 1, y: 1 }, 0);
   assert.equal(s.submit(noRev).code, 'CMD_BAD_ENVELOPE');
   assert.equal(s.submit(cmd('c', APEX, { x: NaN, y: 1 }, s.revision(A))).code, 'OP_BAD_PAYLOAD');

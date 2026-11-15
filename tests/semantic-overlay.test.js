@@ -38,7 +38,7 @@ test('overlay is pure: input records are not mutated', () => {
   assert.equal(stableStringify(records), snapshotText);
 });
 
-test('A/B/G/R/S components match the contract proposals exactly; waves 1–3 match their plans; other letters untouched', () => {
+test('A/B/G/R/S components match the contract proposals exactly; waves 1–4 match their plans; other letters untouched', () => {
   for (const [gid, names] of Object.entries(abgrsContract.componentProposals)) {
     const comps = registry.get(gid).semanticGraph.components;
     assert.deepEqual(comps.map((c) => c.label).sort(), [...names].sort(), gid);
@@ -50,11 +50,12 @@ test('A/B/G/R/S components match the contract proposals exactly; waves 1–3 mat
     I: ['stem', 'top-terminal', 'foot-terminal'], L: ['spine', 'foot-bar'], T: ['top-bar', 'stem'],
     K: ['spine', 'arm', 'leg'], M: ['left-stem', 'left-diagonal', 'right-diagonal', 'right-stem'], N: ['left-stem', 'diagonal', 'right-stem'],
     V: ['left-stroke', 'right-stroke', 'foot'], W: ['left-outer-stroke', 'left-inner-stroke', 'middle-apex', 'right-inner-stroke', 'right-outer-stroke'],
-    X: ['descending-stroke', 'ascending-stroke'], Y: ['left-arm', 'right-arm', 'stem'], Z: ['top-bar', 'diagonal', 'foot-bar'] };
+    X: ['descending-stroke', 'ascending-stroke'], Y: ['left-arm', 'right-arm', 'stem'], Z: ['top-bar', 'diagonal', 'foot-bar'],
+    J: ['stem', 'hook', 'terminal'], U: ['left-stem', 'base-curve', 'right-stem'] };
   for (const [ch, names] of Object.entries(PLAN)) {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components.map((c) => c.label).sort(), [...names].sort(), ch);
   }
-  for (const ch of 'JU') {
+  for (const ch of '') { // since wave 4 every letter carries component proposals
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components, []);
     assert.equal(registry.getByChar(ch).revision, 1);
   }

@@ -5,59 +5,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            54,
-            108
+            55,
+            109
           ],
           [
-            53.806309,
-            134.99861
+            55.152924,
+            131.998983
           ]
         ],
         "featureId": "glyph.U.contour.outer",
-        "measurementErrorBound": 0.013476,
-        "minimumDistance": 26.999305,
-        "segmentIds": [
-          "glyph.U.contour.outer.seg.03",
-          "glyph.U.contour.outer.seg.09"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            54,
-            108
-          ],
-          [
-            53.806309,
-            134.99861
-          ]
-        ],
-        "featureId": "glyph.U.contour.outer",
-        "measurementErrorBound": 0.013476,
-        "minimumDistance": 26.999305,
-        "segmentIds": [
-          "glyph.U.contour.outer.seg.04",
-          "glyph.U.contour.outer.seg.09"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            54,
-            108
-          ],
-          [
-            54.189481,
-            134.99867
-          ]
-        ],
-        "featureId": "glyph.U.contour.outer",
-        "measurementErrorBound": 0.013476,
-        "minimumDistance": 26.999335,
+        "measurementErrorBound": 0.013603,
+        "minimumDistance": 22.999492,
         "segmentIds": [
           "glyph.U.contour.outer.seg.03",
           "glyph.U.contour.outer.seg.08"
@@ -68,17 +26,38 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            54,
-            108
+            55,
+            109
           ],
           [
-            54.189481,
-            134.99867
+            54.847076,
+            131.998983
           ]
         ],
         "featureId": "glyph.U.contour.outer",
-        "measurementErrorBound": 0.013476,
-        "minimumDistance": 26.999335,
+        "measurementErrorBound": 0.013603,
+        "minimumDistance": 22.999492,
+        "segmentIds": [
+          "glyph.U.contour.outer.seg.03",
+          "glyph.U.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            55,
+            109
+          ],
+          [
+            55.152924,
+            131.998983
+          ]
+        ],
+        "featureId": "glyph.U.contour.outer",
+        "measurementErrorBound": 0.013603,
+        "minimumDistance": 22.999492,
         "segmentIds": [
           "glyph.U.contour.outer.seg.04",
           "glyph.U.contour.outer.seg.08"
@@ -89,17 +68,38 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            37,
+            55,
+            109
+          ],
+          [
+            54.847076,
+            131.998983
+          ]
+        ],
+        "featureId": "glyph.U.contour.outer",
+        "measurementErrorBound": 0.013603,
+        "minimumDistance": 22.999492,
+        "segmentIds": [
+          "glyph.U.contour.outer.seg.04",
+          "glyph.U.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            36,
             49.5
           ],
           [
-            9,
+            10,
             49.5
           ]
         ],
         "featureId": "glyph.U.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 28,
+        "minimumDistance": 26,
         "segmentIds": [
           "glyph.U.contour.outer.seg.02",
           "glyph.U.contour.outer.seg.10"
@@ -119,13 +119,34 @@
       "message": "5 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
       "severity": "warning",
       "stage": "clearance-analysis",
-      "variantId": "u.provisional"
+      "variantId": "u.master"
     }
   ],
-  "geometryHash": "473538c6d85ef8e47ee3c8a2e973dd602cb25512b9d48f931574cb971d8ef299",
+  "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
   "glyphId": "latin.upper.U",
   "hardChecksPassed": true,
-  "identityChecks": [],
+  "identityChecks": [
+    {
+      "name": "single-required-connected-contour",
+      "reason": "one closed contour, one connected component",
+      "status": "passed"
+    },
+    {
+      "name": "no-unintended-self-intersection",
+      "reason": "no undeclared intersections (certified)",
+      "status": "passed"
+    },
+    {
+      "name": "no-enclosed-counter",
+      "reason": "single outer contour, no inner contour: no enclosed counter",
+      "status": "passed"
+    },
+    {
+      "name": "distinction-from-V-and-O-review",
+      "reason": "human visual review required",
+      "status": "not-evaluable"
+    }
+  ],
   "negativeSpace": {
     "apertures": [],
     "channels": [],
@@ -133,7 +154,7 @@
   },
   "numerical": {
     "flatteningTolerance": 0.01,
-    "maxFlatteningError": 0.009836396192426248,
+    "maxFlatteningError": 0.009802302996545383,
     "refinementRounds": 0
   },
   "profileId": "nightshift.validator-profile.legacy-v06@1.0.0",
@@ -173,7 +194,7 @@
     },
     {
       "stage": "glyph-identity-invariants",
-      "status": "passed"
+      "status": "partial"
     },
     {
       "note": "No renderer exists yet (T05).",
@@ -189,14 +210,14 @@
         "parent": null
       }
     ],
-    "declaredFillRule": "nonzero",
-    "expectedConnectedComponents": null,
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
     "facePoints": {
       "glyph.U.contour.outer": {
-        "margin": 14.042585,
+        "margin": 13.056025,
         "point": [
-          23.239281,
-          96.05156
+          86.485712,
+          97.967734
         ]
       }
     },
@@ -212,5 +233,5 @@
     }
   },
   "validatorVersion": "geometry-validator/1.0.0",
-  "variantId": "u.provisional"
+  "variantId": "u.master"
 }

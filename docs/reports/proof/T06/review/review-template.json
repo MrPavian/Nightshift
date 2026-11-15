@@ -9,7 +9,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -37,7 +37,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -65,7 +65,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -93,7 +93,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -121,7 +121,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -149,7 +149,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -177,7 +177,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -205,7 +205,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -233,7 +233,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -255,13 +255,41 @@
     "date": "",
     "decision": null,
     "defects": [],
+    "geometryHash": "63e904ddd616e368495e309a2134c057479bed4b31f2e4c26b22ece719d6b704",
+    "glyphId": "latin.upper.J",
+    "maturityAtReview": "authored-contour",
+    "rationale": "",
+    "reviewId": null,
+    "reviewer": "",
+    "runId": "run.0.7A-T06.2f8b095537c4",
+    "schemaVersion": "1.0",
+    "scores": {
+      "identity": null,
+      "junctions": null,
+      "pairBehavior": null,
+      "renderConsistency": null,
+      "silhouette": null,
+      "styleConstruction": null,
+      "surface": null,
+      "thumbnail": null,
+      "topology": null,
+      "wordRhythm": null
+    },
+    "specimenId": "spec.glyph-j.540d3731d68f",
+    "stage": "semantic",
+    "variantId": "j.master"
+  },
+  {
+    "date": "",
+    "decision": null,
+    "defects": [],
     "geometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
     "glyphId": "latin.upper.K",
     "maturityAtReview": "authored-contour",
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -289,7 +317,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -317,7 +345,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -345,7 +373,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -373,7 +401,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -401,7 +429,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -429,7 +457,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -457,7 +485,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -485,7 +513,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -513,7 +541,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -535,13 +563,41 @@
     "date": "",
     "decision": null,
     "defects": [],
+    "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+    "glyphId": "latin.upper.U",
+    "maturityAtReview": "authored-contour",
+    "rationale": "",
+    "reviewId": null,
+    "reviewer": "",
+    "runId": "run.0.7A-T06.2f8b095537c4",
+    "schemaVersion": "1.0",
+    "scores": {
+      "identity": null,
+      "junctions": null,
+      "pairBehavior": null,
+      "renderConsistency": null,
+      "silhouette": null,
+      "styleConstruction": null,
+      "surface": null,
+      "thumbnail": null,
+      "topology": null,
+      "wordRhythm": null
+    },
+    "specimenId": "spec.glyph-u.a58df59a3ac7",
+    "stage": "semantic",
+    "variantId": "u.master"
+  },
+  {
+    "date": "",
+    "decision": null,
+    "defects": [],
     "geometryHash": "4fb0d4868e55dceaa4e9a2412eafefc524e7c872419b10d26028af452a4f6251",
     "glyphId": "latin.upper.V",
     "maturityAtReview": "authored-contour",
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -569,7 +625,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -597,7 +653,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -625,7 +681,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,
@@ -653,7 +709,7 @@
     "rationale": "",
     "reviewId": null,
     "reviewer": "",
-    "runId": "run.0.7A-T06.da171a9bbfcd",
+    "runId": "run.0.7A-T06.2f8b095537c4",
     "schemaVersion": "1.0",
     "scores": {
       "identity": null,

@@ -1,7 +1,32 @@
 # C02 — Neutral A–Z Glyph Authoring Report
 
 **Package:** C02 (`docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md`) · **Plan:** `research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md`
-**Status:** Waves 1–3 authored (24/26 letters), owner review pending · Wave 4 (J, U) open
+**Status:** All waves authored (26/26 letters, C02 authoring complete), owner review pending
+
+## Wave 4 — J, U (2026-11-15)
+
+### Construction
+Original line/quadratic contours in the family metrics (`data/glyphs/authored/c02-wave4.v1.json`):
+- **U:** stems 10–36 and 74–100 (as H and N), base curve with a wall of 23 units; open top, no counter.
+- **J:** stem 74–100 (the right stem of U), hook curving left with an angled terminal; sits on the baseline (no descender).
+- Both now end exactly at the baseline y=132, like D. The v0.6 bases overshot to 135–136.
+
+### Semantics (overlay 1.5.0)
+- U: `left-stem`, `base-curve`, `right-stem`; two continuation junctions.
+- J: `stem`, `hook`, `terminal`; continuation stem→hook, endpoint hook→terminal.
+- Identity checks: single connected contour, no self-intersection, `no-enclosed-counter` (all passed). The distinctions from V/O and U/L are `-review` checks, marked `not-evaluable` and left for human review.
+
+### Validation
+Hard checks pass; measured curve walls 22.98–23.0 (tolerance 22–27). All 26 letters are `authored-contour` with an editable master. Waves 1–4 keep their v0.6 base as a reference-only second variant; wave 0 (A B G R S) was authored on the v0.6 geometry itself. No review is claimed.
+
+### Test adjustments
+- `tests/editor-store.test.js`: the protection of reference-only geometry (`OP_NOT_EDITABLE`) used J as the last provisional master. It is now tested on a store built from the pure v0.6 import.
+- `tests/proof.test.js`: no fixture letter is provisional any more. Provisional marking is still checked on the legacy import.
+- `tests/semantic-overlay.test.js` and `tests/authored-wave1.test.js` include J and U.
+
+### Open
+- Owner review of all waves (PRs #6, #11, #12, this PR).
+- Next package: C03 (letterform grammars).
 
 ## Wave 3 — K, M, N, V, W, X, Y, Z (2026-11-15)
 

@@ -61,7 +61,8 @@ test('missing and provisional slots are marked, never silently dropped', () => {
     for (const slot of sp.slots) assert.equal(slot.status, slot.maturity === 'provisional' ? 'rendered-provisional' : 'rendered', `${sp.text}/${slot.character}`);
   }
   const prov = (svg) => (svg.match(/data-status="rendered-provisional"/g) ?? []).length;
-  assert.ok(prov(files['plates/word-context.svg']) > 0, 'provisional letters remain visible as such');
+  // Since C02 wave 4 every fixture letter has an authored master; provisional marking is checked on the legacy import below.
+  assert.equal(prov(files['plates/word-context.svg']), 0, 'no fixture letter is provisional any more');
   assert.equal((files['plates/word-context.svg'].match(/data-status="missing"/g) ?? []).length, 0);
 });
 
@@ -71,6 +72,7 @@ test('a refusal still renders as an explicit missing slot', () => {
   const sque = old.manifest.specimens.find((s) => s.text === 'SQUE');
   assert.deepEqual(sque.missingSlots.map((m) => m.character), ['Q']);
   assert.ok(old.files['plates/word-context.svg'].includes('data-status="missing"'));
+  assert.ok((old.files['plates/word-context.svg'].match(/data-status="rendered-provisional"/g) ?? []).length > 0, 'provisional letters are still drawn as provisional');
 });
 
 test('every specimen links to existing plates and validation reports; hashes match', () => {

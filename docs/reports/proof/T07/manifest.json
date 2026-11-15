@@ -22,7 +22,7 @@
   "scriptErrors": [],
   "inputs": {
     "data/legacy/v06-glyph-paths.json": "3bc3954448a3c43789006f4550745d176d34d5a7686cfa6e921eb8b46972d0e4",
-    "data/semantic/abgrs-semantic-overlay.v1.json": "2cca03aa74ad4d4b564849409ef951cbc539fbbba2b47aa89053752057d2fc58",
+    "data/semantic/abgrs-semantic-overlay.v1.json": "1e854ea09552509b178077f3c89d0f654ca789a26c041191b4df73287cd95054",
     "data/validator-profiles/legacy-v06.v1.json": "32a4cdb2424d5fa829de9f8a8e325d8dbc3e14a131c2f4edf46b85c9b48dd4c8",
     "editor/editor.js": "a5ac194509119008a55b51c356e7bbce20075150b097aa5872a77f62fd2009a2",
     "src/model/editor-store.js": "c532d48ec221e3af206cfc6f493708ad9d51084501ea565c444d13c2b589f416",
@@ -30,7 +30,7 @@
   },
   "artifacts": {
     "editor-loop.png": {
-      "sha256": "bf3481680f056d44733109a96e2d05e08bf597b3b5f8e5b26a09d6dec156764d",
+      "sha256": "88bb8f1eb4612546142fc5fa19967fdce06782fb949d3305924581312896e60f",
       "note": "Final state after the scripted run. Screenshot bytes may vary across Chrome versions; pass/fail comes from the steps."
     }
   },

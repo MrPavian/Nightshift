@@ -526,3 +526,10 @@
 - Overlay 1.4.0 with components that partition every outline; junction kinds `branch` and `crossing`.
 - 24/26 letters authored; all six word fixtures are fully authored. Tests: 123 pass; browser smoke, review page and editor pass.
 
+
+## 2026-11-15 — C02 wave 4: authored J, U masters (C02 authoring complete)
+- `data/glyphs/authored/c02-wave4.v1.json`: original masters for U (two stems, base curve with a wall of 23) and J (stem with a left hook). Both end exactly at the baseline.
+- Overlay 1.5.0: components and junctions for J and U.
+- All 26 letters now have an editable authored master; none is reviewed.
+- The `OP_NOT_EDITABLE` protection test now runs on the pure v0.6 import.
+- Tests: 126 passing plus browser tests (smoke, review page, editor).

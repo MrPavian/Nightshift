@@ -1,6 +1,6 @@
 {
   "overlayId": "nightshift.semantic-overlay.abgrs",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "status": "provisional-engineering-proposal",
   "sources": [
     "contracts/abgrs-glyph-construction.v1.json#componentProposals",
@@ -2489,6 +2489,202 @@
       },
       "identityInvariants": [
         "Diagonal runs from the top right to the bottom left (mirror of N's diagonal direction)."
+      ]
+    },
+    "U": {
+      "components": [
+        {
+          "name": "left-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left stem x=10–36.",
+          "connectsTo": [
+            "base-curve"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "base-curve",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Inner and outer base curve; wall 23 at the baseline.",
+          "connectsTo": [
+            "left-stem",
+            "right-stem"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#08",
+            "outer#09"
+          ]
+        },
+        {
+          "name": "right-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Right stem x=74–100.",
+          "connectsTo": [
+            "base-curve"
+          ],
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "left-stem-curve",
+          "kind": "continuation",
+          "components": [
+            "left-stem",
+            "base-curve"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@09"
+          ]
+        },
+        {
+          "name": "curve-right-stem",
+          "kind": "continuation",
+          "components": [
+            "base-curve",
+            "right-stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@07"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-stems",
+          "base-curve",
+          "open-top"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-V-and-O-review"
+        ]
+      },
+      "identityInvariants": [
+        "Open top: the interior stays connected to the exterior (no counter, distinction from O).",
+        "Base is a curve, not a vertex (distinction from V)."
+      ]
+    },
+    "J": {
+      "components": [
+        {
+          "name": "stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Stem x=74–100.",
+          "connectsTo": [
+            "hook"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "hook",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Hook curving left along the baseline; wall 23.",
+          "connectsTo": [
+            "stem",
+            "terminal"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#06",
+            "outer#07"
+          ]
+        },
+        {
+          "name": "terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Angled cut of the hook at the left.",
+          "connectsTo": [
+            "hook"
+          ],
+          "candidateRefs": [
+            "outer#05"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "stem-hook",
+          "kind": "continuation",
+          "components": [
+            "stem",
+            "hook"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@07"
+          ]
+        },
+        {
+          "name": "hook-terminal",
+          "kind": "endpoint",
+          "components": [
+            "hook",
+            "terminal"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@05"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "stem",
+          "hook-left"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-U-and-L-review"
+        ]
+      },
+      "identityInvariants": [
+        "Single stem on the right; the hook turns left and stays open (no left stem, distinction from U)."
       ]
     }
   }

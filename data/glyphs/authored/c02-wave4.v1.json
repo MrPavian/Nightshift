@@ -1,0 +1,37 @@
+{
+  "snapshotId": "nightshift.authored.c02-wave4",
+  "version": "1.0.0",
+  "schemaVersion": "1.0",
+  "status": "authored-contour; human review pending",
+  "frame": "legacy-v06 (same glyph-local frame as the authored family, y down)",
+  "provenance": {
+    "kind": "claude-authored",
+    "author": "Claude (AI), NIGHTSHIFT implementation session",
+    "date": "2026-11-15",
+    "roadmap": "C02 Wave 4 (contracts/alphabet-authoring-plan.v1.json: descender, foot, open-top and base-curve systems J, U)",
+    "method": "Original line/quadratic contours in the family metrics: stems 26, base-curve wall 23, baseline exactly 132 as in D (the v0.6 bases overshot to 135–136). Not traced or derived from any font, artwork, photograph or identifiable writer.",
+    "review": "pending"
+  },
+  "notes": [
+    "Never edit by hand without bumping version; geometry changes after import go through editor commands.",
+    "The legacy v0.6 provisional base of each glyph is kept as a reference-only second variant."
+  ],
+  "glyphs": {
+    "U": {
+      "brief": "Two stems 10–36 and 74–100 (as H and N) joined by a base curve on the baseline; wall 23 at the base; open top, no counter.",
+      "outer": {
+        "d": "M10 8 L36 8 L36 91 Q36 109 55 109 Q74 109 74 91 L74 8 L100 8 L100 94 Q100 132 55 132 Q10 132 10 94 Z",
+        "sha256": "06556ea2ddcfa479d1cb2b16242249409f081c355c36daea24c1df0aa4b5f6be"
+      },
+      "counters": []
+    },
+    "J": {
+      "brief": "Stem 74–100 (as the right stem of U) with a hook curving to the left and ending in an angled terminal; sits on the baseline (no descender).",
+      "outer": {
+        "d": "M74 8 L100 8 L100 94 Q100 132 57 132 Q22 132 8 108 L30 96 Q38 109 56 109 Q74 109 74 91 Z",
+        "sha256": "11a731256ce8f6d6bf4192f011f8eff2dd2574cca05e354957909886381b691d"
+      },
+      "counters": []
+    }
+  }
+}
