@@ -38,7 +38,7 @@ Production implementation has started: `src/` contains the canonical glyph regis
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** 0.7A (T01–T07) is complete; the first-slice release gate is met. Next: `docs/CLAUDE_TICKET_PACK_0_7B_01.md` (remaining alphabet construction, style rules, first relationship slice). Open owner actions: human review of A/B/G/R/S (`docs/reports/proof/T06/review/ratings.json`), G aperture boundary (AUD-01/AUD-03), topology of D/O/P/Q.
+**Build 0.7 — Authentic Letter Construction.** 0.7A (T01–T07) is complete; the first-slice release gate is met. Current package: C02 (`docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md`). Wave 1 (C/D/O/P/Q) is authored; see `docs/C02_GLYPH_AUTHORING_REPORT.md`. Next: wave 2 (E F H I L T). Open owner actions: human review of A/B/G/R/S (`docs/reports/proof/T06/review/ratings.json`), G aperture boundary (AUD-01/AUD-03), topology of D/O/P/Q.
 
 ## Next archive task
 

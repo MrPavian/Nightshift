@@ -5,7 +5,7 @@
 // are never edited as persistence. Selection is bound to stable canonical IDs.
 
 import * as THREE from 'three';
-import { GlyphRegistry } from '../src/glyph/registry.js';
+import { loadRegistryAndProfile } from '../src/glyph/load-browser.js';
 import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
 import { buildRenderModel } from '../src/render/render-model.js';
 import { buildGlyphObject } from '../src/editor/three-glyph.js';
@@ -16,7 +16,7 @@ import { disabledParameterOperations, findNode } from '../src/model/operations.j
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const get = async (p) => { const r = await fetch(p); if (!r.ok) throw new Error(`${p}: HTTP ${r.status}`); return r.json(); };
-const EDITABLE = ['A', 'B', 'G', 'R', 'S'];
+let EDITABLE = [];
 const STORAGE_KEY = 'nightshift.editor.project.v1';
 const SNAP = 0.5;
 const snap = (v) => Math.round(v / SNAP) * SNAP;
@@ -291,13 +291,10 @@ function setupControls() {
 const selftest = { ready: false, steps: {}, errors: [] };
 window.addEventListener('error', (e) => selftest.errors.push(String(e.message)));
 try {
-  const [snapshot, overlay, parameterContract, validationContract] = await Promise.all([
-    get('../data/legacy/v06-glyph-paths.json'), get('../data/semantic/abgrs-semantic-overlay.v1.json'),
-    get('../contracts/glyph-parameter-contract.v1.json'), get('../contracts/glyph-geometry-validation.v1.json'),
-  ]);
-  profile = await get('../data/validator-profiles/legacy-v06.v1.json');
-  paramContract = parameterContract;
-  registry = GlyphRegistry.build({ snapshot, overlay, parameterContract, validationContract });
+  let inputs;
+  ({ registry, profile, inputs } = await loadRegistryAndProfile('../'));
+  paramContract = inputs.parameterContract;
+  EDITABLE = registry.list().filter((g) => g.variants[0].geometry.editability === 'fully-editable').map((g) => g.character);
   disabledOps = disabledParameterOperations(paramContract);
   store = new EditorStore(registry.list(), profile, disabledOps);
   setupControls();

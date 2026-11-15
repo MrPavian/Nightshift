@@ -1,12 +1,13 @@
 {
   "overlayId": "nightshift.semantic-overlay.abgrs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "status": "provisional-engineering-proposal",
   "sources": [
     "contracts/abgrs-glyph-construction.v1.json#componentProposals",
     "contracts/glyph-parameter-contract.v1.json#glyphs[].identityInvariants",
     "contracts/glyph-geometry-validation.v1.json#glyphIdentityProfiles",
-    "research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md#4"
+    "research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md#4",
+    "research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md#4 (C02 wave 1 briefs)"
   ],
   "refSyntax": {
     "segment": "<contourName>#<nn>  e.g. outer#01 -> glyph.A.contour.outer.seg.01",
@@ -605,6 +606,483 @@
       "negativeSpaceBoundaries": {},
       "junctions": [],
       "expectedConnectedComponents": 1
+    },
+    "C": {
+      "components": [
+        {
+          "name": "upper-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Upper-right chamfer, vertical end cap x=100 (y 32–46), terminal underside y=46 and its return to the inner top.",
+          "connectsTo": [
+            "upper-arc"
+          ],
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04",
+            "outer#05"
+          ]
+        },
+        {
+          "name": "upper-arc",
+          "role": "arc",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Top edges and the left wall. The left wall (outer#17 outside, outer#08 inside) is shared by both arcs; assigning it to the upper arc is a provisional choice.",
+          "connectsTo": [
+            "upper-terminal",
+            "lower-arc"
+          ],
+          "candidateRefs": [
+            "outer#18",
+            "outer#01",
+            "outer#06",
+            "outer#07",
+            "outer#08",
+            "outer#17"
+          ]
+        },
+        {
+          "name": "lower-arc",
+          "role": "arc",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Lower inner chamfer and inner bottom, outer bottom edge and chamfer.",
+          "connectsTo": [
+            "upper-arc",
+            "lower-terminal"
+          ],
+          "candidateRefs": [
+            "outer#09",
+            "outer#10",
+            "outer#15",
+            "outer#16"
+          ]
+        },
+        {
+          "name": "lower-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Return from the inner bottom, terminal top y=94, vertical end cap x=100 (y 94–108), lower-right chamfer.",
+          "connectsTo": [
+            "lower-arc"
+          ],
+          "candidateRefs": [
+            "outer#11",
+            "outer#12",
+            "outer#13",
+            "outer#14"
+          ]
+        }
+      ],
+      "apertures": [
+        {
+          "name": "mouth",
+          "boundaryComponents": [
+            "upper-terminal",
+            "lower-terminal"
+          ],
+          "mouthNodeRefs": [
+            "outer@04",
+            "outer@11"
+          ],
+          "notes": "Authored aperture: the opening between the inner terminal corners (76,46) and (76,94). Exterior connectivity is checked by the validator; the mouth line is the authored measurement construction (48 units), uncalibrated."
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "open-bowl-family",
+          "exterior-aperture"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 1
+        },
+        "checks": [
+          "aperture-exterior-connected",
+          "distinction-from-G-and-O-review"
+        ]
+      },
+      "identityInvariants": [
+        "Opening direction and continuity: the aperture opens to the right and stays exterior-connected.",
+        "No internal bar (distinction from G) and no enclosed counter (distinction from O)."
+      ]
+    },
+    "D": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left edge x=10 (closing segment).",
+          "connectsTo": [
+            "spine-bowl-junction"
+          ],
+          "candidateRefs": [
+            "outer#05"
+          ]
+        },
+        {
+          "name": "spine-bowl-junction",
+          "role": "junction",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Top and bottom straight edges joining the spine to the bowl.",
+          "connectsTo": [
+            "spine",
+            "bowl"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#04"
+          ]
+        },
+        {
+          "name": "bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "The two quadratics of the right bowl.",
+          "connectsTo": [
+            "spine-bowl-junction"
+          ],
+          "candidateRefs": [
+            "outer#02",
+            "outer#03"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "basis": "Topologically determined: the only inner contour.",
+          "connectsTo": [],
+          "refs": [
+            "counter.primary"
+          ],
+          "candidateRefs": []
+        }
+      ],
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
+      "junctions": [
+        {
+          "name": "spine-bowl",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "spine-bowl-junction",
+            "bowl"
+          ],
+          "candidateNodeRefs": [
+            "outer@00",
+            "outer@04"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "attached-bowl"
+        ],
+        "negativeSpace": {
+          "counterCount": 1,
+          "apertureCount": 0
+        },
+        "checks": [
+          "counter-enclosed",
+          "bowl-spine-attachment"
+        ]
+      },
+      "identityInvariants": [
+        "Attached bowl: the bowl joins the spine at top and bottom.",
+        "One enclosed counter with clearance from the spine and the bowl."
+      ]
+    },
+    "O": {
+      "components": [
+        {
+          "name": "outer-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "The whole chamfered outer contour.",
+          "connectsTo": [],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03",
+            "outer#04",
+            "outer#05",
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "basis": "Topologically determined: the only inner contour.",
+          "connectsTo": [],
+          "refs": [
+            "counter.primary"
+          ],
+          "candidateRefs": []
+        }
+      ],
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
+      "junctions": [],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "closed-bowl"
+        ],
+        "negativeSpace": {
+          "counterCount": 1,
+          "apertureCount": 0
+        },
+        "checks": [
+          "counter-enclosed",
+          "distinction-from-C-and-Q-review"
+        ]
+      },
+      "identityInvariants": [
+        "Closed contour with one preserved counter.",
+        "Silhouette distinct from C (no opening) and Q (no tail)."
+      ]
+    },
+    "P": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left edge x=10 from the foot to the top.",
+          "connectsTo": [
+            "upper-bowl",
+            "lower-termination"
+          ],
+          "candidateRefs": [
+            "outer#01"
+          ]
+        },
+        {
+          "name": "upper-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Top edge, both bowl quadratics and the bowl underside y=84.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04",
+            "outer#05"
+          ]
+        },
+        {
+          "name": "lower-termination",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Inner stem edge x=36 below the bowl and the foot y=132.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "basis": "Topologically determined: the only inner contour.",
+          "connectsTo": [],
+          "refs": [
+            "counter.primary"
+          ],
+          "candidateRefs": []
+        }
+      ],
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
+      "junctions": [
+        {
+          "name": "spine-bowl",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "upper-bowl"
+          ],
+          "candidateNodeRefs": [
+            "outer@01"
+          ]
+        },
+        {
+          "name": "bowl-stem",
+          "kind": "attachment",
+          "components": [
+            "upper-bowl",
+            "lower-termination"
+          ],
+          "candidateNodeRefs": [
+            "outer@05"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "attached-bowl",
+          "open-lower-structure"
+        ],
+        "negativeSpace": {
+          "counterCount": 1,
+          "apertureCount": 0
+        },
+        "checks": [
+          "counter-enclosed",
+          "bowl-spine-attachment",
+          "open-lower-structure"
+        ]
+      },
+      "identityInvariants": [
+        "Bowl attached to the spine at the top half only.",
+        "Open lower structure: no second bowl or leg (distinction from B and R)."
+      ]
+    },
+    "Q": {
+      "components": [
+        {
+          "name": "outer-bowl",
+          "role": "bowl",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "The O-shaped chamfered outer contour except the tail.",
+          "connectsTo": [
+            "tail-junction"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03",
+            "outer#09",
+            "outer#10",
+            "outer#11",
+            "outer#12"
+          ]
+        },
+        {
+          "name": "tail-junction",
+          "role": "junction",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "The two short chamfer pieces where the tail leaves the bowl.",
+          "connectsTo": [
+            "outer-bowl",
+            "tail"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "tail",
+          "role": "tail",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Tail sides and end cap, perpendicular to the lower-right chamfer, descending to y=145.",
+          "connectsTo": [
+            "tail-junction"
+          ],
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ]
+        },
+        {
+          "name": "counter-boundary",
+          "role": "counter-boundary",
+          "required": true,
+          "mapping": "mapped",
+          "basis": "Topologically determined: the only inner contour.",
+          "connectsTo": [],
+          "refs": [
+            "counter.primary"
+          ],
+          "candidateRefs": []
+        }
+      ],
+      "negativeSpaceBoundaries": {
+        "counter.primary": [
+          "counter-boundary"
+        ]
+      },
+      "junctions": [
+        {
+          "name": "tail-origin",
+          "kind": "attachment",
+          "components": [
+            "outer-bowl",
+            "tail-junction",
+            "tail"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@07"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "closed-bowl",
+          "attached-tail"
+        ],
+        "negativeSpace": {
+          "counterCount": 1,
+          "apertureCount": 0
+        },
+        "checks": [
+          "counter-enclosed",
+          "tail-attached",
+          "tail-counter-clearance"
+        ]
+      },
+      "identityInvariants": [
+        "Tail origin and direction are explicit: it leaves the lower-right chamfer outward.",
+        "The tail never enters or narrows the counter."
+      ]
     }
   }
 }

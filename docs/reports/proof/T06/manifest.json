@@ -1,13 +1,14 @@
 {
   "artifactHashes": {
-    "plates/glyph-identity.svg": "3350bda0caaca44f6743c1b028c8ed8e9b9678efbd71052fcaf55d612483e80e",
-    "plates/pair-context.svg": "8d7783f69aa5d92e42999e7ad164778b6b7d42d98eada49c6284fa5d54929756",
-    "plates/semantic-topology.svg": "ab2669633a944385dce77d61517c01eef6da2ff82afba3277b57a37444792ed1",
-    "plates/word-context.svg": "fba1ae21d16c19f100512e44b04d727c322fdb42c8630bc62a70fd2aa39c23fc",
-    "review/review-template.json": "a274f538ae9a0cb591ffc2efcbd4f3bf4edbe54192c04772f5296aeaa67e6121",
+    "plates/glyph-identity.svg": "0591319d87dc1f775210820b72d9d410e38bd270ff45e64c1645bedce958f7eb",
+    "plates/pair-context.svg": "91298f74c9a24baa66961cd8ac204a34f5fcbd22bc8f4fb05abaf332a247d5d9",
+    "plates/semantic-topology.svg": "9d7a720ce4c0fc21a77331b7ca41a0a2f659ec7eeade27aa6f31f6142d69a594",
+    "plates/word-context.svg": "1cd36bc8c31ed951d4d5991d763313ef298c293c07f536760d583a74ebfbfde4",
+    "review/review-template.json": "88a2590ba3b15d04cd929ceebad2b0ee232de1f4e086c8d9d232d2b11063046d",
     "validation/A.json": "61611981536f041656147fbf7b05a8b6413be5ae8191e24fa293f0c6eac2d126",
     "validation/B.json": "227170a1dc1f7e6c24dcfff3603363bbf72b41323f95847548e1167a74c31cae",
-    "validation/D.json": "8f18c46d0d9828dc513b0e91301909d88b7f1c492d3663a57d4cc7b0676b7bbe",
+    "validation/C.json": "f6a82df9af517eb71b7a4ae585aca3d8cd5ad5a32ef5de0a214169648ee8ee0a",
+    "validation/D.json": "df6f1a9b15f344ea942cca45b706b2149146ae05437019f210ea4a82cccea621",
     "validation/E.json": "dc39eb9d0f887882bbd3666fe6e41619ee418ee85a296bbce15a47360b51a66d",
     "validation/G.json": "de7819e573f137144cfaa3a1fcff49266df7f6afcbafa2ae70d234c96d3516c2",
     "validation/H.json": "216af966fa3261af5f2cdef169bae7db485a0919fa67bd938b081a8f09f8e0ae",
@@ -15,8 +16,9 @@
     "validation/K.json": "6c73dae88cdd16b1d3a6a0132fdfa241593fdea1bcb2485a6b34c2614e56c4c3",
     "validation/M.json": "6810502789b2107bfd997035b939eb088c8f023aa6e99ad202e2dea3a55b7af0",
     "validation/N.json": "9cf1be32d6ba3839002f6c8dc8640cf0b8b6470fc09be5377c44be01e7b08e06",
-    "validation/O.json": "f52a9fb902eb20ee8adcb39f3bb0c37f1d8f050ffa27fd2a9827bd088ee0115a",
-    "validation/Q.json": "d3eb233db7123dbf927f2a1973c96c75b8271feac991524e804543ac0d1a3ab8",
+    "validation/O.json": "ab230f53f58c2b4d9fea95405bcb1a36bab48aed8e1dc6babe06ca6cf09aed09",
+    "validation/P.json": "1cf6dcbfc242cd9bdc6c985506c54b499285bd5feb1999170d871f605daea926",
+    "validation/Q.json": "2d19324c3b0d106053d01a19bf46be333f5a6ea9893fe337fe8dd2b53222c399",
     "validation/R.json": "dbe7f9fd44346e8020517d446c5587b2f61c2466144e5b998b3342af234ee3a8",
     "validation/S.json": "57ae24c974051d79e1e074d7c559c0cc20366fd37d772f0806fa8cbe66f80f24",
     "validation/T.json": "027aef7b3fd2eac897263bd9c7f366decd64b06ffc24ec2e5242e386f94240bf",
@@ -38,35 +40,39 @@
     "authoredContourGlyphs": [
       "A",
       "B",
+      "C",
+      "D",
       "G",
+      "O",
+      "P",
+      "Q",
       "R",
       "S"
     ],
-    "missingGlyphs": [
+    "contractCoverageChanges": [
       {
-        "glyphId": "latin.upper.O",
-        "reason": "RENDER_UNDECLARED_TOPOLOGY"
+        "contract": "partial-provisional-coverage",
+        "current": "authored-subset",
+        "fixtureId": "pair-go"
       },
       {
-        "glyphId": "latin.upper.D",
-        "reason": "RENDER_UNDECLARED_TOPOLOGY"
-      },
-      {
-        "glyphId": "latin.upper.Q",
-        "reason": "RENDER_INVALID_TOPOLOGY"
+        "contract": "partial-provisional-coverage",
+        "current": "authored-subset",
+        "fixtureId": "pair-ro"
       }
     ],
+    "missingGlyphs": [],
     "pairs": {
       "AR": "authored-subset",
       "AV": "partial-provisional-coverage",
       "BA": "authored-subset",
       "BR": "authored-subset",
-      "GO": "partial-provisional-coverage",
+      "GO": "authored-subset",
       "GR": "authored-subset",
       "GS": "authored-subset",
       "NS": "partial-provisional-coverage",
       "RA": "authored-subset",
-      "RO": "partial-provisional-coverage",
+      "RO": "authored-subset",
       "SA": "authored-subset",
       "SB": "authored-subset"
     },
@@ -84,7 +90,7 @@
   "engineVersions": {
     "generator": "none (legacy import, no procedural generation)",
     "geometryValidator": "geometry-validator/1.0.0; nightshift.validator-profile.legacy-v06@1.0.0",
-    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.semantic-overlay.abgrs@1.1.0",
+    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.semantic-overlay.abgrs@1.2.0",
     "grammar": "none (no style grammar in 0.7A)",
     "relationshipSolver": "none — neutral-naive-layout/1.0.0",
     "renderer": "render-model/1.0.0; proof-plates/1.0.0"
@@ -92,7 +98,12 @@
   "fixtureIds": [
     "glyph-a",
     "glyph-b",
+    "glyph-c",
+    "glyph-d",
     "glyph-g",
+    "glyph-o",
+    "glyph-p",
+    "glyph-q",
     "glyph-r",
     "glyph-s",
     "pair-av",
@@ -154,12 +165,12 @@
     "template": "review/review-template.json"
   },
   "rootSeed": 0,
-  "runId": "run.0.7A-T06.1693b6ee52ef",
+  "runId": "run.0.7A-T06.4ca5f41d2531",
   "schemaVersion": "1.0",
   "seedDerivationVersion": "none — no randomness is used in 0.7A proof runs",
   "sourceRevision": {
     "kind": "registry-content-sha256",
-    "value": "67698bdfcb6c11605d909c2c8f1bad3c02906bee03d34baab2dbbf9ac90fac6f"
+    "value": "4ee099becf4090e2b0b1d78facaa8916b0fd8c3eb7771787970df56220465918"
   },
   "specimens": [
     {
@@ -243,6 +254,84 @@
     {
       "coverage": "authored-subset",
       "family": "glyph-identity",
+      "fixtureId": "glyph-c",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "C",
+          "geometryHash": "fd36ea2ab51992ef5f00cf0626795ffeb3a92ea8d0a70c1f54f6e09839ca00f1",
+          "glyphId": "latin.upper.C",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -6,
+            "translateY": 0
+          },
+          "variantId": "c.master"
+        }
+      ],
+      "specimenId": "spec.glyph-c.2724dd6c62aa",
+      "text": "C",
+      "validationReportRefs": [
+        "validation/C.json"
+      ],
+      "width": 94
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-d",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "D",
+          "geometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "glyphId": "latin.upper.D",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "d.master"
+        }
+      ],
+      "specimenId": "spec.glyph-d.4db8d9d72e22",
+      "text": "D",
+      "validationReportRefs": [
+        "validation/D.json"
+      ],
+      "width": 90
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
       "fixtureId": "glyph-g",
       "layout": {
         "gap": 12,
@@ -278,6 +367,123 @@
         "validation/G.json"
       ],
       "width": 93
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-o",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "O",
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -6,
+            "translateY": 0
+          },
+          "variantId": "o.master"
+        }
+      ],
+      "specimenId": "spec.glyph-o.bce44c6272b3",
+      "text": "O",
+      "validationReportRefs": [
+        "validation/O.json"
+      ],
+      "width": 94
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-p",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "P",
+          "geometryHash": "753f287f9270677db68718e67d3be4bc75694ef7ad2592c36336bf508211d486",
+          "glyphId": "latin.upper.P",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "p.master"
+        }
+      ],
+      "specimenId": "spec.glyph-p.016bdcf5fa47",
+      "text": "P",
+      "validationReportRefs": [
+        "validation/P.json"
+      ],
+      "width": 89
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-q",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "Q",
+          "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "glyphId": "latin.upper.Q",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -6,
+            "translateY": 0
+          },
+          "variantId": "q.master"
+        }
+      ],
+      "specimenId": "spec.glyph-q.3543fbd22c33",
+      "text": "Q",
+      "validationReportRefs": [
+        "validation/Q.json"
+      ],
+      "width": 111
     },
     {
       "coverage": "authored-subset",
@@ -578,7 +784,7 @@
       "width": 196
     },
     {
-      "coverage": "partial-provisional-coverage",
+      "coverage": "authored-subset",
       "family": "pair-context",
       "fixtureId": "pair-go",
       "layout": {
@@ -586,12 +792,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "O",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/pair-context.svg"
       ],
@@ -614,28 +815,28 @@
         },
         {
           "character": "O",
-          "geometryHash": "16651d1aa5b4dbae1cf81177d3ccb60775357e2c82ec685d222aad3944b776b9",
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
           "glyphId": "latin.upper.O",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 103,
+            "translateX": 99,
             "translateY": 0
           },
-          "variantId": "o.provisional"
+          "variantId": "o.master"
         }
       ],
-      "specimenId": "spec.pair-go.d71809c98fb9",
+      "specimenId": "spec.pair-go.63199e5c7ae0",
       "text": "GO",
       "validationReportRefs": [
         "validation/G.json",
         "validation/O.json"
       ],
-      "width": 204
+      "width": 199
     },
     {
       "coverage": "authored-subset",
@@ -748,7 +949,7 @@
       "width": 193
     },
     {
-      "coverage": "partial-provisional-coverage",
+      "coverage": "authored-subset",
       "family": "pair-context",
       "fixtureId": "pair-ro",
       "layout": {
@@ -756,12 +957,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "O",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/pair-context.svg"
       ],
@@ -784,28 +980,28 @@
         },
         {
           "character": "O",
-          "geometryHash": "16651d1aa5b4dbae1cf81177d3ccb60775357e2c82ec685d222aad3944b776b9",
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
           "glyphId": "latin.upper.O",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 103,
+            "translateX": 99,
             "translateY": 0
           },
-          "variantId": "o.provisional"
+          "variantId": "o.master"
         }
       ],
-      "specimenId": "spec.pair-ro.c0279a2795ef",
+      "specimenId": "spec.pair-ro.9ccd015786df",
       "text": "RO",
       "validationReportRefs": [
         "validation/R.json",
         "validation/O.json"
       ],
-      "width": 204
+      "width": 199
     },
     {
       "coverage": "authored-subset",
@@ -1124,12 +1320,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "O",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/word-context.svg"
       ],
@@ -1152,19 +1343,19 @@
         },
         {
           "character": "O",
-          "geometryHash": "16651d1aa5b4dbae1cf81177d3ccb60775357e2c82ec685d222aad3944b776b9",
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
           "glyphId": "latin.upper.O",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 101,
+            "translateX": 97,
             "translateY": 0
           },
-          "variantId": "o.provisional"
+          "variantId": "o.master"
         },
         {
           "character": "M",
@@ -1177,7 +1368,7 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 207,
+            "translateX": 202,
             "translateY": 0
           },
           "variantId": "m.provisional"
@@ -1193,20 +1384,20 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 313,
+            "translateX": 308,
             "translateY": 0
           },
           "variantId": "b.master"
         }
       ],
-      "specimenId": "spec.word-bomb.a4f106e4801e",
+      "specimenId": "spec.word-bomb.e4684932eee7",
       "text": "BOMB",
       "validationReportRefs": [
         "validation/B.json",
         "validation/O.json",
         "validation/M.json"
       ],
-      "width": 414
+      "width": 409
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1217,12 +1408,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "O",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/word-context.svg"
       ],
@@ -1261,19 +1447,19 @@
         },
         {
           "character": "O",
-          "geometryHash": "16651d1aa5b4dbae1cf81177d3ccb60775357e2c82ec685d222aad3944b776b9",
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
           "glyphId": "latin.upper.O",
           "hardChecksPassed": true,
           "index": 2,
-          "maturity": "provisional",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 204,
+            "translateX": 200,
             "translateY": 0
           },
-          "variantId": "o.provisional"
+          "variantId": "o.master"
         },
         {
           "character": "S",
@@ -1286,7 +1472,7 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 312,
+            "translateX": 307,
             "translateY": 0
           },
           "variantId": "s.master"
@@ -1302,13 +1488,13 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 418,
+            "translateX": 413,
             "translateY": 0
           },
           "variantId": "t.provisional"
         }
       ],
-      "specimenId": "spec.word-ghost.e59086e1f795",
+      "specimenId": "spec.word-ghost.d1fee6771421",
       "text": "GHOST",
       "validationReportRefs": [
         "validation/G.json",
@@ -1317,7 +1503,7 @@
         "validation/S.json",
         "validation/T.json"
       ],
-      "width": 523
+      "width": 518
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1434,12 +1620,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "D",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/word-context.svg"
       ],
@@ -1494,22 +1675,22 @@
         },
         {
           "character": "D",
-          "geometryHash": "36d1c295125e1a968ea3a64eafe8e29f60d29b3be890f61a8246ff2028cd92d4",
+          "geometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
           "glyphId": "latin.upper.D",
           "hardChecksPassed": true,
           "index": 3,
-          "maturity": "provisional",
-          "reason": "RENDER_UNDECLARED_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
             "translateX": 297,
             "translateY": 0
           },
-          "variantId": "d.provisional"
+          "variantId": "d.master"
         }
       ],
-      "specimenId": "spec.word-mind.7241dc269a0d",
+      "specimenId": "spec.word-mind.77cad4e8dd0e",
       "text": "MIND",
       "validationReportRefs": [
         "validation/M.json",
@@ -1517,7 +1698,7 @@
         "validation/N.json",
         "validation/D.json"
       ],
-      "width": 392
+      "width": 397
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1689,12 +1870,7 @@
         "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
         "version": "neutral-naive-layout/1.0.0"
       },
-      "missingSlots": [
-        {
-          "character": "Q",
-          "reason": "RENDER_INVALID_TOPOLOGY"
-        }
-      ],
+      "missingSlots": [],
       "plates": [
         "plates/word-context.svg"
       ],
@@ -1717,19 +1893,19 @@
         },
         {
           "character": "Q",
-          "geometryHash": "7d0f85f5c07dfe9be87dfcb0d63152cd00d5c805dff396805671df78d139cf0f",
+          "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
           "glyphId": "latin.upper.Q",
-          "hardChecksPassed": false,
+          "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
-          "reason": "RENDER_INVALID_TOPOLOGY",
-          "revision": 1,
-          "status": "missing",
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 104,
+            "translateX": 100,
             "translateY": 0
           },
-          "variantId": "q.provisional"
+          "variantId": "q.master"
         },
         {
           "character": "U",
@@ -1742,7 +1918,7 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 211,
+            "translateX": 220,
             "translateY": 0
           },
           "variantId": "u.provisional"
@@ -1758,13 +1934,13 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 313,
+            "translateX": 322,
             "translateY": 0
           },
           "variantId": "e.provisional"
         }
       ],
-      "specimenId": "spec.word-sque.211f44064903",
+      "specimenId": "spec.word-sque.f82869f92878",
       "text": "SQUE",
       "validationReportRefs": [
         "validation/S.json",
@@ -1772,7 +1948,7 @@
         "validation/U.json",
         "validation/E.json"
       ],
-      "width": 409
+      "width": 418
     }
   ],
   "validationReportRefs": {
@@ -1788,11 +1964,17 @@
       "refusal": null,
       "renderStatus": "rendered"
     },
+    "latin.upper.C": {
+      "hardChecksPassed": true,
+      "path": "validation/C.json",
+      "refusal": null,
+      "renderStatus": "rendered"
+    },
     "latin.upper.D": {
       "hardChecksPassed": true,
       "path": "validation/D.json",
-      "refusal": "RENDER_UNDECLARED_TOPOLOGY",
-      "renderStatus": "missing"
+      "refusal": null,
+      "renderStatus": "rendered"
     },
     "latin.upper.E": {
       "hardChecksPassed": true,
@@ -1839,14 +2021,20 @@
     "latin.upper.O": {
       "hardChecksPassed": true,
       "path": "validation/O.json",
-      "refusal": "RENDER_UNDECLARED_TOPOLOGY",
-      "renderStatus": "missing"
+      "refusal": null,
+      "renderStatus": "rendered"
+    },
+    "latin.upper.P": {
+      "hardChecksPassed": true,
+      "path": "validation/P.json",
+      "refusal": null,
+      "renderStatus": "rendered"
     },
     "latin.upper.Q": {
-      "hardChecksPassed": false,
+      "hardChecksPassed": true,
       "path": "validation/Q.json",
-      "refusal": "RENDER_INVALID_TOPOLOGY",
-      "renderStatus": "missing"
+      "refusal": null,
+      "renderStatus": "rendered"
     },
     "latin.upper.R": {
       "hardChecksPassed": true,

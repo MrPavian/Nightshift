@@ -22,15 +22,15 @@
   "scriptErrors": [],
   "inputs": {
     "data/legacy/v06-glyph-paths.json": "3bc3954448a3c43789006f4550745d176d34d5a7686cfa6e921eb8b46972d0e4",
-    "data/semantic/abgrs-semantic-overlay.v1.json": "0556e58f97984ee3183d3e646293f1ffd0f05d7bf5c84deefa8aefab67b9da66",
+    "data/semantic/abgrs-semantic-overlay.v1.json": "df6d9b2d5c35c9c0d2c537f082552a54f78261a4fa5d3880cd55dc4b7644ad3f",
     "data/validator-profiles/legacy-v06.v1.json": "32a4cdb2424d5fa829de9f8a8e325d8dbc3e14a131c2f4edf46b85c9b48dd4c8",
-    "editor/editor.js": "6b51dd4439e4d28576196220276d4a6cf7dc3c3c29dd2f0e901c9b940372f238",
+    "editor/editor.js": "a5ac194509119008a55b51c356e7bbce20075150b097aa5872a77f62fd2009a2",
     "src/model/editor-store.js": "c532d48ec221e3af206cfc6f493708ad9d51084501ea565c444d13c2b589f416",
     "src/model/operations.js": "ac932332e75740d07218c8c52d0bc934f7db692ed7b827206807abc216d2c0c9"
   },
   "artifacts": {
     "editor-loop.png": {
-      "sha256": "5741b9516a0327453fcecc4ae1087ae0c093375db66b5f3170342ba480b8ff25",
+      "sha256": "9f0d3666fefae3e5e679e470548c24a06c89803706f3ebfbddf18baba2498108",
       "note": "Final state after the scripted run. Screenshot bytes may vary across Chrome versions; pass/fail comes from the steps."
     }
   },

@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import { readInputs } from '../src/glyph/load-node.js';
 import { GlyphRegistry } from '../src/glyph/registry.js';
 import { importLegacyV06 } from '../src/glyph/import-v06.js';
+import { applyAuthoredSnapshot } from '../src/glyph/import-authored.js';
 import { applySemanticOverlay, topologyReport, resolveRef } from '../src/glyph/semantic-overlay.js';
 import { validateGlyphDefinition } from '../src/glyph/schema.js';
 import { stableStringify } from '../src/core/stable-json.js';
@@ -12,7 +13,7 @@ import { renderReport, REPORT_PATH } from '../tools/report-topology.mjs';
 
 const inputs = readInputs();
 const registry = GlyphRegistry.build(inputs);
-const imported = new GlyphRegistry(importLegacyV06(inputs.snapshot));
+const imported = new GlyphRegistry(inputs.authored.reduce((recs, a) => applyAuthoredSnapshot(recs, a.snapshot, a.sourcePath), importLegacyV06(inputs.snapshot)));
 const abgrsContract = JSON.parse(readFileSync('contracts/abgrs-glyph-construction.v1.json', 'utf8'));
 const codes = (g) => validateGlyphDefinition(g).map((d) => d.code);
 
@@ -43,7 +44,12 @@ test('A/B/G/R/S components match the contract proposals exactly; other letters u
     assert.deepEqual(comps.map((c) => c.label).sort(), [...names].sort(), gid);
     assert.ok(comps.every((c) => c.id === `glyph.${gid.slice(-1)}.component.${c.label}`));
   }
-  for (const ch of 'CDEFHIJKLMNOPQTUVWXYZ') {
+  const PLAN = { C: ['upper-terminal', 'upper-arc', 'lower-arc', 'lower-terminal'], D: ['spine', 'bowl', 'spine-bowl-junction', 'counter-boundary'],
+    O: ['outer-bowl', 'counter-boundary'], P: ['spine', 'upper-bowl', 'lower-termination', 'counter-boundary'], Q: ['outer-bowl', 'tail', 'tail-junction', 'counter-boundary'] };
+  for (const [ch, names] of Object.entries(PLAN)) {
+    assert.deepEqual(registry.getByChar(ch).semanticGraph.components.map((c) => c.label).sort(), [...names].sort(), ch);
+  }
+  for (const ch of 'EFHIJKLMNTUVWXYZ') {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components, []);
     assert.equal(registry.getByChar(ch).revision, 1);
   }
@@ -110,7 +116,7 @@ test('identity invariants from the parameter contract become declared, unverifie
 });
 
 test('candidate proposals cover each outer contour segment exactly once (reviewable partition)', () => {
-  for (const ch of 'ABGRS') {
+  for (const ch of 'ABCDGOPQRS') {
     const g = registry.getByChar(ch);
     const outer = g.variants[0].geometry.contours.find((c) => c.role === 'outer');
     const counts = new Map(outer.segments.filter((s) => s.type !== 'move').map((s) => [s.segmentId, 0]));

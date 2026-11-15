@@ -504,3 +504,12 @@
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
 - 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
+
+
+## 2026-11-15 — C02 wave 1: authored C, D, O, P, Q
+
+- New authoring snapshot `data/glyphs/authored/c02-wave1.v1.json` (original, Claude-authored, review pending) and importer `src/glyph/import-authored.js`; the v0.6 bases remain as reference-only second variants.
+- C (classified exterior aperture with an authored mouth construction), O, D, P and Q (one enclosed counter each, Q with an explicit tail) pass all hard checks. All 26 letters now validate and render.
+- Semantic overlay 1.2.0 adds component proposals and identity profiles for the five letters; reports, proof run, test page and editor follow the authored set automatically.
+- Report: `docs/C02_GLYPH_AUTHORING_REPORT.md`. Tests: 111 passing plus browser tests.
+
