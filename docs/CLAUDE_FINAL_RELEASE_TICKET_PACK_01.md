@@ -7,7 +7,7 @@
 
 ## Owner-approved sequencing override — 2026-11-15
 
-The original C01 → C02 → C03 → C04 → C05 → C06 → C07 order has one explicit exception: **after C01, execute C06 immediately.** C02–C05 are temporarily deferred, not cancelled. C06 must be independently useful and must not wait for the editor packages. Build a versioned editor-bridge contract and integrate only capabilities verified to exist. Do not fake future controls, duplicate editor logic or claim unfinished features. After C06, resume C02 → C03 → C04 → C05, then execute C08 (Creator-first workflow) before C07 completes final integration and release hardening. This override is owner-approved and supersedes conflicting sequencing language in older C06 text.
+The owner-approved sequence is **C01 → C06 → C02 → C03 → C04 → C05 → C08 → C07**. C06 executes immediately after C01 as a deliberate exception; C02–C05 are temporarily deferred, not cancelled. C06 must be independently useful and must not wait for the editor packages. Build a versioned editor-bridge contract and integrate only capabilities verified to exist. Do not fake future controls, duplicate editor logic or claim unfinished features. C08 then turns the completed generator/editor capabilities into the Creator-first user journey. C07 performs final application/archive integration and release hardening. This sequence supersedes conflicting older C06 sequencing language.
 
 ## Mandatory first action
 
