@@ -4,7 +4,15 @@
 **Editorial authority:** `research/` library.  
 **Purpose:** Complete Archive Roadmap Phase A and define a small content pilot structure.
 
-## 1. Audience and use situations
+## 0. Verbindliche Sprachregelung
+
+Das gesamte Lexikon ist auf Deutsch (de-DE) zu verfassen und zu bedienen. Alle sichtbaren Texte — Navigation, Schaltflächen, Suche, Filter, Status, Hilfetexte, Fehlermeldungen, Artikel, Bildunterschriften, Diagramme und Lernpfade — sind deutsch.
+
+Originale englische Szenebegriffe, Writer-/Crew-Namen, Eigennamen, offizielle Publikationstitel und direkte Zitate bleiben in ihrer belegten Originalform erhalten und werden bei der ersten Nennung deutsch erklärt. Technische IDs und interne Feldnamen dürfen englisch bleiben. Es gibt in Version 1.0 keine englische Paralleloberfläche und keinen Sprachumschalter. Die Produktmarke THE BLACKBOOK ARCHIVE bleibt als Eigenname erhalten.
+
+Sichtbare Hauptnavigation: **Entdecken · Zeitleiste · Szenen · Stile & Buchstaben · Praktiken & Formate · Werkzeuge & Materialien · Personen & Crews · Begriffslexikon · Bildarchiv**.
+
+## 1. Zielgruppen und Nutzungssituationen
 
 | Audience | Typical question | Preferred depth | Useful next action |
 |---|---|---|---|
@@ -49,7 +57,7 @@ The archive uses a multi-axis taxonomy. Categories are not a flat list of mutual
 
 A single entry may have multiple facets. For example, a wholecar is a format/surface context, not a letterform grammar. Wildstyle Study is modeled as a composition/relationship grammar in NIGHTSHIFT, while historical terminology may vary by source and community.
 
-## 3. Navigation model
+## 3. Navigationsmodell
 
 ### Main navigation
 1. **Discover** — curated paths, new entries, featured historical threads.
