@@ -448,3 +448,28 @@ The owner asked to proceed with the approved graffiti blackbook reference. A new
 - Before handoff, render the exact current SVG (not a reconstruction), inspect text collisions/clipping, anatomy leader targets, panel 4 sequence, graffiti silhouettes and print contrast. If needed, adjust text sizing and panel 8 composition.
 - Check that the paper texture filter renders acceptably in target SVG/PDF renderers; provide a clean print variant with texture disabled if it compromises output.
 - Do not proceed to B until the owner has reviewed and approved the A sheet.
+
+
+### A study — print test and first visual QA (15 November 2026)
+
+The current A SVG was fetched from the repository, rendered at 1680 × 1188 (A4 landscape ratio) and visually inspected. The first render exposed two clear layout issues: panel 6 heading exceeded its available width, and the panel 8 footer rule collided with the captions. The piece/Wildstyle example also read too abstractly.
+
+**Corrections committed:**
+- Panel 6 heading reduced to fit its bar.
+- Panel 8 separator line removed to protect the labels and footer note.
+- Piece/Wildstyle A redrawn with a clearer A silhouette, internal counter and directional extensions.
+
+**Latest A SVG commit:** `f6a4ad3494ecb8e78ee9c6872731ff6ab63a2539`  
+**Current SVG blob:** `0ae4a9042f49561a1f7e27600daca94bc20f70bf`
+
+**Visual QA result: first layout test passed after corrections, but A is not yet owner-approved or final print-approved.**
+- Nine-panel hierarchy, title/header, panel borders and footer remain legible in the rendered proof.
+- Panel 6 heading now fits.
+- Panel 8 captions are no longer crossed by a rule.
+- Graffiti panel presents three distinguishable A directions; piece/Wildstyle silhouette is more legible.
+- At this scale, panel 8 footer note sits close to the lower border; keep an eye on it in PDF/export.
+- The five-step construction panel still needs a stronger didactic distinction between stages 4 (contour) and 5 (filled final form); inspect and refine before approval.
+- Anatomy leader lines and labels should receive a final close-up check at 100%.
+- The grain filter is subtle; test in the actual PDF export path and retain a clean print variant if filter support or contrast is inconsistent.
+
+Next: perform a 100% crop inspection of panels 2, 4 and 8, refine the construction sequence and graffiti examples if necessary, then export a print proof. Do not start B before owner approval.
