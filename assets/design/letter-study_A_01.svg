@@ -22,9 +22,10 @@
 <path class="purple" d="M810 215L810 200M745 310L700 310M880 345L930 345M810 275L850 255M760 365L735 382M860 365L885 382"/>
 <text class="s" x="825" y="210">Spitze / Apex</text><text class="s" x="615" y="304">linker Schenkel</text><text class="s" x="935" y="350">rechter Schenkel</text><text class="s" x="875" y="250">Innenraum / Punze</text><text class="s" x="615" y="390">Querbalken</text><text class="s" x="700" y="410">Fuß / Abschluss</text>
 <rect class="panel" x="1122" y="154" width="510" height="270"/><rect x="1122" y="154" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="184">03 · PROPORTIONEN &amp; RASTER</text>
-<path class="letter" d="M1220 365L1320 215L1420 365M1268 294H1372"/>
-<path class="yellow" d="M1195 215H1450M1195 365H1450"/><path class="purple" d="M1195 294H1450M1320 200V380"/>
-<text class="s" x="1435" y="245">Versalhöhe</text><text class="s" x="1435" y="315">Querbalkenlage</text><text class="s" x="1435" y="390">Grundlinie</text><text class="s" x="1145" y="410">Breite und Querbalkenlage sind Entwurfsentscheidungen, keine Universalwerte.</text>
+<path class="letter" d="M1185 365L1265 235L1345 365M1223 310H1307"/>
+<path class="yellow" d="M1168 235H1360M1168 365H1360"/><path class="purple" d="M1168 310H1360M1265 220V380"/>
+<text class="s" x="1370" y="242">Versalhöhe</text><text class="s" x="1370" y="317">Querbalkenlage</text><text class="s" x="1370" y="372">Grundlinie</text>
+<text class="s" x="1145" y="402">Breite und Balkenlage variieren je nach Entwurf.</text>
 <rect class="panel" x="48" y="446" width="510" height="270"/><rect x="48" y="446" width="510" height="42" fill="#171717"/><text class="h" x="68" y="476">04 · KONSTRUKTIONSANALYSE</text>
 <g transform="translate(72 520)"><path d="M0 125L32 15L64 125" class="purple"/><path d="M85 125L117 15L149 125" stroke="#111" stroke-width="8"/><path d="M170 125L202 15L234 125M185 75H219" stroke="#111" stroke-width="8"/><path d="M255 125L287 15L319 125M270 75H304" stroke="#111" stroke-width="15" stroke-linejoin="round"/><path d="M340 125L372 15L404 125M355 75H389" stroke="#111" stroke-width="15" stroke-linejoin="round"/></g>
 <text class="s" x="90" y="690">1 Skelett · 2 Strichstärke · 3 Querbalken · 4 Kontur · 5 Grundform</text>
