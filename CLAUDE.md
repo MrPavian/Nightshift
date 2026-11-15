@@ -381,3 +381,15 @@ This is a content-structure correction pass, not yet a full visual/rendering sig
 
 
 **Second QA pass:** proportion panel labels and diagram were rearranged to avoid the long explanatory line running beyond the panel; the five form variants now visibly differ (narrow, wide, slanted, raised crossbar, organic crossbar). Structural checks confirm all nine sections, expanded anatomy labels and qualified ductus language. A rendered print-size visual inspection is still outstanding; do not describe the sheet as fully print-approved yet.
+
+
+### A study — graffiti-led redesign (15 November 2026)
+
+Owner feedback clarified that the Academy must teach graffiti lettering as its destination, not present a typography/calligraphy worksheet with a small graffiti-transfer panel. The previous A study is superseded by a graffiti-led redesign.
+
+- `docs/lettering/MASTER_CONTROL_PROMPT_01.md` updated to version 1.1. Graffiti lettering is now the explicit educational destination; the nine sections give substantial weight to original graffiti letterform variations, handstyle and practical graffiti application.
+- `assets/design/letter-study_A_01.svg` redesigned as a Graffiti Lettering Lab sheet. The three application directions are presented as parallel exercises, not a Tag → Throw-up → Piece progression.
+- Master prompt commit: `930ef1c9553c7efcd03c729b6e6bed5d74f34e38`.
+- A study SVG commit: `63aba05c04b7c3c2aeb77ffbc1af689dbf4b4181`.
+
+This is a new content/layout direction, not print approval. The current SVG still requires exact rendered-size visual inspection and further refinement of the graffiti examples: ensure they read as distinct, convincing original letter constructions rather than schematic placeholders. Do not begin B until the owner has reviewed and approved A.
