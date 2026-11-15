@@ -31,9 +31,9 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site/docs/reports
-          cp -r review editor src data contracts _site/
+          cp -r archive review editor src data contracts _site/
           cp -r docs/reports/proof _site/docs/reports/
-          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=review/"><a href="review/">NIGHTSHIFT test &amp; review page</a>\n' > _site/index.html
+          printf '<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NIGHTSHIFT</title><body style="font:18px/1.6 system-ui,sans-serif;max-width:36rem;margin:3rem auto;padding:0 1rem"><h1>NIGHTSHIFT</h1><ul><li><a href="archive/">Blackbook-Archiv</a> – belegtes Graffiti-Lexikon</li><li><a href="review/">Prüfstand</a> – Glyphen, Wörter, Prüfbögen</li><li><a href="editor/">Editor</a> – Konturpunkte bearbeiten</li></ul></body></html>\n' > _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

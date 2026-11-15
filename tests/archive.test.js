@@ -1,0 +1,254 @@
+// C06 — THE BLACKBOOK ARCHIVE: content pipeline, editorial rules and editor-bridge contract.
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync, existsSync } from 'node:fs';
+import { build, readResearch, OUT } from '../tools/archive-build.mjs';
+import { buildArchive } from '../src/archive/build.js';
+import { DIAGRAM_IDS } from '../src/archive/diagrams.js';
+import { parseClaimsTable, inlineRefs, parseFrontMatter } from '../src/archive/parse.js';
+import { stableStringify } from '../src/core/stable-json.js';
+import { BRIDGE_VERSION, BRIDGE_CAPABILITIES, BRIDGE_GLYPHS, bridgeHref, readBridgeRequest, validateBridgeParams, archiveReturnHref } from '../src/bridge/editor-bridge.js';
+
+const result = build();
+const A = result.data;
+const byId = new Map(A.entries.map((e) => [e.id, e]));
+const allText = (e) => [e.title, e.summary, ...Object.values(e.sections), ...e.distinctions.map((d) => `${d.label} ${d.text}`)].join('\n');
+
+/** Rebuild with one research file changed, to test that the validator rejects bad content. */
+function buildWith(path, edit) {
+  const files = readResearch().map((f) => (f.path === path ? { ...f, text: edit(f.text) } : f));
+  return buildArchive({ files, diagrams: DIAGRAM_IDS });
+}
+const codes = (r) => r.diagnostics.map((d) => d.code);
+
+// ---------- pipeline ----------
+test('archive builds from the research library without diagnostics', () => {
+  assert.equal(result.ok, true);
+  assert.deepEqual(result.diagnostics, []);
+});
+
+test('committed archive data is exactly the build output (no hand-maintained copy)', () => {
+  assert.equal(readFileSync(OUT, 'utf8'), stableStringify(A, 2) + '\n');
+  for (const { path, sha256 } of A.generatedFrom) assert.match(sha256, /^[0-9a-f]{64}$/, path);
+  assert.ok(A.generatedFrom.some((g) => g.path.startsWith('research/archive/entries/')));
+});
+
+test('build is deterministic', () => {
+  assert.equal(stableStringify(build().data), stableStringify(A));
+});
+
+// ---------- scope and coverage ----------
+test('launch edition has 25–35 entries across content types', () => {
+  assert.ok(A.entries.length >= 25 && A.entries.length <= 35, `${A.entries.length} entries`);
+  const types = new Set(A.entries.map((e) => e.type));
+  for (const t of ['history', 'scene', 'practice', 'style', 'format', 'media', 'object', 'person', 'construction', 'concept']) assert.ok(types.has(t), `missing type ${t}`);
+});
+
+test('substantial New York foundation plus contrasting international scenes', () => {
+  const claimsOf = (e) => [...e.claimIds, ...e.citedLedgerClaims].map((id) => A.claims.find((c) => c.id === id));
+  const nyc = A.entries.filter((e) => e.regions?.includes('New York City') || claimsOf(e).some((c) => c.origin === 'ledger' || c.sources.some((s) => /^(NYC_|SOURCE_REGISTER_NYC)/.test(s))));
+  assert.ok(nyc.length >= 10, `NYC foundation entries: ${nyc.length}`);
+  const intl = A.entries.filter((e) => e.type === 'scene' && !e.regions?.some((r) => ['New York City', 'Philadelphia'].includes(r)));
+  assert.ok(intl.length >= 5, `international scenes: ${intl.length}`);
+  for (const id of ['scene.philadelphia', 'scene.amsterdam', 'scene.paris', 'scene.sao-paulo', 'scene.china', 'scene.dortmund']) assert.ok(byId.has(id), id);
+});
+
+test('modern writing is not presented as the origin of all graffiti, nor scenes as copies', () => {
+  const text = A.entries.map(allText).join('\n').toLowerCase();
+  for (const bad of ['birthplace of graffiti', 'graffiti was invented in new york', 'invented graffiti', 'copied new york']) assert.ok(!text.includes(bad), bad);
+  assert.ok(byId.get('concept.public-inscription'), 'older public inscription has its own entry');
+  assert.ok(byId.get('history.nyc-emergence').related.includes('scene.philadelphia'));
+  assert.ok(byId.get('concept.circulation-and-adaptation').aliases.some((a) => /export|diffusion/i.test(a)), 'circulation entry captures the “export” misconception as a searchable alias');
+});
+
+test('women are integrated into the main history, not isolated', () => {
+  const lp = 'person.lady-pink';
+  const linkers = A.entries.filter((e) => e.id !== lp && (e.related.includes(lp) || e.inlineLinks.includes(lp))).map((e) => e.id);
+  assert.ok(linkers.includes('history.nyc-emergence'), 'core NYC chapter links to Lady Pink');
+  assert.ok(linkers.length >= 3, linkers.join(', '));
+  assert.ok(A.timeline.some((ev) => ev.entry === lp));
+  assert.ok(A.paths.some((p) => p.steps.some((s) => s.entry === lp)));
+  assert.ok(allText(byId.get('scene.china')).includes('China Graffiti Girls'), 'women appear inside scene chapters too');
+});
+
+// ---------- evidence ----------
+test('every claim is sourced; sources resolve; project documents only back inferences', () => {
+  const sources = new Set(A.sources.map((s) => s.id));
+  for (const c of A.claims) {
+    assert.ok(c.sources.length, c.id);
+    for (const s of c.sources) {
+      if (s.startsWith('doc:')) {
+        assert.ok(existsSync(s.slice(4)), s);
+        assert.ok(['editorial-synthesis', 'nightshift-design-inference'].includes(c.kind), `${c.id} uses ${s}`);
+      } else assert.ok(sources.has(s), `${c.id} → ${s}`);
+    }
+  }
+});
+
+test('every inline reference in entry text resolves to a claim', () => {
+  const ids = new Set(A.claims.map((c) => c.id));
+  for (const e of A.entries) {
+    const refs = inlineRefs(allText(e)).claims;
+    assert.ok(refs.length, `${e.id} cites nothing in its text`);
+    for (const r of refs) assert.ok(ids.has(/^c\d+$/.test(r) ? `${e.id}#${r}` : r), `${e.id}: ${r}`);
+  }
+});
+
+test('evidence, editorial status and image rights are separate fields with honest values', () => {
+  for (const e of A.entries) {
+    assert.ok(A.taxonomy.evidence.includes(e.evidence));
+    assert.ok(A.taxonomy.editorialStatus.includes(e.editorialStatus));
+    assert.ok(A.taxonomy.imageRights.includes(e.imageRights));
+    assert.notEqual(e.editorialStatus, 'approved-for-archive', 'owner approval has not happened yet');
+    assert.equal(e.imageRights === 'original-diagram', (e.diagrams ?? []).length > 0, `${e.id}: rights must match diagrams`);
+  }
+  for (const c of A.claims) assert.notEqual(c.evidence, 'unverified-lead', c.id);
+});
+
+test('no placeholders, no embedded third-party images', () => {
+  for (const e of A.entries) {
+    const t = allText(e);
+    assert.doesNotMatch(t, /\b(TODO|TBD|lorem|FIXME)\b/i, e.id);
+    assert.doesNotMatch(t, /<img|!\[|\.(jpe?g|png|gif|webp)\b/i, e.id);
+  }
+  const app = readFileSync('archive/app.js', 'utf8') + readFileSync('archive/index.html', 'utf8');
+  assert.doesNotMatch(app, /<img/i);
+});
+
+test('diagrams are original SVG with accessible names and page-unique ids', () => {
+  const seen = new Set();
+  assert.deepEqual(Object.keys(A.diagrams).sort(), [...DIAGRAM_IDS].sort());
+  for (const [id, svg] of Object.entries(A.diagrams)) {
+    assert.match(svg, /^<svg [^>]*role="img"[^>]*aria-labelledby="[^"]+"/, id);
+    assert.match(svg, /<title id="[^"]+">[^<]+<\/title><desc id="[^"]+">[^<]+<\/desc>/, id);
+    assert.doesNotMatch(svg, /<image|href="http/i, id);
+    for (const [, x] of svg.matchAll(/ id="([^"]+)"/g)) { assert.ok(!seen.has(x), `duplicate id ${x}`); seen.add(x); }
+  }
+});
+
+// ---------- navigation ----------
+test('no dead ends: links resolve, every entry is reachable and links onward', () => {
+  for (const e of A.entries) {
+    assert.ok(e.related.length >= 1, `${e.id} has no related entries`);
+    for (const r of [...e.related, ...e.inlineLinks, ...e.distinctions.map((d) => d.target).filter(Boolean)]) assert.ok(byId.has(r), `${e.id} → ${r}`);
+  }
+  const incoming = new Set([...A.entries.flatMap((e) => [...e.related, ...e.inlineLinks]), ...A.paths.flatMap((p) => p.steps.map((s) => s.entry)), ...A.timeline.map((t) => t.entry)]);
+  for (const e of A.entries) assert.ok(incoming.has(e.id), `${e.id} is unreachable`);
+});
+
+test('timeline is sorted, sourced and points at entries; learning paths are usable', () => {
+  assert.ok(A.timeline.length >= 12);
+  const claimIds = new Set(A.claims.map((c) => c.id));
+  for (let i = 1; i < A.timeline.length; i++) assert.ok(A.timeline[i - 1].sort <= A.timeline[i].sort);
+  for (const ev of A.timeline) {
+    assert.ok(byId.has(ev.entry), ev.id);
+    assert.ok(ev.claims.length && ev.claims.every((c) => claimIds.has(c)), ev.id);
+    assert.ok(['documented', 'approximate', 'contested'].includes(ev.certainty), ev.id);
+  }
+  assert.ok(A.paths.length >= 2);
+  for (const p of A.paths) {
+    assert.ok(p.steps.length >= 3 && p.intro, p.id);
+    for (const s of p.steps) assert.ok(byId.has(s.entry) && s.framing, `${p.id} → ${s.entry}`);
+  }
+});
+
+test('search aliases cover practitioner terms and alternative spellings', () => {
+  const aliases = new Map(A.entries.flatMap((e) => (e.aliases ?? []).map((a) => [a.toLowerCase(), e.id])));
+  assert.equal(aliases.get('pichação'), 'scene.sao-paulo');
+  assert.equal(aliases.get('black book'), 'object.blackbook');
+  assert.equal(aliases.get('dortmunder style'), 'style.dortmund-style');
+  assert.equal(aliases.get('wicked'), 'scene.philadelphia');
+});
+
+// ---------- validator rejects bad content ----------
+const ENTRY = 'research/archive/entries/practice.tag.md';
+test('validator rejects an unsourced claim, an unknown source and a dead link', () => {
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace(/\| c1 \| scholarly-interpretation \| strong \| [^|]+\|/, '| c1 | scholarly-interpretation | strong |  |'))).includes('ARC_UNSOURCED_CLAIM'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3', 'NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S99'))).includes('ARC_UNKNOWN_SOURCE'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('[[practice.handstyle|handstyle]]', '[[practice.nonexistent|handstyle]]'))).includes('ARC_DEAD_LINK'));
+});
+
+test('validator rejects leads in published entries, placeholders and doc-sourced facts', () => {
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('| c1 | scholarly-interpretation | strong |', '| c1 | scholarly-interpretation | unverified-lead |'))).includes('ARC_LEAD_PUBLISHED'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('## How to recognize it\n', '## How to recognize it\n\nTODO write this.\n'))).includes('ARC_PLACEHOLDER'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('| c2 | editorial-synthesis |', '| c2 | documented-fact |'))).includes('ARC_DOC_SOURCE_KIND'));
+});
+
+test('validator rejects unknown editor capabilities and parameters the editor cannot open', () => {
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('generator: study.word-layout word=ABRA', 'generator: editor.magic-button'))).includes('ARC_UNKNOWN_CAPABILITY'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('generator: study.word-layout word=ABRA', 'generator: editor.contour-node-edit glyph=Z'))).includes('ARC_BRIDGE_PARAMS'));
+});
+
+test('parsers read claim tables, inline references and front matter', () => {
+  const rows = parseClaimsTable('| id | kind | evidence | sources | claim |\n|---|---|---|---|---|\n| c1 | practitioner-account | good | A#S1; B#S2 | Text with | no split? |');
+  assert.equal(rows[0].localId, 'c1');
+  assert.deepEqual(rows[0].sources, ['A#S1', 'B#S2']);
+  assert.deepEqual(inlineRefs('x [c1; NYC-002] y [[a.b|label]]').claims, ['c1', 'NYC-002']);
+  assert.deepEqual(parseFrontMatter('---\nid: a.b\naliases: x; y\n---\n# T').data.aliases, ['x', 'y']);
+});
+
+// ---------- editor bridge contract ----------
+test('bridge contract is versioned and only exposes capabilities that exist', () => {
+  assert.match(BRIDGE_VERSION, /^\d+\.\d+\.\d+$/);
+  assert.equal(A.bridge.version, BRIDGE_VERSION);
+  const editor = readFileSync('editor/editor.js', 'utf8'), review = readFileSync('review/app.js', 'utf8');
+  assert.deepEqual(BRIDGE_GLYPHS, JSON.parse(editor.match(/const EDITABLE = (\[[^\]]+\])/)[1].replace(/'/g, '"')), 'bridge glyph list matches the editor');
+  for (const [id, c] of Object.entries(BRIDGE_CAPABILITIES)) {
+    if (c.status === 'available') {
+      assert.ok(['review', 'editor'].includes(c.page), id);
+      assert.match(c.page === 'editor' ? editor : review, /readBridgeRequest\(location\.search, '(review|editor)'\)/, `${id}: receiver missing`);
+    } else {
+      assert.equal(c.status, 'unavailable', id);
+      assert.match(c.after, /^C0[3-5]$/, id);
+      assert.ok(c.reasonDe && c.reason, id);
+    }
+  }
+  if (/data-tab="(\w+)"/.test(readFileSync('review/index.html', 'utf8'))) for (const t of ['live', 'word', 'plates']) assert.match(readFileSync('review/index.html', 'utf8'), new RegExp(`data-tab="${t}"`));
+});
+
+test('every active archive link targets a verified capability; future ones stay unavailable', () => {
+  let active = 0;
+  for (const e of A.entries) for (const g of e.generatorLinks) {
+    const cap = BRIDGE_CAPABILITIES[g.capability];
+    assert.equal(g.available, cap.status === 'available', `${e.id} ${g.capability}`);
+    if (g.available) { active++; assert.ok(bridgeHref(g.capability, g.params, { from: e.id }), `${e.id} ${g.capability}`); }
+  }
+  assert.ok(active >= 3, `${active} active links`);
+  assert.ok(A.entries.some((e) => e.generatorLinks.some((g) => !g.available)), 'at least one honest unavailable link is shown');
+  for (const id of Object.keys(BRIDGE_CAPABILITIES)) assert.deepEqual(A.bridge.capabilities[id].linkedFrom, A.entries.filter((e) => e.generatorLinks.some((g) => g.capability === id)).map((e) => e.id).sort());
+});
+
+test('bridge links round-trip and receivers reject malformed requests', () => {
+  const href = bridgeHref('study.glyph-anatomy', { glyph: 'B' }, { from: 'construction.letter-anatomy', base: '' });
+  assert.equal(href, 'review/index.html?bv=1&cap=study.glyph-anatomy&glyph=B&tab=live&diag=1&from=construction.letter-anatomy');
+  assert.deepEqual(readBridgeRequest(href.split('?')[1], 'review'), { capability: 'study.glyph-anatomy', glyph: 'B', tab: 'live', diag: true, from: 'construction.letter-anatomy' });
+  assert.equal(readBridgeRequest(href.split('?')[1], 'editor'), null, 'wrong page');
+  assert.equal(readBridgeRequest(href.split('?')[1].replace('bv=1', 'bv=2'), 'review'), null, 'unknown major version');
+  assert.equal(readBridgeRequest('bv=1&cap=grammar.style-comparison', 'review'), null, 'unavailable capability');
+  const evil = readBridgeRequest('bv=1&cap=editor.contour-node-edit&glyph=<x>&from=javascript:alert(1)', 'editor');
+  assert.deepEqual(evil, { capability: 'editor.contour-node-edit' });
+  assert.equal(bridgeHref('editor.contour-node-edit', { glyph: 'Z' }), null);
+  assert.equal(bridgeHref('grammar.style-comparison', {}), null);
+  assert.equal(bridgeHref('study.word-layout', { word: 'abc' }), null);
+  assert.equal(validateBridgeParams('study.proof-sheets', { extra: '1' }).ok, false);
+  assert.equal(archiveReturnHref('scene.paris'), '../archive/index.html#/entry/scene.paris');
+  assert.equal(archiveReturnHref('../../etc'), '../archive/index.html');
+});
+
+// ---------- offline package ----------
+test('offline cache lists only files that exist, including fonts and data', () => {
+  const sw = readFileSync('archive/sw.js', 'utf8');
+  const files = JSON.parse(sw.match(/const FILES = (\[[\s\S]*?\]);/)[1].replace(/'/g, '"').replace(/,\s*\]/, ']'));
+  assert.ok(files.includes('../data/archive/archive.v1.json'));
+  for (const f of files) assert.ok(existsSync(`archive/${f}`), f);
+  assert.ok(existsSync('archive/fonts/OFL.txt'), 'font licence is shipped');
+});
+
+test('committed C06 proof passed and is tied to the current archive inputs', async () => {
+  const { createHash } = await import('node:crypto');
+  const m = JSON.parse(readFileSync('docs/reports/proof/C06/manifest.json', 'utf8'));
+  assert.equal(m.result, 'pass');
+  assert.ok(m.bridgeTargets >= 4 && m.claimSheets === A.entries.length);
+  for (const [p, h] of Object.entries(m.inputs)) assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'), h, `${p} changed since the proof run`);
+  for (const [f, h] of Object.entries(m.screenshots)) assert.equal(createHash('sha256').update(readFileSync(`docs/reports/proof/C06/${f}`)).digest('hex'), h, f);
+});

@@ -504,3 +504,22 @@
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
 - 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
+
+## 2026-11-15 — C06: THE BLACKBOOK ARCHIVE, first edition
+
+- Executed immediately after C01 under the owner-approved sequencing override (C02–C05 deferred, not cancelled).
+- Content pipeline:
+  - `research/archive/entries/` (27 entries), `TIMELINE.md` (20 events) and `LEARNING_PATHS.md` (4 paths) are compiled by `npm run archive:build` into `data/archive/archive.v1.json`, with 96 claims and 32 cited sources.
+  - The validator rejects unsourced claims, dead links, leads in published entries, placeholders, unknown capabilities and invalid bridge parameters.
+- Archive UI `archive/`:
+  - Pages: start, search with aliases and type/region filters, entry detail with claim sheets, timeline, scenes, learning paths with progress, A–Z, sources.
+  - German interface, English entry text.
+  - Responsive and accessible; offline via service worker and bundled OFL fonts.
+- Original SVG diagrams are rendered at build time; seven diagrams, two of them from NIGHTSHIFT's canonical glyph geometry.
+- Editor bridge contract 1.0.0 (`src/bridge/editor-bridge.js`, `docs/EDITOR_BRIDGE_CONTRACT_01.md`):
+  - Four verified capabilities (anatomy, contour edit, word tester, proof sheets) with receivers in `review/` and `editor/` and a return link to the archive.
+  - Three future capabilities are shown as unavailable (C03–C05).
+- The T07 editor proof was re-run because `editor/editor.js` gained the bridge receiver; it passes with all 13 steps.
+- Tests: 123 passing; `tools/archive-smoke.mjs` covers 40 views at 360 px, 27 claim sheets and 4 bridge targets. Proof: `docs/reports/proof/C06/`.
+- Pages: the archive is deployed at `/archive/`; the site root now links archive, review page and editor.
+

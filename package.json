@@ -11,12 +11,15 @@
     "test": "node --test tests/*.test.js",
     "extract:v06": "node tools/extract-v06-paths.mjs",
     "check:v06": "node tools/extract-v06-paths.mjs --check",
-    "test:browser": "node tools/browser-smoke.mjs && node tools/review-smoke.mjs && node tools/editor-smoke.mjs",
+    "test:browser": "node tools/browser-smoke.mjs && node tools/review-smoke.mjs && node tools/editor-smoke.mjs && node tools/archive-smoke.mjs",
     "report:topology": "node tools/report-topology.mjs",
     "report:validation": "node tools/report-validation.mjs",
     "proof:render": "node tools/render-proof.mjs",
     "proof:run": "node tools/proof-run.mjs",
-    "proof:editor": "node tools/editor-smoke.mjs --capture"
+    "proof:editor": "node tools/editor-smoke.mjs --capture",
+    "proof:archive": "node tools/archive-smoke.mjs --capture",
+    "archive:build": "node tools/archive-build.mjs",
+    "archive:check": "node tools/archive-build.mjs --check"
   },
   "dependencies": {
     "three": "0.187.0"

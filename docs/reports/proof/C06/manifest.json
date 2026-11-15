@@ -1,0 +1,23 @@
+{
+  "package": "C06",
+  "result": "pass",
+  "routes": 40,
+  "claimSheets": 27,
+  "bridgeTargets": 4,
+  "inputs": {
+    "data/archive/archive.v1.json": "ba8bca38a5ab55b852e02bcf8b8899801069f1a7861f6e52d097038f55763f4c",
+    "archive/index.html": "293e0d3af863501446c9109f5c56a8c7ddd4546fd3b5af3361155134cf049508",
+    "archive/app.js": "7437855a173eeea4700f459b70d4645d2c34974238e917928f718d2158928a3b",
+    "archive/app.css": "4e1cd5feffa36691e662d20d5eff813d176ed26f04c36f9f254fbbc72a32931b",
+    "src/bridge/editor-bridge.js": "9f78f49693f1198b095ff080ded7d6a6679c19d385151140c7b21fb328ecaf7f"
+  },
+  "screenshots": {
+    "home-phone.png": "b869d27ae417b65c4527f042599c2aaa87dd6cb5ee5c214df0bcb6baa3bafd28",
+    "entry-phone.png": "54813a52d2b848a12ed0ecb037d48d907609ab9ce5f14be74a77c47dd611e49f",
+    "entry-desktop.png": "04f48f4a7b0aaac5dc75de058a981057acf9e8dd68d59a35513cd50b4fea172c",
+    "search-phone.png": "3d2bbb1da2b0e11657694676f7f25460f1d1e126685ca5d93949de40eee82b6c",
+    "timeline-phone.png": "e06d8435940f1003c0405e843be042b63be63620ca310ad565a5e7ebbc4fd53d",
+    "scenes-desktop.png": "975eeb8db3b6f307ce89366ecc3e7646ed8ee1c39a5fc6f509b2f357fd087c5b",
+    "path-phone.png": "f7241e9cb3b98eac4acd553fd16062a08749561e88e8b4d5fc8bb7f2c04286e2"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d2633">
+<meta name="description" content="Das Blackbook-Archiv von NIGHTSHIFT: ein belegtes Lexikon des Graffiti-Writings von New York bis zu den Szenen der Welt.">
+<title>Blackbook-Archiv · NIGHTSHIFT</title>
+<link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="bar">
+  <a class="brand" href="#/" aria-label="Blackbook-Archiv, Startseite"><span class="brand-mark" aria-hidden="true"></span>Blackbook-Archiv</a>
+  <nav aria-label="Hauptnavigation">
+    <ul>
+      <li><a href="#/suche" data-nav="suche">Suche</a></li>
+      <li><a href="#/zeitleiste" data-nav="zeitleiste">Zeitleiste</a></li>
+      <li><a href="#/szenen" data-nav="szenen">Szenen</a></li>
+      <li><a href="#/pfade" data-nav="pfade">Lernpfade</a></li>
+      <li><a href="#/a-z" data-nav="a-z">A–Z</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main" tabindex="-1" aria-live="polite">
+  <p class="loading">Archiv wird geladen …</p>
+</main>
+<dialog id="claim" aria-labelledby="claim-title">
+  <div class="sheet">
+    <div class="sheet-head"><h2 id="claim-title">Beleg</h2><button type="button" class="close" data-close>Schließen</button></div>
+    <div id="claim-body"></div>
+  </div>
+</dialog>
+<footer class="foot">
+  <p>Erste Ausgabe des Archivs. Inhalte auf Englisch, aus der Recherche-Bibliothek von NIGHTSHIFT erzeugt; jede Aussage ist belegt und eingeordnet. Keine Fotos fremder Werke – alle Abbildungen sind eigene Diagramme.</p>
+  <p><a href="#/so-liest-du">So liest du das Archiv</a> · <a href="#/quellen">Alle Quellen</a> · <a href="../review/index.html">Prüfstand</a> · <a href="../editor/index.html">Editor</a></p>
+  <p id="foot-meta" class="muted"></p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
 
 import * as THREE from 'three';
 import { GlyphRegistry } from '../src/glyph/registry.js';
+import { readBridgeRequest, mountReturnLink } from '../src/bridge/editor-bridge.js';
 import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
 import { buildRenderModel } from '../src/render/render-model.js';
 import { buildGlyphObject } from '../src/editor/three-glyph.js';
@@ -300,6 +301,9 @@ try {
   registry = GlyphRegistry.build({ snapshot, overlay, parameterContract, validationContract });
   disabledOps = disabledParameterOperations(paramContract);
   store = new EditorStore(registry.list(), profile, disabledOps);
+  const bridge = readBridgeRequest(location.search, 'editor');
+  if (bridge?.glyph && EDITABLE.includes(bridge.glyph)) { glyphId = `latin.upper.${bridge.glyph}`; selection = { glyphId, nodeId: null }; }
+  if (bridge) { selftest.bridge = bridge; mountReturnLink(document, bridge); }
   setupControls();
   refreshUi();
   selftest.ready = true;

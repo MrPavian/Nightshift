@@ -27,6 +27,7 @@ jobs:
           node tools/report-topology.mjs --check
           node tools/report-validation.mjs --check
           node tools/proof-run.mjs --check
+          node tools/archive-build.mjs --check
       - name: Browser tests (headless Chrome)
         run: |
           CHROME=$(command -v google-chrome || command -v chromium) npm run -s test:browser

@@ -1,0 +1,4135 @@
+{
+  "archiveSchemaVersion": "1.0",
+  "bridge": {
+    "capabilities": {
+      "editor.contour-node-edit": {
+        "after": null,
+        "description": "Opens the contour editor on one authored glyph; every change is validated before it is accepted.",
+        "label": "Edit contour nodes (validated)",
+        "labelDe": "Im Editor bearbeiten",
+        "linkedFrom": [
+          "construction.letter-anatomy",
+          "construction.negative-space",
+          "object.blackbook"
+        ],
+        "page": "editor",
+        "reason": null,
+        "reasonDe": null,
+        "status": "available"
+      },
+      "grammar.style-comparison": {
+        "after": "C03",
+        "description": null,
+        "label": "Style grammar comparison",
+        "labelDe": "Stilvergleich",
+        "linkedFrom": [
+          "scene.dortmund",
+          "style.dortmund-style"
+        ],
+        "page": null,
+        "reason": "Requires the style resolver (C03).",
+        "reasonDe": "Kommt mit dem Stil-Resolver (Paket C03).",
+        "status": "unavailable"
+      },
+      "relationship.connection-study": {
+        "after": "C04",
+        "description": null,
+        "label": "Letter connection study",
+        "labelDe": "Verbindungsstudie",
+        "linkedFrom": [],
+        "page": null,
+        "reason": "Requires the relationship solver (C04).",
+        "reasonDe": "Kommt mit dem Beziehungs-Solver (Paket C04).",
+        "status": "unavailable"
+      },
+      "study.glyph-anatomy": {
+        "after": null,
+        "description": "Opens the review page on one authored glyph with diagnostic overlay (counters, aperture, measurements).",
+        "label": "Glyph anatomy viewer",
+        "labelDe": "Anatomie im Prüfstand ansehen",
+        "linkedFrom": [
+          "construction.letter-anatomy",
+          "construction.negative-space",
+          "practice.handstyle",
+          "style.dortmund-style"
+        ],
+        "page": "review",
+        "reason": null,
+        "reasonDe": null,
+        "status": "available"
+      },
+      "study.proof-sheets": {
+        "after": null,
+        "description": "Neutral identity, topology, pair and word plates of the current proof run.",
+        "label": "Proof sheets",
+        "labelDe": "Prüfbögen öffnen",
+        "linkedFrom": [
+          "history.nyc-emergence"
+        ],
+        "page": "review",
+        "reason": null,
+        "reasonDe": null,
+        "status": "available"
+      },
+      "study.word-layout": {
+        "after": null,
+        "description": "Sets a word from canonical glyphs with a fixed gap; provisional letters are marked.",
+        "label": "Word tester (naive layout)",
+        "labelDe": "Wort im Prüfstand setzen",
+        "linkedFrom": [
+          "practice.piece",
+          "practice.tag"
+        ],
+        "page": "review",
+        "reason": null,
+        "reasonDe": null,
+        "status": "available"
+      },
+      "surface.format-preview": {
+        "after": "C05",
+        "description": null,
+        "label": "Surface / format preview",
+        "labelDe": "Flächen-Vorschau",
+        "linkedFrom": [
+          "format.subway-train"
+        ],
+        "page": null,
+        "reason": "Requires blackbook editing and export (C05).",
+        "reasonDe": "Kommt mit Blackbook-Bearbeitung und Export (Paket C05).",
+        "status": "unavailable"
+      }
+    },
+    "version": "1.0.0"
+  },
+  "claims": [
+    {
+      "entry": "concept.circulation-and-adaptation",
+      "evidence": "strong",
+      "id": "concept.circulation-and-adaptation#c1",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
+      ],
+      "text": "New York writing became globally influential through films, books, photography, music, travel and personal exchange, while in several places local public writing already existed or developed through different routes."
+    },
+    {
+      "entry": "concept.circulation-and-adaptation",
+      "evidence": "good",
+      "id": "concept.circulation-and-adaptation#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
+      ],
+      "text": "The Graffiti in China volume's chapter on Europe notes the importance of films such as Wild Style and Style Wars, books, tours and fanzines in the international circulation of writing."
+    },
+    {
+      "entry": "concept.circulation-and-adaptation",
+      "evidence": "strong",
+      "id": "concept.circulation-and-adaptation#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
+      ],
+      "text": "Circulation, not export, is the default model; media are channels, not scenes; regional chapters are authored histories rather than a country checklist."
+    },
+    {
+      "entry": "concept.public-inscription",
+      "evidence": "strong",
+      "id": "concept.public-inscription#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5"
+      ],
+      "text": "Elizabeth Sage's peer-reviewed study of fin-de-siècle “jaytalking” documents a late-nineteenth-century Parisian culture of public writing."
+    },
+    {
+      "entry": "concept.public-inscription",
+      "evidence": "strong",
+      "id": "concept.public-inscription#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "The archive uses “emergence of modern New York hip-hop writing” rather than “invention of graffiti”; claims that all graffiti began in New York are rejected."
+    },
+    {
+      "entry": "concept.public-inscription",
+      "evidence": "good",
+      "id": "concept.public-inscription#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1",
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2"
+      ],
+      "text": "Research on Amsterdam describes a punk- and squatter-linked name-writing culture from around 1977, before New York-style hip-hop writing became widely known there."
+    },
+    {
+      "entry": "concept.reading-the-evidence",
+      "evidence": "strong",
+      "id": "concept.reading-the-evidence#c1",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md"
+      ],
+      "text": "The archive distinguishes documented facts, practitioner accounts, scholarly interpretations and NIGHTSHIFT design inferences for every claim."
+    },
+    {
+      "entry": "concept.reading-the-evidence",
+      "evidence": "strong",
+      "id": "concept.reading-the-evidence#c2",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md"
+      ],
+      "text": "Evidence quality, editorial approval and image rights are independent states."
+    },
+    {
+      "entry": "concept.reading-the-evidence",
+      "evidence": "strong",
+      "id": "concept.reading-the-evidence#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
+      ],
+      "text": "A photograph documents an artwork at a particular moment; event, photograph, publication and archive record have separate dates, authors and rights."
+    },
+    {
+      "entry": "concept.visibility-and-archival-gaps",
+      "evidence": "strong",
+      "id": "concept.visibility-and-archival-gaps#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S1"
+      ],
+      "text": "Pabón-Colón's Graffiti Grrlz, based on 15 years of research and more than 100 women in 23 countries, argues that the boys'-club image makes women writers disappear from public imagination."
+    },
+    {
+      "entry": "concept.visibility-and-archival-gaps",
+      "evidence": "good",
+      "id": "concept.visibility-and-archival-gaps#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S4"
+      ],
+      "text": "Fransberg's research review notes that foundational studies described writers as predominantly male while acknowledging women and girls from the beginning."
+    },
+    {
+      "entry": "concept.visibility-and-archival-gaps",
+      "evidence": "good",
+      "id": "concept.visibility-and-archival-gaps#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
+      ],
+      "text": "Press histories, male narrators, unattributed photographs and collecting practices can make a scene appear more male than the evidence warrants; these are analytical patterns, not assumptions about every scene."
+    },
+    {
+      "entry": "concept.visibility-and-archival-gaps",
+      "evidence": "strong",
+      "id": "concept.visibility-and-archival-gaps#c4",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
+      ],
+      "text": "Women should appear throughout the chronology of scenes, crews, styles and archives rather than only in a special sidebar."
+    },
+    {
+      "entry": "concept.writing-and-graffiti",
+      "evidence": "strong",
+      "id": "concept.writing-and-graffiti#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
+      ],
+      "text": "Joe Austin distinguishes the practitioners' term “writing” from “graffiti”, the label used in public discourse."
+    },
+    {
+      "entry": "concept.writing-and-graffiti",
+      "evidence": "good",
+      "id": "concept.writing-and-graffiti#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
+      ],
+      "text": "Graffiti writing and street art intersect but are not equivalent; mural commissions, stencil practices, political writing and name-centred writing have different histories."
+    },
+    {
+      "entry": "construction.letter-anatomy",
+      "evidence": "strong",
+      "id": "construction.letter-anatomy#c1",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md"
+      ],
+      "text": "NIGHTSHIFT describes B through a spine, upper and lower bowls, a waist junction and two enclosed counters."
+    },
+    {
+      "entry": "construction.letter-anatomy",
+      "evidence": "strong",
+      "id": "construction.letter-anatomy#c2",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md"
+      ],
+      "text": "Semantic letter components are a construction vocabulary; a closed outline does not prove stroke order or how a writer moved."
+    },
+    {
+      "entry": "construction.negative-space",
+      "evidence": "strong",
+      "id": "construction.negative-space#c1",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md"
+      ],
+      "text": "NIGHTSHIFT separates enclosed counters, exterior-connected apertures and channels as distinct negative-space entities."
+    },
+    {
+      "entry": "construction.negative-space",
+      "evidence": "strong",
+      "id": "construction.negative-space#c2",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md"
+      ],
+      "text": "The geometry validator checks counter enclosure and rejects edits that merge or open protected counters."
+    },
+    {
+      "entry": "format.subway-train",
+      "evidence": "strong",
+      "id": "format.subway-train#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2"
+      ],
+      "text": "Coetsee's dissertation frames subway writing as transforming transportation infrastructure into a communication technology."
+    },
+    {
+      "entry": "format.subway-train",
+      "evidence": "strong",
+      "id": "format.subway-train#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "The subway is best described as infrastructure and audience network; the claim that it was the only important surface is rejected because wall writing predates and coexists with it."
+    },
+    {
+      "entry": "history.clean-train-campaign",
+      "evidence": "good",
+      "id": "history.clean-train-campaign#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-003"
+      ],
+      "text": "The Museum of the City of New York's City as Canvas guide reports a spring 1989 declaration that the subway fleet was graffiti-free."
+    },
+    {
+      "entry": "history.clean-train-campaign",
+      "evidence": "strong",
+      "id": "history.clean-train-campaign#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
+      ],
+      "text": "The 1989 declaration concerns the subway fleet; it does not establish the end of wall writing, blackbooks, crews, galleries, photography or international scenes."
+    },
+    {
+      "entry": "history.clean-train-campaign",
+      "evidence": "good",
+      "id": "history.clean-train-campaign#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "After the subway era, writing continued across walls, freight, legal sites, paper, galleries, print media and later digital networks."
+    },
+    {
+      "entry": "history.institutional-recognition",
+      "evidence": "good",
+      "id": "history.institutional-recognition#c1",
+      "kind": "practitioner-account",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
+      ],
+      "text": "According to the NEA interview, Lady Pink was 16 when included in the 1980 Fashion MODA exhibition Graffiti Art Success for America."
+    },
+    {
+      "entry": "history.institutional-recognition",
+      "evidence": "strong",
+      "id": "history.institutional-recognition#c2",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004"
+      ],
+      "text": "The MCNY essay reports that Martin Wong's Museum of American Graffiti opened in August 1989."
+    },
+    {
+      "entry": "history.institutional-recognition",
+      "evidence": "strong",
+      "id": "history.institutional-recognition#c3",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-006"
+      ],
+      "text": "MCNY's Above Ground (22 November 2024 – 10 August 2025) framed its collection's path from street and subway roots to institutional recognition."
+    },
+    {
+      "entry": "history.institutional-recognition",
+      "evidence": "good",
+      "id": "history.institutional-recognition#c4",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
+      ],
+      "text": "Institutional collections and exhibitions may privilege artists who later entered galleries, which shapes who is remembered."
+    },
+    {
+      "entry": "history.nyc-emergence",
+      "evidence": "good",
+      "id": "history.nyc-emergence#c1",
+      "kind": "practitioner-account",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
+      ],
+      "text": "Lady Pink recalls beginning graffiti in 1979, painting subway cars, and being included at 16 in the 1980 Fashion MODA exhibition Graffiti Art Success for America."
+    },
+    {
+      "entry": "media.style-wars-and-subway-art",
+      "evidence": "strong",
+      "id": "media.style-wars-and-subway-art#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
+      ],
+      "text": "The Smithsonian archive biography records Henry Chalfant's sequential train-photography method, collaboration with writers and co-production of Style Wars (1983)."
+    },
+    {
+      "entry": "media.style-wars-and-subway-art",
+      "evidence": "strong",
+      "id": "media.style-wars-and-subway-art#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
+      ],
+      "text": "A film, book, magazine, radio programme or visit is a channel of transmission, not itself the scene."
+    },
+    {
+      "entry": "media.style-wars-and-subway-art",
+      "evidence": "strong",
+      "id": "media.style-wars-and-subway-art#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "A photograph documents an artwork at a particular moment; it is not the artwork's full material history."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-001",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly definition",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 16,
+        "status": "Publishable with scope note",
+        "support": "Strong — Ilan & Snyder; Kramer"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
+      ],
+      "text": "The word *graffiti* covers many practices; this archive's NYC origin chapter is specifically about modern name-centred hip-hop writing."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-002",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly historical synthesis",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 17,
+        "status": "Publishable",
+        "support": "Strong — Austin; Coetsee"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2"
+      ],
+      "text": "New York writing developed out of existing name/initial writing and other urban visual influences; it did not have one simple root."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-003",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly synthesis + regional field research",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 18,
+        "status": "Publishable with explicit uncertainty",
+        "support": "Strong for parallel early centres; exact priority and transmission remain contested — Pfeiffenberger; Mitman; Chastanet; Coetsee"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S7"
+      ],
+      "text": "Philadelphia and New York developed related but distinct name-writing cultures during the 1960s; the evidence does not support a simple single-city origin story."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-004",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly synthesis",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 19,
+        "status": "Publishable",
+        "support": "Strong — Kramer; Austin"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
+      ],
+      "text": "By the early-to-mid 1970s, a recognisable New York writing culture had formed, with its own terms, practices and peer recognition."
+    },
+    {
+      "entry": null,
+      "evidence": "good",
+      "id": "NYC-005",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Contemporary-media reference + later scholarship",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 20,
+        "status": "Publishable with explicit caveat",
+        "support": "Good — Austin chapter framing; Ilan & Snyder"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
+      ],
+      "text": "The 1971 New York Times story about TAKI 183 helped publicise the practice, but does not establish him as its sole inventor."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-006",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly synthesis",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 21,
+        "status": "Publishable",
+        "support": "Strong — Austin; Ilan & Snyder"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
+      ],
+      "text": "Writers increasingly developed differentiated handstyles and more elaborate letter compositions during the 1970s."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-007",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly + archival documentation",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 22,
+        "status": "Publishable",
+        "support": "Strong — Austin; Coetsee; Chalfant archive"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2"
+      ],
+      "text": "The subway system became a major moving display and communication infrastructure for New York writing."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-008",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly argument",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 23,
+        "status": "Publishable",
+        "support": "Strong — Austin"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
+      ],
+      "text": "The development of writing and the city's campaign to suppress it are related but analytically distinct histories."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-009",
+      "kind": "institutional-account",
+      "ledger": {
+        "evidenceClass": "Institutional archive + scholarly synthesis",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 24,
+        "status": "Publishable",
+        "support": "Strong — Bronx Museum; Smithsonian archive; Austin"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
+      ],
+      "text": "Photography, film and publications helped preserve ephemeral work and circulate knowledge beyond the original locations."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-010",
+      "kind": "institutional-account",
+      "ledger": {
+        "evidenceClass": "Institutional archive + bibliographic evidence",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 25,
+        "status": "Publishable",
+        "support": "Strong — Bronx Museum / Smithsonian"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S7"
+      ],
+      "text": "The 1980s international visibility of New York writing was accelerated by documentary and print media, notably Style Wars and Subway Art."
+    },
+    {
+      "entry": null,
+      "evidence": "strong",
+      "id": "NYC-012",
+      "kind": "scholarly-interpretation",
+      "ledger": {
+        "evidenceClass": "Scholarly synthesis",
+        "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+        "line": 27,
+        "status": "Publishable",
+        "support": "Strong — Austin; Kramer"
+      },
+      "origin": "ledger",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
+      ],
+      "text": "The decline of painted subway trains did not end writing culture."
+    },
+    {
+      "entry": "object.blackbook",
+      "evidence": "strong",
+      "id": "object.blackbook#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-002"
+      ],
+      "text": "NYU Fales' Martin Wong Papers (MSS.102) document sketches, drawings, more than 30 sketchbooks, photographs and graffiti tag-books."
+    },
+    {
+      "entry": "object.blackbook",
+      "evidence": "strong",
+      "id": "object.blackbook#c2",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004"
+      ],
+      "text": "An MCNY collections essay describes Martin Wong's collecting, including letters and periodicals such as IGTimes."
+    },
+    {
+      "entry": "object.blackbook",
+      "evidence": "good",
+      "id": "object.blackbook#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md"
+      ],
+      "text": "Blackbook use varies between writers and social settings; books can document process, revision and exchange."
+    },
+    {
+      "entry": "object.blackbook",
+      "evidence": "strong",
+      "id": "object.blackbook#c4",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
+      ],
+      "text": "A finding aid proves the presence and arrangement of records, not automatically the truth of every statement in them."
+    },
+    {
+      "entry": "object.blackbook",
+      "evidence": "strong",
+      "id": "object.blackbook#c5",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md"
+      ],
+      "text": "Saving and comparing letter versions in NIGHTSHIFT is a workflow analogy to a blackbook, not a historical claim."
+    },
+    {
+      "entry": "person.lady-pink",
+      "evidence": "good",
+      "id": "person.lady-pink#c1",
+      "kind": "practitioner-account",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
+      ],
+      "text": "Lady Pink recalls beginning graffiti in 1979, first painting subway cars, and being 16 when included in the 1980 Fashion MODA exhibition Graffiti Art Success for America."
+    },
+    {
+      "entry": "person.lady-pink",
+      "evidence": "good",
+      "id": "person.lady-pink#c2",
+      "kind": "practitioner-account",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
+      ],
+      "text": "The NEA interview identifies her as one of the few women associated with The Cool Five (TC5) and The Public Animals (TPA)."
+    },
+    {
+      "entry": "person.lady-pink",
+      "evidence": "strong",
+      "id": "person.lady-pink#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3"
+      ],
+      "text": "Coetsee analyses Lady Pink's lettering in the opening sequence of Wild Style and her role directing other writers on set."
+    },
+    {
+      "entry": "person.lady-pink",
+      "evidence": "strong",
+      "id": "person.lady-pink#c4",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3"
+      ],
+      "text": "Coetsee notes that even influential writers such as Lady Pink have received comparatively little academic attention."
+    },
+    {
+      "entry": "person.lady-pink",
+      "evidence": "strong",
+      "id": "person.lady-pink#c5",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
+      ],
+      "text": "The evidence supports Lady Pink's importance as one of the earliest women to gain major visibility in New York writing; it does not support calling her the first woman writer."
+    },
+    {
+      "entry": "practice.hall-of-fame",
+      "evidence": "good",
+      "id": "practice.hall-of-fame#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers (KWI Essen, 2022) states that halls of fame are common in the Ruhrgebiet, naming sites at the Ruhr-Universität Bochum, Landschaftspark Duisburg and in Essen, and a Dortmund harbour hall of fame opened in April 2022 as the largest in North Rhine-Westphalia."
+    },
+    {
+      "entry": "practice.hall-of-fame",
+      "evidence": "good",
+      "id": "practice.hall-of-fame#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers contrasts elaborate pieces on legal walls with tags and throw-ups, which are unwelcome in public opinion and to city authorities but belong to the same culture."
+    },
+    {
+      "entry": "practice.handstyle",
+      "evidence": "good",
+      "id": "practice.handstyle#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
+      ],
+      "text": "Chastanet's Philadelphia field research records “whip” as a term for the energy, continuity, joints and flow instilled in letter strokes."
+    },
+    {
+      "entry": "practice.handstyle",
+      "evidence": "strong",
+      "id": "practice.handstyle#c2",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md"
+      ],
+      "text": "NIGHTSHIFT models handstyle as a motor and gestural practice and does not infer gesture order from closed contours."
+    },
+    {
+      "entry": "practice.piece",
+      "evidence": "strong",
+      "id": "practice.piece#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
+      ],
+      "text": "Kramer's ethnography of New York writers describes tags, throw-ups and pieces as common forms of the culture."
+    },
+    {
+      "entry": "practice.piece",
+      "evidence": "good",
+      "id": "practice.piece#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GRAFFITI_FORMATS.md"
+      ],
+      "text": "A throw-up is a quick, outlined form; a piece is a planned composition built from letter construction, fill, outline and further layers."
+    },
+    {
+      "entry": "practice.piece",
+      "evidence": "good",
+      "id": "practice.piece#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "Tags, throw-ups and pieces coexist rather than forming a ladder every writer must climb."
+    },
+    {
+      "entry": "practice.sequential-train-photography",
+      "evidence": "strong",
+      "id": "practice.sequential-train-photography#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5"
+      ],
+      "text": "The Bronx Museum describes Chalfant's sequential train photography and its documentation of the form's emergence and international transformation."
+    },
+    {
+      "entry": "practice.sequential-train-photography",
+      "evidence": "strong",
+      "id": "practice.sequential-train-photography#c2",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
+      ],
+      "text": "The Smithsonian archive records Chalfant's move to New York in 1973, his sequential method and his collaboration with writers."
+    },
+    {
+      "entry": "practice.sequential-train-photography",
+      "evidence": "strong",
+      "id": "practice.sequential-train-photography#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
+      ],
+      "text": "Sequential photography preserves continuity across cars but cannot reproduce original scale, movement, colour conditions or audience."
+    },
+    {
+      "entry": "practice.tag",
+      "evidence": "strong",
+      "id": "practice.tag#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
+      ],
+      "text": "Kramer's ethnography of New York writers describes tags, throw-ups and pieces as common forms of the culture."
+    },
+    {
+      "entry": "practice.tag",
+      "evidence": "good",
+      "id": "practice.tag#c2",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
+      ],
+      "text": "A tag is not merely a small piece; tags, throw-ups and pieces coexist rather than forming a ladder every writer must climb."
+    },
+    {
+      "entry": "practice.tag",
+      "evidence": "strong",
+      "id": "practice.tag#c3",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md"
+      ],
+      "text": "NIGHTSHIFT may study stroke continuity and rhythm with original synthetic lettering, but never reproduces a real writer's signature or turns a real tag into a preset."
+    },
+    {
+      "entry": "scene.amsterdam",
+      "evidence": "good",
+      "id": "scene.amsterdam#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1"
+      ],
+      "text": "Vermeulen's 2015 Reinwardt Academie research describes Amsterdam name writing emerging around 1977, largely among punk-connected youth, based on literature and ten interviews."
+    },
+    {
+      "entry": "scene.amsterdam",
+      "evidence": "good",
+      "id": "scene.amsterdam#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1"
+      ],
+      "text": "The same research reports that US films and books later inspired a different local hip-hop phase, and records a wish for writer-led preservation."
+    },
+    {
+      "entry": "scene.amsterdam",
+      "evidence": "good",
+      "id": "scene.amsterdam#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
+      ],
+      "text": "In Amsterdam a local writing phase preceded widespread New York-style adoption."
+    },
+    {
+      "entry": "scene.amsterdam",
+      "evidence": "good",
+      "id": "scene.amsterdam#c4",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2"
+      ],
+      "text": "The Dutch Graffiti Library's Punk Graffiti Archives describe late-1970s punk and squatter tagging followed by a generation pursuing city-wide visibility."
+    },
+    {
+      "entry": "scene.china",
+      "evidence": "strong",
+      "id": "scene.china#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
+      ],
+      "text": "Graffiti in China (2024) is based on research and interviews in Beijing, Shanghai and Chengdu; the editors state that the cases cannot represent the entire Chinese scene."
+    },
+    {
+      "entry": "scene.china",
+      "evidence": "strong",
+      "id": "scene.china#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
+      ],
+      "text": "The book characterises Beijing as a political-administrative centre, Shanghai as an international commercial city and Chengdu as a further regional centre."
+    },
+    {
+      "entry": "scene.china",
+      "evidence": "good",
+      "id": "scene.china#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
+      ],
+      "text": "The book documents artists seeking a Chinese visual language through characters, calligraphy, traditional painting and literature, and records exchange with foreign writers."
+    },
+    {
+      "entry": "scene.china",
+      "evidence": "good",
+      "id": "scene.china#c4",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
+      ],
+      "text": "The Shanghai material includes the work of Tin.G, associated with the China Graffiti Girls."
+    },
+    {
+      "entry": "scene.dortmund",
+      "evidence": "good",
+      "id": "scene.dortmund#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers (KWI Essen, 2022) describes writing as emerging in New York and Philadelphia, spreading internationally notably through Wild Style, and becoming established in the Ruhrgebiet in the mid-1980s."
+    },
+    {
+      "entry": "scene.dortmund",
+      "evidence": "good",
+      "id": "scene.dortmund#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers states that Dortmund has always played a special role in Ruhrgebiet graffiti, was the first Ruhrgebiet city with writers active in a hip-hop environment, and names Chintz, Zodiak and Shark as members of the TUF crew (The United Force)."
+    },
+    {
+      "entry": "scene.dortmund",
+      "evidence": "good",
+      "id": "scene.dortmund#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers describes the Dortmund Style as notable for extremely blocky, clear letters that found many fans and imitators in the Ruhrgebiet and internationally."
+    },
+    {
+      "entry": "scene.dortmund",
+      "evidence": "strong",
+      "id": "scene.dortmund#c4",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md"
+      ],
+      "text": "German regional scenes are treated as first-class archive chapters with parallel development and cross-border influence, not a one-way New York-to-Germany arrow."
+    },
+    {
+      "entry": "scene.dortmund",
+      "evidence": "good",
+      "id": "scene.dortmund#c5",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers notes that tags and throw-ups, ubiquitous in the Ruhrgebiet, are unwelcome in public opinion and to city authorities."
+    },
+    {
+      "entry": "scene.hamburg",
+      "evidence": "good",
+      "id": "scene.hamburg#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-12"
+      ],
+      "text": "The CSMC describes Mirko Reisser (DAIM) as part of Hamburg's graffiti scene since its beginnings in the 1980s and as an archivist safeguarding original publications, images and documents of Hamburg graffiti history."
+    },
+    {
+      "entry": "scene.hamburg",
+      "evidence": "good",
+      "id": "scene.hamburg#c2",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-13"
+      ],
+      "text": "The CSMC project (2019–2023) investigates Reisser's private archive documenting Hamburg's scene in the 1980s and 1990s, describes him as a key figure since 1989, and studies production, transformation, preservation and destruction of style writing as well as the archive and its digital database."
+    },
+    {
+      "entry": "scene.paris",
+      "evidence": "good",
+      "id": "scene.paris#c1",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S4"
+      ],
+      "text": "Petite histoire du street art describes hip-hop's 1980s spread in France via independent radio and the TV programme H.I.P H.O.P., crews in north-east Paris and La Plaine Saint-Denis, and 1984 block parties at Stalingrad."
+    },
+    {
+      "entry": "scene.paris",
+      "evidence": "good",
+      "id": "scene.paris#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S3"
+      ],
+      "text": "Fieni frames Paris and its suburbs as a major centre from the early 1980s and stresses Paris–banlieue geography and postcolonial migration."
+    },
+    {
+      "entry": "scene.paris",
+      "evidence": "strong",
+      "id": "scene.paris#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5"
+      ],
+      "text": "Sage's peer-reviewed study documents a late-nineteenth-century Parisian culture of public writing."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "good",
+      "id": "scene.philadelphia#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S1"
+      ],
+      "text": "Pfeiffenberger's 2017 KIT dissertation discusses CORNBREAD's activity around 1965 in North Philadelphia and identifies COOL EARL and TOPCAT 126 from 1966 onward."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "good",
+      "id": "scene.philadelphia#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S3"
+      ],
+      "text": "Dirkson's public-history article describes Black teenagers who called themselves wall writers and dates the movement to roughly 1965–1985."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "strong",
+      "id": "scene.philadelphia#c3",
+      "kind": "editorial-synthesis",
+      "origin": "entry",
+      "sources": [
+        "doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md"
+      ],
+      "text": "The evidence does not justify reducing the emergence to a single inventor or one uncontested date."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "good",
+      "id": "scene.philadelphia#c4",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
+      ],
+      "text": "Chastanet argues that the global prominence of New York's visual archetypes has hidden a more complex history of Philadelphia writing."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "strong",
+      "id": "scene.philadelphia#c5",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S2"
+      ],
+      "text": "Mitman's ethnography cautions against a simple gang-origin narrative and describes graffiti writing as a culture with its own rules and practices."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "good",
+      "id": "scene.philadelphia#c6",
+      "kind": "institutional-account",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5"
+      ],
+      "text": "The Haverford College exhibition ALL BIG LETTERS characterises Wickeds as exaggerated, cryptic and elongated tags, often meant to be read by the writing community."
+    },
+    {
+      "entry": "scene.philadelphia",
+      "evidence": "good",
+      "id": "scene.philadelphia#c7",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
+      ],
+      "text": "Chastanet's field research records “whip” as a Philadelphia term for the energy, continuity and flow in letter strokes."
+    },
+    {
+      "entry": "scene.sao-paulo",
+      "evidence": "good",
+      "id": "scene.sao-paulo#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S6"
+      ],
+      "text": "Pereira describes pixação as visible from around 1980, spreading in the 1990s–2000s, with vertically elongated straight and pointed letters (tag reto), and presents its visual origins as competing interpretations."
+    },
+    {
+      "entry": "scene.sao-paulo",
+      "evidence": "good",
+      "id": "scene.sao-paulo#c2",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S7"
+      ],
+      "text": "Graça's 2017 USP dissertation argues that São Paulo's writing and mural groups have their own roots, visual examples, rules and internal valuation systems."
+    },
+    {
+      "entry": "scene.sao-paulo",
+      "evidence": "good",
+      "id": "scene.sao-paulo#c3",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S8"
+      ],
+      "text": "Zibordi challenges the reductive division between graffiti and pixação, arguing that processes and visual forms overlap."
+    },
+    {
+      "entry": "style.dortmund-style",
+      "evidence": "good",
+      "id": "style.dortmund-style#c1",
+      "kind": "scholarly-interpretation",
+      "origin": "entry",
+      "sources": [
+        "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
+      ],
+      "text": "Deckers (KWI Essen, 2022) describes the Dortmund Style as notable for extremely blocky and clear letters, which found many fans and imitators in the Ruhrgebiet and internationally."
+    },
+    {
+      "entry": "style.dortmund-style",
+      "evidence": "strong",
+      "id": "style.dortmund-style#c2",
+      "kind": "nightshift-design-inference",
+      "origin": "entry",
+      "sources": [
+        "doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md"
+      ],
+      "text": "The Dortmund Style should not be flattened into a single preset; a study must compare dated examples and individual variation in skeleton, proportion, corners, spacing and fill conventions."
+    }
+  ],
+  "diagrams": {
+    "diagram.circulation-network": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 660 390\" role=\"img\" aria-labelledby=\"dg-circulation-network-t dg-circulation-network-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-circulation-network-t\">Circulation and local adaptation</title><desc id=\"dg-circulation-network-d\">Network of scenes connected by two-way arrows. Dashed rings mark scenes with their own earlier or parallel local writing traditions. The diagram is schematic and does not show dates or a complete list of scenes.</desc><rect width=\"660\" height=\"390\" rx=\"10\" fill=\"#f3f4f1\"/><defs><marker id=\"dg-circulation-network-ar3\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0 L10 5 L0 10 Z\" fill=\"#6d675c\"/></marker></defs><path d=\"M162 70 L268 70\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M329.8 81.6 L450.2 128.4\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M315.5 98 L384.5 222\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M295.9 101.7 L274.1 268.3\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M454.5 159.4 L295.5 280.6\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M370.1 261.5 L299.9 288.5\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M277.4 92.6 L152.6 217.4\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M324.4 90.7 L535.6 269.3\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><path d=\"M431 257.8 L529 282.2\" stroke=\"#6d675c\" stroke-width=\"2\" marker-end=\"url(#dg-circulation-network-ar3)\" marker-start=\"url(#dg-circulation-network-ar3)\"/><circle cx=\"480\" cy=\"140\" r=\"29\" fill=\"none\" stroke=\"#2b5c8a\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><circle cx=\"130\" cy=\"240\" r=\"29\" fill=\"none\" stroke=\"#2b5c8a\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><circle cx=\"560\" cy=\"290\" r=\"29\" fill=\"none\" stroke=\"#2b5c8a\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><circle cx=\"300\" cy=\"70\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"300\" cy=\"70\" r=\"8\" fill=\"#c8372d\"/><rect x=\"256\" y=\"99\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"300\" y=\"112\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">New York</text><circle cx=\"130\" cy=\"70\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"130\" cy=\"70\" r=\"8\" fill=\"#c8372d\"/><rect x=\"86\" y=\"99\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"130\" y=\"112\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Philadelphia</text><circle cx=\"480\" cy=\"140\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"480\" cy=\"140\" r=\"8\" fill=\"#c8372d\"/><rect x=\"436\" y=\"169\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"480\" y=\"182\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Amsterdam</text><circle cx=\"400\" cy=\"250\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"400\" cy=\"250\" r=\"8\" fill=\"#c8372d\"/><rect x=\"356\" y=\"279\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"400\" y=\"292\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Paris</text><circle cx=\"130\" cy=\"240\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"130\" cy=\"240\" r=\"8\" fill=\"#c8372d\"/><rect x=\"86\" y=\"269\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"130\" y=\"282\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">São Paulo</text><circle cx=\"560\" cy=\"290\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"560\" cy=\"290\" r=\"8\" fill=\"#c8372d\"/><rect x=\"516\" y=\"319\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"560\" y=\"332\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">China</text><circle cx=\"270\" cy=\"300\" r=\"24\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><circle cx=\"270\" cy=\"300\" r=\"8\" fill=\"#c8372d\"/><rect x=\"226\" y=\"329\" width=\"88\" height=\"18\" rx=\"3\" fill=\"#f3f4f1\"/><text x=\"270\" y=\"342\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Ruhrgebiet</text><text x=\"330\" y=\"374\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">two-way exchange · dashed ring: local tradition with its own history · schematic, not exhaustive</text></svg>",
+    "diagram.documentation-chain": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 190\" role=\"img\" aria-labelledby=\"dg-documentation-chain-t dg-documentation-chain-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-documentation-chain-t\">From work to archive</title><desc id=\"dg-documentation-chain-d\">Four boxes: the work, its photograph, a publication and an archive record. Each has its own date, author and rights; a photograph documents a work but is not the work.</desc><rect width=\"580\" height=\"190\" rx=\"10\" fill=\"#f3f4f1\"/><defs><marker id=\"dg-documentation-chain-ar2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 Z\" fill=\"#16161a\"/></marker></defs><rect x=\"20\" y=\"60\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><text x=\"80\" y=\"92\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Work</text><text x=\"80\" y=\"114\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">made · date of creation</text><path d=\"M142 95 L158 95\" stroke=\"#16161a\" stroke-width=\"3\" marker-end=\"url(#dg-documentation-chain-ar2)\"/><rect x=\"160\" y=\"60\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><text x=\"220\" y=\"92\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Photograph</text><text x=\"220\" y=\"114\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">captured · photographer, date</text><path d=\"M282 95 L298 95\" stroke=\"#16161a\" stroke-width=\"3\" marker-end=\"url(#dg-documentation-chain-ar2)\"/><rect x=\"300\" y=\"60\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><text x=\"360\" y=\"92\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Publication</text><text x=\"360\" y=\"114\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">printed · editor, year</text><path d=\"M422 95 L438 95\" stroke=\"#16161a\" stroke-width=\"3\" marker-end=\"url(#dg-documentation-chain-ar2)\"/><rect x=\"440\" y=\"60\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#fff\" stroke=\"#16161a\" stroke-width=\"2.5\"/><text x=\"500\" y=\"92\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Archive</text><text x=\"500\" y=\"114\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">held · institution, rights</text><text x=\"290\" y=\"36\" font-size=\"14\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Each step has its own date, author and rights</text><text x=\"290\" y=\"166\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">Evidence about a work ≠ the work itself · reuse needs item-level permission</text></svg>",
+    "diagram.evidence-layers": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 230\" role=\"img\" aria-labelledby=\"dg-evidence-layers-t dg-evidence-layers-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-evidence-layers-t\">Four kinds of statements</title><desc id=\"dg-evidence-layers-d\">Four labelled bands: documented fact, practitioner account, scholarly interpretation and NIGHTSHIFT design inference. The archive marks every claim with one of them.</desc><rect width=\"520\" height=\"230\" rx=\"10\" fill=\"#f3f4f1\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"38\" rx=\"3\" fill=\"#16161a\"/><text x=\"46\" y=\"38\" font-size=\"14\" fill=\"#16161a\" text-anchor=\"start\" font-weight=\"600\">Documented fact</text><text x=\"46\" y=\"54\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"start\" font-weight=\"400\">what a dated record shows</text><rect x=\"20\" y=\"70\" width=\"12\" height=\"38\" rx=\"3\" fill=\"#2b5c8a\"/><text x=\"46\" y=\"88\" font-size=\"14\" fill=\"#16161a\" text-anchor=\"start\" font-weight=\"600\">Practitioner account</text><text x=\"46\" y=\"104\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"start\" font-weight=\"400\">what a writer remembers or says</text><rect x=\"20\" y=\"120\" width=\"12\" height=\"38\" rx=\"3\" fill=\"#5b6b3a\"/><text x=\"46\" y=\"138\" font-size=\"14\" fill=\"#16161a\" text-anchor=\"start\" font-weight=\"600\">Scholarly interpretation</text><text x=\"46\" y=\"154\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"start\" font-weight=\"400\">how researchers explain it</text><rect x=\"20\" y=\"170\" width=\"12\" height=\"38\" rx=\"3\" fill=\"#c8372d\"/><text x=\"46\" y=\"188\" font-size=\"14\" fill=\"#16161a\" text-anchor=\"start\" font-weight=\"600\">NIGHTSHIFT design inference</text><text x=\"46\" y=\"204\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"start\" font-weight=\"400\">how this game models it</text></svg>",
+    "diagram.letter-anatomy": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-labelledby=\"dg-letter-anatomy-t dg-letter-anatomy-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-letter-anatomy-t\">Letter anatomy: B</title><desc id=\"dg-letter-anatomy-d\">NIGHTSHIFT’s canonical letter B with labelled stem, two bowls, two enclosed counters and the waist junction where the bowls meet.</desc><rect width=\"420\" height=\"260\" rx=\"10\" fill=\"#f3f4f1\"/><g transform=\"translate(140 50) scale(1.15)\"><g data-glyph-id=\"latin.upper.B\" data-variant-id=\"b.master\" data-revision=\"2\" data-geometry-hash=\"d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f\"><path data-role=\"fill\" data-contour-id=\"glyph.B.contour.outer\" d=\"M10 8 L58 8 Q96 8 96 39 Q96 59 77 69 Q101 78 101 103 Q101 132 62 132 L10 132 Z M35 29 L35 57 L58 57 Q72 57 72 43 Q72 29 58 29 Z M35 82 L35 111 L61 111 Q77 111 77 97 Q77 82 61 82 Z\" fill=\"#16161a\" fill-rule=\"evenodd\"/><g data-role=\"diagnostics\" fill=\"none\" font-family=\"monospace\" font-size=\"5\"><path data-role=\"counter-boundary\" data-contour-id=\"glyph.B.contour.counter.upper\" d=\"M35 29 L35 57 L58 57 Q72 57 72 43 Q72 29 58 29 Z\" stroke=\"#1e88e5\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><path data-role=\"counter-boundary\" data-contour-id=\"glyph.B.contour.counter.lower\" d=\"M35 82 L35 111 L61 111 Q77 111 77 97 Q77 82 61 82 Z\" stroke=\"#1e88e5\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/></g></g><path d=\"M-8 70 L18 70\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><path d=\"M118 34 L92 40\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><path d=\"M124 110 L98 104\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><path d=\"M34 6 L44 40\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><path d=\"M52 150 L56 98\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><path d=\"M104 69 L80 69\" stroke=\"#c8372d\" stroke-width=\"1.4\"/><text x=\"-8\" y=\"67\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"end\">stem</text><text x=\"118\" y=\"31\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"start\">upper bowl</text><text x=\"124\" y=\"107\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"start\">lower bowl</text><text x=\"30\" y=\"1\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"end\">counter</text><text x=\"52\" y=\"147\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"start\">counter</text><text x=\"104\" y=\"66\" font-size=\"9\" fill=\"#c8372d\" text-anchor=\"start\">junction (waist)</text></g><text x=\"210\" y=\"236\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">NIGHTSHIFT canonical geometry · review pending</text></svg>",
+    "diagram.negative-space": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 230\" role=\"img\" aria-labelledby=\"dg-negative-space-t dg-negative-space-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-negative-space-t\">Negative space: counters and openings</title><desc id=\"dg-negative-space-d\">Letters A, B, G and S from NIGHTSHIFT’s canonical set. A and B have enclosed counters (dashed outlines), G has an interior open to the outside, S has none.</desc><rect width=\"540\" height=\"230\" rx=\"10\" fill=\"#f3f4f1\"/><g transform=\"translate(20 40) scale(0.9)\"><g data-glyph-id=\"latin.upper.A\" data-variant-id=\"a.master\" data-revision=\"2\" data-geometry-hash=\"e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97\"><path data-role=\"fill\" data-contour-id=\"glyph.A.contour.outer\" d=\"M8 132 L8 42 L39 8 L73 8 L96 42 L96 132 L70 132 L70 91 L34 91 L34 132 Z M35 66 L70 66 L70 48 L55 25 L35 48 Z\" fill=\"#16161a\" fill-rule=\"evenodd\"/><g data-role=\"diagnostics\" fill=\"none\" font-family=\"monospace\" font-size=\"5\"><path data-role=\"counter-boundary\" data-contour-id=\"glyph.A.contour.counter.primary\" d=\"M35 66 L70 66 L70 48 L55 25 L35 48 Z\" stroke=\"#1e88e5\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/></g></g></g><text x=\"70\" y=\"185\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">1 counter</text><text x=\"70\" y=\"202\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">enclosed</text><g transform=\"translate(150 40) scale(0.9)\"><g data-glyph-id=\"latin.upper.B\" data-variant-id=\"b.master\" data-revision=\"2\" data-geometry-hash=\"d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f\"><path data-role=\"fill\" data-contour-id=\"glyph.B.contour.outer\" d=\"M10 8 L58 8 Q96 8 96 39 Q96 59 77 69 Q101 78 101 103 Q101 132 62 132 L10 132 Z M35 29 L35 57 L58 57 Q72 57 72 43 Q72 29 58 29 Z M35 82 L35 111 L61 111 Q77 111 77 97 Q77 82 61 82 Z\" fill=\"#16161a\" fill-rule=\"evenodd\"/><g data-role=\"diagnostics\" fill=\"none\" font-family=\"monospace\" font-size=\"5\"><path data-role=\"counter-boundary\" data-contour-id=\"glyph.B.contour.counter.upper\" d=\"M35 29 L35 57 L58 57 Q72 57 72 43 Q72 29 58 29 Z\" stroke=\"#1e88e5\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><path data-role=\"counter-boundary\" data-contour-id=\"glyph.B.contour.counter.lower\" d=\"M35 82 L35 111 L61 111 Q77 111 77 97 Q77 82 61 82 Z\" stroke=\"#1e88e5\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/></g></g></g><text x=\"200\" y=\"185\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">2 counters</text><text x=\"200\" y=\"202\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">enclosed</text><g transform=\"translate(280 40) scale(0.9)\"><g data-glyph-id=\"latin.upper.G\" data-variant-id=\"g.master\" data-revision=\"2\" data-geometry-hash=\"c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae\"><path data-role=\"fill\" data-contour-id=\"glyph.G.contour.outer\" d=\"M94 25 L80 43 L70 33 L42 30 L29 43 L29 96 L39 108 L73 108 L73 96 L59 96 L59 76 L98 76 L98 111 L75 132 L29 132 L5 103 L12 31 L39 8 L75 12 Z\" fill=\"#16161a\" fill-rule=\"evenodd\"/><g data-role=\"diagnostics\" fill=\"none\" font-family=\"monospace\" font-size=\"5\"><rect data-role=\"aperture-unresolved\" x=\"2\" y=\"5\" width=\"99\" height=\"130\" stroke=\"#e53935\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"5\" y=\"141\" fill=\"#e53935\" stroke=\"none\">APERTURE UNRESOLVED (AUD-01)</text></g></g></g><text x=\"330\" y=\"185\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">open interior</text><text x=\"330\" y=\"202\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">aperture under review</text><g transform=\"translate(410 40) scale(0.9)\"><g data-glyph-id=\"latin.upper.S\" data-variant-id=\"s.master\" data-revision=\"2\" data-geometry-hash=\"cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9\"><path data-role=\"fill\" data-contour-id=\"glyph.S.contour.outer\" d=\"M94 22 L90 45 L76 34 L49 29 L37 39 L42 53 L80 66 L99 83 L99 111 L72 133 L28 133 L5 119 L12 92 L29 105 L60 111 L73 101 L69 85 L30 72 L10 55 L10 28 L35 8 L75 8 Z\" fill=\"#16161a\" fill-rule=\"evenodd\"/><g data-role=\"diagnostics\" fill=\"none\" font-family=\"monospace\" font-size=\"5\"></g></g></g><text x=\"460\" y=\"185\" font-size=\"12\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">no counter</text><text x=\"460\" y=\"202\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">one continuous shape</text></svg>",
+    "diagram.subway-circulation": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 230\" role=\"img\" aria-labelledby=\"dg-subway-circulation-t dg-subway-circulation-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-subway-circulation-t\">The subway as a moving display</title><desc id=\"dg-subway-circulation-d\">Schematic line with stops. A painted car travels from the yard through several stops, where different audiences see the same work.</desc><rect width=\"560\" height=\"230\" rx=\"10\" fill=\"#f3f4f1\"/><defs><marker id=\"dg-subway-circulation-ar\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 Z\" fill=\"#c8372d\"/></marker></defs><path d=\"M60 120 L500 120\" stroke=\"#16161a\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"60\" cy=\"120\" r=\"9\" fill=\"#f3f4f1\" stroke=\"#16161a\" stroke-width=\"4\"/><text x=\"60\" y=\"150\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">yard</text><circle cx=\"170\" cy=\"120\" r=\"9\" fill=\"#f3f4f1\" stroke=\"#16161a\" stroke-width=\"4\"/><text x=\"170\" y=\"150\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">stop</text><circle cx=\"280\" cy=\"120\" r=\"9\" fill=\"#f3f4f1\" stroke=\"#16161a\" stroke-width=\"4\"/><text x=\"280\" y=\"150\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">stop</text><circle cx=\"390\" cy=\"120\" r=\"9\" fill=\"#f3f4f1\" stroke=\"#16161a\" stroke-width=\"4\"/><text x=\"390\" y=\"150\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">stop</text><circle cx=\"500\" cy=\"120\" r=\"9\" fill=\"#f3f4f1\" stroke=\"#16161a\" stroke-width=\"4\"/><text x=\"500\" y=\"150\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">terminal</text><g transform=\"translate(205 72)\"><rect width=\"120\" height=\"34\" rx=\"6\" fill=\"#d9d4c8\" stroke=\"#16161a\" stroke-width=\"3\"/><rect x=\"10\" y=\"8\" width=\"100\" height=\"18\" rx=\"3\" fill=\"#c8372d\"/><circle cx=\"24\" cy=\"38\" r=\"5\" fill=\"#16161a\"/><circle cx=\"96\" cy=\"38\" r=\"5\" fill=\"#16161a\"/></g><path d=\"M335 89 L370 89\" stroke=\"#c8372d\" stroke-width=\"3\" marker-end=\"url(#dg-subway-circulation-ar)\"/><g transform=\"translate(170 178)\"><circle r=\"6\" fill=\"#2b5c8a\"/><path d=\"M-9 20 Q0 4 9 20\" fill=\"#2b5c8a\"/></g><g transform=\"translate(280 178)\"><circle r=\"6\" fill=\"#2b5c8a\"/><path d=\"M-9 20 Q0 4 9 20\" fill=\"#2b5c8a\"/></g><g transform=\"translate(390 178)\"><circle r=\"6\" fill=\"#2b5c8a\"/><path d=\"M-9 20 Q0 4 9 20\" fill=\"#2b5c8a\"/></g><g transform=\"translate(500 178)\"><circle r=\"6\" fill=\"#2b5c8a\"/><path d=\"M-9 20 Q0 4 9 20\" fill=\"#2b5c8a\"/></g><text x=\"280\" y=\"40\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Painted in one place, seen in many</text><text x=\"280\" y=\"222\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">schematic — not a real route map</text></svg>",
+    "diagram.writing-forms": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 220\" role=\"img\" aria-labelledby=\"dg-writing-forms-t dg-writing-forms-d\" font-family=\"ui-sans-serif, system-ui, sans-serif\"><title id=\"dg-writing-forms-t\">Tag, throw-up and piece</title><desc id=\"dg-writing-forms-d\">Three schematic drawings: a single-line tag, a throw-up of rounded outlined letters, and a piece with fill, outline and shadow. They are related forms that coexist, not steps every writer must climb.</desc><rect width=\"600\" height=\"220\" rx=\"10\" fill=\"#f3f4f1\"/><path d=\"M40 120 C55 70 70 70 72 112 C74 140 88 72 100 78 C112 84 96 128 118 104 C130 92 132 76 148 86 C160 94 150 124 176 96\" fill=\"none\" stroke=\"#16161a\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 134 L176 128\" stroke=\"#16161a\" stroke-width=\"3\" stroke-linecap=\"round\"/><g transform=\"translate(212 0)\"><rect x=\"0\" y=\"62\" width=\"58\" height=\"76\" rx=\"29\" fill=\"#eae6dc\" stroke=\"#16161a\" stroke-width=\"5\"/><rect x=\"46\" y=\"62\" width=\"58\" height=\"76\" rx=\"29\" fill=\"#eae6dc\" stroke=\"#16161a\" stroke-width=\"5\"/><rect x=\"92\" y=\"62\" width=\"58\" height=\"76\" rx=\"29\" fill=\"#eae6dc\" stroke=\"#16161a\" stroke-width=\"5\"/></g><g transform=\"translate(410 0)\"><g transform=\"translate(0 0)\"><path d=\"M0 140 L0 70 L22 56 L50 56 L64 70 L64 140 L46 140 L46 116 L18 116 L18 140 Z M18 100 L46 100 L46 76 L18 76 Z\" transform=\"translate(6 6)\" fill=\"#6d675c\"/><path d=\"M0 140 L0 70 L22 56 L50 56 L64 70 L64 140 L46 140 L46 116 L18 116 L18 140 Z M18 100 L46 100 L46 76 L18 76 Z\" fill=\"#c8372d\" stroke=\"#16161a\" stroke-width=\"4\" stroke-linejoin=\"round\"/></g><g transform=\"translate(76 0)\"><path d=\"M0 56 L50 56 L66 72 L66 92 L56 98 L66 106 L66 126 L50 140 L0 140 Z M18 74 L18 92 L44 92 L44 74 Z M18 106 L18 122 L46 122 L46 106 Z\" transform=\"translate(6 6)\" fill=\"#6d675c\"/><path d=\"M0 56 L50 56 L66 72 L66 92 L56 98 L66 106 L66 126 L50 140 L0 140 Z M18 74 L18 92 L44 92 L44 74 Z M18 106 L18 122 L46 122 L46 106 Z\" fill=\"#c8372d\" stroke=\"#16161a\" stroke-width=\"4\" stroke-linejoin=\"round\"/></g></g><text x=\"108\" y=\"176\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Tag</text><text x=\"108\" y=\"194\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">name as gesture</text><text x=\"305\" y=\"176\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Throw-up</text><text x=\"305\" y=\"194\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">fast, outlined, filled</text><text x=\"481\" y=\"176\" font-size=\"13\" fill=\"#16161a\" text-anchor=\"middle\" font-weight=\"600\">Piece</text><text x=\"481\" y=\"194\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">composed, layered</text><path d=\"M190 200 L230 200 M380 200 L420 200\" stroke=\"#6d675c\" stroke-dasharray=\"3 4\"/><text x=\"300\" y=\"214\" font-size=\"11\" fill=\"#6d675c\" text-anchor=\"middle\" font-weight=\"400\">related forms that coexist — not a mandatory ladder</text></svg>"
+  },
+  "entries": [
+    {
+      "aliases": [
+        "global spread",
+        "international graffiti",
+        "export",
+        "diffusion",
+        "local styles"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "concept.circulation-and-adaptation#c1",
+        "concept.circulation-and-adaptation#c2",
+        "concept.circulation-and-adaptation#c3"
+      ],
+      "diagrams": [
+        "diagram.circulation-network"
+      ],
+      "distinctions": [
+        {
+          "label": "The scene itself",
+          "target": null,
+          "text": "a film, magazine or visit is a channel, not the local scene [c3]."
+        },
+        {
+          "label": "A country checklist",
+          "target": null,
+          "text": "regional chapters are authored histories with their own sources, not one paragraph per nation [c3]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/concept.circulation-and-adaptation.md",
+      "generatorLinks": [],
+      "id": "concept.circulation-and-adaptation",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "scene.amsterdam",
+        "scene.paris",
+        "scene.sao-paulo",
+        "scene.china"
+      ],
+      "period": "1980s – present",
+      "related": [
+        "media.style-wars-and-subway-art",
+        "scene.amsterdam",
+        "scene.paris",
+        "scene.sao-paulo",
+        "scene.china",
+        "scene.philadelphia"
+      ],
+      "sections": {
+        "introduction": "New York's writing culture became globally influential through films, books, photography, hip-hop music, travel and personal exchange. In several places, local forms of public writing already existed or developed by other routes [c1]. Films such as *Wild Style* and *Style Wars*, books, tours and fanzines were important channels for writing reaching Europe [c2].",
+        "whyItMatters": "“Export” suggests passive copies. The better model is circulation: scenes selected, adapted, resisted and mixed what reached them [c3]. Four contrasting cases in this archive show different relationships: [[scene.amsterdam|Amsterdam]], [[scene.paris|Paris]], [[scene.sao-paulo|São Paulo]] and [[scene.china|China]]."
+      },
+      "sort": "1984",
+      "summary": "New York writing travelled through films, books, music and visits — and every place that received it changed it, or already had writing of its own.",
+      "title": "Circulation and local adaptation",
+      "type": "concept"
+    },
+    {
+      "aliases": [
+        "inscription",
+        "wall writing",
+        "historical graffiti"
+      ],
+      "citedLedgerClaims": [
+        "NYC-001"
+      ],
+      "claimIds": [
+        "concept.public-inscription#c1",
+        "concept.public-inscription#c2",
+        "concept.public-inscription#c3"
+      ],
+      "distinctions": [
+        {
+          "label": "Modern writing",
+          "target": "concept.writing-and-graffiti",
+          "text": "a specific, name-centred culture with its own codes."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/concept.public-inscription.md",
+      "generatorLinks": [],
+      "id": "concept.public-inscription",
+      "imageRights": "none",
+      "inlineLinks": [
+        "scene.philadelphia"
+      ],
+      "period": "long history",
+      "related": [
+        "concept.writing-and-graffiti",
+        "history.nyc-emergence",
+        "scene.paris",
+        "scene.philadelphia"
+      ],
+      "sections": {
+        "context": "Several local traditions had their own paths: Philadelphia's name writing of the 1960s ([[scene.philadelphia|Philadelphia]]) and, in Amsterdam, a punk-linked name-writing culture before hip-hop writing became widely known there [c3].",
+        "introduction": "Political writing, gang markings, neighbourhood name writing and mural traditions all predate New York subway writing, and they must not be merged into one practice [NYC-001]. In late nineteenth-century Paris, for example, a peer-reviewed study documents a culture of public writing in the streets [c1].",
+        "whyItMatters": "Saying “graffiti began in New York” erases these histories. The archive therefore speaks of the *emergence of modern New York hip-hop writing*, not of the invention of graffiti [c2]."
+      },
+      "sort": "1890",
+      "summary": "People wrote in public space long before the 1960s. Modern writing is one chapter, not the beginning.",
+      "title": "Public inscription before and beside modern writing",
+      "type": "concept"
+    },
+    {
+      "aliases": [
+        "sources",
+        "evidence",
+        "how to read this archive",
+        "claims",
+        "image rights"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "concept.reading-the-evidence#c1",
+        "concept.reading-the-evidence#c2",
+        "concept.reading-the-evidence#c3"
+      ],
+      "diagrams": [
+        "diagram.evidence-layers",
+        "diagram.documentation-chain"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/concept.reading-the-evidence.md",
+      "generatorLinks": [],
+      "id": "concept.reading-the-evidence",
+      "imageRights": "original-diagram",
+      "inlineLinks": [],
+      "related": [
+        "concept.visibility-and-archival-gaps",
+        "practice.sequential-train-photography",
+        "history.nyc-emergence"
+      ],
+      "sections": {
+        "introduction": "The archive separates four kinds of statements: documented facts, practitioner accounts, scholarly interpretations and NIGHTSHIFT design inferences [c1]. Each claim also carries an evidence label, and each entry has its own editorial status and image-rights status — three independent things [c2].",
+        "recognize": "Tap a claim marker such as [c1] in an entry to see its kind, its evidence label and the sources behind it. Statements by writers about their own lives are valuable, and they are shown as their accounts.",
+        "whyItMatters": "A photograph documents a work at one moment; a publication reprints it; an archive holds it — each step has its own date, author and rights [c3]. Publicly visible does not mean reusable, which is why this edition embeds no photographs of writers' work."
+      },
+      "summary": "Every statement here is marked: is it a dated record, a writer's memory, a researcher's interpretation, or how NIGHTSHIFT models something?",
+      "title": "How to read this archive",
+      "type": "concept"
+    },
+    {
+      "aliases": [
+        "women in graffiti",
+        "who gets remembered",
+        "archival gaps",
+        "representation"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "concept.visibility-and-archival-gaps#c1",
+        "concept.visibility-and-archival-gaps#c2",
+        "concept.visibility-and-archival-gaps#c3",
+        "concept.visibility-and-archival-gaps#c4"
+      ],
+      "distinctions": [
+        {
+          "label": "A separate women's section",
+          "target": null,
+          "text": "women belong in the ordinary chronology of scenes, crews, styles and books, as in [[person.lady-pink|Lady Pink]]'s place in the New York history [c4]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/concept.visibility-and-archival-gaps.md",
+      "generatorLinks": [],
+      "id": "concept.visibility-and-archival-gaps",
+      "imageRights": "none",
+      "inlineLinks": [
+        "person.lady-pink"
+      ],
+      "period": "1960s – present",
+      "related": [
+        "person.lady-pink",
+        "history.institutional-recognition",
+        "history.nyc-emergence",
+        "concept.circulation-and-adaptation",
+        "concept.reading-the-evidence"
+      ],
+      "sections": {
+        "introduction": "Based on fifteen years of research with more than 100 women in 23 countries, Jessica Nydia Pabón-Colón argues that the image of graffiti as a boys' club makes women writers disappear from public imagination [c1]. A review of gender in graffiti research notes that foundational studies described writers as predominantly male while also acknowledging women and girls from the beginning [c2].",
+        "recognize": "Useful questions for any entry: who was writing here, who was photographed or interviewed, which sources let a person speak for themselves, and who is missing from the surviving record [c3].",
+        "whyItMatters": "An archive built only from the most photographed figures repeats their omissions. Press histories, male narrators of crew networks and photographs without the maker's name can make a scene look more male than the evidence suggests [c3]."
+      },
+      "sort": "1971",
+      "summary": "Who was photographed, interviewed and collected is not the same as who took part. Women have written since the early decades; the record is uneven.",
+      "title": "Visibility and gaps in the record",
+      "type": "concept"
+    },
+    {
+      "aliases": [
+        "writing",
+        "graffiti writing",
+        "style writing",
+        "writers"
+      ],
+      "citedLedgerClaims": [
+        "NYC-001"
+      ],
+      "claimIds": [
+        "concept.writing-and-graffiti#c1",
+        "concept.writing-and-graffiti#c2"
+      ],
+      "distinctions": [
+        {
+          "label": "Street art",
+          "target": null,
+          "text": "related and overlapping, but murals, stencils, stickers and name-centred writing have different histories [c2]."
+        },
+        {
+          "label": "Public inscription in general",
+          "target": "concept.public-inscription",
+          "text": "writing is one modern culture within a much longer history of marks in public space."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/concept.writing-and-graffiti.md",
+      "generatorLinks": [],
+      "id": "concept.writing-and-graffiti",
+      "imageRights": "none",
+      "inlineLinks": [
+        "concept.public-inscription"
+      ],
+      "period": "1960s – present",
+      "related": [
+        "history.nyc-emergence",
+        "concept.public-inscription",
+        "practice.tag",
+        "practice.handstyle"
+      ],
+      "sections": {
+        "introduction": "The word *graffiti* covers many unrelated practices. In this archive, the New York chapter is about modern, name-centred hip-hop writing [NYC-001]. Writers and scholars often use *writing* or *graffiti writing* for that specific culture, while *graffiti* is the broader public label [c1].",
+        "terminology": "Usage varies by person, place and period. The archive does not police every author's terminology; it records which meaning a source uses. In German-speaking research the term *Style Writing* is common.",
+        "whyItMatters": "The distinction keeps very different histories apart: ancient inscriptions, political slogans, gang marks and modern name writing are not one practice ([[concept.public-inscription|public inscription]])."
+      },
+      "sort": "1960",
+      "summary": "“Writing” is the practitioners’ word for a specific culture of putting a chosen name into public space; “graffiti” is a much wider umbrella.",
+      "title": "Writing and graffiti",
+      "type": "concept"
+    },
+    {
+      "aliases": [
+        "anatomy",
+        "stem",
+        "bowl",
+        "bar",
+        "terminal",
+        "junction"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "construction.letter-anatomy#c1",
+        "construction.letter-anatomy#c2"
+      ],
+      "diagrams": [
+        "diagram.letter-anatomy"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/construction.letter-anatomy.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.glyph-anatomy",
+          "params": {
+            "glyph": "B"
+          }
+        },
+        {
+          "available": true,
+          "capability": "editor.contour-node-edit",
+          "params": {
+            "glyph": "B"
+          }
+        }
+      ],
+      "id": "construction.letter-anatomy",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "construction.negative-space"
+      ],
+      "related": [
+        "construction.negative-space",
+        "practice.handstyle",
+        "object.blackbook",
+        "practice.tag"
+      ],
+      "sections": {
+        "inNightshift": "The anatomy viewer and the editor show the same parts on the game's own letters. The component graph is an engineering model, not a claim that writers consciously build every letter this way [c2].",
+        "introduction": "To talk about a letter's construction, NIGHTSHIFT names its parts: a B has a stem, an upper and a lower bowl, a junction where the bowls meet and two enclosed counters [c1]. These names describe structure, not how a writer moved the can or marker [c2].",
+        "whyItMatters": "Naming parts makes it possible to compare letters, discuss changes and test whether a letter keeps its identity when it is edited — for example, whether a B still has two counters (see [[construction.negative-space|negative space]])."
+      },
+      "summary": "A vocabulary for the parts of a letter — stems, bowls, bars, terminals, junctions — and how they work together.",
+      "title": "Letter anatomy",
+      "type": "construction"
+    },
+    {
+      "aliases": [
+        "counter",
+        "aperture",
+        "channel",
+        "negative space",
+        "holes"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "construction.negative-space#c1",
+        "construction.negative-space#c2"
+      ],
+      "diagrams": [
+        "diagram.negative-space"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/construction.negative-space.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.glyph-anatomy",
+          "params": {
+            "glyph": "A"
+          }
+        },
+        {
+          "available": true,
+          "capability": "editor.contour-node-edit",
+          "params": {
+            "glyph": "A"
+          }
+        }
+      ],
+      "id": "construction.negative-space",
+      "imageRights": "original-diagram",
+      "inlineLinks": [],
+      "related": [
+        "construction.letter-anatomy",
+        "practice.handstyle",
+        "object.blackbook"
+      ],
+      "sections": {
+        "inNightshift": "In the editor you can move a letter's points: a change that pushes a counter outside the letter or merges two counters is rejected with an explanation [c2].",
+        "introduction": "NIGHTSHIFT distinguishes three kinds of negative space: an enclosed **counter** (inside the A or the bowls of B), an **aperture** that stays connected to the outside (as in G), and **channels** between parts [c1]. Its validator checks that counters stay enclosed when letters are edited [c2].",
+        "whyItMatters": "If a counter closes up or merges with another, letters become hard to read — a B with one counter looks like a different letter. Protecting negative space keeps letters recognisable even when they are heavily stylised."
+      },
+      "summary": "The empty shapes inside and around letters — closed counters, open apertures and channels — are as important for recognition as the filled ones.",
+      "title": "Negative space: counters and openings",
+      "type": "construction"
+    },
+    {
+      "aliases": [
+        "subway",
+        "trains",
+        "transit",
+        "moving canvas"
+      ],
+      "citedLedgerClaims": [
+        "NYC-007",
+        "NYC-008",
+        "NYC-009"
+      ],
+      "claimIds": [
+        "format.subway-train#c1",
+        "format.subway-train#c2"
+      ],
+      "diagrams": [
+        "diagram.subway-circulation"
+      ],
+      "distinctions": [
+        {
+          "label": "The only surface",
+          "target": null,
+          "text": "wall writing predates and coexists with subway writing [c2]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/format.subway-train.md",
+      "generatorLinks": [
+        {
+          "available": false,
+          "capability": "surface.format-preview",
+          "params": {}
+        }
+      ],
+      "id": "format.subway-train",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "history.clean-train-campaign"
+      ],
+      "period": "1970s – 1989",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "history.nyc-emergence",
+        "history.clean-train-campaign",
+        "practice.sequential-train-photography",
+        "media.style-wars-and-subway-art"
+      ],
+      "sections": {
+        "context": "The city's campaign against painted trains is a related but separate history [NYC-008] (see [[history.clean-train-campaign|Clean Train campaign]]). Because painted cars rarely survived, photographs and films became the main record [NYC-009].",
+        "introduction": "The subway system became a major moving display and communication infrastructure for New York writing [NYC-007]. Scholarship describes subway writing as turning transportation infrastructure into a communication technology [c1].",
+        "whyItMatters": "A train carried a writer's name beyond the neighbourhood where it was painted, which changed the scale of visibility and audience. The subway should be understood as an audience network, not only as a convenient surface [c2]."
+      },
+      "sort": "1974",
+      "summary": "In New York the subway became a moving display: work painted in one place travelled through the whole city.",
+      "title": "The subway train",
+      "type": "format"
+    },
+    {
+      "aliases": [
+        "Clean Train",
+        "1989",
+        "graffiti-free subway"
+      ],
+      "citedLedgerClaims": [
+        "NYC-008",
+        "NYC-012"
+      ],
+      "claimIds": [
+        "history.clean-train-campaign#c1",
+        "history.clean-train-campaign#c2",
+        "history.clean-train-campaign#c3"
+      ],
+      "distinctions": [
+        {
+          "label": "The end of graffiti",
+          "target": null,
+          "text": "1989 marks a transit-era change, not the end of a culture [NYC-012]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/history.clean-train-campaign.md",
+      "generatorLinks": [],
+      "id": "history.clean-train-campaign",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1980s – 1989",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "format.subway-train",
+        "history.institutional-recognition",
+        "history.nyc-emergence"
+      ],
+      "sections": {
+        "context": "After the subway era, writing continued across walls, freight, legal sites, paper, galleries, print media and later digital networks [c3].",
+        "evidenceNotes": "The 1989 milestone is attributed to the museum's account; independent primary MTA corroboration is still open in the research library.",
+        "introduction": "The Museum of the City of New York reports a spring 1989 declaration that the subway fleet was free of graffiti [c1]. The statement concerns the transit fleet, not the end of writing on walls, in books, galleries, photography or abroad [c2].",
+        "whyItMatters": "Writing and the city's campaign to suppress it are related but analytically distinct histories [NYC-008]. The decline of painted subway trains did not end writing culture [NYC-012]."
+      },
+      "sort": "1989",
+      "summary": "New York's transit authorities fought painted trains for years; in spring 1989 the subway fleet was declared graffiti-free. Writing culture did not end there.",
+      "title": "The Clean Train campaign and 1989",
+      "type": "history"
+    },
+    {
+      "aliases": [
+        "museums",
+        "galleries",
+        "exhibitions",
+        "collections"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "history.institutional-recognition#c1",
+        "history.institutional-recognition#c2",
+        "history.institutional-recognition#c3",
+        "history.institutional-recognition#c4"
+      ],
+      "distinctions": [
+        {
+          "label": "The end of street writing",
+          "target": null,
+          "text": "institutional attention ran alongside continuing street practice ([[history.clean-train-campaign|after 1989]])."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/history.institutional-recognition.md",
+      "generatorLinks": [],
+      "id": "history.institutional-recognition",
+      "imageRights": "none",
+      "inlineLinks": [
+        "object.blackbook",
+        "history.clean-train-campaign"
+      ],
+      "period": "1980 – present",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "object.blackbook",
+        "person.lady-pink",
+        "history.clean-train-campaign",
+        "practice.sequential-train-photography"
+      ],
+      "sections": {
+        "introduction": "Writers were shown in exhibitions early: Lady Pink was included at sixteen in the 1980 Fashion MODA exhibition *Graffiti Art Success for America* [c1]. The Museum of the City of New York reports that Martin Wong's Museum of American Graffiti opened in August 1989 [c2]. In 2024–2025 the museum's exhibition *Above Ground* framed its collection as a path from street and subway roots to institutional recognition [c3].",
+        "whyItMatters": "Collections preserve books, letters and photographs that would otherwise be lost ([[object.blackbook|blackbooks]]). They also shape memory: who was collected and exhibited is often who gets remembered [c4]."
+      },
+      "sort": "1980",
+      "summary": "From early exhibitions in 1980 to museum shows today: how writing entered institutions — without becoming the same thing as the street.",
+      "title": "Galleries, collections and museums",
+      "type": "history"
+    },
+    {
+      "citedLedgerClaims": [
+        "NYC-002",
+        "NYC-003",
+        "NYC-004",
+        "NYC-006",
+        "NYC-007",
+        "NYC-005",
+        "NYC-008"
+      ],
+      "claimIds": [
+        "history.nyc-emergence#c1"
+      ],
+      "diagrams": [
+        "diagram.writing-forms"
+      ],
+      "distinctions": [
+        {
+          "label": "The invention of graffiti",
+          "target": "concept.public-inscription",
+          "text": "public inscription is far older and has many separate histories; this chapter is about one modern writing culture."
+        },
+        {
+          "label": "A single inventor",
+          "target": null,
+          "text": "press fame, as in the 1971 TAKI 183 story, is not proof of invention [NYC-005]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/history.nyc-emergence.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.proof-sheets",
+          "params": {}
+        }
+      ],
+      "id": "history.nyc-emergence",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "practice.tag",
+        "person.lady-pink",
+        "history.clean-train-campaign"
+      ],
+      "period": "late 1960s – mid-1980s",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "concept.writing-and-graffiti",
+        "scene.philadelphia",
+        "format.subway-train",
+        "practice.tag",
+        "media.style-wars-and-subway-art",
+        "person.lady-pink",
+        "history.clean-train-campaign"
+      ],
+      "sections": {
+        "context": "A 1971 New York Times story about TAKI 183 helped make the practice publicly visible, but it does not prove that he invented it [NYC-005]. Researchers describe a web of influences instead of one clean root [NYC-002].\n\nWomen took part from the early period. Lady Pink, for example, describes starting in 1979 and painting subway cars, and she was included in a 1980 exhibition at sixteen [c1]. Her work belongs in the main story of this period, not in a footnote [[person.lady-pink|(profile)]].\n\nThe history of writing and the history of the city's campaign against it are related but separate stories [NYC-008]; see [[history.clean-train-campaign|the Clean Train campaign]].",
+        "evidenceNotes": "The ledger claims cited here are graded “publishable” in the NYC claim ledger. Exact dates for individual writers remain open where sources rely on later recollection.",
+        "introduction": "Modern New York writing did not appear from nowhere, and no single person invented it. During the late 1960s and early 1970s, young people transformed existing ways of writing names and initials in the city into deliberate, stylised writing [NYC-002]. Philadelphia developed a related but distinct name-writing culture in the same decade, so a simple one-city origin story does not hold [NYC-003].\n\nBy the early-to-mid 1970s a recognisable New York writing culture had formed, with its own terms, practices and peer recognition [NYC-004]. Writers increasingly developed personal handstyles and more elaborate letter compositions during the decade [NYC-006].",
+        "whyItMatters": "This is the period in which the vocabulary that later travelled around the world took shape: [[practice.tag|tags]], larger compositions and the idea of style as a personal achievement. The subway turned that work into a city-wide display [NYC-007]."
+      },
+      "sort": "1968",
+      "summary": "How young people in New York turned the writing of names in public space into a recognisable, competitive culture with its own words, forms and audiences.",
+      "title": "New York: the emergence of modern writing",
+      "type": "history"
+    },
+    {
+      "aliases": [
+        "Style Wars",
+        "Subway Art",
+        "documentary",
+        "photography books"
+      ],
+      "citedLedgerClaims": [
+        "NYC-009",
+        "NYC-010"
+      ],
+      "claimIds": [
+        "media.style-wars-and-subway-art#c1",
+        "media.style-wars-and-subway-art#c2",
+        "media.style-wars-and-subway-art#c3"
+      ],
+      "diagrams": [
+        "diagram.documentation-chain"
+      ],
+      "distinctions": [
+        {
+          "label": "The scene itself",
+          "target": null,
+          "text": "a film or book is a channel of transmission, not the scene [c2]."
+        },
+        {
+          "label": "The original artwork",
+          "target": null,
+          "text": "a photograph documents a work at one moment; it is not the work [c3]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/media.style-wars-and-subway-art.md",
+      "generatorLinks": [],
+      "id": "media.style-wars-and-subway-art",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "concept.circulation-and-adaptation"
+      ],
+      "period": "1983 – 1984",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "practice.sequential-train-photography",
+        "concept.circulation-and-adaptation",
+        "format.subway-train",
+        "history.nyc-emergence"
+      ],
+      "sections": {
+        "context": "Henry Chalfant, whose sequential photographs record whole trains, co-produced *Style Wars* (1983) [c1].",
+        "introduction": "Photography, film and publications preserved temporary work and spread knowledge beyond the places where it was made [NYC-009]. In the 1980s, the international visibility of New York writing was accelerated by documentary and print media, notably *Style Wars* and *Subway Art* [NYC-010].",
+        "whyItMatters": "For many people outside New York, these media were the first contact with writing. They became reference points for later scenes — which then developed in their own directions (see [[concept.circulation-and-adaptation|circulation]])."
+      },
+      "sort": "1983",
+      "summary": "A 1983 documentary and a 1984 photo book that carried New York writing far beyond New York.",
+      "title": "Style Wars and Subway Art",
+      "type": "media"
+    },
+    {
+      "aliases": [
+        "blackbook",
+        "black book",
+        "piecebook",
+        "sketchbook",
+        "tag-book"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "object.blackbook#c1",
+        "object.blackbook#c2",
+        "object.blackbook#c3",
+        "object.blackbook#c4",
+        "object.blackbook#c5"
+      ],
+      "distinctions": [
+        {
+          "label": "A finished wall or train piece",
+          "target": null,
+          "text": "a book may hold sketches, tests and exchanges rather than final work."
+        },
+        {
+          "label": "A museum catalogue",
+          "target": null,
+          "text": "an archive holding proves that books exist, not that every statement inside them is accurate [c4]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/object.blackbook.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "editor.contour-node-edit",
+          "params": {
+            "glyph": "B"
+          }
+        }
+      ],
+      "id": "object.blackbook",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1970s – present",
+      "related": [
+        "practice.handstyle",
+        "history.institutional-recognition",
+        "practice.sequential-train-photography",
+        "construction.letter-anatomy"
+      ],
+      "sections": {
+        "inNightshift": "Saving and comparing versions of a letter in the editor is a design analogy to working in a book, not a historical claim [c5].",
+        "introduction": "Surviving books show how important paper became for writing. NYU's Martin Wong Papers hold more than 30 sketchbooks together with graffiti tag-books, drawings and photographs [c1]. The Museum of the City of New York describes how Martin Wong collected writers' work, letters and periodicals [c2].",
+        "whyItMatters": "A blackbook can record process: variants, revisions, exchanges and other writers' contributions. Uses differ between writers and settings [c3]."
+      },
+      "sort": "1975",
+      "summary": "A book for drawing, collecting and keeping letters — a working space and, later, an archive.",
+      "title": "Blackbook",
+      "type": "object"
+    },
+    {
+      "aliases": [
+        "Lady Pink",
+        "Sandra Fabara"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "person.lady-pink#c1",
+        "person.lady-pink#c2",
+        "person.lady-pink#c3",
+        "person.lady-pink#c4",
+        "person.lady-pink#c5"
+      ],
+      "distinctions": [
+        {
+          "label": "“The first woman writer”",
+          "target": "concept.visibility-and-archival-gaps",
+          "text": "women took part from the early period; the sources support her importance as one of the earliest women with major visibility in New York, not a “first” title [c5]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/person.lady-pink.md",
+      "generatorLinks": [],
+      "id": "person.lady-pink",
+      "imageRights": "none",
+      "inlineLinks": [
+        "history.nyc-emergence",
+        "history.institutional-recognition"
+      ],
+      "period": "1979 – present",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "history.nyc-emergence",
+        "concept.visibility-and-archival-gaps",
+        "history.institutional-recognition",
+        "format.subway-train"
+      ],
+      "sections": {
+        "context": "Research notes that even influential writers such as Lady Pink have received comparatively little academic attention [c4] — one reason this archive places her in the main history ([[history.nyc-emergence|New York]], [[history.institutional-recognition|exhibitions]]) rather than in a separate corner.",
+        "evidenceNotes": "Dates and crew memberships come from her own retrospective testimony and should be read as her recollection. No images of her work are embedded; rights would need item-level clearance.",
+        "introduction": "In a 2013 interview published by the National Endowment for the Arts, Lady Pink (Sandra Fabara) recalls beginning graffiti in 1979 and first painting subway cars [c1]. She was sixteen when included in the 1980 Fashion MODA exhibition *Graffiti Art Success for America* [c1]. The same interview identifies her with the crews The Cool Five (TC5) and The Public Animals (TPA) [c2].",
+        "whyItMatters": "Scholarship on the film *Wild Style* analyses her lettering in the opening sequence and records her role in directing other writers on set [c3]. This treats her as a writer with technical expertise and artistic judgement, not only as a visible woman in the scene."
+      },
+      "sort": "1979",
+      "summary": "A New York writer of the subway era whose lettering, film work and later murals are documented in her own words and in scholarship.",
+      "title": "Lady Pink",
+      "type": "person"
+    },
+    {
+      "aliases": [
+        "Hall of Fame",
+        "legal wall",
+        "legal walls"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "practice.hall-of-fame#c1",
+        "practice.hall-of-fame#c2"
+      ],
+      "distinctions": [
+        {
+          "label": "A commissioned mural",
+          "target": null,
+          "text": "a hall of fame is usually open to writers on their own terms rather than a commissioned image."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/practice.hall-of-fame.md",
+      "generatorLinks": [],
+      "id": "practice.hall-of-fame",
+      "imageRights": "none",
+      "inlineLinks": [
+        "practice.piece"
+      ],
+      "period": "1980s – present",
+      "regions": [
+        "Ruhrgebiet"
+      ],
+      "related": [
+        "scene.dortmund",
+        "practice.piece",
+        "history.clean-train-campaign"
+      ],
+      "sections": {
+        "introduction": "Halls of fame are common in the Ruhrgebiet. The KWI Essen article lists legal sites at the Ruhr-Universität in Bochum, in the Landschaftspark in Duisburg and in Essen, and describes a Dortmund harbour wall opened in April 2022 as the largest in North Rhine-Westphalia [c1].",
+        "whyItMatters": "Legal walls give writers time to work on elaborate pieces ([[practice.piece|pieces]]), while tags and throw-ups elsewhere remain contested [c2]. Both belong to the same culture; a hall of fame is one setting among several, not the “acceptable” half of writing."
+      },
+      "sort": "1990",
+      "summary": "A wall where writers may paint legally or are tolerated — a place for time, detail and large pieces.",
+      "title": "Hall of Fame",
+      "type": "practice"
+    },
+    {
+      "aliases": [
+        "hand",
+        "handstyle",
+        "whip",
+        "flow"
+      ],
+      "citedLedgerClaims": [
+        "NYC-006"
+      ],
+      "claimIds": [
+        "practice.handstyle#c1",
+        "practice.handstyle#c2"
+      ],
+      "distinctions": [
+        {
+          "label": "A letterform style",
+          "target": null,
+          "text": "handstyle is a gestural practice; named letterform styles describe construction (→ construction.letter-anatomy)."
+        },
+        {
+          "label": "Handwriting in general",
+          "target": null,
+          "text": "writers deliberately shape and repeat their hand as a public identity."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/practice.handstyle.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.glyph-anatomy",
+          "params": {
+            "glyph": "S"
+          }
+        }
+      ],
+      "id": "practice.handstyle",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1960s – present",
+      "related": [
+        "practice.tag",
+        "scene.philadelphia",
+        "construction.letter-anatomy",
+        "history.nyc-emergence"
+      ],
+      "sections": {
+        "inNightshift": "NIGHTSHIFT treats handstyle as gesture and movement as well as visible shape, and does not infer stroke order from a closed contour [c2].",
+        "introduction": "During the 1970s, New York writers increasingly developed differentiated handstyles alongside more elaborate compositions [NYC-006]. In Philadelphia, fieldwork describes *whip* — continuity, speed, joints and the trace of a flowing hand — as a local way of talking about the energy in letter strokes [c1].",
+        "whyItMatters": "Handstyle is where personal style begins. It also shows why a closed outline cannot tell the whole story: the same silhouette can come from very different movements [c2]."
+      },
+      "sort": "1972",
+      "summary": "A writer's personal way of forming letters by hand: rhythm, proportion, joins and the habits that make one hand recognisable.",
+      "title": "Handstyle",
+      "type": "practice"
+    },
+    {
+      "aliases": [
+        "piece",
+        "masterpiece",
+        "throw-up",
+        "throwie",
+        "forms of writing"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "practice.piece#c1",
+        "practice.piece#c2",
+        "practice.piece#c3"
+      ],
+      "diagrams": [
+        "diagram.writing-forms"
+      ],
+      "distinctions": [
+        {
+          "label": "Steps on a ladder",
+          "target": null,
+          "text": "tag, throw-up and piece coexist; a writer is not expected to “graduate” from one to the next [c3]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/practice.piece.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.word-layout",
+          "params": {
+            "word": "GRAB"
+          }
+        }
+      ],
+      "id": "practice.piece",
+      "imageRights": "original-diagram",
+      "inlineLinks": [],
+      "period": "1970s – present",
+      "related": [
+        "practice.tag",
+        "practice.hall-of-fame",
+        "format.subway-train",
+        "style.dortmund-style"
+      ],
+      "sections": {
+        "inNightshift": "The word tester sets a word with naive spacing. Real piece composition — how letters overlap and connect — comes with the relationship solver (package C04).",
+        "introduction": "Ethnographic research on New York writers describes tags, throw-ups and pieces as common forms of the culture [c1]. A throw-up is fast and outlined; a piece takes more time and builds a composition from fill, outline and further layers [c2].",
+        "recognize": "Throw-ups usually use a few rounded or simplified letters with outline and quick fill. Pieces show planning: letter construction, connections between letters, colour and depth [c2]."
+      },
+      "sort": "1974",
+      "summary": "Beside the tag, two larger forms: the quick, outlined throw-up and the composed, multi-layered piece.",
+      "title": "Throw-up and piece",
+      "type": "practice"
+    },
+    {
+      "aliases": [
+        "train photography",
+        "Henry Chalfant",
+        "documentation"
+      ],
+      "citedLedgerClaims": [
+        "NYC-009"
+      ],
+      "claimIds": [
+        "practice.sequential-train-photography#c1",
+        "practice.sequential-train-photography#c2",
+        "practice.sequential-train-photography#c3"
+      ],
+      "diagrams": [
+        "diagram.documentation-chain"
+      ],
+      "distinctions": [
+        {
+          "label": "The work itself",
+          "target": null,
+          "text": "sequential photographs keep a car's composition together, but cannot reproduce its scale, movement, colour conditions or audience [c3]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "strong",
+      "file": "research/archive/entries/practice.sequential-train-photography.md",
+      "generatorLinks": [],
+      "id": "practice.sequential-train-photography",
+      "imageRights": "original-diagram",
+      "inlineLinks": [],
+      "period": "1977 – 1987",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "media.style-wars-and-subway-art",
+        "format.subway-train",
+        "object.blackbook",
+        "history.institutional-recognition",
+        "concept.reading-the-evidence"
+      ],
+      "sections": {
+        "evidenceNotes": "Individual photographs need item-level metadata and rights review before any reuse. This archive embeds none of them.",
+        "introduction": "Henry Chalfant developed a sequential technique for photographing subway trains; the Bronx Museum describes these photographs as documenting the emergence of the form and its transformation into an international phenomenon [c1]. The Smithsonian archive records his move to New York in 1973, the method and his collaboration with writers [c2].",
+        "whyItMatters": "Painted cars rarely survived. Photography preserved evidence of temporary work and helped knowledge travel [NYC-009]."
+      },
+      "sort": "1977",
+      "summary": "Photographing a moving train section by section so that a whole painted car survives as a connected record.",
+      "title": "Sequential train photography",
+      "type": "practice"
+    },
+    {
+      "aliases": [
+        "tag",
+        "tagging",
+        "signature"
+      ],
+      "citedLedgerClaims": [
+        "NYC-005",
+        "NYC-006"
+      ],
+      "claimIds": [
+        "practice.tag#c1",
+        "practice.tag#c2",
+        "practice.tag#c3"
+      ],
+      "diagrams": [
+        "diagram.writing-forms"
+      ],
+      "distinctions": [
+        {
+          "label": "A small piece",
+          "target": null,
+          "text": "a tag is its own name-writing practice with distinct gesture and purpose [c2]."
+        },
+        {
+          "label": "Gang markings",
+          "target": "scene.philadelphia",
+          "text": "they shared urban space, but research treats them as different practices."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/practice.tag.md",
+      "generatorLinks": [
+        {
+          "available": true,
+          "capability": "study.word-layout",
+          "params": {
+            "word": "ABRA"
+          }
+        }
+      ],
+      "id": "practice.tag",
+      "imageRights": "original-diagram",
+      "inlineLinks": [
+        "practice.handstyle",
+        "scene.philadelphia"
+      ],
+      "period": "1960s – present",
+      "related": [
+        "practice.handstyle",
+        "concept.writing-and-graffiti",
+        "history.nyc-emergence",
+        "scene.philadelphia"
+      ],
+      "sections": {
+        "context": "Press attention to tags in the early 1970s made the practice publicly visible [NYC-005], and competition for visibility helped make individual style important [NYC-006]. In Philadelphia, local tag traditions such as the Wicked developed their own forms ([[scene.philadelphia|Philadelphia]]).",
+        "inNightshift": "The game does not reproduce real tags or signatures. Original, synthetic lettering may study rhythm and flow [c3].",
+        "introduction": "Tags, throw-ups and pieces are described in ethnographic research as common forms of New York writing [c1]. They coexist; a tag is not merely an early stage that a writer leaves behind [c2].",
+        "recognize": "A single line of letters, written in one continuous rhythm, repeated in many places. Its quality lies in the hand: proportion, flow and consistency (see [[practice.handstyle|handstyle]])."
+      },
+      "sort": "1970",
+      "summary": "A writer's name written quickly by hand — a practice with its own gesture, rhythm and social function, not just a small version of a piece.",
+      "title": "Tag",
+      "type": "practice"
+    },
+    {
+      "aliases": [
+        "Amsterdam",
+        "punk graffiti",
+        "Netherlands"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.amsterdam#c1",
+        "scene.amsterdam#c2",
+        "scene.amsterdam#c3",
+        "scene.amsterdam#c4"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.amsterdam.md",
+      "generatorLinks": [],
+      "id": "scene.amsterdam",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "c. 1977 – 1980s",
+      "regions": [
+        "Amsterdam",
+        "Netherlands"
+      ],
+      "related": [
+        "concept.circulation-and-adaptation",
+        "concept.public-inscription",
+        "scene.paris"
+      ],
+      "sections": {
+        "context": "The same local research records a scene concern that the history of graffiti should be preserved by writers and their communities, not only by formal institutions [c2].",
+        "evidenceNotes": "Based on one heritage thesis, interviews and a specialist archive; it is not a complete census of the city.",
+        "introduction": "Graduation research at the Reinwardt Academie describes an Amsterdam name-writing culture emerging around 1977, largely among young people connected to punk; it is based on literature and ten in-depth interviews [c1]. The study reports that films and books about US graffiti later inspired a new local style, and that Amsterdam hip-hop graffiti developed as a recognisably different phase [c2].",
+        "whyItMatters": "Amsterdam shows that a local writing phase could precede the wide adoption of New York-style writing [c3]. The Dutch Graffiti Library's punk archive project describes late-1970s punk and squatter tagging followed by a generation seeking city-wide visibility [c4]."
+      },
+      "sort": "1977",
+      "summary": "A punk- and squatter-linked name-writing culture existed in Amsterdam before New York-style hip-hop writing became widely known there.",
+      "title": "Amsterdam",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "China",
+        "Beijing",
+        "Shanghai",
+        "Chengdu"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.china#c1",
+        "scene.china#c2",
+        "scene.china#c3",
+        "scene.china#c4"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.china.md",
+      "generatorLinks": [],
+      "id": "scene.china",
+      "imageRights": "none",
+      "inlineLinks": [
+        "concept.circulation-and-adaptation"
+      ],
+      "period": "2000s – present",
+      "regions": [
+        "Beijing",
+        "Shanghai",
+        "Chengdu"
+      ],
+      "related": [
+        "concept.circulation-and-adaptation",
+        "scene.sao-paulo",
+        "concept.visibility-and-archival-gaps"
+      ],
+      "sections": {
+        "context": "The book describes three different urban contexts: Beijing, a political and administrative centre; Shanghai, an international and commercial city; and Chengdu, a regional centre showing that development cannot be reduced to the two largest cities [c2]. It documents artists seeking a Chinese visual language through references to characters, calligraphy, traditional painting and literature, as well as travel and exchange with foreign writers [c3]. Among the Shanghai cases it includes Tin.G, associated with the China Graffiti Girls [c4].",
+        "introduction": "*Graffiti in China* (University of Bologna / 1088press, 2024) is based on research and interviews in Beijing, Shanghai and Chengdu, and its editors state that these cases cannot represent the whole Chinese scene [c1].",
+        "whyItMatters": "China shows circulation as reinterpretation: international contact combined with local scripts and art traditions ([[concept.circulation-and-adaptation|circulation]])."
+      },
+      "sort": "2005",
+      "summary": "Not one national scene but several city histories, each shaped by its own context and by artists looking for a Chinese visual language.",
+      "title": "China: Beijing, Shanghai, Chengdu",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "Dortmund",
+        "Ruhrgebiet",
+        "Ruhrpott",
+        "TUF",
+        "The United Force",
+        "Germany"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.dortmund#c1",
+        "scene.dortmund#c2",
+        "scene.dortmund#c3",
+        "scene.dortmund#c4",
+        "scene.dortmund#c5"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.dortmund.md",
+      "generatorLinks": [
+        {
+          "available": false,
+          "capability": "grammar.style-comparison",
+          "params": {}
+        }
+      ],
+      "id": "scene.dortmund",
+      "imageRights": "none",
+      "inlineLinks": [
+        "style.dortmund-style",
+        "practice.hall-of-fame"
+      ],
+      "period": "mid-1980s – present",
+      "regions": [
+        "Dortmund",
+        "Ruhrgebiet",
+        "Germany"
+      ],
+      "related": [
+        "style.dortmund-style",
+        "practice.hall-of-fame",
+        "concept.circulation-and-adaptation",
+        "scene.hamburg"
+      ],
+      "sections": {
+        "context": "Today the region has many legal walls (see [[practice.hall-of-fame|Hall of Fame]]), while tags and throw-ups remain unwelcome to much of the public and to city authorities [c5].",
+        "evidenceNotes": "Names are given as the source states them. Crew membership, spellings and dates still need confirmation person by person, ideally from first-person and dated material; the research library treats longer name lists as leads, not a roster.",
+        "introduction": "A 2022 article for the Kulturwissenschaftliches Institut Essen describes writing as an art form that emerged on the US East Coast, in New York and Philadelphia, and spread internationally, notably through the film *Wild Style*; it places the establishment of graffiti in the Ruhrgebiet in the mid-1980s [c1]. The same article says Dortmund has always had a special role in the region and was the first Ruhrgebiet city where writers were active in a hip-hop environment. It names Chintz, Zodiak and Shark, all members of the TUF crew (The United Force) [c2].",
+        "whyItMatters": "Dortmund shows how a German scene received writing through film and hip-hop and then built its own recognisable letter language ([[style.dortmund-style|Dortmund Style]]) [c3]. It is a chapter in its own right, not a footnote to “European influence” [c4]."
+      },
+      "sort": "1985",
+      "summary": "Dortmund was the first city in the Ruhrgebiet with writers working inside a hip-hop environment, and its blocky letters became known well beyond the region.",
+      "title": "Dortmund and the Ruhrgebiet",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "Hamburg",
+        "DAIM",
+        "Mirko Reisser",
+        "CSMC",
+        "Germany"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.hamburg#c1",
+        "scene.hamburg#c2"
+      ],
+      "distinctions": [
+        {
+          "label": "One writer's story",
+          "target": null,
+          "text": "the archive documents a city's scene, and what was collected shapes what is remembered ([[concept.visibility-and-archival-gaps|gaps in the record]])."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.hamburg.md",
+      "generatorLinks": [],
+      "id": "scene.hamburg",
+      "imageRights": "none",
+      "inlineLinks": [
+        "object.blackbook",
+        "history.institutional-recognition",
+        "concept.visibility-and-archival-gaps"
+      ],
+      "period": "1980s – present",
+      "regions": [
+        "Hamburg",
+        "Germany"
+      ],
+      "related": [
+        "scene.dortmund",
+        "object.blackbook",
+        "history.institutional-recognition",
+        "concept.visibility-and-archival-gaps"
+      ],
+      "sections": {
+        "introduction": "The University of Hamburg's Centre for the Study of Manuscript Cultures (CSMC) describes Mirko Reisser, known as DAIM, as part of Hamburg's graffiti scene from its tentative beginnings in the 1980s and as an archivist of the city's graffiti history [c1]. Its research project *Graffiti: Ephemeral Inscriptions in Urban Space — Style Writing in Hamburg in the 1980s and 1990s* (2019–2023) studies his private archive, describing him as a key figure in the Hamburg scene since 1989 [c2].",
+        "whyItMatters": "Writing is ephemeral: walls are buffed and trains cleaned. The project studies how style writing is produced, transformed, preserved and destroyed, and it treats the archive itself — including a digital database — as a research object [c2]. This connects to [[object.blackbook|blackbooks]] and to [[history.institutional-recognition|collections]] elsewhere."
+      },
+      "sort": "1989",
+      "summary": "Hamburg's writing history from the 1980s survives partly because a writer became its archivist — and a university made that archive a research subject.",
+      "title": "Hamburg and its archive",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "Paris",
+        "Seine-Saint-Denis",
+        "banlieue",
+        "Stalingrad",
+        "France"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.paris#c1",
+        "scene.paris#c2",
+        "scene.paris#c3"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.paris.md",
+      "generatorLinks": [],
+      "id": "scene.paris",
+      "imageRights": "none",
+      "inlineLinks": [
+        "concept.public-inscription"
+      ],
+      "period": "1980s – present",
+      "regions": [
+        "Paris",
+        "Seine-Saint-Denis",
+        "France"
+      ],
+      "related": [
+        "concept.circulation-and-adaptation",
+        "concept.public-inscription",
+        "scene.amsterdam"
+      ],
+      "sections": {
+        "context": "Paris also has much older traditions of public writing: a peer-reviewed study documents street writing in late nineteenth-century Paris [c3] (see [[concept.public-inscription|public inscription]]).",
+        "evidenceNotes": "More primary oral histories are needed; current evidence is a city publication and a scholarly chapter.",
+        "introduction": "A City of Paris / Plaine Commune publication describes the 1980s spread of hip-hop culture in France through independent radio and the television programme *H.I.P H.O.P.*, early crew activity in north-east Paris and the wastelands of La Plaine Saint-Denis, and 1984 block parties at Stalingrad [c1].",
+        "whyItMatters": "Scholarship frames Paris and its suburbs as a major centre of graffiti and street art from the early 1980s and stresses the geography of Paris and its banlieues, including populations shaped by postcolonial migration [c2]. The scene is not a copy of New York; its geography and social context made it distinct."
+      },
+      "sort": "1984",
+      "summary": "Hip-hop arrived through radio and television in the 1980s; Paris writing then grew from the relationship between the city and its suburbs.",
+      "title": "Paris and Seine-Saint-Denis",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "Philly",
+        "wall writers",
+        "wicked",
+        "wicket",
+        "tall hand"
+      ],
+      "citedLedgerClaims": [
+        "NYC-003"
+      ],
+      "claimIds": [
+        "scene.philadelphia#c1",
+        "scene.philadelphia#c2",
+        "scene.philadelphia#c3",
+        "scene.philadelphia#c4",
+        "scene.philadelphia#c5",
+        "scene.philadelphia#c6",
+        "scene.philadelphia#c7"
+      ],
+      "distinctions": [
+        {
+          "label": "The place of “the first tag”",
+          "target": null,
+          "text": "Philadelphia is a scene with its own history, not a single origin event [c3]."
+        },
+        {
+          "label": "Gang marking",
+          "target": null,
+          "text": "overlapping urban context, but a different practice [c5]."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.philadelphia.md",
+      "generatorLinks": [],
+      "id": "scene.philadelphia",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1960s – present",
+      "regions": [
+        "Philadelphia"
+      ],
+      "related": [
+        "history.nyc-emergence",
+        "practice.handstyle",
+        "concept.public-inscription",
+        "concept.circulation-and-adaptation"
+      ],
+      "sections": {
+        "context": "Ethnographic research challenges the idea that Philadelphia writing simply grew out of gangs. It describes writing as a culture with its own rules and practices [c5]. Local hand traditions include long, tall forms and the Wicked, which researchers describe as exaggerated, elongated and partly meant for insiders to read [c6]. Fieldwork records *whip* as a local word for the energy and continuity of a flowing hand [c7].",
+        "introduction": "Research places the emergence of name writing in Philadelphia in the 1960s and discusses CORNBREAD's activity around 1965 in North Philadelphia, with COOL EARL and TOPCAT 126 active from 1966 [c1]. A public-history account describes Black teenagers who called themselves wall writers and situates the movement between about 1965 and 1985 [c2]. The evidence does not support naming one first writer or an uncontested date [c3].",
+        "terminology": "*Wicked* / *Wicket*, *tall hand* and *whip* are local terms with their own scope. They are not universal graffiti vocabulary.",
+        "whyItMatters": "Philadelphia and New York developed related but distinct writing cultures in the 1960s [NYC-003]. New York's subway and media later made its visual language dominant, which hid the distinct Philadelphia tradition [c4]."
+      },
+      "sort": "1965",
+      "summary": "One of the earliest documented centres of modern name writing in the United States, with its own vocabulary and hand traditions — not a footnote to New York.",
+      "title": "Philadelphia",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "São Paulo",
+        "pixação",
+        "pichação",
+        "tag reto",
+        "Brazil"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "scene.sao-paulo#c1",
+        "scene.sao-paulo#c2",
+        "scene.sao-paulo#c3"
+      ],
+      "distinctions": [],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/scene.sao-paulo.md",
+      "generatorLinks": [],
+      "id": "scene.sao-paulo",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "c. 1980 – present",
+      "regions": [
+        "São Paulo",
+        "Brazil"
+      ],
+      "related": [
+        "concept.circulation-and-adaptation",
+        "scene.china",
+        "practice.tag"
+      ],
+      "sections": {
+        "introduction": "Research describes pixação as a locally developed form of public name writing that became visible around 1980 and spread widely in the 1990s and 2000s. A peer-reviewed article describes its graphic language as vertically elongated letters built from straight lines and points, often called *tag reto* [c1].",
+        "terminology": "*Pixação* and *grafite* are often contrasted in Brazil, but research challenges treating them as sealed-off practices; processes and forms can overlap [c3].",
+        "whyItMatters": "Explanations for the look of tag reto differ — the city's tall buildings and lettering from heavy metal and punk records are both proposed — and these remain interpretations, not settled origins [c1]. A University of São Paulo dissertation argues that the city's groups have their own roots, visual examples, rules and systems of internal valuation [c2]."
+      },
+      "sort": "1980",
+      "summary": "Pixação is São Paulo's own system of public name writing, with tall, angular letters and its own rules — not a variant of New York style.",
+      "title": "São Paulo and pixação",
+      "type": "scene"
+    },
+    {
+      "aliases": [
+        "Dortmund Style",
+        "Dortmunder Style",
+        "block letters",
+        "blocky letters"
+      ],
+      "citedLedgerClaims": [],
+      "claimIds": [
+        "style.dortmund-style#c1",
+        "style.dortmund-style#c2"
+      ],
+      "distinctions": [
+        {
+          "label": "A preset",
+          "target": null,
+          "text": "the style is a shared tendency with many individual hands; NIGHTSHIFT will not reduce it to one button or copy any writer's letters [c2]."
+        },
+        {
+          "label": "Blockbuster lettering in general",
+          "target": null,
+          "text": "large block letters exist in many scenes; the Dortmund Style is a specific regional history."
+        }
+      ],
+      "editorialStatus": "source-checked",
+      "evidence": "good",
+      "file": "research/archive/entries/style.dortmund-style.md",
+      "generatorLinks": [
+        {
+          "available": false,
+          "capability": "grammar.style-comparison",
+          "params": {}
+        },
+        {
+          "available": true,
+          "capability": "study.glyph-anatomy",
+          "params": {
+            "glyph": "R"
+          }
+        }
+      ],
+      "id": "style.dortmund-style",
+      "imageRights": "none",
+      "inlineLinks": [
+        "construction.letter-anatomy",
+        "construction.negative-space"
+      ],
+      "period": "from the mid-1980s",
+      "regions": [
+        "Dortmund",
+        "Ruhrgebiet"
+      ],
+      "related": [
+        "scene.dortmund",
+        "construction.letter-anatomy",
+        "construction.negative-space",
+        "practice.piece"
+      ],
+      "sections": {
+        "evidenceNotes": "Published descriptions are short. A proper construction study needs several dated examples from different writers; the research library lists this as open work.",
+        "inNightshift": "A style comparison study comes with the style resolver (package C03). Until then, the anatomy viewer can be used to look at how mass and counters work in a block letter such as R.",
+        "introduction": "The KWI Essen article describes the Dortmund Style as notable for its extremely blocky and clear letters, and says it found many fans and imitators in the rest of the Ruhrgebiet and internationally [c1].",
+        "recognize": "As a construction tendency, “blocky and clear” means broad, solid letter bodies, legibility kept intact and little decoration that hides the letter [c1]. These are tendencies, not rules; individual writers vary within them [c2].",
+        "whyItMatters": "The style shows that regional identity can live in construction — skeleton, mass and spacing — rather than in effects. That makes it a useful case for studying [[construction.letter-anatomy|letter anatomy]] and [[construction.negative-space|negative space]]."
+      },
+      "sort": "1986",
+      "summary": "A regional lettering tendency known for extremely blocky, clear letters — readable at a distance, built from strong, simple masses.",
+      "title": "Dortmund Style",
+      "type": "style"
+    }
+  ],
+  "generatedFrom": [
+    {
+      "path": "docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md",
+      "sha256": "925bfa311f6a8dd535941f06ba8b6f54fe3bb1118547a10d62e1dae29485e185"
+    },
+    {
+      "path": "research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md",
+      "sha256": "208b410b8b092d82bac15c694016bbfa32df0a279d5b101101c22000ac32a5c3"
+    },
+    {
+      "path": "research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md",
+      "sha256": "a9f3480280aaa2510b143b783078af56854d99417510c6ecd36c27ee709193e6"
+    },
+    {
+      "path": "research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md",
+      "sha256": "93b8da53318a5f22671079a1e94e6e103f2c61663c39b2185c328a36cb83ecdb"
+    },
+    {
+      "path": "research/AEROSOL_TECHNOLOGY_CAPS_AND_PAINT_PRACTICE.md",
+      "sha256": "ce35427090c1732b115bb5967a2c257c41c42ae960dbaa059377ce738324a018"
+    },
+    {
+      "path": "research/ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md",
+      "sha256": "bc4c0c15b2839c3f04c5af1d3209e68e0e5ff14ea25f1e33b8b2fd2594fb63aa"
+    },
+    {
+      "path": "research/archive/entries/concept.circulation-and-adaptation.md",
+      "sha256": "ae5ba7a5e602d5aa2d54309b79ab89fda63d586a12377931a61222d039294748"
+    },
+    {
+      "path": "research/archive/entries/concept.public-inscription.md",
+      "sha256": "4c961b2d65a4287eea7999f84e4c30d735025a6792cf5a235168a5747a757ea3"
+    },
+    {
+      "path": "research/archive/entries/concept.reading-the-evidence.md",
+      "sha256": "2f46087db9297b771d676a2dd3daab09b519d1961b8b8e234f7f3c3683b2d8bc"
+    },
+    {
+      "path": "research/archive/entries/concept.visibility-and-archival-gaps.md",
+      "sha256": "8d3fdd895ceb98d77560551fee168282c6a97a30936c0f5e7b557d8f57c21f15"
+    },
+    {
+      "path": "research/archive/entries/concept.writing-and-graffiti.md",
+      "sha256": "629c9b2fcc98959ac21bd63bf201b12fdb7e559d8a8fbc3c1b37d9b4d723e021"
+    },
+    {
+      "path": "research/archive/entries/construction.letter-anatomy.md",
+      "sha256": "4b546e098d080dadde2d2b2335d5887d865a64d816f479b1f7a67a56eb9038eb"
+    },
+    {
+      "path": "research/archive/entries/construction.negative-space.md",
+      "sha256": "314e8ee8607d24682493f6bad91b872ece2ef91dd67edd16083d504956248832"
+    },
+    {
+      "path": "research/archive/entries/format.subway-train.md",
+      "sha256": "16d5a8e8967dfa6d48a1c40b635a499ee021330b3c50ae93466d979aa189991b"
+    },
+    {
+      "path": "research/archive/entries/history.clean-train-campaign.md",
+      "sha256": "6c98a3c4df3b84bbe1260d312e35cf768269c62018aec3185a0ead0b2e93aeae"
+    },
+    {
+      "path": "research/archive/entries/history.institutional-recognition.md",
+      "sha256": "49398841f0ebd4745d500fd481d75c8544c7ffeeb4948f4d0fc087965c26573e"
+    },
+    {
+      "path": "research/archive/entries/history.nyc-emergence.md",
+      "sha256": "b58ddf2cff0f511f9c216c58113f28e88b63feaca1f5991106f2e12ea074d53b"
+    },
+    {
+      "path": "research/archive/entries/media.style-wars-and-subway-art.md",
+      "sha256": "1af497ce3deb64fe34a55e42a9f380e372446c84790704da3e46efdef95a73d5"
+    },
+    {
+      "path": "research/archive/entries/object.blackbook.md",
+      "sha256": "4af1cfa44fbabbdca93bf0243268f49e11c3edaa5eaa3c52415870238b8b55ad"
+    },
+    {
+      "path": "research/archive/entries/person.lady-pink.md",
+      "sha256": "410b679e298dbc5cfe0aa8d7e34e77f6a993340b7b922c3e99812048c112ad6a"
+    },
+    {
+      "path": "research/archive/entries/practice.hall-of-fame.md",
+      "sha256": "b8db7dab7cf42023e75b10a338818d52063452cce3f8dced68be5979ae4e92b1"
+    },
+    {
+      "path": "research/archive/entries/practice.handstyle.md",
+      "sha256": "61770d102bcc7177e02f08deff20a16fc43d0888eea8963fea09be2ca3f56672"
+    },
+    {
+      "path": "research/archive/entries/practice.piece.md",
+      "sha256": "7cc25f0cef8b90d85ee75ca996b8fa40b7084ee1c586703145e8ef6b19dc68af"
+    },
+    {
+      "path": "research/archive/entries/practice.sequential-train-photography.md",
+      "sha256": "37bc28824097ec18f06fbfa37266b97f5dea0de67206de5b665e2f2c9c821b6e"
+    },
+    {
+      "path": "research/archive/entries/practice.tag.md",
+      "sha256": "ac83424b2c83c31200d813da32576d036463647dd9aca4b04dbfee50ddef772f"
+    },
+    {
+      "path": "research/archive/entries/scene.amsterdam.md",
+      "sha256": "49d39629e85fff094d0026b78a1a1604a472aef9e839b47c404ea3e69f916c15"
+    },
+    {
+      "path": "research/archive/entries/scene.china.md",
+      "sha256": "e4f55f46e7a92c1592cfb54112038a66cd237cf0567637c7edfd3bf41a36b917"
+    },
+    {
+      "path": "research/archive/entries/scene.dortmund.md",
+      "sha256": "9725f830b89e235eaeeccea90918ca96c23d50ddec966ac7881c25cc051e6a95"
+    },
+    {
+      "path": "research/archive/entries/scene.hamburg.md",
+      "sha256": "464ef160ade404c1666cb77d0bd731e9cd51e53f882aab76a35419095eb82adb"
+    },
+    {
+      "path": "research/archive/entries/scene.paris.md",
+      "sha256": "909d193191f93dfde7dd8bef3a12aa7e7ffbaafcda32c7219e49b3765ad7828f"
+    },
+    {
+      "path": "research/archive/entries/scene.philadelphia.md",
+      "sha256": "a8f8a669800f36522d253393e53d7ce15b82ea25ecd18ecec4264e9756ce1503"
+    },
+    {
+      "path": "research/archive/entries/scene.sao-paulo.md",
+      "sha256": "25848a1d4c48e5753b54213ee089379e01e186d241d3dcb5e1131e99c65eabed"
+    },
+    {
+      "path": "research/archive/entries/style.dortmund-style.md",
+      "sha256": "94d3b619544c67e48a09fb81779cda2f66b23c62d36af5184b70c1151455aee2"
+    },
+    {
+      "path": "research/archive/LEARNING_PATHS.md",
+      "sha256": "3d83ab8a156d7068e141390a481933664ea0a8bafe6a6600ebb1c82eaf470197"
+    },
+    {
+      "path": "research/archive/README.md",
+      "sha256": "abe2c1c07511a09b79bd1e69769d4d1d9ffe198ac2bde585d48e0c6b05490c07"
+    },
+    {
+      "path": "research/archive/TIMELINE.md",
+      "sha256": "640f84dc83f4831d07711354a4c95f2f363e9543f8328b9d42e997d22bf43b5b"
+    },
+    {
+      "path": "research/BERLIN_DECADES_TRILOGY_BIBLIOGRAPHY_01.md",
+      "sha256": "188f76263a1f5a78ddf3d821608fdd4f6eedaf3dc7307d43c9f1bbb8c7e5689e"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_CONTENT_EXPANSION_01.md",
+      "sha256": "9c2525d76c9f5eee4091cc097a3e8fa9f874d59a622539ee97ae3f968ae65e6c"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md",
+      "sha256": "c908b4cfd1768563ef816f33aed9f41cfe4db1c6c0ec0eec90c7b94bd579b5a5"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_01.md",
+      "sha256": "b4761b43ef75d7404606f898f04406dcd11fd0f3699c9ef49e0700bca121b955"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_02.md",
+      "sha256": "8adc3e7b09f0528e7fd8d88044a6e3ce1798f9486e9388f6ea75f50479f3ffca"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_TEST_CASES_01.md",
+      "sha256": "c3cabe27d6c44da2137054b13214243909c7f51817b6fe37b432aa0f81dd931a"
+    },
+    {
+      "path": "research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md",
+      "sha256": "739a994ae068420b80dcf7f419f7c7361d9815170d0baa8896e45f780213850d"
+    },
+    {
+      "path": "research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md",
+      "sha256": "e414befb7416ba17ec36ada373536b5d250d95870a9fb01dfd320ff335542bd7"
+    },
+    {
+      "path": "research/CROSS_DOMAIN_TEST_FIXTURES_02.md",
+      "sha256": "27b0e4fa36c974085e6e8db13d8d4c56650367cd93704688da5c0295676e6fe5"
+    },
+    {
+      "path": "research/DORTMUND_ALL_SURFACE_TAGGING_CORPUS_01.md",
+      "sha256": "2fa1ff3aa0a467b42c503663353ffa9b92164e43c046da955e982c900c388a54"
+    },
+    {
+      "path": "research/DORTMUND_DA_KUKSE_WA_2020_REPRINT_ACCESS_01.md",
+      "sha256": "2fff7ff6fe0616a114af137317a8714c5ab73470eede312afcc502edff38cab9"
+    },
+    {
+      "path": "research/DORTMUND_MASON_LONGITUDINAL_PUBLICATION_CORPUS_01.md",
+      "sha256": "b1065846529704d115e07d0abbee8b350d5e8f1957511ec58335b2262d758436"
+    },
+    {
+      "path": "research/DORTMUND_MOVING_IMAGE_ARCHIVE_1994_1997_01.md",
+      "sha256": "281bf94e0f618fd02d82b36cc710929034c90e5cd0ba94da803fc021aa4b6f7b"
+    },
+    {
+      "path": "research/DORTMUND_ORAL_HISTORY_AND_VISUAL_CHRONOLOGY_01.md",
+      "sha256": "ce019e528e1d258193105bbeed0f07c0d77efc954da380df51d2636e5655d308"
+    },
+    {
+      "path": "research/DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md",
+      "sha256": "d50e4ad93acba7e4e099660ec8feaa31336dab85df42a051dacb871515d37d83"
+    },
+    {
+      "path": "research/DORTMUND_PUBLICATION_BIBLIOGRAPHY_AND_VISUAL_CORPUS_01.md",
+      "sha256": "47788e9995af97a20f1001a5658c03a79810bd502511f801b2075294a6f6c6f6"
+    },
+    {
+      "path": "research/DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md",
+      "sha256": "5a4a3fdfe09f8fb57cd4382e488cff66861891cd55fa3ebed19665c99cc88949"
+    },
+    {
+      "path": "research/DORTMUND_STYLE_EVIDENCE_AND_GENERATOR_TRANSLATION_01.md",
+      "sha256": "eb579beb151cc584e75debb92152386ae6bfe8314d2ec34a0f33fe18b9a6bc0f"
+    },
+    {
+      "path": "research/DORTMUND_TAGGING_ARCHIVE_AND_BIBLIOGRAPHY_01.md",
+      "sha256": "9f4b25c07f99f17226043936c64102789e1c82a69978c1727a19cb22ec7469dc"
+    },
+    {
+      "path": "research/DORTMUND_TRAINWRITING_CONTEMPORARY_SOURCES_1997_1999_01.md",
+      "sha256": "e0929c83edac74f98fdd5f577342a1c4bd81b98f7c9c41fef377cd8532883d73"
+    },
+    {
+      "path": "research/DORTMUND_VISUAL_CORPUS_AND_SOURCE_ACCESS_01.md",
+      "sha256": "6b73d014c9ad34366cbc696c6182ae49c6cf5f9b24f8d2f09f650714fb628981"
+    },
+    {
+      "path": "research/DORTMUND_WRITING_VOCABULARY_1987_01.md",
+      "sha256": "79278c91f2b549217f97fe213b2468513db43bd42b2a63cf8149f6629aaf73b2"
+    },
+    {
+      "path": "research/EDITOR_WORKSPACE_LAYOUT_01.md",
+      "sha256": "96312cf3e1e7fdb2d851a2590040527c437afbbbbe72ebf0c1c8448cb7450070"
+    },
+    {
+      "path": "research/EUROPEAN_STYLE_WRITING_1980S.md",
+      "sha256": "e911fb1f3152589ae2f7638fe2323c0b9fc1ba813170bdaac05fa0486c3592b3"
+    },
+    {
+      "path": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",
+      "sha256": "f4dfa28101b9b2bd95280386b27216f6677c12dd31c80d0053c44a91c0873b39"
+    },
+    {
+      "path": "research/GERMAN_GRAFFITI_PERIODICALS_HAMBURG_STYLEFILE_01.md",
+      "sha256": "83b22410d9b643addce310e73d4e127f269c1c3cd4f076e43494c5a0ebd2d641"
+    },
+    {
+      "path": "research/GERMAN_PUBLICATION_ARCHIVES_BIBLIOGRAPHY_01.md",
+      "sha256": "3f2a07f8a4c10b0c9960a23945c820f372e696f806bbd85fcc2df1b65050466b"
+    },
+    {
+      "path": "research/GERMAN_SCENE_ADDITIONAL_LEADS_01.md",
+      "sha256": "f3d291cdb0c632fb8a5c011b50c52f404e3991aef8d54a404ba55ea450821b43"
+    },
+    {
+      "path": "research/GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md",
+      "sha256": "541b30beda075024c942328afee5771b0ddfebf2d07a6ebabe602dafba6b09f9"
+    },
+    {
+      "path": "research/GERMAN_WRITERS_CREWS_AND_NETWORKS_01.md",
+      "sha256": "e07827fe2434fbc161e202583a3871c5720c6b6066113019fe1eca555d6c6155"
+    },
+    {
+      "path": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "sha256": "5c394334714dce121724f1c67967598bd960702c7823dcfc5e2af2477bbfe510"
+    },
+    {
+      "path": "research/GLYPH_CONSTRUCTION_GUIDE.md",
+      "sha256": "7c687899df0c48a7f5d1d50c94b2ba27fbc3f268542ebc5f1d501ac095165ea8"
+    },
+    {
+      "path": "research/GLYPH_CONSTRUCTION_LIBRARY.md",
+      "sha256": "7c915ca25048225e8b5f0cd912f1583a095aec2b4b150806e6e2983b1b750d1d"
+    },
+    {
+      "path": "research/GLYPH_CONSTRUCTION_PIPELINE_01.md",
+      "sha256": "545ebacefd1479adfe32ec9d542df863ddb8abe384a8aa5552472f4263e63d65"
+    },
+    {
+      "path": "research/GLYPH_DATA_CONTRACT_A_Z.md",
+      "sha256": "dc953a6955ee4cc1cc3fe3bd963da02baad01cec19fa212c4549b73a6abed589"
+    },
+    {
+      "path": "research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md",
+      "sha256": "ddaf3488a4115ee3c968f6b235b22aff2541c44769194bf2d9e89d254221baa6"
+    },
+    {
+      "path": "research/GLYPH_MASTER_AUDIT_V06.md",
+      "sha256": "d7a4b523e4f1cc671546254a9ef12b8f2b318c8a7bd5406e53d8153972819fd0"
+    },
+    {
+      "path": "research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md",
+      "sha256": "ba9807cb98c5fe7791add915187b1b1198f7fe1eb666eb0a15af668a2c25467d"
+    },
+    {
+      "path": "research/GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md",
+      "sha256": "fff85eefcd6958b00b3900e71cbb5cc2b71f79450b2be3c50037690e98e84baf"
+    },
+    {
+      "path": "research/GLYPH_REVIEW_PACKAGE_A_Z.md",
+      "sha256": "ca0b9bf88864ce48550c7efdcb4b5ef87e78f1be21fbe7f9a94bcea7fce0e206"
+    },
+    {
+      "path": "research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md",
+      "sha256": "2c58be2f67740c0a4aea83a3cc2ca691a356843ead23ffdc31ba442270ffa911"
+    },
+    {
+      "path": "research/GRAFFITI_FORMATS.md",
+      "sha256": "cd183ead796edec64844456b98d8455730b752fbcb31aa868e9b779940f124ec"
+    },
+    {
+      "path": "research/GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md",
+      "sha256": "ecbe5f130a9fdc2269af703be3aa68545c72b57abc0582d4e6ddaf4b9c6982bb"
+    },
+    {
+      "path": "research/HAMBURG_GRAFFITI_MAGAZINES_BIBLIOGRAPHY_01.md",
+      "sha256": "f9b3a57d0febc969c7d22cdc9509f26467e04b9102936bcc4a3d17854013de17"
+    },
+    {
+      "path": "research/HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md",
+      "sha256": "71ca80552e957a9133a9ea15abf636e355594148cb7960b92456c5ce14f239dc"
+    },
+    {
+      "path": "research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md",
+      "sha256": "966110b9f6af42eed419ecd33028e1c70804537c3478e0877ab5679615edcff0"
+    },
+    {
+      "path": "research/HANDSTYLE_PROOF_SHEET_SPEC_01.md",
+      "sha256": "e3dd3d97424ba0f3b0729fb1cf2684241720e63f44ba58d970ca6fd53d68502f"
+    },
+    {
+      "path": "research/HEIDELBERG_WRITING_HISTORY_AND_STYLE_RESEARCH_01.md",
+      "sha256": "04a1e25a1faec51f4240a5686d0c781c6310257cfa906531c8e3f615faf2bc2b"
+    },
+    {
+      "path": "research/INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md",
+      "sha256": "787001f6abb2988038a7622860423075c5dfc8fa963710be8729e8c819fea75f"
+    },
+    {
+      "path": "research/INGRID_GERMAN_GRAFFITI_DATABASE_DORTMUND_CORPUS_01.md",
+      "sha256": "8cd0bae83598b36c27924fcd69af64fbe98d92083d35b12bb7c7372630d67e4c"
+    },
+    {
+      "path": "research/INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md",
+      "sha256": "3f32612ed625227657292ac1da16e112a8e49065039a33ec31b432efe81b6b32"
+    },
+    {
+      "path": "research/INGRID_RDF_CONVERTER_AUDIT_01.md",
+      "sha256": "f9bc9f10dd0a3b705a0f321c57666a9407bf687e29ffa754b447f2da83f0c9e0"
+    },
+    {
+      "path": "research/INGRID_REGIONAL_RESEARCH_SCOPE_01.md",
+      "sha256": "6e56d6c6a66baf3d2bb986fd6347fbba5d78cf62ad4b95b7aa2cbe81c5806292"
+    },
+    {
+      "path": "research/INGRID_RESEARCH_RECORD_MODEL_01.md",
+      "sha256": "4dd4bcb698551d50e9b24a979ca007daecc87cae323c1d3d1988de7daee416d4"
+    },
+    {
+      "path": "research/LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md",
+      "sha256": "46c9c508f537c088f438348f5d65777752af4f10e968b9fac8b8c8823bf4d3b2"
+    },
+    {
+      "path": "research/LETTERING_STYLES.md",
+      "sha256": "21f57a2245d36bad0604601281fb7ac91d4bad9d96c24e8ed8aa3df037b1f672"
+    },
+    {
+      "path": "research/MARTHA_COOPER_AND_PHOTOGRAPHIC_ARCHIVES_01.md",
+      "sha256": "502dad6fe81d0c18b6d5e74fb220846fef3172ab44d1a0e2c15ac32491fe9b70"
+    },
+    {
+      "path": "research/MASTER_GLYPH_VARIANT_MATRIX_01.md",
+      "sha256": "0b00210e7dd49967763f24466323c87d9d2678aea6dec456c123adc7988f71f5"
+    },
+    {
+      "path": "research/MCL_OPAC_RECORD_CHECK_01.md",
+      "sha256": "ac7be478c7c4f3a96a99a4d891629a96783f11ca12dd2e4ae7873561f78774cd"
+    },
+    {
+      "path": "research/NYC_1990S_BOROUGH_SCENE_MAP_01.md",
+      "sha256": "55a10026828e23841af960a9e8be92da9a4e3939256d0505caa934979aac7e8d"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md",
+      "sha256": "6343e90a6390da1a902c0fa5df6b17f427afdbc4b66728b383b66660c2b294fd"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_02.md",
+      "sha256": "992118cb0a8e0400d3047f4a16011dd0761040e1b24e7fcbad42857dc4996fa3"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_03_QUEENS_AND_ZINES.md",
+      "sha256": "44fe72dbcb53171a7156cdaad72d9c997b1f082dc17d01e9d5d4ddbb27f5145b"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_04_SPORTS_OUTBURST_ZINES.md",
+      "sha256": "88d47ee15521a10ce9a4ed591b40d4daa99660cb1186ec5b6dc5ac9d1e36017d"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_HISTORY.md",
+      "sha256": "436d16bf4e92781c4c944b2534adde12864b45c2f58a62c179c9ae3493702655"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_SKATEBOARDING_AND_ALTERNATIVE_MEDIA_NETWORKS_01.md",
+      "sha256": "008b9041f089f74504a15848c778b95a213c1e0e1463e31e180be464c2758d38"
+    },
+    {
+      "path": "research/NYC_GRAFFITI_ZINES_AND_MEDIA_NETWORK_1990_1999_01.md",
+      "sha256": "fcb529acb0feeecc389de7b32d75bc217ee2eccff0172c607af63270b2763fa9"
+    },
+    {
+      "path": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "sha256": "94e1309ff93c3fa20f7cc5a1f73d803027470cd6fbd84c35883fd071929b7075"
+    },
+    {
+      "path": "research/NYC_SUBWAY_DECLINE_AND_AFTERLIVES.md",
+      "sha256": "f4977d2972a82b2feb0aa64e2b890a1ff057e6b7db412b53e1e3b61739c71cad"
+    },
+    {
+      "path": "research/NYC_WRITERS_CREWS_CHRONOLOGY_1990_1999_01.md",
+      "sha256": "da9d91dbaad60d149e33fae16705a10939999e7db93e631bd76fdb23f740d78e"
+    },
+    {
+      "path": "research/NYC_WRITING_1990S_TRANSITION_01.md",
+      "sha256": "8bd4e0c394a1966edfc1273c0bcc82243d0748367b1ded0d91c7c0600769e684"
+    },
+    {
+      "path": "research/NYC_WRITING_HISTORY_EVIDENCE_MAP_01.md",
+      "sha256": "24cc258917541a15539a678e814b40053fee45488db79b51cd03971762802234"
+    },
+    {
+      "path": "research/NYC_WRITING_SKATEBOARDING_AND_INDEPENDENT_MEDIA_1987_1997_01.md",
+      "sha256": "e0fc4e4342abc66f8a440d559169d7da719def9a98e0234fc4f09152d8da01c9"
+    },
+    {
+      "path": "research/PERSONAL_STYLE_ENGINE_01.md",
+      "sha256": "24dba4dae18f6621ec91b8bee7e86de74dd81998344b1e3d183760d6980b3cc0"
+    },
+    {
+      "path": "research/PHASE_2_AND_BUBBLE_LETTERING.md",
+      "sha256": "31d90318f775d079e4086e22eb83252a4e80d2f7d23c6e4380571d4fa45c68cc"
+    },
+    {
+      "path": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "sha256": "edf218f2b861461c828338b7368f6530adf9d441a6c2314ee56ab6819967b192"
+    },
+    {
+      "path": "research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md",
+      "sha256": "d93029fa63ea2e8697f68ad138d118d83ff1c28d6ded866ef2fba2288096db37"
+    },
+    {
+      "path": "research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md",
+      "sha256": "2a2be068117d8c6a99dfd2eba4d98380bcfecc64930ad0f7480ea60e76487124"
+    },
+    {
+      "path": "research/RAMMELLZEE_AND_KASE2_LETTER_THEORY.md",
+      "sha256": "203fc5cd4e64ce2fab30837323d3f3eb1f37be6c83c7694f8abca6e967153a96"
+    },
+    {
+      "path": "research/README.md",
+      "sha256": "a0d19d49bac53dc06eea76036e370f290517c0324875bf4baa5d86815769e47d"
+    },
+    {
+      "path": "research/RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md",
+      "sha256": "e78038d0f4c6d4f6466aef8e038c322e1201354bfa19265893bba4e443c91fe1"
+    },
+    {
+      "path": "research/RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md",
+      "sha256": "aab34dbc88498790c2f15fde73b3aa02718bc980beef46148e3b6d3f93879521"
+    },
+    {
+      "path": "research/RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md",
+      "sha256": "44e675c332210f560f46af744292ce116a3018536aad924ffb901dc86cf067ea"
+    },
+    {
+      "path": "research/SOLVER_GENERATOR_INTEGRATION_READINESS_01.md",
+      "sha256": "1a0d43b26a3e80b1a84f7df774e22d74d3e735d891221d5b298e8ee9d06bdc9c"
+    },
+    {
+      "path": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
+      "sha256": "8871c594643b97aa28b50390f3f6bc8c60fb0b3d3bc2ac90100fcb5c0a2a8e58"
+    },
+    {
+      "path": "research/SPECIFICATION_INTEGRATION_AUDIT_01.md",
+      "sha256": "7645daba1200564d741d8e7f1cfc033bc4f38f99f819a407436e6062bf8d5570"
+    },
+    {
+      "path": "research/STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md",
+      "sha256": "5735bc6309385c17835a89f8d959d3ad91757093d920272fdc1c5a6be10c2eb2"
+    },
+    {
+      "path": "research/STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md",
+      "sha256": "4824f775c20b2f450aacd504dd6175687f8bfadafd3920dec8caee01feffb68e"
+    },
+    {
+      "path": "research/STYLE_GRAMMAR_SPECIFICATIONS_01.md",
+      "sha256": "5228f0a0eb7c7a04417b44e0b97065f0e95e2e2d26c25f6d540b4cd2eadcceec"
+    },
+    {
+      "path": "research/THREE_D_AND_BLOCKBUSTER_LETTERING.md",
+      "sha256": "1e0a073db88100f477f62b1f40e0020011bf5706c2fb022fbe0f3dc96fe270d3"
+    },
+    {
+      "path": "research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md",
+      "sha256": "692381f1861c0c2c8dfb8aba0b3c6e1a5f16267d5ae69b54a1e6722dbe1bde6f"
+    },
+    {
+      "path": "research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md",
+      "sha256": "d58db7cbc53b808427ce89e4ce552db33a9474ea4ae8ef941327bde6fcf983f1"
+    },
+    {
+      "path": "research/VISUAL_CONSTRUCTION_BRIEF_01.md",
+      "sha256": "f048b72d07b0171adf7f92632f921d850400d5eaa7cf7fb65cf6a33ad2078da8"
+    },
+    {
+      "path": "research/VISUAL_REFERENCE_DATABASE.md",
+      "sha256": "92fb501a410d2d4b3c8ebf1c9773a7e128dd895ff484322f5c33b3f4887475b0"
+    },
+    {
+      "path": "research/WILDSTYLE_TRACY168_AND_LETTER_CONNECTIONS.md",
+      "sha256": "0130d239cff0e8f6e5d2d363b2de49621afe863e038a0c737669a755838ba862"
+    },
+    {
+      "path": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
+      "sha256": "e41469ce08b56afc09c15a95fe5bfb4d0547a5c911e641de95d85358a8cd3030"
+    },
+    {
+      "path": "research/WOMEN_WRITERS_EARLY_NEW_YORK.md",
+      "sha256": "923e0314c416c2a7a7964178c86a89a90638d230b37930243175aa20084f3cd6"
+    },
+    {
+      "path": "research/WRITERS_AND_INFLUENCES.md",
+      "sha256": "2cbbbaa0a510c4b32d4adb172949d31bdc57e5bb4d6e7ad49cd17634aabb2e38"
+    }
+  ],
+  "paths": [
+    {
+      "id": "path.from-name-to-piece",
+      "intro": "How writing a name in public became a culture of style — and why it is only one chapter in a longer history.",
+      "steps": [
+        {
+          "entry": "concept.public-inscription",
+          "framing": "Start before New York: people wrote in public long before the 1960s."
+        },
+        {
+          "entry": "concept.writing-and-graffiti",
+          "framing": "Why writers say “writing” and what the word covers."
+        },
+        {
+          "entry": "scene.philadelphia",
+          "framing": "A distinct name-writing culture in the 1960s."
+        },
+        {
+          "entry": "history.nyc-emergence",
+          "framing": "How New York writing became a recognisable culture."
+        },
+        {
+          "entry": "practice.tag",
+          "framing": "The basic unit: a name, written by hand."
+        },
+        {
+          "entry": "practice.handstyle",
+          "framing": "Where personal style begins."
+        },
+        {
+          "entry": "format.subway-train",
+          "framing": "How the subway turned names into a city-wide display."
+        },
+        {
+          "entry": "person.lady-pink",
+          "framing": "A writer of the subway era, in her own words."
+        },
+        {
+          "entry": "history.clean-train-campaign",
+          "framing": "What changed in 1989 — and what did not."
+        }
+      ],
+      "title": "From a name to a culture"
+    },
+    {
+      "id": "path.how-styles-travel",
+      "intro": "Films, books and visits carried New York writing abroad — and every scene made something of its own.",
+      "steps": [
+        {
+          "entry": "practice.sequential-train-photography",
+          "framing": "How temporary work became a lasting record."
+        },
+        {
+          "entry": "media.style-wars-and-subway-art",
+          "framing": "The film and the book that travelled."
+        },
+        {
+          "entry": "concept.circulation-and-adaptation",
+          "framing": "Circulation, not copying."
+        },
+        {
+          "entry": "scene.amsterdam",
+          "framing": "A local writing phase before hip-hop writing arrived."
+        },
+        {
+          "entry": "scene.paris",
+          "framing": "Radio, television and the banlieue."
+        },
+        {
+          "entry": "scene.sao-paulo",
+          "framing": "Pixação: its own letters, its own rules."
+        },
+        {
+          "entry": "scene.china",
+          "framing": "Three cities and a search for a Chinese visual language."
+        },
+        {
+          "entry": "concept.visibility-and-archival-gaps",
+          "framing": "Who the record remembers, and who it misses."
+        }
+      ],
+      "title": "How writing travelled"
+    },
+    {
+      "id": "path.read-a-letter",
+      "intro": "From the hand to the construction: the vocabulary NIGHTSHIFT uses to look at letters.",
+      "steps": [
+        {
+          "entry": "practice.handstyle",
+          "framing": "Gesture comes first."
+        },
+        {
+          "entry": "construction.letter-anatomy",
+          "framing": "Naming the parts of a letter."
+        },
+        {
+          "entry": "construction.negative-space",
+          "framing": "The empty shapes that keep letters readable."
+        },
+        {
+          "entry": "object.blackbook",
+          "framing": "Where letters are tried, changed and kept."
+        }
+      ],
+      "title": "Reading a letter"
+    },
+    {
+      "id": "path.ruhrgebiet-and-germany",
+      "intro": "How writing arrived in German cities through film and hip-hop and became regional — with its own letters, walls and archives.",
+      "steps": [
+        {
+          "entry": "concept.circulation-and-adaptation",
+          "framing": "How writing travelled, and why “copy” is the wrong word."
+        },
+        {
+          "entry": "scene.dortmund",
+          "framing": "The first hip-hop writers of the Ruhrgebiet."
+        },
+        {
+          "entry": "style.dortmund-style",
+          "framing": "Blocky, clear letters that became known well beyond the region."
+        },
+        {
+          "entry": "practice.hall-of-fame",
+          "framing": "Legal walls across the Ruhrgebiet."
+        },
+        {
+          "entry": "scene.hamburg",
+          "framing": "A city whose writing history survives in an archive."
+        }
+      ],
+      "title": "Writing in Germany: Dortmund and Hamburg"
+    }
+  ],
+  "sources": [
+    {
+      "accessed": null,
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",
+      "id": "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03",
+      "limitation": null,
+      "line": 99,
+      "localId": "DE-03",
+      "title": "Kulturwissenschaftliches Institut Essen, “Graffiti im Ruhrgebiet.”",
+      "urls": [
+        "https://blog.kulturwissenschaften.de/graffiti-im-ruhrgebiet/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",
+      "id": "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-12",
+      "limitation": null,
+      "line": 108,
+      "localId": "DE-12",
+      "title": "University of Hamburg CSMC, “Mirko Reisser (DAIM).”",
+      "urls": [
+        "https://www.csmc.uni-hamburg.de/about/artist-in-residence/mirko-reisser-daim.html"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",
+      "id": "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-13",
+      "limitation": null,
+      "line": 109,
+      "localId": "DE-13",
+      "title": "University of Hamburg CSMC, “Graffiti: Ephemeral Inscriptions in Urban Space — Style Writing in Hamburg in the 1980s and 1990s.”",
+      "urls": [
+        "https://www.csmc.uni-hamburg.de/uwa-i/cluster-projects/field-b/rfb09.html"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "academic heritage research with interviews.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1",
+      "limitation": "student thesis; use its interview material as situated testimony and corroborate exact dates with primary records.",
+      "line": 166,
+      "localId": "S1",
+      "title": "Robin Vermeulen, Graffiti in Amsterdam: De vergankelijkheid van een eigentijdse cultuur (Reinwardt Academie, Amsterdamse Hogeschool voor de Kunsten, 2015)",
+      "urls": [
+        "https://www.ahk.nl/media/lichtingen/docs/2015/Robin_Vermeulen_-_Graffiti_in_Amsterdam.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "specialist archive / collection-based history.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2",
+      "limitation": "archive's interpretive text; verify claims against the period material and interviews.",
+      "line": 173,
+      "localId": "S2",
+      "title": "Dutch Graffiti Library, Punk Graffiti Archives: The Netherlands",
+      "urls": [
+        "https://dutch-graffiti-library.nl/stories/punk-graffiti-archives-the-netherlands/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly book chapter.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S3",
+      "limitation": "currently available online excerpt; obtain the full publication and bibliographic details before final public copy.",
+      "line": 180,
+      "localId": "S3",
+      "title": "David Fieni, “Graffiti and Street Art in Paris”, in Graffiti and Street Art (academic book chapter)",
+      "urls": [
+        "https://www.academia.edu/28819780/Graffiti_and_Street_Art_in_Paris"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "municipal / regional public-history publication.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S4",
+      "limitation": "concise institutional overview; not a specialist history of every Paris-area crew.",
+      "line": 187,
+      "localId": "S4",
+      "title": "Ville de Paris / Plaine Commune, Petite histoire du street art (2021 publication)",
+      "urls": [
+        "https://cdn.paris.fr/paris/2022/01/06/c77b856c573321ba59dc5b402eb98c97.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "peer-reviewed historical research.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5",
+      "limitation": "not a history of modern hip-hop graffiti.",
+      "line": 194,
+      "localId": "S5",
+      "title": "Elizabeth Sage, “Jaytalking in Fin-de-Siècle Paris: Streets, Graffiti, and the Police”, Journal of Social History 49(4), 2016, pp. 855–880",
+      "urls": [
+        "https://doi.org/10.1093/jsh/shv088"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly article.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S6",
+      "limitation": "claims about the origin of particular letterform features are presented as competing interpretations.",
+      "line": 201,
+      "localId": "S6",
+      "title": "Alexandre Barbosa Pereira, “Inscrição e circulação: novas visibilidades e configurações do espaço público em São Paulo” (2012)",
+      "urls": [
+        "https://www.scielo.br/j/nec/a/CntcCWDqwGFNFFqLYTYvMRG/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "university dissertation.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S7",
+      "limitation": "broad study of mural painting and writing; use specific chapters for individual scene claims.",
+      "line": 208,
+      "localId": "S7",
+      "title": "Pedro Moreira Graça, O Muro de fora: Matrizes e desenvolvimentos da pintura e escritura mural paulistana (University of São Paulo, master's dissertation, 2017)",
+      "urls": [
+        "https://teses.usp.br/teses/disponiveis/8/8133/tde-14022019-105126/pt-br.html",
+        "https://teses.usp.br/teses/disponiveis/8/8133/tde-14022019-105126/publico/2017_PedroMoreiraGraca_VOrig.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly article.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S8",
+      "limitation": "conceptual critique; not a complete historical chronology.",
+      "line": 216,
+      "localId": "S8",
+      "title": "Marcos Zibordi, “Contraponto ao reducionismo ‘grafite versus pichação’ em São Paulo, capital” (2019)",
+      "urls": [
+        "https://doi.org/10.21814/rlec.2122"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "university research publication with interviews.",
+      "evidenceUse": [],
+      "file": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
+      "id": "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9",
+      "limitation": "the editors explicitly state that three selected cities and interviewed artists do not exhaustively represent the Chinese scene.",
+      "line": 223,
+      "localId": "S9",
+      "title": "Adriana Iezzi (ed.), Marta R. Bisceglia and Martina Merenda, Graffiti in China (1088press / University of Bologna, 2024)",
+      "urls": [
+        "https://doi.org/10.12878/1088pressbyte2024_2",
+        "https://cris.unibo.it/retrieve/handle/11585/972778/a7a4c11a-d66c-46fb-a576-62a82a3015df/Graffiti-in-China_PDF%20versione%20downloaded.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly monograph.",
+      "evidenceUse": [
+        "NYC-002",
+        "NYC-004",
+        "NYC-008",
+        "NYC-012"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
+      "limitation": "book access may be restricted; do not quote beyond the visible publisher material without consulting the full text.",
+      "line": 86,
+      "localId": "S1",
+      "title": "Joe Austin, Taking the Train (2001)",
+      "urls": [
+        "https://www.jstor.org/stable/10.7312/aust11142"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "doctoral dissertation.",
+      "evidenceUse": [
+        "NYC-002",
+        "NYC-003",
+        "NYC-007"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2",
+      "limitation": "this is one scholarly interpretation; regional chronology should be supported by local sources in each scene chapter.",
+      "line": 94,
+      "localId": "S2",
+      "title": "Abram Coetsee, New York Subway Style Writing: Aesthetics, Infrastructure and Technology (Cornell University, PhD dissertation, 2022)",
+      "urls": [
+        "https://ecommons.cornell.edu/bitstreams/3d4013d0-212e-4c5a-bd27-6a3b763732ab/download"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "peer-reviewed ethnographic article drawing on interviews with 20 NYC writers and observation.",
+      "evidenceUse": [
+        "NYC-001",
+        "NYC-004",
+        "NYC-012"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
+      "limitation": "article focuses on legal graffiti and its changing place in the culture; it is not a comprehensive origin history.",
+      "line": 102,
+      "localId": "S3",
+      "title": "Ronald Kramer, “Painting with permission: Legal graffiti in New York City” (2010)",
+      "urls": [
+        "https://journals.sagepub.com/doi/10.1177/1466138109339122"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly handbook chapter.",
+      "evidenceUse": [
+        "NYC-001",
+        "NYC-004",
+        "NYC-005",
+        "NYC-006"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4",
+      "limitation": "its compact origin summary should be read alongside Austin's more nuanced account; do not reproduce the TAKI story as uncontested fact.",
+      "line": 110,
+      "localId": "S4",
+      "title": "Jonathan Ilan and Gregory J. Snyder, “Graffiti” (Oxford Handbook of Criminology and Criminal Justice, 2016)",
+      "urls": [
+        "https://academic.oup.com/edited-volume/41333/chapter/352362769",
+        "https://doi.org/10.1093/oxfordhb/9780199935383.013.144"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "museum exhibition record.",
+      "evidenceUse": [
+        "NYC-009",
+        "NYC-010"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
+      "limitation": "institutional exhibition text is not a substitute for item-level metadata or image rights.",
+      "line": 119,
+      "localId": "S5",
+      "title": "The Bronx Museum, “Henry Chalfant: Art vs. Transit, 1977–1987”",
+      "urls": [
+        "https://bronxmuseum.org/exhibition/henry-chalfant-art-vs-transit-1977-1987/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "archival finding aid.",
+      "evidenceUse": [
+        "NYC-009",
+        "NYC-010"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6",
+      "limitation": "use the archive's item-level records for individual photographs; the finding aid does not itself grant reuse rights.",
+      "line": 127,
+      "localId": "S6",
+      "title": "Smithsonian, Henry Chalfant Subway Graffiti Series Photographs",
+      "urls": [
+        "https://anacostia.si.edu/collection/archives/sova-acma-06-124-9",
+        "https://sirismm.si.edu/EADpdfs/ACMA.06-124.9.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "Smithsonian bibliographic record.",
+      "evidenceUse": [
+        "NYC-003",
+        "NYC-010"
+      ],
+      "file": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
+      "id": "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S7",
+      "limitation": "table of contents alone is not evidence for the detailed claims within the book.",
+      "line": 136,
+      "localId": "S7",
+      "title": "Smithsonian Libraries and Archives, The History of American Graffiti",
+      "urls": [
+        "https://www.si.edu/object/history-american-graffiti-roger-gastman-and-caleb-neelon%3Asiris_sil_1041095"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "doctoral dissertation.",
+      "evidenceUse": [],
+      "file": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "id": "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S1",
+      "limitation": "historical synthesis relies on a range of earlier sources, including some specialist publications and retrospective accounts; verify important origin and transmission claims independently.",
+      "line": 153,
+      "localId": "S1",
+      "title": "Heidi Franziska Pfeiffenberger, Style Writing. Skripturale Ästhetik zwischen Text und Bild am Beispiel von Karlsruhe und Mannheim (KIT dissertation, 2017)",
+      "urls": [
+        "https://publikationen.bibliothek.kit.edu/1000079409/6209138"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly ethnographic monograph.",
+      "evidenceUse": [],
+      "file": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "id": "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S2",
+      "limitation": "full text access is restricted in the currently available record; consult the book for detailed claims and page references before final publication.",
+      "line": 161,
+      "localId": "S2",
+      "title": "Tyson Mitman, The Art of Defiance: Graffiti, Politics and the Reimagined City in Philadelphia (Intellect, 2018)",
+      "urls": [
+        "https://www.jstor.org/stable/j.ctv36xw37f",
+        "https://doi.org/10.2307/j.ctv36xw37f"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "public history with a source list.",
+      "evidenceUse": [],
+      "file": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "id": "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S3",
+      "limitation": "secondary synthesis; attribute detailed recollections and dates to the sources used.",
+      "line": 169,
+      "localId": "S3",
+      "title": "Menika Dirkson, “The Graffiti Art Movement in Philadelphia,” Picturing Black History",
+      "urls": [
+        "https://picturingblackhistory.org/the-graffiti-art-movement-in-philadelphia/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "specialist field research and visual documentation.",
+      "evidenceUse": [],
+      "file": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "id": "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4",
+      "limitation": "the author's interpretation and selected field observations are not a complete census; practitioner terminology should be attributed.",
+      "line": 176,
+      "localId": "S4",
+      "title": "François Chastanet, “The Survival of The Whip” (2024 report; expanded online edition 2025)",
+      "urls": [
+        "https://francoischastanet.com/philadelphia-handstyles/"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "college gallery exhibition and curatorial essay.",
+      "evidenceUse": [],
+      "file": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
+      "id": "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5",
+      "limitation": "curatorial interpretation; not a substitute for scholarly or primary historical evidence.",
+      "line": 183,
+      "localId": "S5",
+      "title": "RJ Rushmore, ALL BIG LETTERS, Haverford College Cantor Fitzgerald Gallery (2017)",
+      "urls": [
+        "https://exhibits.haverford.edu/allbigletters/"
+      ]
+    },
+    {
+      "accessed": "2026-11-14",
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
+      "id": "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-002",
+      "limitation": null,
+      "line": 13,
+      "localId": "SR-NYC-002",
+      "title": "NYU Fales, Martin Wong Papers MSS.102",
+      "urls": [
+        "https://findingaids.library.nyu.edu/fales/mss_102/"
+      ]
+    },
+    {
+      "accessed": "2026-11-14",
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
+      "id": "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-003",
+      "limitation": null,
+      "line": 22,
+      "localId": "SR-NYC-003",
+      "title": "MCNY, City as Canvas educator guide",
+      "urls": [
+        "https://mcny.org/sites/default/files/2016-11/City%20as%20Canvas%20Pre%20and%20Post%20Material%20Background%20Information.pdf"
+      ]
+    },
+    {
+      "accessed": "2026-11-14",
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
+      "id": "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004",
+      "limitation": null,
+      "line": 31,
+      "localId": "SR-NYC-004",
+      "title": "MCNY collections essay, Martin Wong Papers",
+      "urls": [
+        "https://blog.mcny.org/2014/12/23/martin-wongs-papers-a-deeper-look-at-the-graffiti-art-collector/"
+      ]
+    },
+    {
+      "accessed": "2026-11-14",
+      "evidenceClass": null,
+      "evidenceUse": [],
+      "file": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
+      "id": "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-006",
+      "limitation": null,
+      "line": 47,
+      "localId": "SR-NYC-006",
+      "title": "MCNY, Above Ground",
+      "urls": [
+        "https://www.mcny.org/sites/default/files/2024-08/Above%20Ground%20Final.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "scholarly monograph / transnational ethnography.",
+      "evidenceUse": [],
+      "file": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
+      "id": "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S1",
+      "limitation": "publisher abstract supports the overall argument; individual regional and biographical claims require consultation of the relevant chapters.",
+      "line": 157,
+      "localId": "S1",
+      "title": "Jessica Nydia Pabón-Colón, Graffiti Grrlz: Performing Feminism in the Hip Hop Diaspora (NYU Press, 2018)",
+      "urls": [
+        "https://nyupress.org/9781479821334/graffiti-grrlz/",
+        "https://academic.oup.com/nyu-press-scholarship-online/book/28722",
+        "https://doi.org/10.18574/nyu/9781479806157.001.0001"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "primary interview / federal arts agency publication.",
+      "evidenceUse": [],
+      "file": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
+      "id": "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2",
+      "limitation": "retrospective testimony; attribute memories to Lady Pink and cross-check dates where precision matters.",
+      "line": 166,
+      "localId": "S2",
+      "title": "Jennifer Kreizman, “Pure Expression: Lady Pink and the Evolution of Street Art,” NEA Arts, no. 2 (2013)",
+      "urls": [
+        "https://www.arts.gov/sites/default/files/nea_arts/neaARTS_2013_v2.pdf"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "doctoral dissertation.",
+      "evidenceUse": [],
+      "file": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
+      "id": "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3",
+      "limitation": "focused on subway writing and selected case studies; not a comprehensive gender history.",
+      "line": 174,
+      "localId": "S3",
+      "title": "Abram Coetsee, New York Subway Style Writing: Aesthetics, Infrastructure and Technology (Cornell University PhD dissertation, 2022)",
+      "urls": [
+        "https://ecommons.cornell.edu/bitstream/handle/1813/112907/Coetsee_cornellgrad_0058_13348.pdf?sequence=1"
+      ]
+    },
+    {
+      "accessed": null,
+      "evidenceClass": "doctoral research / literature review.",
+      "evidenceUse": [],
+      "file": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
+      "id": "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S4",
+      "limitation": "use the original early studies it cites for precise biographical claims; the literature review is not itself a primary biography.",
+      "line": 182,
+      "localId": "S4",
+      "title": "Malin Fransberg, doctoral research on women in graffiti / street art (Tampere University)",
+      "urls": [
+        "https://trepo.tuni.fi/bitstream/handle/10024/130296/978-952-03-1914-4.pdf?sequence=2"
+      ]
+    }
+  ],
+  "taxonomy": {
+    "claimKinds": [
+      "documented-fact",
+      "institutional-account",
+      "practitioner-account",
+      "scholarly-interpretation",
+      "editorial-synthesis",
+      "nightshift-design-inference"
+    ],
+    "editorialStatus": [
+      "draft",
+      "source-checked",
+      "editorial-reviewed",
+      "approved-for-archive",
+      "superseded"
+    ],
+    "entryTypes": {
+      "composition": "Composition",
+      "concept": "Concept / glossary",
+      "construction": "Letter construction",
+      "crew": "Crew / network",
+      "event": "Event",
+      "format": "Format / surface",
+      "history": "History / period",
+      "media": "Media / publication",
+      "object": "Object / archive",
+      "person": "Person / writer",
+      "practice": "Practice",
+      "scene": "Place / scene",
+      "style": "Letterform style",
+      "technique": "Technique / material"
+    },
+    "evidence": [
+      "strong",
+      "good",
+      "contextual",
+      "unverified-lead"
+    ],
+    "imageRights": [
+      "none",
+      "original-diagram",
+      "link-only",
+      "rights-unknown",
+      "permission-requested",
+      "cleared",
+      "do-not-reuse"
+    ]
+  },
+  "timeline": [
+    {
+      "certainty": "approximate",
+      "claims": [
+        "concept.public-inscription#c1"
+      ],
+      "date": "late 19th century",
+      "entry": "concept.public-inscription",
+      "id": "ev.paris-jaytalking",
+      "sort": 1890,
+      "title": "Public street writing in fin-de-siècle Paris"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "scene.philadelphia#c1",
+        "scene.philadelphia#c2"
+      ],
+      "date": "c. 1965",
+      "entry": "scene.philadelphia",
+      "id": "ev.philadelphia-wall-writers",
+      "sort": 1965,
+      "title": "Wall writers active in North Philadelphia"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "NYC-002"
+      ],
+      "date": "late 1960s – early 1970s",
+      "entry": "history.nyc-emergence",
+      "id": "ev.nyc-stylised-writing",
+      "sort": 1968,
+      "title": "Young New Yorkers turn name writing into stylised writing"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "NYC-005"
+      ],
+      "date": "1971",
+      "entry": "history.nyc-emergence",
+      "id": "ev.taki-183-article",
+      "sort": 1971,
+      "title": "A New York Times story makes TAKI 183 publicly visible"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "NYC-004"
+      ],
+      "date": "early–mid 1970s",
+      "entry": "history.nyc-emergence",
+      "id": "ev.nyc-culture-formed",
+      "sort": 1973,
+      "title": "A recognisable New York writing culture has formed"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "practice.sequential-train-photography#c2"
+      ],
+      "date": "1973",
+      "entry": "practice.sequential-train-photography",
+      "id": "ev.chalfant-arrives",
+      "sort": 1973.5,
+      "title": "Henry Chalfant moves to New York; sequential train photography follows"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "scene.amsterdam#c1"
+      ],
+      "date": "c. 1977",
+      "entry": "scene.amsterdam",
+      "id": "ev.amsterdam-punk-writing",
+      "sort": 1977,
+      "title": "Punk-linked name writing in Amsterdam"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "person.lady-pink#c1"
+      ],
+      "date": "1979",
+      "entry": "person.lady-pink",
+      "id": "ev.lady-pink-begins",
+      "sort": 1979,
+      "title": "Lady Pink begins painting, including subway cars"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "history.institutional-recognition#c1"
+      ],
+      "date": "1980",
+      "entry": "history.institutional-recognition",
+      "id": "ev.fashion-moda",
+      "sort": 1980,
+      "title": "Fashion MODA exhibition Graffiti Art Success for America"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "scene.sao-paulo#c1"
+      ],
+      "date": "c. 1980",
+      "entry": "scene.sao-paulo",
+      "id": "ev.pixacao-visible",
+      "sort": 1980.5,
+      "title": "Pixação becomes visible in São Paulo"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "media.style-wars-and-subway-art#c1",
+        "NYC-010"
+      ],
+      "date": "1983",
+      "entry": "media.style-wars-and-subway-art",
+      "id": "ev.style-wars",
+      "sort": 1983,
+      "title": "Style Wars documentary"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "NYC-010"
+      ],
+      "date": "1984",
+      "entry": "media.style-wars-and-subway-art",
+      "id": "ev.subway-art",
+      "sort": 1984,
+      "title": "Subway Art photo book"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "scene.paris#c1"
+      ],
+      "date": "1984",
+      "entry": "scene.paris",
+      "id": "ev.stalingrad-block-parties",
+      "sort": 1984.5,
+      "title": "Hip-hop block parties at Stalingrad, Paris"
+    },
+    {
+      "certainty": "approximate",
+      "claims": [
+        "scene.dortmund#c1",
+        "scene.dortmund#c2"
+      ],
+      "date": "mid-1980s",
+      "entry": "scene.dortmund",
+      "id": "ev.ruhrgebiet-established",
+      "sort": 1985,
+      "title": "Graffiti becomes established in the Ruhrgebiet; Dortmund leads"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "scene.hamburg#c2"
+      ],
+      "date": "1989",
+      "entry": "scene.hamburg",
+      "id": "ev.daim-hamburg",
+      "sort": 1989.1,
+      "title": "Mirko Reisser (DAIM) becomes active in Hamburg's scene"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "history.clean-train-campaign#c1"
+      ],
+      "date": "spring 1989",
+      "entry": "history.clean-train-campaign",
+      "id": "ev.clean-train",
+      "sort": 1989.3,
+      "title": "Subway fleet declared graffiti-free"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "history.institutional-recognition#c2"
+      ],
+      "date": "August 1989",
+      "entry": "history.institutional-recognition",
+      "id": "ev.museum-american-graffiti",
+      "sort": 1989.6,
+      "title": "Martin Wong's Museum of American Graffiti opens"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "practice.hall-of-fame#c1"
+      ],
+      "date": "April 2022",
+      "entry": "practice.hall-of-fame",
+      "id": "ev.dortmund-hall-of-fame",
+      "sort": 2022.3,
+      "title": "Dortmund harbour Hall of Fame opens"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "scene.china#c1"
+      ],
+      "date": "2024",
+      "entry": "scene.china",
+      "id": "ev.graffiti-in-china",
+      "sort": 2024,
+      "title": "Graffiti in China research volume (Beijing, Shanghai, Chengdu)"
+    },
+    {
+      "certainty": "documented",
+      "claims": [
+        "history.institutional-recognition#c3"
+      ],
+      "date": "2024–2025",
+      "entry": "history.institutional-recognition",
+      "id": "ev.above-ground",
+      "sort": 2024.9,
+      "title": "Above Ground exhibition at the Museum of the City of New York"
+    }
+  ]
+}
