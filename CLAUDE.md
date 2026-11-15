@@ -375,6 +375,9 @@ The initial A prototype was reviewed against the master prompt and corrected in 
 - proportion language explicitly treats width and crossbar position as design choices, not universal ratios;
 - movement/ductus inference is qualified rather than implied as fact.
 
-Latest SVG commit: `ace72442b12de89947bd4ef386b301d5037392fd`.
+Latest SVG commit after proportion-panel reflow and visibly differentiated variation geometry: `2032b556cc1b25d4373de0c798f5aa07120d3992` (subsequently verified at blob `bda38d5ecd160c63122db078dda4402890af6340`).
 
 This is a content-structure correction pass, not yet a full visual/rendering sign-off. Before A becomes the canonical benchmark, inspect the rendered SVG at actual A4 landscape size, check label collisions/clipping and verify that the diagrams communicate the five construction stages unambiguously. Do not scale the study to B until that review is complete.
+
+
+**Second QA pass:** proportion panel labels and diagram were rearranged to avoid the long explanatory line running beyond the panel; the five form variants now visibly differ (narrow, wide, slanted, raised crossbar, organic crossbar). Structural checks confirm all nine sections, expanded anatomy labels and qualified ductus language. A rendered print-size visual inspection is still outstanding; do not describe the sheet as fully print-approved yet.
