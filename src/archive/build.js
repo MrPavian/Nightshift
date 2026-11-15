@@ -151,11 +151,17 @@ export function buildArchive({ files, diagrams = [] }) {
 
   // 7. Output (deterministic ordering; only cited sources are exported).
   const citedSources = new Set([...claimOut.values()].flatMap((c) => c.sources).filter((s) => !s.startsWith('doc:')));
+  const usedFiles = new Set(['research/archive/TIMELINE.md', 'research/archive/LEARNING_PATHS.md', ...entries.map((e) => e.file)]);
+  for (const c of claimOut.values()) {
+    if (c.ledger) usedFiles.add(c.ledger.file);
+    for (const s of c.sources) usedFiles.add(s.startsWith('doc:') ? s.slice(4) : sources.get(s)?.file);
+  }
   const backlinks = {};
   for (const e of entries) for (const g of e.generatorLinks) (backlinks[g.capability] ??= []).push(e.id);
   const data = {
     archiveSchemaVersion: ARCHIVE_SCHEMA_VERSION,
-    generatedFrom: files.map((f) => ({ path: f.path, sha256: sha256Hex(f.text) })).sort((a, b) => a.path.localeCompare(b.path)),
+    // Hash only the files the archive actually draws on, so unrelated research edits do not invalidate it.
+    generatedFrom: files.filter((f) => usedFiles.has(f.path)).map((f) => ({ path: f.path, sha256: sha256Hex(f.text) })).sort((a, b) => a.path.localeCompare(b.path)),
     taxonomy: { entryTypes: ENTRY_TYPES, claimKinds: CLAIM_KINDS, evidence: EVIDENCE, editorialStatus: EDITORIAL, imageRights: IMAGE_RIGHTS },
     entries: entries.map(({ _refs, claims, unknownSections, generator, ...e }) => ({
       ...e,

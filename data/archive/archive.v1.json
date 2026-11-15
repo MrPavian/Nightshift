@@ -2709,26 +2709,6 @@
       "sha256": "925bfa311f6a8dd535941f06ba8b6f54fe3bb1118547a10d62e1dae29485e185"
     },
     {
-      "path": "research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md",
-      "sha256": "208b410b8b092d82bac15c694016bbfa32df0a279d5b101101c22000ac32a5c3"
-    },
-    {
-      "path": "research/A_Z_STYLE_GRAMMAR_APPLICATION_MATRIX_01.md",
-      "sha256": "a9f3480280aaa2510b143b783078af56854d99417510c6ecd36c27ee709193e6"
-    },
-    {
-      "path": "research/ABGRS_GLYPH_CONSTRUCTION_IMPLEMENTATION_SPEC_01.md",
-      "sha256": "93b8da53318a5f22671079a1e94e6e103f2c61663c39b2185c328a36cb83ecdb"
-    },
-    {
-      "path": "research/AEROSOL_TECHNOLOGY_CAPS_AND_PAINT_PRACTICE.md",
-      "sha256": "ce35427090c1732b115bb5967a2c257c41c42ae960dbaa059377ce738324a018"
-    },
-    {
-      "path": "research/ALPHABET_TEST_MATRIX_AND_GLYPH_VARIANTS.md",
-      "sha256": "bc4c0c15b2839c3f04c5af1d3209e68e0e5ff14ea25f1e33b8b2fd2594fb63aa"
-    },
-    {
       "path": "research/archive/entries/concept.circulation-and-adaptation.md",
       "sha256": "ae5ba7a5e602d5aa2d54309b79ab89fda63d586a12377931a61222d039294748"
     },
@@ -2841,36 +2821,8 @@
       "sha256": "3d83ab8a156d7068e141390a481933664ea0a8bafe6a6600ebb1c82eaf470197"
     },
     {
-      "path": "research/archive/README.md",
-      "sha256": "abe2c1c07511a09b79bd1e69769d4d1d9ffe198ac2bde585d48e0c6b05490c07"
-    },
-    {
       "path": "research/archive/TIMELINE.md",
       "sha256": "640f84dc83f4831d07711354a4c95f2f363e9543f8328b9d42e997d22bf43b5b"
-    },
-    {
-      "path": "research/BERLIN_DECADES_TRILOGY_BIBLIOGRAPHY_01.md",
-      "sha256": "188f76263a1f5a78ddf3d821608fdd4f6eedaf3dc7307d43c9f1bbb8c7e5689e"
-    },
-    {
-      "path": "research/BLACKBOOK_ARCHIVE_CONTENT_EXPANSION_01.md",
-      "sha256": "9c2525d76c9f5eee4091cc097a3e8fa9f874d59a622539ee97ae3f968ae65e6c"
-    },
-    {
-      "path": "research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md",
-      "sha256": "c908b4cfd1768563ef816f33aed9f41cfe4db1c6c0ec0eec90c7b94bd579b5a5"
-    },
-    {
-      "path": "research/BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_01.md",
-      "sha256": "b4761b43ef75d7404606f898f04406dcd11fd0f3699c9ef49e0700bca121b955"
-    },
-    {
-      "path": "research/BLACKBOOK_ARCHIVE_GERMAN_CONTENT_PILOT_02.md",
-      "sha256": "8adc3e7b09f0528e7fd8d88044a6e3ce1798f9486e9388f6ea75f50479f3ffca"
-    },
-    {
-      "path": "research/BLACKBOOK_ARCHIVE_TEST_CASES_01.md",
-      "sha256": "c3cabe27d6c44da2137054b13214243909c7f51817b6fe37b432aa0f81dd931a"
     },
     {
       "path": "research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md",
@@ -2881,136 +2833,20 @@
       "sha256": "e414befb7416ba17ec36ada373536b5d250d95870a9fb01dfd320ff335542bd7"
     },
     {
-      "path": "research/CROSS_DOMAIN_TEST_FIXTURES_02.md",
-      "sha256": "27b0e4fa36c974085e6e8db13d8d4c56650367cd93704688da5c0295676e6fe5"
-    },
-    {
-      "path": "research/DORTMUND_ALL_SURFACE_TAGGING_CORPUS_01.md",
-      "sha256": "2fa1ff3aa0a467b42c503663353ffa9b92164e43c046da955e982c900c388a54"
-    },
-    {
-      "path": "research/DORTMUND_DA_KUKSE_WA_2020_REPRINT_ACCESS_01.md",
-      "sha256": "2fff7ff6fe0616a114af137317a8714c5ab73470eede312afcc502edff38cab9"
-    },
-    {
-      "path": "research/DORTMUND_MASON_LONGITUDINAL_PUBLICATION_CORPUS_01.md",
-      "sha256": "b1065846529704d115e07d0abbee8b350d5e8f1957511ec58335b2262d758436"
-    },
-    {
-      "path": "research/DORTMUND_MOVING_IMAGE_ARCHIVE_1994_1997_01.md",
-      "sha256": "281bf94e0f618fd02d82b36cc710929034c90e5cd0ba94da803fc021aa4b6f7b"
-    },
-    {
-      "path": "research/DORTMUND_ORAL_HISTORY_AND_VISUAL_CHRONOLOGY_01.md",
-      "sha256": "ce019e528e1d258193105bbeed0f07c0d77efc954da380df51d2636e5655d308"
-    },
-    {
-      "path": "research/DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md",
-      "sha256": "d50e4ad93acba7e4e099660ec8feaa31336dab85df42a051dacb871515d37d83"
-    },
-    {
-      "path": "research/DORTMUND_PUBLICATION_BIBLIOGRAPHY_AND_VISUAL_CORPUS_01.md",
-      "sha256": "47788e9995af97a20f1001a5658c03a79810bd502511f801b2075294a6f6c6f6"
-    },
-    {
-      "path": "research/DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md",
-      "sha256": "5a4a3fdfe09f8fb57cd4382e488cff66861891cd55fa3ebed19665c99cc88949"
-    },
-    {
-      "path": "research/DORTMUND_STYLE_EVIDENCE_AND_GENERATOR_TRANSLATION_01.md",
-      "sha256": "eb579beb151cc584e75debb92152386ae6bfe8314d2ec34a0f33fe18b9a6bc0f"
-    },
-    {
-      "path": "research/DORTMUND_TAGGING_ARCHIVE_AND_BIBLIOGRAPHY_01.md",
-      "sha256": "9f4b25c07f99f17226043936c64102789e1c82a69978c1727a19cb22ec7469dc"
-    },
-    {
-      "path": "research/DORTMUND_TRAINWRITING_CONTEMPORARY_SOURCES_1997_1999_01.md",
-      "sha256": "e0929c83edac74f98fdd5f577342a1c4bd81b98f7c9c41fef377cd8532883d73"
-    },
-    {
-      "path": "research/DORTMUND_VISUAL_CORPUS_AND_SOURCE_ACCESS_01.md",
-      "sha256": "6b73d014c9ad34366cbc696c6182ae49c6cf5f9b24f8d2f09f650714fb628981"
-    },
-    {
-      "path": "research/DORTMUND_WRITING_VOCABULARY_1987_01.md",
-      "sha256": "79278c91f2b549217f97fe213b2468513db43bd42b2a63cf8149f6629aaf73b2"
-    },
-    {
-      "path": "research/EDITOR_WORKSPACE_LAYOUT_01.md",
-      "sha256": "96312cf3e1e7fdb2d851a2590040527c437afbbbbe72ebf0c1c8448cb7450070"
-    },
-    {
-      "path": "research/EUROPEAN_STYLE_WRITING_1980S.md",
-      "sha256": "e911fb1f3152589ae2f7638fe2323c0b9fc1ba813170bdaac05fa0486c3592b3"
-    },
-    {
       "path": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",
       "sha256": "f4dfa28101b9b2bd95280386b27216f6677c12dd31c80d0053c44a91c0873b39"
-    },
-    {
-      "path": "research/GERMAN_GRAFFITI_PERIODICALS_HAMBURG_STYLEFILE_01.md",
-      "sha256": "83b22410d9b643addce310e73d4e127f269c1c3cd4f076e43494c5a0ebd2d641"
-    },
-    {
-      "path": "research/GERMAN_PUBLICATION_ARCHIVES_BIBLIOGRAPHY_01.md",
-      "sha256": "3f2a07f8a4c10b0c9960a23945c820f372e696f806bbd85fcc2df1b65050466b"
-    },
-    {
-      "path": "research/GERMAN_SCENE_ADDITIONAL_LEADS_01.md",
-      "sha256": "f3d291cdb0c632fb8a5c011b50c52f404e3991aef8d54a404ba55ea450821b43"
-    },
-    {
-      "path": "research/GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md",
-      "sha256": "541b30beda075024c942328afee5771b0ddfebf2d07a6ebabe602dafba6b09f9"
-    },
-    {
-      "path": "research/GERMAN_WRITERS_CREWS_AND_NETWORKS_01.md",
-      "sha256": "e07827fe2434fbc161e202583a3871c5720c6b6066113019fe1eca555d6c6155"
     },
     {
       "path": "research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md",
       "sha256": "5c394334714dce121724f1c67967598bd960702c7823dcfc5e2af2477bbfe510"
     },
     {
-      "path": "research/GLYPH_CONSTRUCTION_GUIDE.md",
-      "sha256": "7c687899df0c48a7f5d1d50c94b2ba27fbc3f268542ebc5f1d501ac095165ea8"
-    },
-    {
-      "path": "research/GLYPH_CONSTRUCTION_LIBRARY.md",
-      "sha256": "7c915ca25048225e8b5f0cd912f1583a095aec2b4b150806e6e2983b1b750d1d"
-    },
-    {
-      "path": "research/GLYPH_CONSTRUCTION_PIPELINE_01.md",
-      "sha256": "545ebacefd1479adfe32ec9d542df863ddb8abe384a8aa5552472f4263e63d65"
-    },
-    {
-      "path": "research/GLYPH_DATA_CONTRACT_A_Z.md",
-      "sha256": "dc953a6955ee4cc1cc3fe3bd963da02baad01cec19fa212c4549b73a6abed589"
-    },
-    {
       "path": "research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md",
       "sha256": "ddaf3488a4115ee3c968f6b235b22aff2541c44769194bf2d9e89d254221baa6"
     },
     {
-      "path": "research/GLYPH_MASTER_AUDIT_V06.md",
-      "sha256": "d7a4b523e4f1cc671546254a9ef12b8f2b318c8a7bd5406e53d8153972819fd0"
-    },
-    {
       "path": "research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md",
       "sha256": "ba9807cb98c5fe7791add915187b1b1198f7fe1eb666eb0a15af668a2c25467d"
-    },
-    {
-      "path": "research/GLYPH_PARAMETER_DEPENDENCY_CONTRACT_01.md",
-      "sha256": "fff85eefcd6958b00b3900e71cbb5cc2b71f79450b2be3c50037690e98e84baf"
-    },
-    {
-      "path": "research/GLYPH_REVIEW_PACKAGE_A_Z.md",
-      "sha256": "ca0b9bf88864ce48550c7efdcb4b5ef87e78f1be21fbe7f9a94bcea7fce0e206"
-    },
-    {
-      "path": "research/GLYPH_VISUAL_REVIEW_PROTOCOL_01.md",
-      "sha256": "2c58be2f67740c0a4aea83a3cc2ca691a356843ead23ffdc31ba442270ffa911"
     },
     {
       "path": "research/GRAFFITI_FORMATS.md",
@@ -3021,224 +2857,24 @@
       "sha256": "ecbe5f130a9fdc2269af703be3aa68545c72b57abc0582d4e6ddaf4b9c6982bb"
     },
     {
-      "path": "research/HAMBURG_GRAFFITI_MAGAZINES_BIBLIOGRAPHY_01.md",
-      "sha256": "f9b3a57d0febc969c7d22cdc9509f26467e04b9102936bcc4a3d17854013de17"
-    },
-    {
-      "path": "research/HANDSTYLE_GESTURE_AND_MOTOR_DYNAMICS.md",
-      "sha256": "71ca80552e957a9133a9ea15abf636e355594148cb7960b92456c5ce14f239dc"
-    },
-    {
       "path": "research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md",
       "sha256": "966110b9f6af42eed419ecd33028e1c70804537c3478e0877ab5679615edcff0"
-    },
-    {
-      "path": "research/HANDSTYLE_PROOF_SHEET_SPEC_01.md",
-      "sha256": "e3dd3d97424ba0f3b0729fb1cf2684241720e63f44ba58d970ca6fd53d68502f"
-    },
-    {
-      "path": "research/HEIDELBERG_WRITING_HISTORY_AND_STYLE_RESEARCH_01.md",
-      "sha256": "04a1e25a1faec51f4240a5686d0c781c6310257cfa906531c8e3f615faf2bc2b"
-    },
-    {
-      "path": "research/INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md",
-      "sha256": "787001f6abb2988038a7622860423075c5dfc8fa963710be8729e8c819fea75f"
-    },
-    {
-      "path": "research/INGRID_GERMAN_GRAFFITI_DATABASE_DORTMUND_CORPUS_01.md",
-      "sha256": "8cd0bae83598b36c27924fcd69af64fbe98d92083d35b12bb7c7372630d67e4c"
-    },
-    {
-      "path": "research/INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md",
-      "sha256": "3f32612ed625227657292ac1da16e112a8e49065039a33ec31b432efe81b6b32"
-    },
-    {
-      "path": "research/INGRID_RDF_CONVERTER_AUDIT_01.md",
-      "sha256": "f9bc9f10dd0a3b705a0f321c57666a9407bf687e29ffa754b447f2da83f0c9e0"
-    },
-    {
-      "path": "research/INGRID_REGIONAL_RESEARCH_SCOPE_01.md",
-      "sha256": "6e56d6c6a66baf3d2bb986fd6347fbba5d78cf62ad4b95b7aa2cbe81c5806292"
-    },
-    {
-      "path": "research/INGRID_RESEARCH_RECORD_MODEL_01.md",
-      "sha256": "4dd4bcb698551d50e9b24a979ca007daecc87cae323c1d3d1988de7daee416d4"
-    },
-    {
-      "path": "research/LETTER_PAIR_CONNECTIONS_AND_WORD_FLOW.md",
-      "sha256": "46c9c508f537c088f438348f5d65777752af4f10e968b9fac8b8c8823bf4d3b2"
-    },
-    {
-      "path": "research/LETTERING_STYLES.md",
-      "sha256": "21f57a2245d36bad0604601281fb7ac91d4bad9d96c24e8ed8aa3df037b1f672"
-    },
-    {
-      "path": "research/MARTHA_COOPER_AND_PHOTOGRAPHIC_ARCHIVES_01.md",
-      "sha256": "502dad6fe81d0c18b6d5e74fb220846fef3172ab44d1a0e2c15ac32491fe9b70"
-    },
-    {
-      "path": "research/MASTER_GLYPH_VARIANT_MATRIX_01.md",
-      "sha256": "0b00210e7dd49967763f24466323c87d9d2678aea6dec456c123adc7988f71f5"
-    },
-    {
-      "path": "research/MCL_OPAC_RECORD_CHECK_01.md",
-      "sha256": "ac7be478c7c4f3a96a99a4d891629a96783f11ca12dd2e4ae7873561f78774cd"
-    },
-    {
-      "path": "research/NYC_1990S_BOROUGH_SCENE_MAP_01.md",
-      "sha256": "55a10026828e23841af960a9e8be92da9a4e3939256d0505caa934979aac7e8d"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md",
-      "sha256": "6343e90a6390da1a902c0fa5df6b17f427afdbc4b66728b383b66660c2b294fd"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_02.md",
-      "sha256": "992118cb0a8e0400d3047f4a16011dd0761040e1b24e7fcbad42857dc4996fa3"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_03_QUEENS_AND_ZINES.md",
-      "sha256": "44fe72dbcb53171a7156cdaad72d9c997b1f082dc17d01e9d5d4ddbb27f5145b"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_HARDCORE_CROSSOVER_04_SPORTS_OUTBURST_ZINES.md",
-      "sha256": "88d47ee15521a10ce9a4ed591b40d4daa99660cb1186ec5b6dc5ac9d1e36017d"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_HISTORY.md",
-      "sha256": "436d16bf4e92781c4c944b2534adde12864b45c2f58a62c179c9ae3493702655"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_SKATEBOARDING_AND_ALTERNATIVE_MEDIA_NETWORKS_01.md",
-      "sha256": "008b9041f089f74504a15848c778b95a213c1e0e1463e31e180be464c2758d38"
-    },
-    {
-      "path": "research/NYC_GRAFFITI_ZINES_AND_MEDIA_NETWORK_1990_1999_01.md",
-      "sha256": "fcb529acb0feeecc389de7b32d75bc217ee2eccff0172c607af63270b2763fa9"
     },
     {
       "path": "research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md",
       "sha256": "94e1309ff93c3fa20f7cc5a1f73d803027470cd6fbd84c35883fd071929b7075"
     },
     {
-      "path": "research/NYC_SUBWAY_DECLINE_AND_AFTERLIVES.md",
-      "sha256": "f4977d2972a82b2feb0aa64e2b890a1ff057e6b7db412b53e1e3b61739c71cad"
-    },
-    {
-      "path": "research/NYC_WRITERS_CREWS_CHRONOLOGY_1990_1999_01.md",
-      "sha256": "da9d91dbaad60d149e33fae16705a10939999e7db93e631bd76fdb23f740d78e"
-    },
-    {
-      "path": "research/NYC_WRITING_1990S_TRANSITION_01.md",
-      "sha256": "8bd4e0c394a1966edfc1273c0bcc82243d0748367b1ded0d91c7c0600769e684"
-    },
-    {
-      "path": "research/NYC_WRITING_HISTORY_EVIDENCE_MAP_01.md",
-      "sha256": "24cc258917541a15539a678e814b40053fee45488db79b51cd03971762802234"
-    },
-    {
-      "path": "research/NYC_WRITING_SKATEBOARDING_AND_INDEPENDENT_MEDIA_1987_1997_01.md",
-      "sha256": "e0fc4e4342abc66f8a440d559169d7da719def9a98e0234fc4f09152d8da01c9"
-    },
-    {
-      "path": "research/PERSONAL_STYLE_ENGINE_01.md",
-      "sha256": "24dba4dae18f6621ec91b8bee7e86de74dd81998344b1e3d183760d6980b3cc0"
-    },
-    {
-      "path": "research/PHASE_2_AND_BUBBLE_LETTERING.md",
-      "sha256": "31d90318f775d079e4086e22eb83252a4e80d2f7d23c6e4380571d4fa45c68cc"
-    },
-    {
       "path": "research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md",
       "sha256": "edf218f2b861461c828338b7368f6530adf9d441a6c2314ee56ab6819967b192"
-    },
-    {
-      "path": "research/PROCEDURAL_VARIANT_GENERATOR_CORE_01.md",
-      "sha256": "d93029fa63ea2e8697f68ad138d118d83ff1c28d6ded866ef2fba2288096db37"
-    },
-    {
-      "path": "research/PROOF_SHEET_AND_TEST_FIXTURE_INFRASTRUCTURE_01.md",
-      "sha256": "2a2be068117d8c6a99dfd2eba4d98380bcfecc64930ad0f7480ea60e76487124"
-    },
-    {
-      "path": "research/RAMMELLZEE_AND_KASE2_LETTER_THEORY.md",
-      "sha256": "203fc5cd4e64ce2fab30837323d3f3eb1f37be6c83c7694f8abca6e967153a96"
-    },
-    {
-      "path": "research/README.md",
-      "sha256": "a0d19d49bac53dc06eea76036e370f290517c0324875bf4baa5d86815769e47d"
-    },
-    {
-      "path": "research/RELATIONSHIP_SOLVER_AND_WORD_COMPOSITION_01.md",
-      "sha256": "e78038d0f4c6d4f6466aef8e038c322e1201354bfa19265893bba4e443c91fe1"
-    },
-    {
-      "path": "research/RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md",
-      "sha256": "aab34dbc88498790c2f15fde73b3aa02718bc980beef46148e3b6d3f93879521"
-    },
-    {
-      "path": "research/RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md",
-      "sha256": "44e675c332210f560f46af744292ce116a3018536aad924ffb901dc86cf067ea"
-    },
-    {
-      "path": "research/SOLVER_GENERATOR_INTEGRATION_READINESS_01.md",
-      "sha256": "1a0d43b26a3e80b1a84f7df774e22d74d3e735d891221d5b298e8ee9d06bdc9c"
     },
     {
       "path": "research/SOURCE_REGISTER_NYC_GRAFFITI_01.md",
       "sha256": "8871c594643b97aa28b50390f3f6bc8c60fb0b3d3bc2ac90100fcb5c0a2a8e58"
     },
     {
-      "path": "research/SPECIFICATION_INTEGRATION_AUDIT_01.md",
-      "sha256": "7645daba1200564d741d8e7f1cfc033bc4f38f99f819a407436e6062bf8d5570"
-    },
-    {
-      "path": "research/STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md",
-      "sha256": "5735bc6309385c17835a89f8d959d3ad91757093d920272fdc1c5a6be10c2eb2"
-    },
-    {
-      "path": "research/STYLE_GRAMMAR_FIRST_SUPPORTED_SLICE_01.md",
-      "sha256": "4824f775c20b2f450aacd504dd6175687f8bfadafd3920dec8caee01feffb68e"
-    },
-    {
-      "path": "research/STYLE_GRAMMAR_SPECIFICATIONS_01.md",
-      "sha256": "5228f0a0eb7c7a04417b44e0b97065f0e95e2e2d26c25f6d540b4cd2eadcceec"
-    },
-    {
-      "path": "research/THREE_D_AND_BLOCKBUSTER_LETTERING.md",
-      "sha256": "1e0a073db88100f477f62b1f40e0020011bf5706c2fb022fbe0f3dc96fe270d3"
-    },
-    {
-      "path": "research/THREEJS_EDITOR_INTERACTION_AND_UX_01.md",
-      "sha256": "692381f1861c0c2c8dfb8aba0b3c6e1a5f16267d5ae69b54a1e6722dbe1bde6f"
-    },
-    {
-      "path": "research/VISUAL_CALIBRATION_AND_COMPARATIVE_EVALUATION_01.md",
-      "sha256": "d58db7cbc53b808427ce89e4ce552db33a9474ea4ae8ef941327bde6fcf983f1"
-    },
-    {
-      "path": "research/VISUAL_CONSTRUCTION_BRIEF_01.md",
-      "sha256": "f048b72d07b0171adf7f92632f921d850400d5eaa7cf7fb65cf6a33ad2078da8"
-    },
-    {
-      "path": "research/VISUAL_REFERENCE_DATABASE.md",
-      "sha256": "92fb501a410d2d4b3c8ebf1c9773a7e128dd895ff484322f5c33b3f4887475b0"
-    },
-    {
-      "path": "research/WILDSTYLE_TRACY168_AND_LETTER_CONNECTIONS.md",
-      "sha256": "0130d239cff0e8f6e5d2d363b2de49621afe863e038a0c737669a755838ba862"
-    },
-    {
       "path": "research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md",
       "sha256": "e41469ce08b56afc09c15a95fe5bfb4d0547a5c911e641de95d85358a8cd3030"
-    },
-    {
-      "path": "research/WOMEN_WRITERS_EARLY_NEW_YORK.md",
-      "sha256": "923e0314c416c2a7a7964178c86a89a90638d230b37930243175aa20084f3cd6"
-    },
-    {
-      "path": "research/WRITERS_AND_INFLUENCES.md",
-      "sha256": "2cbbbaa0a510c4b32d4adb172949d31bdc57e5bb4d6e7ad49cd17634aabb2e38"
     }
   ],
   "paths": [

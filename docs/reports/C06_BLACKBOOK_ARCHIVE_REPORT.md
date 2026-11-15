@@ -106,8 +106,58 @@
 | Women integrated | **Pass**: Lady Pink sits in the NYC chapter, exhibitions, timeline and a path; the China chapter includes China Graffiti Girls; a separate entry covers archival gaps, linked from the main chapters |
 | ≥ 3 genuine bidirectional archive/editor links | **Deferred to C07** under the override. C06 delivers 4 forward links with working return links. |
 
+## Alignment with the 30-entry launch plan
+
+`research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md` became mandatory C06 reading while this edition was being built (main, 2026-11-15). The table maps the plan to the current edition. It is **not yet aligned**; this is the main open item of C06.
+
+| Plan entry | This edition | State |
+|---|---|---|
+| history.modern-name-writing | history.nyc-emergence (+ concept.public-inscription) | covered, different ID |
+| history.philadelphia-new-york | scene.philadelphia + history.nyc-emergence | covered across two entries |
+| history.nyc-subway-era | format.subway-train | covered as a format entry |
+| history.global-circulation | concept.circulation-and-adaptation | covered, different ID |
+| history.after-subway | history.clean-train-campaign | partial |
+| history.blackbook-to-digital | — | missing |
+| scene.philadelphia, scene.amsterdam, scene.sao-paulo | same IDs | covered |
+| scene.paris-banlieue | scene.paris | covered, different ID |
+| scene.new-york-city | history.nyc-emergence | no own scene entry |
+| practice.tag-handstyle | practice.tag + practice.handstyle | covered (split) |
+| format.throw-up, format.piece-burner | practice.piece | partial (combined) |
+| style.pixacao-tag-reto | scene.sao-paulo | inside the scene entry |
+| learning.blackbook | object.blackbook | covered, different ID |
+| documentation.graffiti-photography, person.henry-chalfant | practice.sequential-train-photography, media.style-wars-and-subway-art | covered as practice, no person entry |
+| archive.provenance-rights | concept.reading-the-evidence | covered, different ID |
+| glossary.writer-writing-graffiti | concept.writing-and-graffiti | covered, different ID |
+| person.lady-pink | same ID | covered |
+| practice.getting-up, format.panel-wholecar, style.bubble-blockbuster-straight, style.wildstyle, material.aerosol-system, person.cornbread, person.topcat-126, person.martha-cooper, method.local-terms-uncertainty | — | missing |
+
+These entries in this edition are not in the plan:
+
+- concept.public-inscription
+- history.institutional-recognition
+- concept.visibility-and-archival-gaps
+- scene.china
+- scene.dortmund
+- style.dortmund-style
+- scene.hamburg
+- practice.hall-of-fame
+- construction.letter-anatomy
+- construction.negative-space
+- history.clean-train-campaign
+- media.style-wars-and-subway-art
+
+The German entries rest on primary-checked sources, as plan item F6 requires.
+
+**Proposed alignment (owner decision):**
+
+- Adopt the plan's IDs where they differ, and keep the old IDs as aliases.
+- Add the missing plan entries that the sources support. The person entries need page-level sources before any "first" or influence claim.
+- Merge or drop extras to stay within 35.
+- Use ChatGPT's Entry Drafts 01/02 as input, re-checked at source level.
+
 ## Gaps and open decisions
 
+0. **30-entry plan alignment** (see above): about nine plan entries are missing and several IDs differ.
 1. **Owner review:** editorial approval of all 27 entries, and visual approval of the archive design.
 2. **Language:** the UI is German and entry text is English (D-014, proposed). German entry text is an open decision.
 3. **German scenes not yet included:** Berlin, Cologne/Düsseldorf and Munich. Their sources (DE-02, DE-04, DE-08, DE-09) could not be checked in this session.
