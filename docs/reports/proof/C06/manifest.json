@@ -1,23 +1,26 @@
 {
   "package": "C06",
   "result": "pass",
-  "routes": 42,
+  "routes": 48,
   "claimSheets": 28,
   "bridgeTargets": 4,
   "inputs": {
     "data/archive/archive.v1.de.json": "65843c829ecab6bd7afc9b8a70e5f27cf8ed958904109a5e7cdafd8589a2bfae",
-    "archive/index.html": "9bcb1bbe709e9e6f0bd37596f99b1e79738a4506b0a680814b23db302ad469a5",
-    "archive/app.js": "9495586bb806506168da3a5fd0637285faaf9132ff0e7b11e58eb3cc39125f53",
-    "archive/app.css": "4e1cd5feffa36691e662d20d5eff813d176ed26f04c36f9f254fbbc72a32931b",
+    "archive/index.html": "072090887147cba14d90f9ffd679b2821f5c1f54726dae09e17ff9b5972a50ea",
+    "archive/app.js": "997b3ef2bd2f73c5537805ab4172c220d6ff06ab0f794b1c5277ebcfcc4d5b15",
+    "archive/app.css": "5ec1d32e34f579bd9b36746d76c52b3c8c4b913b1da73f1e7f387100fb2e594a",
     "src/bridge/editor-bridge.js": "3d44fce950a192a70e643eb9dfe8aa0e12c32e4cc9f807cdf089b91a78842620"
   },
   "screenshots": {
-    "home-phone.png": "80f496e3d9b7ba31c3acb0470015a2a6301adefc9bd279db20b7141e1529380a",
-    "entry-phone.png": "1aac20592ae1bc663f69d9b90447f190e7014d88c95da5a5d1d33644d9bd28b5",
-    "entry-desktop.png": "607aa9265e9f58a56409a125e0e31f93f2a4d4c8629c052a12f8e289dfd0790f",
-    "search-phone.png": "bfc4593dafea5961426e5c53f6260b45ae31fc4eb4ca7185cb28b7a8e37ee5c4",
-    "timeline-phone.png": "be998ce5c8322703facd13a29dd6120f6f94248c93427d87c5b3be11e5e6a5b1",
-    "scenes-desktop.png": "319ade27a6ec9385ffda478e7cbbf00e67a0f12fc786d432ab1ad7fcd808c923",
-    "path-phone.png": "0be629bd74451c85ab5ede59ea4cd322a849fa1065cab6731672e011c6db3ce5"
+    "home-phone.png": "65d043d052ec57232e7c453d6a3c6ecafeebaf80fd945ad84e93921b08a2dc6c",
+    "entry-phone.png": "b6cfb4047e430217e88b23292d0529245b819404a20eeaaa6d487f4b8fc0bfad",
+    "entry-desktop.png": "991a858ed4b7831de529689fc91a430fb7bdf1814babe3b597c3a001a6de58ed",
+    "search-phone.png": "febbff7fd2cefb8478a403211167895176582677651a104ed1bc63bdd5ea3a39",
+    "timeline-phone.png": "02c043fbcb2d1d19a4a63ab5e4a49ec76aac731a280adf244617c74f88e8fee7",
+    "scenes-desktop.png": "19e9e8b8bd65c495d9a2855c8a71a44c5f283e0bca6abf33d021928bbd6aa185",
+    "path-phone.png": "4477e53515f0b9a0b5cf4d5d8d2febe02a302ee0504232d68b03716cdeaf3a8f",
+    "entry-tablet.png": "d6e90f910527d183ad64308f9fe32b5090da38ab86da0f887042d8659d7f6941",
+    "section-desktop.png": "71695602bd19f4a56111b0380b754876fe7e9e6faa9ddb467b53f64c0628630e",
+    "menu-phone.png": "0baf7d2493a6e0260f52813cf2b0a93161abf8e54b0983c126a20d75219e2a9e"
   }
 }

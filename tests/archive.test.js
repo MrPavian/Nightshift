@@ -274,3 +274,26 @@ test('committed C06 proof passed and is tied to the current archive inputs', asy
   for (const [p, h] of Object.entries(m.inputs)) assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'), h, `${p} changed since the proof run`);
   for (const [f, h] of Object.entries(m.screenshots)) assert.equal(createHash('sha256').update(readFileSync(`docs/reports/proof/C06/${f}`)).digest('hex'), h, f);
 });
+
+test('UI follows the design system: tokens, nine sections, independent status vocabulary, no per-type colours', () => {
+  const css = readFileSync('archive/app.css', 'utf8'), app = readFileSync('archive/app.js', 'utf8'), html = readFileSync('archive/index.html', 'utf8');
+  for (const [t, v] of [['--bba-bg', '#111214'], ['--bba-text', '#f0eee8'], ['--bba-accent', '#d6f34a'], ['--bba-border', '#41454a']]) assert.match(css, new RegExp(`${t}: ${v};`), t);
+  assert.doesNotMatch(css, /--t-(history|scene|practice|style)/, 'no per-type colour tokens (styleguide §2.1)');
+  const navs = [...html.matchAll(/data-nav="([a-z]+)"/g)].map((m) => m[1]);
+  assert.deepEqual(navs, ['entdecken', 'zeitleiste', 'szenen', 'stile', 'praxis', 'material', 'personen', 'glossar', 'bildarchiv']);
+  for (const w of ['Entwurf', 'in Prüfung', 'freigegeben', 'zurückgezogen', 'ungeklärt', 'Link-only', 'lizenziert', 'eigene Produktion', 'gesperrt', 'teilweise geprüft']) assert.ok(app.includes(`'${w}`), w);
+  for (const t of A.entries.map((e) => e.type)) assert.match(app, new RegExp(`types: \\[[^\\]]*'${t}'`), `type ${t} has a navigation section`);
+});
+
+test('text colour pairs meet WCAG 2.2 AA contrast (design system §9)', () => {
+  const css = readFileSync('archive/app.css', 'utf8');
+  const tok = (n) => css.match(new RegExp(`--${n}: (#[0-9a-f]{6});`))[1];
+  const lum = (hex) => {
+    const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+  };
+  const ratio = (a, b) => { const [x, y] = [lum(tok(a)), lum(tok(b))].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
+  const pairs = [['bba-text', 'bba-bg', 4.5], ['bba-text-muted', 'bba-bg', 4.5], ['bba-text-subtle', 'bba-bg', 4.5], ['bba-text-muted', 'bba-surface', 4.5],
+    ['bba-text-subtle', 'bba-surface', 4.5], ['paper-ink', 'paper', 4.5], ['paper-muted', 'paper', 4.5], ['bba-bg', 'bba-accent', 4.5], ['bba-accent', 'bba-bg', 3]];
+  for (const [fg, bg, min] of pairs) assert.ok(ratio(fg, bg) >= min, `${fg} on ${bg}: ${ratio(fg, bg).toFixed(2)} < ${min}`);
+});

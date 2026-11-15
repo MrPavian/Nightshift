@@ -13,7 +13,7 @@ const fails = [];
 const state = async (url, size = '360,800') => JSON.parse(preText(await chrome([`--window-size=${size}`, '--virtual-time-budget=6000', '--dump-dom', url], { timeout: 180000 }), 'selftest') ?? '{}');
 
 try {
-  const routes = ['/', '/suche', '/zeitleiste', '/szenen', '/pfade', ...A.paths.map((p) => `/pfad/${p.id}`), '/a-z', '/quellen', '/so-liest-du', '/entry/does.not-exist', ...A.entries.map((e) => `/entry/${e.id}`)];
+  const routes = ['/', '/suche', '/zeitleiste', '/szenen', '/glossar', ...['stile', 'praxis', 'material', 'personen', 'bildarchiv'].map((k) => `/bereich/${k}`), '/pfade', ...A.paths.map((p) => `/pfad/${p.id}`), '/a-z', '/quellen', '/so-liest-du', '/entry/does.not-exist', ...A.entries.map((e) => `/entry/${e.id}`)];
   let sheets = 0;
   for (const r of routes) {
     const st = await state(`${base}archive/index.html?nosw&selftest#${r}`);
@@ -52,7 +52,8 @@ try {
     const dir = 'docs/reports/proof/C06';
     mkdirSync(dir, { recursive: true });
     const shots = [['home-phone', '/', '390,1800'], ['entry-phone', '/entry/history.nyc-emergence', '390,2600'], ['entry-desktop', '/entry/construction.letter-anatomy', '1280,1300'],
-      ['search-phone', '/suche?q=dortmund', '390,1100'], ['timeline-phone', '/zeitleiste', '390,2200'], ['scenes-desktop', '/szenen', '1280,1500'], ['path-phone', '/pfad/path.how-styles-travel', '390,1500']];
+      ['search-phone', '/suche?q=dortmund', '390,1100'], ['timeline-phone', '/zeitleiste', '390,2200'], ['scenes-desktop', '/szenen', '1280,1500'], ['path-phone', '/pfad/path.how-styles-travel', '390,1500'],
+      ['entry-tablet', '/entry/history.modern-name-writing', '820,1700'], ['section-desktop', '/bereich/praxis', '1280,1000'], ['menu-phone', '/glossar', '390,1200']];
     const out = {};
     for (const [name, hash, size] of shots) {
       await chrome([`--window-size=${size}`, '--virtual-time-budget=6000', `--screenshot=${dir}/${name}.png`, `${base}archive/index.html?nosw#${hash}`], { timeout: 180000 });

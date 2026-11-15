@@ -23,8 +23,26 @@ const KIND_DE = {
   'nightshift-design-inference': ['NIGHTSHIFT-Designannahme', '#c8372d'],
 };
 const EVIDENCE_DE = { strong: 'stark', good: 'gut', contextual: 'Kontext', 'unverified-lead': 'ungeprüfter Hinweis' };
-const EDITORIAL_DE = { draft: 'Entwurf', 'source-checked': 'Quellen geprüft', 'editorial-reviewed': 'redaktionell geprüft', 'approved-for-archive': 'freigegeben', superseded: 'ersetzt' };
-const RIGHTS_DE = { none: 'keine Abbildungen', 'original-diagram': 'eigene Diagramme', 'link-only': 'nur verlinkt', 'rights-unknown': 'Rechte unklar', 'permission-requested': 'Erlaubnis angefragt', cleared: 'Rechte geklärt', 'do-not-reuse': 'nicht verwenden' };
+// Status vocabulary: docs/production/ARCHIVE_DESIGN_SYSTEM_01.md §5 (three independent dimensions).
+// Until the owner approves an entry it is "in Prüfung" (under review), however carefully its sources were checked.
+const EDITORIAL_DE = { draft: 'Entwurf', 'source-checked': 'in Prüfung', 'editorial-reviewed': 'in Prüfung', 'approved-for-archive': 'freigegeben', superseded: 'zurückgezogen' };
+const ENTRY_EVIDENCE_DE = (e) => (e.editorialStatus === 'approved-for-archive' ? 'geprüft' : 'teilweise geprüft');
+const RIGHTS_DE = { none: 'keine Abbildungen', 'original-diagram': 'eigene Produktion', 'link-only': 'Link-only', 'rights-unknown': 'ungeklärt', 'permission-requested': 'ungeklärt (angefragt)', cleared: 'lizenziert', 'do-not-reuse': 'gesperrt' };
+
+// Primary navigation sections (styleguide §3) and which entry types belong to each.
+const SECTIONS_NAV = {
+  zeitleiste: { label: 'Zeitleiste', types: ['history', 'event'] },
+  szenen: { label: 'Szenen', types: ['scene'] },
+  stile: { label: 'Stile & Buchstaben', types: ['style', 'construction', 'composition'], intro: 'Buchstabengrammatiken, Komposition und Anatomie: wie Buchstaben gebaut sind – getrennt von Kunstwerkform und Fläche.' },
+  praxis: { label: 'Praktiken & Formate', types: ['practice', 'format'], intro: 'Was Writer tun (Praktiken) und welche Kunstwerkformen und Flächen es gibt (Formate). Keine Stufenleiter: Tag, Throw-up und Piece bestehen nebeneinander.' },
+  material: { label: 'Werkzeuge & Material', types: ['technique'], intro: 'Techniken, Medien und Ausführungskontext: Aerosol, Marker, Caps.' },
+  personen: { label: 'Personen & Crews', types: ['person', 'crew'], intro: 'Historische Einordnung einzelner Menschen und Gruppen – nie als Rangliste, nie als Vorlage zum Nachahmen.' },
+  glossar: { label: 'Glossar', types: ['concept'] },
+  bildarchiv: { label: 'Bildarchiv', types: ['object', 'media'], intro: 'Objekte, Publikationen und Bilder mit Herkunft. Diese Ausgabe zeigt nur eigene Diagramme; Fotos fremder Werke brauchen eine Rechteklärung für jedes einzelne Bild.' },
+};
+const sectionOf = (type) => Object.entries(SECTIONS_NAV).find(([, v]) => v.types.includes(type))?.[0] ?? 'glossar';
+const crumbs = (items) => `<nav class="crumbs" aria-label="Brotkrumen"><a href="#/">Entdecken</a>${items.map(([label, href]) => href ? ` › <a href="${href}">${esc(label)}</a>` : ` › <span aria-current="page">${esc(label)}</span>`).join('')}</nav>`;
+const sectionHref = (k) => (k === 'zeitleiste' || k === 'szenen' || k === 'glossar' ? `#/${k}` : `#/bereich/${k}`);
 const SECTIONS = [
   ['introduction', 'Einführung'], ['whyItMatters', 'Warum es wichtig ist'], ['recognize', 'Woran man es erkennt'],
   ['context', 'Kontext und Entwicklung'], ['terminology', 'Begriffe und Varianten'], ['evidenceNotes', 'Zur Quellenlage'], ['inNightshift', 'In NIGHTSHIFT'],
@@ -32,7 +50,6 @@ const SECTIONS = [
 const ORDER = ['history', 'scene', 'practice', 'style', 'construction', 'format', 'media', 'object', 'person', 'concept'];
 
 let A, byId, claims, sources;
-const tc = (type) => `--tc: var(--t-${type})`;
 
 // ---------- persistence (per viewer, optional) ----------
 const visited = new Set((() => { try { return JSON.parse(localStorage.getItem('nightshift.archive.visited') || '[]'); } catch { return []; } })());
@@ -68,14 +85,14 @@ function blocks(text, entryId) {
 // ---------- pieces ----------
 function tabRow(e, { highlight } = {}) {
   const mark = (s) => highlight ? esc(s).replace(new RegExp(`(${highlight.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>') : esc(s);
-  return `<li><a href="#/entry/${e.id}" style="${tc(e.type)}"><span class="t-type">${TYPE_DE[e.type]}${e.period ? ` · ${esc(e.period)}` : ''}</span><span class="t-title">${mark(e.title)}</span><span class="t-sum">${mark(e.summary.replace(REF, '').replace(/\s+\./g, '.'))}</span></a></li>`;
+  return `<li><a href="#/entry/${e.id}"><span class="t-type">${TYPE_DE[e.type]}${e.period ? ` · ${esc(e.period)}` : ''}</span><span class="t-title">${mark(e.title)}</span><span class="t-sum">${mark(e.summary.replace(REF, '').replace(/\s+\./g, '.'))}</span></a></li>`;
 }
 const tabs = (list, opts) => `<ul class="tabs">${list.map((e) => tabRow(e, opts)).join('')}</ul>`;
-function figure(id) {
+function figure(id, cls = 'figure') {
   const svg = A.diagrams[id];
   if (!svg) return '';
   const title = svg.match(/<title[^>]*>([^<]+)<\/title>/)?.[1] ?? '';
-  return `<figure class="figure">${svg}<figcaption>Eigenes Diagramm: <span>${esc(title)}</span></figcaption></figure>`;
+  return `<figure class="${cls}">${svg}<figcaption>Eigenes Diagramm: <span>${esc(title)}</span></figcaption></figure>`;
 }
 function pathProgress(p) {
   const done = p.steps.filter((s) => visited.has(s.entry)).length;
@@ -97,10 +114,10 @@ function viewHome() {
         <input id="q" name="q" type="search" placeholder="Suchen: Tag, Pixação, Dortmund, Blackbook …" autocomplete="off">
         <button type="submit">Suchen</button>
       </form>
-      <ul class="chips" aria-label="Nach Themenart stöbern">${types.map((t) => `<li><a class="chip" style="${tc(t)}" href="#/suche?typ=${t}">${TYPE_DE[t]}</a></li>`).join('')}</ul>
+      <ul class="chips" aria-label="Nach Themenart stöbern">${types.map((t) => `<li><a class="chip" href="#/suche?typ=${t}">${TYPE_DE[t]}</a></li>`).join('')}</ul>
     </section>
     <div class="home-grid">
-      <section aria-labelledby="h-start"><div class="section-head"><h2 id="h-start">Hier anfangen</h2><a href="#/a-z">Alle ${A.entries.length} Einträge</a></div>${tabs(foundation)}</section>
+      <section aria-labelledby="h-start"><div class="section-head"><h2 id="h-start">Hier anfangen</h2><a href="#/glossar">Alle ${A.entries.length} Einträge</a></div>${tabs(foundation)}</section>
       <div>
         <section aria-labelledby="h-paths"><div class="section-head"><h2 id="h-paths">Lernpfade</h2><a href="#/pfade">Alle Pfade</a></div>
           <ul class="paths">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong>${esc(p.title)}</strong><span>${p.steps.length} Stationen${pr.done ? ` · ${pr.done} gelesen` : ''}</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>
@@ -109,7 +126,7 @@ function viewHome() {
       </div>
     </div>
     <section style="margin-top:2.4rem" aria-labelledby="h-read"><div class="section-head"><h2 id="h-read">So liest du das Archiv</h2><a href="#/so-liest-du">Mehr dazu</a></div>
-      <p class="prose">Die farbigen Marken im Text öffnen den Beleg zu einer Aussage. Die Farbe zeigt, welche Art von Aussage es ist:</p>${figure('diagram.evidence-layers')}</section>`,
+      <p class="orient">Die nummerierten Marken im Text öffnen den Beleg zu einer Aussage. Dort steht, welche Art von Aussage es ist und worauf sie sich stützt:</p>${figure('diagram.evidence-layers', 'plate')}</section>`,
   };
 }
 
@@ -136,17 +153,17 @@ function viewSearch(params) {
   const types = ORDER.filter((t) => A.entries.some((e) => e.type === t));
   const regions = [...new Set(A.entries.flatMap((e) => e.regions ?? []))].sort((a, b) => a.localeCompare(b, 'de'));
   const link = (p) => { const u = new URLSearchParams({ q, typ: type, region, ...p }); for (const [k, v] of [...u]) if (!v) u.delete(k); return `#/suche${u.size ? `?${u}` : ''}`; };
-  const empty = `<div class="empty"><p><strong>Kein Eintrag passt zu „${esc(q)}“${type ? ` in „${TYPE_DE[type]}“` : ''}.</strong></p><p>Versuche einen anderen Begriff, entferne den Filter oder blättere im <a href="#/a-z">A–Z-Verzeichnis</a>. Das Archiv ist eine erste Auswahl, kein vollständiges Lexikon.</p></div>`;
+  const empty = `<div class="empty"><p><strong>Kein Eintrag passt zu „${esc(q)}“${type ? ` in „${TYPE_DE[type]}“` : ''}.</strong></p><p>Versuche einen anderen Begriff, entferne den Filter oder blättere im <a href="#/glossar">A–Z-Verzeichnis</a>. Das Archiv ist eine erste Auswahl, kein vollständiges Lexikon.</p></div>`;
   return {
     title: q ? `Suche: ${q}` : 'Suche',
-    html: `<h1 style="font-size:var(--step-3)">Suche</h1>
+    html: `<h1 class="page-title">Suche</h1>
       <form class="search" role="search" data-search style="margin-top:1rem">
         <label for="q" class="sr">Archiv durchsuchen</label>
         <input id="q" name="q" type="search" value="${esc(q)}" placeholder="Begriff, Ort, Name, Alias …" autocomplete="off">
         <input type="hidden" name="typ" value="${esc(type)}"><input type="hidden" name="region" value="${esc(region)}">
         <button type="submit">Suchen</button>
       </form>
-      <ul class="chips" aria-label="Nach Art filtern"><li><a class="chip" href="${link({ typ: '' })}" aria-pressed="${!type}">Alle Arten</a></li>${types.map((t) => `<li><a class="chip" style="${tc(t)}" href="${link({ typ: t === type ? '' : t })}" aria-pressed="${t === type}">${TYPE_DE[t]}</a></li>`).join('')}</ul>
+      <ul class="chips" aria-label="Nach Art filtern"><li><a class="chip" href="${link({ typ: '' })}" aria-pressed="${!type}">Alle Arten</a></li>${types.map((t) => `<li><a class="chip" href="${link({ typ: t === type ? '' : t })}" aria-pressed="${t === type}">${TYPE_DE[t]}</a></li>`).join('')}</ul>
       <ul class="chips" aria-label="Nach Region filtern"><li><a class="chip" href="${link({ region: '' })}" aria-pressed="${!region}">Alle Regionen</a></li>${regions.map((r) => `<li><a class="chip" href="${link({ region: r === region ? '' : r })}" aria-pressed="${r === region}">${esc(r)}</a></li>`).join('')}</ul>
       <p class="result-count" role="status">${list.length} ${list.length === 1 ? 'Eintrag' : 'Einträge'}</p>
       ${list.length ? tabs(list, { highlight: terms.length ? q.split(/\s+/).filter(Boolean) : null }) : empty}`,
@@ -190,28 +207,28 @@ function viewEntry(id, params) {
   }
   return {
     title: e.title,
-    html: `<article class="entry" style="${tc(e.type)}">
+    html: `${crumbs([[SECTIONS_NAV[sectionOf(e.type)].label, sectionHref(sectionOf(e.type))], [e.title]])}<article class="entry">
       <div>
         <header class="entry-head">
-          <p class="kicker">${TYPE_DE[e.type]}</p>
+          <p class="kicker">${TYPE_DE[e.type]} · <span class="mono">${esc(e.id)}</span></p>
           <h1>${esc(e.title)}</h1>
           <p class="summary">${inline(e.summary, e.id)}</p>
           <ul class="facts">${e.period ? `<li><b>Zeitraum</b> ${esc(e.period)}</li>` : ''}${e.regions?.length ? `<li><b>Orte</b> ${e.regions.map((r) => `<a href="#/suche?region=${encodeURIComponent(r)}">${esc(r)}</a>`).join(', ')}</li>` : ''}${e.aliases?.length ? `<li><b>Auch</b> <span>${e.aliases.map(esc).join(', ')}</span></li>` : ''}</ul>
         </header>
-        <div class="prose">${sections.join('')}${claimList}</div>
+        <div class="sheet-paper"><div class="prose">${sections.join('')}${claimList}</div></div>
         ${pathNav}
       </div>
       <aside class="aside" aria-label="Zum Eintrag">
-        <section><h2>Status</h2><ul class="status">
-          <li><span>Beleglage</span><span>${EVIDENCE_DE[e.evidence]}</span></li>
+        <section class="panel"><h2>Status</h2><ul class="status">
+          <li><span>Evidenz</span><span>${ENTRY_EVIDENCE_DE(e)}</span></li>
           <li><span>Redaktion</span><span>${EDITORIAL_DE[e.editorialStatus]}</span></li>
-          <li><span>Bildrechte</span><span>${RIGHTS_DE[e.imageRights]}</span></li>
+          <li><span>Rechte</span><span>${RIGHTS_DE[e.imageRights]}</span></li>
           <li><span>Aussagen</span><span><a href="#belege" data-jump="belege">${allClaims.length}</a></span></li>
-        </ul><p class="muted" style="font-size:var(--step--1)">Die Freigabe durch den Projektinhaber steht für alle Einträge dieser Ausgabe noch aus.</p></section>
-        ${actions ? `<section><h2>Im Editor ausprobieren</h2><div class="actions">${actions}</div></section>` : ''}
-        ${events.length ? `<section><h2>Auf der Zeitleiste</h2><ul class="status">${events.map((ev) => `<li><span>${esc(ev.title)}</span><span>${esc(ev.date)}</span></li>`).join('')}</ul><p><a href="#/zeitleiste">Zur Zeitleiste</a></p></section>` : ''}
-        <section><h2>Weiterlesen</h2>${tabs(related)}</section>
-        ${backlinks.length ? `<section><h2>Verweist hierher</h2>${tabs(backlinks)}</section>` : ''}
+        </ul><p class="status-note">Drei getrennte Angaben: Wie gut die Aussagen belegt sind, ob die Redaktion den Eintrag freigegeben hat und welche Rechte für Abbildungen gelten. Die Freigabe durch den Projektinhaber steht für alle Einträge dieser Ausgabe noch aus.</p></section>
+        ${actions ? `<section class="panel"><h2>Im Editor ausprobieren</h2><div class="actions">${actions}</div></section>` : ''}
+        ${events.length ? `<section class="panel"><h2>Auf der Zeitleiste</h2><ul class="status">${events.map((ev) => `<li><span>${esc(ev.title)}</span><span class="mono">${esc(ev.date)}</span></li>`).join('')}</ul><p><a href="#/zeitleiste">Zur Zeitleiste</a></p></section>` : ''}
+        <section class="panel"><h2>Weiterlesen</h2>${tabs(related)}</section>
+        ${backlinks.length ? `<section class="panel"><h2>Verweist hierher</h2>${tabs(backlinks)}</section>` : ''}
       </aside>
     </article>`,
   };
@@ -227,10 +244,22 @@ function sourceLine(sid) {
 function claimItem(c, { full = false } = {}) {
   const [kind, color] = KIND_DE[c.kind] ?? [c.kind, ''];
   const ledger = (c.ledger ?? []).map((l) => `${esc(l.id)} (${esc(l.status)})`).join(', ');
-  return `<li id="claim-${esc(c.id.replace('#', '-'))}"><div class="claim-meta"><span class="kind" style="--kc:${color}">${kind}</span><span>Beleglage: ${EVIDENCE_DE[c.evidence]}</span><span>${esc(c.id.split('#')[1])}</span></div>
+  return `<li id="claim-${esc(c.id.replace('#', '-'))}"><div class="claim-meta"><span class="kind">${kind}</span><span>Belegstärke: ${EVIDENCE_DE[c.evidence]}</span><span class="mono">${esc(c.id.split('#')[1])}</span></div>
     <${full ? 'blockquote' : 'div'}>${esc(c.text)}</${full ? 'blockquote' : 'div'}>
     ${ledger ? `<p class="muted" style="font-size:var(--step--1);margin:.2rem 0">Grundlage im NYC-Claim-Ledger der Recherche-Bibliothek: ${ledger}</p>` : ''}
     <ul class="src">${c.sources.map(sourceLine).join('')}</ul></li>`;
+}
+
+function viewSection(key) {
+  const sec = SECTIONS_NAV[key];
+  if (!sec || ['zeitleiste', 'szenen', 'glossar'].includes(key)) return viewMissing(key);
+  const list = A.entries.filter((e) => sec.types.includes(e.type)).sort((a, b) => a.title.localeCompare(b.title, 'de'));
+  const empty = `<div class="empty"><p><strong>In diesem Bereich gibt es noch keine geprüften Einträge.</strong></p><p>Geplant sind Einträge zu Aerosol, Markern und Caps; sie erscheinen erst, wenn ihre Quellen geprüft sind. Bis dahin: <a href="#/bereich/praxis">Praktiken &amp; Formate</a> oder die <a href="#/suche">Suche</a>.</p></div>`;
+  const diagrams = key === 'bildarchiv' ? `<h2 style="margin-top:var(--s5)">Eigene Diagramme</h2><p class="orient">Alle Abbildungen dieser Ausgabe sind eigene Produktionen von NIGHTSHIFT.</p>${Object.keys(A.diagrams).map((d) => figure(d, 'plate')).join('')}` : '';
+  return {
+    title: sec.label,
+    html: `${crumbs([[sec.label]])}<h1 class="page-title">${esc(sec.label)}</h1><p class="orient">${esc(sec.intro)}</p>${list.length ? tabs(list) : empty}${diagrams}`,
+  };
 }
 
 function viewTimeline() {
@@ -240,12 +269,12 @@ function viewTimeline() {
     const dec = ev.sort < 1900 ? '19. Jh.' : `${Math.floor(ev.sort / 10) * 10}er`;
     const head = dec !== last ? `</ol><h2 class="decade">${dec}</h2><ol class="timeline">` : '';
     last = dec;
-    return `${head}<li style="${tc(e.type)}"><div class="when">${esc(ev.date)}<small class="cert" data-c="${ev.certainty}">${{ documented: 'belegt', approximate: 'ungefähr', contested: 'umstritten' }[ev.certainty]}</small></div>
+    return `${head}<li><div class="when">${esc(ev.date)}<small class="cert" data-c="${ev.certainty}">${{ documented: 'belegt', approximate: 'ungefähr', contested: 'umstritten' }[ev.certainty]}</small></div>
       <div><a class="what" href="#/entry/${e.id}">${esc(ev.title)}</a><span class="where">${TYPE_DE[e.type]}: <span>${esc(e.title)}</span></span> ${ev.claims.map((c) => refButton(c.split('#')[1], c.split('#')[0])).join('')}</div></li>`;
   }).join('');
   return {
     title: 'Zeitleiste',
-    html: `<h1 style="font-size:var(--step-3)">Zeitleiste</h1><p class="prose">Ausgewählte Momente aus den Einträgen – keine vollständige Chronik. Mehrere Orte entwickeln sich parallel; Daten aus Erinnerungen sind als „ungefähr“ markiert.</p>
+    html: `${crumbs([['Zeitleiste']])}<h1 class="page-title">Zeitleiste</h1><p class="prose">Ausgewählte Momente aus den Einträgen – keine vollständige Chronik. Mehrere Orte entwickeln sich parallel; Daten aus Erinnerungen sind als „ungefähr“ markiert.</p>
       <ol class="timeline">${items}</ol>`.replace('<ol class="timeline"></ol>', ''),
   };
 }
@@ -254,11 +283,11 @@ function viewScenes() {
   const scenes = A.entries.filter((e) => e.type === 'scene' || e.id === 'history.modern-name-writing').sort((a, b) => a.sort - b.sort);
   return {
     title: 'Szenen',
-    html: `<h1 style="font-size:var(--step-3)">Szenen und Regionen</h1><p class="prose">Writing hat viele Orte und Geschichten. Jede Szene steht für sich – mit eigener Chronologie, eigenen Begriffen und eigenem Austausch.</p>${figure('diagram.circulation-network')}
+    html: `${crumbs([['Szenen']])}<h1 class="page-title">Szenen und Regionen</h1><p class="prose">Writing hat viele Orte und Geschichten. Jede Szene steht für sich – mit eigener Chronologie, eigenen Begriffen und eigenem Austausch.</p>${figure('diagram.circulation-network', 'plate')}
       <div class="regions">${scenes.map((s) => {
         const regional = A.entries.filter((x) => x.id !== s.id && x.regions?.some((r) => s.regions?.includes(r)));
         const near = regional.length ? regional : s.related.map((r) => byId.get(r)).filter(Boolean);
-        return `<section style="${tc(s.type)}"><div class="section-head"><h2><a href="#/entry/${s.id}">${esc(s.title)}</a></h2><span class="muted">${esc(s.period ?? '')}</span></div><p class="muted">${inline(s.summary, s.id)}</p>${near.length ? tabs(near) : ''}</section>`;
+        return `<section><div class="section-head"><h2><a href="#/entry/${s.id}">${esc(s.title)}</a></h2><span class="muted">${esc(s.period ?? '')}</span></div><p class="muted">${inline(s.summary, s.id)}</p>${near.length ? tabs(near) : ''}</section>`;
       }).join('')}</div>`,
   };
 }
@@ -266,7 +295,7 @@ function viewScenes() {
 function viewPaths() {
   return {
     title: 'Lernpfade',
-    html: `<h1 style="font-size:var(--step-3)">Lernpfade</h1><p class="prose">Geführte Wege durch das Archiv. Jede Station ist ein Eintrag; „Weiter“ führt zur nächsten. Der Fortschritt wird nur in diesem Browser gespeichert.</p>
+    html: `<h1 class="page-title">Lernpfade</h1><p class="prose">Geführte Wege durch das Archiv. Jede Station ist ein Eintrag; „Weiter“ führt zur nächsten. Der Fortschritt wird nur in diesem Browser gespeichert.</p>
       <ul class="paths" style="max-width:46rem">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong>${esc(p.title)}</strong><span>${esc(p.intro)}</span><br><span>${p.steps.length} Stationen · ${pr.done} gelesen</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>`,
   };
 }
@@ -278,10 +307,10 @@ function viewPath(id) {
   const firstOpen = p.steps.find((s) => !visited.has(s.entry)) ?? p.steps[0];
   return {
     title: p.title,
-    html: `<p><a href="#/pfade">Alle Lernpfade</a></p><h1 style="font-size:var(--step-3)">${esc(p.title)}</h1><p class="prose">${esc(p.intro)}</p>
+    html: `<p><a href="#/pfade">Alle Lernpfade</a></p><h1 class="page-title">${esc(p.title)}</h1><p class="prose">${esc(p.intro)}</p>
       <p>${pr.done} von ${p.steps.length} Stationen gelesen.</p><div class="progress" style="max-width:30rem" role="progressbar" aria-valuemin="0" aria-valuemax="${p.steps.length}" aria-valuenow="${pr.done}" aria-label="Fortschritt"><i style="width:${pr.pct}%"></i></div>
       <p style="margin:1.2rem 0"><a class="btn" href="#/entry/${firstOpen.entry}?pfad=${p.id}">${pr.done && pr.done < p.steps.length ? 'Weiterlesen' : 'Pfad beginnen'}</a></p>
-      <ol class="tabs" style="max-width:46rem">${p.steps.map((s, i) => { const e = byId.get(s.entry); return `<li><a href="#/entry/${e.id}?pfad=${p.id}" style="${tc(e.type)}"><span class="t-type">Station ${i + 1} · ${TYPE_DE[e.type]}${visited.has(e.id) ? ' · gelesen' : ''}</span><span class="t-title">${esc(e.title)}</span><span class="t-sum">${esc(s.framing)}</span></a></li>`; }).join('')}</ol>`,
+      <ol class="tabs" style="max-width:46rem">${p.steps.map((s, i) => { const e = byId.get(s.entry); return `<li><a href="#/entry/${e.id}?pfad=${p.id}"><span class="t-type">Station ${i + 1} · ${TYPE_DE[e.type]}${visited.has(e.id) ? ' · gelesen' : ''}</span><span class="t-title">${esc(e.title)}</span><span class="t-sum">${esc(s.framing)}</span></a></li>`; }).join('')}</ol>`,
   };
 }
 
@@ -291,8 +320,8 @@ function viewAZ() {
   const groups = new Map();
   for (const it of items) { const L = norm(it.key)[0].toUpperCase(); if (!groups.has(L)) groups.set(L, []); groups.get(L).push(it); }
   return {
-    title: 'A–Z',
-    html: `<h1 style="font-size:var(--step-3)">A–Z</h1><p class="prose">Alle Einträge und ihre anderen Namen. Kursive Namen verweisen auf einen Eintrag.</p>
+    title: 'Glossar',
+    html: `${crumbs([['Glossar']])}<h1 class="page-title">Glossar</h1><p class="orient">Alle Einträge von A bis Z mit ihren anderen Namen und lokalen Varianten. Kursive Namen verweisen auf einen Eintrag.</p>
       <div class="az">${[...groups].map(([L, list]) => `<section><h2>${esc(L)}</h2><ul>${list.map((it) => it.alias ? `<li class="alias"><em>${esc(it.key)}</em> siehe <a href="#/entry/${it.e.id}">${esc(it.e.title)}</a></li>` : `<li><a href="#/entry/${it.e.id}">${esc(it.key)}</a> <span class="alias">${TYPE_DE[it.e.type]}</span></li>`).join('')}</ul></section>`).join('')}</div>`,
   };
 }
@@ -302,13 +331,13 @@ function viewSources() {
   for (const c of A.claims) for (const s of c.sources) { if (!users.has(s)) users.set(s, new Set()); if (c.entry) users.get(s).add(c.entry); }
   return {
     title: 'Quellen',
-    html: `<h1 style="font-size:var(--step-3)">Quellen</h1><p class="prose">Alle zitierten Quellen dieser Ausgabe, wie sie in der Recherche-Bibliothek verzeichnet sind. Verlinkte Seiten liegen außerhalb des Archivs.</p>
+    html: `<h1 class="page-title">Quellen</h1><p class="prose">Alle zitierten Quellen dieser Ausgabe, wie sie in der Recherche-Bibliothek verzeichnet sind. Verlinkte Seiten liegen außerhalb des Archivs.</p>
       <ul class="sources">${A.sources.map((s) => `<li>${s.urls?.[0] ? `<a href="${esc(s.urls[0])}" rel="noopener" target="_blank">${inline(s.title)}</a>` : inline(s.title)}<br><span class="muted">Verwendet in: ${[...(users.get(s.id) ?? [])].map((id) => `<a href="#/entry/${id}">${esc(byId.get(id)?.title ?? id)}</a>`).join(', ') || '–'}</span></li>`).join('')}</ul>`,
   };
 }
 
 function viewMissing(id) {
-  return { title: 'Nicht gefunden', html: `<div class="empty"><h1 style="font-size:var(--step-2)">Diesen Eintrag gibt es nicht.</h1><p>„${esc(id)}“ ist nicht Teil dieser Ausgabe. Suche nach dem Begriff oder öffne das <a href="#/a-z">A–Z-Verzeichnis</a>.</p><p><a class="btn" href="#/suche?q=${encodeURIComponent(String(id).split('.').pop())}">Danach suchen</a></p></div>` };
+  return { title: 'Nicht gefunden', html: `<div class="empty"><h1 style="font-size:var(--step-2)">Diesen Eintrag gibt es nicht.</h1><p>„${esc(id)}“ ist nicht Teil dieser Ausgabe. Suche nach dem Begriff oder öffne das <a href="#/glossar">A–Z-Verzeichnis</a>.</p><p><a class="btn" href="#/suche?q=${encodeURIComponent(String(id).split('.').pop())}">Danach suchen</a></p></div>` };
 }
 
 // ---------- claim sheet ----------
@@ -338,7 +367,8 @@ function route() {
     case 'szenen': v = viewScenes(); break;
     case 'pfade': v = viewPaths(); break;
     case 'pfad': v = viewPath(arg); break;
-    case 'a-z': v = viewAZ(); break;
+    case 'a-z': case 'glossar': v = viewAZ(); break;
+    case 'bereich': v = viewSection(arg); break;
     case 'quellen': v = viewSources(); break;
     case 'so-liest-du': v = viewEntry('concept.reading-the-evidence', params); break;
     default: v = viewMissing(head);
@@ -346,10 +376,13 @@ function route() {
   const main = $('#main');
   main.innerHTML = v.html;
   document.title = `${v.title} · Blackbook-Archiv`;
-  const section = head === 'pfad' ? 'pfade' : head;
+  const entryNow = head === 'entry' ? byId.get(arg) : head === 'so-liest-du' ? byId.get('concept.reading-the-evidence') : null;
+  const section = head === '' ? 'entdecken' : head === 'bereich' ? arg : head === 'a-z' ? 'glossar' : entryNow ? sectionOf(entryNow.type) : head;
   for (const a of document.querySelectorAll('[data-nav]')) {
     if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
+  $('#main-nav').classList.remove('open');
+  $('#menu-toggle').setAttribute('aria-expanded', 'false');
   window.scrollTo(0, 0);
   if (selftest.ready) main.focus({ preventScroll: true });
   selftest.route = head || 'home';
@@ -364,6 +397,10 @@ document.addEventListener('submit', (ev) => {
   const fd = new FormData(f), u = new URLSearchParams();
   for (const [k, v] of fd) if (v) u.set(k, v);
   location.hash = `#/suche${u.size ? `?${u}` : ''}`;
+});
+$('#menu-toggle').addEventListener('click', () => {
+  const open = $('#main-nav').classList.toggle('open');
+  $('#menu-toggle').setAttribute('aria-expanded', String(open));
 });
 document.addEventListener('click', (ev) => {
   const r = ev.target.closest('.ref');

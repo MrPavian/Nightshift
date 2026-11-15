@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#1d2633">
+<meta name="theme-color" content="#111214">
 <meta name="description" content="Das Blackbook-Archiv von NIGHTSHIFT: ein belegtes Lexikon des Graffiti-Writings von New York bis zu den Szenen der Welt.">
 <title>Blackbook-Archiv · NIGHTSHIFT</title>
 <link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -12,14 +12,22 @@
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
 <header class="bar">
-  <a class="brand" href="#/" aria-label="Blackbook-Archiv, Startseite"><span class="brand-mark" aria-hidden="true"></span>Blackbook-Archiv</a>
-  <nav aria-label="Hauptnavigation">
+  <a class="brand" href="#/" aria-label="Blackbook-Archiv, Entdecken"><span class="brand-mark" aria-hidden="true"></span>Blackbook-Archiv</a>
+  <div class="bar-actions">
+    <a class="bar-btn" href="#/suche" aria-label="Suche öffnen">Suche</a>
+    <button class="bar-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menü</button>
+  </div>
+  <nav id="main-nav" aria-label="Hauptnavigation">
     <ul>
-      <li><a href="#/suche" data-nav="suche">Suche</a></li>
+      <li><a href="#/" data-nav="entdecken">Entdecken</a></li>
       <li><a href="#/zeitleiste" data-nav="zeitleiste">Zeitleiste</a></li>
       <li><a href="#/szenen" data-nav="szenen">Szenen</a></li>
-      <li><a href="#/pfade" data-nav="pfade">Lernpfade</a></li>
-      <li><a href="#/a-z" data-nav="a-z">A–Z</a></li>
+      <li><a href="#/bereich/stile" data-nav="stile">Stile &amp; Buchstaben</a></li>
+      <li><a href="#/bereich/praxis" data-nav="praxis">Praktiken &amp; Formate</a></li>
+      <li><a href="#/bereich/material" data-nav="material">Werkzeuge &amp; Material</a></li>
+      <li><a href="#/bereich/personen" data-nav="personen">Personen &amp; Crews</a></li>
+      <li><a href="#/glossar" data-nav="glossar">Glossar</a></li>
+      <li><a href="#/bereich/bildarchiv" data-nav="bildarchiv">Bildarchiv</a></li>
     </ul>
   </nav>
 </header>
@@ -34,7 +42,7 @@
 </dialog>
 <footer class="foot">
   <p>Erste Ausgabe des Archivs, auf Deutsch. Alle Inhalte werden aus der Recherche-Bibliothek von NIGHTSHIFT erzeugt; jede Aussage ist belegt und eingeordnet. Quellentitel stehen in ihrer Originalsprache. Keine Fotos fremder Werke – alle Abbildungen sind eigene Diagramme.</p>
-  <p><a href="#/so-liest-du">So liest du das Archiv</a> · <a href="#/quellen">Alle Quellen</a> · <a href="../review/index.html">Prüfstand</a> · <a href="../editor/index.html">Editor</a></p>
+  <p><a href="#/so-liest-du">So liest du das Archiv</a> · <a href="#/pfade">Lernpfade</a> · <a href="#/quellen">Alle Quellen</a> · <a href="../review/index.html">Prüfstand</a> · <a href="../editor/index.html">Editor</a></p>
   <p id="foot-meta" class="muted"></p>
 </footer>
 <script type="module" src="app.js"></script>

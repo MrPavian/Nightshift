@@ -82,9 +82,9 @@
 
 | Command | Result |
 |---|---|
-| `npm test` | 125 pass, 0 fail |
+| `npm test` | 127 pass, 0 fail |
 | `node tools/archive-build.mjs --check` | Archive data up to date |
-| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 42 views at 360 px with no errors and no horizontal overflow; 28/28 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
+| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 48 views at 360 px with no errors and no horizontal overflow; 28/28 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
 | `node tools/editor-smoke.mjs --capture` | EDITOR-PASS, 13/13 steps; re-run because `editor/editor.js` gained the bridge receiver |
 | `node tools/review-smoke.mjs` | REVIEW-PAGE-PASS |
 
@@ -108,6 +108,21 @@
 | No placeholders, unsupported claims or unlicensed images | **Pass**: validator and tests; no `<img>` anywhere; diagrams are original |
 | Women integrated | **Pass**: Lady Pink sits in the NYC chapter, exhibitions, timeline and a path; the China chapter includes China Graffiti Girls; a separate entry covers archival gaps, linked from the main chapters |
 | ≥ 3 genuine bidirectional archive/editor links | **Deferred to C07** under the override. C06 delivers 4 forward links with working return links. |
+
+## Revision against the styleguide (2026-11-15, afternoon)
+
+The owner decided: revise and merge the archive first, then C02–C08. Step A, the UI, is implemented:
+- **Tokens:** design-system tokens (`ARCHIVE_DESIGN_SYSTEM_01.md` §2): dark ink environment, warm paper sheet for the reading text, one accent (`--bba-accent`), no per-type colours (styleguide §2.1).
+- **Type:** monospace for IDs, dates and claim numbers (styleguide §2.2).
+- **Navigation:** the nine sections of styleguide §3 (Entdecken, Zeitleiste, Szenen, Stile & Buchstaben, Praktiken & Formate, Werkzeuge & Material, Personen & Crews, Glossar, Bildarchiv), breadcrumbs, a labelled menu on phones, and search one tap away.
+- **Status vocabulary** from design system §5, three separate fields:
+  - Evidence: "teilweise geprüft".
+  - Editorial: "in Prüfung" until the owner approves.
+  - Rights: "eigene Produktion" / "keine Abbildungen".
+- **Werkzeuge & Material** has no checked entries yet. It shows that honestly and links onward.
+- **Tests:** WCAG AA contrast test for all text pairs, a design-system conformance test, and the smoke test across 48 views. Proofs on phone, tablet and desktop.
+
+**Step B is open:** merge the content with drafts GERMAN 01–06 and the claim/source matrix (claim IDs, A–D strength, statuses).
 
 ## Alignment with the 30-entry launch plan
 
