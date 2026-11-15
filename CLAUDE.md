@@ -330,3 +330,29 @@ New/updated research file: `research/DORTMUND_AMSTERDAM_TRANSFER_AND_RUHRGEBIET_
 ## 13. Research update — Calligraphy and embodied lettering (15 November 2026)
 
 New dossier: `research/CALLIGRAPHY_GRAFFITI_LETTERING_FOUNDATIONS_01.md`. Treat calligraphy as a distinct foundation area for letter construction and handstyle research, not as a synonym for graffiti or a single decorative style. Separate visible letterform from ductus/movement, tool behavior, handstyle and presentation layers. Daniel Berio's 2021 AutoGraff dissertation is a key research bridge for tag flow, repetition, muscle memory and calligraphic practice; Alice Mazzilli (2025) offers a theoretical account of cursive rhythm and stylewriting; the 2020 *Handstyle as social meaning* study cautions that handstyle also carries social/evaluative meaning. Nib angle, pressure and contrast cannot be transferred mechanically to aerosol. Static images do not establish stroke order, speed or tool movement. For MrPavian, study form and movement separately, compare a controlled calligraphic exercise with a free handstyle exercise, then transfer only abstract, original principles into throw-up/block/piece exploration. Research context only; no identifiable writer copying and no authorization to interrupt active implementation.
+
+
+## 14. Letter Construction Academy — new production standard (15 November 2026)
+
+A new structured learning stream has been established: **NIGHTSHIFT Letter Construction Academy**. It develops letter knowledge systematically from basic construction through alphabet, numerals, calligraphy/ductus and original graffiti lettering interpretation.
+
+**Binding production file:** `docs/lettering/MASTER_CONTROL_PROMPT_01.md`
+
+**Archived visual overview:** `assets/design/letter-construction-academy-overview.svg`
+
+The master prompt defines a consistent nine-part study for each character:
+A) Grundform; B) Buchstabenanatomie; C) Proportionen und Raster; D) Konstruktionsanalyse; E) Formvariationen; F) Formcharakter; G) Kalligrafie und Duktus; H) Graffiti-Transfer; I) Lernkontrolle.
+
+Production rules:
+- Use the master prompt for every individual letter and numeral study. Do not improvise a new layout or omit sections.
+- Begin with uppercase A–Z, then lowercase a–z and numerals 0–9, unless the owner explicitly changes the sequence.
+- The A is the first reference character; validate its study before treating it as the final visual benchmark for the series.
+- Keep neutral construction separate from style interpretation. Form, ductus/movement, tool behavior and presentation effects are separate dimensions.
+- Use German labels, light neutral paper, subtle grid, black primary drawing, violet construction lines and yellow guides.
+- Preserve anatomy specific to each character; never force all glyphs into one identical geometric recipe.
+- Do not infer stroke order or movement from a static contour. Do not copy identifiable writers, signatures, crews or existing pieces.
+- The nine-section template is a production requirement for the Academy, not a claim that every letter shares the same construction logic.
+
+This Academy is a new educational/editorial workstream. It complements the existing generator glyph specifications and the earlier `LETTERING_LEARNING_VIEW_PRODUCTION_BRIEF_01.md`; it does not silently replace or authorize changes to the generator architecture or active implementation tasks. Before implementation, inspect the current app and ask whether the owner has assigned a concrete integration task.
+
+**Recent commits:** master prompt `c1ef3a171e4f29ad4ea005c4f567dcbbc2d3c71f`; visual overview `5cca1e26f13b972cd1bb33aa44852367a489fa7a`.
