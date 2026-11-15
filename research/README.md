@@ -607,3 +607,8 @@ Added a source-critical dossier distinguishing Amsterdam's locally rooted late-1
 ### SHARK / Amsterdam source follow-up (15 November 2026)
 
 A follow-up check of the KWI essay's notes found that its Dortmund-history reference points to Markus Wiese's *Iron City: Graffiti Dortmund* (2002), not an explicitly identified interview for the Amsterdam anecdote. The *ALL SURFACE* publisher description attributes a more detailed mid-1980s Amsterdam recollection to SHARK, while a 2015 Mark Gmehling interview independently recalls Dortmund's early scene growth but does not corroborate that visit. The underlying SHARK testimony remains to be located; see the updated dossier's section 7.
+
+
+### Kalligrafie, Handstyle und Graffiti-Lettering
+
+- [Kalligrafie, Handstyle und Graffiti-Lettering — Grundlagen und Transfer 01](CALLIGRAPHY_GRAFFITI_LETTERING_FOUNDATIONS_01.md) — verbindet Form- und Bewegungsanalyse, ordnet wissenschaftliche Quellen ein und definiert einen vorsichtigen Transfer in Buchstabenlehre und Generator.
