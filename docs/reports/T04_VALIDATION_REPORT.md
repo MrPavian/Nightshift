@@ -14,7 +14,7 @@ so nothing is passed or failed on clearance. `side` says whether the measured ga
 | A | authored-contour | pass | 1 | — | `VAL_UNCALIBRATED` |
 | B | authored-contour | pass | 1 | — | `VAL_UNCALIBRATED` |
 | C | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
-| D | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
+| D | provisional | pass | 1 | — | — |
 | E | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
 | F | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
 | G | authored-contour | pass | 1 | — | `TOPO_APERTURE_UNRESOLVED`, `VAL_UNCALIBRATED` |
@@ -25,9 +25,9 @@ so nothing is passed or failed on clearance. `side` says whether the measured ga
 | L | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
 | M | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
 | N | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
-| O | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
+| O | provisional | pass | 1 | — | — |
 | P | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
-| Q | provisional | **fail** | ? | `VAL_UNDECLARED_CROSSING` | `VAL_UNCALIBRATED` |
+| Q | provisional | **fail** | ? | `VAL_UNDECLARED_CROSSING` | — |
 | R | authored-contour | pass | 1 | — | `VAL_UNCALIBRATED` |
 | S | authored-contour | pass | 1 | — | `VAL_UNCALIBRATED` |
 | T | provisional | pass | 1 | — | `VAL_UNCALIBRATED` |
@@ -97,7 +97,7 @@ Counters: `glyph.B.negative.counter.upper` enclosed=true, area=970.666667; `glyp
 | Measurement | Segments | Distance | ± bound | Side |
 |---|---|---|---|---|
 | counter wall | outer.seg.03 ↔ counter.upper.seg.03 | 17.421448 | 0.018162 | filled |
-| counter wall | outer.seg.03 ↔ counter.lower.seg.04 | 16.3005 | 0.011235 | filled |
+| counter wall | outer.seg.03 ↔ counter.lower.seg.04 | 16.3005 | 0.01863 | filled |
 | outer self-proximity | outer.seg.03 ↔ outer.seg.05 | 63.965674 | 0.0124 | unfilled |
 | outer self-proximity | outer.seg.04 ↔ outer.seg.06 | 64.353857 | 0.00296 | unfilled |
 | outer self-proximity | outer.seg.03 ↔ outer.seg.06 | 64.761099 | 0.008718 | unfilled |

@@ -15,18 +15,30 @@ const EPS = 1e-9;
  * @param {object[]} contours canonical contours {contourId, role, closed, segments}
  * @param {{flatteningTolerance:number, refinementFactor:number, maxRefinements:number}} numerical
  */
-export function analyseContours(contours, numerical) {
+export function analyseContours(contours, numerical, { isDeclaredCrossing = () => false } = {}) {
   let tol = numerical.flatteningTolerance;
-  let result;
-  for (let round = 0; round <= numerical.maxRefinements; round++) {
-    result = analyseAt(contours, tol);
-    certifyStraddlingCrossings(result);
-    result.flatteningTolerance = tol;
-    result.refinementRounds = round;
-    if (!result.intersections.some((x) => x.certainty === 'uncertain')) break;
+  let polys, intersections, round = 0;
+  for (; ; round++) {
+    polys = contours.map((c) => ({ ...flattenContour(c, tol), role: c.role, contour: c }));
+    intersections = certifyStraddlingCrossings(findIntersections(polys), polys);
+    const uncertain = intersections.some((x) => x.certainty === 'uncertain');
+    // Refinement can only turn "uncertain" into "certainly disjoint". If a certain,
+    // undeclared intersection already guarantees rejection, refining is wasted work
+    // (and on large curved candidates it was the cause of multi-second freezes).
+    const certainFailure = intersections.some((x) => x.certainty === 'certain' && !isDeclaredCrossing(x.contourIds));
+    if (!uncertain || certainFailure || round >= numerical.maxRefinements) break;
     tol /= numerical.refinementFactor;
   }
-  return result;
+  return {
+    polygons: polys.map((p) => ({ contourId: p.contourId, vertexCount: p.points.length, maxError: p.maxError })),
+    degeneracies: contours.flatMap(degeneracies),
+    intersections,
+    ...containmentAndFill(polys),
+    proximity: boundaryProximity(polys),
+    flatteningTolerance: tol,
+    refinementRounds: round,
+    _polys: polys,
+  };
 }
 
 /**
@@ -35,8 +47,7 @@ export function analyseContours(contours, numerical) {
  * bound), P and Q must cross. Uncertain candidate pairs between such contours
  * collapse into one certain crossing, without further refinement.
  */
-function certifyStraddlingCrossings(result) {
-  const polys = result._polys;
+function certifyStraddlingCrossings(intersections, polys) {
   const nodes = (p) => p.contour.segments.filter((s) => s.type !== 'close').map((s) => [s.x, s.y]);
   const straddles = (P, Q) => {
     let inside = false, outside = false;
@@ -48,7 +59,7 @@ function certifyStraddlingCrossings(result) {
   };
   const groups = new Map();
   const keep = [];
-  for (const x of result.intersections) {
+  for (const x of intersections) {
     if (x.kind !== 'cross') { keep.push(x); continue; }
     const key = x.contourIds.join('|');
     if (!groups.has(key)) {
@@ -68,19 +79,7 @@ function certifyStraddlingCrossings(result) {
       point: g.items.find((x) => x.certainty === 'certain')?.point ?? g.items[0].point,
     });
   }
-  result.intersections = keep;
-}
-
-function analyseAt(contours, tol) {
-  const polys = contours.map((c) => ({ ...flattenContour(c, tol), role: c.role, contour: c }));
-  return {
-    polygons: polys.map((p) => ({ contourId: p.contourId, vertexCount: p.points.length, maxError: p.maxError })),
-    degeneracies: contours.flatMap(degeneracies),
-    intersections: findIntersections(polys),
-    ...containmentAndFill(polys),
-    proximity: boundaryProximity(polys),
-    _polys: polys,
-  };
+  return keep;
 }
 
 /** Exact degeneracy checks on canonical segments (no tolerance needed). */
@@ -106,6 +105,31 @@ function degeneracies(c) {
   return out;
 }
 
+/**
+ * Sweep-and-prune over all polygon edges: calls fn(A, ai, B, bi) once for every
+ * unordered edge pair whose bounding boxes (grown by each edge's error bound)
+ * come within `margin`. Deterministic order. Replaces the all-pairs scan.
+ */
+function forEachNearPair(polys, margin, fn) {
+  const items = [];
+  polys.forEach((P, pi) => P.edges.forEach((e, ei) => {
+    const a = P.points[e.a], b = P.points[e.b], g = e.errorBound;
+    items.push({ pi, ei, minX: Math.min(a[0], b[0]) - g, maxX: Math.max(a[0], b[0]) + g, minY: Math.min(a[1], b[1]) - g, maxY: Math.max(a[1], b[1]) + g });
+  }));
+  items.sort((u, v) => u.minX - v.minX || u.pi - v.pi || u.ei - v.ei);
+  for (let i = 0; i < items.length; i++) {
+    const u = items[i];
+    for (let j = i + 1; j < items.length; j++) {
+      const v = items[j];
+      if (v.minX > u.maxX + margin) break;
+      if (v.minY > u.maxY + margin || u.minY > v.maxY + margin) continue;
+      // Canonical orientation: lower polygon index first; within a polygon, lower edge index first.
+      if (u.pi < v.pi || (u.pi === v.pi && u.ei < v.ei)) fn(polys[u.pi], u.ei, polys[v.pi], v.ei);
+      else fn(polys[v.pi], v.ei, polys[u.pi], u.ei);
+    }
+  }
+}
+
 const shareVertex = (e, f) => e.a === f.a || e.a === f.b || e.b === f.a || e.b === f.b;
 
 /**
@@ -128,36 +152,29 @@ function findIntersections(polys) {
       point,
     });
   };
-  for (let i = 0; i < polys.length; i++) {
-    for (let j = i; j < polys.length; j++) {
-      const A = polys[i], B = polys[j];
-      for (let x = 0; x < A.edges.length; x++) {
-        for (let y = A === B ? x + 1 : 0; y < B.edges.length; y++) {
-          const e = A.edges[x], f = B.edges[y];
-          const a0 = A.points[e.a], a1 = A.points[e.b], b0 = B.points[f.a], b1 = B.points[f.b];
-          if (A === B && shareVertex(e, f)) {
-            // Adjacent edges only "intersect" if they fold back onto each other.
-            const shared = e.b === f.a ? a1 : e.a === f.b ? a0 : null;
-            if (shared && e.errorBound === 0 && f.errorBound === 0) {
-              const other = e.b === f.a ? b1 : b0;
-              const prev = e.b === f.a ? a0 : a1;
-              if (orient(prev, shared, other) === 0 && (prev[0] - shared[0]) * (other[0] - shared[0]) + (prev[1] - shared[1]) * (other[1] - shared[1]) > 0) {
-                record(A, e, B, f, 'certain', shared);
-              }
-            }
-            continue;
-          }
-          const bound = e.errorBound + f.errorBound;
-          if (bound === 0) {
-            if (segmentsIntersect(a0, a1, b0, b1)) record(A, e, B, f, 'certain', segmentDistance(a0, a1, b0, b1).pair[0]);
-          } else {
-            const d = segmentDistance(a0, a1, b0, b1);
-            if (d.distance <= bound + EPS) record(A, e, B, f, 'uncertain', d.pair[0]);
-          }
+  forEachNearPair(polys, EPS, (A, x, B, y) => {
+    const e = A.edges[x], f = B.edges[y];
+    const a0 = A.points[e.a], a1 = A.points[e.b], b0 = B.points[f.a], b1 = B.points[f.b];
+    if (A === B && shareVertex(e, f)) {
+      // Adjacent edges only "intersect" if they fold back onto each other.
+      const shared = e.b === f.a ? a1 : e.a === f.b ? a0 : null;
+      if (shared && e.errorBound === 0 && f.errorBound === 0) {
+        const other = e.b === f.a ? b1 : b0;
+        const prev = e.b === f.a ? a0 : a1;
+        if (orient(prev, shared, other) === 0 && (prev[0] - shared[0]) * (other[0] - shared[0]) + (prev[1] - shared[1]) * (other[1] - shared[1]) > 0) {
+          record(A, e, B, f, 'certain', shared);
         }
       }
+      return;
     }
-  }
+    const bound = e.errorBound + f.errorBound;
+    if (bound === 0) {
+      if (segmentsIntersect(a0, a1, b0, b1)) record(A, e, B, f, 'certain', segmentDistance(a0, a1, b0, b1).pair[0]);
+    } else {
+      const d = segmentDistance(a0, a1, b0, b1);
+      if (d.distance <= bound + EPS) record(A, e, B, f, 'uncertain', d.pair[0]);
+    }
+  });
   return [...hits.values()];
 }
 
@@ -253,39 +270,34 @@ const arcAt = (poly, cum, i, p) => {
   return cum[i] + Math.hypot(p[0] - a[0], p[1] - a[1]);
 };
 
+// Boundary pairs farther apart than this are not reported (reporting radius in
+// glyph units; wall/gap measurements of interest are far smaller).
+export const PROXIMITY_SEARCH_RADIUS = 70;
+
 function boundaryProximity(polys) {
-  const pairs = [];
-  for (let i = 0; i < polys.length; i++) {
-    for (let j = i; j < polys.length; j++) {
-      const A = polys[i], B = polys[j];
+  const best = new Map();
+  const arcs = new Map(polys.map((P) => [P, arcPositions(P)]));
+  forEachNearPair(polys, PROXIMITY_SEARCH_RADIUS, (A, ei, B, fi) => {
+    let e = A.edges[ei], f = B.edges[fi];
+    if (A === B) {
       const nSeg = A.contour.segments.length;
-      const best = new Map();
-      const cum = A === B ? arcPositions(A) : null;
-      const total = cum ? cum[cum.length - 1] : 0;
-      for (let ei = 0; ei < A.edges.length; ei++) {
-        const e = A.edges[ei];
-        for (let fi = 0; fi < B.edges.length; fi++) {
-          const f = B.edges[fi];
-          if (A === B) {
-            const d = Math.abs(e.segIndex - f.segIndex);
-            // same or adjacent original segments (cyclic, skipping the move at index 0)
-            if (d <= 1 || d === nSeg - 2) continue;
-            if (e.segIndex > f.segIndex) continue;
-          }
-          const r = segmentDistance(A.points[e.a], A.points[e.b], B.points[f.a], B.points[f.b]);
-          if (cum) {
-            const d = Math.abs(arcAt(A, cum, ei, r.pair[0]) - arcAt(A, cum, fi, r.pair[1]));
-            if (Math.min(d, total - d) <= ARC_RATIO * r.distance) continue;
-          }
-          const key = `${e.segmentId}|${f.segmentId}`;
-          const errorBound = e.errorBound + f.errorBound;
-          if (!best.has(key) || r.distance < best.get(key).distance) {
-            best.set(key, { contourIds: A === B ? [A.contourId] : [A.contourId, B.contourId], segmentIds: [e.segmentId, f.segmentId], distance: r.distance, closestPointPair: r.pair, errorBound });
-          }
-        }
-      }
-      pairs.push(...best.values());
+      const d = Math.abs(e.segIndex - f.segIndex);
+      // same or adjacent original segments (cyclic, skipping the move at index 0)
+      if (d <= 1 || d === nSeg - 2) return;
+      if (e.segIndex > f.segIndex) { [e, f] = [f, e]; [ei, fi] = [fi, ei]; }
     }
-  }
-  return pairs.sort((x, y) => x.distance - y.distance || x.segmentIds.join().localeCompare(y.segmentIds.join()));
+    const r = segmentDistance(A.points[e.a], A.points[e.b], B.points[f.a], B.points[f.b]);
+    if (r.distance > PROXIMITY_SEARCH_RADIUS) return;
+    if (A === B) {
+      const cum = arcs.get(A), total = cum[cum.length - 1];
+      const d = Math.abs(arcAt(A, cum, ei, r.pair[0]) - arcAt(A, cum, fi, r.pair[1]));
+      if (Math.min(d, total - d) <= ARC_RATIO * r.distance) return;
+    }
+    const key = `${A.contourId}|${B.contourId}|${e.segmentId}|${f.segmentId}`;
+    const errorBound = e.errorBound + f.errorBound;
+    if (!best.has(key) || r.distance < best.get(key).distance) {
+      best.set(key, { contourIds: A === B ? [A.contourId] : [A.contourId, B.contourId], segmentIds: [e.segmentId, f.segmentId], distance: r.distance, closestPointPair: r.pair, errorBound });
+    }
+  });
+  return [...best.values()].sort((x, y) => x.distance - y.distance || x.segmentIds.join().localeCompare(y.segmentIds.join()));
 }

@@ -1,70 +1,6 @@
 {
   "clearance": {
-    "boundarySelfProximity": [
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            99.522949,
-            50.204834
-          ],
-          [
-            3.196289,
-            51.850586
-          ]
-        ],
-        "featureId": "glyph.Q.contour.outer",
-        "measurementErrorBound": 0.014175,
-        "minimumDistance": 96.340718,
-        "segmentIds": [
-          "glyph.Q.contour.outer.seg.01",
-          "glyph.Q.contour.outer.seg.04"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            100.996134,
-            69.381351
-          ],
-          [
-            2,
-            70
-          ]
-        ],
-        "featureId": "glyph.Q.contour.outer",
-        "measurementErrorBound": 0.01218,
-        "minimumDistance": 98.998067,
-        "segmentIds": [
-          "glyph.Q.contour.outer.seg.01",
-          "glyph.Q.contour.outer.seg.03"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            100.996134,
-            70.618649
-          ],
-          [
-            2,
-            70
-          ]
-        ],
-        "featureId": "glyph.Q.contour.outer",
-        "measurementErrorBound": 0.01218,
-        "minimumDistance": 98.998067,
-        "segmentIds": [
-          "glyph.Q.contour.outer.seg.02",
-          "glyph.Q.contour.outer.seg.04"
-        ],
-        "side": "unfilled"
-      }
-    ],
+    "boundarySelfProximity": [],
     "counterWalls": []
   },
   "diagnostics": [
@@ -78,8 +14,8 @@
       "glyphId": "latin.upper.Q",
       "measured": {
         "point": [
-          86.215887,
-          119.882079
+          65.545462,
+          131.427005
         ]
       },
       "message": "Contours glyph.Q.contour.outer and glyph.Q.contour.subpath.3 cross without a declared crossing.",
@@ -104,17 +40,6 @@
       "message": "Contours glyph.Q.contour.subpath.2 and glyph.Q.contour.subpath.3 cross without a declared crossing.",
       "severity": "error",
       "stage": "contour-intersection-analysis",
-      "variantId": "q.provisional"
-    },
-    {
-      "affectedIds": [
-        "glyph.Q.contour.outer"
-      ],
-      "code": "VAL_UNCALIBRATED",
-      "glyphId": "latin.upper.Q",
-      "message": "3 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
-      "severity": "warning",
-      "stage": "clearance-analysis",
       "variantId": "q.provisional"
     }
   ],
@@ -160,7 +85,7 @@
     },
     {
       "stage": "clearance-analysis",
-      "status": "measured-uncalibrated"
+      "status": "passed"
     },
     {
       "note": "No anchors declared (anchorStatus: not-yet-derived).",

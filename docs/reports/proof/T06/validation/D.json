@@ -1,64 +1,9 @@
 {
   "clearance": {
-    "boundarySelfProximity": [
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            10,
-            103.79248
-          ],
-          [
-            88.929932,
-            103.79248
-          ]
-        ],
-        "featureId": "glyph.D.contour.outer",
-        "measurementErrorBound": 0.007682,
-        "minimumDistance": 78.929932,
-        "segmentIds": [
-          "glyph.D.contour.outer.seg.01",
-          "glyph.D.contour.outer.seg.03"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            10,
-            36.957031
-          ],
-          [
-            89.446289,
-            36.957031
-          ]
-        ],
-        "featureId": "glyph.D.contour.outer",
-        "measurementErrorBound": 0.007682,
-        "minimumDistance": 79.446289,
-        "segmentIds": [
-          "glyph.D.contour.outer.seg.01",
-          "glyph.D.contour.outer.seg.04"
-        ],
-        "side": "unfilled"
-      }
-    ],
+    "boundarySelfProximity": [],
     "counterWalls": []
   },
-  "diagnostics": [
-    {
-      "affectedIds": [
-        "glyph.D.contour.outer"
-      ],
-      "code": "VAL_UNCALIBRATED",
-      "glyphId": "latin.upper.D",
-      "message": "2 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
-      "severity": "warning",
-      "stage": "clearance-analysis",
-      "variantId": "d.provisional"
-    }
-  ],
+  "diagnostics": [],
   "geometryHash": "36d1c295125e1a968ea3a64eafe8e29f60d29b3be890f61a8246ff2028cd92d4",
   "glyphId": "latin.upper.D",
   "hardChecksPassed": true,
@@ -101,7 +46,7 @@
     },
     {
       "stage": "clearance-analysis",
-      "status": "measured-uncalibrated"
+      "status": "passed"
     },
     {
       "note": "No anchors declared (anchorStatus: not-yet-derived).",
