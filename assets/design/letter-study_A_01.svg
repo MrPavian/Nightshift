@@ -37,8 +37,9 @@
 <rect class="panel" x="48" y="738" width="510" height="270"/><rect x="48" y="738" width="510" height="42" fill="#171717"/><text class="h" x="68" y="768">07 · KALLIGRAFIE &amp; DUKTUS</text>
 <g fill="none" stroke="#111" stroke-linecap="round"><path d="M120 900L175 820L230 900M145 870H205" stroke-width="15"/><path d="M300 900L355 820L410 900M325 870H385" stroke-width="5"/></g>
 <path class="purple" d="M120 915Q175 940 230 915M300 915Q355 940 410 915"/>
-<text class="s" x="75" y="970">Werkzeug, Winkel und Rhythmus beeinflussen den Duktus.</text>
-<text class="s" x="75" y="990">Statische Konturen beweisen keine Strichreihenfolge.</text>
+<text class="s" x="75" y="950">Werkzeug, Winkel und Rhythmus beeinflussen den Duktus.</text>
+<text class="s" x="75" y="972">Bewegungsannahmen bleiben hier Hypothesen.</text>
+<text class="s" x="75" y="994">Statische Konturen beweisen keine Strichreihenfolge.</text>
 <rect class="panel" x="585" y="738" width="510" height="270"/><rect x="585" y="738" width="510" height="42" fill="#171717"/><text class="h" x="605" y="768">08 · GRAFFITI-TRANSFER</text>
 <g font-family="Arial" font-weight="900" text-anchor="middle"><text x="700" y="895" font-size="100" fill="#111" stroke="#111" stroke-width="2">A</text><text x="840" y="895" font-size="100" fill="#d5d0c6" stroke="#111" stroke-width="10" paint-order="stroke">A</text><text x="990" y="895" font-size="100" fill="#eee" stroke="#8756a7" stroke-width="5" paint-order="stroke">A</text></g>
 <text class="s" x="700" y="945" text-anchor="middle">Grundform</text><text class="s" x="840" y="945" text-anchor="middle">Block-Studie</text><text class="s" x="990" y="945" text-anchor="middle">freie Interpretation</text>
