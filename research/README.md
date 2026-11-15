@@ -582,3 +582,9 @@ Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibl
 Added a central editorial control document mapping claims across the German archive drafts 01–06 and linked research packages. It records claim IDs, source strength, source scope, caveats, verification actions, source concentration, rights separation and a prioritized release backlog. It does not grant publication approval.
 
 - [Blackbook Archive Claim/Source Matrix 01](BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md)
+
+### 2026-11 — Dortmund 1983–1991 source audit
+
+Added a focused source-critical supplement comparing the contemporary 1987 *Da kukse wa* publication, its local Writer-ABC, 1989 press coverage, the KWI regional synthesis and INGRID's documented holdings. It preserves the 1987 local wording (including “getting fame”), separates contemporary media framing from historical fact, and sets a page-by-page primary-source and image-rights research plan.
+
+- [Dortmund 1983–1991 — Quellenkritischer Vertiefungsbaustein 01](DORTMUND_1983_1991_SOURCE_AUDIT_01.md)
