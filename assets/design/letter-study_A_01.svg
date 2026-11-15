@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1188" viewBox="0 0 1680 1188">
+<defs>
+ <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9d2c8" stroke-width="1"/></pattern>
+ <style>
+ .h{font:700 25px Arial,sans-serif;fill:#f8f5ee}.t{font:20px Arial,sans-serif;fill:#171717}.s{font:16px Arial,sans-serif;fill:#333}.n{font:700 22px Arial,sans-serif;fill:#171717}.panel{fill:#fbf8f1;stroke:#222;stroke-width:2}.purple{stroke:#8756a7;stroke-width:3;fill:none}.yellow{stroke:#d1ad00;stroke-width:3;fill:none}.letter{stroke:#111;stroke-width:13;fill:none;stroke-linejoin:round;stroke-linecap:round}
+ </style>
+</defs>
+<rect width="1680" height="1188" fill="#eee9df"/><rect width="1680" height="1188" fill="url(#grid)" opacity=".65"/>
+<rect x="24" y="24" width="1632" height="1140" fill="none" stroke="#171717" stroke-width="5"/>
+<text x="58" y="88" font-family="Arial" font-size="52" font-weight="900" fill="#111">NIGHTSHIFT</text>
+<text x="60" y="124" font-family="Arial" font-size="24" font-weight="bold" fill="#9c7d00">LETTER CONSTRUCTION ACADEMY</text>
+<text x="1620" y="82" text-anchor="end" font-family="Arial" font-size="42" font-weight="900" fill="#111">BUCHSTABENSTUDIE: A</text>
+<text x="1620" y="118" text-anchor="end" class="s">Referenzstandard · MASTER CONTROL PROMPT 01 · Version 1.0</text>
+<!-- panels -->
+<g>
+<rect class="panel" x="48" y="154" width="510" height="270"/><rect x="48" y="154" width="510" height="42" fill="#171717"/><text class="h" x="68" y="184">01 · GRUNDFORM</text>
+<path class="letter" d="M170 365L270 215L370 365M218 294H322"/>
+<path class="purple" d="M170 365L270 215L370 365M218 294H322"/><path class="yellow" d="M140 365H400M270 205V380M150 215H390"/>
+<text class="s" x="78" y="400">Neutrale geometrische Referenzform – ohne Effekte</text>
+<rect class="panel" x="585" y="154" width="510" height="270"/><rect x="585" y="154" width="510" height="42" fill="#171717"/><text class="h" x="605" y="184">02 · BUCHSTABENANATOMIE</text>
+<path class="letter" d="M710 365L810 215L910 365M758 294H862"/>
+<path class="purple" d="M810 215L810 200M745 310L700 310M880 345L930 345M810 275L850 255"/>
+<text class="s" x="825" y="210">Spitze / Apex</text><text class="s" x="615" y="304">Schenkel</text><text class="s" x="935" y="350">Fuß</text><text class="s" x="875" y="250">Innenraum</text><text class="s" x="615" y="390">Querbalken</text>
+<rect class="panel" x="1122" y="154" width="510" height="270"/><rect x="1122" y="154" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="184">03 · PROPORTIONEN &amp; RASTER</text>
+<path class="letter" d="M1220 365L1320 215L1420 365M1268 294H1372"/>
+<path class="yellow" d="M1195 215H1450M1195 365H1450"/><path class="purple" d="M1195 294H1450M1320 200V380"/>
+<text class="s" x="1450" y="222">Versalhöhe</text><text class="s" x="1450" y="300">Querbalken</text><text class="s" x="1450" y="372">Grundlinie</text>
+<rect class="panel" x="48" y="446" width="510" height="270"/><rect x="48" y="446" width="510" height="42" fill="#171717"/><text class="h" x="68" y="476">04 · KONSTRUKTIONSANALYSE</text>
+<g transform="translate(85 520)"><path d="M0 140L55 0L110 140" class="purple"/><path d="M150 140L205 0L260 140" stroke="#111" stroke-width="20" fill="none"/><path d="M300 140L355 0L410 140M326 85H384" class="letter" stroke-width="9"/></g>
+<text class="s" x="90" y="690">Skelett → Strichstärke → Verbindungen → Kontur → Grundform</text>
+<rect class="panel" x="585" y="446" width="510" height="270"/><rect x="585" y="446" width="510" height="42" fill="#171717"/><text class="h" x="605" y="476">05 · FORMVARIATIONEN</text>
+<g fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"><path d="M620 650L655 535L690 650M635 610H675"/><path d="M715 650L780 535L845 650M740 610H820"/><path d="M865 650L910 535L955 650M885 610H935"/><path d="M975 650Q1010 530 1045 650M990 610H1030"/></g>
+<text class="s" x="615" y="690">Schmal · Breit · Geneigt · Organisch (schematische Studien)</text>
+<rect class="panel" x="1122" y="446" width="510" height="270"/><rect x="1122" y="446" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="476">06 · FORMCHARAKTER</text>
+<g class="t"><text x="1150" y="535">Geometrisch</text><text x="1150" y="575">Organisch</text><text x="1150" y="615">Kompakt</text><text x="1150" y="655">Dynamisch</text></g>
+<g class="s"><text x="1335" y="535">klar, technisch, stabil</text><text x="1335" y="575">weichere Übergänge</text><text x="1335" y="615">dicht, kräftig</text><text x="1335" y="655">geneigt, spannungsvoll</text></g>
+<rect class="panel" x="48" y="738" width="510" height="270"/><rect x="48" y="738" width="510" height="42" fill="#171717"/><text class="h" x="68" y="768">07 · KALLIGRAFIE &amp; DUKTUS</text>
+<g fill="none" stroke="#111" stroke-linecap="round"><path d="M120 900L175 820L230 900M145 870H205" stroke-width="15"/><path d="M300 900L355 820L410 900M325 870H385" stroke-width="5"/></g>
+<path class="purple" d="M120 915Q175 940 230 915M300 915Q355 940 410 915"/>
+<text class="s" x="75" y="970">Werkzeug, Winkel und Rhythmus beeinflussen den Duktus.</text>
+<text class="s" x="75" y="990">Statische Konturen beweisen keine Strichreihenfolge.</text>
+<rect class="panel" x="585" y="738" width="510" height="270"/><rect x="585" y="738" width="510" height="42" fill="#171717"/><text class="h" x="605" y="768">08 · GRAFFITI-TRANSFER</text>
+<g font-family="Arial" font-weight="900" text-anchor="middle"><text x="700" y="895" font-size="100" fill="#111" stroke="#111" stroke-width="2">A</text><text x="840" y="895" font-size="100" fill="#d5d0c6" stroke="#111" stroke-width="10" paint-order="stroke">A</text><text x="990" y="895" font-size="100" fill="#eee" stroke="#8756a7" stroke-width="5" paint-order="stroke">A</text></g>
+<text class="s" x="700" y="945" text-anchor="middle">Grundform</text><text class="s" x="840" y="945" text-anchor="middle">Block-Studie</text><text class="s" x="990" y="945" text-anchor="middle">freie Interpretation</text>
+<rect class="panel" x="1122" y="738" width="510" height="270"/><rect x="1122" y="738" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="768">09 · LERNKONTROLLE</text>
+<g class="t"><text x="1150" y="830">□ A im Raster konstruieren</text><text x="1150" y="875">□ Drei Breitenvarianten zeichnen</text><text x="1150" y="920">□ Mit zwei Werkzeugen erproben</text><text x="1150" y="965">□ Eine eigene Blockform entwickeln</text></g>
+</g>
+<rect x="48" y="1030" width="1584" height="88" fill="#171717"/>
+<text x="840" y="1085" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#fff">KONSTRUKTION VOR DEKORATION · VERSTEHEN · VARIIEREN · ANWENDEN</text>
+<text x="1620" y="1145" text-anchor="end" class="s">NIGHTSHIFT · ACADEMY · STUDY A · 01</text>
+</svg>
