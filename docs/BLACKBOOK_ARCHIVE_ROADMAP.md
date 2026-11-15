@@ -173,6 +173,9 @@ Vor einer Änderung Repository und aktuelle Implementierung prüfen. Nur die kle
 
 ## Binding design and delivery documents
 
+- [Editorial Audit 01 — Entries 01–06](../research/BLACKBOOK_ARCHIVE_EDITORIAL_AUDIT_01.md) — claim/source audit and required corrections for the first six article drafts.
+
+
 - [Visual & Interaction Styleguide 01](BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md) — visual system, navigation, search, entry pages, timeline, scenes, diagrams, accessibility and release acceptance.
 - [Joint Work Order & Delivery Plan 01](BLACKBOOK_ARCHIVE_JOINT_WORK_ORDER_01.md) — current gap audit, role split, staged sequence, gates and test matrix.
 
