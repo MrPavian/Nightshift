@@ -231,6 +231,23 @@ Therefore:
 - Do not overwrite or duplicate ongoing work.
 - If the owner says a task has been skipped or reprioritized, preserve that decision and report the dependency/risk rather than silently reverting it.
 
+### Verified implementation state (Claude, 2026-11-15, afternoon)
+
+Checked against code, tests and open PRs; details in `docs/reports/CAPABILITY_MATRIX_01.md`.
+
+| Work | State | Where |
+|---|---|---|
+| C01 engine and editor (registry, validator, renderer, proof sheets, review page, contour editor) | merged, tested | main |
+| Editor freeze reported on the phone (dragging a B node far across the outline froze the editor; the letter disappeared) | fixed, tested; **not merged** | PR for `claude/fix-editor-freeze`: worst validation 177 ms instead of up to 37 s, previews coalesced per frame, rendering fallback |
+| C02 wave 1 (masters C, D, O, P, Q) | waiting for owner design approval | PR #6 |
+| C06 archive, German edition (28 entries, 111 claims, timeline, 5 paths, offline, editor bridge 1.1.0) | complete as a package; **not merged** | PR #8, `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md` |
+| C02 waves 2–4, C03, C04, C05, C08 | not implemented (spec only) | Issue #9 |
+
+**Open conflicts that need an owner decision:**
+1. **Priority.** Issue #9 (08:42 UTC) sets the order C02 → C03 → C04 → C05 → C08 (Creator-first). This briefing (10:15 UTC) names archive reference views as P1 and does not mention Issue #9.
+2. **C06 vs. styleguide.** The C06 archive UI predates `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md`. It uses a light paper environment instead of a dark ink environment, one colour per entry type (the styleguide forbids that), no monospaced metadata face, and 5 navigation sections instead of the 9 in styleguide §3. PR #8 needs a revision against the styleguide before merging.
+3. **Archive content vs. the new German drafts 01–06 and the claim/source matrix.** PR #8 has its own 28 entries in `research/archive/de/`. The drafts in `research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_0*.md` and the claim/source matrix were written in parallel. They need to be merged, not duplicated.
+
 ## 8. Working priorities
 
 Use this order unless the owner explicitly changes it:

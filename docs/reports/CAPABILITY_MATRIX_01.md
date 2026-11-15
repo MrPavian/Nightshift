@@ -1,7 +1,7 @@
 # Capability matrix 01 — repository reconciliation for C08
 
 **Date:** 2026-11-15. **Purpose:** the mandatory first action of C08 (`docs/CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md`): what actually exists, measured against the Creator-first vision (D-014).
-**Basis:** main at `98def9b`, plus the open branches named below. Each row is judged by code and tests, not by documents.
+**Basis:** main at `af1a956` (including `CLAUDE.md` and the archive styleguide), plus the open branches named below. Each row is judged by code and tests, not by documents.
 
 **Status categories:**
 - **tested:** implemented and covered by automated tests or proofs.
@@ -54,3 +54,16 @@
    - Burner and Bombing are never grammars.
    - Palette never counts as structural diversity.
 5. **C08** can only start with a real generator, after C04 and C05. Building the Creator view before that would produce exactly the mock-ups the vision forbids.
+
+## Conflicts with documents added on 2026-11-15
+
+These conflicts are open and need an owner decision; they are mirrored in `CLAUDE.md` §7.
+
+- **Priority order.** Issue #9 sets the Creator-first order (C02 → C08). `CLAUDE.md` names the archive reference views as P1.
+- **C06 UI vs. `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md`.** The C06 UI differs from the styleguide in five points:
+  - light environment instead of dark ink with paper sheets;
+  - one colour per entry type, which the styleguide forbids;
+  - no monospaced metadata face;
+  - 5 instead of 9 navigation sections;
+  - no "Visual Archive" or "Tools & Materials" section.
+- **C06 content vs. the German drafts 01–06 and `BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md`.** Two parallel German content bases exist and must be merged.
