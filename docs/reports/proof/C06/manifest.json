@@ -5,7 +5,7 @@
   "claimSheets": 28,
   "bridgeTargets": 4,
   "inputs": {
-    "data/archive/archive.v1.de.json": "b8b13fb1fa192636c10589bc2e1920f4be8504b10b186f9cd8aeb1cdec3a1d40",
+    "data/archive/archive.v1.de.json": "65843c829ecab6bd7afc9b8a70e5f27cf8ed958904109a5e7cdafd8589a2bfae",
     "archive/index.html": "9bcb1bbe709e9e6f0bd37596f99b1e79738a4506b0a680814b23db302ad469a5",
     "archive/app.js": "9495586bb806506168da3a5fd0637285faaf9132ff0e7b11e58eb3cc39125f53",
     "archive/app.css": "4e1cd5feffa36691e662d20d5eff813d176ed26f04c36f9f254fbbc72a32931b",
@@ -13,11 +13,11 @@
   },
   "screenshots": {
     "home-phone.png": "80f496e3d9b7ba31c3acb0470015a2a6301adefc9bd279db20b7141e1529380a",
-    "entry-phone.png": "69035ff83730be08e19131c19e00865c9ae688c6bde48c0789015897dae9244f",
+    "entry-phone.png": "1aac20592ae1bc663f69d9b90447f190e7014d88c95da5a5d1d33644d9bd28b5",
     "entry-desktop.png": "607aa9265e9f58a56409a125e0e31f93f2a4d4c8629c052a12f8e289dfd0790f",
     "search-phone.png": "bfc4593dafea5961426e5c53f6260b45ae31fc4eb4ca7185cb28b7a8e37ee5c4",
     "timeline-phone.png": "be998ce5c8322703facd13a29dd6120f6f94248c93427d87c5b3be11e5e6a5b1",
     "scenes-desktop.png": "319ade27a6ec9385ffda478e7cbbf00e67a0f12fc786d432ab1ad7fcd808c923",
-    "path-phone.png": "70a9639ebc4e48e1cf5f5156872d6d178dbd1daa71c5078e7c739e142337de62"
+    "path-phone.png": "0be629bd74451c85ab5ede59ea4cd322a849fa1065cab6731672e011c6db3ce5"
   }
 }

@@ -1047,6 +1047,17 @@
       "text": "Tags, Throw-ups und Pieces bestehen nebeneinander, statt eine Leiter zu bilden, die jeder Writer erklimmen muss."
     },
     {
+      "entry": "practice.piece",
+      "evidence": "strong",
+      "id": "practice.piece#c4",
+      "kind": "nightshift-design-inference",
+      "ledger": [],
+      "sources": [
+        "doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md"
+      ],
+      "text": "NIGHTSHIFT behandelt Burner als wertende Beschreibung statt als Geometrie oder Qualitätsstufe, und Throw-up als Kunstwerkform, die nicht mit dem Buchstabenstil Bubble gleichzusetzen ist."
+    },
+    {
       "entry": "practice.sequential-train-photography",
       "evidence": "strong",
       "id": "practice.sequential-train-photography#c1",
@@ -2455,7 +2466,8 @@
       "claimIds": [
         "practice.piece#c1",
         "practice.piece#c2",
-        "practice.piece#c3"
+        "practice.piece#c3",
+        "practice.piece#c4"
       ],
       "diagrams": [
         "diagram.writing-forms"
@@ -2465,6 +2477,16 @@
           "label": "Stufen einer Leiter",
           "target": null,
           "text": "Tag, Throw-up und Piece bestehen nebeneinander; niemand muss vom einen zum nächsten „aufsteigen“ [c3]."
+        },
+        {
+          "label": "Burner",
+          "target": null,
+          "text": "eine wertende Bezeichnung für ein besonders starkes Piece, keine eigene Buchstabengeometrie und keine Qualitätsstufe [c4]."
+        },
+        {
+          "label": "Bubble",
+          "target": null,
+          "text": "ein runder Buchstabenbau; Throw-ups sind oft rund, aber Throw-up ist eine Form, kein Buchstabenstil [c4]."
         }
       ],
       "editorialStatus": "source-checked",
@@ -3109,7 +3131,7 @@
     },
     {
       "path": "research/archive/de/entries/practice.piece.md",
-      "sha256": "c9a2991a3a963c4b3a6fee4fd0970f0b288ef98fe06b8fb2d8993a97171490f9"
+      "sha256": "68d18e0b8b9ae755b0a2d5ba5c342f0af96876e87edfbb01ffff8e59ca6cac67"
     },
     {
       "path": "research/archive/de/entries/practice.sequential-train-photography.md",
@@ -3166,6 +3188,10 @@
     {
       "path": "research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md",
       "sha256": "e414befb7416ba17ec36ada373536b5d250d95870a9fb01dfd320ff335542bd7"
+    },
+    {
+      "path": "research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md",
+      "sha256": "e989a13310c4423f465eb2e5d2637beda658f03be2079bff8f8eb3be9bc30a56"
     },
     {
       "path": "research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md",

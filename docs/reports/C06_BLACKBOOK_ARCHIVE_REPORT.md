@@ -166,7 +166,8 @@ The German entries rest on primary-checked sources, as plan item F6 requires.
    - The plan IDs were adopted where the ID scheme allows; `concept.local-terms` and the archive-memory path were added.
    - Eight plan entries are still missing. Most need sources that are not yet in a parseable research register: wildstyle, bubble, aerosol, Martha Cooper, CORNBREAD/TOPCAT person pages.
 1. **Owner review:** editorial approval of all 27 entries, and visual approval of the archive design.
-2. **Language:** decided. The German edition is complete; the English edition is on the roadmap after C07.
+2. **Language:** decided (D-015). The German edition is complete; the English edition is on the roadmap after C07.
+2a. **Creator-first vision (D-014, 2026-11-15):** the archive follows its taxonomy. Throw-up and Piece are artwork forms, Burner is an evaluative description (stated explicitly in `practice.piece`), and Bubble is a letterform grammar. Bombing and Panel/Wholecar have no entries of their own yet; Panel/Wholecar are in the missing plan entries.
 3. **German scenes not yet included:** Berlin, Cologne/Düsseldorf and Munich. Their sources (DE-02, DE-04, DE-08, DE-09) could not be checked in this session.
 4. **Dortmund Style:** the published description is short. A construction study needs dated examples from several writers; the INGRID and Dortmund corpus work in `research/` is the route.
 5. **No `documented-fact` claims yet:** dated primary records (for example MTA documents for 1989) are still open. Museum statements are labelled as institutional accounts.

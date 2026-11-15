@@ -525,7 +525,7 @@
 
 ## 2026-11-15 — C06: complete German edition of the archive
 
-- Owner decision: the archive is completely German; a complete English edition follows after C07 (roadmap section “Sprachausgaben”, D-014).
+- Owner decision: the archive is completely German; a complete English edition follows after C07 (roadmap section “Sprachausgaben”, D-015).
 - Edition-aware pipeline:
   - entry sources in `research/archive/de/`, output `data/archive/archive.v1.de.json` (schema 2.0, `language: "de"`);
   - German section headings are parsed (`SECTION_HEADINGS`);
