@@ -36,6 +36,11 @@ The Bronx Museum's Henry Chalfant exhibition archive names Dondi, Futura, Lady P
 
 The Museum of the City of New York's Martin Wong collection highlights Rammellzee, Lee Quiñones, Lady Pink and Futura 2000 among artists whose work documents the transition from street/subway practice into canvases, paper and institutional exhibition contexts. [A]
 
+
+## Editorial cross-reference: women in graffiti writing
+
+Women writers and cultural workers must be integrated into the main scene chronologies, not isolated as exceptional biographies. For the source-backed gender and visibility analysis, see [Women in Graffiti Writing — Visibility, Participation and Scene History 01](WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md). The dossier distinguishes documented early participation, Lady Pink's first-person account, scholarly analysis of historical omission, transnational networks and unresolved identities such as Barbara 62, Eva 62 and Stoney.
+
 ## Research protocol for future profiles
 
 Every expanded person/crew profile should include:
