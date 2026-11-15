@@ -34,7 +34,7 @@ Mehrere lokale Traditionen hatten eigene Wege: das Namenschreiben in Philadelphi
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | editorial-synthesis | strong | NYC-001 | Politische Schrift, Gang-Markierungen, Namenschreiben im Viertel und Wandbildtraditionen gehen dem modernen U-Bahn-Writing voraus und dürfen nicht zu einer Praxis verschmolzen werden. |
+| c1 | editorial-synthesis | strong | NYC-001; matrix:MNE-01 | Politische Schrift, Gang-Markierungen, Namenschreiben im Viertel und Wandbildtraditionen gehen dem modernen U-Bahn-Writing voraus und dürfen nicht zu einer Praxis verschmolzen werden. |
 | c2 | scholarly-interpretation | strong | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5 | Elizabeth Sages begutachtete Studie zum „Jaytalking“ im Paris des Fin de Siècle belegt eine Kultur öffentlicher Schrift im späten 19. Jahrhundert. |
 | c3 | editorial-synthesis | strong | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md | Das Archiv spricht von der Entstehung des modernen New Yorker Hip-Hop-Writings statt von der Erfindung von Graffiti; die Behauptung, alle Graffiti hätten in New York begonnen, wird zurückgewiesen. |
 | c4 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1; GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2 | Forschung zu Amsterdam beschreibt eine Punk- und Hausbesetzer-nahe Kultur des Namenschreibens ab etwa 1977, bevor New Yorker Hip-Hop-Writing dort breit bekannt wurde. |

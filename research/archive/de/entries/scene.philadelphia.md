@@ -40,11 +40,11 @@ Ethnografische Forschung widerspricht der Vorstellung, das Writing in Philadelph
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S1 | Pfeiffenbergers KIT-Dissertation (2017) bespricht die Aktivität von CORNBREAD um 1965 in North Philadelphia und nennt COOL EARL und TOPCAT 126 ab 1966. |
+| c1 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S1; matrix:MNE-02; matrix:PHI-01 | Pfeiffenbergers KIT-Dissertation (2017) bespricht die Aktivität von CORNBREAD um 1965 in North Philadelphia und nennt COOL EARL und TOPCAT 126 ab 1966. |
 | c2 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S3 | Dirksons Beitrag zur öffentlichen Geschichte beschreibt Schwarze Jugendliche, die sich „wall writers“ nannten, und datiert die Bewegung auf etwa 1965 bis 1985. |
 | c3 | editorial-synthesis | strong | doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md | Die Quellenlage rechtfertigt nicht, die Entstehung auf einen einzigen Erfinder oder ein unstrittiges Datum zu reduzieren. |
 | c4 | scholarly-interpretation | good | NYC-003 | Philadelphia und New York entwickelten in den 1960er-Jahren verwandte, aber unterscheidbare Kulturen des Namenschreibens. |
 | c5 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4 | Chastanet argumentiert, dass die weltweite Dominanz New Yorker Bildmuster eine vielschichtigere Geschichte des Writings in Philadelphia verdeckt hat. |
 | c6 | scholarly-interpretation | strong | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S2 | Mitmans Ethnografie warnt vor einer einfachen Gang-Herkunftserzählung und beschreibt Graffiti-Writing als Kultur mit eigenen Regeln und Praktiken. |
-| c7 | institutional-account | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5 | Die Ausstellung ALL BIG LETTERS des Haverford College beschreibt Wickeds als übersteigerte, verschlüsselte und gestreckte Tags, oft für die Writing-Gemeinschaft bestimmt. |
-| c8 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4 | Chastanets Feldforschung verzeichnet „whip“ als Philadelphia-Begriff für Energie, Kontinuität und Fluss in Buchstabenstrichen. |
+| c7 | institutional-account | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5; matrix:PHI-03 | Die Ausstellung ALL BIG LETTERS des Haverford College beschreibt Wickeds als übersteigerte, verschlüsselte und gestreckte Tags, oft für die Writing-Gemeinschaft bestimmt. |
+| c8 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4; matrix:PHI-02 | Chastanets Feldforschung verzeichnet „whip“ als Philadelphia-Begriff für Energie, Kontinuität und Fluss in Buchstabenstrichen. |

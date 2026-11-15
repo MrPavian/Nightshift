@@ -37,7 +37,8 @@ Von der Hand zum Aufbau: der Wortschatz, mit dem NIGHTSHIFT Buchstaben betrachte
 2. construction.letter-anatomy — Die Teile eines Buchstabens benennen.
 3. construction.negative-space — Die leeren Formen, die Buchstaben lesbar halten.
 4. style.dortmund-style — Ein regionaler Stil, der im Aufbau steckt.
-5. object.blackbook — Wo Buchstaben ausprobiert, verändert und aufbewahrt werden.
+5. style.wildstyle — Ein Begriff mit drei Ebenen: Name, Haltung, Grammatik.
+6. object.blackbook — Wo Buchstaben ausprobiert, verändert und aufbewahrt werden.
 
 ## path.ruhrgebiet-and-germany — Writing in Deutschland: Dortmund und Hamburg
 

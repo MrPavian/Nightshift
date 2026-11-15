@@ -39,8 +39,8 @@ Das Datum 1989 stützt sich auf die Darstellung des Museums; eine unabhängige B
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | institutional-account | good | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-003 | Der Leitfaden „City as Canvas“ des Museum of the City of New York berichtet von einer Erklärung im Frühjahr 1989, die U-Bahn-Flotte sei graffitifrei. |
+| c1 | institutional-account | good | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-003; matrix:SUB-04 | Der Leitfaden „City as Canvas“ des Museum of the City of New York berichtet von einer Erklärung im Frühjahr 1989, die U-Bahn-Flotte sei graffitifrei. |
 | c2 | editorial-synthesis | strong | doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md | Die Erklärung von 1989 betrifft die U-Bahn-Flotte; sie belegt kein Ende von Writing an Wänden, Blackbooks, Crews, Galerien, Fotografie oder internationalen Szenen. |
 | c3 | scholarly-interpretation | strong | NYC-008 | Die Geschichte des Writings und die Geschichte der städtischen Kampagne gegen Graffiti sind verbunden, aber zu trennen. |
 | c4 | scholarly-interpretation | strong | NYC-012 | Der Rückgang bemalter U-Bahn-Züge beendete die Writing-Kultur nicht. |
-| c5 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md | Nach der U-Bahn-Ära ging das Writing an Wänden, Güterzügen, legalen Flächen, auf Papier, in Galerien, Druckmedien und später digitalen Netzen weiter. |
+| c5 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md; matrix:SUB-05 | Nach der U-Bahn-Ära ging das Writing an Wänden, Güterzügen, legalen Flächen, auf Papier, in Galerien, Druckmedien und später digitalen Netzen weiter. |

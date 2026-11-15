@@ -48,6 +48,7 @@ generator: study.word-layout word=ABRA   # optional; capability IDs from src/bri
 ```
 
 - Cite claims inline with `[c1]`, and link entries with `[[entry.id|label]]`.
+- **Claim registers:** cite a row of the central claim/source matrix or of an audited dossier register as `matrix:ID` (e.g. `matrix:AER-02`, `matrix:DOR-04`). The register stays the authority: its main source, A–D strength, limitation and status are shown with the claim, and a D-graded row cannot back a published entry. Registered files: `CLAIM_REGISTERS` in `src/archive/build.js`.
 - **Ledger claims** (`NYC-005`) are never cited inline, because their text is English. Write the claim in the edition's language and put the ledger ID in the sources column (`| c6 | scholarly-interpretation | good | NYC-005 | … |`); the build takes the sources from the ledger and shows the ledger reference in the claim sheet.
 - A source is `FILEKEY#localId` from a source list in `research/`, for example `GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S6` or `GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03`.
 - `doc:research/FILE.md` is allowed **only** for `editorial-synthesis` or `nightshift-design-inference` claims.

@@ -18,7 +18,7 @@ generator: grammar.style-comparison; study.glyph-anatomy glyph=R
 
 ## Einführung
 
-Der Beitrag des KWI Essen beschreibt den Dortmunder Style als auffällig durch seine extrem blockigen und klaren Buchstaben und berichtet, dass er im übrigen Ruhrgebiet und international viele Fans und Nachahmer fand [c1].
+Der Beitrag des KWI Essen beschreibt den Dortmunder Style als auffällig durch seine extrem blockigen und klaren Buchstaben und berichtet, dass er im übrigen Ruhrgebiet und international viele Fans und Nachahmer fand [c1]. Schon 1989 beschrieb die überregionale Presse einen „Dortmund Style“ als lokalen Sprühstil mit Ansehen [c3] – ein zeitgenössischer Beleg für die Wahrnehmung, noch keine Analyse der Buchstaben.
 
 ## Woran man es erkennt
 
@@ -45,5 +45,6 @@ Ein Stilvergleich kommt mit dem Stil-Resolver (Paket C03). Bis dahin zeigt die A
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03 | Deckers (KWI Essen, 2022) beschreibt den Dortmunder Style als auffällig durch extrem blockige und klare Buchstaben, die im Ruhrgebiet und international viele Fans und Nachahmer fanden. |
+| c1 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03; matrix:DOR-06 | Deckers (KWI Essen, 2022) beschreibt den Dortmunder Style als auffällig durch extrem blockige und klare Buchstaben, die im Ruhrgebiet und international viele Fans und Nachahmer fanden. |
+| c3 | institutional-account | good | matrix:DOR-05 | DIE ZEIT (Ausgabe 42/1989) beschrieb den Dortmund Style als lokalen Sprühstil mit Reputation; das belegt zeitgenössische Medienwahrnehmung, keine Stilregel. |
 | c2 | nightshift-design-inference | strong | doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md | Der Dortmunder Style darf nicht zu einer einzigen Vorlage verflacht werden; eine Studie muss datierte Beispiele und individuelle Unterschiede in Gerüst, Proportion, Ecken, Abständen und Füllkonventionen vergleichen. |

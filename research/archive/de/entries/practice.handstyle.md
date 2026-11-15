@@ -38,4 +38,4 @@ NIGHTSHIFT behandelt Handstyle als Geste und Bewegung, nicht nur als sichtbare F
 |---|---|---|---|---|
 | c1 | scholarly-interpretation | good | NYC-006 | Im Lauf der 1970er-Jahre entwickelten Writer zunehmend unterscheidbare Handstyles und aufwendigere Buchstabenkompositionen. |
 | c2 | scholarly-interpretation | good | PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4 | Chastanets Feldforschung in Philadelphia verzeichnet „whip“ als Begriff für Energie, Kontinuität, Gelenke und Fluss in Buchstabenstrichen. |
-| c3 | nightshift-design-inference | strong | doc:research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md | NIGHTSHIFT modelliert Handstyle als motorische und gestische Praxis und leitet keine Gestenreihenfolge aus geschlossenen Konturen ab. |
+| c3 | nightshift-design-inference | strong | doc:research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md; matrix:TAG-02; matrix:TAG-03 | NIGHTSHIFT modelliert Handstyle als motorische und gestische Praxis und leitet keine Gestenreihenfolge aus geschlossenen Konturen ab. |

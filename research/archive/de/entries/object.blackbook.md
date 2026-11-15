@@ -38,6 +38,6 @@ Versionen eines Buchstabens im Editor zu speichern und zu vergleichen, ist eine 
 |---|---|---|---|---|
 | c1 | institutional-account | strong | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-002 | Die Martin Wong Papers (MSS.102) der NYU Fales Library dokumentieren Skizzen, Zeichnungen, mehr als 30 Skizzenbücher, Fotos und Graffiti-Tag-Bücher. |
 | c2 | institutional-account | strong | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004 | Ein Sammlungsessay des MCNY beschreibt Martin Wongs Sammeln, einschließlich Briefen und Zeitschriften wie IGTimes. |
-| c3 | editorial-synthesis | good | doc:research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md | Die Nutzung von Blackbooks unterscheidet sich je nach Writer und sozialem Umfeld; Bücher können Prozess, Überarbeitung und Austausch dokumentieren. |
+| c3 | editorial-synthesis | good | doc:research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md; matrix:BLK-01; matrix:BLK-02 | Die Nutzung von Blackbooks unterscheidet sich je nach Writer und sozialem Umfeld; Bücher können Prozess, Überarbeitung und Austausch dokumentieren. |
 | c4 | editorial-synthesis | strong | doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md | Ein Findbuch belegt Vorhandensein und Ordnung von Unterlagen, nicht automatisch die Richtigkeit jeder Aussage darin. |
 | c5 | nightshift-design-inference | strong | doc:research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md | Das Speichern und Vergleichen von Buchstabenversionen in NIGHTSHIFT ist eine Arbeitsanalogie zum Blackbook, keine historische Aussage. |

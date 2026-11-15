@@ -82,9 +82,9 @@
 
 | Command | Result |
 |---|---|
-| `npm test` | 127 pass, 0 fail |
+| `npm test` | 128 pass, 0 fail |
 | `node tools/archive-build.mjs --check` | Archive data up to date |
-| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 48 views at 360 px with no errors and no horizontal overflow; 28/28 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
+| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 51 views at 360 px with no errors and no horizontal overflow; 31/31 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
 | `node tools/editor-smoke.mjs --capture` | EDITOR-PASS, 13/13 steps; re-run because `editor/editor.js` gained the bridge receiver |
 | `node tools/review-smoke.mjs` | REVIEW-PAGE-PASS |
 
@@ -122,7 +122,22 @@ The owner decided: revise and merge the archive first, then C02–C08. Step A, t
 - **Werkzeuge & Material** has no checked entries yet. It shows that honestly and links onward.
 - **Tests:** WCAG AA contrast test for all text pairs, a design-system conformance test, and the smoke test across 48 views. Proofs on phone, tablet and desktop.
 
-**Step B is open:** merge the content with drafts GERMAN 01–06 and the claim/source matrix (claim IDs, A–D strength, statuses).
+**Step B is implemented: one content base instead of two.**
+- **Registers as authority.** The central claim/source matrix (`research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md`, 50 claims) and the claim register of the Dortmund audit (`research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md`, DOR-01…07) are read by the build. A claim cites them as `matrix:ID`.
+  - Main source, A–D strength, limitation and status travel with the claim and appear in the claim sheet.
+  - Unknown IDs and duplicate IDs are build errors.
+  - A claim graded D may not back a published entry.
+- **Existing entries.** 34 claims are linked to their matrix or audit rows (MNE, PHI, WOM, SUB, CIR, BLK, TAG, THR, PIE, BUR, LET, DOR).
+- **New entries from the drafts** (status `draft`, shown as "Entwurf"):
+  - `style.wildstyle`, from draft 04 and WST-01…04;
+  - `technique.aerosol-system`, from draft 05 and AER-01…05; "Werkzeuge & Material" now has a first entry;
+  - `practice.getting-up`, from draft 03 entry 08, GUP-01 and DOR-04 ("getting fame", 1987 wording kept).
+- **Dortmunder Style** gets DOR-05 (DIE ZEIT 42/1989) as contemporary media perception, explicitly not a style rule.
+- **Totals:** 31 entries, 128 claims; 46 claims are tied to a register.
+- **Open:**
+  - Drafts 01–03 and 06 still exist as separate texts beside the archive entries on the same topics. Their content is now linked through the shared matrix IDs, but not yet merged word for word. The entries remain the published text base; the drafts remain the editorial working material.
+  - Matrix claims without an entry are not yet used: THR-01 Throw-up as its own entry, the remaining LET rows, BLK-03 (Getty).
+  - The matrix marks most claims "Offen"; no entry is released.
 
 ## Alignment with the 30-entry launch plan
 

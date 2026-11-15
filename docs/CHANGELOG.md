@@ -537,3 +537,14 @@
 - Editor bridge 1.1.0 adds German descriptions.
 - Tests: 125 passing; the archive smoke covers 42 views, 28 claim sheets and 4 bridge targets.
 
+## 2026-11-15 — C06: archive revised against styleguide; content merged with claim/source matrix
+
+- UI follows `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md` and `ARCHIVE_DESIGN_SYSTEM_01.md`:
+  - dark ink environment, paper reading sheet, one accent, no per-type colours;
+  - nine primary sections, breadcrumbs, phone menu;
+  - status vocabulary §5;
+  - WCAG AA contrast test.
+- Archive schema 2.1: claims cite the central claim/source matrix and the Dortmund audit register (`matrix:ID`); strength, status, main source and limitation are shown per claim.
+- 34 existing claims linked to registers. New draft entries: Wildstyle, Aerosol, Getting Up/Bombing; DOR-05 on Dortmunder Style. Totals: 31 entries, 128 claims.
+- Tests: 128 pass; archive smoke covers 51 views and 31 claim sheets; proofs on phone, tablet and desktop.
+

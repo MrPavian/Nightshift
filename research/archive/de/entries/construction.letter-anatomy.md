@@ -2,7 +2,7 @@
 id: construction.letter-anatomy
 type: construction
 aliases: Anatomie; Stamm; Bauch; Querstrich; Endung; Verbindung; Buchstabenbau
-related: construction.negative-space; practice.handstyle; object.blackbook; practice.tag; style.dortmund-style
+related: construction.negative-space; practice.handstyle; object.blackbook; practice.tag; style.dortmund-style; style.wildstyle
 editorialStatus: source-checked
 evidence: strong
 imageRights: original-diagram
@@ -31,4 +31,4 @@ Die Anatomie-Ansicht und der Editor zeigen dieselben Teile an den Buchstaben des
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
 | c1 | nightshift-design-inference | strong | doc:research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md | NIGHTSHIFT beschreibt das B über einen Stamm, einen oberen und unteren Bauch, eine Verbindung in der Taille und zwei geschlossene Punzen. |
-| c2 | nightshift-design-inference | strong | doc:research/GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md | Semantische Buchstabenbauteile sind ein Konstruktionswortschatz; eine geschlossene Kontur beweist weder Strichreihenfolge noch Bewegung eines Writers. |
+| c2 | nightshift-design-inference | strong | doc:research/GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md; matrix:LET-01 | Semantische Buchstabenbauteile sind ein Konstruktionswortschatz; eine geschlossene Kontur beweist weder Strichreihenfolge noch Bewegung eines Writers. |

@@ -32,6 +32,6 @@ Die New Yorker Writing-Kultur wurde über Filme, Bücher, Fotografie, Hip-Hop-Mu
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | editorial-synthesis | strong | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md | Das New Yorker Writing wurde über Filme, Bücher, Fotografie, Musik, Reisen und persönlichen Austausch weltweit einflussreich, während an mehreren Orten eigene öffentliche Schrift schon existierte oder auf anderen Wegen entstand. |
+| c1 | editorial-synthesis | strong | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md; matrix:CIR-01 | Das New Yorker Writing wurde über Filme, Bücher, Fotografie, Musik, Reisen und persönlichen Austausch weltweit einflussreich, während an mehreren Orten eigene öffentliche Schrift schon existierte oder auf anderen Wegen entstand. |
 | c2 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9 | Das Europa-Kapitel des Bandes „Graffiti in China“ betont die Bedeutung von Filmen wie Wild Style und Style Wars sowie von Büchern, Touren und Fanzines für die internationale Verbreitung des Writings. |
-| c3 | editorial-synthesis | strong | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md | Austausch statt Export ist das Grundmodell; Medien sind Kanäle, keine Szenen; regionale Kapitel sind eigene Geschichten, keine Länder-Checkliste. |
+| c3 | editorial-synthesis | strong | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md; matrix:CIR-06 | Austausch statt Export ist das Grundmodell; Medien sind Kanäle, keine Szenen; regionale Kapitel sind eigene Geschichten, keine Länder-Checkliste. |

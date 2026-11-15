@@ -182,3 +182,24 @@ export function parsePaths(text) {
   }
   return out;
 }
+
+/**
+ * Claim-control registers: the central claim/source matrix
+ * (research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md) and audited claim registers in dossiers
+ * (e.g. research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md). Rows:
+ * | ID | Aussage | Hauptbeleg | Stärke (A–D, e.g. "A/B") | Grenze | Status (optional) |
+ * These registers are the editorial authority for claim strength and status.
+ */
+export function parseMatrix(fileKey, text) {
+  const out = new Map();
+  let section = null;
+  for (const line of text.split('\n')) {
+    const h = line.match(/^#{2,3} +(.+)$/);
+    if (h) { section = h[1].replace(/^\d+\.? *—? */, '').trim(); continue; }
+    const m = line.match(/^\| *([A-Z]{3}-\d{2}) *\|(.+)\|\s*$/);
+    if (!m) continue;
+    const [core, mainSource, strength, limit, status] = m[2].split('|').map((c) => c.trim());
+    out.set(m[1], { id: m[1], file: `research/${fileKey}.md`, section, core, mainSource, strength, limit, status: status || null });
+  }
+  return out;
+}

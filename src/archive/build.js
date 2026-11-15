@@ -3,10 +3,11 @@
 // plus structured diagnostics. Pure; no I/O.
 
 import { sha256Hex } from '../core/sha256.js';
-import { parseSources, parseLedgerClaims, parseEntry, inlineRefs, parseTimeline, parsePaths } from './parse.js';
+import { parseSources, parseLedgerClaims, parseEntry, inlineRefs, parseTimeline, parsePaths, parseMatrix } from './parse.js';
 import { CAPABILITIES, BRIDGE_VERSION, parseGeneratorLink, validateBridgeParams } from './capabilities.js';
 
-export const ARCHIVE_SCHEMA_VERSION = '2.0'; // 2.0: per-language editions; ledger claims are cited through entry claims
+export const ARCHIVE_SCHEMA_VERSION = '2.1'; // 2.0: per-language editions; ledger claims are cited through entry claims. 2.1: claims may cite the central claim/source matrix (matrix:ID)
+export const CLAIM_REGISTERS = ['BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01', 'DORTMUND_1983_1991_SOURCE_AUDIT_01'];
 export const ENTRY_TYPES = {
   history: 'History / period', event: 'Event', scene: 'Place / scene', practice: 'Practice', style: 'Letterform style',
   composition: 'Composition', format: 'Format / surface', technique: 'Technique / material', person: 'Person / writer',
@@ -43,6 +44,15 @@ export function buildArchive({ files, diagrams = [], lang = 'de' }) {
     }
   }
   for (const s of sources.values()) for (const cid of s.evidenceUse) ledgerClaims.get(cid)?.sources.push(s.id);
+  const matrix = new Map();
+  for (const key of CLAIM_REGISTERS) {
+    const f = byPath(`research/${key}.md`);
+    if (!f) continue;
+    for (const [id, row] of parseMatrix(key, f.text)) {
+      if (matrix.has(id)) err('ARC_DUPLICATE_REGISTER_CLAIM', row.file, `${id} also defined in ${matrix.get(id).file}`);
+      matrix.set(id, row);
+    }
+  }
 
   // 2. Entries.
   const entries = [];
@@ -79,8 +89,17 @@ export function buildArchive({ files, diagrams = [], lang = 'de' }) {
       if (!CLAIM_KINDS.includes(c.kind)) err('ARC_BAD_CLAIM_KIND', where, `${c.localId}: kind ${c.kind}`);
       if (!EVIDENCE.includes(c.evidence)) err('ARC_BAD_CLAIM_EVIDENCE', where, `${c.localId}: evidence ${c.evidence}`);
       if (!c.sources.length) err('ARC_UNSOURCED_CLAIM', where, `${c.localId} has no source`);
-      const resolved = [], ledgerRefs = [];
+      const resolved = [], ledgerRefs = [], matrixRefs = [];
       for (const s of c.sources) {
+        if (s.startsWith('matrix:')) {
+          // The central claim/source matrix is the editorial authority: its main source, A–D strength,
+          // limitation and status travel with the claim. Grade D (research lead) may not be published.
+          const m = matrix.get(s.slice(7));
+          if (!m) { err('ARC_UNKNOWN_MATRIX_CLAIM', where, `${c.localId}: ${s} is not in a claim register (${CLAIM_REGISTERS.join(', ')})`); continue; }
+          if (/^D\b/.test(m.strength) && PUBLISHED.has(e.editorialStatus)) err('ARC_LEAD_PUBLISHED', where, `${c.localId}: ${m.id} is graded D (research lead)`);
+          matrixRefs.push(m);
+          continue;
+        }
         if (/^[A-Z]{2,5}-\d{3}$/.test(s)) {
           // A ledger claim as basis: the claim text is this edition's own; the sources come from the ledger.
           const l = ledgerClaims.get(s);
@@ -97,7 +116,7 @@ export function buildArchive({ files, diagrams = [], lang = 'de' }) {
         } else if (!sources.has(s)) err('ARC_UNKNOWN_SOURCE', where, `${c.localId}: ${s}`);
       }
       if (PUBLISHED.has(e.editorialStatus) && c.evidence === 'unverified-lead') err('ARC_LEAD_PUBLISHED', where, `${c.localId}: an unverified lead cannot appear in a ${e.editorialStatus} entry`);
-      claimOut.set(id, { id, entry: e.id, kind: c.kind, evidence: c.evidence, sources: [...new Set(resolved)], ledger: ledgerRefs, text: c.text });
+      claimOut.set(id, { id, entry: e.id, kind: c.kind, evidence: c.evidence, sources: [...new Set(resolved)], ledger: ledgerRefs, matrix: matrixRefs.map(({ id: mid, file, strength, status, mainSource, limit }) => ({ id: mid, file, strength, status, mainSource, limit })), text: c.text });
     }
     const refs = inlineRefs([e.summary, ...Object.values(e.sections), ...e.distinctions.map((d) => d.text)].join('\n'));
     e._refs = refs;
@@ -160,6 +179,7 @@ export function buildArchive({ files, diagrams = [], lang = 'de' }) {
   for (const c of claimOut.values()) {
     for (const l of c.ledger) usedFiles.add(l.file);
     for (const s of c.sources) usedFiles.add(s.startsWith('doc:') ? s.slice(4) : sources.get(s)?.file);
+    for (const m of c.matrix) usedFiles.add(m.file);
   }
   const backlinks = {};
   for (const e of entries) for (const g of e.generatorLinks) (backlinks[g.capability] ??= []).push(e.id);

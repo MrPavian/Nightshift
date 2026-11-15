@@ -35,6 +35,6 @@ Der Sprachgebrauch wechselt nach Person, Ort und Zeit. Das Archiv schreibt niema
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | editorial-synthesis | strong | NYC-001 | Graffiti ist ein weiter Begriff; dieses Kapitel behandelt das moderne, namenszentrierte Hip-Hop-Writing, nicht jede Form öffentlicher Schrift. |
+| c1 | editorial-synthesis | strong | NYC-001; matrix:MNE-01 | Graffiti ist ein weiter Begriff; dieses Kapitel behandelt das moderne, namenszentrierte Hip-Hop-Writing, nicht jede Form öffentlicher Schrift. |
 | c2 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1 | Joe Austin unterscheidet den Szenebegriff „writing“ vom Begriff „graffiti“, der im öffentlichen Diskurs verwendet wird. |
 | c3 | editorial-synthesis | good | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md | Graffiti-Writing und Street Art überschneiden sich, sind aber nicht gleichzusetzen; Auftragswandbilder, Schablonen, politische Schrift und namenszentriertes Writing haben verschiedene Geschichten. |

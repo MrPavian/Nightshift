@@ -4,7 +4,7 @@ type: practice
 aliases: Tag; Taggen; Signatur; Tagging
 period: 1960er – heute
 sort: 1970
-related: practice.handstyle; concept.writing-and-graffiti; history.modern-name-writing; scene.philadelphia; practice.piece
+related: practice.handstyle; concept.writing-and-graffiti; history.modern-name-writing; scene.philadelphia; practice.piece; practice.getting-up
 editorialStatus: source-checked
 evidence: good
 imageRights: original-diagram
@@ -42,7 +42,7 @@ Das Spiel reproduziert keine echten Tags oder Signaturen. Eigene, synthetische S
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
 | c1 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3 | Kramers Ethnografie New Yorker Writer beschreibt Tags, Throw-ups und Pieces als verbreitete Formen der Kultur. |
-| c2 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md | Ein Tag ist nicht bloß ein kleines Piece; Tags, Throw-ups und Pieces bestehen nebeneinander, statt eine Leiter zu bilden, die jeder Writer erklimmen muss. |
+| c2 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md; matrix:TAG-04 | Ein Tag ist nicht bloß ein kleines Piece; Tags, Throw-ups und Pieces bestehen nebeneinander, statt eine Leiter zu bilden, die jeder Writer erklimmen muss. |
 | c3 | scholarly-interpretation | good | NYC-005 | Der Artikel der New York Times über TAKI 183 von 1971 machte die Praxis öffentlich bekannt, belegt aber keine alleinige Erfindung. |
 | c4 | scholarly-interpretation | good | NYC-006 | Im Lauf der 1970er-Jahre entwickelten Writer zunehmend unterscheidbare Handstyles und aufwendigere Kompositionen. |
 | c5 | nightshift-design-inference | strong | doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md | NIGHTSHIFT darf Strichfluss und Rhythmus mit eigenen synthetischen Schriftzügen untersuchen, reproduziert aber nie die Signatur eines echten Writers und macht keinen echten Tag zur Vorlage. |

@@ -5,7 +5,7 @@ aliases: Hall of Fame; legale Wand; legale Wände; Halls of Fame
 period: 1980er – heute
 sort: 1990
 regions: Ruhrgebiet
-related: scene.dortmund; practice.piece; history.clean-train-campaign
+related: scene.dortmund; practice.piece; history.clean-train-campaign; technique.aerosol-system
 editorialStatus: source-checked
 evidence: good
 imageRights: none

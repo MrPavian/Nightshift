@@ -76,7 +76,7 @@ test('women are integrated into the main history, not isolated', () => {
 test('every claim is sourced; sources resolve; project documents only back inferences', () => {
   const sources = new Set(A.sources.map((s) => s.id));
   for (const c of A.claims) {
-    assert.ok(c.sources.length, c.id);
+    assert.ok(c.sources.length || c.matrix.length, c.id);
     for (const s of c.sources) {
       if (s.startsWith('doc:')) {
         assert.ok(existsSync(s.slice(4)), s);
@@ -199,6 +199,17 @@ test('ledger claims are cited through German entry claims, never inline', () => 
   for (const c of withLedger) for (const l of c.ledger) assert.match(l.id, /^NYC-\d{3}$/);
   assert.ok(!A.claims.some((c) => c.ledger.some((l) => l.id === 'NYC-011')), 'NYC-011 has no evidence-use source');
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('[c3]', '[NYC-005]'))).includes('ARC_INLINE_LEDGER'));
+});
+
+test('claims are tied to the central claim/source matrix and the Dortmund audit; registers stay authoritative', () => {
+  const linked = A.claims.filter((c) => c.matrix.length);
+  assert.ok(linked.length >= 40, `${linked.length} register-linked claims`);
+  const files = new Set(linked.flatMap((c) => c.matrix.map((m) => m.file)));
+  assert.ok(files.has('research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md') && files.has('research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md'));
+  for (const c of linked) for (const m of c.matrix) assert.ok(m.mainSource && /^([A-D]|—)/.test(m.strength), `${c.id} ${m.id}`); // "—" marks a methodological statement without a grade
+  for (const id of ['style.wildstyle', 'technique.aerosol-system', 'practice.getting-up']) assert.equal(byId.get(id).editorialStatus, 'draft', `${id} comes from a draft and stays a draft`);
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('| c1 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3', '| c1 | scholarly-interpretation | strong | matrix:XYZ-99'))).includes('ARC_UNKNOWN_MATRIX_CLAIM'));
+  assert.ok(codes(buildWith('research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md', (t) => t.replace(/\| TAG-04 \|([^|]+)\|([^|]+)\| B \|/, '| TAG-04 |$1|$2| D |'))).includes('ARC_LEAD_PUBLISHED'), 'a D-graded register claim cannot back a published entry');
 });
 
 test('parsers read claim tables, inline references and front matter', () => {

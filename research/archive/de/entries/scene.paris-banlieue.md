@@ -35,6 +35,6 @@ Es fehlen noch Oral Histories aus erster Hand; die aktuelle Grundlage sind eine 
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | institutional-account | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S4 | „Petite histoire du street art“ beschreibt die Verbreitung des Hip-Hop in Frankreich in den 1980ern über freie Radios und die Sendung H.I.P H.O.P., Crews im Nordosten von Paris und in La Plaine Saint-Denis sowie Block Partys in Stalingrad 1984. |
+| c1 | institutional-account | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S4; matrix:CIR-05 | „Petite histoire du street art“ beschreibt die Verbreitung des Hip-Hop in Frankreich in den 1980ern über freie Radios und die Sendung H.I.P H.O.P., Crews im Nordosten von Paris und in La Plaine Saint-Denis sowie Block Partys in Stalingrad 1984. |
 | c2 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S3 | Fieni beschreibt Paris und seine Vorstädte als großes Zentrum ab den frühen 1980ern und betont die Geografie von Paris und Banlieue sowie postkoloniale Migration. |
 | c3 | scholarly-interpretation | strong | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5 | Sages begutachtete Studie belegt eine Pariser Kultur öffentlicher Schrift im späten 19. Jahrhundert. |

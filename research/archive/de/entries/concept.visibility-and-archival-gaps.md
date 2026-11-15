@@ -34,7 +34,7 @@ Hilfreiche Fragen zu jedem Eintrag: Wer hat hier geschrieben? Wer wurde fotograf
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | strong | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S1 | Pabón-Colóns „Graffiti Grrlz“, gestützt auf 15 Jahre Forschung und mehr als 100 Frauen in 23 Ländern, argumentiert, dass das Jungsclub-Bild Writerinnen aus der öffentlichen Vorstellung verschwinden lässt. |
-| c2 | scholarly-interpretation | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S4 | Fransbergs Forschungsüberblick hält fest, dass grundlegende Studien Writer als überwiegend männlich beschrieben, aber von Anfang an auch Frauen und Mädchen erwähnten. |
+| c1 | scholarly-interpretation | strong | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S1; matrix:WOM-01 | Pabón-Colóns „Graffiti Grrlz“, gestützt auf 15 Jahre Forschung und mehr als 100 Frauen in 23 Ländern, argumentiert, dass das Jungsclub-Bild Writerinnen aus der öffentlichen Vorstellung verschwinden lässt. |
+| c2 | scholarly-interpretation | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S4; matrix:WOM-04 | Fransbergs Forschungsüberblick hält fest, dass grundlegende Studien Writer als überwiegend männlich beschrieben, aber von Anfang an auch Frauen und Mädchen erwähnten. |
 | c3 | editorial-synthesis | good | doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md | Pressegeschichten, männliche Erzähler, Fotos ohne Namensnennung und Sammlungspraktiken können eine Szene männlicher erscheinen lassen, als die Belege rechtfertigen; das sind Analysemuster, keine Annahmen über jede Szene. |
 | c4 | editorial-synthesis | strong | doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md | Frauen sollen in der ganzen Chronologie von Szenen, Crews, Stilen und Archiven vorkommen, nicht nur in einer Randspalte. |

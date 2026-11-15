@@ -1,5 +1,5 @@
 {
-  "archiveSchemaVersion": "2.0",
+  "archiveSchemaVersion": "2.1",
   "bridge": {
     "capabilities": {
       "editor.contour-node-edit": {
@@ -39,7 +39,9 @@
         "descriptionDe": null,
         "label": "Letter connection study",
         "labelDe": "Verbindungsstudie",
-        "linkedFrom": [],
+        "linkedFrom": [
+          "style.wildstyle"
+        ],
         "page": null,
         "reason": "Requires the relationship solver (C04).",
         "reasonDe": "Kommt mit dem Beziehungs-Solver (Paket C04).",
@@ -115,6 +117,16 @@
       "id": "concept.local-terms#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "PHI-03",
+          "limit": "Crewname, Formtradition und allgemeines Adjektiv „wicked“ nicht vermischen; Varianten dokumentieren.",
+          "mainSource": "Chastanet (2024); Haverford / RJ Rushmore; Pfeiffenberger",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4",
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5"
@@ -127,6 +139,7 @@
       "id": "concept.local-terms#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S6",
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S8"
@@ -139,6 +152,7 @@
       "id": "concept.local-terms#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
       ],
@@ -150,6 +164,7 @@
       "id": "concept.local-terms#c4",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -170,6 +185,16 @@
           "support": "Strong — Ilan & Snyder; Kramer"
         }
       ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-01",
+          "limit": "Begriffliche Eingrenzung, keine Ursprungsthese.",
+          "mainSource": "Austin (2001); Kramer; Ilan & Snyder",
+          "status": "Entwurf",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
@@ -182,6 +207,7 @@
       "id": "concept.public-inscription#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5"
       ],
@@ -193,6 +219,7 @@
       "id": "concept.public-inscription#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -204,6 +231,7 @@
       "id": "concept.public-inscription#c4",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1",
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2"
@@ -216,6 +244,7 @@
       "id": "concept.reading-the-evidence#c1",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md"
       ],
@@ -227,6 +256,7 @@
       "id": "concept.reading-the-evidence#c2",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md"
       ],
@@ -238,6 +268,7 @@
       "id": "concept.reading-the-evidence#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
       ],
@@ -249,6 +280,16 @@
       "id": "concept.visibility-and-archival-gaps#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-01",
+          "limit": "Forschungsstichprobe, keine weltweite Vollerhebung.",
+          "mainSource": "Pabón-Colón, Graffiti Grrlz (2018)",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S1"
       ],
@@ -260,6 +301,16 @@
       "id": "concept.visibility-and-archival-gaps#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-04",
+          "limit": "Alias nicht zur Identitäts- oder Geschlechtszuschreibung nutzen; Selbstzuordnung belegen.",
+          "mainSource": "Pabón-Colón (2016), S. 78–79; Artsy 2019",
+          "status": "Offen",
+          "strength": "B/C"
+        }
+      ],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S4"
       ],
@@ -271,6 +322,7 @@
       "id": "concept.visibility-and-archival-gaps#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
       ],
@@ -282,6 +334,7 @@
       "id": "concept.visibility-and-archival-gaps#c4",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
       ],
@@ -302,6 +355,16 @@
           "support": "Strong — Ilan & Snyder; Kramer"
         }
       ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-01",
+          "limit": "Begriffliche Eingrenzung, keine Ursprungsthese.",
+          "mainSource": "Austin (2001); Kramer; Ilan & Snyder",
+          "status": "Entwurf",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
@@ -314,6 +377,7 @@
       "id": "concept.writing-and-graffiti#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
       ],
@@ -325,6 +389,7 @@
       "id": "concept.writing-and-graffiti#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -336,6 +401,7 @@
       "id": "construction.letter-anatomy#c1",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLYPH_MASTER_SPECIFICATIONS_A_B_G_R_S.md"
       ],
@@ -347,6 +413,16 @@
       "id": "construction.letter-anatomy#c2",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "LET-01",
+          "limit": "NIGHTSHIFT-Analysemodell, keine universelle Szene-Taxonomie.",
+          "mainSource": "Chamberlain et al. (2022); Berio (2021); Gottlieb (2006)",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/GRAFFITI_LETTER_ANATOMY_AND_COMPOSITION.md"
       ],
@@ -358,6 +434,16 @@
       "id": "construction.negative-space#c1",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "LET-02",
+          "limit": "Uneinigkeit zwischen Katalogisierenden als methodische Grenze mitführen.",
+          "mainSource": "Gottlieb (2006); Wachendorff et al.",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md"
       ],
@@ -369,6 +455,7 @@
       "id": "construction.negative-space#c2",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md"
       ],
@@ -389,6 +476,16 @@
           "support": "Strong — Austin; Coetsee; Chalfant archive"
         }
       ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "SUB-01",
+          "limit": "Infrastruktur-/Sichtbarkeitsargument, keine universelle Praxis.",
+          "mainSource": "Austin (2001); Coetsee (2022); MCNY City as Canvas",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2"
       ],
@@ -400,6 +497,7 @@
       "id": "format.subway-train#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2"
       ],
@@ -411,6 +509,16 @@
       "id": "format.subway-train#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "SUB-02",
+          "limit": "Foto zeigt oft nur Ausschnitt, Seite oder Moment; konkrete Bildbeispiele ergänzen.",
+          "mainSource": "Coetsee (2022); Chalfant-Archiv",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -431,6 +539,7 @@
           "support": "Strong — Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
       ],
@@ -451,6 +560,7 @@
           "support": "Strong — Bronx Museum; Smithsonian archive; Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
@@ -463,6 +573,16 @@
       "id": "history.clean-train-campaign#c1",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "SUB-04",
+          "limit": "April-Ankündigung, Mai-Einsatz und Ergebnis trennen; institutioneller Erfolgsmaßstab ist nicht Kulturende.",
+          "mainSource": "Sloan-Howitt & Kelling; MCNY",
+          "status": "Offen",
+          "strength": "A/B"
+        }
+      ],
       "sources": [
         "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-003"
       ],
@@ -474,6 +594,7 @@
       "id": "history.clean-train-campaign#c2",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
       ],
@@ -494,6 +615,7 @@
           "support": "Strong — Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
       ],
@@ -514,6 +636,7 @@
           "support": "Strong — Austin; Kramer"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
@@ -526,6 +649,16 @@
       "id": "history.clean-train-campaign#c5",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "SUB-05",
+          "limit": "Breite Synthese; mit Blackbook-/Zine-Einträgen konkretisieren.",
+          "mainSource": "Austin; MCNY; Martin-Wong-Sammlung; NYC-1990er-Dossiers",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -537,6 +670,16 @@
       "id": "history.global-circulation#c1",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "CIR-01",
+          "limit": "Kein einzelner Kanal erklärt jede Szene; Titel als ausgewählte Fallbeispiele begrenzen.",
+          "mainSource": "Vermeulen (2015); regionale Fallstudien",
+          "status": "Offen",
+          "strength": "B/C"
+        }
+      ],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -548,6 +691,7 @@
       "id": "history.global-circulation#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
       ],
@@ -559,6 +703,16 @@
       "id": "history.global-circulation#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "CIR-06",
+          "limit": "Titel/Teaser begrenzen; Pixação nur mit eigenem Eintrag und belastbarer Quelle ergänzen.",
+          "mainSource": "Abdeckung der bisherigen Quellen",
+          "status": "Muss vor Freigabe",
+          "strength": "—"
+        }
+      ],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -570,6 +724,16 @@
       "id": "history.institutional-recognition#c1",
       "kind": "practitioner-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-03",
+          "limit": "„Token female“ nur als ihre rückblickende Einordnung, nicht als belegtes institutionelles Motiv.",
+          "mainSource": "Smithsonian Oral History; NEA-Interview 2013",
+          "status": "Offen",
+          "strength": "A/B"
+        }
+      ],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
       ],
@@ -581,6 +745,7 @@
       "id": "history.institutional-recognition#c2",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004"
       ],
@@ -592,6 +757,7 @@
       "id": "history.institutional-recognition#c3",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-006"
       ],
@@ -603,6 +769,7 @@
       "id": "history.institutional-recognition#c4",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
       ],
@@ -621,6 +788,16 @@
           "line": 17,
           "status": "Publishable",
           "support": "Strong — Austin; Coetsee"
+        }
+      ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-01",
+          "limit": "Begriffliche Eingrenzung, keine Ursprungsthese.",
+          "mainSource": "Austin (2001); Kramer; Ilan & Snyder",
+          "status": "Entwurf",
+          "strength": "B"
         }
       ],
       "sources": [
@@ -644,6 +821,7 @@
           "support": "Strong for parallel early centres; exact priority and transmission remain contested — Pfeiffenberger; Mitman; Chastanet; Coetsee"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S7"
@@ -665,6 +843,7 @@
           "support": "Strong — Kramer; Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3",
@@ -687,6 +866,16 @@
           "support": "Strong — Austin; Ilan & Snyder"
         }
       ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-05",
+          "limit": "Breite Synthese; entweder weitere Fallstudien ergänzen oder Geltungsbereich enger formulieren.",
+          "mainSource": "Austin; Coetsee; Philadelphia-Dossier; regionale Fallstudien",
+          "status": "Offen",
+          "strength": "C/B"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
       ],
@@ -705,6 +894,24 @@
           "line": 22,
           "status": "Publishable",
           "support": "Strong — Austin; Coetsee; Chalfant archive"
+        }
+      ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-03",
+          "limit": "Nicht die gesamte New Yorker Praxis auf Zug-Writing reduzieren; konkrete Oral-History-Stimme ergänzen.",
+          "mainSource": "Austin (2001); Coetsee (2022); Bronx County Historical Society",
+          "status": "Offen",
+          "strength": "B"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "SUB-01",
+          "limit": "Infrastruktur-/Sichtbarkeitsargument, keine universelle Praxis.",
+          "mainSource": "Austin (2001); Coetsee (2022); MCNY City as Canvas",
+          "status": "Offen",
+          "strength": "B"
         }
       ],
       "sources": [
@@ -727,6 +934,16 @@
           "support": "Good — Austin chapter framing; Ilan & Snyder"
         }
       ],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-04",
+          "limit": "Artikeltext und Datum archivisch sichern; als Medienereignis typisieren.",
+          "mainSource": "NYT, 21.07.1971; Austin; Ilan & Snyder",
+          "status": "Fast prüfbar",
+          "strength": "A/B"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
       ],
@@ -738,6 +955,24 @@
       "id": "history.modern-name-writing#c7",
       "kind": "practitioner-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-02",
+          "limit": "Als situierte Erinnerung, nicht als unabhängige Datierung aller frühen Writerinnen formulieren.",
+          "mainSource": "Smithsonian Archives of American Art Oral History",
+          "status": "Prüfbar",
+          "strength": "A für ihre Erinnerung"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-03",
+          "limit": "„Token female“ nur als ihre rückblickende Einordnung, nicht als belegtes institutionelles Motiv.",
+          "mainSource": "Smithsonian Oral History; NEA-Interview 2013",
+          "status": "Offen",
+          "strength": "A/B"
+        }
+      ],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
       ],
@@ -758,6 +993,7 @@
           "support": "Strong — Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S1"
       ],
@@ -778,6 +1014,7 @@
           "support": "Strong — Bronx Museum; Smithsonian archive; Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
@@ -799,6 +1036,7 @@
           "support": "Strong — Bronx Museum / Smithsonian"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6",
@@ -812,6 +1050,7 @@
       "id": "media.style-wars-and-subway-art#c3",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
       ],
@@ -823,6 +1062,7 @@
       "id": "media.style-wars-and-subway-art#c4",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -834,6 +1074,7 @@
       "id": "media.style-wars-and-subway-art#c5",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -845,6 +1086,7 @@
       "id": "object.blackbook#c1",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-002"
       ],
@@ -856,6 +1098,7 @@
       "id": "object.blackbook#c2",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004"
       ],
@@ -867,6 +1110,24 @@
       "id": "object.blackbook#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "BLK-01",
+          "limit": "Rahns Feldarbeit: Montreal, neun Teilnehmende; Kontext im Text nennen.",
+          "mainSource": "Rahn (1999), Abschnitte 9, 35, 40; Getty La Liber Amicorum",
+          "status": "Offen",
+          "strength": "A/B"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "BLK-02",
+          "limit": "Konkretes Beispiel ergänzen; Rechte am einzelnen Werk separat prüfen.",
+          "mainSource": "Getty-Projektbeschreibung; Rahn (1999)",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md"
       ],
@@ -878,6 +1139,7 @@
       "id": "object.blackbook#c4",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
       ],
@@ -889,6 +1151,7 @@
       "id": "object.blackbook#c5",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md"
       ],
@@ -900,6 +1163,24 @@
       "id": "person.lady-pink#c1",
       "kind": "practitioner-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-02",
+          "limit": "Als situierte Erinnerung, nicht als unabhängige Datierung aller frühen Writerinnen formulieren.",
+          "mainSource": "Smithsonian Archives of American Art Oral History",
+          "status": "Prüfbar",
+          "strength": "A für ihre Erinnerung"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WOM-03",
+          "limit": "„Token female“ nur als ihre rückblickende Einordnung, nicht als belegtes institutionelles Motiv.",
+          "mainSource": "Smithsonian Oral History; NEA-Interview 2013",
+          "status": "Offen",
+          "strength": "A/B"
+        }
+      ],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
       ],
@@ -911,6 +1192,7 @@
       "id": "person.lady-pink#c2",
       "kind": "practitioner-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2"
       ],
@@ -922,6 +1204,7 @@
       "id": "person.lady-pink#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3"
       ],
@@ -933,6 +1216,7 @@
       "id": "person.lady-pink#c4",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3"
       ],
@@ -944,10 +1228,73 @@
       "id": "person.lady-pink#c5",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md"
       ],
       "text": "Die Quellen stützen Lady Pinks Bedeutung als eine der frühesten Frauen mit großer Sichtbarkeit im New Yorker Writing, nicht die Bezeichnung als erste Writerin."
+    },
+    {
+      "entry": "practice.getting-up",
+      "evidence": "good",
+      "id": "practice.getting-up#c1",
+      "kind": "scholarly-interpretation",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "GUP-01",
+          "limit": "Zeitgenössische und regionale Stimmen ergänzen.",
+          "mainSource": "Castleman (1982); Snyder (2006); Writers Bench Collection",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
+      "sources": [],
+      "text": "Getting Up beschreibt Sichtbarkeit, Anerkennung und soziale Praxis, nicht eine Buchstabenform (Castleman 1982; Snyder 2006)."
+    },
+    {
+      "entry": "practice.getting-up",
+      "evidence": "strong",
+      "id": "practice.getting-up#c2",
+      "kind": "documented-fact",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md",
+          "id": "DOR-04",
+          "limit": "Nicht stillschweigend durch „Getting Up“ ersetzen.",
+          "mainSource": "Brentzel, Writer-ABC-Auszug",
+          "status": null,
+          "strength": "A für den lokalen Wortlaut"
+        }
+      ],
+      "sources": [],
+      "text": "Das Writer-ABC in Brentzels „Da kukse wa“ (Dortmund 1987) beschreibt „getting fame“ als Ziel des Writers."
+    },
+    {
+      "entry": "practice.getting-up",
+      "evidence": "contextual",
+      "id": "practice.getting-up#c3",
+      "kind": "editorial-synthesis",
+      "ledger": [],
+      "matrix": [],
+      "sources": [
+        "doc:research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_03.md"
+      ],
+      "text": "Bombing bezeichnet in vielen Quellen umfangreiches oder häufiges Schreiben, vor allem Tags und Throw-ups; der Begriffsumfang ist variabel und keine Stil- oder Mengenklasse."
+    },
+    {
+      "entry": "practice.getting-up",
+      "evidence": "strong",
+      "id": "practice.getting-up#c4",
+      "kind": "nightshift-design-inference",
+      "ledger": [],
+      "matrix": [],
+      "sources": [
+        "doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md"
+      ],
+      "text": "NIGHTSHIFT behandelt Getting Up und Bombing als Aktivität und sozialen Kontext, nicht als Buchstabengrammatik."
     },
     {
       "entry": "practice.hall-of-fame",
@@ -955,6 +1302,7 @@
       "id": "practice.hall-of-fame#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -966,6 +1314,7 @@
       "id": "practice.hall-of-fame#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -986,6 +1335,7 @@
           "support": "Strong — Austin; Ilan & Snyder"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
       ],
@@ -997,6 +1347,7 @@
       "id": "practice.handstyle#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
       ],
@@ -1008,6 +1359,24 @@
       "id": "practice.handstyle#c3",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "TAG-02",
+          "limit": "Nicht als feste Schriftfamilie oder Font darstellen; Forschungsgebrauch erläutern.",
+          "mainSource": "Chamberlain et al. (2022); Berio & Leymarie",
+          "status": "Offen",
+          "strength": "B"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "TAG-03",
+          "limit": "Kein universelles Rezept; Strichfolge nicht aus statischer Kontur ableiten.",
+          "mainSource": "Chamberlain et al. (2022); Berio et al. (2017)",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md"
       ],
@@ -1019,6 +1388,24 @@
       "id": "practice.piece#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "PIE-01",
+          "limit": "Kein universelles Größen- oder Qualitätskriterium.",
+          "mainSource": "Castleman; Snyder; Chamberlain et al.",
+          "status": "Offen",
+          "strength": "B"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "THR-01",
+          "limit": "Glossarquellen variieren; frühe und regionale Belege ergänzen.",
+          "mainSource": "Castleman; Writers Bench Collection; regionale Dossiers",
+          "status": "Offen",
+          "strength": "B/C"
+        }
+      ],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
       ],
@@ -1030,6 +1417,7 @@
       "id": "practice.piece#c2",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GRAFFITI_FORMATS.md"
       ],
@@ -1041,6 +1429,16 @@
       "id": "practice.piece#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "TAG-04",
+          "limit": "Im Begriffsnetz als distinct_from, nicht succeeded_by, führen.",
+          "mainSource": "Snyder (2006); Castleman (1982); Brentzel (1987)",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -1052,6 +1450,16 @@
       "id": "practice.piece#c4",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "BUR-01",
+          "limit": "Mindestens zwei unabhängige First-Person-/Regionalbelege fehlen.",
+          "mainSource": "Writers Bench Collection; Szenengebrauch",
+          "status": "Nicht freigabefähig",
+          "strength": "C"
+        }
+      ],
       "sources": [
         "doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md"
       ],
@@ -1063,6 +1471,7 @@
       "id": "practice.sequential-train-photography#c1",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5"
       ],
@@ -1074,6 +1483,7 @@
       "id": "practice.sequential-train-photography#c2",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
       ],
@@ -1094,6 +1504,7 @@
           "support": "Strong — Bronx Museum; Smithsonian archive; Austin"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S5",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S6"
@@ -1106,6 +1517,7 @@
       "id": "practice.sequential-train-photography#c4",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/SOURCE_REGISTER_NYC_GRAFFITI_01.md"
       ],
@@ -1117,6 +1529,7 @@
       "id": "practice.tag#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3"
       ],
@@ -1128,6 +1541,16 @@
       "id": "practice.tag#c2",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "TAG-04",
+          "limit": "Im Begriffsnetz als distinct_from, nicht succeeded_by, führen.",
+          "mainSource": "Snyder (2006); Castleman (1982); Brentzel (1987)",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md"
       ],
@@ -1148,6 +1571,7 @@
           "support": "Good — Austin chapter framing; Ilan & Snyder"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
       ],
@@ -1168,6 +1592,7 @@
           "support": "Strong — Austin; Ilan & Snyder"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S4"
       ],
@@ -1179,6 +1604,7 @@
       "id": "practice.tag#c5",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md"
       ],
@@ -1190,6 +1616,16 @@
       "id": "scene.amsterdam#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "CIR-02",
+          "limit": "Bachelorarbeit und kleines retrospektives Interviewkorpus ausdrücklich benennen.",
+          "mainSource": "Vermeulen (2015), S. 10; zehn Interviews",
+          "status": "Prüfbar",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1"
       ],
@@ -1201,6 +1637,16 @@
       "id": "scene.amsterdam#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "CIR-03",
+          "limit": "Konkrete Vermittlungswege, nicht alleinige Ursache oder europaweite Regel behaupten.",
+          "mainSource": "Vermeulen (2015), S. 12; VPRO-Ausstrahlung 1985",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1"
       ],
@@ -1212,6 +1658,7 @@
       "id": "scene.amsterdam#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md"
       ],
@@ -1223,6 +1670,7 @@
       "id": "scene.amsterdam#c4",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2"
       ],
@@ -1234,6 +1682,7 @@
       "id": "scene.china#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
       ],
@@ -1245,6 +1694,7 @@
       "id": "scene.china#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
       ],
@@ -1256,6 +1706,7 @@
       "id": "scene.china#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
       ],
@@ -1267,6 +1718,7 @@
       "id": "scene.china#c4",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S9"
       ],
@@ -1278,6 +1730,7 @@
       "id": "scene.dortmund#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -1289,6 +1742,7 @@
       "id": "scene.dortmund#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -1300,6 +1754,16 @@
       "id": "scene.dortmund#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md",
+          "id": "DOR-06",
+          "limit": "Sekundäre Synthese; Bildkorpus zur visuellen Prüfung erforderlich.",
+          "mainSource": "Deckers (2022), KWI",
+          "status": null,
+          "strength": "B"
+        }
+      ],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -1311,6 +1775,7 @@
       "id": "scene.dortmund#c4",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md"
       ],
@@ -1322,6 +1787,7 @@
       "id": "scene.dortmund#c5",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -1333,6 +1799,7 @@
       "id": "scene.hamburg#c1",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-12"
       ],
@@ -1344,6 +1811,7 @@
       "id": "scene.hamburg#c2",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-13"
       ],
@@ -1355,6 +1823,16 @@
       "id": "scene.paris-banlieue#c1",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "CIR-05",
+          "limit": "Touristische/institutionelle Quelle; Spezialliteratur und lokale Primärstimme ergänzen.",
+          "mainSource": "Paris-Institutionsüberblick (2022)",
+          "status": "Offen",
+          "strength": "C"
+        }
+      ],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S4"
       ],
@@ -1366,6 +1844,7 @@
       "id": "scene.paris-banlieue#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S3"
       ],
@@ -1377,6 +1856,7 @@
       "id": "scene.paris-banlieue#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S5"
       ],
@@ -1388,6 +1868,24 @@
       "id": "scene.philadelphia#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "MNE-02",
+          "limit": "Namen und Daten einzeln der jeweiligen Quelle zuordnen; kein unumstrittener „Erster“.",
+          "mainSource": "Pfeiffenberger (2017), S. 73–76; Dirkson; Mitman",
+          "status": "Offen",
+          "strength": "B"
+        },
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "PHI-01",
+          "limit": "Lokale Primär-/Oral-History-Stimme als Gegenprüfung ergänzen.",
+          "mainSource": "Pfeiffenberger (2017), S. 73–76; Mitman (2018); Dirkson",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S1"
       ],
@@ -1399,6 +1897,7 @@
       "id": "scene.philadelphia#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S3"
       ],
@@ -1410,6 +1909,7 @@
       "id": "scene.philadelphia#c3",
       "kind": "editorial-synthesis",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md"
       ],
@@ -1430,6 +1930,7 @@
           "support": "Strong for parallel early centres; exact priority and transmission remain contested — Pfeiffenberger; Mitman; Chastanet; Coetsee"
         }
       ],
+      "matrix": [],
       "sources": [
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2",
         "NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S7"
@@ -1442,6 +1943,7 @@
       "id": "scene.philadelphia#c5",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
       ],
@@ -1453,6 +1955,7 @@
       "id": "scene.philadelphia#c6",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S2"
       ],
@@ -1464,6 +1967,16 @@
       "id": "scene.philadelphia#c7",
       "kind": "institutional-account",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "PHI-03",
+          "limit": "Crewname, Formtradition und allgemeines Adjektiv „wicked“ nicht vermischen; Varianten dokumentieren.",
+          "mainSource": "Chastanet (2024); Haverford / RJ Rushmore; Pfeiffenberger",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S5"
       ],
@@ -1475,6 +1988,16 @@
       "id": "scene.philadelphia#c8",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "PHI-02",
+          "limit": "Begriffsumfang und historische Verwendung präzise zuordnen.",
+          "mainSource": "Chastanet (2024), The Survival of The Whip",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
       "sources": [
         "PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01#S4"
       ],
@@ -1486,6 +2009,7 @@
       "id": "scene.sao-paulo#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S6"
       ],
@@ -1497,6 +2021,7 @@
       "id": "scene.sao-paulo#c2",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S7"
       ],
@@ -1508,6 +2033,7 @@
       "id": "scene.sao-paulo#c3",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S8"
       ],
@@ -1519,6 +2045,16 @@
       "id": "style.dortmund-style#c1",
       "kind": "scholarly-interpretation",
       "ledger": [],
+      "matrix": [
+        {
+          "file": "research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md",
+          "id": "DOR-06",
+          "limit": "Sekundäre Synthese; Bildkorpus zur visuellen Prüfung erforderlich.",
+          "mainSource": "Deckers (2022), KWI",
+          "status": null,
+          "strength": "B"
+        }
+      ],
       "sources": [
         "GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03"
       ],
@@ -1530,10 +2066,237 @@
       "id": "style.dortmund-style#c2",
       "kind": "nightshift-design-inference",
       "ledger": [],
+      "matrix": [],
       "sources": [
         "doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md"
       ],
       "text": "Der Dortmunder Style darf nicht zu einer einzigen Vorlage verflacht werden; eine Studie muss datierte Beispiele und individuelle Unterschiede in Gerüst, Proportion, Ecken, Abständen und Füllkonventionen vergleichen."
+    },
+    {
+      "entry": "style.dortmund-style",
+      "evidence": "good",
+      "id": "style.dortmund-style#c3",
+      "kind": "institutional-account",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md",
+          "id": "DOR-05",
+          "limit": "Keine neutrale Stiltypologie; journalistische Rahmung sichtbar halten.",
+          "mainSource": "DIE ZEIT, Ausgabe 42/1989",
+          "status": null,
+          "strength": "A für zeitgenössische Medienwahrnehmung"
+        }
+      ],
+      "sources": [],
+      "text": "DIE ZEIT (Ausgabe 42/1989) beschrieb den Dortmund Style als lokalen Sprühstil mit Reputation; das belegt zeitgenössische Medienwahrnehmung, keine Stilregel."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "good",
+      "id": "style.wildstyle#c1",
+      "kind": "practitioner-account",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WST-01",
+          "limit": "Sprecher, Zeitpunkt und Kontext trennen; keine Erfindungsurkunde behaupten.",
+          "mainSource": "T-KID 170 Bronx Oral History; TRACY-Interview (2016); Chalfant (2021)",
+          "status": "Offen",
+          "strength": "A/B"
+        }
+      ],
+      "sources": [],
+      "text": "Rückblickende Zeugnisse (TRACY-Interview 2016, T-KID-Oral-History, Chalfant 2021) verbinden den Ausdruck Wild Style eng mit TRACY 168 und der Crew WANTED, ohne eine Erfindungsurkunde zu belegen."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "good",
+      "id": "style.wildstyle#c2",
+      "kind": "practitioner-account",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WST-02",
+          "limit": "Als situierte Perspektive, nicht als Universaldefinition verwenden.",
+          "mainSource": "T-KID Oral History, 01:35:39",
+          "status": "Prüfbar",
+          "strength": "A für seine Erinnerung"
+        }
+      ],
+      "sources": [],
+      "text": "T-KID 170 erinnert Wild Style im Bronx Oral History Center auch als Haltung und Lebensweise im Bronx-Kontext."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "good",
+      "id": "style.wildstyle#c3",
+      "kind": "scholarly-interpretation",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WST-03",
+          "limit": "Begriffsnutzung variiert; keine eindeutige Umstellungsdatierung.",
+          "mainSource": "Waclawek (2011); Pfeiffenberger (2017); SCHIRN (2013)",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
+      "sources": [],
+      "text": "In späterer Fachliteratur wird Wildstyle für komplexe, ineinandergreifende Buchstabenkompositionen verwendet; die Begriffsnutzung variiert und lässt sich nicht eindeutig datieren."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "good",
+      "id": "style.wildstyle#c4",
+      "kind": "editorial-synthesis",
+      "ledger": [],
+      "matrix": [],
+      "sources": [
+        "doc:research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_04.md"
+      ],
+      "text": "Als visuelle Beschreibung umfasst Wildstyle ein Zusammenspiel mehrerer Merkmale; kein Einzelmerkmal wie Pfeile, 3D-Effekte oder Unlesbarkeit reicht allein aus."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "good",
+      "id": "style.wildstyle#c5",
+      "kind": "editorial-synthesis",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "WST-04",
+          "limit": "Als begrenzte Aussage über den Quellenstand formulieren, nicht als absolute Negativbehauptung.",
+          "mainSource": "Quellenvergleich",
+          "status": "Prüfbar",
+          "strength": "—"
+        }
+      ],
+      "sources": [],
+      "text": "Die ausgewerteten Quellen erlauben keine eindeutige Zuschreibung eines festen Erfindungsdatums oder einer Einzelperson für die gesamte visuelle Grammatik."
+    },
+    {
+      "entry": "style.wildstyle",
+      "evidence": "strong",
+      "id": "style.wildstyle#c6",
+      "kind": "nightshift-design-inference",
+      "ledger": [],
+      "matrix": [],
+      "sources": [
+        "doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md"
+      ],
+      "text": "NIGHTSHIFT behandelt Wildstyle als Kompositions- und Verbindungsgrammatik, nicht als Effekt oder Qualitätsstufe."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "strong",
+      "id": "technique.aerosol-system#c1",
+      "kind": "scholarly-interpretation",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "AER-01",
+          "limit": "Komponentenbeleg mit Seitenangabe führen.",
+          "mainSource": "Frederick (2014), S. 95",
+          "status": "Prüfbar",
+          "strength": "A"
+        }
+      ],
+      "sources": [],
+      "text": "Eine Spraydose umfasst Behälter, Treibmittel, Farbmaterial, Ventil und Sprühkopf (Frederick 2014, S. 95)."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "strong",
+      "id": "technique.aerosol-system#c2",
+      "kind": "scholarly-interpretation",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "AER-02",
+          "limit": "Keine universelle Produktmatrix oder garantierte Sprühbreite.",
+          "mainSource": "Frederick (2014), S. 95–96",
+          "status": "Prüfbar",
+          "strength": "A"
+        }
+      ],
+      "sources": [],
+      "text": "Ventil und Sprühkopf müssen kompatibel sein; der Sprühkopf beeinflusst Volumen, Form und Richtung des Farbauftrags (Frederick 2014, S. 95–96)."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "good",
+      "id": "technique.aerosol-system#c3",
+      "kind": "scholarly-interpretation",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "AER-03",
+          "limit": "Perth/Australien und Publikationszeitraum nennen; nicht rückprojizieren.",
+          "mainSource": "Frederick (2014), S. 95–97",
+          "status": "Offen",
+          "strength": "B"
+        }
+      ],
+      "sources": [],
+      "text": "Frederick dokumentiert für den untersuchten Perth-Kontext einen Markt für spezialisiertes Aerosolzubehör, der sich an Writer richtete."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "good",
+      "id": "technique.aerosol-system#c4",
+      "kind": "practitioner-account",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "AER-04",
+          "limit": "Persönlicher Erfahrungsbericht, keine allgemeine Anleitung.",
+          "mainSource": "Bronx Oral History, 01:23:41",
+          "status": "Prüfbar",
+          "strength": "A für seine Erinnerung"
+        }
+      ],
+      "sources": [],
+      "text": "T-KID 170 erinnert sich an Lernen durch Ausprobieren und Materialanpassung mit verschiedenen Sprühköpfen."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "contextual",
+      "id": "technique.aerosol-system#c5",
+      "kind": "editorial-synthesis",
+      "ledger": [],
+      "matrix": [
+        {
+          "file": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+          "id": "AER-05",
+          "limit": "Als analytische Zusammenfassung kennzeichnen.",
+          "mainSource": "Frederick; redaktionelle Synthese",
+          "status": "Offen",
+          "strength": "B/C"
+        }
+      ],
+      "sources": [],
+      "text": "Der sichtbare Farbauftrag hängt nicht allein vom Cap ab, sondern auch von Abstand, Bewegung und Oberfläche."
+    },
+    {
+      "entry": "technique.aerosol-system",
+      "evidence": "strong",
+      "id": "technique.aerosol-system#c6",
+      "kind": "nightshift-design-inference",
+      "ledger": [],
+      "matrix": [],
+      "sources": [
+        "doc:research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_05.md"
+      ],
+      "text": "NIGHTSHIFT behandelt Materialsimulation und Buchstabenkonstruktion getrennt und verwendet generische Materialprofile statt realer Marken."
     }
   ],
   "diagrams": {
@@ -1818,7 +2581,8 @@
         "practice.handstyle",
         "object.blackbook",
         "practice.tag",
-        "style.dortmund-style"
+        "style.dortmund-style",
+        "style.wildstyle"
       ],
       "sections": {
         "inNightshift": "Die Anatomie-Ansicht und der Editor zeigen dieselben Teile an den Buchstaben des Spiels. Der Bauteil-Graph ist ein technisches Modell, keine Behauptung, dass Writer jeden Buchstaben bewusst so bauen [c2].",
@@ -2354,6 +3118,59 @@
     },
     {
       "aliases": [
+        "Getting Up",
+        "getting fame",
+        "Bombing",
+        "Sichtbarkeit",
+        "Fame",
+        "Anerkennung"
+      ],
+      "claimIds": [
+        "practice.getting-up#c1",
+        "practice.getting-up#c2",
+        "practice.getting-up#c3",
+        "practice.getting-up#c4"
+      ],
+      "distinctions": [
+        {
+          "label": "Einem Buchstabenstil",
+          "target": "style.wildstyle",
+          "text": "Getting Up und Bombing sind Aktivitäten; sie können mit jedem Buchstabenstil zusammenkommen [c4]."
+        },
+        {
+          "label": "Throw-up",
+          "target": "practice.piece",
+          "text": "Bombing ist kein Synonym für Throw-up."
+        }
+      ],
+      "editorialStatus": "draft",
+      "evidence": "good",
+      "file": "research/archive/de/entries/practice.getting-up.md",
+      "generatorLinks": [],
+      "id": "practice.getting-up",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1970er – heute",
+      "related": [
+        "practice.tag",
+        "practice.piece",
+        "history.modern-name-writing",
+        "scene.dortmund",
+        "concept.local-terms"
+      ],
+      "sections": {
+        "context": "Eine Dortmunder Quelle von 1987 zeigt die lokale Begriffsgeschichte: Das *Writer-ABC* in *Da kukse wa* nennt *getting fame* als Ziel des Writers [c2]. Das ist der historische Wortlaut dieser Quelle; er wird hier nicht stillschweigend durch „Getting Up“ ersetzt.\n\n*Bombing* wird häufig für eine intensive, umfangreiche Schreibpraxis verwendet, bei der viele Tags und teils Throw-ups entstehen. Der Begriff beschreibt Häufigkeit oder Dichte einer Aktivität, keine feste visuelle Form [c3].",
+        "inNightshift": "Eine digitale Simulation kann Sichtbarkeit als Spielsystem modellieren, aber keine reale Anerkennung in einer Szene abbilden. NIGHTSHIFT führt Bombing als Aktivität, nie als Buchstabengrammatik [c4].",
+        "introduction": "In der Writing-Kultur zählt nicht nur, wie ein Schriftzug aussieht, sondern auch, ob ein Name wahrgenommen wird. *Getting up* beschreibt das Sichtbarwerden eines Namens und die damit verbundene Anerkennung in der Szene – eine soziale Praxis, keine Buchstabenform [c1].",
+        "whyItMatters": "Sichtbarkeit und Stil stehen nicht gegeneinander: Ein Name kann durch häufige Präsenz bekannt werden, eine besondere Hand oder ein Piece kann ebenfalls Anerkennung bringen. Die Gewichtung hängt von Szene, Zeit und Ort ab."
+      },
+      "sort": "1973",
+      "summary": "Sichtbar werden und Anerkennung finden: Getting Up und Bombing beschreiben Aktivität und soziale Bedeutung – keinen Buchstabenstil.",
+      "title": "Getting Up und Bombing",
+      "type": "practice"
+    },
+    {
+      "aliases": [
         "Hall of Fame",
         "legale Wand",
         "legale Wände",
@@ -2386,7 +3203,8 @@
       "related": [
         "scene.dortmund",
         "practice.piece",
-        "history.clean-train-campaign"
+        "history.clean-train-campaign",
+        "technique.aerosol-system"
       ],
       "sections": {
         "introduction": "Halls of Fame sind im Ruhrgebiet keine Seltenheit. Der Beitrag des KWI Essen nennt legale Flächen an der Ruhr-Universität Bochum, im Landschaftspark Duisburg und in Essen und beschreibt eine im April 2022 eröffnete Wand am Dortmunder Hafen als größte Hall of Fame in Nordrhein-Westfalen [c1].",
@@ -2509,7 +3327,9 @@
         "practice.tag",
         "practice.hall-of-fame",
         "format.subway-train",
-        "style.dortmund-style"
+        "style.dortmund-style",
+        "style.wildstyle",
+        "practice.getting-up"
       ],
       "sections": {
         "inNightshift": "Der Wort-Test setzt ein Wort mit einfachem Abstand. Echte Piece-Komposition – wie Buchstaben sich überlagern und verbinden – kommt mit dem Beziehungs-Solver (Paket C04).",
@@ -2625,7 +3445,8 @@
         "concept.writing-and-graffiti",
         "history.modern-name-writing",
         "scene.philadelphia",
-        "practice.piece"
+        "practice.piece",
+        "practice.getting-up"
       ],
       "sections": {
         "context": "Presseberichte über Tags machten die Praxis Anfang der 1970er-Jahre öffentlich sichtbar [c3], und die Konkurrenz um Sichtbarkeit trug dazu bei, dass individueller Stil wichtig wurde [c4]. In Philadelphia entwickelten lokale Tag-Traditionen wie der Wicked eigene Formen ([[scene.philadelphia|Philadelphia]]).",
@@ -2769,7 +3590,8 @@
         "style.dortmund-style",
         "practice.hall-of-fame",
         "history.global-circulation",
-        "scene.hamburg"
+        "scene.hamburg",
+        "practice.getting-up"
       ],
       "sections": {
         "context": "Heute gibt es in der Region viele legale Wände (siehe [[practice.hall-of-fame|Hall of Fame]]), während Tags und Throw-ups anderswo bei großen Teilen der Öffentlichkeit und bei den Städten unbeliebt bleiben [c5].",
@@ -2995,6 +3817,7 @@
       ],
       "claimIds": [
         "style.dortmund-style#c1",
+        "style.dortmund-style#c3",
         "style.dortmund-style#c2"
       ],
       "distinctions": [
@@ -3046,7 +3869,7 @@
       "sections": {
         "evidenceNotes": "Veröffentlichte Beschreibungen sind knapp. Eine echte Konstruktionsstudie braucht mehrere datierte Beispiele verschiedener Writer; die Recherche-Bibliothek führt das als offene Arbeit.",
         "inNightshift": "Ein Stilvergleich kommt mit dem Stil-Resolver (Paket C03). Bis dahin zeigt die Anatomie-Ansicht, wie Masse und Punzen in einem Blockbuchstaben wie R zusammenwirken.",
-        "introduction": "Der Beitrag des KWI Essen beschreibt den Dortmunder Style als auffällig durch seine extrem blockigen und klaren Buchstaben und berichtet, dass er im übrigen Ruhrgebiet und international viele Fans und Nachahmer fand [c1].",
+        "introduction": "Der Beitrag des KWI Essen beschreibt den Dortmunder Style als auffällig durch seine extrem blockigen und klaren Buchstaben und berichtet, dass er im übrigen Ruhrgebiet und international viele Fans und Nachahmer fand [c1]. Schon 1989 beschrieb die überregionale Presse einen „Dortmund Style“ als lokalen Sprühstil mit Ansehen [c3] – ein zeitgenössischer Beleg für die Wahrnehmung, noch keine Analyse der Buchstaben.",
         "recognize": "Als Bauprinzip bedeutet „blockig und klar“: breite, massive Buchstabenkörper, erhaltene Lesbarkeit und wenig Schmuck, der den Buchstaben verdeckt [c1]. Das sind Tendenzen, keine Regeln; einzelne Writer variieren darin [c2].",
         "whyItMatters": "Der Stil zeigt, dass regionale Identität im Aufbau stecken kann – in Gerüst, Masse und Abständen – statt in Effekten. Damit ist er ein guter Fall, um [[construction.letter-anatomy|Buchstabenanatomie]] und [[construction.negative-space|Negativraum]] zu studieren."
       },
@@ -3054,6 +3877,130 @@
       "summary": "Eine regionale Buchstabentendenz, bekannt für extrem blockige, klare Buchstaben – aus der Entfernung lesbar, aus kräftigen, einfachen Massen gebaut.",
       "title": "Dortmunder Style",
       "type": "style"
+    },
+    {
+      "aliases": [
+        "Wildstyle",
+        "Wild Style",
+        "WANTED",
+        "TRACY 168",
+        "ineinandergreifende Buchstaben"
+      ],
+      "claimIds": [
+        "style.wildstyle#c1",
+        "style.wildstyle#c2",
+        "style.wildstyle#c3",
+        "style.wildstyle#c4",
+        "style.wildstyle#c5",
+        "style.wildstyle#c6"
+      ],
+      "distinctions": [
+        {
+          "label": "Einer Erfindung zu einem festen Datum",
+          "target": null,
+          "text": "die ausgewerteten Quellen erlauben keine eindeutige Zuschreibung eines Erfindungsdatums oder einer Einzelperson für die gesamte visuelle Grammatik [c5]."
+        },
+        {
+          "label": "Unlesbarkeit als Qualitätsmaßstab",
+          "target": "construction.negative-space",
+          "text": "schwer lesbar heißt weder automatisch Wildstyle noch automatisch gut."
+        }
+      ],
+      "editorialStatus": "draft",
+      "evidence": "good",
+      "file": "research/archive/de/entries/style.wildstyle.md",
+      "generatorLinks": [
+        {
+          "available": false,
+          "capability": "relationship.connection-study",
+          "params": {}
+        }
+      ],
+      "id": "style.wildstyle",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1970er – heute",
+      "regions": [
+        "New York City"
+      ],
+      "related": [
+        "construction.letter-anatomy",
+        "construction.negative-space",
+        "practice.piece",
+        "media.style-wars-and-subway-art",
+        "concept.local-terms"
+      ],
+      "sections": {
+        "evidenceNotes": "Die Aussagen stammen aus rückblickenden Interviews und späterer Fachliteratur; Sprecher, Zeitpunkt und Kontext werden getrennt geführt. Die Begriffsgeschichte ist nicht abgeschlossen.",
+        "inNightshift": "Wildstyle ist für NIGHTSHIFT eine Kompositionsgrammatik, keine Effektschicht. Echte Buchstabenverbindungen kommen erst mit dem Beziehungs-Solver (Paket C04); bis dahin bleibt die Verbindungsstudie als „noch nicht verfügbar“ markiert [c6].",
+        "introduction": "*Wild Style* wird heute oft mit komplexen Kompositionen verbunden: Buchstaben greifen ineinander, Linien werden verlängert, Formen überlagern sich, die Lesbarkeit kann zugunsten des Ganzen zurücktreten. Diese visuelle Bedeutung erklärt aber nicht die ganze Geschichte des Begriffs.\n\nRückblickende Zeugnisse verbinden den Ausdruck eng mit TRACY 168 und der Crew WANTED [c1]. T-KID 170 erinnert sich im Bronx Oral History Center zudem daran, dass Wild Style für ihn keine bloße Buchstabenfrage war, sondern eine Lebensweise im Bronx-Kontext [c2]. Später wurde *Wildstyle* in der Fachliteratur verbreitet für komplexe, miteinander verbundene Buchstabenformen verwendet [c3].",
+        "recognize": "Als visuelle Beschreibung kann Wildstyle-Komposition ineinandergreifende Buchstaben, gemeinsame Konturen, Verbindungen, Verlängerungen, Richtungswechsel, Pfeile und eine aktive Gestaltung der Negativräume umfassen. Kein einzelnes Merkmal reicht allein: Pfeile, 3D-Effekte oder schwere Lesbarkeit machen ein Piece nicht automatisch zu Wildstyle. Entscheidend ist das Zusammenspiel der Buchstaben [c4].",
+        "terminology": "Das Archiv hält drei Bedeutungsebenen auseinander, die sich überschneiden können:\n\n- **Name und Crew-Kontext** — *Wild Style* als historischer Ausdruck, eng verbunden mit TRACY 168 und WANTED.\n- **Haltung und Zugehörigkeit** — eine von Beteiligten beschriebene Lebensweise oder Szenebindung.\n- **Visuelle Grammatik** — *Wildstyle* als spätere Bezeichnung für ineinandergreifende Kompositionen."
+      },
+      "sort": "1975",
+      "summary": "Ein Begriff mit drei Ebenen: historischer Name im Crew-Kontext, Haltung und Zugehörigkeit – und erst später die Bezeichnung für komplexe, ineinandergreifende Buchstabenkompositionen.",
+      "title": "Wildstyle",
+      "type": "style"
+    },
+    {
+      "aliases": [
+        "Aerosol",
+        "Spraydose",
+        "Dose",
+        "Can",
+        "Cap",
+        "Caps",
+        "Nozzle",
+        "Sprühkopf",
+        "Ventil",
+        "Fat Cap",
+        "Skinny Cap"
+      ],
+      "claimIds": [
+        "technique.aerosol-system#c1",
+        "technique.aerosol-system#c2",
+        "technique.aerosol-system#c3",
+        "technique.aerosol-system#c4",
+        "technique.aerosol-system#c5",
+        "technique.aerosol-system#c6"
+      ],
+      "distinctions": [
+        {
+          "label": "Einer Linienbreite pro Cap",
+          "target": null,
+          "text": "das sichtbare Ergebnis hängt auch von Bewegung, Abstand, Winkel, Tempo und Untergrund ab [c5]."
+        },
+        {
+          "label": "Der heutigen Produktlandschaft",
+          "target": null,
+          "text": "sie darf nicht rückwirkend auf die 1970er- oder 1980er-Jahre übertragen werden."
+        }
+      ],
+      "editorialStatus": "draft",
+      "evidence": "good",
+      "file": "research/archive/de/entries/technique.aerosol-system.md",
+      "generatorLinks": [],
+      "id": "technique.aerosol-system",
+      "imageRights": "none",
+      "inlineLinks": [],
+      "period": "1970er – heute",
+      "related": [
+        "practice.tag",
+        "practice.piece",
+        "practice.hall-of-fame",
+        "object.blackbook"
+      ],
+      "sections": {
+        "context": "Ursula K. Fredericks archäologische Untersuchung eines Graffiti-Ortes in Perth (Feldarbeit 2012, veröffentlicht 2014) dokumentiert auch einen Markt für spezialisiertes Zubehör, der sich an Writer richtete [c3]. Das ist ein Befund aus Australien, keine Weltgeschichte der Aerosolprodukte. T-KID 170 erinnert sich im Bronx Oral History Center, wie er durch Ausprobieren lernte und Sprühköpfe an verschiedenen Dosen verwendete [c4] – eine persönliche Erfahrung, keine allgemeine Anleitung.",
+        "evidenceNotes": "Die Komponentenbeschreibung ist mit Seitenangaben belegt. Eine regionale Produktgeschichte für New York, Europa und Deutschland fehlt noch; Herstellerrückblicke gelten als interessengeleitete Quellen.",
+        "inNightshift": "NIGHTSHIFT trennt Materialsimulation und Buchstabenkonstruktion und verwendet generische Materialprofile statt echter Marken [c6].",
+        "introduction": "Eine Spraydose besteht aus Druckbehälter, Treibmittel, Farbformulierung, Ventil und Sprühkopf [c1]. Ventil und Sprühkopf müssen zueinander passen, und der Sprühkopf beeinflusst Volumen, Form und Richtung des Farbauftrags [c2]. Die abnehmbaren Sprühköpfe heißen im Alltag oft *Caps* oder *Nozzles*; die Schutzkappe, die eine Dose verschließt, ist etwas anderes.",
+        "terminology": "- **Dose / Can** — Behälter und Drucksystem.\n- **Ventil / Valve** — steuert die Abgabe aus der Dose.\n- **Sprühkopf / Cap / Nozzle** — formt den austretenden Farbauftrag.\n- **Schutzkappe** — Verschluss, nicht mit dem austauschbaren Cap zu verwechseln.\n\nBezeichnungen wie *Fat Cap* und *Skinny Cap* sind verbreitete Kategorien, garantieren aber keine überall gleiche Linienbreite."
+      },
+      "sort": "1976",
+      "summary": "Die Spraydose ist ein Materialsystem aus Behälter, Treibmittel, Farbe, Ventil und Sprühkopf. Die sichtbare Linie entsteht erst im Zusammenspiel mit Bewegung, Abstand und Untergrund.",
+      "title": "Aerosol: Dose, Ventil, Cap",
+      "type": "technique"
     }
   ],
   "generatedFrom": [
@@ -3063,11 +4010,11 @@
     },
     {
       "path": "research/archive/de/entries/concept.local-terms.md",
-      "sha256": "63b56c4702ea2c33f3d54cc9b760dd32f5b0d91e158a7d920f70668d3a5acb0d"
+      "sha256": "a4af3fe58b80308018d5ddf070a84869fb4d2a69df95097324945c385ba2ec22"
     },
     {
       "path": "research/archive/de/entries/concept.public-inscription.md",
-      "sha256": "55dddee30b90b6920f92bff5d96f2d6e9f1c25b39b0cd5d1425a26d223df3240"
+      "sha256": "27074717cc512884a3a257ad1fec1c386c5b28836a643dcc4c62ee5ea534e3eb"
     },
     {
       "path": "research/archive/de/entries/concept.reading-the-evidence.md",
@@ -3075,39 +4022,39 @@
     },
     {
       "path": "research/archive/de/entries/concept.visibility-and-archival-gaps.md",
-      "sha256": "c0a8848e22f8e6c46fee9cc21b5c1012b4a3f4afa62719d6a581ecf02ddf7e24"
+      "sha256": "e03625a8a138f100bf1fcda9c6a151ebce16306d995e2a2c385eab3c6daa3f37"
     },
     {
       "path": "research/archive/de/entries/concept.writing-and-graffiti.md",
-      "sha256": "d95a73d467aea851f4f47090cec430dde3f0d28203c820e6662b35b6407b9204"
+      "sha256": "e3a0944ccf236b125bd18decafdd981d9626ea5e0f7522d3351d7293004a24a9"
     },
     {
       "path": "research/archive/de/entries/construction.letter-anatomy.md",
-      "sha256": "e1950e5aba1fc11c960430831b2417c4628b7e209ffab819474bc5c53e1ce5b7"
+      "sha256": "aab64de9591fb733ed6ed5223bc8143189f7d827e4bf359fd7ec306f660b80a2"
     },
     {
       "path": "research/archive/de/entries/construction.negative-space.md",
-      "sha256": "d273a164213d47e59361c96d6b69bd9496262989a1d157cb5456830dc0f6d030"
+      "sha256": "6b897c6d8db985f1a65138c2dd5f5fde111d3df3fd8efe751fec4d8ce783ffd0"
     },
     {
       "path": "research/archive/de/entries/format.subway-train.md",
-      "sha256": "5316ed0da193f0a3c8fcc42eb28bf4c94b927f3f870567a304cabdcf9a45cf47"
+      "sha256": "39b49923cda4a66c396249e7dfc32c078831c27c96410d874dbf9e001b1b68a9"
     },
     {
       "path": "research/archive/de/entries/history.clean-train-campaign.md",
-      "sha256": "5ec74bdeb9bcc4f7b71c3baca24b19c186e2675aa3bf0c560ed9068df6b46321"
+      "sha256": "8ddf1eb87b765e0778ff7f304fe29f10469436ab19a7836ab41c9582b73e5f7f"
     },
     {
       "path": "research/archive/de/entries/history.global-circulation.md",
-      "sha256": "ac6ab9c92b16684b005a20a0c6ead6437d3df2a883c731dc7eb380bf908f18da"
+      "sha256": "e9d80afb095fe8ba726ffe577eb6725a4d11771ff11511a69b28976035628f54"
     },
     {
       "path": "research/archive/de/entries/history.institutional-recognition.md",
-      "sha256": "1dfa821839bcc50177675a881df828e50bd05a26b927e28aea43f8801c305e4b"
+      "sha256": "81c5bceba9f3e8053f01131ba089505cfdb66b1e8ae3e66e6a615a3e6d753667"
     },
     {
       "path": "research/archive/de/entries/history.modern-name-writing.md",
-      "sha256": "e3c9c0337f2ea648cc9a6b443f21346641be3676f36fc7a5a3afb6a4f6cd8cbc"
+      "sha256": "e1e2b29b161a8faa3449951ad2e234d537a887d5f6c92fcb094d641fe1d9b6e1"
     },
     {
       "path": "research/archive/de/entries/media.style-wars-and-subway-art.md",
@@ -3115,23 +4062,27 @@
     },
     {
       "path": "research/archive/de/entries/object.blackbook.md",
-      "sha256": "342a3b8dc2dccb8a9ce0635c1d4de31346dfe8a7b7d5df0606e0a5fc45222f5a"
+      "sha256": "a5b1155c0c328dceaae1b6d87410a7dec3171f4a95b2b69c12911fcf143dcfbd"
     },
     {
       "path": "research/archive/de/entries/person.lady-pink.md",
-      "sha256": "0fe38b53abf6478dcf782d9d5cd0c48ac38228c569fc6a09ed4022aa8ce06c4d"
+      "sha256": "f7a66a7c935d2122e18c2fa36ddf6063077fd0ec54719e87015291731c933015"
+    },
+    {
+      "path": "research/archive/de/entries/practice.getting-up.md",
+      "sha256": "a1e845ae522267b2a94b3f6c6ca753bd6b18078154c9ed69ec8824ede6df694a"
     },
     {
       "path": "research/archive/de/entries/practice.hall-of-fame.md",
-      "sha256": "0628d79e8d1dc28a572c76f26de0d497abc1916e46f8e11cb7055435f56daf43"
+      "sha256": "c4c1ef9f970829a31b5f36fc171a2a9a14978697cd9d8d052c88acf210cf5751"
     },
     {
       "path": "research/archive/de/entries/practice.handstyle.md",
-      "sha256": "7473d94fc10411c3401a0e734613b549581c79bf60d3b9650d4e72bfb7fb72c1"
+      "sha256": "c0f2eb77ec90d911fa8d7a8edb2d715d67fbf472bacb7b09b8679681028882b1"
     },
     {
       "path": "research/archive/de/entries/practice.piece.md",
-      "sha256": "68d18e0b8b9ae755b0a2d5ba5c342f0af96876e87edfbb01ffff8e59ca6cac67"
+      "sha256": "ea69d0f70d65a78eeb0767398eb83a8298d1608bee3dd5ae6db4b8f569fad9bd"
     },
     {
       "path": "research/archive/de/entries/practice.sequential-train-photography.md",
@@ -3139,11 +4090,11 @@
     },
     {
       "path": "research/archive/de/entries/practice.tag.md",
-      "sha256": "dc2e336596af3b1aa92016476e16d8990643e7c446e97e281ef2d175cec20f31"
+      "sha256": "905301200155df8d38d356394e7c5771bdeea8cff8262ffb5902cf904e88b329"
     },
     {
       "path": "research/archive/de/entries/scene.amsterdam.md",
-      "sha256": "0dd78b69e4b1b8f2d73edfc8c38218799c490f66466e2b8aa684571064599c4b"
+      "sha256": "827a96e7aa830281b2084819c8f72d916e39188292a00029c0565252fe183707"
     },
     {
       "path": "research/archive/de/entries/scene.china.md",
@@ -3151,7 +4102,7 @@
     },
     {
       "path": "research/archive/de/entries/scene.dortmund.md",
-      "sha256": "f4d1187716e31d83b24ef7c13ad77c1ebbe47d0782ecc989508b9892fa5caa3d"
+      "sha256": "f7a7a0062f9be9ec4961f2c29fc52df58fb20796e4226e972827e1ac6495c8b3"
     },
     {
       "path": "research/archive/de/entries/scene.hamburg.md",
@@ -3159,11 +4110,11 @@
     },
     {
       "path": "research/archive/de/entries/scene.paris-banlieue.md",
-      "sha256": "259315f3711bed4f69543c899fbed9a21eb741f343fd99771ce51845ec2f2083"
+      "sha256": "5d485d081167544cbb3c6e3cfe5671abb02b425ec47e53442553f0ee95520120"
     },
     {
       "path": "research/archive/de/entries/scene.philadelphia.md",
-      "sha256": "a66188f717df5e2a1647de631e2c0d4d3fdaa4ec75d76adfd32bf831c4f16982"
+      "sha256": "194fc9bb71eac01022e4d78e50c2642e89685e57a1840fdc5e3aac2f3e827427"
     },
     {
       "path": "research/archive/de/entries/scene.sao-paulo.md",
@@ -3171,15 +4122,39 @@
     },
     {
       "path": "research/archive/de/entries/style.dortmund-style.md",
-      "sha256": "308cac51606dd906af0c2d84fbc50d238cb46c4e0cdd7f5813458fe4028e3a44"
+      "sha256": "9378ca5ef15824169c277ec9f8e477862e30c4e8f043bc62ce69c47609f068d8"
+    },
+    {
+      "path": "research/archive/de/entries/style.wildstyle.md",
+      "sha256": "98db74915440a15b60f8609482e858c2388029c817794ef9fcea91cbcc5ee41f"
+    },
+    {
+      "path": "research/archive/de/entries/technique.aerosol-system.md",
+      "sha256": "eef0728fd67962bfb367f702843a97eaaf34f4e96ab3b4a8a04a9ef409ac47b0"
     },
     {
       "path": "research/archive/de/LEARNING_PATHS.md",
-      "sha256": "3f21c82e80b507a3c80807c166b869a6f33c2cc915f21ad29950790b7cb7cf8f"
+      "sha256": "bc09c969c97050c62216f82f46f3eea9b29c10b60b301553f698f0e7fcab8d8f"
     },
     {
       "path": "research/archive/de/TIMELINE.md",
       "sha256": "a8a097b37f9f005437342e9b8f287bfae0760466dea32d5509081d85c1246954"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md",
+      "sha256": "4625ad6cb85ee6e69423deb9314ca19930412739f1987e29262edd93825b7890"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_03.md",
+      "sha256": "bbf0ec4ad9d618bf848963d7f44020f6ac492aa4f861c0dfbec3f13ffbb256da"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_04.md",
+      "sha256": "d8b8945882e2fa71fc79f5b016dcd4e7fdc1069d12dda822abc163ffbb947472"
+    },
+    {
+      "path": "research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_05.md",
+      "sha256": "2230f34b257b8f1aa70c0dbc3ab2080b23e712f4ea2babfffe05d84d6320c731"
     },
     {
       "path": "research/BLACKBOOKS_SKETCHBOOKS_AND_PEER_LEARNING.md",
@@ -3188,6 +4163,10 @@
     {
       "path": "research/CREATIVE_WORKFLOW_AND_STYLE_AUTHORING_01.md",
       "sha256": "e414befb7416ba17ec36ada373536b5d250d95870a9fb01dfd320ff335542bd7"
+    },
+    {
+      "path": "research/DORTMUND_1983_1991_SOURCE_AUDIT_01.md",
+      "sha256": "16f7dab417419a135531bb5c7a2a1a85eca62bd3cc47ed8c947825c4482b65ba"
     },
     {
       "path": "research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md",
@@ -3341,6 +4320,10 @@
         {
           "entry": "style.dortmund-style",
           "framing": "Ein regionaler Stil, der im Aufbau steckt."
+        },
+        {
+          "entry": "style.wildstyle",
+          "framing": "Ein Begriff mit drei Ebenen: Name, Haltung, Grammatik."
         },
         {
           "entry": "object.blackbook",

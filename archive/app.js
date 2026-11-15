@@ -234,6 +234,12 @@ function viewEntry(id, params) {
   };
 }
 
+// Claim registers (central claim/source matrix, audited dossier registers) are the editorial authority.
+function matrixLine(m) {
+  const reg = m.file.includes('CLAIM_SOURCE_MATRIX') ? 'Claim-Quellen-Matrix' : 'Quellenaudit';
+  return `<li><span class="mono">${esc(m.id)}</span> · ${reg} · Stärke ${esc(m.strength)}${m.status ? ` · Status: ${esc(m.status)}` : ''}<br>Hauptbeleg: ${esc(m.mainSource)}${m.limit ? `<br><span class="muted">Grenze: ${esc(m.limit)}</span>` : ''}</li>`;
+}
+
 function sourceLine(sid) {
   if (sid.startsWith('doc:')) return `<li>Projektdokument der Recherche-Bibliothek: <code>${esc(sid.slice(4))}</code></li>`;
   const s = sources.get(sid);
@@ -247,14 +253,14 @@ function claimItem(c, { full = false } = {}) {
   return `<li id="claim-${esc(c.id.replace('#', '-'))}"><div class="claim-meta"><span class="kind">${kind}</span><span>Belegstärke: ${EVIDENCE_DE[c.evidence]}</span><span class="mono">${esc(c.id.split('#')[1])}</span></div>
     <${full ? 'blockquote' : 'div'}>${esc(c.text)}</${full ? 'blockquote' : 'div'}>
     ${ledger ? `<p class="muted" style="font-size:var(--step--1);margin:.2rem 0">Grundlage im NYC-Claim-Ledger der Recherche-Bibliothek: ${ledger}</p>` : ''}
-    <ul class="src">${c.sources.map(sourceLine).join('')}</ul></li>`;
+    <ul class="src">${(c.matrix ?? []).map(matrixLine).join('')}${c.sources.map(sourceLine).join('')}</ul></li>`;
 }
 
 function viewSection(key) {
   const sec = SECTIONS_NAV[key];
   if (!sec || ['zeitleiste', 'szenen', 'glossar'].includes(key)) return viewMissing(key);
   const list = A.entries.filter((e) => sec.types.includes(e.type)).sort((a, b) => a.title.localeCompare(b.title, 'de'));
-  const empty = `<div class="empty"><p><strong>In diesem Bereich gibt es noch keine geprüften Einträge.</strong></p><p>Geplant sind Einträge zu Aerosol, Markern und Caps; sie erscheinen erst, wenn ihre Quellen geprüft sind. Bis dahin: <a href="#/bereich/praxis">Praktiken &amp; Formate</a> oder die <a href="#/suche">Suche</a>.</p></div>`;
+  const empty = `<div class="empty"><p><strong>In diesem Bereich gibt es noch keine geprüften Einträge.</strong></p><p>Weitere Einträge zu Markern und Material erscheinen erst, wenn ihre Quellen geprüft sind. Bis dahin: <a href="#/bereich/praxis">Praktiken &amp; Formate</a> oder die <a href="#/suche">Suche</a>.</p></div>`;
   const diagrams = key === 'bildarchiv' ? `<h2 style="margin-top:var(--s5)">Eigene Diagramme</h2><p class="orient">Alle Abbildungen dieser Ausgabe sind eigene Produktionen von NIGHTSHIFT.</p>${Object.keys(A.diagrams).map((d) => figure(d, 'plate')).join('')}` : '';
   return {
     title: sec.label,
@@ -433,7 +439,8 @@ try {
   if (new URLSearchParams(location.search).has('selftest')) {
     // Scripted check through the same handlers a tap uses: open the first claim marker on the page.
     const ref = document.querySelector('.ref');
-    if (ref) { ref.click(); selftest.claimSheet = { open: $('#claim').open, hasSource: !!$('#claim-body .src li'), kind: $('#claim-title').textContent }; $('#claim').close(); }
+    if (ref) { ref.click(); selftest.claimSheet = { open: $('#claim').open, hasSource: !!$('#claim-body .src li'), kind: $('#claim-title').textContent };
+      if (!new URLSearchParams(location.search).has('keepsheet')) $('#claim').close(); }
     selftest.results = document.querySelectorAll('#main .tabs li').length;
   }
 } catch (e) {

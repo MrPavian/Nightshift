@@ -39,7 +39,7 @@ Daten und Crew-Zugehörigkeiten stammen aus ihren eigenen Erinnerungen und sind 
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2 | Lady Pink berichtet, dass sie 1979 mit Graffiti begann, zuerst U-Bahn-Wagen bemalte und mit 16 in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ (1980) vertreten war. |
+| c1 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2; matrix:WOM-02; matrix:WOM-03 | Lady Pink berichtet, dass sie 1979 mit Graffiti begann, zuerst U-Bahn-Wagen bemalte und mit 16 in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ (1980) vertreten war. |
 | c2 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2 | Das NEA-Interview nennt sie als eine der wenigen Frauen in The Cool Five (TC5) und The Public Animals (TPA). |
 | c3 | scholarly-interpretation | strong | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3 | Coetsee analysiert Lady Pinks Lettering in der Eröffnungssequenz von Wild Style und ihre Rolle bei der Anleitung anderer Writer am Set. |
 | c4 | scholarly-interpretation | strong | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S3 | Coetsee hält fest, dass selbst einflussreiche Writerinnen wie Lady Pink vergleichsweise wenig wissenschaftliche Aufmerksamkeit erhalten haben. |

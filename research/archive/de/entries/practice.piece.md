@@ -4,7 +4,7 @@ type: practice
 aliases: Piece; Masterpiece; Throw-up; Throwie; Burner; Formen des Writings
 period: 1970er – heute
 sort: 1974
-related: practice.tag; practice.hall-of-fame; format.subway-train; style.dortmund-style
+related: practice.tag; practice.hall-of-fame; format.subway-train; style.dortmund-style; style.wildstyle; practice.getting-up
 editorialStatus: source-checked
 evidence: good
 imageRights: original-diagram
@@ -38,7 +38,7 @@ Der Wort-Test setzt ein Wort mit einfachem Abstand. Echte Piece-Komposition – 
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3 | Kramers Ethnografie New Yorker Writer beschreibt Tags, Throw-ups und Pieces als verbreitete Formen der Kultur. |
+| c1 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3; matrix:PIE-01; matrix:THR-01 | Kramers Ethnografie New Yorker Writer beschreibt Tags, Throw-ups und Pieces als verbreitete Formen der Kultur. |
 | c2 | editorial-synthesis | good | doc:research/GRAFFITI_FORMATS.md | Ein Throw-up ist eine schnelle, umrandete Form; ein Piece ist eine geplante Komposition aus Buchstabenbau, Füllung, Kontur und weiteren Schichten. |
-| c3 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md | Tags, Throw-ups und Pieces bestehen nebeneinander, statt eine Leiter zu bilden, die jeder Writer erklimmen muss. |
-| c4 | nightshift-design-inference | strong | doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md | NIGHTSHIFT behandelt Burner als wertende Beschreibung statt als Geometrie oder Qualitätsstufe, und Throw-up als Kunstwerkform, die nicht mit dem Buchstabenstil Bubble gleichzusetzen ist. |
+| c3 | editorial-synthesis | good | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md; matrix:TAG-04 | Tags, Throw-ups und Pieces bestehen nebeneinander, statt eine Leiter zu bilden, die jeder Writer erklimmen muss. |
+| c4 | nightshift-design-inference | strong | doc:research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md; matrix:BUR-01 | NIGHTSHIFT behandelt Burner als wertende Beschreibung statt als Geometrie oder Qualitätsstufe, und Throw-up als Kunstwerkform, die nicht mit dem Buchstabenstil Bubble gleichzusetzen ist. |

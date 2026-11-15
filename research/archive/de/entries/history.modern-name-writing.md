@@ -48,11 +48,11 @@ Die zugrunde liegenden Aussagen sind im NYC-Claim-Ledger der Recherche-Bibliothe
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | strong | NYC-002 | In den späten 1960er- und frühen 1970er-Jahren verwandelten junge New Yorker vorhandene Praktiken des Namen- und Initialenschreibens in stilisiertes Writing; die Forschung beschreibt mehrere Einflüsse statt einer einzigen Wurzel. |
+| c1 | scholarly-interpretation | strong | NYC-002; matrix:MNE-01 | In den späten 1960er- und frühen 1970er-Jahren verwandelten junge New Yorker vorhandene Praktiken des Namen- und Initialenschreibens in stilisiertes Writing; die Forschung beschreibt mehrere Einflüsse statt einer einzigen Wurzel. |
 | c2 | scholarly-interpretation | good | NYC-003 | Philadelphia und New York entwickelten in den 1960er-Jahren verwandte, aber unterscheidbare Kulturen des Namenschreibens. |
 | c3 | scholarly-interpretation | strong | NYC-004 | Anfang bis Mitte der 1970er-Jahre hatte sich in New York eine erkennbare Writing-Kultur mit eigenen Begriffen, Praktiken und Anerkennung unter Gleichen gebildet. |
-| c4 | scholarly-interpretation | good | NYC-006 | Im Lauf der 1970er-Jahre entwickelten Writer zunehmend unterscheidbare Handstyles und aufwendigere Buchstabenkompositionen. |
-| c5 | scholarly-interpretation | strong | NYC-007 | Das U-Bahn-System wurde zu einer großen, fahrenden Ausstellungs- und Kommunikationsinfrastruktur für das New Yorker Writing. |
-| c6 | scholarly-interpretation | good | NYC-005 | Der Artikel der New York Times über TAKI 183 von 1971 machte die Praxis bekannt, belegt aber nicht, dass TAKI 183 ihr alleiniger Erfinder war. |
-| c7 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2 | Lady Pink berichtet, dass sie 1979 mit Graffiti begann, U-Bahn-Wagen bemalte und 1980 mit sechzehn in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ vertreten war. |
+| c4 | scholarly-interpretation | good | NYC-006; matrix:MNE-05 | Im Lauf der 1970er-Jahre entwickelten Writer zunehmend unterscheidbare Handstyles und aufwendigere Buchstabenkompositionen. |
+| c5 | scholarly-interpretation | strong | NYC-007; matrix:MNE-03; matrix:SUB-01 | Das U-Bahn-System wurde zu einer großen, fahrenden Ausstellungs- und Kommunikationsinfrastruktur für das New Yorker Writing. |
+| c6 | scholarly-interpretation | good | NYC-005; matrix:MNE-04 | Der Artikel der New York Times über TAKI 183 von 1971 machte die Praxis bekannt, belegt aber nicht, dass TAKI 183 ihr alleiniger Erfinder war. |
+| c7 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2; matrix:WOM-02; matrix:WOM-03 | Lady Pink berichtet, dass sie 1979 mit Graffiti begann, U-Bahn-Wagen bemalte und 1980 mit sechzehn in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ vertreten war. |
 | c8 | scholarly-interpretation | strong | NYC-008 | Die Geschichte des Writings und die Geschichte der städtischen Kampagne gegen Graffiti sind verbunden, aber analytisch zu trennen. |

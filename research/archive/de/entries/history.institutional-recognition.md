@@ -31,7 +31,7 @@ Sammlungen bewahren Bücher, Briefe und Fotos, die sonst verloren wären ([[obje
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2 | Laut NEA-Interview war Lady Pink 16, als sie 1980 in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ vertreten war. |
+| c1 | practitioner-account | good | WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01#S2; matrix:WOM-03 | Laut NEA-Interview war Lady Pink 16, als sie 1980 in der Fashion-MODA-Ausstellung „Graffiti Art Success for America“ vertreten war. |
 | c2 | institutional-account | strong | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-004 | Der Essay des MCNY berichtet, dass Martin Wongs Museum of American Graffiti im August 1989 eröffnete. |
 | c3 | institutional-account | strong | SOURCE_REGISTER_NYC_GRAFFITI_01#SR-NYC-006 | Die MCNY-Ausstellung „Above Ground“ (22. November 2024 – 10. August 2025) stellte den Weg ihrer Sammlung von den Wurzeln auf Straße und U-Bahn zur institutionellen Anerkennung dar. |
 | c4 | editorial-synthesis | good | doc:research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md | Institutionelle Sammlungen und Ausstellungen können Künstlerinnen und Künstler bevorzugen, die später in Galerien kamen, und prägen so, wer erinnert wird. |

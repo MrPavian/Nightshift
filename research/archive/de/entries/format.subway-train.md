@@ -41,8 +41,8 @@ Eine Vorschau auf Flächen und Formate wie Panel oder Wholecar kommt erst mit de
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | strong | NYC-007 | Das U-Bahn-System wurde zu einer großen, fahrenden Ausstellungs- und Kommunikationsinfrastruktur für das New Yorker Writing. |
+| c1 | scholarly-interpretation | strong | NYC-007; matrix:SUB-01 | Das U-Bahn-System wurde zu einer großen, fahrenden Ausstellungs- und Kommunikationsinfrastruktur für das New Yorker Writing. |
 | c2 | scholarly-interpretation | strong | NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S2 | Coetsees Dissertation beschreibt U-Bahn-Writing als Umwandlung von Verkehrsinfrastruktur in eine Kommunikationstechnik. |
-| c3 | editorial-synthesis | strong | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md | Die U-Bahn ist am besten als Infrastruktur und Publikumsnetz zu beschreiben; die Behauptung, sie sei die einzige wichtige Fläche gewesen, wird zurückgewiesen, weil Writing an Wänden älter ist und daneben bestand. |
+| c3 | editorial-synthesis | strong | doc:research/NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01.md; matrix:SUB-02 | Die U-Bahn ist am besten als Infrastruktur und Publikumsnetz zu beschreiben; die Behauptung, sie sei die einzige wichtige Fläche gewesen, wird zurückgewiesen, weil Writing an Wänden älter ist und daneben bestand. |
 | c4 | scholarly-interpretation | strong | NYC-008 | Die Geschichte des Writings und die Geschichte der städtischen Kampagne gegen Graffiti sind verbunden, aber zu trennen. |
 | c5 | institutional-account | strong | NYC-009 | Fotografie, Film und Publikationen bewahrten vergängliche Arbeiten und verbreiteten Wissen über die Orte ihrer Entstehung hinaus. |

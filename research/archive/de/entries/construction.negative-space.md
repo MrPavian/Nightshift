@@ -30,5 +30,5 @@ Im Editor lassen sich die Punkte eines Buchstabens verschieben. Eine Änderung, 
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | nightshift-design-inference | strong | doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md | NIGHTSHIFT unterscheidet geschlossene Punzen, nach außen verbundene Öffnungen und Kanäle als eigene Negativraum-Elemente. |
+| c1 | nightshift-design-inference | strong | doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md; matrix:LET-02 | NIGHTSHIFT unterscheidet geschlossene Punzen, nach außen verbundene Öffnungen und Kanäle als eigene Negativraum-Elemente. |
 | c2 | nightshift-design-inference | strong | doc:research/GLYPH_GEOMETRY_VALIDATION_CONTRACT_01.md | Die Geometrieprüfung kontrolliert, ob Punzen geschlossen bleiben, und lehnt Bearbeitungen ab, die geschützte Punzen verschmelzen oder öffnen. |

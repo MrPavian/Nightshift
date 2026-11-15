@@ -35,7 +35,7 @@ Grundlage sind eine Abschlussarbeit, Interviews und ein Spezialarchiv – keine 
 
 | id | kind | evidence | sources | claim |
 |---|---|---|---|---|
-| c1 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1 | Vermeulens Arbeit an der Reinwardt Academie (2015) beschreibt Namenschreiben in Amsterdam ab etwa 1977, vor allem unter Punk-nahen Jugendlichen, gestützt auf Literatur und zehn Interviews. |
-| c2 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1 | Dieselbe Arbeit berichtet, dass US-Filme und -Bücher später eine andere lokale Hip-Hop-Phase anregten, und hält den Wunsch nach einer Bewahrung durch die Szene fest. |
+| c1 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1; matrix:CIR-02 | Vermeulens Arbeit an der Reinwardt Academie (2015) beschreibt Namenschreiben in Amsterdam ab etwa 1977, vor allem unter Punk-nahen Jugendlichen, gestützt auf Literatur und zehn Interviews. |
+| c2 | scholarly-interpretation | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S1; matrix:CIR-03 | Dieselbe Arbeit berichtet, dass US-Filme und -Bücher später eine andere lokale Hip-Hop-Phase anregten, und hält den Wunsch nach einer Bewahrung durch die Szene fest. |
 | c3 | editorial-synthesis | good | doc:research/GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01.md | In Amsterdam ging eine lokale Writing-Phase der breiten Übernahme des New Yorker Writings voraus. |
 | c4 | institutional-account | good | GLOBAL_CIRCULATION_REGIONAL_CASE_STUDIES_01#S2 | Die Punk Graffiti Archives der Dutch Graffiti Library beschreiben Punk- und Besetzer-Tags der späten 1970er-Jahre, gefolgt von einer Generation, die stadtweite Sichtbarkeit anstrebte. |

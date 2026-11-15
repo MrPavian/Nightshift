@@ -5,7 +5,7 @@ aliases: Dortmund; Ruhrgebiet; Ruhrpott; TUF; The United Force; Deutschland
 period: Mitte 1980er – heute
 sort: 1985
 regions: Dortmund; Ruhrgebiet; Deutschland
-related: style.dortmund-style; practice.hall-of-fame; history.global-circulation; scene.hamburg
+related: style.dortmund-style; practice.hall-of-fame; history.global-circulation; scene.hamburg; practice.getting-up
 editorialStatus: source-checked
 evidence: good
 imageRights: none
@@ -38,6 +38,6 @@ Namen stehen hier so, wie die Quelle sie nennt. Crew-Zugehörigkeiten, Schreibwe
 |---|---|---|---|---|
 | c1 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03 | Deckers (KWI Essen, 2022) beschreibt Writing als in New York und Philadelphia entstanden, international vor allem durch Wild Style verbreitet und im Ruhrgebiet in der Mitte der 1980er-Jahre etabliert. |
 | c2 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03 | Deckers schreibt, dass Dortmund im Ruhrgebiet seit jeher eine besondere Rolle spielt, die erste Ruhrgebietsstadt mit Writern im Hip-Hop-Umfeld war, und nennt Chintz, Zodiak und Shark als Mitglieder der TUF Crew (The United Force). |
-| c3 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03 | Deckers beschreibt den Dortmunder Style als auffällig durch extrem blockige, klare Buchstaben, der im Ruhrgebiet und international viele Fans und Nachahmer fand. |
+| c3 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03; matrix:DOR-06 | Deckers beschreibt den Dortmunder Style als auffällig durch extrem blockige, klare Buchstaben, der im Ruhrgebiet und international viele Fans und Nachahmer fand. |
 | c4 | nightshift-design-inference | strong | doc:research/GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01.md | Deutsche Regionalszenen werden als eigenständige Archivkapitel mit paralleler Entwicklung und grenzüberschreitendem Einfluss behandelt, nicht als Einbahnstraße von New York nach Deutschland. |
 | c5 | scholarly-interpretation | good | GERMAN_GRAFFITI_HISTORY_RUHRGEBIET_01#DE-03 | Deckers hält fest, dass Tags und Throw-ups, die im Ruhrgebiet allgegenwärtig sind, in der öffentlichen Meinung und bei den Städten nicht gern gesehen sind. |
