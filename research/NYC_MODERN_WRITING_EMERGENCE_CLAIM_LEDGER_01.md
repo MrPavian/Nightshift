@@ -15,7 +15,7 @@ Modern New York hip-hop writing did not emerge from nowhere and cannot responsib
 |---|---|---|---|---|
 | NYC-001 | The word *graffiti* covers many practices; this archive's NYC origin chapter is specifically about modern name-centred hip-hop writing. | Scholarly definition | Strong — Ilan & Snyder; Kramer | Publishable with scope note |
 | NYC-002 | New York writing developed out of existing name/initial writing and other urban visual influences; it did not have one simple root. | Scholarly historical synthesis | Strong — Austin; Coetsee | Publishable |
-| NYC-003 | Philadelphia's earlier name-writing practices are part of the prehistory and cross-city context; New York was not the sole starting point for modern name-writing. | Scholarly synthesis | Good — Coetsee; Smithsonian book contents | Publishable with cautious wording |
+| NYC-003 | Philadelphia and New York developed related but distinct name-writing cultures during the 1960s; the evidence does not support a simple single-city origin story. | Scholarly synthesis + regional field research | Strong for parallel early centres; exact priority and transmission remain contested — Pfeiffenberger; Mitman; Chastanet; Coetsee | Publishable with explicit uncertainty |
 | NYC-004 | By the early-to-mid 1970s, a recognisable New York writing culture had formed, with its own terms, practices and peer recognition. | Scholarly synthesis | Strong — Kramer; Austin | Publishable |
 | NYC-005 | The 1971 New York Times story about TAKI 183 helped publicise the practice, but does not establish him as its sole inventor. | Contemporary-media reference + later scholarship | Good — Austin chapter framing; Ilan & Snyder | Publishable with explicit caveat |
 | NYC-006 | Writers increasingly developed differentiated handstyles and more elaborate letter compositions during the 1970s. | Scholarly synthesis | Strong — Austin; Ilan & Snyder | Publishable |
@@ -140,6 +140,16 @@ Bibliographic record for Roger Gastman and Caleb Neelon's book. The table of con
 - Evidence use: contextual structure and source discovery for NYC-003 and NYC-010.
 - Evidence class: Smithsonian bibliographic record.
 - Limitation: table of contents alone is not evidence for the detailed claims within the book.
+
+
+### S8 — Philadelphia regional evidence: Pfeiffenberger, Mitman and Chastanet
+Philadelphia is not merely a precursor footnote. Pfeiffenberger's KIT dissertation documents early Philadelphia writers and local letterform developments; Mitman's ethnographic monograph treats Philadelphia as a scene with its own history and WICKED tradition; Chastanet's field research documents the continued distinctiveness of Philadelphia handstyles and cautions against a simple chronological contest with New York.
+
+- Pfeiffenberger, KIT dissertation (2017): https://publikationen.bibliothek.kit.edu/1000079409/6209138
+- Mitman, The Art of Defiance (2018): https://www.jstor.org/stable/j.ctv36xw37f
+- Chastanet, The Survival of The Whip (2024/25): https://francoischastanet.com/philadelphia-handstyles/
+- Related dossier: PHILADELPHIA_NAME_WRITING_AND_LOCAL_STYLE_01.md
+- Evidence boundary: these sources support Philadelphia's importance and local distinctiveness; they do not settle a definitive “first writer” or exact priority claim.
 
 ## 5. Claims deliberately excluded or downgraded
 
