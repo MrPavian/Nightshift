@@ -356,3 +356,11 @@ Production rules:
 This Academy is a new educational/editorial workstream. It complements the existing generator glyph specifications and the earlier `LETTERING_LEARNING_VIEW_PRODUCTION_BRIEF_01.md`; it does not silently replace or authorize changes to the generator architecture or active implementation tasks. Before implementation, inspect the current app and ask whether the owner has assigned a concrete integration task.
 
 **Recent commits:** master prompt `c1ef3a171e4f29ad4ea005c4f567dcbbc2d3c71f`; visual overview `5cca1e26f13b972cd1bb33aa44852367a489fa7a`.
+
+
+### First Academy study — A (15 November 2026)
+
+Created the first nine-section study asset:
+- `assets/design/letter-study_A_01.svg`
+
+This is the first structured SVG study and a layout/content prototype, not yet a final validated teaching reference. The visual image-generation experiment is illustrative; its text and diagrams require human editorial review. In particular, verify all anatomy labels, proportions and construction sequence before using it as a canonical reference. Keep the master prompt authoritative and correct this first study before scaling to B–Z.
