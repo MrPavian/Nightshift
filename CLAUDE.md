@@ -364,3 +364,17 @@ Created the first nine-section study asset:
 - `assets/design/letter-study_A_01.svg`
 
 This is the first structured SVG study and a layout/content prototype, not yet a final validated teaching reference. The visual image-generation experiment is illustrative; its text and diagrams require human editorial review. In particular, verify all anatomy labels, proportions and construction sequence before using it as a canonical reference. Keep the master prompt authoritative and correct this first study before scaling to B–Z.
+
+
+### A study — first QA correction pass (15 November 2026)
+
+The initial A prototype was reviewed against the master prompt and corrected in `assets/design/letter-study_A_01.svg`:
+- anatomy labels now distinguish left/right diagonal strokes, apex, crossbar, counter/negative space and feet/terminals;
+- construction analysis now depicts five stages rather than showing fewer diagrams while naming five steps;
+- the variation panel now contains five distinct schematic variants;
+- proportion language explicitly treats width and crossbar position as design choices, not universal ratios;
+- movement/ductus inference is qualified rather than implied as fact.
+
+Latest SVG commit: `ace72442b12de89947bd4ef386b301d5037392fd`.
+
+This is a content-structure correction pass, not yet a full visual/rendering sign-off. Before A becomes the canonical benchmark, inspect the rendered SVG at actual A4 landscape size, check label collisions/clipping and verify that the diagrams communicate the five construction stages unambiguously. Do not scale the study to B until that review is complete.
