@@ -171,6 +171,11 @@ Arbeitspakete:
 Vor einer Änderung Repository und aktuelle Implementierung prüfen. Nur die kleinste sinnvolle Phase bearbeiten. Quellen und Rechte dokumentieren. Changelog aktualisieren. Tests tatsächlich ausführen und klar benennen. Keine Features als fertig melden, solange die Abnahmekriterien nicht erfüllt sind.
 
 
+## Binding design and delivery documents
+
+- [Visual & Interaction Styleguide 01](BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md) — visual system, navigation, search, entry pages, timeline, scenes, diagrams, accessibility and release acceptance.
+- [Joint Work Order & Delivery Plan 01](BLACKBOOK_ARCHIVE_JOINT_WORK_ORDER_01.md) — current gap audit, role split, staged sequence, gates and test matrix.
+
 ## Work completed — information architecture and content pilot
 - Global historical and editorial scope is specified in [Global Editorial Framework 01](BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md); it frames the archive from NYC emergence through regional adaptation to contemporary global practice.
 
