@@ -303,6 +303,7 @@ Added a staged construction pipeline from stable glyph definition and semantic g
 
 ## BLACKBOOK ARCHIVE pilot
 
+- [BLACKBOOK ARCHIVE Entry Drafts 02 — subway era, global circulation and blackbooks](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_02.md)
 - [BLACKBOOK ARCHIVE Entry Drafts 01 — first three source-traceable entries](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_01.md)
 - [BLACKBOOK ARCHIVE Content Pilot 01](BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md) — six draft entries demonstrating the shared editorial schema; not yet publication-approved.
 
