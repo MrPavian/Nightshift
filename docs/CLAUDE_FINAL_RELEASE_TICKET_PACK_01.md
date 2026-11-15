@@ -7,7 +7,7 @@
 
 ## Owner-approved sequencing override — 2026-11-15
 
-The original C01 → C02 → C03 → C04 → C05 → C06 → C07 order has one explicit exception: **after C01, execute C06 immediately.** C02–C05 are temporarily deferred, not cancelled. C06 must be independently useful and must not wait for the editor packages. Build a versioned editor-bridge contract and integrate only capabilities verified to exist. Do not fake future controls, duplicate editor logic or claim unfinished features. After C06, resume C02 → C03 → C04 → C05, then C07 completes real bidirectional integration and release hardening. This override is owner-approved and supersedes conflicting sequencing language in older C06 text.
+The original C01 → C02 → C03 → C04 → C05 → C06 → C07 order has one explicit exception: **after C01, execute C06 immediately.** C02–C05 are temporarily deferred, not cancelled. C06 must be independently useful and must not wait for the editor packages. Build a versioned editor-bridge contract and integrate only capabilities verified to exist. Do not fake future controls, duplicate editor logic or claim unfinished features. After C06, resume C02 → C03 → C04 → C05, then execute C08 (Creator-first workflow) before C07 completes final integration and release hardening. This override is owner-approved and supersedes conflicting sequencing language in older C06 text.
 
 ## Mandatory first action
 
@@ -156,6 +156,26 @@ Implement the existing archive phases and scope:
 - all active editor links target real, verified capabilities; unavailable future links are honestly marked unavailable; the final requirement for at least three genuine bidirectional archive/editor links is completed and tested in C07 after C02–C05;
 - no placeholder text, unsupported claims or unlicensed embedded images;
 - content is generated from the research library, not duplicated manually.
+
+## C08 — Creator-first Graffiti Studio
+
+Execute after C02–C05 and before C07. This package turns the existing grammar, variant generation, editing and persistence capabilities into the owner-confirmed user journey: **Name → Creative Brief → Four Proposals → Choose → Refine → Save/Export/Game Artwork**.
+
+Read and follow:
+- [Creator-First Product Vision 01](NIGHTSHIFT_CREATOR_FIRST_PRODUCT_VISION_01.md)
+- [Generator Knowledge Translation 01](../research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md)
+- [Detailed implementation ticket C08](CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md)
+
+Requirements:
+- capability-aware creative brief with independent axes for activity, artwork form, letterform grammar, composition grammar, surface/format, priorities and rendering;
+- novice-friendly Creator entry, Studio refinement and Writer Lab authoring as progressive views of one canonical project;
+- real deterministic four-proposal generation and comparison, using C04; no mock proposals or palette-only diversity;
+- selection creates an editable branch and preserves sibling proposals;
+- Tag is unavailable/limited until gesture-based handstyle exists; Throw-up is distinct from Bubble; Piece is a form not a style; Burner is evaluative; Bombing is an activity context; Panel/Wholecar are surface formats;
+- unsupported capabilities and glyph maturity are reported honestly;
+- save/load/export, undo/redo, validation and browser tests cover the end-to-end flow.
+
+C08 must not bypass the existing finite 1.0 scope or implement unsupported Tag, full Bombing session orchestration, advanced Character systems or complex Wildstyle interlocking as UI-only simulations.
 
 ## C07 — Integration and release hardening
 
