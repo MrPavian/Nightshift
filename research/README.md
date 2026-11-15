@@ -556,3 +556,12 @@ Regional follow-up: the Ruhrgebiet dossier now adds source-based evidence for Es
 The Ruhrgebiet dossier now includes Hamm's provisional 1988/89 chronology and named crews, Gelsenkirchen's DRK / Die RappelKannen lead (1991–94), Herne's documented 2025 Berlin–Ruhrgebiet writing collaboration, and Pottporus as a contemporary regional institution. Evidence grades and distinctions between Writing, murals, Sgraffiti and legal-wall programmes are explicit.
 
 The Ruhrgebiet dossier adds a visual-archive pass: ALL SURFACE (Dortmund tags / handstyles, 500+ photographs), the 2020 Da kukse wa second edition, MASON/RIO's documented geometric reduction (abstracted only into neutral construction principles), and a Bochum iOR practitioner's account of local crew names and legal-wall culture. This makes handstyle a first-class research track rather than a minor subsection of piece generation.
+
+## Deutsche redaktionelle Fassungen der ersten sechs Lexikonartikel
+
+Die sechs englischen Arbeitsentwürfe wurden als Ausgangsmaterial beibehalten. Die deutsche Redaktionsfassung liegt separat vor und bleibt bis zur Quellenprüfung ausdrücklich im Entwurfsstatus:
+
+- [Deutsche Artikelfassungen 01 — Einträge 01–03](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_01.md)
+- [Deutsche Artikelfassungen 02 — Einträge 04–06](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_02.md)
+
+Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibliografische Präzisierungen und nicht ausreichend belegte Aussagen sind sichtbar als Prüfpunkte markiert. Die deutschen Fassungen sind keine Veröffentlichungsgenehmigung.
