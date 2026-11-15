@@ -50,6 +50,7 @@ New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [doc
 - [Project Brief](docs/PROJECT_BRIEF.md)
 - [Main Roadmap](docs/ROADMAP.md)
 - [Blackbook Archive Masterprompt](docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md)
+- [Blackbook Archive Global Editorial Framework](docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md)
 - [Blackbook Archive Roadmap](docs/BLACKBOOK_ARCHIVE_ROADMAP.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Style Taxonomy & Research Framework](docs/STYLE_TAXONOMY.md)
