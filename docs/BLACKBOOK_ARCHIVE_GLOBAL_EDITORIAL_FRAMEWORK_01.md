@@ -170,3 +170,18 @@ Do not start a new city dossier merely because it is interesting. It must fill a
 ## 11. Relationship to the 1.0 roadmap
 
 This framework refines the existing BLACKBOOK ARCHIVE scope; it does not reorder the binding NIGHTSHIFT 1.0 implementation sequence. Claude implements the archive through the existing TBA/C06 packages after their dependencies are met. Research and editorial preparation continue in parallel. The project owner retains final visual and editorial approval.
+
+
+## 11. Representation, visibility and archival gaps
+
+The archive must not reproduce the male-centred selection effects of earlier graffiti histories. Women have participated since the early decades, while their work, expertise and networks have often been under-recorded or framed through male associates. The research dossier [Women in Graffiti Writing — Visibility, Participation and Scene History 01](../research/WOMEN_IN_GRAFFITI_WRITING_VISIBILITY_AND_SCENE_HISTORY_01.md) establishes the evidence base and open questions.
+
+Acceptance requirements:
+- women are integrated into the main regional timelines, scene records, crew networks and style histories;
+- no isolated “women's corner” is used as a substitute for inclusion throughout the archive;
+- first-person testimony is prioritized where available and clearly distinguished from retrospective third-party accounts;
+- people profiles describe specific contributions and practices rather than token labels;
+- gender, race, class, sexuality, migration and other context are not inferred from appearance or alias;
+- archival absences and unresolved identities are marked as research gaps, never filled with invented biographies;
+- graffiti writing and broader street art remain distinct even when a source or person spans both fields;
+- image attribution, provenance and reuse rights are checked independently of historical significance.
