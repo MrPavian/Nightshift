@@ -24,7 +24,7 @@
 <rect class="panel" x="1122" y="154" width="510" height="270"/><rect x="1122" y="154" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="184">03 · PROPORTIONEN &amp; RASTER</text>
 <path class="letter" d="M1220 365L1320 215L1420 365M1268 294H1372"/>
 <path class="yellow" d="M1195 215H1450M1195 365H1450"/><path class="purple" d="M1195 294H1450M1320 200V380"/>
-<text class="s" x="1450" y="222">Versalhöhe</text><text class="s" x="1450" y="300">Querbalken</text><text class="s" x="1450" y="372">Grundlinie</text>
+<text class="s" x="1435" y="245">Versalhöhe</text><text class="s" x="1435" y="315">Querbalkenlage</text><text class="s" x="1435" y="390">Grundlinie</text><text class="s" x="1145" y="410">Breite und Querbalkenlage sind Entwurfsentscheidungen, keine Universalwerte.</text>
 <rect class="panel" x="48" y="446" width="510" height="270"/><rect x="48" y="446" width="510" height="42" fill="#171717"/><text class="h" x="68" y="476">04 · KONSTRUKTIONSANALYSE</text>
 <g transform="translate(85 520)"><path d="M0 140L55 0L110 140" class="purple"/><path d="M150 140L205 0L260 140" stroke="#111" stroke-width="20" fill="none"/><path d="M300 140L355 0L410 140M326 85H384" class="letter" stroke-width="9"/></g>
 <text class="s" x="90" y="690">Skelett → Strichstärke → Verbindungen → Kontur → Grundform</text>
