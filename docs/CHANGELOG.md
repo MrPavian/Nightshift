@@ -335,7 +335,6 @@
 - Tests: 86 passing.
 
 
-
 ## Research deepening — Martha Cooper Library catalogue verification
 
 - Added an exact-title OPAC record check for *Eine Stadt wird bunt* (MCL 0003815) and Katrin Kaiser's *Graffiti in der gesellschaftlichen Kontroverse* (MCL 0003386).
@@ -497,3 +496,11 @@
 - Identified a namespace discrepancy between the catalogue's `grfo:` query examples and the converter's `grfp:` annotation-property namespace. Marked dependent queries provisional pending live graph confirmation.
 - Recorded two public-endpoint access failures and local DNS failure; no result counts are claimed.
 - Opened GitHub issue #4 for Claude's C01 / 0.7A-T07 canonical Three.js edit loop, with required behavior and acceptance criteria.
+
+
+## 2026-11-14 — 0.7A-T07: first end-to-end editor command loop
+
+- Editor store and command bus (`src/model/`): typed command envelopes, expected-revision checks, atomic validate-then-commit, canonical patches, undo/redo through the validator, preview without persistence, save/load.
+- Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
+- First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
+- 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
