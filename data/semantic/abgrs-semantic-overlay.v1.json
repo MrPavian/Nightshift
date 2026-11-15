@@ -1,6 +1,6 @@
 {
   "overlayId": "nightshift.semantic-overlay.abgrs",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "status": "provisional-engineering-proposal",
   "sources": [
     "contracts/abgrs-glyph-construction.v1.json#componentProposals",
@@ -1082,6 +1082,585 @@
       "identityInvariants": [
         "Tail origin and direction are explicit: it leaves the lower-right chamfer outward.",
         "The tail never enters or narrows the counter."
+      ]
+    },
+    "E": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Outer edge x=10 and inner edge x=36 between the bars.",
+          "connectsTo": [
+            "top-bar",
+            "middle-bar",
+            "foot-bar"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#05",
+            "outer#09"
+          ]
+        },
+        {
+          "name": "top-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=8–31 from the spine to x=92.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04"
+          ]
+        },
+        {
+          "name": "middle-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=59–81, shortened to x=80.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "foot-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=109–132 to x=94, closing along the baseline.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#10",
+            "outer#11",
+            "outer#12"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "spine-top",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "top-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@01",
+            "outer@04"
+          ]
+        },
+        {
+          "name": "spine-middle",
+          "kind": "attachment",
+          "components": [
+            "spine",
+            "middle-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@05",
+            "outer@08"
+          ]
+        },
+        {
+          "name": "spine-foot",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "foot-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@09",
+            "outer@00"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "three-bars-right"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-F-and-B-review"
+        ]
+      },
+      "identityInvariants": [
+        "Three bars open to the right, all attached to the spine.",
+        "Middle bar shorter than top and foot bars.",
+        "No enclosed counter (distinction from B)."
+      ]
+    },
+    "F": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Outer edge x=10; inner edge x=36 between the bars and below the middle bar.",
+          "connectsTo": [
+            "top-bar",
+            "middle-bar"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#05",
+            "outer#09"
+          ]
+        },
+        {
+          "name": "top-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=8–31 to x=92.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#02",
+            "outer#03",
+            "outer#04"
+          ]
+        },
+        {
+          "name": "middle-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=59–81 to x=80, same as E.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "foot",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Foot of the spine along the baseline, no foot bar.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#10"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "spine-top",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "top-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@01",
+            "outer@04"
+          ]
+        },
+        {
+          "name": "spine-middle",
+          "kind": "attachment",
+          "components": [
+            "spine",
+            "middle-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@05",
+            "outer@08"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "two-bars-right",
+          "open-foot"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-E-and-P-review"
+        ]
+      },
+      "identityInvariants": [
+        "Top and middle bar attached to the spine; no foot bar (distinction from E).",
+        "No bowl or counter (distinction from P)."
+      ]
+    },
+    "H": {
+      "components": [
+        {
+          "name": "left-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left stem x=10–36, full height.",
+          "connectsTo": [
+            "crossbar"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03",
+            "outer#11",
+            "outer#12"
+          ]
+        },
+        {
+          "name": "crossbar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=59–81 between the stems (same band as E/F).",
+          "connectsTo": [
+            "left-stem",
+            "right-stem"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "right-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Right stem x=74–100, full height.",
+          "connectsTo": [
+            "crossbar"
+          ],
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07",
+            "outer#08",
+            "outer#09"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "crossbar-left",
+          "kind": "attachment",
+          "components": [
+            "left-stem",
+            "crossbar"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@10"
+          ]
+        },
+        {
+          "name": "crossbar-right",
+          "kind": "attachment",
+          "components": [
+            "crossbar",
+            "right-stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@09"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-parallel-stems",
+          "single-crossbar"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-A-and-N-review"
+        ]
+      },
+      "identityInvariants": [
+        "Two parallel full-height stems joined by exactly one crossbar.",
+        "Notches above and below the crossbar stay open to the exterior (no counter)."
+      ]
+    },
+    "I": {
+      "components": [
+        {
+          "name": "stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Stem x=30–56 between the terminal bars.",
+          "connectsTo": [
+            "top-terminal",
+            "foot-terminal"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#09"
+          ]
+        },
+        {
+          "name": "top-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Bar y=8–31, x=14–72.",
+          "connectsTo": [
+            "stem"
+          ],
+          "candidateRefs": [
+            "outer#12",
+            "outer#01",
+            "outer#02"
+          ]
+        },
+        {
+          "name": "foot-terminal",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Bar y=109–132, x=14–72.",
+          "connectsTo": [
+            "stem"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "stem-top",
+          "kind": "attachment",
+          "components": [
+            "stem",
+            "top-terminal"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@11"
+          ]
+        },
+        {
+          "name": "stem-foot",
+          "kind": "attachment",
+          "components": [
+            "stem",
+            "foot-terminal"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@08"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "single-stem"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-T-and-L-review"
+        ]
+      },
+      "identityInvariants": [
+        "One vertical stem; terminal bars symmetric top and bottom.",
+        "No crossbar at mid height and no counter."
+      ]
+    },
+    "L": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Spine x=10–36 from the top to the foot bar.",
+          "connectsTo": [
+            "foot-bar"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03"
+          ]
+        },
+        {
+          "name": "foot-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=109–132 to x=92, closing along the baseline.",
+          "connectsTo": [
+            "spine"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "spine-foot",
+          "kind": "continuation",
+          "components": [
+            "spine",
+            "foot-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@00"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "foot-bar"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-E-and-I-review"
+        ]
+      },
+      "identityInvariants": [
+        "One bar at the foot only, open to the right; open upper right (distinction from E/F)."
+      ]
+    },
+    "T": {
+      "components": [
+        {
+          "name": "top-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=8–31, x=6–98.",
+          "connectsTo": [
+            "stem"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#03",
+            "outer#07",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Centred stem x=39–65 from the bar to the baseline.",
+          "connectsTo": [
+            "top-bar"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "bar-stem",
+          "kind": "attachment",
+          "components": [
+            "top-bar",
+            "stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@06"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "top-bar",
+          "centred-stem"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-I-and-Y-review"
+        ]
+      },
+      "identityInvariants": [
+        "Stem centred under the bar; bar overhangs both sides.",
+        "No foot bar (distinction from I)."
       ]
     }
   }

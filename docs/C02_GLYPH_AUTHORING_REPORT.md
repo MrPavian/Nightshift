@@ -1,7 +1,46 @@
 # C02 — Neutral A–Z Glyph Authoring Report
 
 **Package:** C02 (`docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md`) · **Plan:** `research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md`
-**Status:** Wave 1 (C, D, O, P, Q) complete · Waves 2–4 not started
+**Status:** Wave 1 (C, D, O, P, Q) and wave 2 (E, F, H, I, L, T) authored, owner review pending · Waves 3–4 not started
+
+## Wave 2 — E, F, H, I, L, T (2026-11-15)
+
+Order follows Issue #9 and the owner decision of 2026-11-15: the archive comes first, then C02 → C08. Wave 2 builds on wave 1 (stacked on PR #6) and duplicates no work.
+
+### Source and provenance
+- Authoring snapshot: `data/glyphs/authored/c02-wave2.v1.json` (1.0.0). Every path is stored verbatim with its SHA-256 hash. Provenance is `claude-authored`; the paths are not traced from fonts, artworks, photos or writers. Review is **pending**.
+- The v0.6 base of each letter stays as a reference-only second variant.
+
+### Construction decisions (bar and stem systems)
+The v0.6 bases were geometrically usable but did not match the authored family: stems were 27–28 units, bars 25–27, and middle-bar heights varied. Wave 2 normalises them:
+
+| Glyph | Decision |
+|---|---|
+| E | Spine 26; top bar 8–31 to x=92; middle bar 59–81, shortened to x=80; foot bar 109–132 to x=94 |
+| F | E without the foot bar; top and middle bar identical to E (tested: same outline up to the foot) |
+| H | Two full-height stems, 26 each; crossbar in the same 59–81 band as E/F |
+| I | Stem 26, centred, with symmetric terminal bars (x=14–72), so I keeps a readable width in words |
+| L | Spine 26; foot bar 109–132 at E's foot-bar height |
+| T | Top bar 8–31, x=6–98; centred stem 39–65 |
+
+### Semantics and identity
+- Overlay 1.3.0 adds component proposals (spine/stem, top/middle/foot bar, terminals, crossbar) and junctions. All components are `provisional-unmapped`, with candidate segments; every reference points to existing geometry (tested).
+- New, decidable identity check `no-enclosed-counter`: exactly one outer contour and no counter. It separates E/F/H/I/L/T from B, P and A by geometry. The distinctions (E↔F↔B, H↔A↔N, I↔T↔L) stay `…-review`, which means human review.
+
+### Results
+- All six pass every hard check. Identity: `single-required-connected-contour`, `no-unintended-self-intersection` and `no-enclosed-counter` all `passed`.
+- 16 of 26 letters have authored masters: A B C D E F G H I L O P Q R S T.
+- Proof run `run.0.7A-T06.71bcd23f82f6`. GHOST now consists only of authored masters (`authored-subset`). BOMB, KRAZE, MIND and NYX still contain provisional letters from waves 3–4.
+- The editor picks the editable letters dynamically from the registry, so the six new masters are directly editable. T07 editor proof: 13/13 steps.
+- Tests: `npm test` 118/118; `npm run test:browser` SMOKE, REVIEW-PAGE and EDITOR-PASS.
+
+### Maturity
+E, F, H, I, L, T: `provisional` → `authored-contour` (no review).
+
+### Open
+- Owner review of waves 1 and 2 (PR #6, this PR).
+- Wave 3 (K M N V W X Y Z: diagonals, branches, valleys, crossings) and wave 4 (J, U).
+- After merging with C06: the C06 test compares the bridge glyph list against a fixed `EDITABLE` list. Since wave 1 that list is dynamic, so `BRIDGE_GLYPHS` must follow the registry.
 
 ## Wave 1 — C, D, O, P, Q (2026-11-15)
 

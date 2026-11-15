@@ -345,6 +345,9 @@ function evaluateIdentity(glyph, ctx) {
         ? NE('unfilled space is proven exterior-connected, but no aperture entity is classified yet (AUD-01)')
         : NE('aperture unclassified and exterior connectivity not proven');
     },
+    'no-enclosed-counter': () => ctx.contours.length === 1 && counters.length === 0
+      ? { status: 'passed', reason: 'single outer contour, no inner contour: no enclosed counter' }
+      : { status: 'failed', reason: `expected no counter, found ${ctx.contours.length - 1} inner contour(s)` },
     'tail-counter-clearance': () => NE('requires reviewed tail mapping and a calibrated threshold'),
     'neck-clearance': () => NE('neck location requires reviewed mapping and a calibrated threshold'),
     'leg-counter-clearance': () => NE('requires reviewed leg mapping and a calibrated threshold'),

@@ -38,18 +38,20 @@ test('overlay is pure: input records are not mutated', () => {
   assert.equal(stableStringify(records), snapshotText);
 });
 
-test('A/B/G/R/S components match the contract proposals exactly; other letters untouched', () => {
+test('A/B/G/R/S components match the contract proposals exactly; waves 1–2 match their plans; other letters untouched', () => {
   for (const [gid, names] of Object.entries(abgrsContract.componentProposals)) {
     const comps = registry.get(gid).semanticGraph.components;
     assert.deepEqual(comps.map((c) => c.label).sort(), [...names].sort(), gid);
     assert.ok(comps.every((c) => c.id === `glyph.${gid.slice(-1)}.component.${c.label}`));
   }
   const PLAN = { C: ['upper-terminal', 'upper-arc', 'lower-arc', 'lower-terminal'], D: ['spine', 'bowl', 'spine-bowl-junction', 'counter-boundary'],
-    O: ['outer-bowl', 'counter-boundary'], P: ['spine', 'upper-bowl', 'lower-termination', 'counter-boundary'], Q: ['outer-bowl', 'tail', 'tail-junction', 'counter-boundary'] };
+    O: ['outer-bowl', 'counter-boundary'], P: ['spine', 'upper-bowl', 'lower-termination', 'counter-boundary'], Q: ['outer-bowl', 'tail', 'tail-junction', 'counter-boundary'],
+    E: ['spine', 'top-bar', 'middle-bar', 'foot-bar'], F: ['spine', 'top-bar', 'middle-bar', 'foot'], H: ['left-stem', 'crossbar', 'right-stem'],
+    I: ['stem', 'top-terminal', 'foot-terminal'], L: ['spine', 'foot-bar'], T: ['top-bar', 'stem'] };
   for (const [ch, names] of Object.entries(PLAN)) {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components.map((c) => c.label).sort(), [...names].sort(), ch);
   }
-  for (const ch of 'EFHIJKLMNTUVWXYZ') {
+  for (const ch of 'JKMNUVWXYZ') {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components, []);
     assert.equal(registry.getByChar(ch).revision, 1);
   }

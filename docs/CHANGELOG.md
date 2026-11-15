@@ -513,3 +513,10 @@
 - Semantic overlay 1.2.0 adds component proposals and identity profiles for the five letters; reports, proof run, test page and editor follow the authored set automatically.
 - Report: `docs/C02_GLYPH_AUTHORING_REPORT.md`. Tests: 111 passing plus browser tests.
 
+## 2026-11-15 — C02 wave 2: authored E, F, H, I, L, T masters
+
+- `data/glyphs/authored/c02-wave2.v1.json`: bar-and-stem masters normalised to the family (stems 26, bars 23, shared 59–81 middle band); v0.6 bases kept as reference-only variants.
+- Semantic overlay 1.3.0 with component proposals, junctions and identity profiles; new decidable identity check `no-enclosed-counter`.
+- 16/26 letters authored; GHOST is fully authored. Reports, T06 proof run and T07 editor proof regenerated.
+- Tests: 118 pass; browser SMOKE, REVIEW-PAGE and EDITOR-PASS.
+

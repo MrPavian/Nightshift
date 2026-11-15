@@ -1,19 +1,21 @@
 {
   "artifactHashes": {
-    "plates/glyph-identity.svg": "0591319d87dc1f775210820b72d9d410e38bd270ff45e64c1645bedce958f7eb",
-    "plates/pair-context.svg": "91298f74c9a24baa66961cd8ac204a34f5fcbd22bc8f4fb05abaf332a247d5d9",
-    "plates/semantic-topology.svg": "9d7a720ce4c0fc21a77331b7ca41a0a2f659ec7eeade27aa6f31f6142d69a594",
-    "plates/word-context.svg": "1cd36bc8c31ed951d4d5991d763313ef298c293c07f536760d583a74ebfbfde4",
-    "review/review-template.json": "88a2590ba3b15d04cd929ceebad2b0ee232de1f4e086c8d9d232d2b11063046d",
+    "plates/glyph-identity.svg": "34d7468df36b326b041da91827062c37d3291d80affd217ea79751fb8d671a0b",
+    "plates/pair-context.svg": "3e6e167dedc3b8dcd90ddb811e628a1dd7ea4053a62781236c7d65f040b050ae",
+    "plates/semantic-topology.svg": "72917fd93171f7228b7c9622c8bd980e2a3c625a536e788ebb8a5ac5a094f322",
+    "plates/word-context.svg": "5ccae82464c424da2e430693eeb2bb4d9db56db0ce74fc3b9459590d53c852f5",
+    "review/review-template.json": "40e97222e1c6e915e4341439a4879295a4109ebf8d2343de0a15a38ed8f040be",
     "validation/A.json": "61611981536f041656147fbf7b05a8b6413be5ae8191e24fa293f0c6eac2d126",
     "validation/B.json": "227170a1dc1f7e6c24dcfff3603363bbf72b41323f95847548e1167a74c31cae",
     "validation/C.json": "f6a82df9af517eb71b7a4ae585aca3d8cd5ad5a32ef5de0a214169648ee8ee0a",
     "validation/D.json": "df6f1a9b15f344ea942cca45b706b2149146ae05437019f210ea4a82cccea621",
-    "validation/E.json": "dc39eb9d0f887882bbd3666fe6e41619ee418ee85a296bbce15a47360b51a66d",
+    "validation/E.json": "8b2b729a5a98d8d166b3904b7d84323159265fc6c88573dfb9282369b6905263",
+    "validation/F.json": "5ee555c41ff28c2c0e57630fef956835d6def8cef932dd15f637c00d74246f63",
     "validation/G.json": "de7819e573f137144cfaa3a1fcff49266df7f6afcbafa2ae70d234c96d3516c2",
-    "validation/H.json": "216af966fa3261af5f2cdef169bae7db485a0919fa67bd938b081a8f09f8e0ae",
-    "validation/I.json": "ea4f6c4c2cd33d34ed6f52aad7cbdd079417d804c888d4bb112cd52943bf2b3d",
+    "validation/H.json": "a883fd22d9dc8d6c57833444e5c27be80c5a6fa1c746a8107f754658e66a42fa",
+    "validation/I.json": "8542d4199e12b09ce777fc58fa7117626fce7659c8208006e35aff22c4387e96",
     "validation/K.json": "6c73dae88cdd16b1d3a6a0132fdfa241593fdea1bcb2485a6b34c2614e56c4c3",
+    "validation/L.json": "c7873cc80036c67e6f4a8b017b366a9f6f18bad1891b1fe99558d958a3148177",
     "validation/M.json": "6810502789b2107bfd997035b939eb088c8f023aa6e99ad202e2dea3a55b7af0",
     "validation/N.json": "9cf1be32d6ba3839002f6c8dc8640cf0b8b6470fc09be5377c44be01e7b08e06",
     "validation/O.json": "ab230f53f58c2b4d9fea95405bcb1a36bab48aed8e1dc6babe06ca6cf09aed09",
@@ -21,7 +23,7 @@
     "validation/Q.json": "2d19324c3b0d106053d01a19bf46be333f5a6ea9893fe337fe8dd2b53222c399",
     "validation/R.json": "dbe7f9fd44346e8020517d446c5587b2f61c2466144e5b998b3342af234ee3a8",
     "validation/S.json": "57ae24c974051d79e1e074d7c559c0cc20366fd37d772f0806fa8cbe66f80f24",
-    "validation/T.json": "027aef7b3fd2eac897263bd9c7f366decd64b06ffc24ec2e5242e386f94240bf",
+    "validation/T.json": "5e735e3b3b3c52f1f3fb5576528bc4e7d4dd927b2485a204a02f062eef0a8cd4",
     "validation/U.json": "28c2c179a67d5b1e09d648be4681d54ca3c8777f2c0b60371976652cc08f164f",
     "validation/V.json": "61d1d7219efba6cc5c76c5903c263717d84be9fb00263b5aadb8a93adaafbc26",
     "validation/X.json": "bafa55f180d1d7c8d1a28fcfbd044da6a5a2ffccadf112d76c6fa5f043420362",
@@ -42,12 +44,18 @@
       "B",
       "C",
       "D",
+      "E",
+      "F",
       "G",
+      "H",
+      "I",
+      "L",
       "O",
       "P",
       "Q",
       "R",
-      "S"
+      "S",
+      "T"
     ],
     "contractCoverageChanges": [
       {
@@ -59,6 +67,11 @@
         "contract": "partial-provisional-coverage",
         "current": "authored-subset",
         "fixtureId": "pair-ro"
+      },
+      {
+        "contract": "partial-provisional-coverage",
+        "current": "authored-subset",
+        "fixtureId": "word-ghost"
       }
     ],
     "missingGlyphs": [],
@@ -79,7 +92,7 @@
     "words": {
       "ABRA": "authored-subset",
       "BOMB": "partial-provisional-coverage",
-      "GHOST": "partial-provisional-coverage",
+      "GHOST": "authored-subset",
       "KRAZE": "partial-provisional-coverage",
       "MIND": "partial-provisional-coverage",
       "NYX": "partial-provisional-coverage",
@@ -90,7 +103,7 @@
   "engineVersions": {
     "generator": "none (legacy import, no procedural generation)",
     "geometryValidator": "geometry-validator/1.0.0; nightshift.validator-profile.legacy-v06@1.0.0",
-    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.semantic-overlay.abgrs@1.2.0",
+    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.authored.c02-wave2@1.0.0; nightshift.semantic-overlay.abgrs@1.3.0",
     "grammar": "none (no style grammar in 0.7A)",
     "relationshipSolver": "none — neutral-naive-layout/1.0.0",
     "renderer": "render-model/1.0.0; proof-plates/1.0.0"
@@ -100,12 +113,18 @@
     "glyph-b",
     "glyph-c",
     "glyph-d",
+    "glyph-e",
+    "glyph-f",
     "glyph-g",
+    "glyph-h",
+    "glyph-i",
+    "glyph-l",
     "glyph-o",
     "glyph-p",
     "glyph-q",
     "glyph-r",
     "glyph-s",
+    "glyph-t",
     "pair-av",
     "pair-ar",
     "pair-ba",
@@ -165,12 +184,12 @@
     "template": "review/review-template.json"
   },
   "rootSeed": 0,
-  "runId": "run.0.7A-T06.4ca5f41d2531",
+  "runId": "run.0.7A-T06.71bcd23f82f6",
   "schemaVersion": "1.0",
   "seedDerivationVersion": "none — no randomness is used in 0.7A proof runs",
   "sourceRevision": {
     "kind": "registry-content-sha256",
-    "value": "4ee099becf4090e2b0b1d78facaa8916b0fd8c3eb7771787970df56220465918"
+    "value": "b1a6268667b3c84a58c4d7bd2f97c475044187a5deb0707f58e4903ad8746652"
   },
   "specimens": [
     {
@@ -332,6 +351,84 @@
     {
       "coverage": "authored-subset",
       "family": "glyph-identity",
+      "fixtureId": "glyph-e",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "E",
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "e.master"
+        }
+      ],
+      "specimenId": "spec.glyph-e.a381feee90b2",
+      "text": "E",
+      "validationReportRefs": [
+        "validation/E.json"
+      ],
+      "width": 84
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-f",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "F",
+          "geometryHash": "2aa3f6b88ba4851158c2b1f50530d025f84727cf89fff69691e7e0a3da876fc1",
+          "glyphId": "latin.upper.F",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "f.master"
+        }
+      ],
+      "specimenId": "spec.glyph-f.0487f3ffaba7",
+      "text": "F",
+      "validationReportRefs": [
+        "validation/F.json"
+      ],
+      "width": 82
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
       "fixtureId": "glyph-g",
       "layout": {
         "gap": 12,
@@ -367,6 +464,123 @@
         "validation/G.json"
       ],
       "width": 93
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-h",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "H",
+          "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "glyphId": "latin.upper.H",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "h.master"
+        }
+      ],
+      "specimenId": "spec.glyph-h.4a4b60236184",
+      "text": "H",
+      "validationReportRefs": [
+        "validation/H.json"
+      ],
+      "width": 90
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-i",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "I",
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -14,
+            "translateY": 0
+          },
+          "variantId": "i.master"
+        }
+      ],
+      "specimenId": "spec.glyph-i.35c0cba61d22",
+      "text": "I",
+      "validationReportRefs": [
+        "validation/I.json"
+      ],
+      "width": 58
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-l",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "L",
+          "geometryHash": "b55f11141b7c8c84452ab4513e1e6a52692a6ffeab2295a223c373ffa165e6c2",
+          "glyphId": "latin.upper.L",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -10,
+            "translateY": 0
+          },
+          "variantId": "l.master"
+        }
+      ],
+      "specimenId": "spec.glyph-l.681bd984372d",
+      "text": "L",
+      "validationReportRefs": [
+        "validation/L.json"
+      ],
+      "width": 82
     },
     {
       "coverage": "authored-subset",
@@ -562,6 +776,45 @@
         "validation/S.json"
       ],
       "width": 94
+    },
+    {
+      "coverage": "authored-subset",
+      "family": "glyph-identity",
+      "fixtureId": "glyph-t",
+      "layout": {
+        "gap": 12,
+        "note": "Naive fixed gap between visible bounds. No relationship solver; not designed spacing.",
+        "version": "neutral-naive-layout/1.0.0"
+      },
+      "missingSlots": [],
+      "plates": [
+        "plates/glyph-identity.svg",
+        "plates/semantic-topology.svg"
+      ],
+      "slots": [
+        {
+          "character": "T",
+          "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "glyphId": "latin.upper.T",
+          "hardChecksPassed": true,
+          "index": 0,
+          "maturity": "authored-contour",
+          "reason": null,
+          "revision": 2,
+          "status": "rendered",
+          "transform": {
+            "translateX": -6,
+            "translateY": 0
+          },
+          "variantId": "t.master"
+        }
+      ],
+      "specimenId": "spec.glyph-t.c1ecdebe127f",
+      "text": "T",
+      "validationReportRefs": [
+        "validation/T.json"
+      ],
+      "width": 92
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1400,7 +1653,7 @@
       "width": 409
     },
     {
-      "coverage": "partial-provisional-coverage",
+      "coverage": "authored-subset",
       "family": "word-context",
       "fixtureId": "word-ghost",
       "layout": {
@@ -1431,19 +1684,19 @@
         },
         {
           "character": "H",
-          "geometryHash": "867f6acdea61604818b8f4dc30d6cf66badd9e5379d9a72f81bbd4cba5a3643f",
+          "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
           "glyphId": "latin.upper.H",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
             "translateX": 95,
             "translateY": 0
           },
-          "variantId": "h.provisional"
+          "variantId": "h.master"
         },
         {
           "character": "O",
@@ -1456,7 +1709,7 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 200,
+            "translateX": 201,
             "translateY": 0
           },
           "variantId": "o.master"
@@ -1472,29 +1725,29 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 307,
+            "translateX": 308,
             "translateY": 0
           },
           "variantId": "s.master"
         },
         {
           "character": "T",
-          "geometryHash": "5e359f5117723a7cc50d780be8758127dfcde38b3f3c58989710e32cbcc06b35",
+          "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
           "glyphId": "latin.upper.T",
           "hardChecksPassed": true,
           "index": 4,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
             "translateX": 413,
             "translateY": 0
           },
-          "variantId": "t.provisional"
+          "variantId": "t.master"
         }
       ],
-      "specimenId": "spec.word-ghost.d1fee6771421",
+      "specimenId": "spec.word-ghost.e3f372a43d51",
       "text": "GHOST",
       "validationReportRefs": [
         "validation/G.json",
@@ -1503,7 +1756,7 @@
         "validation/S.json",
         "validation/T.json"
       ],
-      "width": 518
+      "width": 511
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1585,22 +1838,22 @@
         },
         {
           "character": "E",
-          "geometryHash": "2cc3b3ed01ef4eb67ccc4f44290c4d0e2e7139382c10f7ad2190aebe3bab2e4b",
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
           "glyphId": "latin.upper.E",
           "hardChecksPassed": true,
           "index": 4,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
             "translateX": 416,
             "translateY": 0
           },
-          "variantId": "e.provisional"
+          "variantId": "e.master"
         }
       ],
-      "specimenId": "spec.word-kraze.f911a6e3e901",
+      "specimenId": "spec.word-kraze.cc555ba954e4",
       "text": "KRAZE",
       "validationReportRefs": [
         "validation/K.json",
@@ -1609,7 +1862,7 @@
         "validation/Z.json",
         "validation/E.json"
       ],
-      "width": 512
+      "width": 510
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1643,19 +1896,19 @@
         },
         {
           "character": "I",
-          "geometryHash": "bf33c5efb40389329e21513573ded4187f3a31432bdddd2d010d011ec65d9d31",
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
           "glyphId": "latin.upper.I",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 97,
+            "translateX": 95,
             "translateY": 0
           },
-          "variantId": "i.provisional"
+          "variantId": "i.master"
         },
         {
           "character": "N",
@@ -1668,7 +1921,7 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 192,
+            "translateX": 170,
             "translateY": 0
           },
           "variantId": "n.provisional"
@@ -1684,13 +1937,13 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 297,
+            "translateX": 275,
             "translateY": 0
           },
           "variantId": "d.master"
         }
       ],
-      "specimenId": "spec.word-mind.77cad4e8dd0e",
+      "specimenId": "spec.word-mind.eca97918c21b",
       "text": "MIND",
       "validationReportRefs": [
         "validation/M.json",
@@ -1698,7 +1951,7 @@
         "validation/N.json",
         "validation/D.json"
       ],
-      "width": 397
+      "width": 375
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1804,19 +2057,19 @@
         },
         {
           "character": "I",
-          "geometryHash": "bf33c5efb40389329e21513573ded4187f3a31432bdddd2d010d011ec65d9d31",
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
           "glyphId": "latin.upper.I",
           "hardChecksPassed": true,
           "index": 1,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
-            "translateX": 93,
+            "translateX": 91,
             "translateY": 0
           },
-          "variantId": "i.provisional"
+          "variantId": "i.master"
         },
         {
           "character": "S",
@@ -1829,7 +2082,7 @@
           "revision": 2,
           "status": "rendered",
           "transform": {
-            "translateX": 192,
+            "translateX": 170,
             "translateY": 0
           },
           "variantId": "s.master"
@@ -1845,13 +2098,13 @@
           "revision": 1,
           "status": "rendered-provisional",
           "transform": {
-            "translateX": 293,
+            "translateX": 271,
             "translateY": 0
           },
           "variantId": "k.provisional"
         }
       ],
-      "specimenId": "spec.word-risk.5676567ac53c",
+      "specimenId": "spec.word-risk.bc12891a4ee6",
       "text": "RISK",
       "validationReportRefs": [
         "validation/R.json",
@@ -1859,7 +2112,7 @@
         "validation/S.json",
         "validation/K.json"
       ],
-      "width": 401
+      "width": 379
     },
     {
       "coverage": "partial-provisional-coverage",
@@ -1925,22 +2178,22 @@
         },
         {
           "character": "E",
-          "geometryHash": "2cc3b3ed01ef4eb67ccc4f44290c4d0e2e7139382c10f7ad2190aebe3bab2e4b",
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
           "glyphId": "latin.upper.E",
           "hardChecksPassed": true,
           "index": 3,
-          "maturity": "provisional",
+          "maturity": "authored-contour",
           "reason": null,
-          "revision": 1,
-          "status": "rendered-provisional",
+          "revision": 2,
+          "status": "rendered",
           "transform": {
             "translateX": 322,
             "translateY": 0
           },
-          "variantId": "e.provisional"
+          "variantId": "e.master"
         }
       ],
-      "specimenId": "spec.word-sque.f82869f92878",
+      "specimenId": "spec.word-sque.99fa09413116",
       "text": "SQUE",
       "validationReportRefs": [
         "validation/S.json",
@@ -1948,7 +2201,7 @@
         "validation/U.json",
         "validation/E.json"
       ],
-      "width": 418
+      "width": 416
     }
   ],
   "validationReportRefs": {
@@ -1980,7 +2233,13 @@
       "hardChecksPassed": true,
       "path": "validation/E.json",
       "refusal": null,
-      "renderStatus": "rendered-provisional"
+      "renderStatus": "rendered"
+    },
+    "latin.upper.F": {
+      "hardChecksPassed": true,
+      "path": "validation/F.json",
+      "refusal": null,
+      "renderStatus": "rendered"
     },
     "latin.upper.G": {
       "hardChecksPassed": true,
@@ -1992,19 +2251,25 @@
       "hardChecksPassed": true,
       "path": "validation/H.json",
       "refusal": null,
-      "renderStatus": "rendered-provisional"
+      "renderStatus": "rendered"
     },
     "latin.upper.I": {
       "hardChecksPassed": true,
       "path": "validation/I.json",
       "refusal": null,
-      "renderStatus": "rendered-provisional"
+      "renderStatus": "rendered"
     },
     "latin.upper.K": {
       "hardChecksPassed": true,
       "path": "validation/K.json",
       "refusal": null,
       "renderStatus": "rendered-provisional"
+    },
+    "latin.upper.L": {
+      "hardChecksPassed": true,
+      "path": "validation/L.json",
+      "refusal": null,
+      "renderStatus": "rendered"
     },
     "latin.upper.M": {
       "hardChecksPassed": true,
@@ -2052,7 +2317,7 @@
       "hardChecksPassed": true,
       "path": "validation/T.json",
       "refusal": null,
-      "renderStatus": "rendered-provisional"
+      "renderStatus": "rendered"
     },
     "latin.upper.U": {
       "hardChecksPassed": true,
