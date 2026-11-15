@@ -123,7 +123,7 @@ Acceptance:
 
 **Goal:** deliver a polished, source-backed, visual graffiti lexicon that introduces modern hip-hop writing from its New York emergence through international circulation, distinct regional adaptations and contemporary global practice. This is a curated launch edition, not an exhaustive encyclopedia of every country or writer.
 
-**Read first:** `docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md`, `docs/BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md`, `docs/BLACKBOOK_ARCHIVE_ROADMAP.md`, `docs/CLAUDE_TICKET_PACK_BLACKBOOK_01.md`, and the relevant `research/` dossiers.
+**Read first:** `docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md`, `docs/BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md`, `docs/BLACKBOOK_ARCHIVE_ROADMAP.md`, `docs/CLAUDE_TICKET_PACK_BLACKBOOK_01.md`, `research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md` (30-entry editorial launch plan, learning paths, source register and review gates), and the relevant `research/` dossiers.
 
 Implement the existing archive phases and scope:
 - archive home, global search, categories, filters and entry detail;
