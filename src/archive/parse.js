@@ -124,24 +124,28 @@ export function parseDistinctions(md) {
     .filter(Boolean).map(([, label, target, text]) => ({ label, target: target ?? null, text }));
 }
 
-const SECTION_KEYS = {
-  'Introduction': 'introduction',
-  'Why it matters': 'whyItMatters',
-  'How to recognize it': 'recognize',
-  'Context and development': 'context',
-  'Terminology and variants': 'terminology',
-  'Evidence notes': 'evidenceNotes',
-  'In NIGHTSHIFT': 'inNightshift',
+/** Section headings per edition language. Keys are language-neutral. */
+export const SECTION_HEADINGS = {
+  de: {
+    'Einführung': 'introduction', 'Warum es wichtig ist': 'whyItMatters', 'Woran man es erkennt': 'recognize',
+    'Kontext und Entwicklung': 'context', 'Begriffe und Varianten': 'terminology', 'Zur Quellenlage': 'evidenceNotes', 'In NIGHTSHIFT': 'inNightshift',
+  },
+  en: {
+    'Introduction': 'introduction', 'Why it matters': 'whyItMatters', 'How to recognize it': 'recognize',
+    'Context and development': 'context', 'Terminology and variants': 'terminology', 'Evidence notes': 'evidenceNotes', 'In NIGHTSHIFT': 'inNightshift',
+  },
 };
+export const SPECIAL_HEADINGS = { de: { distinctions: 'Nicht zu verwechseln mit', claims: 'Belege' }, en: { distinctions: 'Not the same as', claims: 'Claims' } };
 
-export function parseEntry(path, text) {
+export function parseEntry(path, text, lang = 'de') {
   const { data, body } = parseFrontMatter(text);
   const s = sections(body);
+  const keys = SECTION_HEADINGS[lang], special = SPECIAL_HEADINGS[lang];
   const title = s._lead.match(/^# +(.+)$/m)?.[1]?.trim() ?? null;
   const summary = s._lead.match(/^> +(.+)$/m)?.[1]?.trim() ?? null;
-  const entry = { ...data, file: path, title, summary, sections: {}, distinctions: parseDistinctions(s['Not the same as']), claims: parseClaimsTable(s.Claims) };
-  for (const [heading, key] of Object.entries(SECTION_KEYS)) if (s[heading]) entry.sections[key] = s[heading];
-  entry.unknownSections = Object.keys(s).filter((k) => k !== '_lead' && !(k in SECTION_KEYS) && !['Not the same as', 'Claims'].includes(k));
+  const entry = { ...data, file: path, title, summary, sections: {}, distinctions: parseDistinctions(s[special.distinctions]), claims: parseClaimsTable(s[special.claims]) };
+  for (const [heading, key] of Object.entries(keys)) if (s[heading]) entry.sections[key] = s[heading];
+  entry.unknownSections = Object.keys(s).filter((k) => k !== '_lead' && !(k in keys) && !Object.values(special).includes(k));
   return entry;
 }
 

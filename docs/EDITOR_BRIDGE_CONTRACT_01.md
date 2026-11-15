@@ -1,6 +1,6 @@
 # Archive ⇄ Editor Bridge Contract 01
 
-**Version:** 1.0.0 (`BRIDGE_VERSION` in `src/bridge/editor-bridge.js`)
+**Version:** 1.1.0 (`BRIDGE_VERSION` in `src/bridge/editor-bridge.js`). 1.1.0 added German descriptions (`descriptionDe`) for the German archive edition.
 **Package:** C06 (contract and verified links); C07 completes the final bidirectional integration.
 **Status:** implemented; owner review pending.
 
@@ -37,7 +37,7 @@ THE BLACKBOOK ARCHIVE links entries to things the player can try in the editor a
 - Parameters are validated against the capability's schema: `glyph` must be one of `BRIDGE_GLYPHS`; `word` must be `A–Z`, at most 12 letters.
 - `from`: an archive entry ID (`^[a-z]+\.[a-z0-9-]+$`). It is only used to build the return link `../archive/index.html#/entry/<id>`.
 
-## Capabilities in 1.0.0
+## Capabilities in 1.1.0
 
 | ID | Status | Target | Parameters | What it opens |
 |---|---|---|---|---|

@@ -227,3 +227,21 @@ The next research increment adds Stylefile as publication infrastructure, 1UP an
 ## 1.0 scope cap — binding from 2026-11-14
 
 The earlier phases A–H describe the long-term archive vision. They are not all required for the first release. For NIGHTSHIFT 1.0, follow [Final Roadmap and Joint Work Order 01](FINAL_ROADMAP_AND_WORK_ORDER_01.md): deliver a curated 25–35-entry MVP, two learning paths, validated search/navigation, source and rights metadata, offline bundled content, original or cleared visuals, and links to at least three relevant editor studies. Full encyclopedia coverage, complex graph visualization, progression systems and exhaustive biographies are deferred. This cap prevents the archive from keeping the editor release open indefinitely.
+
+## Sprachausgaben — Entscheidung des Projektinhabers (2026-11-15)
+
+**Die erste Ausgabe des Archivs ist komplett deutsch:** Oberfläche, Einträge, Aussagen, Zeitleiste, Lernpfade und Diagrammbeschriftungen. Quellentitel bleiben in ihrer Originalsprache.
+
+**Englische Ausgabe — geplant, nach C07.** Die Technik ist darauf vorbereitet:
+
+- Jede Sprache hat eigene Quelldateien unter `research/archive/<lang>/` mit den Einträgen, `TIMELINE.md` und `LEARNING_PATHS.md`.
+- Jede Sprache hat eine eigene Datendatei: `data/archive/archive.v1.<lang>.json`.
+- Eintrags-, Aussagen-, Quellen- und Ledger-IDs sind sprachneutral und in allen Ausgaben gleich.
+
+Für die englische Ausgabe ist zu tun:
+
+1. Die Einträge nach `research/archive/en/` übertragen; der Parser kennt die englischen Abschnittsüberschriften schon (`SECTION_HEADINGS.en`).
+2. Einen Build-Check ergänzen, der prüft, dass beide Ausgaben dieselben Eintrags-IDs, Aussagen-IDs und Quellen verwenden. Inhaltliche Abweichungen gibt es nur mit redaktioneller Begründung.
+3. Eine Stringtabelle für die Diagrammtexte (`src/archive/diagrams.js`) und die UI-Texte (`archive/app.js`) anlegen.
+4. Eine Sprachumschaltung in der Oberfläche bauen und den Offline-Cache je Sprache anlegen.
+5. Den Bridge-Vertrag um englische Beschreibungen ergänzen (`description` existiert bereits).

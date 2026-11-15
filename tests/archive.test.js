@@ -30,7 +30,8 @@ test('archive builds from the research library without diagnostics', () => {
 test('committed archive data is exactly the build output (no hand-maintained copy)', () => {
   assert.equal(readFileSync(OUT, 'utf8'), stableStringify(A, 2) + '\n');
   for (const { path, sha256 } of A.generatedFrom) assert.match(sha256, /^[0-9a-f]{64}$/, path);
-  assert.ok(A.generatedFrom.some((g) => g.path.startsWith('research/archive/entries/')));
+  assert.ok(A.generatedFrom.some((g) => g.path.startsWith('research/archive/de/entries/')));
+  assert.equal(A.language, 'de');
 });
 
 test('build is deterministic', () => {
@@ -45,26 +46,26 @@ test('launch edition has 25–35 entries across content types', () => {
 });
 
 test('substantial New York foundation plus contrasting international scenes', () => {
-  const claimsOf = (e) => [...e.claimIds, ...e.citedLedgerClaims].map((id) => A.claims.find((c) => c.id === id));
-  const nyc = A.entries.filter((e) => e.regions?.includes('New York City') || claimsOf(e).some((c) => c.origin === 'ledger' || c.sources.some((s) => /^(NYC_|SOURCE_REGISTER_NYC)/.test(s))));
+  const claimsOf = (e) => e.claimIds.map((id) => A.claims.find((c) => c.id === id));
+  const nyc = A.entries.filter((e) => e.regions?.includes('New York City') || claimsOf(e).some((c) => c.ledger.length || c.sources.some((s) => /^(NYC_|SOURCE_REGISTER_NYC)/.test(s))));
   assert.ok(nyc.length >= 10, `NYC foundation entries: ${nyc.length}`);
   const intl = A.entries.filter((e) => e.type === 'scene' && !e.regions?.some((r) => ['New York City', 'Philadelphia'].includes(r)));
   assert.ok(intl.length >= 5, `international scenes: ${intl.length}`);
-  for (const id of ['scene.philadelphia', 'scene.amsterdam', 'scene.paris', 'scene.sao-paulo', 'scene.china', 'scene.dortmund']) assert.ok(byId.has(id), id);
+  for (const id of ['scene.philadelphia', 'scene.amsterdam', 'scene.paris-banlieue', 'scene.sao-paulo', 'scene.china', 'scene.dortmund', 'scene.hamburg']) assert.ok(byId.has(id), id);
 });
 
 test('modern writing is not presented as the origin of all graffiti, nor scenes as copies', () => {
   const text = A.entries.map(allText).join('\n').toLowerCase();
-  for (const bad of ['birthplace of graffiti', 'graffiti was invented in new york', 'invented graffiti', 'copied new york']) assert.ok(!text.includes(bad), bad);
+  for (const bad of ['geburtsort des graffiti', 'graffiti wurde in new york erfunden', 'erfand graffiti', 'kopierten new york']) assert.ok(!text.includes(bad), bad);
   assert.ok(byId.get('concept.public-inscription'), 'older public inscription has its own entry');
-  assert.ok(byId.get('history.nyc-emergence').related.includes('scene.philadelphia'));
-  assert.ok(byId.get('concept.circulation-and-adaptation').aliases.some((a) => /export|diffusion/i.test(a)), 'circulation entry captures the “export” misconception as a searchable alias');
+  assert.ok(byId.get('history.modern-name-writing').related.includes('scene.philadelphia'));
+  assert.ok(byId.get('history.global-circulation').aliases.some((a) => /export|diffusion/i.test(a)), 'circulation entry captures the “export” misconception as a searchable alias');
 });
 
 test('women are integrated into the main history, not isolated', () => {
   const lp = 'person.lady-pink';
   const linkers = A.entries.filter((e) => e.id !== lp && (e.related.includes(lp) || e.inlineLinks.includes(lp))).map((e) => e.id);
-  assert.ok(linkers.includes('history.nyc-emergence'), 'core NYC chapter links to Lady Pink');
+  assert.ok(linkers.includes('history.modern-name-writing'), 'core NYC chapter links to Lady Pink');
   assert.ok(linkers.length >= 3, linkers.join(', '));
   assert.ok(A.timeline.some((ev) => ev.entry === lp));
   assert.ok(A.paths.some((p) => p.steps.some((s) => s.entry === lp)));
@@ -158,25 +159,46 @@ test('search aliases cover practitioner terms and alternative spellings', () => 
   assert.equal(aliases.get('black book'), 'object.blackbook');
   assert.equal(aliases.get('dortmunder style'), 'style.dortmund-style');
   assert.equal(aliases.get('wicked'), 'scene.philadelphia');
+  assert.equal(aliases.get('punze'), 'construction.negative-space');
 });
 
 // ---------- validator rejects bad content ----------
-const ENTRY = 'research/archive/entries/practice.tag.md';
+const ENTRY = 'research/archive/de/entries/practice.tag.md';
 test('validator rejects an unsourced claim, an unknown source and a dead link', () => {
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace(/\| c1 \| scholarly-interpretation \| strong \| [^|]+\|/, '| c1 | scholarly-interpretation | strong |  |'))).includes('ARC_UNSOURCED_CLAIM'));
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S3', 'NYC_MODERN_WRITING_EMERGENCE_CLAIM_LEDGER_01#S99'))).includes('ARC_UNKNOWN_SOURCE'));
-  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('[[practice.handstyle|handstyle]]', '[[practice.nonexistent|handstyle]]'))).includes('ARC_DEAD_LINK'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('[[practice.handstyle|Handstyle]]', '[[practice.nonexistent|Handstyle]]'))).includes('ARC_DEAD_LINK'));
 });
 
 test('validator rejects leads in published entries, placeholders and doc-sourced facts', () => {
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('| c1 | scholarly-interpretation | strong |', '| c1 | scholarly-interpretation | unverified-lead |'))).includes('ARC_LEAD_PUBLISHED'));
-  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('## How to recognize it\n', '## How to recognize it\n\nTODO write this.\n'))).includes('ARC_PLACEHOLDER'));
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('## Woran man es erkennt\n', '## Woran man es erkennt\n\nTODO ausformulieren.\n'))).includes('ARC_PLACEHOLDER'));
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('| c2 | editorial-synthesis |', '| c2 | documented-fact |'))).includes('ARC_DOC_SOURCE_KIND'));
 });
 
 test('validator rejects unknown editor capabilities and parameters the editor cannot open', () => {
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('generator: study.word-layout word=ABRA', 'generator: editor.magic-button'))).includes('ARC_UNKNOWN_CAPABILITY'));
   assert.ok(codes(buildWith(ENTRY, (t) => t.replace('generator: study.word-layout word=ABRA', 'generator: editor.contour-node-edit glyph=Z'))).includes('ARC_BRIDGE_PARAMS'));
+});
+
+test('German edition: every entry uses German section headings and the UI renders every parsed section', () => {
+  for (const e of A.entries) assert.ok(e.sections.introduction, e.id);
+  for (const f of readResearch().filter((x) => x.path.startsWith('research/archive/de/entries/'))) {
+    assert.doesNotMatch(f.text, /^## (Introduction|Why it matters|How to recognize it|Claims|Not the same as)$/m, f.path);
+    assert.match(f.text, /^## Belege$/m, f.path);
+  }
+  const app = readFileSync('archive/app.js', 'utf8');
+  const keys = new Set(A.entries.flatMap((e) => Object.keys(e.sections)));
+  for (const k of keys) assert.match(app, new RegExp(`\\['${k}', '`), `UI does not render section ${k}`);
+  assert.doesNotMatch(app, /lang="en"/, 'no English-marked content in the German edition');
+});
+
+test('ledger claims are cited through German entry claims, never inline', () => {
+  const withLedger = A.claims.filter((c) => c.ledger.length);
+  assert.ok(withLedger.length >= 10);
+  for (const c of withLedger) for (const l of c.ledger) assert.match(l.id, /^NYC-\d{3}$/);
+  assert.ok(!A.claims.some((c) => c.ledger.some((l) => l.id === 'NYC-011')), 'NYC-011 has no evidence-use source');
+  assert.ok(codes(buildWith(ENTRY, (t) => t.replace('[c3]', '[NYC-005]'))).includes('ARC_INLINE_LEDGER'));
 });
 
 test('parsers read claim tables, inline references and front matter', () => {
@@ -239,7 +261,7 @@ test('bridge links round-trip and receivers reject malformed requests', () => {
 test('offline cache lists only files that exist, including fonts and data', () => {
   const sw = readFileSync('archive/sw.js', 'utf8');
   const files = JSON.parse(sw.match(/const FILES = (\[[\s\S]*?\]);/)[1].replace(/'/g, '"').replace(/,\s*\]/, ']'));
-  assert.ok(files.includes('../data/archive/archive.v1.json'));
+  assert.ok(files.includes('../data/archive/archive.v1.de.json'));
   for (const f of files) assert.ok(existsSync(`archive/${f}`), f);
   assert.ok(existsSync('archive/fonts/OFL.txt'), 'font licence is shipped');
 });

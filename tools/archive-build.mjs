@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// Builds data/archive/archive.v1.json from the research library (C06).
-// Usage: node tools/archive-build.mjs [--check]
+// Builds data/archive/archive.v1.<lang>.json from the research library (C06).
+// Usage: node tools/archive-build.mjs [--check] [--lang de]
+// One data file per edition language: data/archive/archive.v1.<lang>.json.
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { join } from 'node:path';
@@ -11,36 +12,42 @@ import { loadRegistry } from '../src/glyph/load-node.js';
 import { resolveGlyphs } from '../src/proof/specimens.js';
 import { stableStringify } from '../src/core/stable-json.js';
 
-export const OUT = 'data/archive/archive.v1.json';
+export const LANGS = ['de'];
+export const outFor = (lang) => `data/archive/archive.v1.${lang}.json`;
+export const OUT = outFor('de');
 
 export function readResearch() {
   const files = [];
   for (const name of readdirSync('research').filter((n) => n.endsWith('.md')).sort()) files.push({ path: `research/${name}`, text: readFileSync(join('research', name), 'utf8') });
-  for (const name of existsSync('research/archive') ? readdirSync('research/archive').filter((n) => n.endsWith('.md')).sort() : []) files.push({ path: `research/archive/${name}`, text: readFileSync(join('research/archive', name), 'utf8') });
-  const dir = 'research/archive/entries';
-  for (const name of existsSync(dir) ? readdirSync(dir).filter((n) => n.endsWith('.md')).sort() : []) files.push({ path: `${dir}/${name}`, text: readFileSync(join(dir, name), 'utf8') });
+  for (const lang of LANGS) {
+    const base = `research/archive/${lang}`;
+    for (const sub of ['', '/entries']) {
+      const d = base + sub;
+      for (const name of existsSync(d) ? readdirSync(d).filter((n) => n.endsWith('.md')).sort() : []) files.push({ path: `${d}/${name}`, text: readFileSync(join(d, name), 'utf8') });
+    }
+  }
   // The archive's own editorial framework may back design inferences about how the archive works.
   for (const p of ['docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md']) files.push({ path: p, text: readFileSync(p, 'utf8') });
   return files;
 }
 
 /** Render every diagram once at build time from NIGHTSHIFT's own canonical geometry (no runtime editor code in the archive). */
-export function renderDiagrams() {
+export function renderDiagrams(lang = 'de') {
   const profile = JSON.parse(readFileSync('data/validator-profiles/legacy-v06.v1.json', 'utf8'));
   const resolved = resolveGlyphs(loadRegistry(), profile, ['A', 'B', 'G', 'S']);
   const models = Object.fromEntries([...resolved].map(([ch, r]) => [ch, r.model]));
   const out = {};
   for (const id of DIAGRAM_IDS) {
-    const svg = renderDiagram(id, { models });
+    const svg = renderDiagram(id, { models, lang });
     if (!svg) throw new Error(`Diagram ${id} could not be rendered (missing glyph model)`);
     out[id] = svg;
   }
   return out;
 }
 
-export function build() {
-  const result = buildArchive({ files: readResearch(), diagrams: DIAGRAM_IDS });
-  result.data.diagrams = renderDiagrams();
+export function build(lang = 'de') {
+  const result = buildArchive({ files: readResearch(), diagrams: DIAGRAM_IDS, lang });
+  result.data.diagrams = renderDiagrams(lang);
   return result;
 }
 

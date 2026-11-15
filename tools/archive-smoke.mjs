@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import { startServer, chrome, preText } from './lib/headless.mjs';
 import { BRIDGE_CAPABILITIES, bridgeHref } from '../src/bridge/editor-bridge.js';
 
-const A = JSON.parse(readFileSync('data/archive/archive.v1.json', 'utf8'));
+const A = JSON.parse(readFileSync('data/archive/archive.v1.de.json', 'utf8'));
 const { server, port } = await startServer(process.cwd());
 const base = `http://127.0.0.1:${port}/`;
 const fails = [];
@@ -58,7 +58,7 @@ try {
       await chrome([`--window-size=${size}`, '--virtual-time-budget=6000', `--screenshot=${dir}/${name}.png`, `${base}archive/index.html?nosw#${hash}`], { timeout: 180000 });
       out[`${name}.png`] = createHash('sha256').update(rf(`${dir}/${name}.png`)).digest('hex');
     }
-    const inputs = Object.fromEntries(['data/archive/archive.v1.json', 'archive/index.html', 'archive/app.js', 'archive/app.css', 'src/bridge/editor-bridge.js'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
+    const inputs = Object.fromEntries(['data/archive/archive.v1.de.json', 'archive/index.html', 'archive/app.js', 'archive/app.css', 'src/bridge/editor-bridge.js'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
     writeFileSync(`${dir}/manifest.json`, JSON.stringify({ package: 'C06', result: 'pass', routes: routes.length, claimSheets: sheets, bridgeTargets: bridges, inputs, screenshots: out }, null, 2) + '\n');
     console.log(`Wrote ${dir}/manifest.json and ${shots.length} screenshots`);
   }

@@ -1,23 +1,23 @@
 {
   "package": "C06",
   "result": "pass",
-  "routes": 40,
-  "claimSheets": 27,
+  "routes": 42,
+  "claimSheets": 28,
   "bridgeTargets": 4,
   "inputs": {
-    "data/archive/archive.v1.json": "144ae7fb2343b0a5feffb1555d0015c7e5ee7efa055f25003302019f87b2b384",
-    "archive/index.html": "293e0d3af863501446c9109f5c56a8c7ddd4546fd3b5af3361155134cf049508",
-    "archive/app.js": "7437855a173eeea4700f459b70d4645d2c34974238e917928f718d2158928a3b",
+    "data/archive/archive.v1.de.json": "b8b13fb1fa192636c10589bc2e1920f4be8504b10b186f9cd8aeb1cdec3a1d40",
+    "archive/index.html": "9bcb1bbe709e9e6f0bd37596f99b1e79738a4506b0a680814b23db302ad469a5",
+    "archive/app.js": "9495586bb806506168da3a5fd0637285faaf9132ff0e7b11e58eb3cc39125f53",
     "archive/app.css": "4e1cd5feffa36691e662d20d5eff813d176ed26f04c36f9f254fbbc72a32931b",
-    "src/bridge/editor-bridge.js": "9f78f49693f1198b095ff080ded7d6a6679c19d385151140c7b21fb328ecaf7f"
+    "src/bridge/editor-bridge.js": "3d44fce950a192a70e643eb9dfe8aa0e12c32e4cc9f807cdf089b91a78842620"
   },
   "screenshots": {
-    "home-phone.png": "b869d27ae417b65c4527f042599c2aaa87dd6cb5ee5c214df0bcb6baa3bafd28",
-    "entry-phone.png": "54813a52d2b848a12ed0ecb037d48d907609ab9ce5f14be74a77c47dd611e49f",
-    "entry-desktop.png": "04f48f4a7b0aaac5dc75de058a981057acf9e8dd68d59a35513cd50b4fea172c",
-    "search-phone.png": "3d2bbb1da2b0e11657694676f7f25460f1d1e126685ca5d93949de40eee82b6c",
-    "timeline-phone.png": "e06d8435940f1003c0405e843be042b63be63620ca310ad565a5e7ebbc4fd53d",
-    "scenes-desktop.png": "975eeb8db3b6f307ce89366ecc3e7646ed8ee1c39a5fc6f509b2f357fd087c5b",
-    "path-phone.png": "f7241e9cb3b98eac4acd553fd16062a08749561e88e8b4d5fc8bb7f2c04286e2"
+    "home-phone.png": "80f496e3d9b7ba31c3acb0470015a2a6301adefc9bd279db20b7141e1529380a",
+    "entry-phone.png": "69035ff83730be08e19131c19e00865c9ae688c6bde48c0789015897dae9244f",
+    "entry-desktop.png": "607aa9265e9f58a56409a125e0e31f93f2a4d4c8629c052a12f8e289dfd0790f",
+    "search-phone.png": "bfc4593dafea5961426e5c53f6260b45ae31fc4eb4ca7185cb28b7a8e37ee5c4",
+    "timeline-phone.png": "be998ce5c8322703facd13a29dd6120f6f94248c93427d87c5b3be11e5e6a5b1",
+    "scenes-desktop.png": "319ade27a6ec9385ffda478e7cbbf00e67a0f12fc786d432ab1ad7fcd808c923",
+    "path-phone.png": "70a9639ebc4e48e1cf5f5156872d6d178dbd1daa71c5078e7c739e142337de62"
   }
 }

@@ -42,7 +42,7 @@ Production implementation has started: `src/` contains the canonical glyph regis
 
 ## Next archive task
 
-**C06 first edition is implemented** (owner approval pending): `archive/` UI, `research/archive/` entry sources, `data/archive/archive.v1.json` (generated, `npm run archive:check` in CI), and the bridge contract `docs/EDITOR_BRIDGE_CONTRACT_01.md`. Report: `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md`. Under the owner-approved sequence (C01 → C06 → C02 → C03 → C04 → C05 → C07), the next package is **C02**. Archive follow-ups are listed as gaps in the C06 report: owner editorial and visual review, Berlin/Cologne/Munich chapters after source checks, and German-language entry text if the owner wants it. When C03–C05 make a bridge capability real, set it to `available` in `src/bridge/editor-bridge.js` and add a receiver.
+**C06 first edition is implemented as a complete German edition** (owner approval pending): `archive/` UI, `research/archive/de/` entry sources, `data/archive/archive.v1.de.json` (generated, `npm run archive:check` in CI), and the bridge contract `docs/EDITOR_BRIDGE_CONTRACT_01.md`. Report: `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md`. Under the owner-approved sequence (C01 → C06 → C02 → C03 → C04 → C05 → C07), the next package is **C02**. Archive follow-ups are listed as gaps in the C06 report: owner editorial and visual review, Berlin/Cologne/Munich chapters after source checks, and the English edition after C07 (roadmap section “Sprachausgaben”). When C03–C05 make a bridge capability real, set it to `available` in `src/bridge/editor-bridge.js` and add a receiver.
 
 ## What a useful first response should contain
 

@@ -2,6 +2,7 @@
 // All drawings are generated here from abstract shapes or from NIGHTSHIFT's own
 // canonical glyph geometry. No external image, photograph or writer's work is
 // reproduced. Each diagram returns an accessible SVG string.
+// Text is German (the current edition); an English edition needs a string table here.
 
 import { glyphGroup } from '../render/svg.js';
 
@@ -29,31 +30,31 @@ function writingForms() {
   const throwUp = `<g transform="translate(212 0)">${bubble(0)}${bubble(46)}${bubble(92)}</g>`;
   const block = (x, d) => `<g transform="translate(${x} 0)"><path d="${d}" transform="translate(6 6)" fill="${MUTE}"/><path d="${d}" fill="${ACCENT}" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/></g>`;
   const piece = `<g transform="translate(410 0)">${block(0, 'M0 140 L0 70 L22 56 L50 56 L64 70 L64 140 L46 140 L46 116 L18 116 L18 140 Z M18 100 L46 100 L46 76 L18 76 Z')}${block(76, 'M0 56 L50 56 L66 72 L66 92 L56 98 L66 106 L66 126 L50 140 L0 140 Z M18 74 L18 92 L44 92 L44 74 Z M18 106 L18 122 L46 122 L46 106 Z')}</g>`;
-  return svg(600, 220, 'Tag, throw-up and piece', 'Three schematic drawings: a single-line tag, a throw-up of rounded outlined letters, and a piece with fill, outline and shadow. They are related forms that coexist, not steps every writer must climb.',
-    `${tag}${throwUp}${piece}${label(108, 176, 'Tag')}${note(108, 194, 'name as gesture')}${label(305, 176, 'Throw-up')}${note(305, 194, 'fast, outlined, filled')}${label(481, 176, 'Piece')}${note(481, 194, 'composed, layered')}<path d="M190 200 L230 200 M380 200 L420 200" stroke="${MUTE}" stroke-dasharray="3 4"/>${note(300, 214, 'related forms that coexist — not a mandatory ladder')}`);
+  return svg(600, 220, 'Tag, Throw-up und Piece', 'Drei schematische Zeichnungen: ein Tag in einer Linie, ein Throw-up aus runden, umrandeten Buchstaben und ein Piece mit Füllung, Kontur und Schatten. Es sind verwandte Formen, die nebeneinander bestehen, keine Stufen, die jeder Writer durchlaufen muss.',
+    `${tag}${throwUp}${piece}${label(108, 176, 'Tag')}${note(108, 194, 'der Name als Geste')}${label(305, 176, 'Throw-up')}${note(305, 194, 'schnell, umrandet, gefüllt')}${label(481, 176, 'Piece')}${note(481, 194, 'komponiert, in Schichten')}<path d="M190 200 L230 200 M380 200 L420 200" stroke="${MUTE}" stroke-dasharray="3 4"/>${note(300, 214, 'verwandte Formen nebeneinander – keine Pflicht-Leiter')}`);
 }
 
 /** A subway car carrying work through many neighbourhoods. */
 function subwayCirculation() {
-  const stops = [[60, 'yard'], [170, 'stop'], [280, 'stop'], [390, 'stop'], [500, 'terminal']];
+  const stops = [[60, 'Depot'], [170, 'Halt'], [280, 'Halt'], [390, 'Halt'], [500, 'Endstation']];
   const line = `<path d="M60 120 L500 120" stroke="${INK}" stroke-width="6" stroke-linecap="round"/>` +
     stops.map(([x, t]) => `<circle cx="${x}" cy="120" r="9" fill="${PAPER}" stroke="${INK}" stroke-width="4"/>${note(x, 150, t)}`).join('');
   const car = `<g transform="translate(205 72)"><rect width="120" height="34" rx="6" fill="#d9d4c8" stroke="${INK}" stroke-width="3"/><rect x="10" y="8" width="100" height="18" rx="3" fill="${ACCENT}"/><circle cx="24" cy="38" r="5" fill="${INK}"/><circle cx="96" cy="38" r="5" fill="${INK}"/></g><path d="M335 89 L370 89" stroke="${ACCENT}" stroke-width="3" marker-end="url(#ar)"/>`;
   const viewers = [170, 280, 390, 500].map((x) => `<g transform="translate(${x} 178)"><circle r="6" fill="${BLUE}"/><path d="M-9 20 Q0 4 9 20" fill="${BLUE}"/></g>`).join('');
-  return svg(560, 230, 'The subway as a moving display', 'Schematic line with stops. A painted car travels from the yard through several stops, where different audiences see the same work.',
-    `<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="${ACCENT}"/></marker></defs>${line}${car}${viewers}${label(280, 40, 'Painted in one place, seen in many')}${note(280, 222, 'schematic — not a real route map')}`);
+  return svg(560, 230, 'Die U-Bahn als fahrende Ausstellung', 'Schematische Linie mit Haltestellen. Ein bemalter Wagen fährt vom Depot durch mehrere Stationen; an jeder sieht ein anderes Publikum dasselbe Werk.',
+    `<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="${ACCENT}"/></marker></defs>${line}${car}${viewers}${label(280, 40, 'An einem Ort gemalt, an vielen gesehen')}${note(280, 222, 'schematisch – kein echter Linienplan')}`);
 }
 
 /** Event, photograph, publication and archive have different dates and rights. */
 function documentationChain() {
-  const steps = [['Work', 'made · date of creation'], ['Photograph', 'captured · photographer, date'], ['Publication', 'printed · editor, year'], ['Archive', 'held · institution, rights']];
+  const steps = [['Werk', 'entstanden · Datum'], ['Foto', 'aufgenommen · Fotograf, Datum'], ['Publikation', 'gedruckt · Hrsg., Jahr'], ['Archiv', 'verwahrt · Institution, Rechte']];
   const box = (i, [t, n]) => {
     const x = 20 + i * 140;
     return `<rect x="${x}" y="60" width="120" height="70" rx="8" fill="#fff" stroke="${INK}" stroke-width="2.5"/>${label(x + 60, 92, t)}${note(x + 60, 114, n)}` +
       (i < 3 ? `<path d="M${x + 122} 95 L${x + 138} 95" stroke="${INK}" stroke-width="3" marker-end="url(#ar2)"/>` : '');
   };
-  return svg(580, 190, 'From work to archive', 'Four boxes: the work, its photograph, a publication and an archive record. Each has its own date, author and rights; a photograph documents a work but is not the work.',
-    `<defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="${INK}"/></marker></defs>${steps.map((s, i) => box(i, s)).join('')}${label(290, 36, 'Each step has its own date, author and rights', 14)}${note(290, 166, 'Evidence about a work ≠ the work itself · reuse needs item-level permission')}`);
+  return svg(580, 190, 'Vom Werk zum Archiv', 'Vier Kästen: das Werk, sein Foto, eine Publikation und ein Archiveintrag. Jeder Schritt hat eigenes Datum, eigene Urheber und eigene Rechte; ein Foto dokumentiert ein Werk, ist aber nicht das Werk.',
+    `<defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="${INK}"/></marker></defs>${steps.map((s, i) => box(i, s)).join('')}${label(290, 36, 'Jeder Schritt hat eigenes Datum, eigene Urheber und Rechte', 14)}${note(290, 166, 'Beleg über ein Werk ≠ das Werk · Weiterverwendung braucht Einzelerlaubnis')}`);
 }
 
 /** Circulation as a network with exchange, not a one-way export. */
@@ -69,33 +70,33 @@ function circulationNetwork() {
   }).join('');
   const n = Object.values(nodes).map(([x, y, t]) => `<circle cx="${x}" cy="${y}" r="24" fill="#fff" stroke="${INK}" stroke-width="2.5"/><circle cx="${x}" cy="${y}" r="8" fill="${ACCENT}"/><rect x="${x - 44}" y="${y + 29}" width="88" height="18" rx="3" fill="${PAPER}"/>${label(x, y + 42, t, 12)}`).join('');
   const local = ['ams', 'sp', 'cn'].map((k) => `<circle cx="${nodes[k][0]}" cy="${nodes[k][1]}" r="29" fill="none" stroke="${BLUE}" stroke-width="2" stroke-dasharray="4 4"/>`).join('');
-  return svg(660, 390, 'Circulation and local adaptation', 'Network of scenes connected by two-way arrows. Dashed rings mark scenes with their own earlier or parallel local writing traditions. The diagram is schematic and does not show dates or a complete list of scenes.',
-    `<defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="${MUTE}"/></marker></defs>${e}${local}${n}${note(330, 374, 'two-way exchange · dashed ring: local tradition with its own history · schematic, not exhaustive')}`);
+  return svg(660, 390, 'Austausch und lokale Aneignung', 'Netz von Szenen, verbunden durch Pfeile in beide Richtungen. Gestrichelte Ringe markieren Szenen mit eigener früherer oder paralleler Schreibtradition. Das Diagramm ist schematisch und zeigt weder Daten noch alle Szenen.',
+    `<defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="${MUTE}"/></marker></defs>${e}${local}${n}${note(330, 374, 'Austausch in beide Richtungen · gestrichelt: lokale Tradition mit eigener Geschichte · schematisch, unvollständig')}`);
 }
 
 /** Letter anatomy from NIGHTSHIFT's canonical B. models: {B: renderModel, graph: semanticGraph} */
 function letterAnatomy(ctx) {
   const m = ctx?.models?.B;
   if (!m) return null;
-  const callouts = [[-8, 70, 'stem'], [118, 34, 'upper bowl'], [124, 110, 'lower bowl'], [30, 4, 'counter'], [52, 150, 'counter'], [104, 69, 'junction (waist)']];
+  const callouts = [[-8, 70, 'Stamm'], [118, 34, 'oberer Bauch'], [124, 110, 'unterer Bauch'], [30, 4, 'Punze'], [52, 150, 'Punze'], [104, 69, 'Verbindung (Taille)']];
   const lines = [[-8, 70, 18, 70], [118, 34, 92, 40], [124, 110, 98, 104], [34, 6, 44, 40], [52, 150, 56, 98], [104, 69, 80, 69]];
-  return svg(420, 260, 'Letter anatomy: B', 'NIGHTSHIFT’s canonical letter B with labelled stem, two bowls, two enclosed counters and the waist junction where the bowls meet.',
-    `<g transform="translate(140 50) scale(1.15)">${glyphGroup(m, { fill: INK, diagnostic: true })}${lines.map(([a, b, c, d]) => `<path d="M${a} ${b} L${c} ${d}" stroke="${ACCENT}" stroke-width="1.4"/>`).join('')}${callouts.map(([x, y, t]) => `<text x="${x}" y="${y - 3}" font-size="9" fill="${ACCENT}" text-anchor="${x < 40 ? 'end' : 'start'}">${t}</text>`).join('')}</g>${note(210, 236, 'NIGHTSHIFT canonical geometry · review pending')}`);
+  return svg(420, 260, 'Buchstabenanatomie: B', 'Das kanonische B von NIGHTSHIFT mit beschriftetem Stamm, zwei Bäuchen, zwei geschlossenen Punzen und der Verbindung (Taille), an der die Bäuche zusammentreffen.',
+    `<g transform="translate(140 50) scale(1.15)">${glyphGroup(m, { fill: INK, diagnostic: true })}${lines.map(([a, b, c, d]) => `<path d="M${a} ${b} L${c} ${d}" stroke="${ACCENT}" stroke-width="1.4"/>`).join('')}${callouts.map(([x, y, t]) => `<text x="${x}" y="${y - 3}" font-size="9" fill="${ACCENT}" text-anchor="${x < 40 ? 'end' : 'start'}">${t}</text>`).join('')}</g>${note(210, 236, 'kanonische NIGHTSHIFT-Geometrie · Prüfung ausstehend')}`);
 }
 
 /** Counter vs open interior: A, B, G, S. */
 function negativeSpace(ctx) {
   const ms = ['A', 'B', 'G', 'S'].map((c) => ctx?.models?.[c]);
   if (ms.some((m) => !m)) return null;
-  const caps = [['1 counter', 'enclosed'], ['2 counters', 'enclosed'], ['open interior', 'aperture under review'], ['no counter', 'one continuous shape']];
+  const caps = [['1 Punze', 'geschlossen'], ['2 Punzen', 'geschlossen'], ['offenes Inneres', 'Öffnung in Prüfung'], ['keine Punze', 'eine durchgehende Form']];
   const body = ms.map((m, i) => `<g transform="translate(${20 + i * 130} 40) scale(0.9)">${glyphGroup(m, { fill: INK, diagnostic: true })}</g>${label(70 + i * 130, 185, caps[i][0], 12)}${note(70 + i * 130, 202, caps[i][1])}`).join('');
-  return svg(540, 230, 'Negative space: counters and openings', 'Letters A, B, G and S from NIGHTSHIFT’s canonical set. A and B have enclosed counters (dashed outlines), G has an interior open to the outside, S has none.', body);
+  return svg(540, 230, 'Negativraum: Punzen und Öffnungen', 'Die Buchstaben A, B, G und S aus dem kanonischen Satz von NIGHTSHIFT. A und B haben geschlossene Punzen (gestrichelt), G hat ein nach außen offenes Inneres, S hat keine.', body);
 }
 
 /** The four kinds of statements the archive separates. */
 function evidenceLayers() {
-  const rows = [['Documented fact', 'what a dated record shows', INK], ['Practitioner account', 'what a writer remembers or says', BLUE], ['Scholarly interpretation', 'how researchers explain it', '#5b6b3a'], ['NIGHTSHIFT design inference', 'how this game models it', ACCENT]];
-  return svg(520, 230, 'Four kinds of statements', 'Four labelled bands: documented fact, practitioner account, scholarly interpretation and NIGHTSHIFT design inference. The archive marks every claim with one of them.',
+  const rows = [['Dokumentierte Tatsache', 'was ein datiertes Dokument zeigt', INK], ['Aussage aus der Szene', 'was ein Writer erinnert oder sagt', BLUE], ['Wissenschaftliche Deutung', 'wie Forschende es erklären', '#5b6b3a'], ['NIGHTSHIFT-Designannahme', 'wie dieses Spiel es modelliert', ACCENT]];
+  return svg(520, 230, 'Vier Arten von Aussagen', 'Vier beschriftete Streifen: dokumentierte Tatsache, Aussage aus der Szene, wissenschaftliche Deutung und NIGHTSHIFT-Designannahme. Das Archiv ordnet jede Aussage einer davon zu.',
     rows.map(([t, n, c], i) => `<rect x="20" y="${20 + i * 50}" width="12" height="38" rx="3" fill="${c}"/>${label(46, 38 + i * 50, t, 14, INK, 'start')}${note(46, 54 + i * 50, n, 'start')}`).join(''));
 }
 
@@ -114,7 +115,9 @@ export function renderDiagram(id, ctx = {}) {
   const fn = RENDERERS[id];
   if (!fn) throw new Error(`Unknown diagram ${id}`);
   const out = fn(ctx);
-  return out && scopeIds(out, id.replace(/^diagram\./, 'dg-'));
+  // The shared renderer's diagnostic labels are English; the German edition translates them here.
+  const localised = out && out.replaceAll('APERTURE UNRESOLVED (AUD-01)', 'ÖFFNUNG UNGEKLÄRT (AUD-01)');
+  return localised && scopeIds(localised, id.replace(/^diagram\./, 'dg-'));
 }
 
 /** Prefix every element id (and its references) so several diagrams can share one page. */

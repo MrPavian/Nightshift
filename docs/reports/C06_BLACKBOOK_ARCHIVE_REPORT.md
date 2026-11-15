@@ -1,31 +1,31 @@
 # C06 — THE BLACKBOOK ARCHIVE MVP: report
 
-**Status:** implemented on branch `claude/c06-lexicon`. **Owner editorial and visual approval: pending.** No entry is marked `approved-for-archive`.
+**Status:** implemented on branch `claude/c06-lexicon` as a **complete German edition**, as the owner decided on 2026-11-15. A complete English edition is planned after C07 (`docs/BLACKBOOK_ARCHIVE_ROADMAP.md`, section “Sprachausgaben”). **Owner editorial and visual approval: pending.** No entry is marked `approved-for-archive`.
 **Sequencing:** run directly after C01 under the owner-approved override of 2026-11-15 (issue #7, `docs/FINAL_ROADMAP_AND_WORK_ORDER_01.md` §7). C02–C05 are deferred, not cancelled.
 
 ## What was built
 
 | Part | Files |
 |---|---|
-| Entry sources (editorial truth) | `research/archive/entries/*.md` (27), `research/archive/TIMELINE.md`, `research/archive/LEARNING_PATHS.md`, `research/archive/README.md` |
+| Entry sources (editorial truth) | `research/archive/de/entries/*.md` (28), `research/archive/de/TIMELINE.md`, `research/archive/de/LEARNING_PATHS.md`, `research/archive/README.md` |
 | Parser, validator, build | `src/archive/parse.js`, `src/archive/build.js`, `tools/archive-build.mjs` |
-| Generated data | `data/archive/archive.v1.json` (deterministic; `npm run archive:check` in CI) |
+| Generated data | `data/archive/archive.v1.de.json` (deterministic; `npm run archive:check` in CI) |
 | Original diagrams | `src/archive/diagrams.js`: 7 SVGs rendered at build time; letter anatomy and negative space come from NIGHTSHIFT's canonical A/B/G/S |
 | Archive UI | `archive/index.html`, `archive/app.js`, `archive/app.css`, `archive/sw.js`, `archive/fonts/` (Barlow, SIL OFL) |
 | Editor bridge | `src/bridge/editor-bridge.js`, `src/archive/capabilities.js`, receivers in `review/app.js` and `editor/editor.js`; contract in `docs/EDITOR_BRIDGE_CONTRACT_01.md` |
-| Tests and proof | `tests/archive.test.js` (24 tests), `tools/archive-smoke.mjs`, `docs/reports/proof/C06/` |
+| Tests and proof | `tests/archive.test.js` (26 tests), `tools/archive-smoke.mjs`, `docs/reports/proof/C06/` |
 | Deployment | `.github/workflows/deploy-pages.yml` publishes `archive/`; the site root links archive, review page and editor |
 
 ## Content counts
 
-**Entries by type (27):**
+**Entries by type (28):**
 
 | Type | Count |
 |---|---|
 | Scene | 7 |
 | Practice | 5 |
 | Concept | 5 |
-| History | 3 |
+| History | 4 |
 | Construction | 2 |
 | Format | 1 |
 | Media | 1 |
@@ -42,31 +42,32 @@
 | Amsterdam / Netherlands | 1 |
 | Paris / Seine-Saint-Denis | 1 |
 | São Paulo / Brazil | 1 |
-| Beijing, Shanghai, Chengdu | 1 |
+| Peking, Shanghai, Chengdu | 1 |
 | Dortmund / Ruhrgebiet | 3 |
 | Hamburg | 1 |
-| No region (practices, concepts, construction) | 11 |
+| No region (practices, concepts, construction) | 12 |
 
-**Claims (96):**
+**Claims (110, all written in German):**
 
 | Claim kind | Count |
 |---|---|
-| Scholarly interpretation | 44 |
-| Editorial synthesis | 22 |
-| Institutional account | 15 |
-| NIGHTSHIFT design inference | 11 |
+| Scholarly interpretation | 54 |
+| Editorial synthesis | 24 |
+| Institutional account | 16 |
+| NIGHTSHIFT design inference | 12 |
 | Practitioner account | 4 |
 
-11 of the claims come from the NYC claim ledger. No claim is an unverified lead.
+21 claims name an NYC ledger claim as their basis. No claim is an unverified lead.
 
-**Other content:** 32 cited sources, 20 timeline events and 4 learning paths. The paths are:
+**Other content:** 32 cited sources and 20 timeline events. There are 5 learning paths:
 
-- From a name to a culture (9 stations)
-- How writing travelled (8)
-- Reading a letter (4)
-- Writing in Germany: Dortmund and Hamburg (5)
+- Vom Namen zur Kultur (10 stations)
+- Wie Writing reiste (7)
+- Einen Buchstaben lesen (5)
+- Writing in Deutschland (5)
+- Wie das Archiv erinnert (6)
 
-**Status and rights:** all 27 entries are `source-checked`. 10 entries carry `original-diagram` image rights and 17 carry `none`.
+**Status and rights:** all 28 entries are `source-checked`. 10 entries carry `original-diagram` image rights and 18 carry `none`.
 
 ## Source verification for this edition
 
@@ -81,11 +82,13 @@
 
 | Command | Result |
 |---|---|
-| `npm test` | 123 pass, 0 fail |
+| `npm test` | 125 pass, 0 fail |
 | `node tools/archive-build.mjs --check` | Archive data up to date |
-| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 40 views at 360 px with no errors and no horizontal overflow; 27/27 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
+| `node tools/archive-smoke.mjs` | ARCHIVE-PASS: 42 views at 360 px with no errors and no horizontal overflow; 28/28 claim sheets open with a source; alias search ("pichacao" finds São Paulo); empty-search state; 4/4 bridge targets accept the request, select glyph/tab/word and show the return link |
 | `node tools/editor-smoke.mjs --capture` | EDITOR-PASS, 13/13 steps; re-run because `editor/editor.js` gained the bridge receiver |
 | `node tools/review-smoke.mjs` | REVIEW-PAGE-PASS |
+
+**Bug fixed during the German rewrite:** the parser stored the section “How to recognize it” under `recognize`, but the UI looked for `howToRecognize`, so that section was never shown. A test now checks that the UI renders every section key the data contains.
 
 **Proof artifacts:** `docs/reports/proof/C06/manifest.json` holds the SHA-256 of the data, UI, bridge and seven screenshots (home, entry, search, timeline and path on a phone; entry and scenes on desktop). `tests/archive.test.js` fails if any input changes after the proof run.
 
@@ -94,14 +97,14 @@
 | Criterion | Result |
 |---|---|
 | Validated schema, references and source links | **Pass**: build validator plus 24 tests, including negative cases |
-| 25–35 coherent entries; substantial NYC foundation plus contrasting global cases | **Pass**: 27 entries; NYC foundation plus Philadelphia, Amsterdam, Paris, São Paulo, China, Dortmund/Ruhrgebiet and Hamburg |
+| 25–35 coherent entries; substantial NYC foundation plus contrasting global cases | **Pass**: 28 entries; NYC foundation plus Philadelphia, Amsterdam, Paris, São Paulo, China, Dortmund/Ruhrgebiet and Hamburg |
 | Claim-level provenance; independent evidence, editorial and rights states | **Pass** |
-| Timeline, scene navigation, at least two learning paths | **Pass**: 20 events, scenes view, 4 paths with progress |
+| Timeline, scene navigation, at least two learning paths | **Pass**: 20 events, scenes view, 5 paths with progress |
 | Useful search and navigation without dead ends | **Pass**: aliases, type and region filters, empty states; every entry is reachable and links onward (tested) |
 | Polished, responsive, accessible UI | **Pass**, technically: phone and desktop checked, keyboard focus, skip link, `lang` marking, reduced motion respected, dialog for claims. **Visual approval by the owner is pending.** |
 | Content generated from the research library | **Pass**: the JSON is a build output, checked in CI |
 | Offline access | **Pass**, implemented: service worker plus bundled fonts and data. Offline needs one online visit first. Verified by file test, not by a scripted offline browser run. |
-| Bridge contract documented and versioned; active links real; future ones not faked | **Pass**: contract 1.0.0; 4 verified capabilities; 3 shown as unavailable (C03, C04, C05) |
+| Bridge contract documented and versioned; active links real; future ones not faked | **Pass**: contract 1.1.0; 4 verified capabilities; 3 shown as unavailable (C03, C04, C05) |
 | No placeholders, unsupported claims or unlicensed images | **Pass**: validator and tests; no `<img>` anywhere; diagrams are original |
 | Women integrated | **Pass**: Lady Pink sits in the NYC chapter, exhibitions, timeline and a path; the China chapter includes China Graffiti Girls; a separate entry covers archival gaps, linked from the main chapters |
 | ≥ 3 genuine bidirectional archive/editor links | **Deferred to C07** under the override. C06 delivers 4 forward links with working return links. |
@@ -112,15 +115,15 @@
 
 | Plan entry | This edition | State |
 |---|---|---|
-| history.modern-name-writing | history.nyc-emergence (+ concept.public-inscription) | covered, different ID |
-| history.philadelphia-new-york | scene.philadelphia + history.nyc-emergence | covered across two entries |
+| history.modern-name-writing | same ID (+ concept.public-inscription) | covered |
+| history.philadelphia-new-york | scene.philadelphia + history.modern-name-writing | covered across two entries |
 | history.nyc-subway-era | format.subway-train | covered as a format entry |
-| history.global-circulation | concept.circulation-and-adaptation | covered, different ID |
+| history.global-circulation | same ID | covered |
 | history.after-subway | history.clean-train-campaign | partial |
 | history.blackbook-to-digital | — | missing |
 | scene.philadelphia, scene.amsterdam, scene.sao-paulo | same IDs | covered |
-| scene.paris-banlieue | scene.paris | covered, different ID |
-| scene.new-york-city | history.nyc-emergence | no own scene entry |
+| scene.paris-banlieue | same ID | covered |
+| scene.new-york-city | history.modern-name-writing | no own scene entry |
 | practice.tag-handstyle | practice.tag + practice.handstyle | covered (split) |
 | format.throw-up, format.piece-burner | practice.piece | partial (combined) |
 | style.pixacao-tag-reto | scene.sao-paulo | inside the scene entry |
@@ -129,7 +132,9 @@
 | archive.provenance-rights | concept.reading-the-evidence | covered, different ID |
 | glossary.writer-writing-graffiti | concept.writing-and-graffiti | covered, different ID |
 | person.lady-pink | same ID | covered |
-| practice.getting-up, format.panel-wholecar, style.bubble-blockbuster-straight, style.wildstyle, material.aerosol-system, person.cornbread, person.topcat-126, person.martha-cooper, method.local-terms-uncertainty | — | missing |
+| practice.getting-up, format.panel-wholecar, style.bubble-blockbuster-straight, style.wildstyle, material.aerosol-system, person.cornbread, person.topcat-126, person.martha-cooper | — | missing |
+| method.local-terms-uncertainty | concept.local-terms | covered, different ID (`method` is not an entry type) |
+| Path 3 “How the archive remembers” | path.how-the-archive-remembers | covered |
 
 These entries in this edition are not in the plan:
 
@@ -157,9 +162,11 @@ The German entries rest on primary-checked sources, as plan item F6 requires.
 
 ## Gaps and open decisions
 
-0. **30-entry plan alignment** (see above): about nine plan entries are missing and several IDs differ.
+0. **30-entry plan alignment** (see above):
+   - The plan IDs were adopted where the ID scheme allows; `concept.local-terms` and the archive-memory path were added.
+   - Eight plan entries are still missing. Most need sources that are not yet in a parseable research register: wildstyle, bubble, aerosol, Martha Cooper, CORNBREAD/TOPCAT person pages.
 1. **Owner review:** editorial approval of all 27 entries, and visual approval of the archive design.
-2. **Language:** the UI is German and entry text is English (D-014, proposed). German entry text is an open decision.
+2. **Language:** decided. The German edition is complete; the English edition is on the roadmap after C07.
 3. **German scenes not yet included:** Berlin, Cologne/Düsseldorf and Munich. Their sources (DE-02, DE-04, DE-08, DE-09) could not be checked in this session.
 4. **Dortmund Style:** the published description is short. A construction study needs dated examples from several writers; the INGRID and Dortmund corpus work in `research/` is the route.
 5. **No `documented-fact` claims yet:** dated primary records (for example MTA documents for 1989) are still open. Museum statements are labelled as institutional accounts.

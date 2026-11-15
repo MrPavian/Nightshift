@@ -1,7 +1,9 @@
-// THE BLACKBOOK ARCHIVE (C06) — reads the generated data/archive/archive.v1.json.
-// The UI chrome is German; entry content is English (the language of the research library).
+// THE BLACKBOOK ARCHIVE (C06) — reads the generated data/archive/archive.v1.<lang>.json.
+// German edition: interface and content are German. Other editions load archive.v1.<lang>.json.
 // No editorial content lives in this file: everything shown comes from the build output.
 import { bridgeHref } from '../src/bridge/editor-bridge.js';
+
+const LANG = 'de';
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -24,7 +26,7 @@ const EVIDENCE_DE = { strong: 'stark', good: 'gut', contextual: 'Kontext', 'unve
 const EDITORIAL_DE = { draft: 'Entwurf', 'source-checked': 'Quellen geprüft', 'editorial-reviewed': 'redaktionell geprüft', 'approved-for-archive': 'freigegeben', superseded: 'ersetzt' };
 const RIGHTS_DE = { none: 'keine Abbildungen', 'original-diagram': 'eigene Diagramme', 'link-only': 'nur verlinkt', 'rights-unknown': 'Rechte unklar', 'permission-requested': 'Erlaubnis angefragt', cleared: 'Rechte geklärt', 'do-not-reuse': 'nicht verwenden' };
 const SECTIONS = [
-  ['introduction', 'Einführung'], ['whyItMatters', 'Warum es wichtig ist'], ['howToRecognize', 'Woran man es erkennt'],
+  ['introduction', 'Einführung'], ['whyItMatters', 'Warum es wichtig ist'], ['recognize', 'Woran man es erkennt'],
   ['context', 'Kontext und Entwicklung'], ['terminology', 'Begriffe und Varianten'], ['evidenceNotes', 'Zur Quellenlage'], ['inNightshift', 'In NIGHTSHIFT'],
 ];
 const ORDER = ['history', 'scene', 'practice', 'style', 'construction', 'format', 'media', 'object', 'person', 'concept'];
@@ -59,21 +61,21 @@ function blocks(text, entryId) {
   return text.split(/\n{2,}/).map((p) => {
     const lines = p.split('\n');
     if (lines.every((l) => /^- /.test(l))) return `<ul>${lines.map((l) => `<li>${inline(l.slice(2), entryId)}</li>`).join('')}</ul>`;
-    return `<p lang="en">${inline(p.replace(/\n/g, ' '), entryId)}</p>`;
+    return `<p>${inline(p.replace(/\n/g, ' '), entryId)}</p>`;
   }).join('');
 }
 
 // ---------- pieces ----------
 function tabRow(e, { highlight } = {}) {
   const mark = (s) => highlight ? esc(s).replace(new RegExp(`(${highlight.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>') : esc(s);
-  return `<li><a href="#/entry/${e.id}" style="${tc(e.type)}"><span class="t-type">${TYPE_DE[e.type]}${e.period ? ` · ${esc(e.period)}` : ''}</span><span class="t-title" lang="en">${mark(e.title)}</span><span class="t-sum" lang="en">${mark(e.summary.replace(REF, '').replace(/\s+\./g, '.'))}</span></a></li>`;
+  return `<li><a href="#/entry/${e.id}" style="${tc(e.type)}"><span class="t-type">${TYPE_DE[e.type]}${e.period ? ` · ${esc(e.period)}` : ''}</span><span class="t-title">${mark(e.title)}</span><span class="t-sum">${mark(e.summary.replace(REF, '').replace(/\s+\./g, '.'))}</span></a></li>`;
 }
 const tabs = (list, opts) => `<ul class="tabs">${list.map((e) => tabRow(e, opts)).join('')}</ul>`;
 function figure(id) {
   const svg = A.diagrams[id];
   if (!svg) return '';
   const title = svg.match(/<title[^>]*>([^<]+)<\/title>/)?.[1] ?? '';
-  return `<figure class="figure">${svg}<figcaption>Eigenes Diagramm: <span lang="en">${esc(title)}</span></figcaption></figure>`;
+  return `<figure class="figure">${svg}<figcaption>Eigenes Diagramm: <span>${esc(title)}</span></figcaption></figure>`;
 }
 function pathProgress(p) {
   const done = p.steps.filter((s) => visited.has(s.entry)).length;
@@ -83,13 +85,13 @@ function pathProgress(p) {
 // ---------- views ----------
 function viewHome() {
   const scenes = A.entries.filter((e) => e.type === 'scene').sort((a, b) => a.sort - b.sort);
-  const foundation = ['history.nyc-emergence', 'concept.writing-and-graffiti', 'concept.public-inscription', 'practice.tag', 'format.subway-train', 'concept.circulation-and-adaptation'].map((id) => byId.get(id)).filter(Boolean);
+  const foundation = ['history.modern-name-writing', 'concept.writing-and-graffiti', 'concept.public-inscription', 'practice.tag', 'format.subway-train', 'history.global-circulation'].map((id) => byId.get(id)).filter(Boolean);
   const types = ORDER.filter((t) => A.entries.some((e) => e.type === t));
   return {
     title: 'Blackbook-Archiv',
     html: `<section class="hero">
       <h1>Blackbook-Archiv</h1>
-      <p>Wie aus Namen an Wänden eine Kultur wurde: von New York und Philadelphia bis Amsterdam, Paris, São Paulo, China und ins Ruhrgebiet. Jede Aussage ist belegt.</p>
+      <p>Wie aus Namen an Wänden eine Kultur wurde: von New York und Philadelphia bis Amsterdam, Paris, São Paulo, China, ins Ruhrgebiet und nach Hamburg. Jede Aussage ist belegt.</p>
       <form class="search" role="search" action="#/suche" data-search>
         <label for="q" class="sr">Archiv durchsuchen</label>
         <input id="q" name="q" type="search" placeholder="Suchen: Tag, Pixação, Dortmund, Blackbook …" autocomplete="off">
@@ -101,7 +103,7 @@ function viewHome() {
       <section aria-labelledby="h-start"><div class="section-head"><h2 id="h-start">Hier anfangen</h2><a href="#/a-z">Alle ${A.entries.length} Einträge</a></div>${tabs(foundation)}</section>
       <div>
         <section aria-labelledby="h-paths"><div class="section-head"><h2 id="h-paths">Lernpfade</h2><a href="#/pfade">Alle Pfade</a></div>
-          <ul class="paths">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong lang="en">${esc(p.title)}</strong><span>${p.steps.length} Stationen${pr.done ? ` · ${pr.done} gelesen` : ''}</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>
+          <ul class="paths">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong>${esc(p.title)}</strong><span>${p.steps.length} Stationen${pr.done ? ` · ${pr.done} gelesen` : ''}</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>
         </section>
         <section aria-labelledby="h-scenes" style="margin-top:2.2rem"><div class="section-head"><h2 id="h-scenes">Szenen</h2><a href="#/szenen">Nach Region</a></div>${tabs(scenes)}</section>
       </div>
@@ -162,16 +164,16 @@ function viewEntry(id, params) {
   });
   if (e.distinctions.length) {
     sections.splice(Math.max(1, sections.length - (e.sections.evidenceNotes ? 1 : 0) - (e.sections.inNightshift ? 1 : 0)), 0,
-      `<h2>Nicht zu verwechseln mit</h2><ul class="distinct">${e.distinctions.map((d) => `<li><strong lang="en">${d.target && byId.has(d.target) ? `<a href="#/entry/${d.target}">${esc(d.label)}</a>` : esc(d.label)}</strong><span lang="en">${inline(d.text.charAt(0).toUpperCase() + d.text.slice(1), e.id)}</span></li>`).join('')}</ul>`);
+      `<h2>Nicht zu verwechseln mit</h2><ul class="distinct">${e.distinctions.map((d) => `<li><strong>${d.target && byId.has(d.target) ? `<a href="#/entry/${d.target}">${esc(d.label)}</a>` : esc(d.label)}</strong><span>${inline(d.text.charAt(0).toUpperCase() + d.text.slice(1), e.id)}</span></li>`).join('')}</ul>`);
   }
-  const allClaims = [...e.claimIds, ...e.citedLedgerClaims].map((c) => claims.get(c)).filter(Boolean);
+  const allClaims = e.claimIds.map((c) => claims.get(c)).filter(Boolean);
   const claimList = `<h2 id="belege">Belege</h2><p class="muted">Alle Aussagen dieses Eintrags mit Art, Beleglage und Quelle.</p><ul class="claims">${allClaims.map((c) => claimItem(c)).join('')}</ul>`;
   const caps = A.bridge.capabilities;
   const actions = e.generatorLinks.map((g) => {
     const cap = caps[g.capability];
     if (!g.available) return `<div class="action off" aria-disabled="true"><strong>${esc(cap.labelDe)}</strong><span>Noch nicht verfügbar. ${esc(cap.reasonDe ?? '')}</span></div>`;
     const href = bridgeHref(g.capability, g.params, { from: e.id });
-    return href ? `<a class="action" href="${esc(href)}"><strong>${esc(cap.labelDe)}${g.params.glyph ? ` (${esc(g.params.glyph)})` : g.params.word ? ` („${esc(g.params.word)}“)` : ''}</strong><span lang="en">${esc(cap.description)}</span></a>` : '';
+    return href ? `<a class="action" href="${esc(href)}"><strong>${esc(cap.labelDe)}${g.params.glyph ? ` (${esc(g.params.glyph)})` : g.params.word ? ` („${esc(g.params.word)}“)` : ''}</strong><span>${esc(cap.descriptionDe ?? cap.description)}</span></a>` : '';
   }).join('');
   const related = e.related.map((r) => byId.get(r)).filter(Boolean);
   const backlinks = A.entries.filter((x) => x.id !== e.id && !e.related.includes(x.id) && (x.related.includes(e.id) || x.inlineLinks.includes(e.id)));
@@ -181,9 +183,9 @@ function viewEntry(id, params) {
     const i = path.steps.findIndex((s) => s.entry === e.id);
     if (i >= 0) {
       const prev = path.steps[i - 1], next = path.steps[i + 1];
-      pathNav = `<nav class="pathnav" aria-label="Lernpfad"><p>Lernpfad <a href="#/pfad/${path.id}" lang="en">${esc(path.title)}</a> · Station ${i + 1} von ${path.steps.length}</p>
-        ${prev ? `<a class="btn ghost" href="#/entry/${prev.entry}?pfad=${path.id}">Zurück: <span lang="en">${esc(byId.get(prev.entry).title)}</span></a>` : '<span></span>'}
-        ${next ? `<a class="btn" href="#/entry/${next.entry}?pfad=${path.id}">Weiter: <span lang="en">${esc(byId.get(next.entry).title)}</span></a>` : `<a class="btn" href="#/pfad/${path.id}">Pfad abgeschlossen</a>`}</nav>`;
+      pathNav = `<nav class="pathnav" aria-label="Lernpfad"><p>Lernpfad <a href="#/pfad/${path.id}">${esc(path.title)}</a> · Station ${i + 1} von ${path.steps.length}</p>
+        ${prev ? `<a class="btn ghost" href="#/entry/${prev.entry}?pfad=${path.id}">Zurück: <span>${esc(byId.get(prev.entry).title)}</span></a>` : '<span></span>'}
+        ${next ? `<a class="btn" href="#/entry/${next.entry}?pfad=${path.id}">Weiter: <span>${esc(byId.get(next.entry).title)}</span></a>` : `<a class="btn" href="#/pfad/${path.id}">Pfad abgeschlossen</a>`}</nav>`;
     }
   }
   return {
@@ -192,9 +194,9 @@ function viewEntry(id, params) {
       <div>
         <header class="entry-head">
           <p class="kicker">${TYPE_DE[e.type]}</p>
-          <h1 lang="en">${esc(e.title)}</h1>
-          <p class="summary" lang="en">${inline(e.summary, e.id)}</p>
-          <ul class="facts">${e.period ? `<li><b>Zeitraum</b> ${esc(e.period)}</li>` : ''}${e.regions?.length ? `<li><b>Orte</b> ${e.regions.map((r) => `<a href="#/suche?region=${encodeURIComponent(r)}">${esc(r)}</a>`).join(', ')}</li>` : ''}${e.aliases?.length ? `<li><b>Auch</b> <span lang="en">${e.aliases.map(esc).join(', ')}</span></li>` : ''}</ul>
+          <h1>${esc(e.title)}</h1>
+          <p class="summary">${inline(e.summary, e.id)}</p>
+          <ul class="facts">${e.period ? `<li><b>Zeitraum</b> ${esc(e.period)}</li>` : ''}${e.regions?.length ? `<li><b>Orte</b> ${e.regions.map((r) => `<a href="#/suche?region=${encodeURIComponent(r)}">${esc(r)}</a>`).join(', ')}</li>` : ''}${e.aliases?.length ? `<li><b>Auch</b> <span>${e.aliases.map(esc).join(', ')}</span></li>` : ''}</ul>
         </header>
         <div class="prose">${sections.join('')}${claimList}</div>
         ${pathNav}
@@ -207,7 +209,7 @@ function viewEntry(id, params) {
           <li><span>Aussagen</span><span><a href="#belege" data-jump="belege">${allClaims.length}</a></span></li>
         </ul><p class="muted" style="font-size:var(--step--1)">Die Freigabe durch den Projektinhaber steht für alle Einträge dieser Ausgabe noch aus.</p></section>
         ${actions ? `<section><h2>Im Editor ausprobieren</h2><div class="actions">${actions}</div></section>` : ''}
-        ${events.length ? `<section><h2>Auf der Zeitleiste</h2><ul class="status">${events.map((ev) => `<li><span lang="en">${esc(ev.title)}</span><span>${esc(ev.date)}</span></li>`).join('')}</ul><p><a href="#/zeitleiste">Zur Zeitleiste</a></p></section>` : ''}
+        ${events.length ? `<section><h2>Auf der Zeitleiste</h2><ul class="status">${events.map((ev) => `<li><span>${esc(ev.title)}</span><span>${esc(ev.date)}</span></li>`).join('')}</ul><p><a href="#/zeitleiste">Zur Zeitleiste</a></p></section>` : ''}
         <section><h2>Weiterlesen</h2>${tabs(related)}</section>
         ${backlinks.length ? `<section><h2>Verweist hierher</h2>${tabs(backlinks)}</section>` : ''}
       </aside>
@@ -220,14 +222,14 @@ function sourceLine(sid) {
   const s = sources.get(sid);
   if (!s) return '';
   const url = s.urls?.[0];
-  return `<li lang="en">${url ? `<a href="${esc(url)}" rel="noopener" target="_blank">${inline(s.title)}</a>` : inline(s.title)}${s.limitation ? `<br><span class="muted">Einschränkung: ${esc(s.limitation)}</span>` : ''}</li>`;
+  return `<li>${url ? `<a href="${esc(url)}" rel="noopener" target="_blank">${inline(s.title)}</a>` : inline(s.title)}${s.limitation ? `<br><span class="muted">Einschränkung: ${esc(s.limitation)}</span>` : ''}</li>`;
 }
 function claimItem(c, { full = false } = {}) {
   const [kind, color] = KIND_DE[c.kind] ?? [c.kind, ''];
-  const label = c.origin === 'ledger' ? `Ledger ${c.id}` : c.id.split('#')[1];
-  return `<li id="claim-${esc(c.id.replace('#', '-'))}"><div class="claim-meta"><span class="kind" style="--kc:${color}">${kind}</span><span>Beleglage: ${EVIDENCE_DE[c.evidence]}</span><span>${esc(label)}</span></div>
-    <${full ? 'blockquote' : 'div'} lang="en">${esc(c.text)}</${full ? 'blockquote' : 'div'}>
-    ${c.ledger ? `<p class="muted" style="font-size:var(--step--1);margin:.2rem 0">Aus dem Claim-Ledger: <span lang="en">${esc(c.ledger.status)}</span></p>` : ''}
+  const ledger = (c.ledger ?? []).map((l) => `${esc(l.id)} (${esc(l.status)})`).join(', ');
+  return `<li id="claim-${esc(c.id.replace('#', '-'))}"><div class="claim-meta"><span class="kind" style="--kc:${color}">${kind}</span><span>Beleglage: ${EVIDENCE_DE[c.evidence]}</span><span>${esc(c.id.split('#')[1])}</span></div>
+    <${full ? 'blockquote' : 'div'}>${esc(c.text)}</${full ? 'blockquote' : 'div'}>
+    ${ledger ? `<p class="muted" style="font-size:var(--step--1);margin:.2rem 0">Grundlage im NYC-Claim-Ledger der Recherche-Bibliothek: ${ledger}</p>` : ''}
     <ul class="src">${c.sources.map(sourceLine).join('')}</ul></li>`;
 }
 
@@ -239,7 +241,7 @@ function viewTimeline() {
     const head = dec !== last ? `</ol><h2 class="decade">${dec}</h2><ol class="timeline">` : '';
     last = dec;
     return `${head}<li style="${tc(e.type)}"><div class="when">${esc(ev.date)}<small class="cert" data-c="${ev.certainty}">${{ documented: 'belegt', approximate: 'ungefähr', contested: 'umstritten' }[ev.certainty]}</small></div>
-      <div><a class="what" href="#/entry/${e.id}" lang="en">${esc(ev.title)}</a><span class="where">${TYPE_DE[e.type]}: <span lang="en">${esc(e.title)}</span></span> ${ev.claims.map((c) => refButton(c.includes('#') ? c.split('#')[1] : c, c.includes('#') ? c.split('#')[0] : e.id)).join('')}</div></li>`;
+      <div><a class="what" href="#/entry/${e.id}">${esc(ev.title)}</a><span class="where">${TYPE_DE[e.type]}: <span>${esc(e.title)}</span></span> ${ev.claims.map((c) => refButton(c.split('#')[1], c.split('#')[0])).join('')}</div></li>`;
   }).join('');
   return {
     title: 'Zeitleiste',
@@ -249,14 +251,14 @@ function viewTimeline() {
 }
 
 function viewScenes() {
-  const scenes = A.entries.filter((e) => e.type === 'scene' || e.id === 'history.nyc-emergence').sort((a, b) => a.sort - b.sort);
+  const scenes = A.entries.filter((e) => e.type === 'scene' || e.id === 'history.modern-name-writing').sort((a, b) => a.sort - b.sort);
   return {
     title: 'Szenen',
     html: `<h1 style="font-size:var(--step-3)">Szenen und Regionen</h1><p class="prose">Writing hat viele Orte und Geschichten. Jede Szene steht für sich – mit eigener Chronologie, eigenen Begriffen und eigenem Austausch.</p>${figure('diagram.circulation-network')}
       <div class="regions">${scenes.map((s) => {
         const regional = A.entries.filter((x) => x.id !== s.id && x.regions?.some((r) => s.regions?.includes(r)));
         const near = regional.length ? regional : s.related.map((r) => byId.get(r)).filter(Boolean);
-        return `<section style="${tc(s.type)}"><div class="section-head"><h2 lang="en"><a href="#/entry/${s.id}">${esc(s.title)}</a></h2><span class="muted">${esc(s.period ?? '')}</span></div><p lang="en" class="muted">${inline(s.summary, s.id)}</p>${near.length ? tabs(near) : ''}</section>`;
+        return `<section style="${tc(s.type)}"><div class="section-head"><h2><a href="#/entry/${s.id}">${esc(s.title)}</a></h2><span class="muted">${esc(s.period ?? '')}</span></div><p class="muted">${inline(s.summary, s.id)}</p>${near.length ? tabs(near) : ''}</section>`;
       }).join('')}</div>`,
   };
 }
@@ -265,7 +267,7 @@ function viewPaths() {
   return {
     title: 'Lernpfade',
     html: `<h1 style="font-size:var(--step-3)">Lernpfade</h1><p class="prose">Geführte Wege durch das Archiv. Jede Station ist ein Eintrag; „Weiter“ führt zur nächsten. Der Fortschritt wird nur in diesem Browser gespeichert.</p>
-      <ul class="paths" style="max-width:46rem">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong lang="en">${esc(p.title)}</strong><span lang="en">${esc(p.intro)}</span><br><span>${p.steps.length} Stationen · ${pr.done} gelesen</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>`,
+      <ul class="paths" style="max-width:46rem">${A.paths.map((p) => { const pr = pathProgress(p); return `<li><a class="path-link" href="#/pfad/${p.id}"><strong>${esc(p.title)}</strong><span>${esc(p.intro)}</span><br><span>${p.steps.length} Stationen · ${pr.done} gelesen</span><div class="progress" aria-hidden="true"><i style="width:${pr.pct}%"></i></div></a></li>`; }).join('')}</ul>`,
   };
 }
 
@@ -276,10 +278,10 @@ function viewPath(id) {
   const firstOpen = p.steps.find((s) => !visited.has(s.entry)) ?? p.steps[0];
   return {
     title: p.title,
-    html: `<p><a href="#/pfade">Alle Lernpfade</a></p><h1 style="font-size:var(--step-3)" lang="en">${esc(p.title)}</h1><p class="prose" lang="en">${esc(p.intro)}</p>
+    html: `<p><a href="#/pfade">Alle Lernpfade</a></p><h1 style="font-size:var(--step-3)">${esc(p.title)}</h1><p class="prose">${esc(p.intro)}</p>
       <p>${pr.done} von ${p.steps.length} Stationen gelesen.</p><div class="progress" style="max-width:30rem" role="progressbar" aria-valuemin="0" aria-valuemax="${p.steps.length}" aria-valuenow="${pr.done}" aria-label="Fortschritt"><i style="width:${pr.pct}%"></i></div>
       <p style="margin:1.2rem 0"><a class="btn" href="#/entry/${firstOpen.entry}?pfad=${p.id}">${pr.done && pr.done < p.steps.length ? 'Weiterlesen' : 'Pfad beginnen'}</a></p>
-      <ol class="tabs" style="max-width:46rem">${p.steps.map((s, i) => { const e = byId.get(s.entry); return `<li><a href="#/entry/${e.id}?pfad=${p.id}" style="${tc(e.type)}"><span class="t-type">Station ${i + 1} · ${TYPE_DE[e.type]}${visited.has(e.id) ? ' · gelesen' : ''}</span><span class="t-title" lang="en">${esc(e.title)}</span><span class="t-sum" lang="en">${esc(s.framing)}</span></a></li>`; }).join('')}</ol>`,
+      <ol class="tabs" style="max-width:46rem">${p.steps.map((s, i) => { const e = byId.get(s.entry); return `<li><a href="#/entry/${e.id}?pfad=${p.id}" style="${tc(e.type)}"><span class="t-type">Station ${i + 1} · ${TYPE_DE[e.type]}${visited.has(e.id) ? ' · gelesen' : ''}</span><span class="t-title">${esc(e.title)}</span><span class="t-sum">${esc(s.framing)}</span></a></li>`; }).join('')}</ol>`,
   };
 }
 
@@ -291,7 +293,7 @@ function viewAZ() {
   return {
     title: 'A–Z',
     html: `<h1 style="font-size:var(--step-3)">A–Z</h1><p class="prose">Alle Einträge und ihre anderen Namen. Kursive Namen verweisen auf einen Eintrag.</p>
-      <div class="az">${[...groups].map(([L, list]) => `<section><h2>${esc(L)}</h2><ul>${list.map((it) => it.alias ? `<li class="alias" lang="en"><em>${esc(it.key)}</em> siehe <a href="#/entry/${it.e.id}">${esc(it.e.title)}</a></li>` : `<li lang="en"><a href="#/entry/${it.e.id}">${esc(it.key)}</a> <span class="alias">${TYPE_DE[it.e.type]}</span></li>`).join('')}</ul></section>`).join('')}</div>`,
+      <div class="az">${[...groups].map(([L, list]) => `<section><h2>${esc(L)}</h2><ul>${list.map((it) => it.alias ? `<li class="alias"><em>${esc(it.key)}</em> siehe <a href="#/entry/${it.e.id}">${esc(it.e.title)}</a></li>` : `<li><a href="#/entry/${it.e.id}">${esc(it.key)}</a> <span class="alias">${TYPE_DE[it.e.type]}</span></li>`).join('')}</ul></section>`).join('')}</div>`,
   };
 }
 
@@ -301,7 +303,7 @@ function viewSources() {
   return {
     title: 'Quellen',
     html: `<h1 style="font-size:var(--step-3)">Quellen</h1><p class="prose">Alle zitierten Quellen dieser Ausgabe, wie sie in der Recherche-Bibliothek verzeichnet sind. Verlinkte Seiten liegen außerhalb des Archivs.</p>
-      <ul class="sources">${A.sources.map((s) => `<li lang="en">${s.urls?.[0] ? `<a href="${esc(s.urls[0])}" rel="noopener" target="_blank">${inline(s.title)}</a>` : inline(s.title)}<br><span class="muted">Verwendet in: ${[...(users.get(s.id) ?? [])].map((id) => `<a href="#/entry/${id}">${esc(byId.get(id)?.title ?? id)}</a>`).join(', ') || 'Ledger-Aussagen'}</span></li>`).join('')}</ul>`,
+      <ul class="sources">${A.sources.map((s) => `<li>${s.urls?.[0] ? `<a href="${esc(s.urls[0])}" rel="noopener" target="_blank">${inline(s.title)}</a>` : inline(s.title)}<br><span class="muted">Verwendet in: ${[...(users.get(s.id) ?? [])].map((id) => `<a href="#/entry/${id}">${esc(byId.get(id)?.title ?? id)}</a>`).join(', ') || '–'}</span></li>`).join('')}</ul>`,
   };
 }
 
@@ -315,7 +317,7 @@ function openClaim(id) {
   if (!c) return;
   const entry = c.entry ? byId.get(c.entry) : null;
   $('#claim-title').textContent = KIND_DE[c.kind]?.[0] ?? 'Beleg';
-  $('#claim-body').innerHTML = `<ul class="claims">${claimItem(c, { full: true })}</ul>${entry ? `<p class="muted" style="font-size:var(--step--1)">Aus dem Eintrag <a href="#/entry/${entry.id}" data-close lang="en">${esc(entry.title)}</a>.</p>` : '<p class="muted" style="font-size:var(--step--1)">Diese Aussage stammt aus dem geprüften NYC-Claim-Ledger der Recherche-Bibliothek.</p>'}`;
+  $('#claim-body').innerHTML = `<ul class="claims">${claimItem(c, { full: true })}</ul>${entry ? `<p class="muted" style="font-size:var(--step--1)">Aus dem Eintrag <a href="#/entry/${entry.id}" data-close>${esc(entry.title)}</a>.</p>` : ''}`;
   const d = $('#claim');
   if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
 }
@@ -380,13 +382,13 @@ function publish() {
   pre.textContent = JSON.stringify(selftest);
 }
 try {
-  const res = await fetch('../data/archive/archive.v1.json');
+  const res = await fetch(`../data/archive/archive.v1.${LANG}.json`);
   if (!res.ok) throw new Error(`Archivdaten nicht erreichbar (HTTP ${res.status})`);
   A = await res.json();
   byId = new Map(A.entries.map((e) => [e.id, e]));
   claims = new Map(A.claims.map((c) => [c.id, c]));
   sources = new Map(A.sources.map((s) => [s.id, s]));
-  $('#foot-meta').textContent = `Archivdaten v${A.archiveSchemaVersion} · ${A.entries.length} Einträge · ${A.claims.length} Aussagen · ${A.sources.length} Quellen · Editor-Bridge v${A.bridge.version}`;
+  $('#foot-meta').textContent = `Deutsche Ausgabe · Archivdaten v${A.archiveSchemaVersion} · ${A.entries.length} Einträge · ${A.claims.length} Aussagen · ${A.sources.length} Quellen · Editor-Bridge v${A.bridge.version}`;
   selftest.entries = A.entries.length;
   window.addEventListener('hashchange', route);
   route();

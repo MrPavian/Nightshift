@@ -12,7 +12,7 @@
 // changing its meaning, is a major bump. Links carry `bv=<major>` and receivers
 // ignore requests from an unknown major version.
 
-export const BRIDGE_VERSION = '1.0.0';
+export const BRIDGE_VERSION = '1.1.0'; // 1.1.0: German descriptions (descriptionDe)
 const MAJOR = BRIDGE_VERSION.split('.')[0];
 
 /** Glyphs with authored masters that the current editor can open (see editor/editor.js EDITABLE). */
@@ -26,21 +26,25 @@ export const BRIDGE_CAPABILITIES = {
   'study.glyph-anatomy': {
     status: 'available', page: 'review', labelDe: 'Anatomie im Prüfstand ansehen', label: 'Glyph anatomy viewer',
     description: 'Opens the review page on one authored glyph with diagnostic overlay (counters, aperture, measurements).',
+    descriptionDe: 'Öffnet den Prüfstand mit diesem Buchstaben und Diagnose-Ansicht: Punzen, Öffnungen, Messwerte.',
     params: { glyph }, fixed: { tab: 'live', diag: '1' },
   },
   'editor.contour-node-edit': {
     status: 'available', page: 'editor', labelDe: 'Im Editor bearbeiten', label: 'Edit contour nodes (validated)',
     description: 'Opens the contour editor on one authored glyph; every change is validated before it is accepted.',
+    descriptionDe: 'Öffnet den Editor mit diesem Buchstaben. Jede Änderung wird geprüft, bevor sie übernommen wird.',
     params: { glyph }, fixed: {},
   },
   'study.word-layout': {
     status: 'available', page: 'review', labelDe: 'Wort im Prüfstand setzen', label: 'Word tester (naive layout)',
     description: 'Sets a word from canonical glyphs with a fixed gap; provisional letters are marked.',
+    descriptionDe: 'Setzt ein Wort aus den Buchstaben des Spiels mit festem Abstand; vorläufige Buchstaben sind markiert.',
     params: { word: { type: 'word', max: 12 } }, fixed: { tab: 'word' },
   },
   'study.proof-sheets': {
     status: 'available', page: 'review', labelDe: 'Prüfbögen öffnen', label: 'Proof sheets',
     description: 'Neutral identity, topology, pair and word plates of the current proof run.',
+    descriptionDe: 'Die Prüfbögen des aktuellen Prüflaufs: Buchstaben, Topologie, Paare und Wörter.',
     params: {}, fixed: { tab: 'plates' },
   },
   'grammar.style-comparison': {

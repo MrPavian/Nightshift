@@ -523,3 +523,17 @@
 - Tests: 123 passing; `tools/archive-smoke.mjs` covers 40 views at 360 px, 27 claim sheets and 4 bridge targets. Proof: `docs/reports/proof/C06/`.
 - Pages: the archive is deployed at `/archive/`; the site root now links archive, review page and editor.
 
+## 2026-11-15 — C06: complete German edition of the archive
+
+- Owner decision: the archive is completely German; a complete English edition follows after C07 (roadmap section “Sprachausgaben”, D-014).
+- Edition-aware pipeline:
+  - entry sources in `research/archive/de/`, output `data/archive/archive.v1.de.json` (schema 2.0, `language: "de"`);
+  - German section headings are parsed (`SECTION_HEADINGS`);
+  - NYC ledger claims are cited through German entry claims and are no longer shown verbatim in English.
+- All entries, claims, timeline, paths and diagram labels rewritten in German.
+- IDs aligned with the 30-entry launch plan where possible: `history.modern-name-writing`, `history.global-circulation`, `scene.paris-banlieue`.
+- New entry `concept.local-terms` and new path `path.how-the-archive-remembers`. Totals: 28 entries, 110 claims, 5 paths.
+- Fixed: the section “Woran man es erkennt” (formerly “How to recognize it”) was never rendered because of a key mismatch; a test now guards this.
+- Editor bridge 1.1.0 adds German descriptions.
+- Tests: 125 passing; the archive smoke covers 42 views, 28 claim sheets and 4 bridge targets.
+
