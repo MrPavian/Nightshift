@@ -147,7 +147,9 @@ Jessica Nydia Pabón-Colóns Buch *Graffiti Grrlz: Performing Feminism in the Hi
 
 Lady Pink ist eine der bekanntesten frühen Figuren der New Yorker Szene. In einem Interview des National Endowment for the Arts aus dem Jahr 2013 erinnerte sie sich daran, 1979 auf Graffiti aufmerksam geworden zu sein, U-Bahn-Wagen bemalt zu haben und 1980 im Alter von 16 Jahren an der Ausstellung bei Fashion MODA beteiligt gewesen zu sein. Ein späteres Oral-History-Interview des Smithsonian Archives of American Art hält weitere Erinnerungen aus ihrer eigenen Perspektive fest. Diese Interviews dokumentieren ihre Aussagen. Sie dürfen nicht zu der Behauptung ausgeweitet werden, Lady Pink sei die erste Frau im Graffiti Writing gewesen.
 
-Eine zweite Vereinfachung muss das Archiv ebenfalls vermeiden: Es reicht nicht, eine prominente Frau in eine ansonsten unveränderte Männerchronologie einzufügen. Frauen gehören in die regulären Geschichten von Crews, lokalen Szenen, Blackbooks, Ausstellungen, Stilentwicklungen, Fotografie und Netzwerken. Gleichzeitig ergeben Namen in frühen Büchern oder rückblickenden Listen noch keine vollständigen Biografien. Bei Personen wie Barbara 62, Eva 62 oder Stoney müssen direkte Zeugnisse und konkrete historische Belege gesucht werden, bevor ausführliche Profile entstehen.
+Eine zweite Vereinfachung muss das Archiv ebenfalls vermeiden: Es reicht nicht, eine prominente Frau in eine ansonsten unveränderte Männerchronologie einzufügen. Pabón-Colón nennt in ihrem Forschungsüberblick neben Lady Pink unter anderem Abby, Lady Heart, Barbara 62, Eva 62, Charmin, Stoney und Grape als frühe, in der Literatur dokumentierte Writerinnen. Diese Namensüberlieferung ist ein Ausgangspunkt für weitere Recherche, keine vollständige Biografiesammlung. Eine 2019 veröffentlichte Artsy-Reportage führt Barbara 62, Eva 62 und Michelle 62 als bereits in den 1970er-Jahren in Manhattan aktive Namen auf und behandelt Charmin 65 als frühe Writerin aus der Bronx; sie gibt auch eine spätere Erinnerung von Charmin an ihre Erfahrungen wieder. Solche Angaben müssen der jeweiligen Quelle zugeschrieben werden. Sie rechtfertigen nicht, ungesicherte Details zu Lebensläufen oder Prioritäten zu ergänzen.
+
+Frauen gehören in die regulären Geschichten von Crews, lokalen Szenen, Blackbooks, Ausstellungen, Stilentwicklungen, Fotografie und Netzwerken. Gleichzeitig ergeben Namen in frühen Büchern oder rückblickenden Listen noch keine vollständigen Biografien. Bei Personen wie Barbara 62, Eva 62, Stoney und Charmin 65 müssen direkte Zeugnisse und konkrete historische Belege gesucht werden, bevor ausführliche Einzelprofile entstehen.
 
 Ein verantwortungsvolles Archiv hält nicht nur fest, was bekannt ist, sondern auch, wie dieses Wissen zustande kam. Es unterscheidet die eigene Aussage einer Writerin von der späteren Interpretation durch Forschende, eine Fotografie von einer gesicherten Urheberzuordnung und eine Überlieferungslücke vom Beweis, dass eine Person nicht beteiligt war.
 
@@ -165,14 +167,15 @@ Ein verantwortungsvolles Archiv hält nicht nur fest, was bekannt ist, sondern a
 | WGW-01 | Das Bild einer reinen Männerdomäne hat öffentliche Wahrnehmung und historische Überlieferung beeinflusst. | Pabón-Colón, *Graffiti Grrlz* (2018); „Ways of Being Seen“. | Wissenschaftliche Argumentation; genaue Kapitel- und Seitenangabe vor Freigabe ergänzen. |
 | WGW-02 | Pabón-Colóns transnationale Forschung bezieht Lebensgeschichten von über 100 Frauen aus 23 Ländern ein. | NYU Press / Oxford Academic. | Umfang der Studie, keine Vollerhebung. |
 | WGW-03 | Lady Pink erinnert sich an den Beginn 1979 und ihre Beteiligung an der Fashion-MODA-Ausstellung 1980 im Alter von 16 Jahren. | NEA-Interview (2013); Smithsonian Oral History (2022). | Als persönliche Erinnerung kennzeichnen; Interviewfassungen und Datierungen vergleichen. |
-| WGW-04 | Früh genannte Writerinnen benötigen vor eigenen Profilen eine Prüfung auf Quellenebene. | Pabón-Colón; Forschung von Fransberg; darin referenzierte frühe Publikationen. | Ein Name in einer Liste belegt noch keine vollständige Biografie. |
+| WGW-04 | Pabón-Colón führt frühe Namen wie Barbara 62, Eva 62, Charmin, Stoney und Grape auf; Artsy nennt zusätzlich Michelle 62 und gibt Charmins spätere Erinnerung wieder. | Pabón-Colón, „Ways of Being Seen“, S. 79; Ables, Artsy (2019). | Namensnennungen und rückblickende Aussagen sind keine vollständigen Biografien oder Prioritätsnachweise. |
 | WGW-05 | Frauen sollen in Szenen- und Netzwerkkontexte integriert und nicht nur als Ausnahmen ergänzt werden. | Pabón-Colón; redaktionelle Synthese. | Archivprinzip, keine isolierte historische Tatsachenbehauptung. |
 
 ### Quellen
 
 - Jessica Nydia Pabón-Colón, *Graffiti Grrlz: Performing Feminism in the Hip Hop Diaspora* (NYU Press, 2018): https://nyupress.org/9781479821334/graffiti-grrlz/
 - Oxford Academic, Buchbeschreibung und Abstract: https://academic.oup.com/nyu-press-scholarship-online/book/28722
-- Jessica Nydia Pabón-Colón, „Ways of Being Seen: Gender and the Writing on the Wall“: https://bpb-us-w2.wpmucdn.com/hawksites.newpaltz.edu/dist/f/847/files/2016/08/Pabo%CC%81n_Ways-of-Being-Seen-21jo5v0.pdf
+- Jessica Nydia Pabón-Colón, „Ways of Being Seen: Gender and the Writing on the Wall“, in: *Routledge Handbook of Graffiti and Street Art* (2016), insbesondere S. 78–79: https://bpb-us-w2.wpmucdn.com/hawksites.newpaltz.edu/dist/f/847/files/2016/08/Pabo%CC%81n_Ways-of-Being-Seen-21jo5v0.pdf
+- Kelsey Ables, „The Boundary-Breaking Women of New York’s Graffiti Scene“, *Artsy*, 31. Juli 2019: https://www.artsy.net/article/artsy-editorial-boundary-breaking-women-new-yorks-graffiti-scene
 - Jennifer Kreizman, „Pure Expression: Lady Pink and the Evolution of Street Art“, National Endowment for the Arts (2013): https://www.arts.gov/stories/magazine/2013/2/ahead-their-time/pure-expression
 - Smithsonian Archives of American Art, Interview mit Lady Pink, 18. Oktober bis 1. November 2022: https://www.aaa.si.edu/collections/items/detail/lady-pink-interview-27380
 
@@ -188,7 +191,7 @@ Ein verantwortungsvolles Archiv hält nicht nur fest, was bekannt ist, sondern a
 - [ ] Quellen-IDs und Behauptungs-IDs in das verbindliche Inhaltsmanifest übertragen.
 - [ ] Bibliografischen Status von „Ways of Being Seen“ (Artikel, Dissertationskapitel oder Manuskriptfassung) klären.
 - [ ] Chastanet- und Haverford-Nachweise auf konkrete Abschnitte bzw. Exponate beziehen.
-- [ ] Weitere Writerinnen anhand belastbarer eigener Aussagen oder wissenschaftlicher Quellen in regionale Chronologien integrieren; keine bloße Namensliste ergänzen.
+- [x] Weitere frühe Namen und ein zusätzliches Zeitzeugnis integriert: Barbara 62, Eva 62, Michelle 62 und Charmin 65 (Artsy 2019); Stoney und Grape (Pabón-Colón 2016). Die Angaben bleiben zugeschrieben und begründen noch keine vollständigen Biografien. [ ] Direkte Interviews/Archivbelege für Einzelprofile recherchieren.
 - [ ] Namen, Aliase, Daten und Crew-Zuordnungen gegen Primär- oder Institutionsquellen prüfen.
 - [ ] Beleglage, redaktionelle Freigabe und Bildrechte getrennt führen.
 - [ ] Keine externen Bilder ohne Prüfung der Rechte am konkreten Objekt übernehmen.
