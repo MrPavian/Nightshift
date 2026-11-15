@@ -48,6 +48,8 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 ## Current research files
 
+- [Generator Knowledge Translation 01 — From Graffiti Research to Engine Rules](GENERATOR_KNOWLEDGE_TRANSLATION_01.md)
+
 - [Handstyle, Motor Plans and Vector Generation — NIGHTSHIFT Model 01](HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md)
 - [Handstyle Proof Sheet Specification 01 — Deterministic fixtures and acceptance tests](HANDSTYLE_PROOF_SHEET_SPEC_01.md)
 
