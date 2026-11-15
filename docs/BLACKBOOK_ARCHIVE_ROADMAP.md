@@ -172,6 +172,7 @@ Vor einer Änderung Repository und aktuelle Implementierung prüfen. Nur die kle
 
 
 ## Work completed — information architecture and content pilot
+- Global historical and editorial scope is specified in [Global Editorial Framework 01](BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md); it frames the archive from NYC emergence through regional adaptation to contemporary global practice.
 
 The Phase A design deliverables are documented in [Information Architecture 01](BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md): audiences, taxonomy, facets, navigation, entry layout, learning paths, generator capability links and visual/interaction direction. A six-entry editorial draft pilot is in [Content Pilot 01](../research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md). The pilot is not publication-approved; claim-level source verification and image rights review remain required. Claude's implementation handoff for Archive 0.1–0.3 is [Ticket Pack Blackbook 01](CLAUDE_TICKET_PACK_BLACKBOOK_01.md).
 
