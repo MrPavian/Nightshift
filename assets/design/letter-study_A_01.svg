@@ -75,7 +75,7 @@
 <g class="small" font-weight="800" text-anchor="middle"><text x="642" y="691">SCHMAL</text><text x="730" y="691">BREIT</text><text x="830" y="691">GENEIGT</text><text x="930" y="691">ORGANISCH</text><text x="1032" y="691">MASSIV</text></g>
 <text x="606" y="711" class="tiny">Silhouette, Gewicht, Winkel und Innenraum verändern den Letter.</text>
 <!-- PANEL 6 -->
-<rect class="panel" x="1122" y="444" width="520" height="276" rx="13"/><path class="bar" d="M1124 457Q1124 444 1139 444H1626Q1642 444 1642 460V487H1122Z"/><circle cx="1151" cy="466" r="23" class="yellow"/><text x="1151" y="475" text-anchor="middle" font-family="DejaVu Sans" font-size="28" font-weight="1000" fill="#111">6</text><text x="1186" y="474" class="head">FORMCHARAKTER — Wirkung &amp; Einsatz</text>
+<rect class="panel" x="1122" y="444" width="520" height="276" rx="13"/><path class="bar" d="M1124 457Q1124 444 1139 444H1626Q1642 444 1642 460V487H1122Z"/><circle cx="1151" cy="466" r="23" class="yellow"/><text x="1151" y="475" text-anchor="middle" font-family="DejaVu Sans" font-size="28" font-weight="1000" fill="#111">6</text><text x="1186" y="474" font-family="DejaVu Sans" font-size="19" font-weight="900" fill="#fff">FORMCHARAKTER — Wirkung &amp; Einsatz</text>
 <g transform="translate(1150 507)">
  <g fill="#f5f0e7" stroke="#111" stroke-width="3"><path d="M0 34L15 0L30 34L22 32L15 16L8 32Z"/><path d="M0 76L15 42L30 76L22 74L15 58L8 74Z" transform="translate(0 0)"/></g>
  <path d="M0 116L18 80L36 116L28 114L18 98L8 114Z" fill="#111"/>
@@ -113,13 +113,14 @@
 </g>
 <!-- Piece / wildstyle original angular -->
 <g transform="translate(925 796)">
- <path d="M0 145L34 22L79 2L71 44L113 25L95 78L135 66L110 111L130 145L91 135L72 102L48 145Z" fill="#8756a7" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
- <path d="M40 113L57 51L82 37L74 70L96 59L84 93L96 116L72 107L62 91Z" fill="#f5f0e7" stroke="#111" stroke-width="5" stroke-linejoin="round"/>
- <path d="M4 145L-8 157M111 25L130 9M110 111L139 120" stroke="#f5d400" stroke-width="7" fill="none"/>
- <path d="M11 151l-8 12M132 64l18-12" stroke="#111" stroke-width="4"/>
+ <path d="M0 145L34 23L76 2L111 23L140 145L105 136L88 96L48 96L33 137Z" fill="#8756a7" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M51 77L76 34L101 77Z" fill="#f5f0e7" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+ <path d="M48 96L88 96" stroke="#f5d400" stroke-width="8" fill="none"/>
+ <path d="M34 23L17 8M111 23L132 8M140 145L154 151M0 145L-12 156" stroke="#f5d400" stroke-width="7" fill="none"/>
+ <path d="M14 104L32 83M110 107L132 91" stroke="#111" stroke-width="5" fill="none"/>
  <text x="67" y="185" text-anchor="middle" class="small" font-weight="900">PIECE / WILDSTYLE</text><text x="67" y="204" text-anchor="middle" class="tiny">komplex · gerichtet</text>
 </g>
-<path d="M598 1011h485" stroke="#f5d400" stroke-width="8"/><text x="840" y="1021" text-anchor="middle" class="tiny">Drei parallele Designrichtungen – keine Pflicht-Reihenfolge.</text>
+<text x="840" y="1021" text-anchor="middle" class="tiny">Drei parallele Designrichtungen – keine Pflicht-Reihenfolge.</text>
 <!-- PANEL 9 -->
 <rect class="panel" x="1122" y="736" width="520" height="292" rx="13"/><path class="bar" d="M1124 749Q1124 736 1139 736H1626Q1642 736 1642 752V779H1122Z"/><circle cx="1151" cy="758" r="23" class="yellow"/><text x="1151" y="767" text-anchor="middle" font-family="DejaVu Sans" font-size="28" font-weight="1000" fill="#111">9</text><text x="1186" y="766" class="head">LERNKONTROLLE — Deine Übungen</text>
 <g font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#201e1b">
