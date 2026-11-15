@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": {
+    "sourceId": "ingrid-demo",
+    "sourceName": "INGRID synthetic relationship fixture",
+    "sourceRecordUri": "https://www.uni-paderborn.de/forschungsprojekte/ingrid/",
+    "sourceVersion": "synthetic-fixture-1",
+    "snapshotDate": "2026-11-14",
+    "sourceLicenseStatement": "Synthetic metadata only; no source image included.",
+    "sourceDocumentationUri": "https://doi.org/10.1038/s41597-023-02199-8",
+    "retrievalMethod": "hand-authored synthetic fixture",
+    "retrievedAt": "2026-11-14T22:00:00Z"
+  },
+  "records": [
+    {
+      "recordId": "photo-001",
+      "sourceRecordId": "src-photo-001",
+      "sourceEntityType": "photo",
+      "parentRecordIds": [],
+      "relatedRecordIds": [
+        "graffiti-001",
+        "graffiti-002",
+        "series-001"
+      ]
+    },
+    {
+      "recordId": "photo-002",
+      "sourceRecordId": "src-photo-002",
+      "sourceEntityType": "photo",
+      "parentRecordIds": [
+        "series-001"
+      ],
+      "relatedRecordIds": [
+        "graffiti-001"
+      ]
+    },
+    {
+      "recordId": "series-001",
+      "sourceRecordId": "src-series-001",
+      "sourceEntityType": "photoSeries",
+      "parentRecordIds": [],
+      "relatedRecordIds": [
+        "photo-001",
+        "photo-002"
+      ]
+    },
+    {
+      "recordId": "graffiti-001",
+      "sourceRecordId": "src-graffiti-001",
+      "sourceEntityType": "graffiti",
+      "parentRecordIds": [
+        "photo-001"
+      ],
+      "relatedRecordIds": [
+        "photo-002",
+        "partial-001",
+        "image-001a",
+        "image-001b"
+      ]
+    },
+    {
+      "recordId": "graffiti-002",
+      "sourceRecordId": "src-graffiti-002",
+      "sourceEntityType": "graffiti",
+      "parentRecordIds": [
+        "photo-001"
+      ],
+      "relatedRecordIds": [
+        "image-002a"
+      ]
+    },
+    {
+      "recordId": "partial-001",
+      "sourceRecordId": "src-partial-001",
+      "sourceEntityType": "partialGraffiti",
+      "parentRecordIds": [
+        "graffiti-001"
+      ],
+      "relatedRecordIds": []
+    },
+    {
+      "recordId": "image-001a",
+      "sourceRecordId": "src-image-001a",
+      "sourceEntityType": "imageFile",
+      "parentRecordIds": [
+        "graffiti-001"
+      ],
+      "relatedRecordIds": [],
+      "imageRole": "original",
+      "width": 1600,
+      "height": 1200,
+      "aspectRatio": 1.3333,
+      "fileExtension": "jpg"
+    },
+    {
+      "recordId": "image-001b",
+      "sourceRecordId": "src-image-001b",
+      "sourceEntityType": "imageFile",
+      "parentRecordIds": [
+        "graffiti-001"
+      ],
+      "relatedRecordIds": [],
+      "imageRole": "derivative",
+      "width": 800,
+      "height": 600,
+      "aspectRatio": 1.3333,
+      "fileExtension": "jpg"
+    },
+    {
+      "recordId": "image-002a",
+      "sourceRecordId": "src-image-002a",
+      "sourceEntityType": "imageFile",
+      "parentRecordIds": [
+        "graffiti-002"
+      ],
+      "relatedRecordIds": [],
+      "imageRole": "original",
+      "width": 1200,
+      "height": 900,
+      "aspectRatio": 1.3333,
+      "fileExtension": "jpg"
+    },
+    {
+      "recordId": "graffiti-003",
+      "sourceRecordId": "src-graffiti-003",
+      "sourceEntityType": "graffiti",
+      "parentRecordIds": [],
+      "relatedRecordIds": [],
+      "recordStatus": "active"
+    }
+  ],
+  "dateClaims": [
+    {
+      "dateClaimId": "date-photo-001",
+      "subjectRecordId": "photo-001",
+      "dateKind": "photoRecordingDate",
+      "value": "1991-04-02",
+      "precision": "day",
+      "source": "contributor",
+      "certainty": "attributed",
+      "evidenceRef": "synthetic-fixture"
+    },
+    {
+      "dateClaimId": "date-graffiti-001",
+      "subjectRecordId": "graffiti-001",
+      "dateKind": "graffitiCreationDate",
+      "value": "1990s",
+      "precision": "decade",
+      "source": "actant",
+      "certainty": "attributed",
+      "evidenceRef": "synthetic-fixture"
+    },
+    {
+      "dateClaimId": "date-annotation-001",
+      "subjectRecordId": "graffiti-001",
+      "dateKind": "annotationDate",
+      "value": "2022-06",
+      "precision": "month",
+      "source": "archive",
+      "certainty": "confirmed",
+      "evidenceRef": "synthetic-fixture"
+    }
+  ],
+  "sourceAnnotations": [
+    {
+      "annotationId": "ann-type-001",
+      "archiveRecordId": "graffiti-001",
+      "categoryPath": "graffiti.type",
+      "sourceFieldName": "type",
+      "sourceValueLabel": "Piece",
+      "annotationDepth": "basic",
+      "annotatorProvenance": "annotator",
+      "valueStatus": "present",
+      "sourceManualVersion": "fixture-manual-1"
+    },
+    {
+      "annotationId": "ann-style-001",
+      "archiveRecordId": "graffiti-001",
+      "categoryPath": "lettering.style",
+      "sourceFieldName": "letterStyle",
+      "annotationDepth": "inDepth",
+      "annotatorProvenance": "annotator",
+      "valueStatus": "notAnnotated",
+      "sourceManualVersion": "fixture-manual-1"
+    },
+    {
+      "annotationId": "ann-color-001",
+      "archiveRecordId": "graffiti-002",
+      "categoryPath": "design.color",
+      "sourceFieldName": "color",
+      "annotationDepth": "inDepth",
+      "annotatorProvenance": "annotator",
+      "valueStatus": "notVisible",
+      "sourceManualVersion": "fixture-manual-1"
+    }
+  ],
+  "normalizedMappings": [
+    {
+      "mappingId": "map-piece-001",
+      "archiveRecordId": "graffiti-001",
+      "sourceCategoryPath": "graffiti.type",
+      "sourceValueLabel": "Piece",
+      "targetConceptId": "practice.piece",
+      "mappingRelation": "closeMatch",
+      "mappingRationale": "Synthetic example only; source category retained.",
+      "mappingVersion": "1.0.0"
+    }
+  ],
+  "observations": [
+    {
+      "observationId": "obs-slant-001",
+      "archiveRecordId": "graffiti-001",
+      "imageRefId": "image-001a",
+      "observerId": "researcher-demo",
+      "observedAt": "2026-11-14T22:00:00Z",
+      "observationMode": "visual",
+      "featureId": "lettering.apparentSlant",
+      "value": "right-leaning",
+      "valueType": "categorical",
+      "valueStatus": "present",
+      "visibility": "clear",
+      "confidence": "medium",
+      "evidenceNote": "Synthetic example; not a claim about a real work.",
+      "reviewerStatus": "unreviewed"
+    }
+  ],
+  "researchClaims": [],
+  "duplicateRelations": [
+    {
+      "relationId": "dup-001",
+      "subjectRecordId": "graffiti-001",
+      "objectRecordId": "graffiti-003",
+      "relation": "near",
+      "source": "synthetic-fixture",
+      "similarityScore": 0.91,
+      "reviewStatus": "unreviewed"
+    }
+  ],
+  "rightsDecisions": [
+    {
+      "rightsDecisionId": "rights-001",
+      "imageRefId": "image-001a",
+      "intendedUse": "research",
+      "decision": "allowed",
+      "legalBasis": "Synthetic fixture; no image bytes included.",
+      "decisionDate": "2026-11-14",
+      "thirdPartyRightsCheck": "notChecked"
+    },
+    {
+      "rightsDecisionId": "rights-002",
+      "imageRefId": "image-001a",
+      "intendedUse": "editorPreview",
+      "decision": "permissionRequired",
+      "legalBasis": "Synthetic example of use-specific clearance.",
+      "decisionDate": "2026-11-14",
+      "thirdPartyRightsCheck": "notChecked"
+    }
+  ]
+}

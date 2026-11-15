@@ -64,3 +64,8 @@ The source-backed research library and its first cross-linked deep synthesis are
 ## Prototype
 
 The runnable 0.6 prototype is committed at [`prototypes/nightshift_art_engine_v06.html`](prototypes/nightshift_art_engine_v06.html). Open it locally in a modern browser with internet access (Three.js is loaded from jsDelivr). Future builds should be added as new versioned files rather than silently overwriting prior prototypes.
+
+
+## NIGHTSHIFT 1.0 — final delivery plan
+
+The binding finite release target is [Final Roadmap and Joint Work Order 01](docs/FINAL_ROADMAP_AND_WORK_ORDER_01.md). Claude's implementation sequence is [Claude Final Release Ticket Pack 01](docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md). These documents define the 1.0 scope, owners, acceptance gates, stop conditions and project closure. Older milestone descriptions below are historical context where they conflict with the 1.0 plan.

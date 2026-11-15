@@ -335,10 +335,172 @@
 - Tests: 86 passing.
 
 
+## Research deepening — Martha Cooper Library catalogue verification
+
+- Added an exact-title OPAC record check for *Eine Stadt wird bunt* (MCL 0003815) and Katrin Kaiser's *Graffiti in der gesellschaftlichen Kontroverse* (MCL 0003386).
+- Recorded catalogue metadata and displayed holding status separately from inspected publication content and image reuse rights.
+- Documented the MCL's closed-stack/reference-library access model and the live OPAC server limitation encountered during this pass.
+- Left serial-title holdings unconfirmed pending exact-title/issue searches against a functioning catalogue.
+
+- Follow-up exact-title search identified the MCL holding *Stylefile — blackbook — sessions* (record 0003185, 2003); classified as a book, not a *Stylefile Magazin* issue.
+
+
+## Research deepening — Hamburg periodical network and Stylefile continuity
+
+- Added a source-graded dossier linking Daily Bombs, Dosenspuk, Beastie Boyz and Backspin through editor/writer biographies published by EINE STADT WIRD BUNT.
+- Recorded Daily Bombs #13 as a late-2025 issue reported in January 2026, without implying continuous publication since 1992.
+- Verified Stylefile #61 (2025 COMEBACKfile) and #62 (ROBOTfile, release 2026-11-01) against official publisher product pages; documented the publisher's own account of the 2025 trademark restart.
+- Kept retrospective zine catalogues at discovery/secondary evidence level and added issue-level verification and image-rights tasks.
+
+
+## Research deepening — Dortmund Style and Ruhrgebiet
+
+- Added a source-backed dossier on Dortmund writing from 1983 onward, TUF, the 1987 *Da kukse wa* publication, block-letter tendencies, trainwriting context and the 1994–1998 compositional development recalled by ATOM ONE.
+- Translated the evidence into a provisional Dortmund Block grammar study with explicit hypothesis labels, calibration questions and human-review gates.
+- Preserved distinctions among crew, person, publication, style and hip-hop network; no image reuse rights are inferred.
+
+
+## Research deepening — Dortmund visual corpus and archive access
+
+- Mapped *Da kukse wa* (1987) as a period piece / wall / scene document and *ALL SURFACE* (2022) as a separate tag / handstyle corpus.
+- Added VR-009 to the visual-reference database with item-level rights cautions and a prohibition on copying identifiable tags or pieces into generator templates.
+- Recorded the Dortmund U / ILOVEGRAFFITI digital access route and its current browser-verification limitation; no image inspection or reuse is claimed.
+
+
+## Research deepening — Dortmund tagging archive and bibliographic verification
+
+- Added a bibliography and provenance dossier for *ALL SURFACE* and *Da kukse wa* using the Deutsche Nationalbibliografie and institutional Dortmunder U / Stiftung Historische Museen Hamburg records.
+- Preserved the *ALL SURFACE* page-count discrepancy (238 pages in the DNB vs. 244 in specialist retail and museum event descriptions) instead of silently selecting one.
+- Strengthened reprint provenance for *Da kukse wa* while keeping the retailer's “identical except preface” claim uncollated.
+- Clarified that the Amsterdam influence narrative is an attributed account and that tag contributors must not be conflated with TUF membership.
+
+
+## Research deepening — Dortmund scholarly style analysis and oral-history source map
+
+- Added the official Springer records for Harald Hinz's Dortmund local-style chapter and Rahel H. Grothus's longitudinal MASON analysis in *Dirty Hands* (2022).
+- Recorded the accessible summary's three formal attributes (sharp contours, consistent stem thickness, opaque fill) as a provisional, non-universal style hypothesis.
+- Extracted dated first-person source leads cited by Hinz (SHARK, 30 January 2020; Krell/COLE/CHANA, 14 February 2020; David Radon, 9 December 2020) without inventing interview content.
+- Added Laura Maria Lintzen's 2025 ethnography as a current, broader German scene-history source; full chapters remain access-limited.
+- No images, signatures or copyrighted chapter figures were copied; full-text inspection and practitioner review remain open.
+
+
+## Research deepening — Dortmund oral-history documentary access
+
+- Recovered accessible English-subtitled video routes for *The Rise of Graffiti Writing — Dortmund, Berlin & Frankfurt* and *Writing on Trains: Dortmund & Frankfurt*.
+- Cross-checked the documentary trail against Harald Hinz's 2022 chapter, which cites SHARK's 30 January 2020 communication and the series.
+- Added an episode access map and a timecoded claim-verification protocol; no interview statements are quoted or inferred before viewing.
+
+
+## Research deepening — Dortmund MASON longitudinal publication corpus
+
+- Added source mapping for *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), *MASON — The Essence of Writing 1986–2019* (2020) and Grothus's 2022 longitudinal study.
+- Added VR-010 with bibliographic metadata, access routes and item-level rights cautions.
+- Kept the individual MASON corpus separate from city-level style claims; no third-party Issuu upload or preview was treated as licensed source material.
+
+
+## Research deepening — Dortmund oral history and visual chronology
+
+- Added ATOM ONE #040 and TWISTER / JEZUS / PRIDE #059 as first-person interview source routes, with their editorial topic summaries and transcription limitations.
+- Identified *IRON CITY — Graffiti Dortmund* (2002) as a key regional visual chronology covering advertised material from 1983 through the early 2000s.
+- Added VR-011 and a source-graded dossier; kept audio claims and image-level observations unverified until direct inspection.
+- Clarified that Episode 21's description and the separately linked “Writing on Trains” YouTube upload are not yet proven to be the same numbered episode.
+
+
+## Research deepening — Dortmund trainwriting contemporary sources, 1997–1999
+
+- Inspected *BOMBER* magazine #14 (October–December 1997), including its review of *Rolling Thunder 001* and *King of the Line*.
+- Inspected the dated *Endstation* #14 report “Dortmund - Haupt Bahn Hof” (8 March 1999), preserving its claims about 1996–1999 activity and 1998 security / cleaning changes as attributed reporter statements.
+- Located an MCL catalogue search result for *IRON CITY* (2002), but the catalogue server was unavailable on opening; current holding status remains unconfirmed.
+- Added VR-012 and a contemporary-source dossier; no photographs were copied and no unverified totals were promoted to facts.
+
+
+
+## Research deepening — Dortmund moving-image archive and media access
+
+- Added a provenance dossier for *Rolling Thunder 001*, *King of the Line* and the unresolved *Graffiti Dortmund 1994* film lead.
+- Located a current specialist retailer listing for a used *Rolling Thunder 001* VHS, with seller-supplied MASmedia / SHARK TV production metadata; cross-checked its 40-minute Dortmund trainwriting description against the 1997 *BOMBER* review.
+- Recorded the *King of the Line* ISBN lead and separated contemporary interface description from secondary catalogue metadata.
+- Preserved the 1994 Google Video reference as an unresolved historical link; no surviving copy or original ID is claimed.
+- Added VR-013. No media has been watched, copied, digitized or cleared for reuse.
+
+
+
+## Research deepening — Dortmund publication bibliography and visual corpus
+
+- Added a source-audited dossier distinguishing *Da kukse wa* (1987), *Graffiti Dortmund: Die Kunst der Sachbeschädigung* (1996), *IRON CITY* (2002), the MASON retrospective (2020) and *RIO — The Process of Writing* (2023).
+- Recorded the 1996 title's unresolved 80-page (ILOVEGRAFFITI 2009) versus 160-page (retail catalogue) discrepancy; no extent was silently selected.
+- Documented the low-resolution Issuu preview trail without treating historical free viewing as a license or current access guarantee.
+- Added VR-014; page-level visual inspection and item-level image permissions remain outstanding.
+
+
+
+## Research deepening — *Da kukse wa* 2020 reprint access
+
+- Verified original 1987 publication roles and interviewees against Marianne Brentzel's author page and excerpt.
+- Confirmed the 2020 reprint / online brochure provenance through the official Dortmunder U *I WAS HERE* exhibition page.
+- Located a current specialist-retailer listing for the 36-page German A4 landscape second edition (€75, listed in stock at time checked); page count and “identical except preface” remain seller claims pending collation.
+- Added VR-015 and a dedicated access dossier; no images were copied and no reproduction rights inferred.
+
+
+## Research deepening — Dortmund 1987 local writing glossary
+
+- Extracted the six-term “Writer-ABC” from Marianne Brentzel's official *Da kukse wa* excerpt: black-book, charakter, getting fame, piece, tag and whole car.
+- Mapped terms to distinct archive/practice, figurative, motivation, artwork/lettering and train-format concepts; no universal definitions or generator parameters inferred.
+- Added a dedicated glossary dossier, cross-reference in GRAFFITI_FORMATS.md and VR-016.
+
+
+## Research deepening — Dortmund *ALL SURFACE* tagging and handstyle corpus
+
+- Added a dedicated dossier for *ALL SURFACE – Tagging in Dortmund* (2022), recording publisher metadata, advertised 1980s/1990s tag corpus and attributed SHARK / Amsterdam recollection with explicit evidence limits.
+- Added VR-017 and an item-level inspection protocol separating tags/handstyles from pieces and train formats.
+- Identified Stadtarchiv Dortmund / Archive.NRW as a contextual photograph, film and press archive route; recorded the online CC BY-SA 4.0 statement without assuming that a specific graffiti holding exists or that off-site items share that license.
+- No book pages or images copied; no signature cloning or reuse rights inferred.
+
+
+## Research deepening — INGRID database and Dortmund image corpus route
+
+- Identified the DFG-funded University of Paderborn / KIT INGRID database as a free scholarly access route with more than 100,000 annotated graffiti records on the official project page and explicit Dortmund coverage in research literature.
+- Preserved corpus-size snapshots from DBIS and a 2023 research article rather than forcing one total; added a stratified Dortmund query and item-level rights protocol.
+- Recorded the JavaScript-only database interface and timed-out SPARQL endpoint as access limitations; no Dortmund records or images were inspected.
+- Added VR-018 and a separate MK&G Dortmund urban-photography context route (VR-019); explicitly did not claim graffiti content or reuse rights for those contextual photographs.
+
+
+## Research deepening — INGRID ontology, annotation and licensing
+
+- Inspected the official INGRID ontology and illustrated research manual; documented its dimensions for graffiti type, lettering style, design elements, context, materiality, technique, language/function, chronology and provenance.
+- Recorded the human annotation method and the manual's explicit caution about ambiguity in style and genre labels.
+- Clarified the 2023 article's licensing report: original images CC BY-SA 4.0, generated metadata CC0, knowledge graph CC BY 4.0, subject to current item-level credit and license checks.
+- Added a proposed INGRID-to-NIGHTSHIFT crosswalk as a research aid only; no editor implementation or record-level visual analysis is claimed.
+
+
+## INGRID promoted to P1 — corpus coverage, rights and editor research workflow
+
+- Promoted INGRID to NIGHTSHIFT's foundational research stream rather than treating it as one source among many.
+- Added the INGRID → NIGHTSHIFT ontology crosswalk and Dortmund-first research workflow, including image-level distinctions, annotation depth, missingness, near-duplicate handling and stratified sampling.
+- Corrected corpus metrics: official page approx. 150,000 images / 99,962 annotated as of July 2023; 2023 article approx. 136,000 photographs across nine named cities including Dortmund; July 2022 graph snapshot 130,689 graffiti resources / 178 cities / 682,748 image files. These are distinct snapshots and units.
+- Clarified public subset and license layers (images CC BY-SA 4.0, metadata CC0, graph CC BY 4.0 in the 2023 paper); commercial product use requires written rights clarification.
+- No Dortmund query result count or record-level visual sample is claimed yet.
+
+
+## 2026-11-14 — INGRID Dortmund SPARQL query pack (W02.32)
+
+- Inspected the official INGRID-KG SPARQL query catalogue and its documented examples for city/date, type, style, carrier medium, technique, colour and lettering text.
+- Added six Dortmund-adapted SPARQL templates: corpus count, recording-year distribution, type distribution, lettering-style distribution, technique × medium and a manual-inspection sample.
+- Recorded the endpoint execution failure in the current research client as an access limitation, not as endpoint downtime; no Dortmund result counts are claimed.
+- Added explicit safeguards for recording date vs. creation date, missing annotation values, collection bias, and type/style distinctions.
+
+
+## 2026-11-14 — INGRID query audit and C01 kickoff
+
+- Re-audited the Dortmund SPARQL query pack against the official INGRID-KG query catalogue (examples 18, 20–23, 31–32) and the upstream `dice-group/Ingrid` RDF converter.
+- Identified a namespace discrepancy between the catalogue's `grfo:` query examples and the converter's `grfp:` annotation-property namespace. Marked dependent queries provisional pending live graph confirmation.
+- Recorded two public-endpoint access failures and local DNS failure; no result counts are claimed.
+- Opened GitHub issue #4 for Claude's C01 / 0.7A-T07 canonical Three.js edit loop, with required behavior and acceptance criteria.
+
+
 ## 2026-11-14 — 0.7A-T07: first end-to-end editor command loop
 
 - Editor store and command bus (`src/model/`): typed command envelopes, expected-revision checks, atomic validate-then-commit, canonical patches, undo/redo through the validator, preview without persistence, save/load.
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
 - 0.7A first-slice release gate met. Tests: 98 passing plus scripted browser edit loop.
-

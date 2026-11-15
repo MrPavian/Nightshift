@@ -84,3 +84,14 @@ A broad term for a wall-based artwork, often commissioned or community-based, bu
 ## Cross-reference: Research Synthesis 01
 
 For the connected historical argument, source hierarchy, terminology cautions and NIGHTSHIFT data-model implications, see [Research Synthesis 01 — From Handstyle to Subway Composition](RESEARCH_SYNTHESIS_01_HANDSTYLE_TO_SUBWAY_COMPOSITION.md). It cross-links the current topic with oral histories, subway formats, style development and generator design.
+
+## Dortmund period glossary — *Da kukse wa* (1987)
+
+Marianne Brentzel's official excerpt from *Da kukse wa* includes a period “Writer-ABC”: **black-book** (book for sketches and photographs of painted / unpainted works), **charakter** (comic-like sprayed figure), **getting fame** (writer's goal of becoming famous), **piece** (large graffiti picture), **tag** (writer's name lettering), and **whole car** (completely painted train). These are documented as one Dortmund glossary snapshot from 1987, not universal definitions. The terms reinforce the separation of archive/practice, figurative content, motivation, lettering/artwork form and vehicle-scale format. See [Dortmund Writing Vocabulary — 1987 Local Glossary](DORTMUND_WRITING_VOCABULARY_1987_01.md).
+
+Source: Marianne Brentzel, *Da kukse wa* excerpt: https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+
+
+## Dortmund tag corpus — *ALL SURFACE* (2022)
+
+*ALL SURFACE – Tagging in Dortmund* is a distinct 1980s/1990s marker and aerosol tag / handstyle corpus. Keep this material separate from piece, panel and wholecar composition. A tag is a writer's name/signature practice; it is not merely a small piece or a preset style. Formal comparisons should be based on multiple inspected examples and described neutrally (e.g. rhythm, slant, compression, continuity and terminal behavior), without copying identifiable writers' signatures. Publisher descriptions do not substitute for page-level inspection. See [Dortmund ALL SURFACE — Tagging and Handstyle Corpus](DORTMUND_ALL_SURFACE_TAGGING_CORPUS_01.md).

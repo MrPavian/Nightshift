@@ -34,7 +34,23 @@ Always distinguish:
 
 Terms vary across eras, boroughs, crews and individual writers. Record variation instead of forcing false universal definitions.
 
+## INGRID regional research programme
+
+Dortmund is the starting pilot, not the limit. The INGRID programme expands from Dortmund through the Ruhrgebiet and NRW into national comparison scenes. Published INGRID corpus cities include Hamm, Dortmund, Münster, Cologne and Paderborn alongside Berlin, Leipzig, Mannheim and Munich; other regional cities remain discovery targets until verified by live query. The programme treats graffiti research as continuous education in writing culture and style development, translating findings into editor requirements only after evidence review.
+
+- [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md)
+- [INGRID ontology → NIGHTSHIFT crosswalk](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+- [INGRID Research Record Model 01 — Provenance, dates, observations and rights](INGRID_RESEARCH_RECORD_MODEL_01.md)
+- [Machine-readable INGRID research record schema v1](../contracts/ingrid-research-record.v1.schema.json)
+- [Synthetic INGRID relationship fixture v1](../contracts/fixtures/ingrid-research-record.relationships.v1.json)
+- [INGRID regional SPARQL query pack — Dortmund pilot](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
+
 ## Current research files
+
+- [Handstyle, Motor Plans and Vector Generation — NIGHTSHIFT Model 01](HANDSTYLE_MOTOR_AND_VECTOR_MODEL_01.md)
+- [Handstyle Proof Sheet Specification 01 — Deterministic fixtures and acceptance tests](HANDSTYLE_PROOF_SHEET_SPEC_01.md)
+
+- [Ruhrgebiet Writing — Dortmund, TUF and regional circulation](RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md)
 
 - [NYC Graffiti and Hardcore Crossover, 1980s–1990s — Research Dossier 01](NYC_GRAFFITI_HARDCORE_CROSSOVER_01.md)
 
@@ -120,12 +136,21 @@ Added a source-backed dossier on Skills, Styles for Miles, Move, G.S.E.L., Twelv
 
 Added a source-led dossier on the NYHC/graffiti overlap, including HYPE/Mackie Jayson, SANE/SMITH, MQ/MKUE and DMS, SMOG, FCEE, HUSH and JERE; band/venue/flyer and skate connections; and a clear distinction between documented individual links and unverified complete crew chronologies. The Brooklyn Bridge date uses Roger Smith's 2019 first-person recollection (1988), retaining the conflicting 2017 secondary date as a discrepancy.
 
+- [Martha Cooper Library — OPAC Record Check 01](MCL_OPAC_RECORD_CHECK_01.md)
+
+- [German Graffiti Periodicals — Hamburg Network & Stylefile Continuity 01](GERMAN_GRAFFITI_PERIODICALS_HAMBURG_STYLEFILE_01.md)
+
 ## Status
 
 Initial source-backed research pass. This is a living research base, not a definitive or exhaustive history. Expand entries only with traceable sources and preserve disagreements.
 
 
 ## Research development log
+
+### 2026-11 — Deterministic handstyle proof specification
+
+Added a bounded implementation contract for synthetic I/L/S/A/R fixtures, stable stroke IDs, explicit lifts and crossings, width-profile rendering, seeded variation, canonical edit commands, SVG round-trip tests and six proof sheets. HST-01 is tracked as GitHub issue #5 and depends on completion of the canonical edit loop in issue #4.
+
 
 ### 2026-11 — Letter-pair logic and handstyle movement
 
@@ -368,3 +393,157 @@ Added a wider scene synthesis connecting downtown skate/hip-hop spaces, the Broo
 ### 2026-11 — NYC graffiti, skateboarding and alternative media networks
 
 Added a cross-scene dossier based on Abram Coetsee's Cornell dissertation, Letterform Archive's graffiti-zine research, Adam Gopnik's 1990 post-subway report, Eli Gesner's retrospective interview and the Harsh Forms graffiti/hardcore network investigation. It models subway routes, meeting points, zines, photo exchange and skateboarding as overlapping but distinct infrastructures; all participant recollections and design inferences are explicitly labelled.
+
+
+- [Dortmund Style — Historical Evidence and Generator Translation 01](DORTMUND_STYLE_EVIDENCE_AND_GENERATOR_TRANSLATION_01.md)
+
+### 2026-11 — Dortmund Style evidence and generator translation
+
+Added a source-graded Dortmund / Ruhrgebiet dossier using the KIT dissertation, the 1987 *Da kukse wa* author record, 1989 contemporary press, the KWI regional essay, ATOM ONE's first-person retrospective and a Too Strong interview. The generator implications are explicitly marked as design hypotheses; no fixed metrics, letter topology or image rights are inferred.
+
+
+- [Dortmund Visual Corpus — Source Access and Analysis Plan 01](DORTMUND_VISUAL_CORPUS_AND_SOURCE_ACCESS_01.md)
+
+### 2026-11 — Dortmund visual corpus and source access
+
+Added a rights-aware visual source map separating *Da kukse wa*'s piece / wall documentation from *ALL SURFACE*'s 1980s/1990s tag and handstyle corpus. Recorded the linked digital flipbook and exhibition access limitation, publication metadata, historical cross-checks and a staged visual-analysis protocol.
+
+
+- [Dortmund Tagging Archive — Bibliographic Verification and Research Implications 01](DORTMUND_TAGGING_ARCHIVE_AND_BIBLIOGRAPHY_01.md)
+
+### 2026-11 — Dortmund tagging archive and bibliography
+
+Added a source-graded bibliography dossier using the Deutsche Nationalbibliografie and the Stiftung Historische Museen Hamburg event record. Recorded the *ALL SURFACE* page-count discrepancy (238 DNB vs. 244 retail/event), strengthened *Da kukse wa* reprint provenance through the official Dortmunder U exhibition page, and clarified the limits of Amsterdam-influence and TUF membership claims.
+
+
+- [Dortmund Style Analysis — Scholarly Chapters, Interviews and Source Limits 01](DORTMUND_STYLE_ANALYSIS_AND_FIRST_PERSON_SOURCES_01.md)
+
+### 2026-11 — Dortmund style analysis and first-person source map
+
+Added source-level analysis of the Dortmund chapters in *Dirty Hands* (2022), including Hinz's published formal criteria, Grothus's longitudinal MASON case and the dated 2020 interview trail cited in the chapter. Added Lintzen's 2025 ethnography as a major scene-history source route. Full paid chapters and figures remain uninspected; design implications remain provisional.
+
+
+- [Dortmund Oral History — Documentary Episode Access Map 01](DORTMUND_ORAL_HISTORY_DOCUMENTARY_ACCESS_01.md)
+
+### 2026-11 — Dortmund oral-history documentary access
+
+Recovered two accessible English-subtitled uploads from *The Rise of Graffiti Writing* covering first-generation Dortmund, Berlin and Frankfurt writers and Dortmund trainwriting. Cross-linked the dated SHARK interview citation in Hinz (2022). Episode metadata is verified; video contents have not yet been watched or transcribed.
+
+
+- [Dortmund — MASON and the Longitudinal Publication Corpus 01](DORTMUND_MASON_LONGITUDINAL_PUBLICATION_CORPUS_01.md)
+
+### 2026-11 — Dortmund MASON longitudinal publication corpus
+
+Mapped the 1996 *Graffiti Dortmund* book, the 2020 *MASON — The Essence of Writing 1986–2019* catalogue and Grothus's 2022 longitudinal study. Added VR-010 with explicit access and rights limitations; the individual MASON case remains separate from a general Dortmund style profile.
+
+
+- [Dortmund Oral History and Visual Chronology — ATOM ONE, TWISTER and IRON CITY 01](DORTMUND_ORAL_HISTORY_AND_VISUAL_CHRONOLOGY_01.md)
+
+### 2026-11 — Dortmund oral history and visual chronology
+
+Added two long-form ILOVEGRAFFITI interview routes (ATOM ONE #040 and TWISTER / JEZUS / PRIDE #059), and identified *IRON CITY* (2002) as a key 1983–2002 regional visual chronology. Added VR-011 and clarified that podcast summaries and publisher descriptions are not substitutes for listening or page-level inspection. Corrected the unresolved Episode 21 / trainwriting upload numbering distinction.
+
+
+- [Dortmund Trainwriting — Contemporary 1997–1999 Evidence and Archive Access 01](DORTMUND_TRAINWRITING_CONTEMPORARY_SOURCES_1997_1999_01.md)
+
+### 2026-11 — Dortmund trainwriting contemporary sources, 1997–1999
+
+Added an inspected 1997 *BOMBER* issue review of Dortmund's *Rolling Thunder 001* train video and interactive *King of the Line* CD-ROM, plus a dated March 1999 *Endstation* report on Dortmund trainwriting in 1996–1999. Added VR-012 and an MCL catalogue search-result route for *IRON CITY*. Single-source estimates and rights limitations are explicit.
+
+
+- [Dortmund Moving-Image Archive — Rolling Thunder, King of the Line and Graffiti Dortmund 1994 (W02.24)](DORTMUND_MOVING_IMAGE_ARCHIVE_1994_1997_01.md)
+
+### 2026-11 — Dortmund moving-image archive and media access
+
+Added a provenance-aware access dossier for the 1997-reviewed *Rolling Thunder 001* VHS, the *King of the Line* two-CD-ROM archive and the unresolved *Graffiti Dortmund 1994* Google Video lead. A current specialist retailer listing provides a concrete used-VHS access route and credits MASmedia / SHARK TV; no media has been watched, digitized or cleared for reuse. Product availability is time-sensitive, and historical Google Video availability is not treated as a surviving copy.
+
+
+- [Dortmund Graffiti Publications — 1996 Bibliographic Discrepancy and Later Visual Corpus (W02.25)](DORTMUND_PUBLICATION_BIBLIOGRAPHY_AND_VISUAL_CORPUS_01.md)
+
+### 2026-11 — Dortmund publication bibliography and visual corpus
+
+Audited the 1996 *Graffiti Dortmund* publication trail and identified an unresolved 80-page (2009 ILOVEGRAFFITI description) versus 160-page (ISBN retail catalogue) discrepancy. Distinguished it from *Da kukse wa* (1987), *IRON CITY* (2002), the MASON retrospective (2020) and *RIO — The Process of Writing* (2023). No page-level visual analysis or image rights are claimed.
+
+
+- [Da kukse wa (1987) — 2020 Reprint, Access and Bibliographic Verification (W02.26)](DORTMUND_DA_KUKSE_WA_2020_REPRINT_ACCESS_01.md)
+
+### 2026-11 — *Da kukse wa* reprint and legitimate visual access
+
+Verified the original 1987 publication against Marianne Brentzel's author page and the 2020 reprint's exhibition provenance against the official Dortmunder U *I WAS HERE* page. A specialist retailer lists a 36-page German A4 landscape second edition, currently €75/in stock at time checked; page count and “identical except preface” remain seller-supplied pending collation. This provides a practical legitimate-copy route for future page-level research; no images were copied.
+
+
+- [Dortmund Writing Vocabulary — 1987 Local Glossary and Taxonomy Notes (W02.27)](DORTMUND_WRITING_VOCABULARY_1987_01.md)
+
+### 2026-11 — Dortmund 1987 local writing glossary
+
+Extracted the “Writer-ABC” in Marianne Brentzel's official *Da kukse wa* excerpt and mapped its six terms to NIGHTSHIFT's existing separation of archive/practice, figurative content, motivation, lettering/artwork and vehicle format. The glossary is retained as a dated local vocabulary snapshot, not a universal taxonomy. Historical newspaper framing is distinguished from independently verified statistics or events.
+
+
+- [Dortmund ALL SURFACE — Tagging and Handstyle Corpus (W02.28)](DORTMUND_ALL_SURFACE_TAGGING_CORPUS_01.md)
+
+### 2026-11 — Dortmund ALL SURFACE tagging and handstyle corpus
+
+Added a focused source dossier for *ALL SURFACE* (2022), separating publisher metadata and attributed SHARK recollection from direct visual evidence. Defined an item-level handstyle inspection protocol and rights safeguards. Added Stadtarchiv Dortmund / Archive.NRW as a contextual photo, film and press archive route, while explicitly avoiding claims that a specific graffiti collection exists.
+
+
+- [INGRID — German Graffiti Research Database and Dortmund Corpus Route (W02.29)](INGRID_GERMAN_GRAFFITI_DATABASE_DORTMUND_CORPUS_01.md)
+
+### 2026-11 — INGRID research database and Dortmund corpus route
+
+Identified the University of Paderborn / KIT INGRID database as a free scholarly access route with more than 100,000 annotated graffiti records (official project-page figure), including Dortmund in the research corpus. Preserved dated corpus-size snapshots from DBIS and a 2023 article. Added a stratified query protocol and item-level rights cautions; the JavaScript interface and SPARQL endpoint were not accessible for record-level inspection in this pass.
+
+
+## Standing research principle — graffiti literacy and editor learning
+
+NIGHTSHIFT's research library is also a continuous learning resource on writing culture, graffiti history, style development, materials and regional scenes. Each new research pass should deepen understanding first and translate it into editor design only where the evidence supports it. Distinguish historical fact, attributed practitioner testimony, scholarly interpretation, visual observation and engineering inference. Preserve local and period variation; never flatten individual handstyles into universal presets or clone identifiable writers' signatures. The work order records the six learning tracks, required research outputs and current sequence.
+
+
+### 2026-11 — INGRID research record model
+
+Added a machine-readable JSON Schema v1 and a synthetic relationship fixture covering multi-object photographs, alternate views, partial graffiti, photo series, near-duplicate edges, separate date claims, missingness and use-specific rights decisions. The fixture contains no real graffiti imagery or identifiable writer data.
+
+Added a provenance-aware data contract separating source archive records, photo assets, graffiti objects, partial graffiti, photo series, source annotations, normalized mappings, researcher observations, historical claims and item-level rights decisions. Added typed date claims, explicit missingness states, non-destructive duplicate edges, a research-to-editor promotion gate and a minimal synthetic fixture plan. The schema is a NIGHTSHIFT proposal; live EasyDB field availability remains unverified.
+
+
+### 2026-11 — INGRID ontology, annotation and licensing review
+
+Inspected INGRID's official ontology and illustrated manual, documenting its distinction between graffiti type, lettering style, design elements, context, materiality, technique, language/function and provenance. Recorded the interdisciplinary human annotation process and its stated ambiguity limits. Clarified the published CC BY-SA 4.0 image / CC0 metadata / CC BY 4.0 knowledge-graph licensing, with mandatory item-level checks. Added a proposed crosswalk to NIGHTSHIFT as a research aid, not implemented editor functionality.
+
+
+- [INGRID → NIGHTSHIFT — Ontology Crosswalk and Research Workflow (W02.31)](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+
+### 2026-11 — INGRID as NIGHTSHIFT's foundational research stream
+
+Promoted INGRID to P1. Added an ontology crosswalk, a Dortmund-first corpus inventory plan, a stratified visual study protocol and a six-deliverable research programme. Clarified the 150,000-image / 99,962 annotated-image official inventory snapshot, the 2023 article's approximately 136,000-image multi-city snapshot including Dortmund, and the distinct July 2022 knowledge-graph metrics. License layers and public-image restrictions are explicitly separated.
+
+
+- [INGRID-KG — Dortmund SPARQL Query Pack 01 (W02.32)](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
+
+### 2026-11 — INGRID query engineering and empirical inventory preparation
+
+Inspected the official INGRID-KG SPARQL query catalogue and upstream RDF-conversion code. Confirmed the catalogue's city/date query pattern (examples 20–21), type/carrier-medium/color queries (18, 22–23), and the documented `hasSyleElement` spelling (31–32). The converter maps German annotation fields to `hasLetterStyle`, `hasTechnology` and `inInventory`, but its `grfp:` namespace mapping differs from the catalogue's `grfo:` examples; live graph reconciliation is required before trusting those templates. Two endpoint access attempts timed out/inaccessible and the local runtime could not resolve the host. No Dortmund counts or trends are claimed. Recording date is distinguished from creator-supplied date.
+
+
+### Heidelberg writing history and southern German influence
+
+- [Heidelberg Writing — History, Regional Influence and Editor Research 01](HEIDELBERG_WRITING_HISTORY_AND_STYLE_RESEARCH_01.md) — source-graded chronology, Heidelberg Style characteristics, regional exchange with Mannheim/Karlsruhe, Torch archive leads, first-train verification and non-attributive editor exercises.
+
+### INGRID ontology audit update
+
+- [INGRID Regional SPARQL Query Pack 01](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md) — updated with direct inspection of the published ontology and current upstream RDF converter; records the precise namespace and style-element spelling inconsistencies, the Zenodo snapshot route and remaining live-graph verification blocker.
+
+
+## National German scene comparison — Munich, Stuttgart, Berlin / GDR and Hamburg
+
+- [German Writing Scenes — Munich, Stuttgart, Berlin / East Germany and Hamburg 01](GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md) — source-graded first synthesis of early scene chronologies, train culture, regional networks, Berlin/GDR distinctions, Hamburg's publication archive and neutral editor research questions.
+
+
+### Hamburg and Berlin deep research update
+
+The national scene dossier now contains a source-attributed deep pass on Hamburg's 1980s/1990s chronology and Simplestyle / DAIM's 3D development, the Hamburg museum archive and mapped historic locations, Berlin's divided-city chronology, Berlin's writing magazines (SPRAY CITY, OVERKILL, BACKJUMPS, DECADES), and a documented Dortmund–Berlin trainwriting connection attributed to SHARK in 1987. See [German Writing Scenes — Munich, Stuttgart, Berlin / East Germany and Hamburg 01](GERMAN_SCENES_MUNICH_STUTTGART_BERLIN_EAST_HAMBURG_01.md), sections 9–10.
+
+Regional follow-up: the Ruhrgebiet dossier now adds source-based evidence for Essen's contested Steele / S-Bahn origins and attributed 1992 youth-centre piece, Witten's first-person Bunkerwelt / tagging connections, and a provisional Bochum 1982 graffiti-photo lead. These are explicitly graded and not promoted to settled city chronologies.
+
+The Ruhrgebiet dossier now includes Hamm's provisional 1988/89 chronology and named crews, Gelsenkirchen's DRK / Die RappelKannen lead (1991–94), Herne's documented 2025 Berlin–Ruhrgebiet writing collaboration, and Pottporus as a contemporary regional institution. Evidence grades and distinctions between Writing, murals, Sgraffiti and legal-wall programmes are explicit.
+
+The Ruhrgebiet dossier adds a visual-archive pass: ALL SURFACE (Dortmund tags / handstyles, 500+ photographs), the 2020 Da kukse wa second edition, MASON/RIO's documented geometric reduction (abstracted only into neutral construction principles), and a Bochum iOR practitioner's account of local crew names and legal-wall culture. This makes handstyle a first-class research track rather than a minor subsection of piece generation.
