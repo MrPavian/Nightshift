@@ -595,3 +595,10 @@ Added a focused source-critical supplement comparing the contemporary 1987 *Da k
 
 Located a full digital documentation route for *Da kukse wa* that explicitly reserves the authors'/publisher's rights, confirmed the *Iron City* entry in the Martha Cooper Library catalogue while noting that its live library server was unavailable, and compared current *ALL SURFACE* retailer metadata including a page-count discrepancy. No pages were visually coded and no images were copied. Access, inspection and reuse rights remain separate.
 
+
+
+- [Dortmund–Amsterdam and the Ruhrgebiet — Transfer, parallel development and regional evidence 01](DORTMUND_AMSTERDAM_TRANSFER_AND_RUHRGEBIET_01.md)
+
+### 2026-11 — Dortmund–Amsterdam exchange and regional evidence
+
+Added a source-critical dossier distinguishing Amsterdam's locally rooted late-1970s/early-1980s tagging history, Dortmund's contemporary 1987 documentation and the later scholarly claim that SHARK's mid-1980s Amsterdam visit influenced Dortmund writers. The exact mechanism and visual effects remain unverified; no shared style grammar or generator preset is claimed. Includes a prioritized verification queue and regional research method.
