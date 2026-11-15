@@ -1,53 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1188" viewBox="0 0 1680 1188">
-<defs>
- <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9d2c8" stroke-width="1"/></pattern>
- <style>
- .h{font:700 25px Arial,sans-serif;fill:#f8f5ee}.t{font:20px Arial,sans-serif;fill:#171717}.s{font:16px Arial,sans-serif;fill:#333}.n{font:700 22px Arial,sans-serif;fill:#171717}.panel{fill:#fbf8f1;stroke:#222;stroke-width:2}.purple{stroke:#8756a7;stroke-width:3;fill:none}.yellow{stroke:#d1ad00;stroke-width:3;fill:none}.letter{stroke:#111;stroke-width:13;fill:none;stroke-linejoin:round;stroke-linecap:round}
- </style>
-</defs>
-<rect width="1680" height="1188" fill="#eee9df"/><rect width="1680" height="1188" fill="url(#grid)" opacity=".65"/>
-<rect x="24" y="24" width="1632" height="1140" fill="none" stroke="#171717" stroke-width="5"/>
-<text x="58" y="88" font-family="Arial" font-size="52" font-weight="900" fill="#111">NIGHTSHIFT</text>
-<text x="60" y="124" font-family="Arial" font-size="24" font-weight="bold" fill="#9c7d00">LETTER CONSTRUCTION ACADEMY</text>
-<text x="1620" y="82" text-anchor="end" font-family="Arial" font-size="42" font-weight="900" fill="#111">BUCHSTABENSTUDIE: A</text>
-<text x="1620" y="118" text-anchor="end" class="s">Referenzstandard · MASTER CONTROL PROMPT 01 · Version 1.0</text>
-<!-- panels -->
-<g>
-<rect class="panel" x="48" y="154" width="510" height="270"/><rect x="48" y="154" width="510" height="42" fill="#171717"/><text class="h" x="68" y="184">01 · GRUNDFORM</text>
-<path class="letter" d="M170 365L270 215L370 365M218 294H322"/>
-<path class="purple" d="M170 365L270 215L370 365M218 294H322"/><path class="yellow" d="M140 365H400M270 205V380M150 215H390"/>
-<text class="s" x="78" y="400">Neutrale geometrische Referenzform – ohne Effekte</text>
-<rect class="panel" x="585" y="154" width="510" height="270"/><rect x="585" y="154" width="510" height="42" fill="#171717"/><text class="h" x="605" y="184">02 · BUCHSTABENANATOMIE</text>
-<path class="letter" d="M710 365L810 215L910 365M758 294H862"/>
-<path class="purple" d="M810 215L810 200M745 310L700 310M880 345L930 345M810 275L850 255M760 365L735 382M860 365L885 382"/>
-<text class="s" x="825" y="210">Spitze / Apex</text><text class="s" x="615" y="304">linker Schenkel</text><text class="s" x="935" y="350">rechter Schenkel</text><text class="s" x="875" y="250">Innenraum / Punze</text><text class="s" x="615" y="390">Querbalken</text><text class="s" x="700" y="410">Fuß / Abschluss</text>
-<rect class="panel" x="1122" y="154" width="510" height="270"/><rect x="1122" y="154" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="184">03 · PROPORTIONEN &amp; RASTER</text>
-<path class="letter" d="M1185 365L1265 235L1345 365M1223 310H1307"/>
-<path class="yellow" d="M1168 235H1360M1168 365H1360"/><path class="purple" d="M1168 310H1360M1265 220V380"/>
-<text class="s" x="1370" y="242">Versalhöhe</text><text class="s" x="1370" y="317">Querbalkenlage</text><text class="s" x="1370" y="372">Grundlinie</text>
-<text class="s" x="1145" y="402">Breite und Balkenlage variieren je nach Entwurf.</text>
-<rect class="panel" x="48" y="446" width="510" height="270"/><rect x="48" y="446" width="510" height="42" fill="#171717"/><text class="h" x="68" y="476">04 · KONSTRUKTIONSANALYSE</text>
-<g transform="translate(72 520)"><path d="M0 125L32 15L64 125" class="purple"/><path d="M85 125L117 15L149 125" stroke="#111" stroke-width="8"/><path d="M170 125L202 15L234 125M185 75H219" stroke="#111" stroke-width="8"/><path d="M255 125L287 15L319 125M270 75H304" stroke="#111" stroke-width="15" stroke-linejoin="round"/><path d="M340 125L372 15L404 125M355 75H389" stroke="#111" stroke-width="15" stroke-linejoin="round"/></g>
-<text class="s" x="90" y="690">1 Skelett · 2 Strichstärke · 3 Querbalken · 4 Kontur · 5 Grundform</text>
-<rect class="panel" x="585" y="446" width="510" height="270"/><rect x="585" y="446" width="510" height="42" fill="#171717"/><text class="h" x="605" y="476">05 · FORMVARIATIONEN</text>
-<g fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"><path d="M610 650L635 535L660 650M620 610H650"/><path d="M680 650L725 535L770 650M695 610H755"/><path d="M790 650L850 535L900 650M815 610H875"/><path d="M900 650L945 535L990 650M915 580H975"/><path d="M1010 650Q1035 535 1060 650M1018 610Q1035 600 1052 610"/></g>
-<text class="s" x="615" y="690">Sehr schmal · breit · geneigt · hoher Querbalken · organisch</text>
-<rect class="panel" x="1122" y="446" width="510" height="270"/><rect x="1122" y="446" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="476">06 · FORMCHARAKTER</text>
-<g class="t"><text x="1150" y="535">Geometrisch</text><text x="1150" y="575">Organisch</text><text x="1150" y="615">Kompakt</text><text x="1150" y="655">Dynamisch</text></g>
-<g class="s"><text x="1335" y="535">klar, technisch, stabil</text><text x="1335" y="575">weichere Übergänge</text><text x="1335" y="615">dicht, kräftig</text><text x="1335" y="655">geneigt, spannungsvoll</text></g>
-<rect class="panel" x="48" y="738" width="510" height="270"/><rect x="48" y="738" width="510" height="42" fill="#171717"/><text class="h" x="68" y="768">07 · KALLIGRAFIE &amp; DUKTUS</text>
-<g fill="none" stroke="#111" stroke-linecap="round"><path d="M120 900L175 820L230 900M145 870H205" stroke-width="15"/><path d="M300 900L355 820L410 900M325 870H385" stroke-width="5"/></g>
-<path class="purple" d="M120 915Q175 940 230 915M300 915Q355 940 410 915"/>
-<text class="s" x="75" y="950">Werkzeug, Winkel und Rhythmus beeinflussen den Duktus.</text>
-<text class="s" x="75" y="972">Bewegungsannahmen bleiben hier Hypothesen.</text>
-<text class="s" x="75" y="994">Statische Konturen beweisen keine Strichreihenfolge.</text>
-<rect class="panel" x="585" y="738" width="510" height="270"/><rect x="585" y="738" width="510" height="42" fill="#171717"/><text class="h" x="605" y="768">08 · GRAFFITI-TRANSFER</text>
-<g font-family="Arial" font-weight="900" text-anchor="middle"><text x="700" y="895" font-size="100" fill="#111" stroke="#111" stroke-width="2">A</text><text x="840" y="895" font-size="100" fill="#d5d0c6" stroke="#111" stroke-width="10" paint-order="stroke">A</text><text x="990" y="895" font-size="100" fill="#eee" stroke="#8756a7" stroke-width="5" paint-order="stroke">A</text></g>
-<text class="s" x="700" y="945" text-anchor="middle">Grundform</text><text class="s" x="840" y="945" text-anchor="middle">Block-Studie</text><text class="s" x="990" y="945" text-anchor="middle">freie Interpretation</text>
-<rect class="panel" x="1122" y="738" width="510" height="270"/><rect x="1122" y="738" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="768">09 · LERNKONTROLLE</text>
-<g class="t"><text x="1150" y="830">□ A im Raster konstruieren</text><text x="1150" y="875">□ Drei Breitenvarianten zeichnen</text><text x="1150" y="920">□ Mit zwei Werkzeugen erproben</text><text x="1150" y="965">□ Eine eigene Blockform entwickeln</text></g>
-</g>
-<rect x="48" y="1030" width="1584" height="88" fill="#171717"/>
-<text x="840" y="1085" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#fff">KONSTRUKTION VOR DEKORATION · VERSTEHEN · VARIIEREN · ANWENDEN</text>
-<text x="1620" y="1145" text-anchor="end" class="s">NIGHTSHIFT · ACADEMY · STUDY A · 01</text>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9d2c8" stroke-width="1"/></pattern>
+<style>
+.h{font:700 22px Arial,sans-serif;fill:#fff}.title{font:900 48px Arial,sans-serif;fill:#111}.sub{font:700 22px Arial,sans-serif;fill:#9b7800}.t{font:18px Arial,sans-serif;fill:#171717}.s{font:15px Arial,sans-serif;fill:#333}.p{fill:#fbf8f1;stroke:#222;stroke-width:2}.v{stroke:#8756a7;stroke-width:3;fill:none}.y{stroke:#d1ad00;stroke-width:3;fill:none}.b{stroke:#111;stroke-width:12;fill:none;stroke-linejoin:round;stroke-linecap:round}
+</style></defs>
+<rect width="1680" height="1188" fill="#eee9df"/><rect width="1680" height="1188" fill="url(#grid)" opacity=".62"/><rect x="24" y="24" width="1632" height="1140" fill="none" stroke="#171717" stroke-width="5"/>
+<text x="58" y="82" class="title">NIGHTSHIFT</text><text x="60" y="116" class="sub">LETTER CONSTRUCTION ACADEMY · GRAFFITI LETTERING LAB</text>
+<text x="1620" y="76" text-anchor="end" font-family="Arial" font-size="40" font-weight="900" fill="#111">A — LETTER STUDY 01</text><text x="1620" y="112" text-anchor="end" class="s">Vom Buchstabengerüst zur eigenen Graffiti-Form · Master 1.1</text>
+<!-- 01 -->
+<rect class="p" x="48" y="145" width="510" height="260"/><rect x="48" y="145" width="510" height="40" fill="#171717"/><text x="68" y="173" class="h">01 · GRUNDFORM &amp; SKELETT</text>
+<path d="M170 350L270 205L370 350M218 296H322" class="b"/><path d="M170 350L270 205L370 350M218 296H322" class="v"/><path d="M145 350H395M270 194V365" class="y"/><text x="75" y="382" class="s">Neutrales A als Ausgangspunkt – noch kein Graffiti-Stil.</text>
+<!-- 02 -->
+<rect class="p" x="585" y="145" width="510" height="260"/><rect x="585" y="145" width="510" height="40" fill="#171717"/><text x="605" y="173" class="h">02 · ANATOMIE &amp; NEGATIVFORM</text>
+<path d="M710 350L810 205L910 350M758 296H862" class="b"/><path d="M810 205L810 193M742 313L690 313M880 335L934 335M810 267L850 250M760 350L735 365M860 350L885 365" class="v"/>
+<text x="825" y="202" class="s">Apex / Spitze</text><text x="610" y="307" class="s">linker Schenkel</text><text x="936" y="340" class="s">rechter Schenkel</text><text x="875" y="248" class="s">Innenraum</text><text x="610" y="385" class="s">Querbalken · Füße / Enden</text>
+<!-- 03 -->
+<rect class="p" x="1122" y="145" width="510" height="260"/><rect x="1122" y="145" width="510" height="40" fill="#171717"/><text x="1142" y="173" class="h">03 · PROPORTIONEN &amp; SPANNUNG</text>
+<path d="M1190 350L1270 220L1350 350M1228 300H1312" class="b"/><path d="M1175 220H1365M1175 350H1365M1270 205V365M1175 300H1365" class="y"/>
+<text x="1380" y="226" class="s">Höhe</text><text x="1380" y="306" class="s">Balkenlage</text><text x="1380" y="355" class="s">Standlinie</text><text x="1145" y="385" class="s">Breite, Neigung und Innenraum steuern den Charakter.</text>
+<!-- 04 -->
+<rect class="p" x="48" y="425" width="510" height="270"/><rect x="48" y="425" width="510" height="40" fill="#171717"/><text x="68" y="453" class="h">04 · KONSTRUKTION ZUM LETTER</text>
+<g transform="translate(72 485)"><path d="M0 115L28 12L56 115" class="v"/><path d="M82 115L110 12L138 115" stroke="#111" stroke-width="7" fill="none" stroke-linejoin="round"/><path d="M164 115L192 12L220 115M177 76H207" stroke="#111" stroke-width="8" fill="none" stroke-linejoin="round"/><path d="M246 115L274 12L302 115M259 76H289" stroke="#111" stroke-width="18" fill="none" stroke-linejoin="round"/><path d="M328 115L356 12L384 115M341 76H371" fill="#111" stroke="#111" stroke-width="5" stroke-linejoin="round"/></g>
+<text x="78" y="635" class="s">1 Skelett · 2 Strichkörper · 3 Querbalken · 4 Kontur · 5 gefüllter Letter</text><text x="78" y="661" class="s">Jeder Schritt baut sichtbar auf dem vorherigen auf.</text>
+<!-- 05 -->
+<rect class="p" x="585" y="425" width="510" height="270"/><rect x="585" y="425" width="510" height="40" fill="#171717"/><text x="605" y="453" class="h">05 · GRAFFITI-LETTERFORMEN</text>
+<g stroke="#111" stroke-width="7" fill="none" stroke-linejoin="round"><path d="M610 635L635 515L660 635M620 590H650"/><path d="M690 635L725 515L760 635M703 585H747"/><path d="M785 635L825 515L875 635M805 585H855"/><path d="M895 635L940 525L985 635M910 570H970"/><path d="M1000 635Q1025 510 1060 635M1010 590Q1035 575 1050 590"/></g>
+<text x="610" y="666" class="s">schmal · breit · geneigt · kantig · organisch</text>
+<!-- 06 -->
+<rect class="p" x="1122" y="425" width="510" height="270"/><rect x="1122" y="425" width="510" height="40" fill="#171717"/><text x="1142" y="453" class="h">06 · STYLE-ENTSCHEIDUNGEN</text>
+<text x="1150" y="510" class="t">Formspannung</text><text x="1370" y="510" class="s">enge / offene Winkel</text><text x="1150" y="550" class="t">Verbindungen</text><text x="1370" y="550" class="s">Abstände / Überlappung</text><text x="1150" y="590" class="t">Rhythmus</text><text x="1370" y="590" class="s">Wiederholung / Kontrast</text><text x="1150" y="630" class="t">Lesbarkeit</text><text x="1370" y="630" class="s">Klarheit / kontrollierte Spannung</text><text x="1150" y="670" class="s">Keine Stil-Schublade ist ein festes Regelwerk.</text>
+<!-- 07 -->
+<rect class="p" x="48" y="715" width="510" height="290"/><rect x="48" y="715" width="510" height="40" fill="#171717"/><text x="68" y="743" class="h">07 · KALLIGRAFIE, HANDSTYLE &amp; DUKTUS</text>
+<path d="M105 895L165 795L225 895M132 855H198" stroke="#111" stroke-width="17" fill="none" stroke-linecap="square"/><path d="M300 895Q355 770 410 895M325 850Q355 835 385 850" stroke="#8756a7" stroke-width="8" fill="none" stroke-linecap="round"/>
+<text x="80" y="930" class="s">Werkzeug und Bewegung prägen Strichkontrast, Rhythmus und Flow.</text><text x="80" y="954" class="s">Kalligrafische Übung ≠ fertiger Graffiti-Handstyle.</text><text x="80" y="978" class="s">Statische Bilder belegen keine Strichreihenfolge.</text>
+<!-- 08 -->
+<rect class="p" x="585" y="715" width="510" height="290"/><rect x="585" y="715" width="510" height="40" fill="#171717"/><text x="605" y="743" class="h">08 · GRAFFITI-ANWENDUNG: DREI EIGENE WEGE</text>
+<path d="M640 890Q665 790 695 890M650 855L685 855" stroke="#111" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M760 890L790 795L835 795L865 890L830 878L812 840L790 890Z" fill="#d7d1c7" stroke="#111" stroke-width="9" stroke-linejoin="round"/><path d="M790 850H835" stroke="#8756a7" stroke-width="6"/>
+<path d="M930 890L955 790L1005 810L1035 890L1000 878L982 845L955 890Z" fill="#eee9df" stroke="#111" stroke-width="8" stroke-linejoin="round"/><path d="M945 865L1018 865M955 790L1005 810" stroke="#8756a7" stroke-width="5" fill="none"/><path d="M1020 800L1040 785M1035 890L1055 900" stroke="#d1ad00" stroke-width="4"/>
+<text x="670" y="930" text-anchor="middle" class="s">Handstyle-</text><text x="670" y="950" text-anchor="middle" class="s">Übung</text><text x="812" y="930" text-anchor="middle" class="s">Block /</text><text x="812" y="950" text-anchor="middle" class="s">Throw-up-Prinzip</text><text x="985" y="930" text-anchor="middle" class="s">Piece-orientierte</text><text x="985" y="950" text-anchor="middle" class="s">Komposition</text><text x="610" y="985" class="s">Parallele Designrichtungen – keine Pflicht-Reihenfolge.</text>
+<!-- 09 -->
+<rect class="p" x="1122" y="715" width="510" height="290"/><rect x="1122" y="715" width="510" height="40" fill="#171717"/><text x="1142" y="743" class="h">09 · GRAFFITI-LERNKONTROLLE</text>
+<text x="1150" y="810" class="t">□ A-Skelett und Negativform konstruieren</text><text x="1150" y="855" class="t">□ Drei deutlich verschiedene Letter bauen</text><text x="1150" y="900" class="t">□ Handstyle und Blockform vergleichen</text><text x="1150" y="945" class="t">□ Outline, Fill und Schatten gezielt testen</text><text x="1150" y="980" class="s">Ziel: eine eigene, lesbare und charaktervolle A-Form.</text>
+<rect x="48" y="1028" width="1584" height="88" fill="#171717"/><text x="840" y="1082" text-anchor="middle" font-family="Arial" font-size="29" font-weight="bold" fill="#fff">BUCHSTABEN VERSTEHEN · LETTERS ENTWICKELN · EIGENEN STYLE FINDEN</text><text x="1620" y="1145" text-anchor="end" class="s">NIGHTSHIFT · ACADEMY · A / GRAFFITI LETTERING LAB</text>
 </svg>
