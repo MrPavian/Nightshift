@@ -243,8 +243,12 @@ Checked against code, tests and open PRs; details in `docs/reports/CAPABILITY_MA
 | C06 archive, German edition (28 entries, 111 claims, timeline, 5 paths, offline, editor bridge 1.1.0) | complete as a package; **not merged** | PR #8, `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md` |
 | C02 waves 2–4, C03, C04, C05, C08 | not implemented (spec only) | Issue #9 |
 
-**Open conflicts that need an owner decision:**
-1. **Priority.** Issue #9 (08:42 UTC) sets the order C02 → C03 → C04 → C05 → C08 (Creator-first). This briefing (10:15 UTC) names archive reference views as P1 and does not mention Issue #9.
+**Owner decision, 2026-11-15, 14:00:** do both, one after the other.
+1. First, revise the C06 archive (PR #8) against the styleguide and merge its content with drafts 01–06 and the claim/source matrix, then merge PR #8.
+2. After that, Creator-first per Issue #9: C02 waves 2–4 → C03 → C04 → C05 → C08.
+
+**Open conflicts (priority resolved, see above):**
+1. **Priority.** (resolved) Issue #9 (08:42 UTC) sets the order C02 → C03 → C04 → C05 → C08 (Creator-first). This briefing (10:15 UTC) names archive reference views as P1 and does not mention Issue #9.
 2. **C06 vs. styleguide.** The C06 archive UI predates `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md`. It uses a light paper environment instead of a dark ink environment, one colour per entry type (the styleguide forbids that), no monospaced metadata face, and 5 navigation sections instead of the 9 in styleguide §3. PR #8 needs a revision against the styleguide before merging.
 3. **Archive content vs. the new German drafts 01–06 and the claim/source matrix.** PR #8 has its own 28 entries in `research/archive/de/`. The drafts in `research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_0*.md` and the claim/source matrix were written in parallel. They need to be merged, not duplicated.
 
