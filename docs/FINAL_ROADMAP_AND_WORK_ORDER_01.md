@@ -214,7 +214,23 @@ Exit gate:
 - archive can be used offline for bundled content;
 - at least three entries lead to a relevant editor study or construction view.
 
-### Phase 6 — Integration, hardening and release
+### Phase 6 — Creator-first experience (C08)
+
+**Goal:** turn the validated generator and editing capabilities into one approachable creative journey.
+
+Requirements:
+- Creator is the default entry: name → creative brief → four proposals → choose → refine → save/export/game artwork.
+- Keep practice/activity, artwork form, letterform grammar, composition grammar, surface/format, priorities and rendering independent.
+- Provide progressive Creator, Studio and Writer Lab views of the same canonical project.
+- Expose only implemented, tested and maturity-compatible controls.
+- Preserve deterministic structural diversity, proposal branching, validation and user ownership of edits.
+- Keep Tag/handstyle, full Bombing orchestration, advanced Character systems and complex Wildstyle interlocking limited/deferred unless their own gates pass.
+
+**Authority:** [Creator-First Product Vision 01](NIGHTSHIFT_CREATOR_FIRST_PRODUCT_VISION_01.md), [Generator Knowledge Translation 01](../research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md), [Claude Ticket C08](CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md).
+
+**Exit gate:** a novice can complete a real supported creative brief, compare four valid structural proposals, select one, refine it through the supported editor, and save/reopen/export without losing state. Browser tests cover the complete journey. No mock proposals or cosmetic duplicates.
+
+### Phase 7 — Integration, hardening and release
 
 Tasks:
 - integrate editor and archive in one coherent application shell;
