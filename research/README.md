@@ -568,5 +568,6 @@ Die sechs englischen Arbeitsentwürfe wurden als Ausgangsmaterial beibehalten. D
 - [Deutsche Artikelfassung 04 — Wildstyle: Begriffsgeschichte, Haltung und Buchstabenverbindungen](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_04.md)
 - [Deutsche Artikelfassung 05 — Aerosol: Dose, Ventil, Cap und Materialpraxis](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_05.md)
 - [Deutsche Archivfassung 06 — Buchstaben bauen, verbinden und im Wort führen](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_06.md)
+- [Lernansicht 01 — Buchstaben & Verbindungen: Interaktive Lern- und UX-Spezifikation](../docs/BLACKBOOK_LETTERING_LEARNING_VIEW_01.md)
 
 Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibliografische Präzisierungen und nicht ausreichend belegte Aussagen sind sichtbar als Prüfpunkte markiert. Die deutschen Fassungen sind keine Veröffentlichungsgenehmigung.
