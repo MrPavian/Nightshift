@@ -15,7 +15,8 @@
     "report:topology": "node tools/report-topology.mjs",
     "report:validation": "node tools/report-validation.mjs",
     "proof:render": "node tools/render-proof.mjs",
-    "proof:run": "node tools/proof-run.mjs"
+    "proof:run": "node tools/proof-run.mjs",
+    "proof:editor": "node tools/editor-smoke.mjs --capture"
   },
   "dependencies": {
     "three": "0.187.0"

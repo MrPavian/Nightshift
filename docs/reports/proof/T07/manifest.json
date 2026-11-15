@@ -1,0 +1,41 @@
+{
+  "proofRunId": "proof.0.7A-T07.editor-loop",
+  "issue": "C01 (#4)",
+  "result": "pass",
+  "page": "editor/index.html?selftest",
+  "operation": "contour.move-node (D-013)",
+  "steps": {
+    "previewValid": true,
+    "commit": true,
+    "previewInvalidMarked": true,
+    "rejectRestores": true,
+    "cancelRestores": true,
+    "cameraNotGeometry": true,
+    "staleRejected": true,
+    "undo": true,
+    "redo": true,
+    "saveReload": true,
+    "nudgeAlternative": true,
+    "pointerPath": true,
+    "paramsDisabled": true
+  },
+  "scriptErrors": [],
+  "inputs": {
+    "data/legacy/v06-glyph-paths.json": "3bc3954448a3c43789006f4550745d176d34d5a7686cfa6e921eb8b46972d0e4",
+    "data/semantic/abgrs-semantic-overlay.v1.json": "0556e58f97984ee3183d3e646293f1ffd0f05d7bf5c84deefa8aefab67b9da66",
+    "data/validator-profiles/legacy-v06.v1.json": "32a4cdb2424d5fa829de9f8a8e325d8dbc3e14a131c2f4edf46b85c9b48dd4c8",
+    "editor/editor.js": "6b51dd4439e4d28576196220276d4a6cf7dc3c3c29dd2f0e901c9b940372f238",
+    "src/model/editor-store.js": "c532d48ec221e3af206cfc6f493708ad9d51084501ea565c444d13c2b589f416",
+    "src/model/operations.js": "ac932332e75740d07218c8c52d0bc934f7db692ed7b827206807abc216d2c0c9"
+  },
+  "artifacts": {
+    "editor-loop.png": {
+      "sha256": "5741b9516a0327453fcecc4ae1087ae0c093375db66b5f3170342ba480b8ff25",
+      "note": "Final state after the scripted run. Screenshot bytes may vary across Chrome versions; pass/fail comes from the steps."
+    }
+  },
+  "review": {
+    "status": "pending",
+    "note": "Automated evidence only; no maturity change."
+  }
+}

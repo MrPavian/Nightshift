@@ -146,3 +146,11 @@ test('view state is not part of the canonical store', () => {
   assert.equal(s.save(), before);
   assert.ok(!('camera' in JSON.parse(before)));
 });
+
+test('committed T07 editor proof passed and is tied to the current editor inputs', async () => {
+  const { createHash } = await import('node:crypto');
+  const m = JSON.parse(readFileSync('docs/reports/proof/T07/manifest.json', 'utf8'));
+  assert.equal(m.result, 'pass');
+  assert.ok(Object.values(m.steps).length >= 13 && Object.values(m.steps).every(Boolean));
+  for (const [p, h] of Object.entries(m.inputs)) assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'), h, `${p} changed since the proof run`);
+});

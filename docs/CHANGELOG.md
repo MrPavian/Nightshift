@@ -503,4 +503,4 @@
 - Editor store and command bus (`src/model/`): typed command envelopes, expected-revision checks, atomic validate-then-commit, canonical patches, undo/redo through the validator, preview without persistence, save/load.
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
-- 0.7A first-slice release gate met. Tests: 98 passing plus scripted browser edit loop.
+- 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
