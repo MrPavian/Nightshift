@@ -61,6 +61,9 @@ The inspected specifications explicitly state that no archive UI/content pipelin
 
 ## 3. Binding design authority
 
+The first six existing article drafts have now been audited in [Editorial Audit 01](../research/BLACKBOOK_ARCHIVE_EDITORIAL_AUDIT_01.md). Treat its per-entry corrections and publication blockers as the current editorial review instructions. The six entries remain drafts until those checks are resolved.
+
+
 Claude must implement [BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md](BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md) together with:
 - [Global Editorial Framework 01](BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md)
 - [Information Architecture 01](BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md)
