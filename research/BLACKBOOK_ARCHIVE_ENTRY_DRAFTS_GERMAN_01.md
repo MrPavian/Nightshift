@@ -84,7 +84,7 @@ In den 1960er-Jahren schrieben junge Menschen in Philadelphia Namen und Spitznam
 
 Philadelphia und New York entwickelten verwandte, aber eigenständige Schreibkulturen. Zu den lokal verankerten Traditionen Philadelphias zählen langgezogene Handschriften, als *Tall Hand* oder *Tall Print* bezeichnete Formen und die besonders szenespezifische Tradition der *Wickeds* beziehungsweise *Wickets*. Diese Bezeichnungen dürfen nicht vorschnell zu einer einheitlichen Stildefinition zusammengezogen werden. Ihre Verwendung, ihre formalen Merkmale und ihre Bedeutung müssen jeweils der konkreten Quelle oder lokalen Überlieferung zugeordnet werden.
 
-François Chastanet untersucht die Philadelphia-Handstyles unter anderem anhand von Bewegung, Proportion und Buchstabenführung. Seine Arbeit ist eine wichtige spezialisierte Quelle für *Tall Hands* und *Wickeds*. Die Haverford-Ausstellung *ALL BIG LETTERS* bietet eine weitere Perspektive auf die lokale Bedeutung der *Wickeds*. Beide Quellen sind als eigenständige Interpretationen und Dokumentationen kenntlich zu machen – nicht als Beleg für eine überall identische Definition.
+François Chastanet beschreibt in seiner 2024 veröffentlichten Untersuchung – einer erweiterten Online-Fassung eines Beitrags für das zweite Heft des Magazins *States* – den lokalen Begriff *whip* als Energie und Rhythmus der Buchstabenstriche. Er untersucht dabei unter anderem Bewegungsabläufe, Verbindungen zwischen Buchstaben und die Entwicklung von *Tall Hands* und *Wickeds*. Seine fotografische und gestische Dokumentation ist eine spezialisierte Quelle, bleibt aber die Perspektive eines Forschers und Gestalters, der 2023 vor Ort recherchierte. Die Haverford-Ausstellung *ALL BIG LETTERS* bietet eine weitere, von RJ Rushmore kuratierte Einordnung: Sie beschreibt *Wickeds* als charakteristische Philadelphia-Tags und als eine Form lokaler Zugehörigkeit, die besonders von anderen Schreibern gelesen wird. Beide Quellen sind als eigenständige Dokumentationen und Interpretationen kenntlich zu machen – nicht als Beleg für eine überall identische Definition.
 
 Einige Darstellungen bringen die Buchstaben von TOPCAT 126 mit späteren New Yorker Bezeichnungen wie „Broadway Elegant“ oder „Manhattan Style“ in Verbindung. Pfeiffenberger referiert eine solche Einflussgeschichte in ihrer Forschungsarbeit. Solange keine lückenlose Übertragung durch direkte Zeugnisse belegt ist, muss sie als zugeschriebene Deutung erscheinen – nicht als gesicherte Kausalkette.
 
@@ -107,14 +107,15 @@ Der Blick nach Philadelphia verändert die größere Erzählung: Die Geschichte 
 |---|---|---|---|
 | PHL-01 | Philadelphia verfügte spätestens in der zweiten Hälfte der 1960er-Jahre über eine bedeutende Namensschreib-Szene. | Pfeiffenberger (2017); Dirkson; Mitman. | Grobe Chronologie gut gestützt; keine absolute Prioritätsbehauptung. |
 | PHL-02 | CORNBREAD, COOL EARL und TOPCAT 126 gehören zu den in der Forschung genannten frühen Beteiligten. | Pfeiffenberger; Dirkson; Philadelphia-Dossier. | Namen und Daten jeweils konkret zuordnen. |
-| PHL-03 | In Philadelphia entwickelten sich lokal markante langgezogene und hohe Handschriften. | Pfeiffenberger; Chastanet; Mitman. | Begriffe historisch und lokal einordnen. |
-| PHL-04 | WICKEDS/WICKETS sind mit einer spezifischen Philadelphia-Tradition und eigener Szenebegrifflichkeit verbunden. | Mitman; Chastanet; Haverford-Ausstellung. | Keine einzige technische Definition aus verschiedenen Darstellungen erzwingen. |
+| PHL-03 | In Philadelphia entwickelten sich lokal markante langgezogene und hohe Handschriften; Chastanet beschreibt außerdem den lokalen Begriff *whip* als Energie und Rhythmus der Strichführung. | Pfeiffenberger; Chastanet, „The Survival of The Whip“ (2024/erweiterte Online-Fassung); Mitman. | Chastanets Beobachtungen als seine spezialisierte Untersuchung kennzeichnen; keine universelle Definition behaupten. |
+| PHL-04 | *Wickeds* werden von Haverford als charakteristische Philadelphia-Tags und als stark nach innen gerichtete, von anderen Writerinnen und Writern lesbare Form beschrieben; Chastanet dokumentiert zusätzlich die lokale Schreibweise *Wickets*. | Chastanet; RJ Rushmore, *ALL BIG LETTERS* (Haverford College, 2017). | Begriffsvarianten und jeweilige Deutung der Quelle zuordnen; keine einzige technische Definition erzwingen. |
 | PHL-05 | TOPCAT 126 wird in einer Forschungssynthese mit späteren Begriffen wie „Broadway Elegant“ und „Manhattan Style“ in Verbindung gebracht. | Pfeiffenberger (2017). | Zugeschriebene Einflussdeutung; Übertragungsweg nicht als gesichert darstellen. |
 
 ### Quellen
 
 - Heidi Pfeiffenberger, KIT-Dissertation (2017): https://publikationen.bibliothek.kit.edu/1000079409/6209138
-- François Chastanet, „The Survival of The Whip“ / Forschung zu Philadelphia-Handstyles (2024): https://francoischastanet.com/philadelphia-handstyles/
+- François Chastanet, „The Survival of The Whip“, *States* Nr. 2 (2024), erweiterte Online-Fassung mit Dokumentation der Recherche von 2023: https://francoischastanet.com/philadelphia-handstyles/
+- RJ Rushmore, *ALL BIG LETTERS*, Haverford College (2017), insbesondere Abschnitt zu den *Wickeds*: https://exhibits.haverford.edu/allbigletters/
 - Haverford College, *ALL BIG LETTERS*: https://exhibits.haverford.edu/allbigletters/
 - Menika Dirkson, „The Graffiti Art Movement in Philadelphia“: https://picturingblackhistory.org/the-graffiti-art-movement-in-philadelphia/
 - Tyson Mitman, *The Art of Defiance* (2018): https://press.uchicago.edu/ucp/books/book/distributed/A/bo31274472.html
