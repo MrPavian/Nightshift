@@ -40,6 +40,7 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 
 - [INGRID Regional Research Scope — Ruhrgebiet → NRW → Germany](INGRID_REGIONAL_RESEARCH_SCOPE_01.md)
 - [INGRID ontology → NIGHTSHIFT crosswalk](INGRID_ONTOLOGY_TO_NIGHTSHIFT_CROSSWALK_01.md)
+- [INGRID RDF Converter Audit 01 — Namespaces, predicates and field mappings](INGRID_RDF_CONVERTER_AUDIT_01.md)
 - [INGRID Research Record Model 01 — Provenance, dates, observations and rights](INGRID_RESEARCH_RECORD_MODEL_01.md)
 - [Machine-readable INGRID research record schema v1](../contracts/ingrid-research-record.v1.schema.json)
 - [Synthetic INGRID relationship fixture v1](../contracts/fixtures/ingrid-research-record.relationships.v1.json)
