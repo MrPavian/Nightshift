@@ -589,3 +589,9 @@ Added a focused source-critical supplement comparing the contemporary 1987 *Da k
 
 - [Dortmund 1983–1991 — Quellenkritischer Vertiefungsbaustein 01](DORTMUND_1983_1991_SOURCE_AUDIT_01.md)
 - [Dortmund Style — Visuelles Codierprotokoll 01](DORTMUND_STYLE_VISUAL_CODING_RUBRIC_01.md)
+
+
+### 2026-11 — Dortmund visual-source access follow-up (15 November, second pass)
+
+Located a full digital documentation route for *Da kukse wa* that explicitly reserves the authors'/publisher's rights, confirmed the *Iron City* entry in the Martha Cooper Library catalogue while noting that its live library server was unavailable, and compared current *ALL SURFACE* retailer metadata including a page-count discrepancy. No pages were visually coded and no images were copied. Access, inspection and reuse rights remain separate.
+
