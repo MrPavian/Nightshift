@@ -576,3 +576,9 @@ Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibl
 - [Artikelvorlage 01 — wiederverwendbare Lexikon-Artikelseite](../docs/production/ARTICLE_PAGE_TEMPLATE_01.md)
 
 - [Wissensmodell und Begriffsnetz 01](../docs/production/KNOWLEDGE_MODEL_AND_RELATIONSHIP_GRAPH_01.md)
+
+### 2026-11 — Blackbook Archive claim/source matrix
+
+Added a central editorial control document mapping claims across the German archive drafts 01–06 and linked research packages. It records claim IDs, source strength, source scope, caveats, verification actions, source concentration, rights separation and a prioritized release backlog. It does not grant publication approval.
+
+- [Blackbook Archive Claim/Source Matrix 01](BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md)
