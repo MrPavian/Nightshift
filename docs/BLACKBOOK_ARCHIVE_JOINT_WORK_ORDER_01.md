@@ -73,6 +73,16 @@ Claude must implement [BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md](BLACKBOOK_ARCHIVE_STY
 
 The styleguide is the visual/interaction authority. If older archive notes conflict with it, follow the styleguide unless the project owner explicitly changes direction. The editorial framework remains authoritative for historical framing, evidence and rights.
 
+## 3a. Binding language requirement — German-only archive
+
+The complete user-facing archive must be German (de-DE), including navigation, buttons, search, filters, statuses, help and error messages, article copy, captions, diagrams, timeline labels and learning paths. There is no English UI or language toggle in 1.0.
+
+The six existing article drafts are currently English working drafts. They must be translated and editorially adapted into natural German before publication; do not publish the English copy. Keep original graffiti terminology, proper names, official titles and direct quotations in their documented original form, explain specialist terms in German on first use, and mark translations of quotations. Technical IDs, schema keys, file names and code identifiers may remain English. The brand name THE BLACKBOOK ARCHIVE may remain unchanged.
+
+Canonical German navigation: **Entdecken · Zeitleiste · Szenen · Stile & Buchstaben · Praktiken & Formate · Werkzeuge & Materialien · Personen & Crews · Begriffslexikon · Bildarchiv**.
+
+Use German for all visible editorial states and metadata. The acceptance test is simple: a reader with no English knowledge must be able to navigate and understand the archive; English cultural terms are explained within the German text.
+
 ## 4. Role split
 
 ### ChatGPT — research, editorial preparation and independent QA
