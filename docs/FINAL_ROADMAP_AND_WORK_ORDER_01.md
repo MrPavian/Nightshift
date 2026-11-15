@@ -184,7 +184,9 @@ Exit gate:
 - SVG/PNG match the editor's committed revision;
 - project format is documented and round-trip tested.
 
-### Phase 5 — BLACKBOOK ARCHIVE MVP
+### Phase 5 — BLACKBOOK ARCHIVE MVP (owner-approved early execution after C01)
+
+**Sequencing exception (2026-11-15):** Execute this phase immediately after C01, before C02–C05. C02–C05 are temporarily deferred, not cancelled. The archive must be independently useful and must not depend on unfinished editor functionality. Prepare a versioned editor-bridge contract and connect only to capabilities verified in the current code. Do not fake future controls or duplicate editor logic. Resume C02 → C03 → C04 → C05 after this phase; C07 completes final bidirectional integration.
 
 Do not attempt the full encyclopedia roadmap. Deliver a coherent, finite first edition.
 
@@ -195,7 +197,7 @@ Required:
 - at least two usable learning paths (e.g. history → style → construction; practice/format → material → generator);
 - visual comparisons using original diagrams or rights-cleared assets;
 - clear distinction between historical facts, practitioner accounts, scholarly interpretation and design inference;
-- bidirectional links between selected archive entries and editor studies;
+- a versioned editor-bridge contract and links only to currently implemented, verified editor capabilities; future C02–C05-dependent actions remain honestly unavailable until implemented; C07 completes and tests at least three genuine bidirectional links;
 - local/offline availability for bundled content.
 
 Not required:
@@ -268,15 +270,17 @@ No further general history dossiers are added unless a named release blocker dep
 
 ## 7. Finite Claude implementation sequence
 
-Claude must execute these packages in dependency order:
+**Owner-approved execution order (2026-11-15):**
 
 1. **C01 — 0.7A-T07 editor command loop.**
-2. **C02 — C–Z neutral glyph authoring and review pipeline.**
-3. **C03 — style resolver and supported Bubble/Straight/Blockbuster variants.**
-4. **C04 — safe relationship solver and deterministic four-concept generator.**
-5. **C05 — blackbook editing, project persistence and export.**
-6. **C06 — BLACKBOOK ARCHIVE MVP and editor bridge.**
-7. **C07 — integration, hardening, test report and 1.0 release candidate.**
+2. **C06 — BLACKBOOK ARCHIVE MVP, independently usable, with a versioned editor-bridge contract.** C02–C05 do not block this package. Only verified existing editor capabilities may be linked; future capabilities must not be faked or duplicated.
+3. **C02 — C–Z neutral glyph authoring and review pipeline.**
+4. **C03 — style resolver and supported Bubble/Straight/Blockbuster variants.**
+5. **C04 — safe relationship solver and deterministic four-concept generator.**
+6. **C05 — blackbook editing, project persistence and export.**
+7. **C07 — final bidirectional archive/editor integration, hardening, test report and 1.0 release candidate.**
+
+This is a deliberate sequencing override, not a scope reduction or cancellation of C02–C05.
 
 The detailed Claude handoff is in [CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md](CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md). Claude must report a package as complete only when its acceptance evidence exists.
 
