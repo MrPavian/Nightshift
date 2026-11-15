@@ -153,3 +153,8 @@ Phase A is complete when:
 5. visual/interaction brief is documented;
 6. at least five example entry records from different categories exist in the content pilot;
 7. source and rights metadata are separate and visible.
+
+
+## 9. Global editorial direction
+
+The archive's worldwide scope and historical narrative are specified in [Global Editorial Framework 01](BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md). The core story begins with the emergence of modern hip-hop writing in New York, then follows its circulation, local adaptation and distinct regional developments through to contemporary global writing and related public visual cultures. It must not imply that all graffiti began in NYC or that every local scene simply copied New York. Regional chapters require their own evidence, chronology and terminology.
