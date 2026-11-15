@@ -4,12 +4,12 @@
 
 ## Finding
 
-TRACY 168 is closely associated with the WANTED crew and the early use of the name “Wild Style”. It is unsafe to collapse every historical use of the phrase into the modern visual definition of densely interlocked letters. The term has described crew identity, attitude and writing ethos as well as a visual grammar.
+TRACY 168 is closely associated with the WANTED crew and the early use of the name “Wild Style”. It is unsafe to collapse every historical use of the phrase into the modern visual definition of densely interlocked letters. The term has described crew identity, attitude and writing ethos as well as a visual grammar. First-person testimony from T-KID 170 at the Bronx Oral History Center is particularly important: he says Tracy brought him into Wild Style and insists that, for him, it was “not about letters” but “a way of life” rooted in how they lived in the Bronx. This is direct testimony about T-KID's understanding and affiliation, not a universal definition of every use of the term.
 
 ## Three meanings
 
-1. **Crew/name:** TRACY 168’s 2016 interview says he founded WANTED and that it represented Wild Style. Photographer Henry Chalfant later identified TRACY as the first user of the phrase and the crew name. These are retrospective accounts, not contemporaneous written records. [B] https://streetartnyc.org/blog/2016/07/09/speaking-with-the-legendary-tracy-168/ and https://fnmnl.tv/2021/03/12/120452?amp=1
-2. **Ethos:** “Wild” could refer to attitude, risk-taking and independence, not just letter construction. A University of Pennsylvania thesis excerpt discusses this wider meaning and traces its attribution to the documentary Bomb It. [A/B] https://files01.core.ac.uk/download/76383902.pdf
+1. **Crew/name and affiliation:** TRACY 168's 2016 interview says he founded WANTED and that it represented Wild Style. Photographer Henry Chalfant later identified TRACY as the first user of the phrase and the crew name. T-KID 170's Bronx Oral History Center interview says Tracy brought him into Wild Style. These are retrospective first-person and attributed accounts, not contemporaneous written records; they establish strong association and personal affiliation, not an uncontested exact invention date. [B/A] https://streetartnyc.org/blog/2016/07/09/speaking-with-the-legendary-tracy-168/ ; https://fnmnl.tv/2021/03/12/120452?amp=1 ; https://oralhistory.bronxhistoricalsociety.org/viewer.php?cachefile=OH-BAADP.20220815.xml#segment5205
+2. **Ethos / way of life:** T-KID 170 explicitly says Wild Style was not about letters but a way of life in the Bronx. This is a situated first-person interpretation from his own experience. A University of Pennsylvania thesis excerpt also discusses the wider meaning of “wild” beyond letter construction. [A/B] https://oralhistory.bronxhistoricalsociety.org/viewer.php?cachefile=OH-BAADP.20220815.xml#segment5739 ; https://files01.core.ac.uk/download/76383902.pdf
 3. **Visual grammar:** later style-writing scholarship uses Wildstyle for complex lettering in which letters connect, overlap, interlock or become difficult to decipher as a word. A KIT thesis describes the development in the Bronx and cites earlier scholarship for the crew and chronology. [A] https://publikationen.bibliothek.kit.edu/1000079409/6209138
 
 ## Visual tendencies
@@ -40,8 +40,10 @@ Do not merely add random arrows to a font. Model a graph of glyph anchor points 
 
 ## Sources
 
+- Bronx Oral History Center, *Interview with T-KID 170*, segment 01:26:45 “Crews and Prominent Writers, TVS” and segment 01:35:39 “Relationship to Fine Art Graffiti” (recorded 2022): https://oralhistory.bronxhistoricalsociety.org/viewer.php?cachefile=OH-BAADP.20220815.xml
 - TRACY 168 interview, StreetArtNYC (2016): https://streetartnyc.org/blog/2016/07/09/speaking-with-the-legendary-tracy-168/
 - Henry Chalfant interview (2021): https://fnmnl.tv/2021/03/12/120452?amp=1
+- SÍLE MOLONEY, “Family & Friends Gather to Remember & Celebrate Counterculture Icon and Writer ‘Tracy 168’”, *Norwood News*, 27–28 November 2023 (retrospective local testimony; includes an anonymous writer's account of crew entry criteria): https://www.norwoodnews.org/update-family-friends-gather-to-remember-celebrate-counterculture-icon-and-writer-tracy-168/
 - KIT thesis on style writing: https://publikationen.bibliothek.kit.edu/1000079409/6209138
 - University of Pennsylvania thesis excerpt: https://files01.core.ac.uk/download/76383902.pdf
 - Anna Waclawek, From Graffiti to the Street Art Movement: https://central.bac-lac.gc.ca/.item?app=Library&id=NR63383&oclc_number=768533755&op=pdf
