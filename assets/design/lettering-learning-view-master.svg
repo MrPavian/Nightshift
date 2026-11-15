@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">Lettering-Grammatik: fiktives Buchstabenpaar A und R</title>
+<desc id="desc">Schematische Lehrgrafik mit zwei eigens entworfenen, geometrischen Buchstabenformen. Beschriftet sind Balken, Innenraum, Verbindung und Zwischenraum. Die Grafik ist kein Vorbild für einen realen Writer.</desc>
+<defs>
+  <style>
+    .bg{fill:#111214}.panel{fill:#181a1d;stroke:#45484b;stroke-width:2}
+    .letter{fill:none;stroke:#f0eee8;stroke-width:24;stroke-linecap:square;stroke-linejoin:bevel}
+    .accent{fill:none;stroke:#d6f34a;stroke-width:26;stroke-linecap:square;stroke-linejoin:bevel}
+    .guide{fill:none;stroke:#d6f34a;stroke-width:2;stroke-dasharray:7 8}
+    .leader{fill:none;stroke:#c8c8c2;stroke-width:2}
+    .dot{fill:#d6f34a}.heading{font:700 25px Arial,sans-serif;fill:#f0eee8}
+    .body{font:18px Arial,sans-serif;fill:#c9c9c3}.small{font:14px Arial,sans-serif;fill:#9fa19d}
+    .step{font:700 15px Arial,sans-serif;fill:#111214}
+  </style>
+</defs>
+<rect class="bg" width="1200" height="680"/>
+<text x="48" y="52" class="small" letter-spacing="4">THE BLACKBOOK ARCHIVE / LERNDIAGRAMM 01</text>
+<text x="48" y="100" class="heading" font-size="34">Buchstaben bauen und verbinden</text>
+<text x="48" y="132" class="body">Fiktive Lehrformen · Konstruktion, Innenräume und Wortkomposition</text>
+<rect class="panel" x="40" y="165" width="1120" height="455" rx="14"/>
+<!-- fictional A -->
+<path class="letter" d="M250 510 L365 235 L485 510 M300 395 L435 395"/>
+<!-- fictional R -->
+<path class="letter" d="M555 510 L555 240 L690 240 Q800 240 800 325 Q800 405 690 405 L555 405 M690 405 L820 520"/>
+<!-- connection highlighted separately -->
+<path class="accent" d="M485 510 L555 510"/>
+<!-- counter markers -->
+<path class="guide" d="M342 390 L365 330 L390 390 Z"/>
+<path class="guide" d="M590 300 L685 300 Q735 300 735 325 Q735 350 685 350 L590 350 Z"/>
+<!-- annotations -->
+<path class="leader" d="M300 280 L170 230 L90 230"/><circle class="dot" cx="300" cy="280" r="6"/>
+<text class="heading" x="90" y="205">Balken / Stamm</text><text class="body" x="90" y="254">Konstruktive Formabschnitte</text>
+<path class="leader" d="M365 365 L170 455 L90 455"/><circle class="dot" cx="365" cy="365" r="6"/>
+<text class="heading" x="90" y="430">Innenraum</text><text class="body" x="90" y="480">Freie Fläche innerhalb der Letter</text>
+<path class="leader" d="M520 510 L520 565 L630 565"/><circle class="dot" cx="520" cy="510" r="6"/>
+<text class="heading" x="650" y="560">Verbindung</text><text class="body" x="650" y="585">Hier treffen die Formen zusammen</text>
+<path class="leader" d="M875 470 L990 430 L1090 430"/><circle class="dot" cx="875" cy="470" r="6"/>
+<text class="heading" x="930" y="395">Zwischenraum</text><text class="body" x="930" y="455">Freier Bereich zwischen</text><text class="body" x="930" y="480">benachbarten Buchstaben</text>
+<rect x="48" y="640" width="1104" height="1" fill="#45484b"/>
+<rect x="48" y="652" width="150" height="8" rx="4" fill="#d6f34a"/>
+<text x="215" y="662" class="small">ORIGINALDIAGRAMM · KEINE ABLEITUNG AUS EINEM REALEN TAG ODER PIECE</text>
+</svg>
