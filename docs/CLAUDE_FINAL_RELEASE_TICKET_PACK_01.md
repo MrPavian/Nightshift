@@ -115,20 +115,41 @@ Acceptance:
 
 ## C06 — BLACKBOOK ARCHIVE MVP
 
-Implement the finite scope in the master roadmap:
-- archive home, categories, search, entry detail;
-- 25–35 curated, reviewed entries;
-- stable IDs, sources, evidence labels and rights metadata;
-- two learning paths;
+**Goal:** deliver a polished, source-backed, visual graffiti lexicon that introduces modern hip-hop writing from its New York emergence through international circulation, distinct regional adaptations and contemporary global practice. This is a curated launch edition, not an exhaustive encyclopedia of every country or writer.
+
+**Read first:** `docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md`, `docs/BLACKBOOK_ARCHIVE_INFORMATION_ARCHITECTURE_01.md`, `docs/BLACKBOOK_ARCHIVE_ROADMAP.md`, `docs/CLAUDE_TICKET_PACK_BLACKBOOK_01.md`, and the relevant `research/` dossiers.
+
+Implement the existing archive phases and scope:
+- archive home, global search, categories, filters and entry detail;
+- 25–35 curated, reviewed launch entries (quality over count);
+- linked content for historical periods/events, places/scenes, practices, lettering/composition styles, formats/surfaces, techniques/materials, people/crews, glossary and visual references;
+- New York as a substantial historical foundation, followed by selected contrasting international scene chapters and contemporary context;
+- a navigable timeline and at least two guided learning paths;
+- stable IDs, source records, claim-level evidence labels, editorial states and rights metadata;
 - original diagrams or rights-cleared visual assets;
 - links between at least three entries and relevant editor studies;
 - bundled offline access.
 
-Acceptance:
-- schema, references, links and content validation pass;
-- no placeholder text or unsupported claims;
+**Editorial and visual quality requirements:**
+- The research library is the editorial source of truth; generate archive data from it. No separately maintained duplicate database.
+- Research dossiers are source material, not automatically publishable entries. Publish only claim-checked, edited content.
+- Separate documented facts, practitioner accounts, scholarly interpretations and NIGHTSHIFT design inferences.
+- Distinguish NYC emergence from older/different traditions of public inscription; do not claim all graffiti began in New York.
+- International chapters must describe local chronology, terminology and adaptation; do not portray the world as a one-way copy of NYC.
+- Present short accessible introductions with expandable depth, strong visual hierarchy, original diagrams, readable typography, timeline/scene navigation and connected entries. Avoid an admin-panel appearance or decorative grunge that harms legibility.
+- Do not embed external archive images without item-level rights clearance. Keep evidence quality, editorial approval and image rights as independent states.
+- Never clone identifiable writer signatures or turn people/crews into generator presets.
+
+**Acceptance criteria:**
+- schema, references, source links and content validation pass;
+- all public claims have traceable sources and visible evidence treatment;
+- 25–35 entries form a coherent, genuinely useful launch edition with New York foundation and several contrasting global scenes;
+- timeline and two learning paths work end-to-end;
 - search and navigation have no dead ends;
-- archive content is maintained from the research library, not duplicated manually in an unrelated data source.
+- visual design is polished, responsive and accessible;
+- at least three generator links target implemented capabilities, with unsupported links honestly disabled;
+- no placeholder text, unsupported claims or unlicensed embedded images;
+- content is generated from the research library, not duplicated manually.
 
 ## C07 — Integration and release hardening
 
