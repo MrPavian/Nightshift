@@ -89,3 +89,55 @@ NIGHTSHIFT should model at least two separate Dortmund-related research profiles
 - **Dortmund Handstyle / Tag study** — provisional, based on *ALL SURFACE* and dated tag examples.
 
 These are research categories, not claims that all writers used one style. The two profiles should not be collapsed into one “Dortmund preset”. All source imagery remains reference-only until item-level permission is documented.
+
+
+## 7. Access verification update — 2026-11-15
+
+This follow-up distinguishes **a documented access route** from **an image set actually inspected**.
+
+### Da kukse wa: official digital exhibition route
+
+The official Dortmunder U page for the *I WAS HERE* exhibition explicitly states that its 360° tour allows visitors to browse the *DA KUKSE WA* brochure online. The same page explains that the 2020 reprint was produced with the participation of Marianne Brentzel and Hubert Moormann and that copies could be purchased through the exhibition project.
+
+- Official route: https://dortmunder-u.de/i-was-here-360/
+- Page search result confirms online brochure browsing and reprint provenance.
+- Direct page opening in this research session returned a browser-verification layer; the tour itself was **not** navigated and individual pages were **not** inspected.
+- The author's page confirms the 1987 publication, Hubert Moormann's photography and the interviews; its accessible excerpt includes text and the local Writer-ABC but does not provide a complete visual corpus: https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+- A specialist retailer lists the 2020 second edition as 36 pages and claims it is identical to the 1987 edition except for the preface. This is seller-supplied information, not a page-by-page collation: https://www.mrgraffiti.nl/product/da-kukse-wa-dortmunder-graffiti-2nd-edition
+
+**Next verification:** open the official tour in a normal browser, use its brochure viewer, record the page sequence and captions manually, and compare pagination with a physical 2020 copy. Do not extract images or republish scans without permission.
+
+### ALL SURFACE: strong handstyle corpus, sample images still insufficient
+
+Two specialist retail / publisher-facing listings agree on the core bibliographic description: 2022 publication, 244 pages, German language, and a focus on Dortmund tags from the 1980s and 1990s. The Hitzerot description states an edition of 500 and describes hundreds of photographs plus participant recollections; a separate retailer describes the work as containing more than 500 photographs.
+
+- https://hitzerot.com/shop/all-surface/
+- https://www.mrgraffiti.nl/product/all-surface-tagging-in-dortmund-in-the-1980s-and-1990s/
+- https://www.legrandj.eu/products/all-surface-tagging-in-dortmund-in-den-1980er-und-1990er-jahren
+
+The product listings establish the book's scope and offer an acquisition route, but their page previews are not a representative sample and were not treated as one. The book is the best identified candidate for a dedicated Dortmund handstyle/tag study, not evidence that any particular visual feature is common.
+
+**Next verification:** acquire or borrow a copy; log all pages containing dated/captioned examples; select a stratified sample across writers, years, surfaces and marker/aerosol media. Record exact page and caption references.
+
+### IRON CITY: catalogue / institutional access route
+
+The Hitzerot listing describes *IRON CITY — Graffiti Dortmund* (MASmedia, 2002) as a 128-page German/English illustrated book spanning early works from 1983, 1986 colour panels, 1990s train documentation and early-2000s material. Its current listing is marked out of stock.
+
+- Specialist catalogue: https://hitzerot.com/shop/iron-city/
+- Martha Cooper Library / URBAN NATION catalogue search result lists the 2002 book and offers item-level availability details: https://open.urban-nation.com/en-us/Search/Search?module=1&pagesize=20&search=christina&top=y
+- A 2002 RuhrpottHipHop news archive independently describes the publication as 128 pages with 250 colour illustrations and notes that its chapters include early material, trains and contemporary work: https://ruhrpotthiphop.com/newsarchiv-2001-07/
+
+The library catalogue is a concrete research route, but the search result alone does not confirm that a copy can be consulted on site or that its images are downloadable. The current specialist retailer marks its stock as unavailable. No book pages were inspected.
+
+**Next verification:** search the Martha Cooper Library catalogue directly for *Iron City* and request item-level availability / consultation terms; also check regional library union catalogues and interlibrary loan. If a copy is acquired, inspect it as a chronological corpus, not as an unfiltered style sample.
+
+## 8. Research state — no visual coding claimed
+
+| Source | Access route found | Actual page-level inspection in this pass | Suitable first use |
+|---|---|---|---|
+| *Da kukse wa* (1987 / 2020 reprint) | Author excerpt; official Dortmunder U 360° tour; physical reprint listing | No | Early pieces, contemporary vocabulary and caption context |
+| *ALL SURFACE* (2022) | Specialist listings / purchase route | No | Dortmund tags and handstyles |
+| *IRON CITY* (2002) | Specialist catalogue; Martha Cooper Library catalogue | No | Longitudinal pieces, panels and train documentation |
+| INGRID | Official corpus / ontology / SPARQL documentation | No live Dortmund records | Metadata-led stratified discovery |
+
+**Research decision:** do not make a synthetic visual sample from product thumbnails, search-result images or a handful of famous works. The next meaningful step is access to at least one full publication and a documented page-level sample. Until then, the visual coding rubric remains ready but unpopulated.
