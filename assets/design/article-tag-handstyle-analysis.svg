@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+<title id="t">Tag und Handstyle – schematische Analyse</title>
+<desc id="d">Abstrakte, nicht lesbare Linienformen zeigen, wie Neigung, Rhythmus, Verbindungen und Endungen eine individuelle Schreibbewegung prägen. Keine reale Signatur und kein nachgezeichneter Tag.</desc>
+<defs><style>
+.bg{fill:#111214}.panel{fill:#191b1e;stroke:#41454a;stroke-width:2}
+.txt{fill:#f0eee8;font:700 26px Arial,sans-serif}.body{fill:#c5c7c2;font:18px Arial,sans-serif}.meta{fill:#9da19b;font:14px Arial,sans-serif;letter-spacing:2px}
+.stroke{fill:none;stroke:#f0eee8;stroke-width:15;stroke-linecap:round;stroke-linejoin:round}
+.accent{fill:none;stroke:#d6f34a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.guide{stroke:#747a73;stroke-width:2;stroke-dasharray:6 8;fill:none}
+.dot{fill:#d6f34a}
+</style></defs>
+<rect class="bg" width="1200" height="620"/>
+<text x="52" y="55" class="meta">THE BLACKBOOK ARCHIVE / VISUELLE EINORDNUNG</text>
+<text x="52" y="100" class="txt" font-size="34">Tag und Handstyle</text>
+<text x="52" y="133" class="body">Der Name ist die Signatur. Der Handstyle zeigt sich in der individuellen Form und Bewegung.</text>
+<rect x="42" y="170" width="540" height="380" rx="14" class="panel"/>
+<rect x="618" y="170" width="540" height="380" rx="14" class="panel"/>
+<text x="76" y="218" class="meta">01 / TAG</text>
+<text x="76" y="254" class="txt">Der konkrete Name</text>
+<text x="76" y="285" class="body">Eine stilisierte Namenssignatur</text>
+<!-- abstract non-readable mark -->
+<path class="stroke" d="M105 430 L155 330 L193 421 L230 355 L268 430"/>
+<path class="stroke" d="M305 425 Q338 330 370 424 Q399 485 432 386"/>
+<path class="accent" d="M104 468 Q250 490 432 456"/>
+<text x="76" y="510" class="meta">BEISPIELFORM · NICHT LESBAR · KEINE VORLAGE</text>
+<text x="652" y="218" class="meta">02 / HANDSTYLE</text>
+<text x="652" y="254" class="txt">Die individuelle Schreibweise</text>
+<text x="652" y="285" class="body">Merkmale, die eine persönliche Form prägen</text>
+<!-- angled guides -->
+<path class="guide" d="M690 455 L780 315 M790 455 L880 315 M890 455 L980 315"/>
+<path class="stroke" d="M690 430 Q750 340 800 425 Q830 470 862 365"/>
+<path class="stroke" d="M870 430 L930 345 Q956 312 984 360 L1010 425"/>
+<path class="accent" d="M700 465 Q840 490 1018 438"/>
+<circle class="dot" cx="862" cy="365" r="7"/><circle class="dot" cx="984" cy="360" r="7"/>
+<text x="652" y="510" class="meta">NEIGUNG · RHYTHMUS · VERBINDUNG · ENDUNG</text>
+<text x="52" y="590" class="meta">EIGENSTÄNDIGE ANALYSEGRAFIK · KEINE REALE WRITER-SIGNATUR</text>
+</svg>
