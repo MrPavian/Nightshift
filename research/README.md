@@ -574,3 +574,5 @@ Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibl
 
 - [Musterartikel — Tag und Handstyle](BLACKBOOK_SAMPLE_ARTICLE_TAG_HANDSTYLE_01.md)
 - [Artikelvorlage 01 — wiederverwendbare Lexikon-Artikelseite](../docs/production/ARTICLE_PAGE_TEMPLATE_01.md)
+
+- [Wissensmodell und Begriffsnetz 01](../docs/production/KNOWLEDGE_MODEL_AND_RELATIONSHIP_GRAPH_01.md)
