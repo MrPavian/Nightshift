@@ -564,4 +564,6 @@ Die sechs englischen Arbeitsentwürfe wurden als Ausgangsmaterial beibehalten. D
 - [Deutsche Artikelfassungen 01 — Einträge 01–03](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_01.md)
 - [Deutsche Artikelfassungen 02 — Einträge 04–06](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_02.md)
 
+- [Deutsche Artikelfassungen 03 — Tag, Handstyle, Getting Up, Bombing, Throw-up, Piece und Burner](BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_03.md)
+
 Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibliografische Präzisierungen und nicht ausreichend belegte Aussagen sind sichtbar als Prüfpunkte markiert. Die deutschen Fassungen sind keine Veröffentlichungsgenehmigung.
