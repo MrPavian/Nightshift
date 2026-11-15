@@ -19,18 +19,18 @@
 <text class="s" x="78" y="400">Neutrale geometrische Referenzform – ohne Effekte</text>
 <rect class="panel" x="585" y="154" width="510" height="270"/><rect x="585" y="154" width="510" height="42" fill="#171717"/><text class="h" x="605" y="184">02 · BUCHSTABENANATOMIE</text>
 <path class="letter" d="M710 365L810 215L910 365M758 294H862"/>
-<path class="purple" d="M810 215L810 200M745 310L700 310M880 345L930 345M810 275L850 255"/>
-<text class="s" x="825" y="210">Spitze / Apex</text><text class="s" x="615" y="304">Schenkel</text><text class="s" x="935" y="350">Fuß</text><text class="s" x="875" y="250">Innenraum</text><text class="s" x="615" y="390">Querbalken</text>
+<path class="purple" d="M810 215L810 200M745 310L700 310M880 345L930 345M810 275L850 255M760 365L735 382M860 365L885 382"/>
+<text class="s" x="825" y="210">Spitze / Apex</text><text class="s" x="615" y="304">linker Schenkel</text><text class="s" x="935" y="350">rechter Schenkel</text><text class="s" x="875" y="250">Innenraum / Punze</text><text class="s" x="615" y="390">Querbalken</text><text class="s" x="700" y="410">Fuß / Abschluss</text>
 <rect class="panel" x="1122" y="154" width="510" height="270"/><rect x="1122" y="154" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="184">03 · PROPORTIONEN &amp; RASTER</text>
 <path class="letter" d="M1220 365L1320 215L1420 365M1268 294H1372"/>
 <path class="yellow" d="M1195 215H1450M1195 365H1450"/><path class="purple" d="M1195 294H1450M1320 200V380"/>
 <text class="s" x="1435" y="245">Versalhöhe</text><text class="s" x="1435" y="315">Querbalkenlage</text><text class="s" x="1435" y="390">Grundlinie</text><text class="s" x="1145" y="410">Breite und Querbalkenlage sind Entwurfsentscheidungen, keine Universalwerte.</text>
 <rect class="panel" x="48" y="446" width="510" height="270"/><rect x="48" y="446" width="510" height="42" fill="#171717"/><text class="h" x="68" y="476">04 · KONSTRUKTIONSANALYSE</text>
-<g transform="translate(85 520)"><path d="M0 140L55 0L110 140" class="purple"/><path d="M150 140L205 0L260 140" stroke="#111" stroke-width="20" fill="none"/><path d="M300 140L355 0L410 140M326 85H384" class="letter" stroke-width="9"/></g>
-<text class="s" x="90" y="690">Skelett → Strichstärke → Verbindungen → Kontur → Grundform</text>
+<g transform="translate(72 520)"><path d="M0 125L32 15L64 125" class="purple"/><path d="M85 125L117 15L149 125" stroke="#111" stroke-width="8"/><path d="M170 125L202 15L234 125M185 75H219" stroke="#111" stroke-width="8"/><path d="M255 125L287 15L319 125M270 75H304" stroke="#111" stroke-width="15" stroke-linejoin="round"/><path d="M340 125L372 15L404 125M355 75H389" stroke="#111" stroke-width="15" stroke-linejoin="round"/></g>
+<text class="s" x="90" y="690">1 Skelett · 2 Strichstärke · 3 Querbalken · 4 Kontur · 5 Grundform</text>
 <rect class="panel" x="585" y="446" width="510" height="270"/><rect x="585" y="446" width="510" height="42" fill="#171717"/><text class="h" x="605" y="476">05 · FORMVARIATIONEN</text>
-<g fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"><path d="M620 650L655 535L690 650M635 610H675"/><path d="M715 650L780 535L845 650M740 610H820"/><path d="M865 650L910 535L955 650M885 610H935"/><path d="M975 650Q1010 530 1045 650M990 610H1030"/></g>
-<text class="s" x="615" y="690">Schmal · Breit · Geneigt · Organisch (schematische Studien)</text>
+<g fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"><path d="M610 650L635 535L660 650M620 610H650"/><path d="M680 650L725 535L770 650M695 610H755"/><path d="M790 650L835 535L880 650M805 610H865"/><path d="M900 650L945 535L990 650M915 610H975"/><path d="M1010 650Q1035 535 1060 650M1018 610H1052"/></g>
+<text class="s" x="615" y="690">Sehr schmal · breit · geneigt · hoher Querbalken · organisch</text>
 <rect class="panel" x="1122" y="446" width="510" height="270"/><rect x="1122" y="446" width="510" height="42" fill="#171717"/><text class="h" x="1142" y="476">06 · FORMCHARAKTER</text>
 <g class="t"><text x="1150" y="535">Geometrisch</text><text x="1150" y="575">Organisch</text><text x="1150" y="615">Kompakt</text><text x="1150" y="655">Dynamisch</text></g>
 <g class="s"><text x="1335" y="535">klar, technisch, stabil</text><text x="1335" y="575">weichere Übergänge</text><text x="1335" y="615">dicht, kräftig</text><text x="1335" y="655">geneigt, spannungsvoll</text></g>
