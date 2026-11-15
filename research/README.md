@@ -588,3 +588,4 @@ Added a central editorial control document mapping claims across the German arch
 Added a focused source-critical supplement comparing the contemporary 1987 *Da kukse wa* publication, its local Writer-ABC, 1989 press coverage, the KWI regional synthesis and INGRID's documented holdings. It preserves the 1987 local wording (including “getting fame”), separates contemporary media framing from historical fact, and sets a page-by-page primary-source and image-rights research plan.
 
 - [Dortmund 1983–1991 — Quellenkritischer Vertiefungsbaustein 01](DORTMUND_1983_1991_SOURCE_AUDIT_01.md)
+- [Dortmund Style — Visuelles Codierprotokoll 01](DORTMUND_STYLE_VISUAL_CODING_RUBRIC_01.md)
