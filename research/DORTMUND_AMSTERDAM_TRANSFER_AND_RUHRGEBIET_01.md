@@ -142,3 +142,44 @@ For every item, separate access, actual inspection, metadata, observation, inter
 | Can NIGHTSHIFT publish writer-specific presets based on this? | No |
 
 **Editorial conclusion:** the strongest current story is not “Amsterdam created Dortmund style”, but “two historically distinct European writing contexts met during a period of rapid transnational circulation; a later scholarly source identifies one personal contact route whose exact effects remain to be documented.”
+
+## 7. Primary-source follow-up — SHARK's Amsterdam visit (15 November 2026)
+
+A second source pass located a more explicit published account of the visit, but not yet its underlying first-person record.
+
+### 7.1 What the publication says
+
+The Hitzerot shop/publisher description for *ALL SURFACE – Tagging in Dortmund* states that SHARK had described visiting Amsterdam in the mid-1980s, seeing what a completely “bombed” city looked like, and wanting to do the same in his hometown. The description then says that the mentality as well as the style of the Dutch capital became a major influence on SHARK and a named group of Dortmund writers (ZODIAK, CHINTZ, CHANA, SATYR, ZHIT, SPOOK, KINOR and ATAIR). This is more specific than the KWI summary because it distinguishes the remembered citywide condition and the stated ambition to reproduce it in Dortmund.
+
+**Evidence grade:** published retrospective account attributed to SHARK by the *ALL SURFACE* publisher/retailer description. The page does not identify the original interview, recording, exact quotation context or date of the testimony. It is therefore not yet a directly inspectable primary-source transcript. Do not label it a verified verbatim quotation or treat the retailer copy as the book's complete editorial apparatus.
+
+Source: Hitzerot, *ALL SURFACE – Tagging in Dortmund*, product description, https://hitzerot.com/shop/all-surface/ (accessed 15 November 2026), especially the paragraph on SHARK's Amsterdam visit. The same description identifies the book as published November 2022 by Holger Wiese and Tobias Sawitzki and gives 244 pages.
+
+### 7.2 Independent context, not corroboration of the visit
+
+Mark Gmehling's 2015 interview recalls Dortmund as a place where graffiti began to grow in 1984 and names Chintz, Cole, Shark and Zhit as early heroes; he says he moved from skateboarding to spray painting around 1988 after seeing their graffiti grow. This is a first-person recollection by a later participant and is useful for the local scene's visibility and generational reception. It does **not** independently corroborate SHARK's Amsterdam visit or specify the visual content of the influence.
+
+Source: Sami Wakim, “Interview: Mark Gmehling”, Street Art United States, 13 March 2015, https://streetartunitedstates.com/interview-mark-gmehling/ (accessed 15 November 2026), answer to the opening question.
+
+### 7.3 KWI footnote check
+
+The KWI essay's note 4 points to Markus Wiese (2002), *Iron City: Graffiti Dortmund* (MASmedia), for a detailed illustrated history of Dortmund graffiti from its beginnings in the 1980s to the early 2000s. It does **not** cite a distinct interview or source in that footnote for the Amsterdam visit. Note 5 cites Lisa Gottlieb (2008) for a systematic classification of graffiti styles; that reference supports neither the Amsterdam travel anecdote nor a Dortmund-specific formal grammar. The Amsterdam claim therefore still needs its underlying source located.
+
+Source: Florian Deckers, “Graffiti im Ruhrgebiet”, KWI Blog, 22 June 2022, reference notes 4–5, https://blog.kulturwissenschaften.de/graffiti-im-ruhrgebiet/ .
+
+### 7.4 Updated evidence assessment
+
+- **Supported:** a retrospective publication description attributes to SHARK a mid-1980s Amsterdam visit and a stated ambition to bring the observed citywide bombing intensity to Dortmund.
+- **Supported as a separate local recollection:** Mark Gmehling remembers the growth and visibility of Dortmund graffiti from 1984 and identifies early local figures.
+- **Not yet established:** the original SHARK interview, exact words, date/location of visit, specific Amsterdam writers or sites encountered, and which particular visual/technical traits were adopted by each Dortmund writer.
+- **Not justified:** a direct “Amsterdam style” preset, a universal Dortmund block-letter recipe, or a claim that every named writer received the same influence.
+
+### 7.5 Next source actions
+
+1. Inspect *ALL SURFACE* itself (not just the product description): identify the relevant introductory text, SHARK attribution, interview/source note, author/editor credits and any bibliography.
+2. Locate *Iron City: Graffiti Dortmund* (2002) and check its Amsterdam passage, source notes and interview references against Deckers's summary.
+3. Request or locate the original oral-history interview behind the *ALL SURFACE* wording; record interviewer, date, medium and exact context.
+4. Search for first-person SHARK interviews and independently compare recollections from CHINTZ, CHANA, ZODIAK and other named writers.
+5. Only after source retrieval, inspect dated visual examples from Amsterdam and Dortmund side by side; code social/visibility practices separately from handstyle and letter construction.
+
+No new images were copied or coded in this pass. No rights status has changed.

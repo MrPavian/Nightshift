@@ -318,3 +318,10 @@ Whenever new research, design, code, assets, tests, architectural decisions or p
 - preserve dated history where useful.
 
 At the beginning of each new session, use this file as the first orientation point, then verify the live repository state. This file can be stale between updates; the repository and latest owner instructions remain authoritative.
+
+
+## 12. Research update — SHARK / Amsterdam source chain (15 November 2026)
+
+The Dortmund–Amsterdam dossier has a new section 7. The *ALL SURFACE* publisher description attributes to SHARK a mid-1980s Amsterdam visit, the observation of a fully bombed city and the ambition to bring that citywide visibility to Dortmund. Treat this as a retrospective account attributed to SHARK, not a verified verbatim primary-source transcript: the page does not identify the original interview, interviewer or date. KWI note 4 points to Markus Wiese, *Iron City: Graffiti Dortmund* (2002), for Dortmund history but does not identify a separate source for the Amsterdam anecdote. Mark Gmehling's 2015 interview provides independent context about Dortmund's early scene visibility, not corroboration of the visit. The underlying SHARK testimony and the precise visual/social mechanisms remain open.
+
+New/updated research file: `research/DORTMUND_AMSTERDAM_TRANSFER_AND_RUHRGEBIET_01.md` (section 7). Research index updated. No images copied or coded; no rights status changed; no generator preset or visual grammar authorized. Continue implementation priorities independently; this research note is context, not an instruction to interrupt active UI work.
