@@ -4,7 +4,7 @@ A procedural graffiti lettering and blackbook composition tool, developed as a s
 
 ## Project direction
 
-NIGHTSHIFT is not intended to be a generic text-to-graffiti filter. Its core is a **letter-construction engine**: individual glyph geometry, style-specific construction rules, word-level relationships, fill treatments, and a blackbook workflow.
+NIGHTSHIFT is not intended to be a generic text-to-graffiti filter. It is a **creator-first generative graffiti studio**: users enter a name, describe the desired artwork, compare structurally distinct proposals, then refine or fully author the result. Its core engine combines individual glyph geometry, style-specific construction rules, word-level relationships, finish treatments and a blackbook workflow. The default journey is Name → Creative Brief → Four Proposals → Choose → Refine → Save/Export/Game Artwork.
 
 The wider game concept is a grounded New York graffiti crew simulator. The editor is the central creative system. The game also includes **THE BLACKBOOK ARCHIVE**, a visual, interactive, in-game graffiti knowledge library.
 
@@ -47,6 +47,8 @@ Important limitation: current "letter joins" are still largely decorative bridge
 
 New contributors and AI agents should start with [AGENTS.md](AGENTS.md) and [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md).
 
+- [Creator-First Product Vision 01](docs/NIGHTSHIFT_CREATOR_FIRST_PRODUCT_VISION_01.md)
+- [Claude Ticket C08 — Creator-First Studio](docs/CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md)
 - [Project Brief](docs/PROJECT_BRIEF.md)
 - [Main Roadmap](docs/ROADMAP.md)
 - [Blackbook Archive Masterprompt](docs/BLACKBOOK_ARCHIVE_MASTERPROMPT.md)
