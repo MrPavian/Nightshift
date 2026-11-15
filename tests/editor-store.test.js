@@ -70,7 +70,7 @@ test('uncalibrated parameter operations are registered but disabled', () => {
 
 test('provisional reference-only glyphs cannot be edited; malformed envelopes are rejected', () => {
   const s = fresh();
-  const c = { ...cmd('c', 'glyph.K.contour.outer.node.01', { x: 1, y: 1 }, s.revision('latin.upper.K')), payload: { glyphId: 'latin.upper.K', nodeId: 'glyph.K.contour.outer.node.01', to: { x: 1, y: 1 } } };
+  const c = { ...cmd('c', 'glyph.J.contour.outer.node.01', { x: 1, y: 1 }, s.revision('latin.upper.J')), payload: { glyphId: 'latin.upper.J', nodeId: 'glyph.J.contour.outer.node.01', to: { x: 1, y: 1 } } };
   assert.equal(s.submit(c).code, 'OP_NOT_EDITABLE');
   const { expected_revision: _drop, ...noRev } = cmd('c', APEX, { x: 1, y: 1 }, 0);
   assert.equal(s.submit(noRev).code, 'CMD_BAD_ENVELOPE');

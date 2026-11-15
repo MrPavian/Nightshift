@@ -520,3 +520,9 @@
 - 16/26 letters authored; GHOST is fully authored. Reports, T06 proof run and T07 editor proof regenerated.
 - Tests: 118 pass; browser SMOKE, REVIEW-PAGE and EDITOR-PASS.
 
+## 2026-11-15 — C02 wave 3: authored K, M, N, V, W, X, Y, Z masters
+
+- Diagonal letters constructed from parallel stroke edges at a perpendicular thickness of 25 (`tools/lib/wave3-construction.mjs`, verified against the committed paths).
+- Overlay 1.4.0 with components that partition every outline; junction kinds `branch` and `crossing`.
+- 24/26 letters authored; all six word fixtures are fully authored. Tests: 123 pass; browser smoke, review page and editor pass.
+

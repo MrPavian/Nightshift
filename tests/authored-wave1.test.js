@@ -37,7 +37,7 @@ test('wave 1 records: authored-contour master first, v0.6 base kept as reference
     assert.deepEqual(g.review, []);
   }
   // Every other letter is unchanged in maturity.
-  for (const g of registry.list().filter((x) => !'ABGRSCDOPQEFHILT'.includes(x.character))) assert.equal(g.maturity, 'provisional', g.character);
+  for (const g of registry.list().filter((x) => !'ABGRSCDOPQEFHILTKMNVWXYZ'.includes(x.character))) assert.equal(g.maturity, 'provisional', g.character);
 });
 
 test('authored contours reproduce the snapshot byte-for-byte; the legacy reference variant still matches v0.6', () => {
@@ -118,5 +118,5 @@ test('wave 1 masters are editable through the command loop; provisional referenc
 
 test('browser and Node loaders use the same input list', () => {
   const inputs = readInputs();
-  assert.deepEqual(inputs.authored.map((a) => a.sourcePath), ['data/glyphs/authored/c02-wave1.v1.json', 'data/glyphs/authored/c02-wave2.v1.json']);
+  assert.deepEqual(inputs.authored.map((a) => a.sourcePath), ['data/glyphs/authored/c02-wave1.v1.json', 'data/glyphs/authored/c02-wave2.v1.json', 'data/glyphs/authored/c02-wave3.v1.json']);
 });

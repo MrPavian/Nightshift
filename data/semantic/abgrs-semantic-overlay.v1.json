@@ -1,6 +1,6 @@
 {
   "overlayId": "nightshift.semantic-overlay.abgrs",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "status": "provisional-engineering-proposal",
   "sources": [
     "contracts/abgrs-glyph-construction.v1.json#componentProposals",
@@ -1661,6 +1661,834 @@
       "identityInvariants": [
         "Stem centred under the bar; bar overhangs both sides.",
         "No foot bar (distinction from I)."
+      ]
+    },
+    "K": {
+      "components": [
+        {
+          "name": "spine",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Spine x=10–36.",
+          "connectsTo": [
+            "arm",
+            "leg"
+          ],
+          "candidateRefs": [
+            "outer#11",
+            "outer#01",
+            "outer#02",
+            "outer#09",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "arm",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Upper arm from the spine at y=60 to the top right.",
+          "connectsTo": [
+            "spine",
+            "leg"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#05"
+          ]
+        },
+        {
+          "name": "leg",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Leg from the branch point to the bottom right.",
+          "connectsTo": [
+            "spine",
+            "arm"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "arm-spine",
+          "kind": "attachment",
+          "components": [
+            "spine",
+            "arm"
+          ],
+          "candidateNodeRefs": [
+            "outer@02"
+          ]
+        },
+        {
+          "name": "leg-spine",
+          "kind": "attachment",
+          "components": [
+            "spine",
+            "leg"
+          ],
+          "candidateNodeRefs": [
+            "outer@08"
+          ]
+        },
+        {
+          "name": "arm-leg",
+          "kind": "branch",
+          "components": [
+            "arm",
+            "leg"
+          ],
+          "candidateNodeRefs": [
+            "outer@05"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "spine",
+          "arm",
+          "leg"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-R-and-X-review"
+        ]
+      },
+      "identityInvariants": [
+        "Arm and leg both start at or near the spine; no bowl (distinction from R)."
+      ]
+    },
+    "M": {
+      "components": [
+        {
+          "name": "left-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left stem x=10–36.",
+          "connectsTo": [
+            "left-diagonal"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#11",
+            "outer#12"
+          ]
+        },
+        {
+          "name": "left-diagonal",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "From the inner top corner of the left stem to the axis.",
+          "connectsTo": [
+            "left-stem",
+            "right-diagonal"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "right-diagonal",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Mirror of the left diagonal.",
+          "connectsTo": [
+            "right-stem",
+            "left-diagonal"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#09"
+          ]
+        },
+        {
+          "name": "right-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Right stem x=78–104.",
+          "connectsTo": [
+            "right-diagonal"
+          ],
+          "candidateRefs": [
+            "outer#05",
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "left-shoulder",
+          "kind": "continuation",
+          "components": [
+            "left-stem",
+            "left-diagonal"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@10"
+          ]
+        },
+        {
+          "name": "valley",
+          "kind": "continuation",
+          "components": [
+            "left-diagonal",
+            "right-diagonal"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@09"
+          ]
+        },
+        {
+          "name": "right-shoulder",
+          "kind": "continuation",
+          "components": [
+            "right-diagonal",
+            "right-stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@04",
+            "outer@08"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-stems",
+          "central-valley"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-N-and-W-review"
+        ]
+      },
+      "identityInvariants": [
+        "Two diagonals meet on the axis above the baseline; stems full height."
+      ]
+    },
+    "N": {
+      "components": [
+        {
+          "name": "left-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left stem x=10–36.",
+          "connectsTo": [
+            "diagonal"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#09",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "diagonal",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "From the top of the left stem to the foot of the right stem.",
+          "connectsTo": [
+            "left-stem",
+            "right-stem"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "right-stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Right stem x=74–100.",
+          "connectsTo": [
+            "diagonal"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "left-top",
+          "kind": "continuation",
+          "components": [
+            "left-stem",
+            "diagonal"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@08"
+          ]
+        },
+        {
+          "name": "right-foot",
+          "kind": "continuation",
+          "components": [
+            "diagonal",
+            "right-stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@07"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-stems",
+          "single-diagonal"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-H-and-M-review"
+        ]
+      },
+      "identityInvariants": [
+        "Exactly one diagonal, descending from top left to bottom right."
+      ]
+    },
+    "V": {
+      "components": [
+        {
+          "name": "left-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Left diagonal from the top to the foot.",
+          "connectsTo": [
+            "right-stroke",
+            "foot"
+          ],
+          "candidateRefs": [
+            "outer#07",
+            "outer#01",
+            "outer#02"
+          ]
+        },
+        {
+          "name": "right-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Mirror of the left diagonal.",
+          "connectsTo": [
+            "left-stroke",
+            "foot"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#05"
+          ]
+        },
+        {
+          "name": "foot",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Flat foot x=40–64 on the baseline.",
+          "connectsTo": [
+            "left-stroke",
+            "right-stroke"
+          ],
+          "candidateRefs": [
+            "outer#06"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "notch",
+          "kind": "continuation",
+          "components": [
+            "left-stroke",
+            "right-stroke"
+          ],
+          "candidateNodeRefs": [
+            "outer@02"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-diagonals",
+          "base-vertex"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-U-and-Y-review"
+        ]
+      },
+      "identityInvariants": [
+        "Diagonals meet at the baseline; no stem (distinction from Y)."
+      ]
+    },
+    "W": {
+      "components": [
+        {
+          "name": "left-outer-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Outer left diagonal and left foot.",
+          "connectsTo": [
+            "left-inner-stroke"
+          ],
+          "candidateRefs": [
+            "outer#13",
+            "outer#01",
+            "outer#02",
+            "outer#12"
+          ]
+        },
+        {
+          "name": "left-inner-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Rises from the left foot to the middle apex.",
+          "connectsTo": [
+            "left-outer-stroke",
+            "middle-apex"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#11"
+          ]
+        },
+        {
+          "name": "middle-apex",
+          "role": "terminal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Flat apex x=52–74 at cap height.",
+          "connectsTo": [
+            "left-inner-stroke",
+            "right-inner-stroke"
+          ],
+          "candidateRefs": [
+            "outer#04"
+          ]
+        },
+        {
+          "name": "right-inner-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Descends from the apex to the right foot.",
+          "connectsTo": [
+            "middle-apex",
+            "right-outer-stroke"
+          ],
+          "candidateRefs": [
+            "outer#05",
+            "outer#10"
+          ]
+        },
+        {
+          "name": "right-outer-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Outer right diagonal and right foot.",
+          "connectsTo": [
+            "right-inner-stroke"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07",
+            "outer#08",
+            "outer#09"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "left-notch",
+          "kind": "continuation",
+          "components": [
+            "left-outer-stroke",
+            "left-inner-stroke"
+          ],
+          "candidateNodeRefs": [
+            "outer@02"
+          ]
+        },
+        {
+          "name": "valley",
+          "kind": "continuation",
+          "components": [
+            "left-inner-stroke",
+            "right-inner-stroke"
+          ],
+          "candidateNodeRefs": [
+            "outer@10"
+          ]
+        },
+        {
+          "name": "right-notch",
+          "kind": "continuation",
+          "components": [
+            "right-inner-stroke",
+            "right-outer-stroke"
+          ],
+          "candidateNodeRefs": [
+            "outer@05"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "four-diagonals",
+          "two-feet"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-M-and-V-review"
+        ]
+      },
+      "identityInvariants": [
+        "Two feet on the baseline and one apex between them (inverse of M)."
+      ]
+    },
+    "X": {
+      "components": [
+        {
+          "name": "descending-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Top left to bottom right.",
+          "connectsTo": [
+            "ascending-stroke"
+          ],
+          "candidateRefs": [
+            "outer#01",
+            "outer#02",
+            "outer#06",
+            "outer#07",
+            "outer#08",
+            "outer#12"
+          ]
+        },
+        {
+          "name": "ascending-stroke",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Top right to bottom left.",
+          "connectsTo": [
+            "descending-stroke"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#05",
+            "outer#09",
+            "outer#10",
+            "outer#11"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "crossing",
+          "kind": "crossing",
+          "components": [
+            "descending-stroke",
+            "ascending-stroke"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@05",
+            "outer@08",
+            "outer@11"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-crossing-strokes"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-K-and-Y-review"
+        ]
+      },
+      "identityInvariants": [
+        "Both strokes run the full height and cross near the centre."
+      ]
+    },
+    "Y": {
+      "components": [
+        {
+          "name": "left-arm",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "From the top left to the branch above the stem.",
+          "connectsTo": [
+            "right-arm",
+            "stem"
+          ],
+          "candidateRefs": [
+            "outer#09",
+            "outer#01",
+            "outer#02"
+          ]
+        },
+        {
+          "name": "right-arm",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Mirror of the left arm.",
+          "connectsTo": [
+            "left-arm",
+            "stem"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#04",
+            "outer#05"
+          ]
+        },
+        {
+          "name": "stem",
+          "role": "stem",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Centred stem x=39–65 as in T.",
+          "connectsTo": [
+            "left-arm",
+            "right-arm"
+          ],
+          "candidateRefs": [
+            "outer#06",
+            "outer#07",
+            "outer#08"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "branch",
+          "kind": "branch",
+          "components": [
+            "left-arm",
+            "right-arm",
+            "stem"
+          ],
+          "candidateNodeRefs": [
+            "outer@05",
+            "outer@08"
+          ]
+        },
+        {
+          "name": "notch",
+          "kind": "continuation",
+          "components": [
+            "left-arm",
+            "right-arm"
+          ],
+          "candidateNodeRefs": [
+            "outer@02"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "two-arms",
+          "centred-stem"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-V-and-T-review"
+        ]
+      },
+      "identityInvariants": [
+        "Arms meet above mid height; stem continues to the baseline."
+      ]
+    },
+    "Z": {
+      "components": [
+        {
+          "name": "top-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=8–31.",
+          "connectsTo": [
+            "diagonal"
+          ],
+          "candidateRefs": [
+            "outer#09",
+            "outer#10",
+            "outer#01",
+            "outer#02"
+          ]
+        },
+        {
+          "name": "diagonal",
+          "role": "diagonal",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "From the top right to the bottom left.",
+          "connectsTo": [
+            "top-bar",
+            "foot-bar"
+          ],
+          "candidateRefs": [
+            "outer#03",
+            "outer#08"
+          ]
+        },
+        {
+          "name": "foot-bar",
+          "role": "bar",
+          "required": true,
+          "mapping": "provisional-unmapped",
+          "basis": "Band y=109–132.",
+          "connectsTo": [
+            "diagonal"
+          ],
+          "candidateRefs": [
+            "outer#04",
+            "outer#05",
+            "outer#06",
+            "outer#07"
+          ]
+        }
+      ],
+      "negativeSpaceBoundaries": {},
+      "junctions": [
+        {
+          "name": "top-diagonal",
+          "kind": "continuation",
+          "components": [
+            "top-bar",
+            "diagonal"
+          ],
+          "candidateNodeRefs": [
+            "outer@02",
+            "outer@08"
+          ]
+        },
+        {
+          "name": "diagonal-foot",
+          "kind": "continuation",
+          "components": [
+            "diagonal",
+            "foot-bar"
+          ],
+          "candidateNodeRefs": [
+            "outer@03",
+            "outer@07"
+          ]
+        }
+      ],
+      "expectedConnectedComponents": 1,
+      "identityProfile": {
+        "required": [
+          "top-bar",
+          "foot-bar",
+          "diagonal"
+        ],
+        "negativeSpace": {
+          "counterCount": 0,
+          "apertureCount": 0
+        },
+        "checks": [
+          "single-required-connected-contour",
+          "no-unintended-self-intersection",
+          "no-enclosed-counter",
+          "distinction-from-N-and-S-review"
+        ]
+      },
+      "identityInvariants": [
+        "Diagonal runs from the top right to the bottom left (mirror of N's diagonal direction)."
       ]
     }
   }

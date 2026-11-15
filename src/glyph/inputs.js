@@ -7,5 +7,5 @@ export const REGISTRY_INPUTS = {
   parameterContract: 'contracts/glyph-parameter-contract.v1.json',
   validationContract: 'contracts/glyph-geometry-validation.v1.json',
 };
-export const AUTHORED_SNAPSHOTS = ['data/glyphs/authored/c02-wave1.v1.json', 'data/glyphs/authored/c02-wave2.v1.json'];
+export const AUTHORED_SNAPSHOTS = ['data/glyphs/authored/c02-wave1.v1.json', 'data/glyphs/authored/c02-wave2.v1.json', 'data/glyphs/authored/c02-wave3.v1.json'];
 export const VALIDATOR_PROFILE = 'data/validator-profiles/legacy-v06.v1.json';

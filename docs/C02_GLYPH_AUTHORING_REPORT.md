@@ -1,7 +1,40 @@
 # C02 — Neutral A–Z Glyph Authoring Report
 
 **Package:** C02 (`docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md`) · **Plan:** `research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md`
-**Status:** Wave 1 (C, D, O, P, Q) and wave 2 (E, F, H, I, L, T) authored, owner review pending · Waves 3–4 not started
+**Status:** Waves 1–3 authored (24/26 letters), owner review pending · Wave 4 (J, U) open
+
+## Wave 3 — K, M, N, V, W, X, Y, Z (2026-11-15)
+
+### Construction
+- **Constructed, not drawn by eye.** `tools/lib/wave3-construction.mjs` builds every outline from stroke edges.
+  - Each diagonal has two exactly parallel edges at a perpendicular thickness of 25 units; stems are 26 and bars 23, as in the family.
+  - Notches, branch points and crossings are computed as intersections of lines; coordinates are rounded to whole units.
+  - A test proves that the committed paths are identical to the construction.
+- **Measured thickness:** the masters hold 24.2–26.1 units on the diagonals. The v0.6 bases varied from 19.6 to 28 (M 21.6–22.5, W 19.6–26.7); V and X there had no parallel edges at all.
+
+| Glyph | Decision |
+|---|---|
+| K | Spine 26; arm from the spine (y=60) to the top right (74–105); leg from the branch point (63, 66) to the bottom right (76–106) |
+| M | Stems 10–36 / 78–104; diagonals from the inner top corners meet on the axis; valley at y=89 |
+| N | Stems as H; one diagonal from the top of the left stem to the foot of the right stem |
+| V | Symmetric about x=52; flat foot 40–64 on the baseline |
+| W | Two Vs with one slope; middle apex at cap height (52–74), inner notches at y=66, middle valley at y=83 |
+| X | Two full-height strokes crossing at the centre; four computed notches |
+| Y | Arms meet at y=50; stem 39–65, identical to T |
+| Z | Bars as E; diagonal from the top right to the bottom left |
+
+### Semantics and identity
+- Overlay 1.4.0 adds components for spine/stems, arm, leg, diagonals, apex, foot, crossing strokes and bars. The components partition every outline exactly once (tested).
+- Junction kinds include `branch` (K, Y) and `crossing` (X).
+- Identity: `single-required-connected-contour`, `no-unintended-self-intersection` and `no-enclosed-counter` are decided by geometry. The distinctions (K↔R↔X, M↔N↔W, V↔U↔Y, X↔K↔Y, Z↔N↔S) stay with human review.
+
+### Results
+- All eight pass every hard check. **24 of 26 letters** have authored masters; only J and U (wave 4) are still provisional.
+- Proof run `run.0.7A-T06.da171a9bbfcd`. **All six word fixtures** (ABRA, BOMB, GHOST, KRAZE, MIND, NYX) now consist only of authored masters (`authored-subset`).
+- Tests: `npm test` 123/123 (new: `tests/authored-wave3.test.js` with 5 tests); browser SMOKE, REVIEW-PAGE and EDITOR-PASS. T07 editor proof: 13/13.
+
+### Maturity
+K, M, N, V, W, X, Y, Z: `provisional` → `authored-contour` (no review).
 
 ## Wave 2 — E, F, H, I, L, T (2026-11-15)
 

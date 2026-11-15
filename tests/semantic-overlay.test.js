@@ -38,7 +38,7 @@ test('overlay is pure: input records are not mutated', () => {
   assert.equal(stableStringify(records), snapshotText);
 });
 
-test('A/B/G/R/S components match the contract proposals exactly; waves 1–2 match their plans; other letters untouched', () => {
+test('A/B/G/R/S components match the contract proposals exactly; waves 1–3 match their plans; other letters untouched', () => {
   for (const [gid, names] of Object.entries(abgrsContract.componentProposals)) {
     const comps = registry.get(gid).semanticGraph.components;
     assert.deepEqual(comps.map((c) => c.label).sort(), [...names].sort(), gid);
@@ -47,11 +47,14 @@ test('A/B/G/R/S components match the contract proposals exactly; waves 1–2 mat
   const PLAN = { C: ['upper-terminal', 'upper-arc', 'lower-arc', 'lower-terminal'], D: ['spine', 'bowl', 'spine-bowl-junction', 'counter-boundary'],
     O: ['outer-bowl', 'counter-boundary'], P: ['spine', 'upper-bowl', 'lower-termination', 'counter-boundary'], Q: ['outer-bowl', 'tail', 'tail-junction', 'counter-boundary'],
     E: ['spine', 'top-bar', 'middle-bar', 'foot-bar'], F: ['spine', 'top-bar', 'middle-bar', 'foot'], H: ['left-stem', 'crossbar', 'right-stem'],
-    I: ['stem', 'top-terminal', 'foot-terminal'], L: ['spine', 'foot-bar'], T: ['top-bar', 'stem'] };
+    I: ['stem', 'top-terminal', 'foot-terminal'], L: ['spine', 'foot-bar'], T: ['top-bar', 'stem'],
+    K: ['spine', 'arm', 'leg'], M: ['left-stem', 'left-diagonal', 'right-diagonal', 'right-stem'], N: ['left-stem', 'diagonal', 'right-stem'],
+    V: ['left-stroke', 'right-stroke', 'foot'], W: ['left-outer-stroke', 'left-inner-stroke', 'middle-apex', 'right-inner-stroke', 'right-outer-stroke'],
+    X: ['descending-stroke', 'ascending-stroke'], Y: ['left-arm', 'right-arm', 'stem'], Z: ['top-bar', 'diagonal', 'foot-bar'] };
   for (const [ch, names] of Object.entries(PLAN)) {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components.map((c) => c.label).sort(), [...names].sort(), ch);
   }
-  for (const ch of 'JKMNUVWXYZ') {
+  for (const ch of 'JU') {
     assert.deepEqual(registry.getByChar(ch).semanticGraph.components, []);
     assert.equal(registry.getByChar(ch).revision, 1);
   }

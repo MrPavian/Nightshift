@@ -5,19 +5,19 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            86.722099,
-            51.48011
+            68,
+            8
           ],
           [
-            67,
-            35
+            68,
+            31
           ]
         ],
         "featureId": "glyph.Z.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25.701269,
+        "minimumDistance": 23,
         "segmentIds": [
-          "glyph.Z.contour.outer.seg.03",
+          "glyph.Z.contour.outer.seg.01",
           "glyph.Z.contour.outer.seg.08"
         ],
         "side": "filled"
@@ -26,19 +26,19 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            86.722099,
-            51.48011
+            38,
+            8
           ],
           [
-            67,
-            35
+            38,
+            31
           ]
         ],
         "featureId": "glyph.Z.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25.701269,
+        "minimumDistance": 23,
         "segmentIds": [
-          "glyph.Z.contour.outer.seg.03",
+          "glyph.Z.contour.outer.seg.01",
           "glyph.Z.contour.outer.seg.09"
         ],
         "side": "filled"
@@ -47,20 +47,41 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            42,
-            105
+            40,
+            109
           ],
           [
-            21.985283,
-            88.001199
+            40,
+            132
           ]
         ],
         "featureId": "glyph.Z.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 26.259248,
+        "minimumDistance": 23,
+        "segmentIds": [
+          "glyph.Z.contour.outer.seg.03",
+          "glyph.Z.contour.outer.seg.06"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            71,
+            109
+          ],
+          [
+            71,
+            132
+          ]
+        ],
+        "featureId": "glyph.Z.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.Z.contour.outer.seg.04",
-          "glyph.Z.contour.outer.seg.08"
+          "glyph.Z.contour.outer.seg.06"
         ],
         "side": "filled"
       },
@@ -68,41 +89,20 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            67,
-            8
+            64.052045,
+            77.732342
           ],
           [
-            67,
-            35
+            43.947955,
+            62.267658
           ]
         ],
         "featureId": "glyph.Z.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 27,
+        "minimumDistance": 25.363968,
         "segmentIds": [
-          "glyph.Z.contour.outer.seg.01",
+          "glyph.Z.contour.outer.seg.03",
           "glyph.Z.contour.outer.seg.08"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            37.5,
-            8
-          ],
-          [
-            37.5,
-            35
-          ]
-        ],
-        "featureId": "glyph.Z.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 27,
-        "segmentIds": [
-          "glyph.Z.contour.outer.seg.01",
-          "glyph.Z.contour.outer.seg.09"
         ],
         "side": "filled"
       }
@@ -119,13 +119,34 @@
       "message": "5 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
       "severity": "warning",
       "stage": "clearance-analysis",
-      "variantId": "z.provisional"
+      "variantId": "z.master"
     }
   ],
-  "geometryHash": "08db8898d7f4a7e7112742c050c134c88db6c31d22b4cfebdc341eb18e7b4ddc",
+  "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
   "glyphId": "latin.upper.Z",
   "hardChecksPassed": true,
-  "identityChecks": [],
+  "identityChecks": [
+    {
+      "name": "single-required-connected-contour",
+      "reason": "one closed contour, one connected component",
+      "status": "passed"
+    },
+    {
+      "name": "no-unintended-self-intersection",
+      "reason": "no undeclared intersections (certified)",
+      "status": "passed"
+    },
+    {
+      "name": "no-enclosed-counter",
+      "reason": "single outer contour, no inner contour: no enclosed counter",
+      "status": "passed"
+    },
+    {
+      "name": "distinction-from-N-and-S-review",
+      "reason": "human visual review required",
+      "status": "not-evaluable"
+    }
+  ],
   "negativeSpace": {
     "apertures": [],
     "channels": [],
@@ -173,7 +194,7 @@
     },
     {
       "stage": "glyph-identity-invariants",
-      "status": "passed"
+      "status": "partial"
     },
     {
       "note": "No renderer exists yet (T05).",
@@ -189,13 +210,13 @@
         "parent": null
       }
     ],
-    "declaredFillRule": "nonzero",
-    "expectedConnectedComponents": null,
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
     "facePoints": {
       "glyph.Z.contour.outer": {
-        "margin": 13.113774,
+        "margin": 12.681984,
         "point": [
-          27.33181,
+          29.41241,
           101.963867
         ]
       }
@@ -212,5 +233,5 @@
     }
   },
   "validatorVersion": "geometry-validator/1.0.0",
-  "variantId": "z.provisional"
+  "variantId": "z.master"
 }
