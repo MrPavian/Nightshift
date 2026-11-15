@@ -5,6 +5,8 @@
 
 ## TBA-01 — Content schema and source pipeline
 - Define versioned schema for entry, alias, source, evidence claim, image reference, rights state, relation and generator capability.
+- Implement against `docs/BLACKBOOK_ARCHIVE_GLOBAL_EDITORIAL_FRAMEWORK_01.md`; support global/regional scene chapters, timeline events, places, practices, styles, formats, techniques, people/crews, glossary and visual objects as linked content types/facets.
+- Preserve claim-level provenance and separate evidence status, editorial approval and image rights. Do not publish a research dossier wholesale or treat all collected notes as approved copy.
 - Markdown research remains editorial source of truth.
 - Validate stable IDs, required fields, link targets, statuses and rights metadata.
 - Export deterministic ingame JSON without maintaining a duplicate editorial database.
