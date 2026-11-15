@@ -571,3 +571,6 @@ Die sechs englischen Arbeitsentwürfe wurden als Ausgangsmaterial beibehalten. D
 - [Lernansicht 01 — Buchstaben & Verbindungen: Interaktive Lern- und UX-Spezifikation](../docs/BLACKBOOK_LETTERING_LEARNING_VIEW_01.md)
 
 Die Fassungen berücksichtigen das Editorial Audit 01. Offene Seitenbelege, bibliografische Präzisierungen und nicht ausreichend belegte Aussagen sind sichtbar als Prüfpunkte markiert. Die deutschen Fassungen sind keine Veröffentlichungsgenehmigung.
+
+- [Musterartikel — Tag und Handstyle](BLACKBOOK_SAMPLE_ARTICLE_TAG_HANDSTYLE_01.md)
+- [Artikelvorlage 01 — wiederverwendbare Lexikon-Artikelseite](../docs/production/ARTICLE_PAGE_TEMPLATE_01.md)
