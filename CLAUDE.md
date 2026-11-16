@@ -485,3 +485,30 @@ The owner handed over the complete approved uppercase reference set (26 sheets, 
   - Claude rebuilds the A study (`assets/design/letter-study_A_01.svg`) against this reference first, then continues with C03.
   - ChatGPT works in parallel on lowercase letters and numerals.
 - The approval gate stays: B–Z studies only after the owner explicitly approves A.
+
+
+### A study — rebuilt as a generated SVG (16 November 2026, Claude)
+
+`assets/design/letter-study_A_01.svg` has been rebuilt against the owner reference `assets/design/reference/academy-uppercase/A.webp`. It replaces ChatGPT's earlier hand-written SVG, which is superseded.
+
+- **Source of truth:** `tools/academy/build-letter-study-a.mjs`, with drawing helpers in `tools/academy/lib.mjs`.
+  - Rebuild with `npm run build:academy`.
+  - Do not edit the SVGs by hand: a test compares them byte for byte with the generator output.
+- **Outputs:** `letter-study_A_01.svg` (full) and `letter-study_A_01_clean.svg` (clean print version without paper texture, distress and spray).
+- **Layers:** paper, distress, spray, under, frames, letters, construction, labels. Each is a named group (`layer-*`).
+- **Text:** every label is real SVG text. The fonts are embedded: Permanent Marker (Apache 2.0) and Kalam (OFL); see `assets/fonts/academy/`.
+- **Graffiti letters:** all are original vector constructions. None is a font glyph or a tracing.
+- **Factual corrections applied:**
+  - Percentages are example values of this drawing, derived from its geometry: width 91 %, crossbar top 37 %, counter 31 %, stroke 20 %.
+  - The sheet states that capitals have no x-height.
+  - There is no three-movement claim. The stroke sequence is marked as an assumption.
+  - Nib and brush technique is explicitly not transferable to aerosol.
+  - The counter is labelled Punze, not „Auge“. There is no speed claim for throw-ups.
+  - Construction stages 4 (contour) and 5 (filled form) are visibly different.
+  - The three graffiti directions are marked as parallel, not as a ladder.
+- **QA:**
+  - `tools/academy/check-letter-study.mjs`, also part of `npm run test:browser`, checks text containment, text overlaps, spray over text and anatomy leader targets.
+  - Result: 0 issues in both versions.
+  - Proofs, 2× crops and a greyscale check are in `docs/reports/proof/academy-A/`.
+  - Unit tests: `tests/academy-study.test.js`.
+- **Status:** owner review pending. The sheet is not print-approved and has not been checked in Inkscape, Illustrator or a PDF export. B–Z stay blocked until the owner approves A.
