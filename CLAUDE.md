@@ -473,3 +473,15 @@ The current A SVG was fetched from the repository, rendered at 1680 × 1188 (A4 
 - The grain filter is subtle; test in the actual PDF export path and retain a clean print variant if filter support or contrast is inconsistent.
 
 Next: perform a 100% crop inspection of panels 2, 4 and 8, refine the construction sequence and graffiti examples if necessary, then export a print proof. Do not start B before owner approval.
+
+
+### Owner reference set A–Z and work split (16 November 2026)
+
+The owner handed over the complete approved uppercase reference set (26 sheets, developed with ChatGPT and approved by the owner). It is stored as a style and layout reference in `assets/design/reference/academy-uppercase/`: `A.webp`–`Z.webp`, plus `manifest.json` with the original PNG hashes and a `README.md` stating what the set may and may not be used for.
+
+- The set is a visual and compositional target only. It is **not** a factual source: its generated texts contain known errors, which the studies must correct.
+- It is not to be traced and not to be shipped as a product asset.
+- **Owner decisions, 16 November 2026:**
+  - Claude rebuilds the A study (`assets/design/letter-study_A_01.svg`) against this reference first, then continues with C03.
+  - ChatGPT works in parallel on lowercase letters and numerals.
+- The approval gate stays: B–Z studies only after the owner explicitly approves A.
