@@ -375,3 +375,29 @@ Branch `claude/creator-0-1`, stacked on C03 (#17).
 - Throw-up differs from Piece only in finish (no 3D), not in construction.
 - Tag is HST-01, still open: whether Tag belongs in 1.0 is an open owner question.
 - Bombing is game logic, not a style.
+
+
+## Graffiti engine — Creator 0.2 (D-017, 18 November 2026)
+
+**Why:** The owner judged the C03 output as „just thicker letters, not a style“ and asked for web research on graffiti alphabets, analysis of the styles, and imitation.
+
+**Research:** `research/GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`, based on tutorial sources. The image search showed images to the owner only; the AI did not see them.
+
+**Implementation:**
+- `src/style/skeletons.js`: centre lines A–Z with free ends and crossbars.
+- `src/style/graffiti-engine.js`: bars per base style; moves serif, cut, kick, arrow, split and drop; 3D, outline and highlight rendering.
+- **Base styles:**
+  - Bubble (round, wide)
+  - Straight
+  - Blockbuster
+  - Semi-Wild (new; true Wildstyle interlocking still needs C04)
+- **Proposals:** each proposal picks one move set that recurs through the word. The four proposals prefer different move sets.
+- **Creator:** `creator/` and `src/creator/proposals.js` 0.2 now use the engine.
+
+**Open:**
+- Skeletons are not linked to the C02 masters (D-017).
+- No taper and no true connections.
+- Nothing calibrated.
+- How the shapes look is for the owner to judge.
+
+**Tests:** `tests/creator.test.js` (8 tests); browser check `tools/creator/check-creator.mjs` (4 styles × 4).

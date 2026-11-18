@@ -1,7 +1,6 @@
 // NIGHTSHIFT Creator 0.1: word -> brief -> four proposals -> choose -> export.
-import { loadRegistryAndProfile } from '../src/glyph/load-browser.js';
 import { generateProposals, STYLES, FORMS, PRIORITIES, CREATOR_VERSION, placementTransform } from '../src/creator/proposals.js';
-import { paintGlyph } from '../src/style/render.js';
+import { renderLetters, ENGINE_VERSION } from '../src/style/graffiti-engine.js';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -35,12 +34,12 @@ function rendering(neutral) {
   if (neutral) return { fill: '#111' };
   const p = state.palette;
   return state.form === 'throw-up'
-    ? { fill: p.fill, outline: { color: p.outline, width: 9 }, highlights: true }
-    : { fill: p.fill, outline: { color: p.outline, width: 8 }, depth: { dx: 10, dy: 10, color: p.depth }, highlights: true };
+    ? { fill: p.fill, outline: p.outline, outlineWidth: 8, highlights: true }
+    : { fill: p.fill, outline: p.outline, outlineWidth: 7, depth: { dx: 12, dy: 11, color: p.depth }, highlights: true };
 }
 function wordSvg(layout, neutral, { width = null } = {}) {
-  const vb = [-40, -70, layout.width + 90, 290];
-  const body = layout.items.filter(Boolean).map((it) => paintGlyph(it.record, rendering(neutral), placementTransform(it))).join('');
+  const vb = [-50, -80, layout.width + 120, 320];
+  const body = renderLetters(layout.items.filter(Boolean).map((it) => ({ letter: it.letter, transform: placementTransform(it) })), rendering(neutral));
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb.join(' ')}"${width ? ` width="${width}" height="${Math.round((width * vb[3]) / vb[2])}"` : ''} role="img" aria-label="${esc(state.result?.report.word ?? '')}">${body}</svg>`;
 }
 
@@ -60,16 +59,11 @@ function renderChosen() {
 }
 
 // ---------- actions ----------
-let ctx = null;
 async function generate() {
   const go = $('go');
   go.disabled = true; go.textContent = 'Wird erzeugt …';
   try {
-    if (!ctx) {
-      const [{ registry, profile }, contract] = await Promise.all([loadRegistryAndProfile('../'), fetch('../contracts/style-resolver.v1.json').then((r) => r.json())]);
-      ctx = { registry, profile, contract, cache: new Map() };
-    }
-    const res = generateProposals({ word: $('word').value, style: state.style, form: state.form, priorities: state.priorities, seed: state.seed }, ctx);
+    const res = generateProposals({ word: $('word').value, style: state.style, form: state.form, priorities: state.priorities, seed: state.seed });
     $('word-msg').textContent = res.ok ? '' : res.problems.join(' ');
     if (!res.ok) { $('results').hidden = true; $('chosen').hidden = true; return; }
     state.result = res; state.chosen = null;
@@ -123,14 +117,14 @@ $('dl-json').addEventListener('click', () => {
   const artifact = {
     schema: 'nightshift.game-artwork.v0', creatorVersion: CREATOR_VERSION, createdAt: new Date().toISOString(),
     brief: { word: state.result.report.word, form: state.form, style: state.style, priorities: state.result.report.priorities, seed: state.result.report.seed },
-    composition: p.composition, rendering: rendering(false), glyphs: state.result.report.glyphs,
-    placements: p.layout.items.map((it) => (it ? { glyphId: it.record.glyphId, geometryHash: it.record.variants[0].geometryHash, transform: placementTransform(it) } : { space: true })),
+    composition: p.composition, rendering: rendering(false), engineVersion: ENGINE_VERSION,
+    placements: p.layout.items.map((it) => (it ? { char: it.letter.char, moves: it.letter.applied, transform: placementTransform(it) } : { space: true })),
     svg: wordSvg(p.layout, false), limits: state.result.report.limits,
   };
   download(`${fileBase()}.json`, new Blob([JSON.stringify(artifact, null, 2)], { type: 'application/json' }));
 });
 
-$('version').textContent = `${CREATOR_VERSION} · Stile aus dem Stil-Resolver (C03) · Vorschläge unterscheiden sich in Abstand, Neigung, Grundlinie, Proportion und Größenrhythmus.`;
+$('version').textContent = `${CREATOR_VERSION} · ${ENGINE_VERSION} · Buchstaben aus Skelett, Balken und Style-Elementen. Vorschläge unterscheiden sich in Style-Elementen und Wortkomposition.`;
 document.documentElement.dataset.ready = 'true';
 // ?auto=1 generates once on load (used by the browser check and for shareable demo links).
 const q = new URLSearchParams(location.search);

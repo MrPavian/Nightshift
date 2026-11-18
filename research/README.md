@@ -607,3 +607,4 @@ Added a source-critical dossier distinguishing Amsterdam's locally rooted late-1
 ### SHARK / Amsterdam source follow-up (15 November 2026)
 
 A follow-up check of the KWI essay's notes found that its Dortmund-history reference points to Markus Wiese's *Iron City: Graffiti Dortmund* (2002), not an explicitly identified interview for the Amsterdam anecdote. The *ALL SURFACE* publisher description attributes a more detailed mid-1980s Amsterdam recollection to SHARK, while a 2015 Mark Gmehling interview independently recalls Dortmund's early scene growth but does not corroborate that visit. The underlying SHARK testimony remains to be located; see the updated dossier's section 7.
+- `GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`: web survey of graffiti style moves (bars, serifs, cuts, kicks, arrows, overlaps, bubble rules) and their translation into the graffiti engine (2026-11-18, Claude).

@@ -71,3 +71,11 @@ D-013 — First enabled editor operation: `contour.move-node`
 - Tag (HST-01) and Wildstyle are shown as unavailable, with a reason.
 - Bombing is not offered as a style. Whether Tag goes into 1.0 is still an open owner question.
 - C04 → C05 → C07 → C08 remain the plan. Creator 0.1 is replaced by the full C08 Creator, not extended in parallel.
+
+## D-017 — Graffiti engine on letter skeletons for the Creator (2026-11-18)
+**Decision:** After owner feedback that the C03 styles were „just thicker letters, not a style“, and an owner request to research graffiti alphabets and imitate the styles, the Creator now builds artwork with the graffiti engine. It follows the tutorial method: skeleton, then bars, then style moves (serifs, cuts, kicks, arrows, split bars), then fill and 3D.
+**Implications:**
+- Creator artwork comes from `src/style/skeletons.js` and `src/style/graffiti-engine.js`. Both are original constructions, not traced from any source.
+- The editable glyph masters (C02) and the C03 resolver stay in place for the editor.
+- Skeleton and master are not linked yet. This is a second geometry source and a deliberate interim step. The link (skeleton ↔ master, or generating the masters from skeletons) has to be settled with C04/C05.
+- Research basis: `research/GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`.
