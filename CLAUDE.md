@@ -325,3 +325,21 @@ At the beginning of each new session, use this file as the first orientation poi
 The Dortmund–Amsterdam dossier has a new section 7. The *ALL SURFACE* publisher description attributes to SHARK a mid-1980s Amsterdam visit, the observation of a fully bombed city and the ambition to bring that citywide visibility to Dortmund. Treat this as a retrospective account attributed to SHARK, not a verified verbatim primary-source transcript: the page does not identify the original interview, interviewer or date. KWI note 4 points to Markus Wiese, *Iron City: Graffiti Dortmund* (2002), for Dortmund history but does not identify a separate source for the Amsterdam anecdote. Mark Gmehling's 2015 interview provides independent context about Dortmund's early scene visibility, not corroboration of the visit. The underlying SHARK testimony and the precise visual/social mechanisms remain open.
 
 New/updated research file: `research/DORTMUND_AMSTERDAM_TRANSFER_AND_RUHRGEBIET_01.md` (section 7). Research index updated. No images copied or coded; no rights status changed; no generator preset or visual grammar authorized. Continue implementation priorities independently; this research note is context, not an instruction to interrupt active UI work.
+
+
+## C03 — Style grammar resolver (18 November 2026, Claude)
+
+Branch `claude/c03-style-resolver`, stacked on the C02 waves (#6 → #11 → #12 → #13).
+
+- **Implemented:** `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`.
+- **Results for all 26 authored masters:**
+  - Bubble and Blockbuster change the monochrome geometry of every letter.
+  - Straight changes 13 letters (curves and sharp corners). The other 13 have right angles only; they are reported unchanged, with that reason.
+  - Wildstyle is a study mode. The interlocking step is skipped with a reason, because it needs C04.
+- **Axes stay separate:** practice context and rendering never change geometry. Blockbuster = straight letterform + block-fit composition.
+- **Guarantees:**
+  - Masters are never mutated. Derived records are `reference-only`.
+  - Every step is validated: hard checks pass, the counter count is unchanged, and the glyph is one connected part.
+  - The parameters are uncalibrated grammar defaults.
+- **Proofs and docs:** `docs/reports/proof/C03/`, `docs/C03_STYLE_RESOLVER_REPORT.md`, `tests/style-resolver.test.js`.
+- **Not done:** a style switch in the editor or studio UI (C08), identity-specific checks such as the G/C apertures (only hard checks and counter count are checked), and human review of how the shapes look.

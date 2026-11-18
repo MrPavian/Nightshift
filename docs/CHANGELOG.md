@@ -533,3 +533,9 @@
 - All 26 letters now have an editable authored master; none is reviewed.
 - The `OP_NOT_EDITABLE` protection test now runs on the pure v0.6 import.
 - Tests: 126 passing plus browser tests (smoke, review page, editor).
+
+## 2026-11-18 — C03: style grammar resolver (Bubble, Straight, Blockbuster; Wildstyle study)
+- `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`. Styles change the monochrome geometry of the authored masters through registered, validated, deterministic operations. Every step is reported with status and reason.
+- Axes are kept separate: letterform and composition change geometry; practice context and rendering do not.
+- Wildstyle is a study mode: interlocking is skipped until C04.
+- Proofs and report in `docs/reports/proof/C03/` (`node tools/proof-styles.mjs`); 7 new tests. Report: `docs/C03_STYLE_RESOLVER_REPORT.md`.
