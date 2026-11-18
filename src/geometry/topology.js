@@ -284,7 +284,7 @@ function boundaryProximity(polys) {
           }
         }
       }
-      pairs.push(...best.values());
+      for (const v of best.values()) pairs.push(v);
     }
   }
   return pairs.sort((x, y) => x.distance - y.distance || x.segmentIds.join().localeCompare(y.segmentIds.join()));

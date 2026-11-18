@@ -7,6 +7,7 @@ import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
 import { buildRenderModel } from '../src/render/render-model.js';
 import { glyphGroup } from '../src/render/svg.js';
 import { resolveStyle, RESOLVER_VERSION } from '../src/style/resolver.js';
+import { paintGlyph, layoutWord } from '../src/style/render.js';
 
 const out = process.argv[2] ?? 'docs/reports/proof/C03';
 mkdirSync(out, { recursive: true });
@@ -14,6 +15,7 @@ const contract = JSON.parse(readFileSync('contracts/style-resolver.v1.json', 'ut
 const profile = JSON.parse(readFileSync('data/validator-profiles/legacy-v06.v1.json', 'utf8'));
 const registry = loadRegistry();
 const PRESETS = ['neutral', 'straight', 'bubble', 'blockbuster', 'wildstyle'];
+const f2 = (n) => Math.round(n * 100) / 100;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
 const results = {};
@@ -41,20 +43,25 @@ svg += `<text x="20" y="${H - 34}" font-size="12" fill="#333">Wildstyle: Verschr
 svg += `<text x="20" y="${H - 16}" font-size="12" fill="#333">Straight ändert nur Kurven und spitze Ecken; Buchstaben mit rechten Winkeln bleiben gleich (=). Blockbuster = Straight + Blockfit.</text></svg>`;
 writeFileSync(`${out}/style-grammar-A-Z.svg`, svg);
 
-// ---- word fixtures ----
+// ---- word fixtures (styled: rendering axis and word composition applied) ----
 const fixtures = JSON.parse(readFileSync('contracts/proof-sheet-fixtures.v1.json', 'utf8'));
 const words = (fixtures.fixtures?.words ?? []).map((w) => (typeof w === 'string' ? w : w.text ?? w.word)).filter(Boolean).slice(0, 6);
-const s2 = 0.38, lineH = 64;
-let w2 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 ${40 + words.length * PRESETS.length * lineH}" width="760" font-family="system-ui, sans-serif"><rect width="100%" height="100%" fill="#fff"/>`;
-let yy = 20;
+const INK = '#111';
+const RENDERING = {
+  neutral: { fill: INK }, straight: { fill: INK }, wildstyle: { fill: INK },
+  bubble: { fill: '#F4F1EA', outline: { color: INK, width: 9 }, depth: { dx: 9, dy: 9, color: INK }, highlights: true },
+  blockbuster: { fill: '#F4F1EA', outline: { color: INK, width: 7 }, depth: { dx: 12, dy: 10, color: '#4A2A63' } },
+};
+const s2 = 0.36, lineH = 72, W2 = 820;
+let w2 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W2} ${30 + words.length * PRESETS.length * lineH}" width="${W2}" font-family="system-ui, sans-serif"><rect width="100%" height="100%" fill="#EFECE6"/>`;
+let yy = 18;
 for (const word of words) for (const p of PRESETS) {
   w2 += `<text x="10" y="${yy + 34}" font-size="12" fill="#555">${esc(contract.presets[p].labelDe)}</text>`;
-  let x = 160;
-  for (const ch of word.toUpperCase()) {
-    const g = registry.getByChar(ch); if (!g) { x += 40; continue; }
-    const res = results[`${p}:${ch}`], a = advance(g, res);
-    w2 += glyphGroup(model(g, res), { transform: `translate(${x - a.x0 * s2} ${yy}) scale(${s2})` });
-    x += (a.x1 - a.x0) * s2 + 10;
+  const recs = [...word.toUpperCase()].map((ch) => { const g = registry.getByChar(ch); const r = results[`${p}:${ch}`]; return r.derived ?? g; });
+  const comp = contract.presets[p].composition === 'bounce' ? 'bounce' : 'neutral';
+  for (const it of layoutWord(recs, comp, contract.operations['composition.bounce'].params)) {
+    const cx = (it.box.x0 + it.box.x1) / 2;
+    w2 += paintGlyph(it.record, RENDERING[p], `translate(${f2(170 + it.x * s2)} ${f2(yy + it.y * s2)}) scale(${s2}) rotate(${it.rotate} ${f2(cx)} 70)`);
   }
   yy += lineH;
 }

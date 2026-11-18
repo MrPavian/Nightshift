@@ -1,6 +1,6 @@
 {
   "resolverVersion": "style-resolver/1.0.0",
-  "contract": "nightshift.style-resolver@1.0.0",
+  "contract": "nightshift.style-resolver@1.1.0",
   "words": [
     "ABRA",
     "BOMB",
@@ -668,7 +668,7 @@
     },
     "bubble:A": {
       "status": "applied",
-      "geometryHash": "e5ce233dba914caa8aafcfc50ddde31fd6cd51bbf71d5281b41b97966c708815",
+      "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -676,23 +676,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:B": {
       "status": "applied",
-      "geometryHash": "6ce5f4e2f88bde4d2cb0c82d58109fdef8e18ce82071b23f7f25e3e6f83d79ec",
+      "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -700,23 +727,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:C": {
       "status": "applied",
-      "geometryHash": "53021d979ad5864a4e9db5d83a93ad709dc17578c089663e20b2684263f93704",
+      "geometryHash": "86c8eeb48700ce42be82a2c2673762e8a4b9bc6066c6ec73a896aea425a86539",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -724,23 +778,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:D": {
       "status": "applied",
-      "geometryHash": "82851f3f7d1f0813a2e0a925353ac5bd64dffa401637edd822b51c2c9b776e68",
+      "geometryHash": "5476782e12f763ffb39362f7c77facc102512a69e25b4caca87c4b89e52449b6",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -748,23 +829,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:E": {
       "status": "applied",
-      "geometryHash": "d6d4a1812e1defc665afa89be6c6dcf42243e13bd88af9b57d9989fa2974de8a",
+      "geometryHash": "ac80d8ead70cd18ea0e6a29ef15248bcc94649e14a87674d8d5aeb4a1c578bcb",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -772,23 +880,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:F": {
       "status": "applied",
-      "geometryHash": "f00f6237ed2e56d772fd6081b0bb2690c9cc355957a18131c5aef84a60f9bb4d",
+      "geometryHash": "80e4299097c194e5b5836db73a47af5cc662720ea3d8c88836cfdfba97491fe1",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -796,23 +931,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:G": {
       "status": "applied",
-      "geometryHash": "5be418cf39c522290118e4c0b864f1dc62a7ed147d77cc2d7f1fce3ddc5ead73",
+      "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -820,23 +982,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:H": {
       "status": "applied",
-      "geometryHash": "e3d9c869a0601dba98604d6994f355fda66f51f47d649eae49c391559b17ded6",
+      "geometryHash": "dec40aa8548b45cc5907495a2d9ac2efefb392ea1bab504dc5b9cd12d548b5af",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -844,23 +1033,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:I": {
       "status": "applied",
-      "geometryHash": "3274782f03e14d6ba4a43c9d92dc5bcdb04004323be740093b4b3f51d0b0a6eb",
+      "geometryHash": "f459f93b8347f447e141b09a1e994748ea404f6c1e442fcd02742f152f85cc05",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -868,23 +1084,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:J": {
       "status": "applied",
-      "geometryHash": "e5545538a9bd272dae0d34a84731f064e5f673f82003b1dd30059b8ecaeb8632",
+      "geometryHash": "587b23adae36678a74dedd7ee0ea529ac3b8f1a03296ea02eac34eee2321ee76",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -892,23 +1135,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:K": {
       "status": "applied",
-      "geometryHash": "abc6c8ef3848269101d6c36251a049ed982cf12abbea6963974df34be04587f0",
+      "geometryHash": "bc253ee94f3f4db6de8716f401fa494638a0726864fc66e8bab0c6aefd4f67ea",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -916,23 +1186,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:L": {
       "status": "applied",
-      "geometryHash": "cdce46bd743fc353acd37dea576378cef8c3a27b3a7fed00c24ca47e8bde08ff",
+      "geometryHash": "7abc45789f1e21e44455b16aa183864a8c3cff800c16954b369adc8a01104c8e",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -940,23 +1237,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:M": {
       "status": "applied",
-      "geometryHash": "fd9413e4e3d009d4244c4987e26d83269248525ea5d875fc8f66a3bd22ee3351",
+      "geometryHash": "6c4a00177f7f86ebc825ccd4f881b5556aba3eca00d3725c84517b4cd4649a7a",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -964,23 +1288,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:N": {
       "status": "applied",
-      "geometryHash": "be9a691a78a900712cf810656be72d5b0c4f2f27fcc4704e39c68705cab95442",
+      "geometryHash": "736672967912c5df87ebcb27a093d03371d71a49ce81fb94c735ce1a392c1a26",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -988,23 +1339,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:O": {
       "status": "applied",
-      "geometryHash": "acbc1da066a3287abce2fd237f797eaf25aa2c0c007c75d53e97603a6844341c",
+      "geometryHash": "1ccffba32a7e208b97a865e9fa181485baddc920554490ab044d4036f55dc7d7",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1012,23 +1390,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:P": {
       "status": "applied",
-      "geometryHash": "92c2c7b2fa5946ad06a296875097c025c58dbd221b413822fd6bb5605a80d380",
+      "geometryHash": "24ad5f948a0a5de6ab1c6d41c0bc4a9da888fbb4ac57d7ef77a950a6d9792ec1",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1036,23 +1441,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:Q": {
       "status": "applied",
-      "geometryHash": "7ee9adffde881f5b43a40564477844329de301012c1276a59953c5a2bfbec65b",
+      "geometryHash": "1434d1ff91c91e1d2fc32adf3ea7cbbd3ce3f326388c7574093a14840a8eae08",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1060,23 +1492,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:R": {
       "status": "applied",
-      "geometryHash": "0a6eb7ba3d7d686f5d22b02ac7af41f36965cf441a964609a56f8807c0634536",
+      "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1084,23 +1543,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:S": {
       "status": "applied",
-      "geometryHash": "a69c99f716bc069fa841be0267228af2a3042a3836f5f7f68ee2c59d3f5551f3",
+      "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1108,23 +1594,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:T": {
       "status": "applied",
-      "geometryHash": "29cdf37bc639eea074536491142d2dc878cb2cfafe483ba3444761d6f92a7a2d",
+      "geometryHash": "63b39d7ab395f80da33ef660545a9c85cc640a3c3d07aafc7f8fd5fb4fb4c258",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1132,23 +1645,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:U": {
       "status": "applied",
-      "geometryHash": "83da8eadb5e1fba18f61ff033ae8b8f12bb7876b54af9a37cddbffc557b6f66a",
+      "geometryHash": "64e9c4af88d50436c11bbe321f38dd9c79b2e54edbc5f0abafccae2f738ce650",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1156,23 +1696,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:V": {
       "status": "applied",
-      "geometryHash": "ba0fb73c5f9c2a5a8a04875806fb5fa6386ae60046a8c6c9232371f9baa14fa6",
+      "geometryHash": "84fa91e8702eace05ded93dbb6d726f81c3f8a147832204e5b526d1ae3c186df",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1180,23 +1747,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:W": {
       "status": "applied",
-      "geometryHash": "9c820915a6450327992afe177085295c709c51fe939d8e0e6d190977e9c72b22",
+      "geometryHash": "1b8376d6a7c917e12eda34f8349229e62789abf0c1fa25766428e787dd240adb",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1204,23 +1798,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:X": {
       "status": "applied",
-      "geometryHash": "0840d389f2a8736b593737cc1156c41b72926ef651a7f89eb90484b7e9775440",
+      "geometryHash": "b05ccb0a9fe9fba93eb09edbf359ac75f727c86fda8dc2c5ede37c4db2929b02",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1228,23 +1849,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:Y": {
       "status": "applied",
-      "geometryHash": "3c2597bc4c2e6ccad7931495207105037c6c101ba60d0d36c71a7d3b0c8c9631",
+      "geometryHash": "38f2acf163e6611dc80e9fa06e06a99f97fcf2e74a519b482b02a8bcdf4bd5eb",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1252,23 +1900,50 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]
     },
     "bubble:Z": {
       "status": "applied",
-      "geometryHash": "f722eb5b7934f9c23c3686fa36d2f1d2c63a59564c4c31557259eee83ddd9519",
+      "geometryHash": "6cbc4a3e61f0d97c88f701ded41c31731e8fbb72218a2e7791582975f501acb3",
       "operations": [
         {
           "operationId": "letterform.bubble.inflate",
@@ -1276,16 +1951,43 @@
           "status": "applied",
           "reason": null,
           "params": {
-            "distance": 8
+            "distance": 9
           }
         },
         {
-          "operationId": "letterform.bubble.round-corners",
+          "operationId": "letterform.bubble.swell-sides",
           "axis": "letterform",
           "status": "applied",
           "reason": null,
           "params": {
-            "radius": 16
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
           }
         }
       ]

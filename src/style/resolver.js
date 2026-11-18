@@ -5,7 +5,7 @@
 import { validateGlyphGeometry } from '../glyph/validate-geometry.js';
 import { sha256Hex } from '../core/sha256.js';
 import { stableStringify } from '../core/stable-json.js';
-import { contourToPolygon, polyArea, offsetPolygon, removeLoops, clipSharpCorners, polygonSegments, roundedSegments, chamferCurves, bounds, affine } from './polygon.js';
+import { contourToPolygon, polyArea, offsetPolygon, removeLoops, bowEdges, chaikin, reducePoints, clipSharpCorners, polygonSegments, chamferCurves, bounds, affine } from './polygon.js';
 
 export const RESOLVER_VERSION = 'style-resolver/1.0.0';
 
@@ -104,26 +104,28 @@ export function resolveStyle(glyph, request, { contract, profile }) {
       if (v.ok) { contours = cand; changed = true; op('letterform.straight.clip-sharp-corners', 'applied', null, { corners: clipped, size, maxAngleDeg }); } else op('letterform.straight.clip-sharp-corners', 'skipped', v.reason);
     } else op('letterform.straight.clip-sharp-corners', 'unchanged', `Keine Außenecke spitzer als ${maxAngleDeg}°.`);
   } else if (req.letterform === 'bubble') {
+    // Bubble construction: inflate the mass (counters become slits), swell the outer sides, smooth.
     const polys = polysOf(base);
-    let grown = null;
+    const { ratio, max } = contract.operations['letterform.bubble.swell-sides'].params, { iterations } = contract.operations['letterform.bubble.smooth'].params;
+    const build = (d, swell) => polys.map((p) => {
+      let q = removeLoops(offsetPolygon(p.poly, p.role === 'outer' ? d : -d, { miterLimit: 2 }));
+      if (swell && p.role === 'outer') q = removeLoops(bowEdges(q, { ratio, max }));
+      return { ...p, poly: reducePoints(chaikin(q, iterations)) };
+    });
+    let done = null;
     for (const d of contract.operations['letterform.bubble.inflate'].params.distanceCandidates) {
-      const g = grow(polys, d, 2);
-      const v = check(glyph, toContours(base, g), profile, expectCounters, styleKey);
-      if (v.ok) { grown = { g, d }; break; }
+      for (const swell of [true, false]) {
+        const cand = toContours(base, build(d, swell));
+        if (check(glyph, cand, profile, expectCounters, styleKey).ok) { done = { cand, d, swell }; break; }
+      }
+      if (done) break;
     }
-    if (grown) op('letterform.bubble.inflate', 'applied', null, { distance: grown.d });
-    else op('letterform.bubble.inflate', 'skipped', 'Keine Aufblasstärke hält die Punzen offen.');
-    const src = grown?.g ?? polys;
-    let rounded = null;
-    for (const r of contract.operations['letterform.bubble.round-corners'].params.radiusCandidates) {
-      const cand = toContours(base, src, (p) => roundedSegments(p, r));
-      const v = check(glyph, cand, profile, expectCounters, styleKey);
-      if (v.ok) { rounded = { cand, r }; break; }
-    }
-    if (rounded) { contours = rounded.cand; changed = true; op('letterform.bubble.round-corners', 'applied', null, { radius: rounded.r }); } else {
-      op('letterform.bubble.round-corners', 'skipped', 'Kein Rundungsradius besteht die Validierung.');
-      if (grown) { contours = toContours(base, grown.g); changed = true; }
-    }
+    if (done) {
+      contours = done.cand; changed = true;
+      op('letterform.bubble.inflate', 'applied', null, { distance: done.d });
+      if (done.swell) op('letterform.bubble.swell-sides', 'applied', null, { ratio, max }); else op('letterform.bubble.swell-sides', 'skipped', 'Wölbung würde Punzen oder Lücken schließen.');
+      op('letterform.bubble.smooth', 'applied', null, { iterations });
+    } else op('letterform.bubble.inflate', 'skipped', 'Keine Aufblasstärke hält die Punzen offen.');
   }
 
   // ---- composition ----
@@ -147,6 +149,8 @@ export function resolveStyle(glyph, request, { contract, profile }) {
       op('composition.block-fit.fit-box', 'skipped', v.reason);
       if (thick) { contours = toContours(contours, thick.g); changed = true; }
     }
+  } else if (req.composition === 'bounce') {
+    op('composition.bounce', 'applied', 'Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.', contract.operations['composition.bounce'].params);
   } else if (req.composition === 'interlocking') {
     op('composition.interlocking', 'skipped', 'Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben.');
   }

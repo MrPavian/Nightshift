@@ -179,3 +179,50 @@ export function removeLoops(p, maxPasses = 64) {
   }
   return simplify(pts);
 }
+
+/**
+ * Pillow bowing: every edge longer than `minLength` is bent outward (away from the polygon's own
+ * region) along a sine arc; the bend is `ratio` × edge length, capped at `max`. Used by Bubble to
+ * turn flat sides into swollen ones.
+ */
+export function bowEdges(p, { ratio = 0.1, max = 10, minLength = 12, steps = 6, convexOnly = true } = {}) {
+  const s = polyArea(p) > 0 ? 1 : -1, out = [];
+  for (let i = 0; i < p.length; i++) {
+    const a = p[i], b = p[(i + 1) % p.length], L = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    out.push(a);
+    if (L < minLength) continue;
+    // Only edges between two convex corners are outer sides; bending edges next to a concave corner
+    // would fill the gaps between arms and legs (E, H, M, W) and cost legibility.
+    if (convexOnly && !(isConvex(p, i) && isConvex(p, (i + 1) % p.length))) continue;
+    const [dx, dy] = [(b[0] - a[0]) / L, (b[1] - a[1]) / L], n = [s * dy, -s * dx], h = Math.min(max, L * ratio);
+    for (let k = 1; k < steps; k++) { const t = k / steps, off = h * Math.sin(Math.PI * t); out.push([a[0] + (b[0] - a[0]) * t + n[0] * off, a[1] + (b[1] - a[1]) * t + n[1] * off]); }
+  }
+  return out;
+}
+
+/** Chaikin corner cutting, `iterations` times: a smooth, organic outline. */
+export function chaikin(p, iterations = 3) {
+  let pts = p;
+  for (let k = 0; k < iterations; k++) {
+    const next = [];
+    for (let i = 0; i < pts.length; i++) {
+      const a = pts[i], b = pts[(i + 1) % pts.length];
+      next.push([a[0] * 0.75 + b[0] * 0.25, a[1] * 0.75 + b[1] * 0.25], [a[0] * 0.25 + b[0] * 0.75, a[1] * 0.25 + b[1] * 0.75]);
+    }
+    pts = next;
+  }
+  return pts;
+}
+
+/** Douglas–Peucker on a closed polygon: drops points closer than `tol` to the simplified line. */
+export function reducePoints(p, tol = 0.35) {
+  const dp = (pts) => {
+    if (pts.length < 3) return pts;
+    const [a, b] = [pts[0], pts[pts.length - 1]], L = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1e-9;
+    let idx = 0, dmax = 0;
+    for (let i = 1; i < pts.length - 1; i++) { const d = Math.abs((b[0] - a[0]) * (a[1] - pts[i][1]) - (a[0] - pts[i][0]) * (b[1] - a[1])) / L; if (d > dmax) { dmax = d; idx = i; } }
+    return dmax > tol ? [...dp(pts.slice(0, idx + 1)).slice(0, -1), ...dp(pts.slice(idx))] : [a, b];
+  };
+  const half = Math.floor(p.length / 2);
+  return [...dp(p.slice(0, half + 1)).slice(0, -1), ...dp([...p.slice(half), p[0]]).slice(0, -1)];
+}

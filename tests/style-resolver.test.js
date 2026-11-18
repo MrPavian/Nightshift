@@ -88,3 +88,28 @@ test('unknown presets and axis values are rejected, not guessed', () => {
   assert.throws(() => normaliseRequest(contract, { letterform: 'wildstyle' }), /Unknown letterform/);
   assert.throws(() => normaliseRequest(contract, { rendering: ['neon'] }), /Unknown rendering/);
 });
+
+test('Bubble swells the outline (not just thicker): sides bulge, counters shrink, gaps between arms stay open', async () => {
+  for (const ch of ALL) {
+    const ops = Object.fromEntries(res(ch, 'bubble').operations.map((o) => [o.operationId, o.status]));
+    assert.equal(ops['letterform.bubble.inflate'], 'applied', ch);
+    assert.equal(ops['letterform.bubble.smooth'], 'applied', ch);
+  }
+  // a swollen side: the middle of E's left side lies further out than its corners would allow for a plain offset
+  const { glyphPolygons } = await import('../src/style/render.js');
+  const e = glyphPolygons(res('E', 'bubble').derived)[0].poly;
+  const minX = Math.min(...e.map((p) => p[0]));
+  assert.ok(minX < 10 - 9 - 1, `E bulges beyond the plain offset (min x ${minX})`);
+});
+
+test('bounce is word composition only: same glyph geometry, glyphs tilt, shift and overlap in the word', async () => {
+  const { layoutWord } = await import('../src/style/render.js');
+  const neutral = resolveStyle(registry.getByChar('B'), { letterform: 'bubble', composition: 'neutral' }, ctx);
+  assert.equal(neutral.geometryHash, res('B', 'bubble').geometryHash);
+  const recs = [...'ABRA'].map((c) => res(c, 'bubble').derived);
+  const placed = layoutWord(recs, 'bounce', contract.operations['composition.bounce'].params);
+  assert.ok(placed.some((p) => p.rotate !== 0) && placed.some((p) => p.y !== 0));
+  for (let i = 1; i < placed.length; i++) assert.ok(placed[i].x + placed[i].box.x0 < placed[i - 1].x + placed[i - 1].box.x1, 'letters overlap');
+  const flat = layoutWord(recs, 'neutral');
+  assert.ok(flat.every((p) => p.rotate === 0 && p.y === 0));
+});
