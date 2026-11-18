@@ -61,3 +61,13 @@ D-013 — First enabled editor operation: `contour.move-node`
 **Decision:** NIGHTSHIFT's editor is a creator-first generative graffiti studio with progressively deeper authoring levels. The default journey is name → creative brief → four structurally distinct proposals → selection → refinement → save/export/game artwork. The virtual-writer metaphor describes a deterministic, research-informed system of glyph knowledge, grammar rules, composition strategies, validated operations and user-authored preferences.
 **Implication:** Keep practice/activity, artwork form, letterform grammar, composition grammar, surface/format, user priorities and rendering/finish as independent axes. Creator is the novice entry level; Studio supports refinement; Writer Lab supports full authoring. Tag requires gesture-based handstyle construction and must not be simulated by shrinking a piece font. Throw-up is not synonymous with Bubble; Piece is not one style; Burner is an evaluative descriptor; Bombing is an activity/session context; Panel/Wholecar are surface formats. Unsupported capabilities must be reported honestly. The existing finite 1.0 scope and dependency order remain binding; C08 is scheduled after C02–C05 and before C07.
 **Status:** owner-confirmed product direction, 2026-11-15. See [Creator-First Product Vision 01](NIGHTSHIFT_CREATOR_FIRST_PRODUCT_VISION_01.md), [Generator Knowledge Translation 01](../research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md) and [Claude Ticket C08](CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md).
+
+## D-016 — Early Creator 0.1 before C04/C05 (owner decision 2026-11-18)
+**Decision:** The owner chose to bring a first, deliberately small Creator page forward instead of waiting for C04, C05 and C07. The page lets the user enter a word, pick an artwork form, a style, priorities and colours, get four proposals, choose one and export it as SVG, PNG or JSON for the game. It only offers what actually works.
+**Context:** The owner sees the editor as a robot that is taught to make graffiti. A user should be able to enter a name, choose styles, priorities and colours, and pick from several proposals, with the option to co-design all the way to full manual authoring.
+**Implications:**
+- In Creator 0.1 the four proposals differ in word composition: spacing, slant, baseline, proportion and size rhythm. Glyph shapes come from the C03 style resolver.
+- Per-letter variants and letter connections follow with C04. Editing follows with Studio/C05.
+- Tag (HST-01) and Wildstyle are shown as unavailable, with a reason.
+- Bombing is not offered as a style. Whether Tag goes into 1.0 is still an open owner question.
+- C04 → C05 → C07 → C08 remain the plan. Creator 0.1 is replaced by the full C08 Creator, not extended in parallel.
