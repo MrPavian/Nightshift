@@ -512,3 +512,22 @@ The owner handed over the complete approved uppercase reference set (26 sheets, 
   - Proofs, 2× crops and a greyscale check are in `docs/reports/proof/academy-A/`.
   - Unit tests: `tests/academy-study.test.js`.
 - **Status:** owner review pending. The sheet is not print-approved and has not been checked in Inkscape, Illustrator or a PDF export. B–Z stay blocked until the owner approves A.
+
+
+### Reference sheets A–Z in use as version 1 (draft), with correction list (owner decision 16 November 2026)
+
+The owner decided to use the 26 approved sheets right away, for personal learning and visible in the project. They are always marked as a draft, and their errors are documented, not hidden.
+
+- `data/academy/uppercase-reference.v1.json` holds the correction list:
+  - 9 general notes that apply to every sheet.
+  - 72 sheet-specific findings. Each names the panel, a kind (Sachfehler, Begriff, Tippfehler, Prozessbehauptung, Lesbarkeit, …), the problem and the correct version.
+  - The practice word from panel 9.
+  - Reviewer: Claude (AI), working from the full-resolution images. No human has reviewed the list. Small text in the images may have been misread.
+- Notable errors found: wrong terms in many sheets („Theke“ and „Auge“ instead of Punze, „Abstrich“ used as a part), N's diagonal at 45° contradicting its stated width, the W's peaks and valleys swapped, garbled headers on U–Z, „Bandsatz“ instead of „Bandzug“, stroke-order and stroke-count claims, and round variants that read as 8, 3, & or 2.
+- **Gallery:** `academy/index.html` with `app.js` and `app.css` (archive design tokens, German UI, keyboard ← → and Esc, hash routes `#A`–`#Z`). It shows the overview, each sheet with its corrections, and the general notes. Deployed to Pages via `deploy-pages.yml` (copies `academy/` and the reference folder).
+- **Booklet:** `academy/heft.pdf` (A4 landscape, 28 pages: cover, general notes, one page per letter with its corrections), printed from `academy/heft.html` with `npm run build:heft`. That needs Python/Pillow for the JPEG conversion into the git-ignored `academy/.print-cache/`.
+- **Checks:**
+  - `tests/academy-reference.test.js` (data).
+  - `tools/academy/check-gallery.mjs`, part of `npm run test:browser`.
+  - Screenshots in `docs/reports/proof/academy-gallery/`.
+- The generated A study (`letter-study_A_01.svg`) stays as the path to an editable, corrected, print-ready version. It is still pending owner review.

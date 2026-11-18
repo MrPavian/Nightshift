@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academy: Großbuchstaben A–Z (Entwurf)</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top">
+  <p class="kicker">NIGHTSHIFT · Letter Construction Academy</p>
+  <h1>Großbuchstaben A–Z</h1>
+  <p class="draft" role="note"><strong>Entwurf, Version 1.</strong> Die Lernblätter wurden mit ChatGPT entwickelt und vom Owner freigegeben. Ihre Texte sind noch nicht fachlich geprüft. Zu jedem Blatt steht darunter, was falsch ist und was richtig wäre.</p>
+  <p class="actions"><a class="btn" href="heft.pdf" download>Heft als PDF (A4 quer)</a> <a class="btn ghost" href="#hinweise">Allgemeine Hinweise</a></p>
+</header>
+<main id="main">
+  <section id="grid-view" aria-labelledby="grid-title">
+    <h2 id="grid-title" class="sr">Alle Buchstaben</h2>
+    <ol class="grid" id="grid"></ol>
+    <section id="hinweise" class="general" aria-labelledby="gen-title">
+      <h2 id="gen-title">Allgemeine Hinweise für alle 26 Blätter</h2>
+      <ul id="general"></ul>
+    </section>
+  </section>
+  <section id="detail-view" hidden aria-live="polite">
+    <nav class="pager" aria-label="Buchstaben blättern">
+      <a class="btn ghost" href="#" id="back">Alle Buchstaben</a>
+      <a class="btn" id="prev" href="#">Vorheriger</a>
+      <a class="btn" id="next" href="#">Nächster</a>
+    </nav>
+    <h2 id="d-title"></h2>
+    <figure class="sheet">
+      <a id="d-full" href="#" target="_blank" rel="noopener"><img id="d-img" alt="" width="1536" height="1024"></a>
+      <figcaption>Tippen öffnet das Blatt in voller Auflösung. <span class="tag">Entwurf</span></figcaption>
+    </figure>
+    <div class="cols">
+      <section aria-labelledby="fix-title">
+        <h3 id="fix-title">Korrekturen zu diesem Blatt</h3>
+        <ol id="d-issues" class="issues"></ol>
+        <p class="note">Dazu gelten die <a href="#hinweise">allgemeinen Hinweise</a>.</p>
+      </section>
+      <section aria-labelledby="word-title" class="word">
+        <h3 id="word-title">Übungswort aus Feld 9</h3>
+        <p id="d-word" class="practice"></p>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <p>Prüfung der Blätter: Claude (KI), 16.11.2026, gegen Master Control Prompt v1.2. Keine Prüfung durch Menschen. Kleine Bildschrift kann falsch gelesen worden sein.</p>
+  <p>Daten: <a href="../data/academy/uppercase-reference.v1.json">uppercase-reference.v1.json</a></p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

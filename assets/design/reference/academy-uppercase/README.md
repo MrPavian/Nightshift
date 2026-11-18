@@ -1,6 +1,6 @@
 # Academy-Vorlagen — Großbuchstaben A–Z
 
-**Status:** visuelle Vorlage, vom Owner freigegeben (16.11.2026)
+**Status:** visuelle Vorlage und Lernblätter in Version 1 (Entwurf), vom Owner freigegeben (16.11.2026)
 **Herkunft:** vom Owner (MrPavian) mit ChatGPT entwickelt und freigegeben; vom Owner am 16.11.2026 als ZIP übergeben (26 PNG, 1536 × 1024).
 **Ablage:** WebP, Qualität 90, volle Auflösung. Die Hashes der Original-PNGs stehen in `manifest.json`. Die Originale liegen beim Owner.
 
@@ -19,9 +19,9 @@
 
   In den fertigen Studien wird alles nach den Regeln in `CLAUDE.md` §3 und §14 korrigiert.
 - **Sie werden nicht abgepaust.** Studien werden als editierbares SVG mit echten Textobjekten und eigenen, originalen Letter-Entwürfen neu gezeichnet.
-- **Sie sind kein Produkt-Asset.** Die Bilder werden nicht in der App ausgeliefert und nicht als fertige Lernbögen verwendet.
+- **Owner-Entscheidung vom 16.11.2026:** Die Bilder werden als **Version 1 (Entwurf)** genutzt. Sie dienen zum eigenen Lernen und sind im Projekt sichtbar: als Galerie unter `academy/index.html` und als Heft unter `academy/heft.pdf`. Sie sind immer sichtbar als Entwurf gekennzeichnet. Die bekannten Fehler stehen je Blatt in `data/academy/uppercase-reference.v1.json`.
 - Sie enthalten keine Arbeiten realer Writer. Sollte sich das Gegenteil zeigen, wird das betroffene Bild markiert und nicht verwendet.
 
 ## Dateien
 
-`A.webp` … `Z.webp`, eine Studie je Großbuchstabe. Kleinbuchstaben und Zahlen bearbeitet ChatGPT parallel. Sie gehören nicht in diesen Ordner.
+`A.webp` … `Z.webp`, eine Studie je Großbuchstabe. In `thumbs/` liegen Vorschaubilder mit 480 px Breite für die Galerie. Kleinbuchstaben und Zahlen bearbeitet ChatGPT parallel. Sie gehören nicht in diesen Ordner.

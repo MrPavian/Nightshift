@@ -1,0 +1,729 @@
+{
+  "schema": "nightshift.academy.uppercase-reference.v1",
+  "version": "1.0.0",
+  "status": "Entwurf",
+  "source": {
+    "images": "assets/design/reference/academy-uppercase/",
+    "origin": "vom Owner mit ChatGPT entwickelt und freigegeben",
+    "handedOver": "2026-11-16"
+  },
+  "decision": "Owner, 16.11.2026: Die 26 Blätter werden als Version 1 zum Lernen und im Projekt genutzt, sichtbar als Entwurf gekennzeichnet; Fehler werden in dieser Liste dokumentiert.",
+  "review": {
+    "by": "Claude (KI)",
+    "date": "2026-11-16",
+    "method": "Sichtprüfung aller 26 Blätter in voller Auflösung (1536 × 1024) gegen Master Control Prompt v1.2 und CLAUDE.md §3/§14. Keine Prüfung durch Menschen.",
+    "limits": "Kleine Schrift im Bild kann falsch gelesen worden sein; Feld 0 = Kopfzeile."
+  },
+  "kinds": [
+    "Sachfehler",
+    "Begriff",
+    "Tippfehler",
+    "Prozessbehauptung",
+    "Lesbarkeit",
+    "Darstellung",
+    "Zeichenfehler",
+    "Lücke",
+    "Einordnung"
+  ],
+  "general": [
+    {
+      "id": "feld-3-verhaeltnisse",
+      "panels": [
+        3
+      ],
+      "kind": "Sachfehler",
+      "issue": "Die „Wichtigen Verhältnisse“ mit Prozentspannen wirken wie feste Regeln.",
+      "correction": "Es sind Beispielwerte für diese eine Zeichnung. Breite, Teilung der Höhe und Winkel sind Gestaltungsentscheidungen."
+    },
+    {
+      "id": "feld-9-raster",
+      "panels": [
+        9
+      ],
+      "kind": "Sachfehler",
+      "issue": "Aufgabe 1 wiederholt die Spanne als Vorgabe (z. B. „B = 60–80 %“).",
+      "correction": "Die Spanne ist nur ein Anhaltspunkt. Wähle eine eigene Breite und begründe sie."
+    },
+    {
+      "id": "feld-8-throw-up",
+      "panels": [
+        8
+      ],
+      "kind": "Sachfehler",
+      "issue": "„Throw-up: einfach, rund, schnell“: Das Tempo ist am Bild nicht ablesbar, und ein Throw-up muss weder rund noch zweifarbig sein.",
+      "correction": "Besser: „Throw-up-Richtung: kompakt, gerundet“."
+    },
+    {
+      "id": "feld-8-keine-stufen",
+      "panels": [
+        8
+      ],
+      "kind": "Einordnung",
+      "issue": "„Vom Grundzeichen zum Style“ kann wie eine Reihenfolge wirken.",
+      "correction": "Throw-up, Block-Style und Wildstyle sind gleichwertige Richtungen, keine Stufenleiter."
+    },
+    {
+      "id": "feld-7-bewegung",
+      "panels": [
+        7
+      ],
+      "kind": "Prozessbehauptung",
+      "issue": "Formulierungen wie „entsteht aus …“, „wird in einem Zug geschrieben“ oder eine feste Zahl von Zügen klingen wie beobachtete Bewegungen.",
+      "correction": "Strichfolge, Druck und Tempo sind an einem fertigen Buchstaben nicht ablesbar. Feder- und Pinseltechnik lassen sich nicht direkt auf die Sprühdose übertragen."
+    },
+    {
+      "id": "feld-4-schritte",
+      "panels": [
+        4
+      ],
+      "kind": "Darstellung",
+      "issue": "Schritt 4 („Kontur verbinden“) und Schritt 5 („Form verfeinern“) sehen oft fast gleich aus.",
+      "correction": "Merke: Schritt 4 ist die geschlossene Umrisslinie, Schritt 5 die gefüllte Grundform."
+    },
+    {
+      "id": "lesbarkeit",
+      "panels": [
+        5,
+        6,
+        8
+      ],
+      "kind": "Lesbarkeit",
+      "issue": "Runde und organische Varianten verlieren teils die Lesbarkeit und sehen aus wie 8, 3, & oder 2.",
+      "correction": "Beim Üben prüfen: Ist der Buchstabe ohne Zusammenhang noch erkennbar?"
+    },
+    {
+      "id": "feld-2-punze",
+      "panels": [
+        2
+      ],
+      "kind": "Begriff",
+      "issue": "Innenräume und offene Räume sind eigene Bauteile, werden aber oft nicht beschriftet. Einige Blätter nennen sie „Theke“ oder „Auge“.",
+      "correction": "Das Fachwort für den Innenraum ist Punze. „Auge“ meint meist den geschlossenen Innenraum des kleinen e."
+    },
+    {
+      "id": "feld-1-neutral",
+      "panels": [
+        1
+      ],
+      "kind": "Einordnung",
+      "issue": "Die „neutrale Grundform“ wirkt wie die eine richtige Form.",
+      "correction": "Sie ist eine von vielen möglichen Grundformen. Eine Normform gibt es nicht."
+    }
+  ],
+  "letters": {
+    "A": {
+      "image": "assets/design/reference/academy-uppercase/A.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/A.webp",
+      "practiceWord": "AREA",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Innenraum / Gegenform (Auge)“",
+          "correction": "Beim A heißt der Innenraum Punze; „Auge“ passt hier nicht."
+        },
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Außenstamm“ für die beiden Schrägen",
+          "correction": "Besser „Schenkel links/rechts“."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Querbalken: ca. 40–60 % von H“",
+          "correction": "Die Lage des Querbalkens ist frei; in vielen A liegt er tiefer."
+        }
+      ]
+    },
+    "B": {
+      "image": "assets/design/reference/academy-uppercase/B.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/B.webp",
+      "practiceWord": "BASIS",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Oberbauch ≈ 45–50 %, Unterbauch ≈ 45–50 %“ als Regel",
+          "correction": "Häufig ist der obere Bauch etwas kleiner. Die Teilung ist eine Gestaltungsentscheidung."
+        },
+        {
+          "panel": 2,
+          "kind": "Lücke",
+          "issue": "Die beiden Punzen in den Bäuchen sind nicht beschriftet.",
+          "correction": "Punzen als eigene Bauteile mitlernen."
+        }
+      ]
+    },
+    "C": {
+      "image": "assets/design/reference/academy-uppercase/C.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/C.webp",
+      "practiceWord": "CREW",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Lücke",
+          "issue": "Die Enden (Endstriche) sind nicht beschriftet, obwohl sie das C prägen.",
+          "correction": "Oberes und unteres Ende als Bauteile mitlernen."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Öffnung ca. 30–50 % der Breite“",
+          "correction": "Beispielwert, keine Regel."
+        }
+      ]
+    },
+    "D": {
+      "image": "assets/design/reference/academy-uppercase/D.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/D.webp",
+      "practiceWord": "DRIVE",
+      "issues": [
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„entsteht aus einem klaren Abstrich und einem geschlossenen Bogen“",
+          "correction": "Die Strichfolge ist eine Annahme."
+        },
+        {
+          "panel": 6,
+          "kind": "Lesbarkeit",
+          "issue": "Die Variante „Organisch“ liest sich kaum als D.",
+          "correction": "Beim Üben die gerade Stammseite erhalten."
+        }
+      ]
+    },
+    "E": {
+      "image": "assets/design/reference/academy-uppercase/E.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/E.webp",
+      "practiceWord": "ECKE",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Lücke",
+          "issue": "Die Räume zwischen den Armen sind nicht beschriftet.",
+          "correction": "Als offene Räume mitlernen."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "Armstärke 12–20 % und Abstände 15–25 % als Regel",
+          "correction": "Beispielwerte."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "„Rund“, „Organisch“ (Feld 6) und der Throw-up (Feld 8) können wie 8 oder ε gelesen werden.",
+          "correction": "Die offene rechte Seite deutlich halten."
+        }
+      ]
+    },
+    "F": {
+      "image": "assets/design/reference/academy-uppercase/F.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/F.webp",
+      "practiceWord": "FLAIR",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Unterarm (Mitte)“ für den mittleren Arm",
+          "correction": "Besser „Mittelarm“."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "Armlängen in Prozent der Höhe angegeben",
+          "correction": "Armlängen misst man sinnvoller an der Breite; Werte sind Beispiele."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "„Rund“ und „Organisch“ (Feld 6) sehen aus wie 8.",
+          "correction": "Offene rechte Seite und unten offenen Stamm erhalten."
+        }
+      ]
+    },
+    "G": {
+      "image": "assets/design/reference/academy-uppercase/G.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/G.webp",
+      "practiceWord": "GRAFF",
+      "issues": [
+        {
+          "panel": 1,
+          "kind": "Begriff",
+          "issue": "„klare Öffnung (Sporn)“",
+          "correction": "Öffnung und Sporn sind verschiedene Dinge: Die Öffnung ist die Lücke, der Sporn der kleine senkrechte Ansatz."
+        },
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Querbalken (Haken)“",
+          "correction": "Der Querbalken ist der waagerechte Strich, kein Haken. Gilt auch für Feld 7."
+        }
+      ]
+    },
+    "H": {
+      "image": "assets/design/reference/academy-uppercase/H.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/H.webp",
+      "practiceWord": "HALLE",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Querbalken ca. 20–30 % der Höhe“",
+          "correction": "Unklar, ob Stärke oder Lage gemeint ist; in jedem Fall ein Beispielwert."
+        },
+        {
+          "panel": 7,
+          "kind": "Sachfehler",
+          "issue": "„auf stabiler Höhe (meist mittig)“",
+          "correction": "Oft liegt der Querbalken leicht über der Mitte; die Lage ist frei."
+        },
+        {
+          "panel": 6,
+          "kind": "Lesbarkeit",
+          "issue": "„Organisch“ und der Throw-up (Feld 8) sehen aus wie 8.",
+          "correction": "Den Raum zwischen den Stämmen offen halten."
+        }
+      ]
+    },
+    "I": {
+      "image": "assets/design/reference/academy-uppercase/I.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/I.webp",
+      "practiceWord": "IDEE",
+      "issues": [
+        {
+          "panel": 1,
+          "kind": "Einordnung",
+          "issue": "Die „neutrale“ Grundform hat oben und unten Balken (Serifen).",
+          "correction": "Ein I ohne Balken ist ebenso neutral; beides sind Varianten."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Balkenstärke ≈ 100–140 % der Stammbreite“",
+          "correction": "Beispielwert."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„gleichmäßige Abwärtsbewegung“",
+          "correction": "Die Bewegung ist am Bild nicht ablesbar."
+        }
+      ]
+    },
+    "J": {
+      "image": "assets/design/reference/academy-uppercase/J.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/J.webp",
+      "practiceWord": "JAM",
+      "issues": [
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "„Rund“, „Organisch“ (Feld 6) und der Throw-up (Feld 8) lesen sich wie 3.",
+          "correction": "Den geraden Stamm oben deutlich zeigen."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Hakenhöhe ca. 35–45 %“",
+          "correction": "Beispielwert."
+        }
+      ]
+    },
+    "K": {
+      "image": "assets/design/reference/academy-uppercase/K.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/K.webp",
+      "practiceWord": "KIOSK",
+      "issues": [
+        {
+          "panel": 7,
+          "kind": "Sachfehler",
+          "issue": "„Der Oberarm wirkt meist steiler, der Unterarm flacher.“",
+          "correction": "Das ist keine Regel, sondern eine Gestaltungsentscheidung."
+        },
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Unterarm“",
+          "correction": "Der untere Strich heißt oft auch „Bein“."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "Runde Varianten (Felder 5, 6, 8) sehen aus wie 8 oder ß.",
+          "correction": "Stamm und Armansatz sichtbar lassen."
+        }
+      ]
+    },
+    "L": {
+      "image": "assets/design/reference/academy-uppercase/L.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/L.webp",
+      "practiceWord": "LADEN",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Fußstärke ca. 25–40 % der Höhe“",
+          "correction": "Beispielwert, und ein sehr kräftiger."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "Runde Varianten (Felder 5, 6, 8) sehen aus wie &.",
+          "correction": "Den Winkel zwischen Stamm und Fuß erhalten."
+        }
+      ]
+    },
+    "M": {
+      "image": "assets/design/reference/academy-uppercase/M.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/M.webp",
+      "practiceWord": "MARKT",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Mittlerer V-Winkel ca. 40–70°“",
+          "correction": "Beispielwert. Ob die Mitte bis zur Grundlinie reicht, ist ebenfalls frei."
+        },
+        {
+          "panel": 6,
+          "kind": "Lesbarkeit",
+          "issue": "„Organisch“ und der Throw-up (Feld 8) sehen aus wie 8.",
+          "correction": "Die Mitte (V) sichtbar lassen."
+        }
+      ]
+    },
+    "N": {
+      "image": "assets/design/reference/academy-uppercase/N.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/N.webp",
+      "practiceWord": "NACHT",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Diagonale ca. 45°“ passt nicht zu „Breite 70–85 %“.",
+          "correction": "Bei dieser Breite steht die Diagonale deutlich steiler, etwa 55–60°."
+        },
+        {
+          "panel": 2,
+          "kind": "Tippfehler",
+          "issue": "„Diagonal (Verbindung)“",
+          "correction": "„Diagonale (Verbindung)“."
+        }
+      ]
+    },
+    "O": {
+      "image": "assets/design/reference/academy-uppercase/O.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/O.webp",
+      "practiceWord": "ORBIT",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Innenraum (Theke)“",
+          "correction": "Punze."
+        },
+        {
+          "panel": 4,
+          "kind": "Zeichenfehler",
+          "issue": "Schritt 4 zeigt nur einen Bogen statt einer geschlossenen Kontur.",
+          "correction": "Schritt 4 = geschlossene Umrisslinie."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„meist in einem durchgehenden, runden Zug geschrieben“",
+          "correction": "Annahme."
+        }
+      ]
+    },
+    "P": {
+      "image": "assets/design/reference/academy-uppercase/P.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/P.webp",
+      "practiceWord": "PARK",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Innenraum (Theke)“",
+          "correction": "Punze."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Schalenhöhe ca. 50–65 %“",
+          "correction": "Beispielwert."
+        },
+        {
+          "panel": 6,
+          "kind": "Lesbarkeit",
+          "issue": "„Organisch“ ist schwer als P zu lesen.",
+          "correction": "Den Stamm unter der Schale deutlich zeigen."
+        }
+      ]
+    },
+    "Q": {
+      "image": "assets/design/reference/academy-uppercase/Q.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/Q.webp",
+      "practiceWord": "QUALITÄT",
+      "issues": [
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Innenraum (Theke)“ und „Schweif (Abstrich)“",
+          "correction": "Punze. „Abstrich“ ist eine Strichrichtung, kein Bauteil: einfach „Schweif“."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„beginnt mit einer runden Bewegung … Schweif als eigener Abstrich angesetzt“",
+          "correction": "Die Strichfolge ist eine Annahme."
+        }
+      ]
+    },
+    "R": {
+      "image": "assets/design/reference/academy-uppercase/R.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/R.webp",
+      "practiceWord": "RUHR",
+      "issues": [
+        {
+          "panel": 1,
+          "kind": "Tippfehler",
+          "issue": "„ein vertikaler Stämm“ (auch Feld 4: „Stämm setzen“)",
+          "correction": "„Stamm“."
+        },
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„Innenraum (Theke)“",
+          "correction": "Punze."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "Bogenhöhe 40–60 %, Beinwinkel 45–60°",
+          "correction": "Beispielwerte."
+        },
+        {
+          "panel": 6,
+          "kind": "Lesbarkeit",
+          "issue": "„Organisch“ sieht aus wie &.",
+          "correction": "Stamm und Bein sichtbar lassen."
+        }
+      ]
+    },
+    "S": {
+      "image": "assets/design/reference/academy-uppercase/S.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/S.webp",
+      "practiceWord": "STYLE",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "Ober- und Unterkurve je 45–55 %",
+          "correction": "Häufig ist die obere Hälfte etwas kleiner; Beispielwerte."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„in einer fließenden Bewegung (mit Gegenschwung) gebaut“",
+          "correction": "Annahme."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "„Gebrochen“ erinnert an ein Dollarzeichen.",
+          "correction": "Keine senkrechten Striche durch das S ziehen."
+        }
+      ]
+    },
+    "T": {
+      "image": "assets/design/reference/academy-uppercase/T.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/T.webp",
+      "practiceWord": "TEAM",
+      "issues": [
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Querbalken ca. 20–30 % der Höhe“ und „Stamm ca. 70–80 % der Höhe“",
+          "correction": "Unklar, was gemessen wird; in jedem Fall Beispielwerte."
+        }
+      ]
+    },
+    "U": {
+      "image": "assets/design/reference/academy-uppercase/U.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/U.webp",
+      "practiceWord": "URBAN",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „PRÖMPT ÖF“, „Erheitlicher Standard“",
+          "correction": "„MASTER CONTROL PROMPT 01“, „Einheitlicher Standard“."
+        },
+        {
+          "panel": 7,
+          "kind": "Tippfehler",
+          "issue": "„Breitfeder (Bandsatz)“",
+          "correction": "„Bandzug“."
+        },
+        {
+          "panel": 8,
+          "kind": "Lesbarkeit",
+          "issue": "Der Throw-up liest sich eher wie V; „Gebrochen“ (Feld 5) ähnelt V.",
+          "correction": "Den runden Boden deutlich zeigen."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Bogenradius ca. 30–50 %“",
+          "correction": "Beispielwert."
+        }
+      ]
+    },
+    "V": {
+      "image": "assets/design/reference/academy-uppercase/V.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/V.webp",
+      "practiceWord": "VIBE",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „PRÖMPT ÖF“, „Erheitlicher Standard“",
+          "correction": "„MASTER CONTROL PROMPT 01“, „Einheitlicher Standard“."
+        },
+        {
+          "panel": 1,
+          "kind": "Tippfehler",
+          "issue": "„definierter Spitze“",
+          "correction": "„definierte Spitze“."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„mit zwei geraden, dynamischen Abwärtsstrichen aufgebaut“",
+          "correction": "Annahme."
+        },
+        {
+          "panel": 8,
+          "kind": "Lesbarkeit",
+          "issue": "Der Throw-up sieht aus wie ein Herz.",
+          "correction": "Die Spitze unten deutlich zeigen."
+        }
+      ]
+    },
+    "W": {
+      "image": "assets/design/reference/academy-uppercase/W.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/W.webp",
+      "practiceWord": "WEST",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „PRÖMPT ÖF“, „Erheitlicher Standard“",
+          "correction": "„MASTER CONTROL PROMPT 01“, „Einheitlicher Standard“."
+        },
+        {
+          "panel": 2,
+          "kind": "Begriff",
+          "issue": "„zwei Spitzen (Täler)“ (Feld 1) und „Mittelspitze (Tal)“",
+          "correction": "Vertauscht: Die mittlere Spitze zeigt nach oben, die beiden unteren Spitzen liegen auf der Grundlinie."
+        },
+        {
+          "panel": 7,
+          "kind": "Tippfehler",
+          "issue": "„Breitfeder (Bandsatz)“",
+          "correction": "„Bandzug“."
+        }
+      ]
+    },
+    "X": {
+      "image": "assets/design/reference/academy-uppercase/X.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/X.webp",
+      "practiceWord": "EXIT",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „PRÖMPT ÖF“, „Erheitlicher Standard“",
+          "correction": "„MASTER CONTROL PROMPT 01“, „Einheitlicher Standard“."
+        },
+        {
+          "panel": 2,
+          "kind": "Tippfehler",
+          "issue": "„Diagonal“",
+          "correction": "„Diagonale“."
+        },
+        {
+          "panel": 7,
+          "kind": "Tippfehler",
+          "issue": "„Bandsatz“, „Filsstift“",
+          "correction": "„Bandzug“, „Filzstift“."
+        },
+        {
+          "panel": 3,
+          "kind": "Sachfehler",
+          "issue": "„Kreuzung im Zentrum (= 50 % H)“",
+          "correction": "Oft liegt die Kreuzung leicht darüber; Beispielwert."
+        }
+      ]
+    },
+    "Y": {
+      "image": "assets/design/reference/academy-uppercase/Y.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/Y.webp",
+      "practiceWord": "YARD",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „PRÖMPT ÖF“, „Erheitlicher Standard“",
+          "correction": "„MASTER CONTROL PROMPT 01“, „Einheitlicher Standard“."
+        },
+        {
+          "panel": 7,
+          "kind": "Darstellung",
+          "issue": "Die Pinsel-Zeile zeigt ein kleines y, die Breitfeder-Variante liest sich wie X. Dazu „Bandsatz“.",
+          "correction": "Großes Y zeigen; „Bandzug“."
+        },
+        {
+          "panel": 8,
+          "kind": "Einordnung",
+          "issue": "„Block-Style (3D, massiv, lesbar)“",
+          "correction": "3D ist ein Effekt, keine Eigenschaft des Block-Style."
+        },
+        {
+          "panel": 8,
+          "kind": "Lesbarkeit",
+          "issue": "Der Throw-up ist herzförmig und schwer lesbar.",
+          "correction": "Den Stamm unten zeigen."
+        }
+      ]
+    },
+    "Z": {
+      "image": "assets/design/reference/academy-uppercase/Z.webp",
+      "thumb": "assets/design/reference/academy-uppercase/thumbs/Z.webp",
+      "practiceWord": "ZONE",
+      "issues": [
+        {
+          "panel": 0,
+          "kind": "Tippfehler",
+          "issue": "Kopf: „MASTER CONTROL PROMPT“ ohne „01“",
+          "correction": "„MASTER CONTROL PROMPT 01“."
+        },
+        {
+          "panel": 7,
+          "kind": "Prozessbehauptung",
+          "issue": "„Das Z aus drei klaren Zügen aufbauen“",
+          "correction": "Die Zahl der Züge ist eine Annahme. Dazu „Bandsatz“ → „Bandzug“."
+        },
+        {
+          "panel": 5,
+          "kind": "Lesbarkeit",
+          "issue": "„Rund“ und der Throw-up (Feld 8) lesen sich wie 2.",
+          "correction": "Die Ecken oben links und unten rechts erhalten."
+        }
+      ]
+    }
+  }
+}
