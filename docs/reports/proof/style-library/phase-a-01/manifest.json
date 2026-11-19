@@ -1,0 +1,4826 @@
+{
+  "artifactHashes": {
+    "README.md": "d1c180345c10d5ee1149950684e4cc6c188ab498d414655be8bc992dedce0c05",
+    "plates/glyph-comparison.svg": "6c8875031ae12524edbb6cfcc942b35571f5ba2b7419cf7280a6a4c1e1448cc9",
+    "plates/pair-context.svg": "8ca3393fb0da1caf73cf0c04f9d404ebe0ea3d510ed6c0b38816bca2893223c9",
+    "plates/thumbnails.svg": "57e63af36b88ac74fcb90c0d51fdf6cc911c31f54aeebf484b28d59a0a3e6c01",
+    "plates/word-context.svg": "64aecda781bf19e05f471b49ad62b88e7e01b3db6c737e3272563da17bf45dce",
+    "report/operations.json": "7bedcdd6a36cc58bd73b8e70f7d30e36a9b08dfd33665d96f7e033ee82273382",
+    "review/review-template.json": "fc3db59ef0abbe5b54a09e0e617d3042b812251761ae69496a2e3610e84739b6"
+  },
+  "brief": "docs/lettering/style-library/CLAUDE_TASK_PHASE_A_PROOF_PLATES_01.md",
+  "canonicalSnapshotRef": {
+    "sha256": "2b5a6be891a9b98b8c6d930c57ca79b4f183bf373713a9cd93d4514bf4a5bc6d",
+    "snapshotId": "nightshift.legacy.v06-glyph-paths"
+  },
+  "contracts": [
+    "contracts/style-resolver.v1.json",
+    "contracts/proof-sheet-fixtures.v1.json"
+  ],
+  "coverage": {
+    "fixtureContractLabels": [
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-ar"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-ba"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-br"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-gr"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-ra"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-sa"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-sb"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "pair-gs"
+      },
+      {
+        "contractLabel": "authored-subset",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-abra"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-bomb"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-ghost"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-kraze"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-mind"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-nyx"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-risk"
+      },
+      {
+        "contractLabel": "partial-provisional-coverage",
+        "currentMaturity": [
+          "authored-contour"
+        ],
+        "fixtureId": "word-sque"
+      }
+    ],
+    "note": "Since C02 every uppercase glyph is an authored-contour master; none is provisional. The fixture contract still carries pre-C02 coverage labels; they are recorded here unchanged, next to the current maturity.",
+    "ownerDesignReview": "pending for all glyphs (docs/reports/proof/T06/review/ratings.json has no records)",
+    "primaryReviewSet": [
+      "A",
+      "B",
+      "G",
+      "R",
+      "S"
+    ]
+  },
+  "engineVersions": {
+    "geometryValidator": "geometry-validator/1.0.0; nightshift.validator-profile.legacy-v06@1.0.0",
+    "glyphLibrary": "legacy-v06-import/1.0.0; nightshift.authored.c02-wave1@1.0.0; nightshift.authored.c02-wave2@1.0.0; nightshift.authored.c02-wave3@1.0.0; nightshift.authored.c02-wave4@1.0.0; nightshift.semantic-overlay.abgrs@1.5.0",
+    "relationshipSolver": "none — C04 not implemented",
+    "renderer": "render-model/1.0.0; style-proof-plates/1.0.0",
+    "styleResolver": "style-resolver/1.0.0; nightshift.style-resolver@1.1.0 (implemented-subset)"
+  },
+  "fixtureIds": [
+    "glyph-a",
+    "glyph-b",
+    "glyph-g",
+    "glyph-r",
+    "glyph-s",
+    "pair-ar",
+    "pair-ba",
+    "pair-br",
+    "pair-gr",
+    "pair-ra",
+    "pair-sa",
+    "pair-sb",
+    "pair-gs",
+    "word-abra",
+    "word-bomb",
+    "word-ghost",
+    "word-kraze",
+    "word-mind",
+    "word-nyx",
+    "word-risk",
+    "word-sque"
+  ],
+  "glyphs": [
+    {
+      "character": "A",
+      "glyphId": "latin.upper.A",
+      "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "maturity": "authored-contour",
+      "source": "legacy-prototype"
+    },
+    {
+      "character": "B",
+      "glyphId": "latin.upper.B",
+      "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+      "maturity": "authored-contour",
+      "source": "legacy-prototype"
+    },
+    {
+      "character": "D",
+      "glyphId": "latin.upper.D",
+      "masterGeometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "E",
+      "glyphId": "latin.upper.E",
+      "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "G",
+      "glyphId": "latin.upper.G",
+      "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "maturity": "authored-contour",
+      "source": "legacy-prototype"
+    },
+    {
+      "character": "H",
+      "glyphId": "latin.upper.H",
+      "masterGeometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "I",
+      "glyphId": "latin.upper.I",
+      "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "K",
+      "glyphId": "latin.upper.K",
+      "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "M",
+      "glyphId": "latin.upper.M",
+      "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "N",
+      "glyphId": "latin.upper.N",
+      "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "O",
+      "glyphId": "latin.upper.O",
+      "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "Q",
+      "glyphId": "latin.upper.Q",
+      "masterGeometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "R",
+      "glyphId": "latin.upper.R",
+      "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+      "maturity": "authored-contour",
+      "source": "legacy-prototype"
+    },
+    {
+      "character": "S",
+      "glyphId": "latin.upper.S",
+      "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+      "maturity": "authored-contour",
+      "source": "legacy-prototype"
+    },
+    {
+      "character": "T",
+      "glyphId": "latin.upper.T",
+      "masterGeometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "U",
+      "glyphId": "latin.upper.U",
+      "masterGeometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "X",
+      "glyphId": "latin.upper.X",
+      "masterGeometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "Y",
+      "glyphId": "latin.upper.Y",
+      "masterGeometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    },
+    {
+      "character": "Z",
+      "glyphId": "latin.upper.Z",
+      "masterGeometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+      "maturity": "authored-contour",
+      "source": "claude-authored"
+    }
+  ],
+  "limitations": [
+    "Only the C03 resolver subset is compared: Neutral, Straight, Bubble, Blockbuster. Parameters are uncalibrated grammar defaults.",
+    "Wildstyle is requested only to record that interlocking is skipped (C04 missing); it is not drawn.",
+    "Pairs and words use a fixed gap (Bubble: bounce placement). No joins, overlaps by design or relationship solving.",
+    "The Creator graffiti engine (src/style/graffiti-engine.js, D-017) builds letters from separate skeletons, not from these masters; it is outside this brief and not on these plates.",
+    "Rendering treatments (outline, depth, highlights) are not shown; finish isolation is checked by the tests, not on a plate."
+  ],
+  "presets": {
+    "compared": [
+      "neutral",
+      "straight",
+      "bubble",
+      "blockbuster"
+    ],
+    "diagnosticOnly": [
+      "wildstyle"
+    ]
+  },
+  "renderProfile": {
+    "background": "#f2efe6",
+    "finish": {
+      "depth": false,
+      "drips": false,
+      "gradient": false,
+      "highlights": false,
+      "inline": false,
+      "outline": false,
+      "texture": false
+    },
+    "id": "style-neutral-monochrome/1.0.0",
+    "ink": "#111111",
+    "projection": "orthographic",
+    "scale": "one uniform scale per plate for all styles (native glyph units, not normalised per glyph)",
+    "sizes": {
+      "full": "0.9 × native glyph units",
+      "pairs": "0.6 ×",
+      "thumbnail": "0.18 ×",
+      "words": "0.5 ×"
+    }
+  },
+  "review": {
+    "automatedMaturityPromotion": false,
+    "note": "Plates are evidence, not approval. Reviews here concern derived, reference-only style geometry and never change the maturity of a master. The current review schema offers pass / fail / needs-revision only; there is no tie / neither / cannot-judge option.",
+    "records": "review/ratings.json",
+    "schemaVersion": "1.0",
+    "status": "pending",
+    "template": "review/review-template.json"
+  },
+  "runId": "run.style-library-phase-a-01.a61ed113ba4c",
+  "schemaVersion": "1.0",
+  "sourceRevision": {
+    "kind": "registry-content-sha256",
+    "value": "409b86f863aea9cf0d57b57afe1edcd89a9a511718caefdceb3895069e6e27a0"
+  },
+  "specimens": [
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-a",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.glyph-a.neutral.6063e127c66b",
+      "text": "A"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-a",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.glyph-a.straight.beabc62198a1",
+      "text": "A"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-a",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        }
+      ],
+      "specimenId": "spec.glyph-a.bubble.4a38a2e199d1",
+      "text": "A"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-a",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.glyph-a.blockbuster.a1f8255b5c6e",
+      "text": "A"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-b",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        }
+      ],
+      "specimenId": "spec.glyph-b.neutral.dc902c60cfc8",
+      "text": "B"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-b",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        }
+      ],
+      "specimenId": "spec.glyph-b.straight.d3b1a4cad013",
+      "text": "B"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-b",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        }
+      ],
+      "specimenId": "spec.glyph-b.bubble.382ebd519418",
+      "text": "B"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-b",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.glyph-b.blockbuster.dd3cf7c4a688",
+      "text": "B"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-g",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        }
+      ],
+      "specimenId": "spec.glyph-g.neutral.f82a48493f79",
+      "text": "G"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-g",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        }
+      ],
+      "specimenId": "spec.glyph-g.straight.fe68be59bde8",
+      "text": "G"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-g",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-bubble"
+        }
+      ],
+      "specimenId": "spec.glyph-g.bubble.388d1c882e42",
+      "text": "G"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-g",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "5332dd941811e2bbb15f20ba7a86ad9eabf051586b538b865631596a0188fc00",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.glyph-g.blockbuster.3029742dc570",
+      "text": "G"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-r",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        }
+      ],
+      "specimenId": "spec.glyph-r.neutral.692719c7e516",
+      "text": "R"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-r",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        }
+      ],
+      "specimenId": "spec.glyph-r.straight.726f6d082161",
+      "text": "R"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-r",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        }
+      ],
+      "specimenId": "spec.glyph-r.bubble.344b5134024e",
+      "text": "R"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-r",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.glyph-r.blockbuster.3e92618ef94a",
+      "text": "R"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-s",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        }
+      ],
+      "specimenId": "spec.glyph-s.neutral.f38844ef5d78",
+      "text": "S"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-s",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        }
+      ],
+      "specimenId": "spec.glyph-s.straight.7ff6c5802af6",
+      "text": "S"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-s",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        }
+      ],
+      "specimenId": "spec.glyph-s.bubble.b047f1f401a5",
+      "text": "S"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "glyph-comparison",
+      "fixtureId": "glyph-s",
+      "plates": [
+        "plates/glyph-comparison.svg",
+        "plates/thumbnails.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.glyph-s.blockbuster.492c55825c0e",
+      "text": "S"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ar",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        }
+      ],
+      "specimenId": "spec.pair-ar.neutral.a97ba704c683",
+      "text": "AR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ar",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        }
+      ],
+      "specimenId": "spec.pair-ar.straight.99fa822578bf",
+      "text": "AR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ar",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-ar.bubble.f8d8704aedce",
+      "text": "AR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ar",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-ar.blockbuster.b4dc46d2eda7",
+      "text": "AR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ba",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-ba.neutral.f8a3232d9e9e",
+      "text": "BA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ba",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-ba.straight.cb5150718229",
+      "text": "BA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ba",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-ba.bubble.55c6395413e3",
+      "text": "BA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ba",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-ba.blockbuster.a9633bd23dec",
+      "text": "BA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-br",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        },
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        }
+      ],
+      "specimenId": "spec.pair-br.neutral.b9da4bb76ba4",
+      "text": "BR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-br",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        }
+      ],
+      "specimenId": "spec.pair-br.straight.3073c4b54a3e",
+      "text": "BR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-br",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-br.bubble.0155f9a64937",
+      "text": "BR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-br",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-br.blockbuster.347f8582c0e2",
+      "text": "BR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gr",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        }
+      ],
+      "specimenId": "spec.pair-gr.neutral.1bc81f9e2123",
+      "text": "GR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gr",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        }
+      ],
+      "specimenId": "spec.pair-gr.straight.e3745622c9b3",
+      "text": "GR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gr",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-bubble"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-gr.bubble.56753b08dc44",
+      "text": "GR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gr",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "5332dd941811e2bbb15f20ba7a86ad9eabf051586b538b865631596a0188fc00",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-blockbuster"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-gr.blockbuster.b2696bf9d620",
+      "text": "GR"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ra",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-ra.neutral.92c2b4369358",
+      "text": "RA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ra",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-ra.straight.7856d2759b11",
+      "text": "RA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ra",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-ra.bubble.0dd2501f88b2",
+      "text": "RA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-ra",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-ra.blockbuster.5a13fe866f98",
+      "text": "RA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sa",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-sa.neutral.48cbefb02aaa",
+      "text": "SA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sa",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.pair-sa.straight.dd6a7c0d2c0b",
+      "text": "SA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sa",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-sa.bubble.0e21e0a4489e",
+      "text": "SA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sa",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-sa.blockbuster.0085015ec5cb",
+      "text": "SA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sb",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        },
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        }
+      ],
+      "specimenId": "spec.pair-sb.neutral.d31761de1421",
+      "text": "SB"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sb",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        }
+      ],
+      "specimenId": "spec.pair-sb.straight.5aa4cb8ce3d7",
+      "text": "SB"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sb",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-sb.bubble.dbf68596af72",
+      "text": "SB"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-sb",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-sb.blockbuster.c15af19d2b25",
+      "text": "SB"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gs",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        }
+      ],
+      "specimenId": "spec.pair-gs.neutral.bf8bd3f118b2",
+      "text": "GS"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gs",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        }
+      ],
+      "specimenId": "spec.pair-gs.straight.27a222bd7c47",
+      "text": "GS"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gs",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-bubble"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        }
+      ],
+      "specimenId": "spec.pair-gs.bubble.89288f77db69",
+      "text": "GS"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "pair-context",
+      "fixtureId": "pair-gs",
+      "plates": [
+        "plates/pair-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "5332dd941811e2bbb15f20ba7a86ad9eabf051586b538b865631596a0188fc00",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-blockbuster"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.pair-gs.blockbuster.225065527151",
+      "text": "GS"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "word-context",
+      "fixtureId": "word-abra",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        },
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.word-abra.neutral.be268ff9ade7",
+      "text": "ABRA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "word-context",
+      "fixtureId": "word-abra",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        }
+      ],
+      "specimenId": "spec.word-abra.straight.5fece0bd58df",
+      "text": "ABRA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "word-context",
+      "fixtureId": "word-abra",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-abra.bubble.cf2de7aa3efa",
+      "text": "ABRA"
+    },
+    {
+      "coverage": "primary review set A/B/G/R/S (authored-contour)",
+      "family": "word-context",
+      "fixtureId": "word-abra",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-abra.blockbuster.8f69824b4653",
+      "text": "ABRA"
+    },
+    {
+      "coverage": "includes C02 masters OM (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-bomb",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        },
+        {
+          "character": "O",
+          "derived": false,
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "o.master"
+        },
+        {
+          "character": "M",
+          "derived": false,
+          "geometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "m.master"
+        },
+        {
+          "character": "B",
+          "derived": false,
+          "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "b.master"
+        }
+      ],
+      "specimenId": "spec.word-bomb.neutral.a0af950ab7a1",
+      "text": "BOMB"
+    },
+    {
+      "coverage": "includes C02 masters OM (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-bomb",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        },
+        {
+          "character": "O",
+          "derived": false,
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "o.master"
+        },
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "acf9f6d728c7f381c3c5c6511bf178ce847130b67b493719c12d32073df99ac5",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-straight"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-straight"
+        }
+      ],
+      "specimenId": "spec.word-bomb.straight.71385e43aec5",
+      "text": "BOMB"
+    },
+    {
+      "coverage": "includes C02 masters OM (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-bomb",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        },
+        {
+          "character": "O",
+          "derived": true,
+          "geometryHash": "1ccffba32a7e208b97a865e9fa181485baddc920554490ab044d4036f55dc7d7",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "o.style-bubble"
+        },
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "6c4a00177f7f86ebc825ccd4f881b5556aba3eca00d3725c84517b4cd4649a7a",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-bubble"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-bomb.bubble.53d5635776fe",
+      "text": "BOMB"
+    },
+    {
+      "coverage": "includes C02 masters OM (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-bomb",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        },
+        {
+          "character": "O",
+          "derived": true,
+          "geometryHash": "5f6be8534993e44f3a8f18a217076a28527b751dd8ded0f3d28de54357dc398e",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "o.style-blockbuster"
+        },
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "7bb1ca94fb716208e6d41df51e1d3b89973d328cb5798661d86236b376862567",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-blockbuster"
+        },
+        {
+          "character": "B",
+          "derived": true,
+          "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+          "glyphId": "latin.upper.B",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "b.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-bomb.blockbuster.90fe85009198",
+      "text": "BOMB"
+    },
+    {
+      "coverage": "includes C02 masters HOT (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-ghost",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "H",
+          "derived": false,
+          "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "glyphId": "latin.upper.H",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "h.master"
+        },
+        {
+          "character": "O",
+          "derived": false,
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "o.master"
+        },
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        },
+        {
+          "character": "T",
+          "derived": false,
+          "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "glyphId": "latin.upper.T",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "t.master"
+        }
+      ],
+      "specimenId": "spec.word-ghost.neutral.4cd6949eff07",
+      "text": "GHOST"
+    },
+    {
+      "coverage": "includes C02 masters HOT (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-ghost",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": false,
+          "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "g.master"
+        },
+        {
+          "character": "H",
+          "derived": false,
+          "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "glyphId": "latin.upper.H",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "h.master"
+        },
+        {
+          "character": "O",
+          "derived": false,
+          "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "o.master"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        },
+        {
+          "character": "T",
+          "derived": false,
+          "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "glyphId": "latin.upper.T",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "t.master"
+        }
+      ],
+      "specimenId": "spec.word-ghost.straight.4a536af422fc",
+      "text": "GHOST"
+    },
+    {
+      "coverage": "includes C02 masters HOT (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-ghost",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-bubble"
+        },
+        {
+          "character": "H",
+          "derived": true,
+          "geometryHash": "dec40aa8548b45cc5907495a2d9ac2efefb392ea1bab504dc5b9cd12d548b5af",
+          "glyphId": "latin.upper.H",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "h.style-bubble"
+        },
+        {
+          "character": "O",
+          "derived": true,
+          "geometryHash": "1ccffba32a7e208b97a865e9fa181485baddc920554490ab044d4036f55dc7d7",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "o.style-bubble"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        },
+        {
+          "character": "T",
+          "derived": true,
+          "geometryHash": "63b39d7ab395f80da33ef660545a9c85cc640a3c3d07aafc7f8fd5fb4fb4c258",
+          "glyphId": "latin.upper.T",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "t.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-ghost.bubble.52131b1af4d4",
+      "text": "GHOST"
+    },
+    {
+      "coverage": "includes C02 masters HOT (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-ghost",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "G",
+          "derived": true,
+          "geometryHash": "5332dd941811e2bbb15f20ba7a86ad9eabf051586b538b865631596a0188fc00",
+          "glyphId": "latin.upper.G",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "g.style-blockbuster"
+        },
+        {
+          "character": "H",
+          "derived": true,
+          "geometryHash": "8963e6ccb1a7a16d581247ae636b72ea0b23c4f9794ffdf01305a45c035fc61c",
+          "glyphId": "latin.upper.H",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "h.style-blockbuster"
+        },
+        {
+          "character": "O",
+          "derived": true,
+          "geometryHash": "5f6be8534993e44f3a8f18a217076a28527b751dd8ded0f3d28de54357dc398e",
+          "glyphId": "latin.upper.O",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "o.style-blockbuster"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        },
+        {
+          "character": "T",
+          "derived": true,
+          "geometryHash": "a4e15b7e7a66e083c22cf8a6c9f448cd6f0a5413967ca424457f61d34ee42d3c",
+          "glyphId": "latin.upper.T",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "t.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-ghost.blockbuster.5af87a9e624a",
+      "text": "GHOST"
+    },
+    {
+      "coverage": "includes C02 masters KZE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-kraze",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "K",
+          "derived": false,
+          "geometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "k.master"
+        },
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "Z",
+          "derived": false,
+          "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "glyphId": "latin.upper.Z",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "z.master"
+        },
+        {
+          "character": "E",
+          "derived": false,
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "e.master"
+        }
+      ],
+      "specimenId": "spec.word-kraze.neutral.4d96acd73522",
+      "text": "KRAZE"
+    },
+    {
+      "coverage": "includes C02 masters KZE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-kraze",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "9980cf10830f9e57d7c37ccff8c4a9b181ccfff9cf6865329e95763933cf476a",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-straight"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        },
+        {
+          "character": "A",
+          "derived": false,
+          "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "a.master"
+        },
+        {
+          "character": "Z",
+          "derived": false,
+          "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "glyphId": "latin.upper.Z",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "z.master"
+        },
+        {
+          "character": "E",
+          "derived": false,
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "e.master"
+        }
+      ],
+      "specimenId": "spec.word-kraze.straight.2366ef2c29ca",
+      "text": "KRAZE"
+    },
+    {
+      "coverage": "includes C02 masters KZE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-kraze",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "bc253ee94f3f4db6de8716f401fa494638a0726864fc66e8bab0c6aefd4f67ea",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-bubble"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-bubble"
+        },
+        {
+          "character": "Z",
+          "derived": true,
+          "geometryHash": "6cbc4a3e61f0d97c88f701ded41c31731e8fbb72218a2e7791582975f501acb3",
+          "glyphId": "latin.upper.Z",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "z.style-bubble"
+        },
+        {
+          "character": "E",
+          "derived": true,
+          "geometryHash": "ac80d8ead70cd18ea0e6a29ef15248bcc94649e14a87674d8d5aeb4a1c578bcb",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "e.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-kraze.bubble.67a95d3d99bb",
+      "text": "KRAZE"
+    },
+    {
+      "coverage": "includes C02 masters KZE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-kraze",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "0ce52eadbc47d3c0c8bdcfb1d9ed6e208b2990169d7709cdae359c05a5cda555",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-blockbuster"
+        },
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        },
+        {
+          "character": "A",
+          "derived": true,
+          "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+          "glyphId": "latin.upper.A",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "a.style-blockbuster"
+        },
+        {
+          "character": "Z",
+          "derived": true,
+          "geometryHash": "21d4847a0d565b8c8fc86cad6a58a469e090a912e272d2902898aed6d416beaa",
+          "glyphId": "latin.upper.Z",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "z.style-blockbuster"
+        },
+        {
+          "character": "E",
+          "derived": true,
+          "geometryHash": "9688da7b455a31647d57c4ccecc3feb4f9b12a74c1b2b30e82cddf783a12e374",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 4,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "e.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-kraze.blockbuster.594aea367c08",
+      "text": "KRAZE"
+    },
+    {
+      "coverage": "includes C02 masters MIND (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-mind",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "M",
+          "derived": false,
+          "geometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "m.master"
+        },
+        {
+          "character": "I",
+          "derived": false,
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "i.master"
+        },
+        {
+          "character": "N",
+          "derived": false,
+          "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "n.master"
+        },
+        {
+          "character": "D",
+          "derived": false,
+          "geometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "glyphId": "latin.upper.D",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "d.master"
+        }
+      ],
+      "specimenId": "spec.word-mind.neutral.f18b6f8db5a5",
+      "text": "MIND"
+    },
+    {
+      "coverage": "includes C02 masters MIND (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-mind",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "acf9f6d728c7f381c3c5c6511bf178ce847130b67b493719c12d32073df99ac5",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-straight"
+        },
+        {
+          "character": "I",
+          "derived": false,
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "i.master"
+        },
+        {
+          "character": "N",
+          "derived": false,
+          "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "n.master"
+        },
+        {
+          "character": "D",
+          "derived": true,
+          "geometryHash": "254bdcd9da8c02fb4e95385f8feb6f6562b941a9003550db94e60610c1b8a8e3",
+          "glyphId": "latin.upper.D",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "d.style-straight"
+        }
+      ],
+      "specimenId": "spec.word-mind.straight.6fac137cac97",
+      "text": "MIND"
+    },
+    {
+      "coverage": "includes C02 masters MIND (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-mind",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "6c4a00177f7f86ebc825ccd4f881b5556aba3eca00d3725c84517b4cd4649a7a",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-bubble"
+        },
+        {
+          "character": "I",
+          "derived": true,
+          "geometryHash": "f459f93b8347f447e141b09a1e994748ea404f6c1e442fcd02742f152f85cc05",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "i.style-bubble"
+        },
+        {
+          "character": "N",
+          "derived": true,
+          "geometryHash": "736672967912c5df87ebcb27a093d03371d71a49ce81fb94c735ce1a392c1a26",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "n.style-bubble"
+        },
+        {
+          "character": "D",
+          "derived": true,
+          "geometryHash": "5476782e12f763ffb39362f7c77facc102512a69e25b4caca87c4b89e52449b6",
+          "glyphId": "latin.upper.D",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "d.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-mind.bubble.4e2d90172034",
+      "text": "MIND"
+    },
+    {
+      "coverage": "includes C02 masters MIND (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-mind",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "M",
+          "derived": true,
+          "geometryHash": "7bb1ca94fb716208e6d41df51e1d3b89973d328cb5798661d86236b376862567",
+          "glyphId": "latin.upper.M",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "m.style-blockbuster"
+        },
+        {
+          "character": "I",
+          "derived": true,
+          "geometryHash": "7b50ccf97387861724cd84bf34bb8f7898a61c31fba486f087ba59161d93a3bd",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "i.style-blockbuster"
+        },
+        {
+          "character": "N",
+          "derived": true,
+          "geometryHash": "3db78d7e2d1680cc4c741f81206942ca57b5f4e19d9fe714fb769cd16e8a2667",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "n.style-blockbuster"
+        },
+        {
+          "character": "D",
+          "derived": true,
+          "geometryHash": "5314489ec757fcff5cefbc4e970bd6249ac4e1c89658be4893e94cbb3ea45703",
+          "glyphId": "latin.upper.D",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "d.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-mind.blockbuster.5bac212b99e9",
+      "text": "MIND"
+    },
+    {
+      "coverage": "includes C02 masters NYX (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-nyx",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "N",
+          "derived": false,
+          "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "n.master"
+        },
+        {
+          "character": "Y",
+          "derived": false,
+          "geometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+          "glyphId": "latin.upper.Y",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "y.master"
+        },
+        {
+          "character": "X",
+          "derived": false,
+          "geometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+          "glyphId": "latin.upper.X",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "x.master"
+        }
+      ],
+      "specimenId": "spec.word-nyx.neutral.11616fc4d79b",
+      "text": "NYX"
+    },
+    {
+      "coverage": "includes C02 masters NYX (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-nyx",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "N",
+          "derived": false,
+          "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "n.master"
+        },
+        {
+          "character": "Y",
+          "derived": true,
+          "geometryHash": "1962429b2459a6913708f288d2c24b5504951870dc4b3cfd9d93b88f8447a295",
+          "glyphId": "latin.upper.Y",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "y.style-straight"
+        },
+        {
+          "character": "X",
+          "derived": true,
+          "geometryHash": "2c96ba3e71909d55f47c8dba94fd0832e28bcbd450d98a26b7f68511e509e6c1",
+          "glyphId": "latin.upper.X",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "x.style-straight"
+        }
+      ],
+      "specimenId": "spec.word-nyx.straight.768d995321b3",
+      "text": "NYX"
+    },
+    {
+      "coverage": "includes C02 masters NYX (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-nyx",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "N",
+          "derived": true,
+          "geometryHash": "736672967912c5df87ebcb27a093d03371d71a49ce81fb94c735ce1a392c1a26",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "n.style-bubble"
+        },
+        {
+          "character": "Y",
+          "derived": true,
+          "geometryHash": "38f2acf163e6611dc80e9fa06e06a99f97fcf2e74a519b482b02a8bcdf4bd5eb",
+          "glyphId": "latin.upper.Y",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "y.style-bubble"
+        },
+        {
+          "character": "X",
+          "derived": true,
+          "geometryHash": "b05ccb0a9fe9fba93eb09edbf359ac75f727c86fda8dc2c5ede37c4db2929b02",
+          "glyphId": "latin.upper.X",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "x.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-nyx.bubble.9e036988bc8f",
+      "text": "NYX"
+    },
+    {
+      "coverage": "includes C02 masters NYX (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-nyx",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "N",
+          "derived": true,
+          "geometryHash": "3db78d7e2d1680cc4c741f81206942ca57b5f4e19d9fe714fb769cd16e8a2667",
+          "glyphId": "latin.upper.N",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "n.style-blockbuster"
+        },
+        {
+          "character": "Y",
+          "derived": true,
+          "geometryHash": "8526aba5d3e73416898e0747b368e8d9202e78371264e3ece9fe5b3cd3adb965",
+          "glyphId": "latin.upper.Y",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "y.style-blockbuster"
+        },
+        {
+          "character": "X",
+          "derived": true,
+          "geometryHash": "9db4622920dd19e12096183308ffaae1e6348ac64c169ffa087b4e0e82413019",
+          "glyphId": "latin.upper.X",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "x.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-nyx.blockbuster.c2a339eb8a54",
+      "text": "NYX"
+    },
+    {
+      "coverage": "includes C02 masters IK (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-risk",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": false,
+          "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "r.master"
+        },
+        {
+          "character": "I",
+          "derived": false,
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "i.master"
+        },
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        },
+        {
+          "character": "K",
+          "derived": false,
+          "geometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "k.master"
+        }
+      ],
+      "specimenId": "spec.word-risk.neutral.3c7f19bf1f03",
+      "text": "RISK"
+    },
+    {
+      "coverage": "includes C02 masters IK (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-risk",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-straight"
+        },
+        {
+          "character": "I",
+          "derived": false,
+          "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "i.master"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        },
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "9980cf10830f9e57d7c37ccff8c4a9b181ccfff9cf6865329e95763933cf476a",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-straight"
+        }
+      ],
+      "specimenId": "spec.word-risk.straight.8d8a24350257",
+      "text": "RISK"
+    },
+    {
+      "coverage": "includes C02 masters IK (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-risk",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-bubble"
+        },
+        {
+          "character": "I",
+          "derived": true,
+          "geometryHash": "f459f93b8347f447e141b09a1e994748ea404f6c1e442fcd02742f152f85cc05",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "i.style-bubble"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        },
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "bc253ee94f3f4db6de8716f401fa494638a0726864fc66e8bab0c6aefd4f67ea",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-risk.bubble.cb4a47379c06",
+      "text": "RISK"
+    },
+    {
+      "coverage": "includes C02 masters IK (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-risk",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "R",
+          "derived": true,
+          "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+          "glyphId": "latin.upper.R",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "r.style-blockbuster"
+        },
+        {
+          "character": "I",
+          "derived": true,
+          "geometryHash": "7b50ccf97387861724cd84bf34bb8f7898a61c31fba486f087ba59161d93a3bd",
+          "glyphId": "latin.upper.I",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "i.style-blockbuster"
+        },
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        },
+        {
+          "character": "K",
+          "derived": true,
+          "geometryHash": "0ce52eadbc47d3c0c8bdcfb1d9ed6e208b2990169d7709cdae359c05a5cda555",
+          "glyphId": "latin.upper.K",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "k.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-risk.blockbuster.4e2abdece35a",
+      "text": "RISK"
+    },
+    {
+      "coverage": "includes C02 masters QUE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-sque",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "neutral",
+      "request": {
+        "composition": "neutral",
+        "letterform": "neutral",
+        "practiceContext": "none",
+        "preset": "neutral",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": false,
+          "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "s.master"
+        },
+        {
+          "character": "Q",
+          "derived": false,
+          "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "glyphId": "latin.upper.Q",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "q.master"
+        },
+        {
+          "character": "U",
+          "derived": false,
+          "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "glyphId": "latin.upper.U",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "u.master"
+        },
+        {
+          "character": "E",
+          "derived": false,
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "e.master"
+        }
+      ],
+      "specimenId": "spec.word-sque.neutral.d4a9443b2c9b",
+      "text": "SQUE"
+    },
+    {
+      "coverage": "includes C02 masters QUE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-sque",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "straight",
+      "request": {
+        "composition": "neutral",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "straight",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-straight"
+        },
+        {
+          "character": "Q",
+          "derived": false,
+          "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "glyphId": "latin.upper.Q",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "q.master"
+        },
+        {
+          "character": "U",
+          "derived": true,
+          "geometryHash": "0cf39ca3870f2f03d81e5b63e2e13fbe6f87b8eb488473a17aac05017e0d46d8",
+          "glyphId": "latin.upper.U",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "u.style-straight"
+        },
+        {
+          "character": "E",
+          "derived": false,
+          "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "unchanged",
+          "variantId": "e.master"
+        }
+      ],
+      "specimenId": "spec.word-sque.straight.d60c0b4a2381",
+      "text": "SQUE"
+    },
+    {
+      "coverage": "includes C02 masters QUE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-sque",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "bubble",
+      "request": {
+        "composition": "bounce",
+        "letterform": "bubble",
+        "practiceContext": "none",
+        "preset": "bubble",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-bubble"
+        },
+        {
+          "character": "Q",
+          "derived": true,
+          "geometryHash": "1434d1ff91c91e1d2fc32adf3ea7cbbd3ce3f326388c7574093a14840a8eae08",
+          "glyphId": "latin.upper.Q",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "q.style-bubble"
+        },
+        {
+          "character": "U",
+          "derived": true,
+          "geometryHash": "64e9c4af88d50436c11bbe321f38dd9c79b2e54edbc5f0abafccae2f738ce650",
+          "glyphId": "latin.upper.U",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "u.style-bubble"
+        },
+        {
+          "character": "E",
+          "derived": true,
+          "geometryHash": "ac80d8ead70cd18ea0e6a29ef15248bcc94649e14a87674d8d5aeb4a1c578bcb",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "e.style-bubble"
+        }
+      ],
+      "specimenId": "spec.word-sque.bubble.5684830dd69a",
+      "text": "SQUE"
+    },
+    {
+      "coverage": "includes C02 masters QUE (authored-contour, owner design review pending)",
+      "family": "word-context",
+      "fixtureId": "word-sque",
+      "plates": [
+        "plates/word-context.svg"
+      ],
+      "preset": "blockbuster",
+      "request": {
+        "composition": "block-fit",
+        "letterform": "straight",
+        "practiceContext": "none",
+        "preset": "blockbuster",
+        "rendering": [
+          "fill"
+        ]
+      },
+      "slots": [
+        {
+          "character": "S",
+          "derived": true,
+          "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+          "glyphId": "latin.upper.S",
+          "hardChecksPassed": true,
+          "index": 0,
+          "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "s.style-blockbuster"
+        },
+        {
+          "character": "Q",
+          "derived": true,
+          "geometryHash": "5c4c9ca041a71c4894b71ad9d0b447ea8eb178c205f3b903ba87651bf9986a36",
+          "glyphId": "latin.upper.Q",
+          "hardChecksPassed": true,
+          "index": 1,
+          "masterGeometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "q.style-blockbuster"
+        },
+        {
+          "character": "U",
+          "derived": true,
+          "geometryHash": "e8417b141e045c10be5fc937eff28ee73bc01f3e938a36fc2d87e4b92f690b04",
+          "glyphId": "latin.upper.U",
+          "hardChecksPassed": true,
+          "index": 2,
+          "masterGeometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "u.style-blockbuster"
+        },
+        {
+          "character": "E",
+          "derived": true,
+          "geometryHash": "9688da7b455a31647d57c4ccecc3feb4f9b12a74c1b2b30e82cddf783a12e374",
+          "glyphId": "latin.upper.E",
+          "hardChecksPassed": true,
+          "index": 3,
+          "masterGeometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+          "maturity": "authored-contour",
+          "resolverStatus": "applied",
+          "variantId": "e.style-blockbuster"
+        }
+      ],
+      "specimenId": "spec.word-sque.blockbuster.b219eac883f9",
+      "text": "SQUE"
+    }
+  ]
+}

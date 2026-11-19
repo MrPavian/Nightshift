@@ -66,9 +66,9 @@ Hollow, outline, inline, fill, 3D/extrusion, chrome, shadow, drips, texture and 
 
 | Family | Documentation | Current engine support |
 |---|---|---|
-| Bubble | 3 templates documented | Base Bubble operation exists; variants not separate/calibrated |
-| Straight / Simple | 4 templates documented | Base Straight operations exist; variants not separate/calibrated |
-| Blockbuster | 3 templates documented | Straight + Block-fit composition exists; no separate alphabet |
+| Bubble | 3 templates documented | Base Bubble operation exists and is **rendered** (Phase A run `phase-a-01`); T1–T3 not separate; uncalibrated — counters of A/B/R keep only 16–20 % of their area, letters fuse in words under Bounce |
+| Straight / Simple | 4 templates documented | Base Straight operations exist and are **rendered** (Phase A); variants not separate; uncalibrated |
+| Blockbuster | 3 templates documented | Straight + Block-fit composition exists and is **rendered** (Phase A); no separate alphabet |
 | Wildstyle | 3 templates documented | Relationship/interlocking operation unavailable pending C04 |
 | Tag / Handstyle | 3 templates documented | No gesture/stroke renderer |
 | Throw-up | 3 templates documented | Context enum exists; dedicated presentation renderer absent |
@@ -81,3 +81,5 @@ Hollow, outline, inline, fill, 3D/extrusion, chrome, shadow, drips, texture and 
 - **Generator-ready:** parameter ranges calibrated and regression tests pass.
 
 No template in this index should be assumed generator-ready merely because it is documented.
+
+**Phase A run** (`docs/reports/proof/style-library/phase-a-01/`): only the *base* operations of Bubble, Straight and Blockbuster reached **rendered**. None of the 38 templates is *compared*, *practitioner-reviewed* or *calibrated*; human review of the run is pending.
