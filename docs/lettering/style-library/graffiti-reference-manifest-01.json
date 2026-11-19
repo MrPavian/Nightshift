@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "17_item_level_records_plus_1_NGA_visual_description_specimen;_full_image_access_and_rights_pending",
+  "corpus_status": "20_item_level_records_across_Smithsonian_and_NGA;_visual_inspection_and_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -684,6 +684,52 @@
       "visual_review_status": "NGA_catalogue_visual_description_reviewed_image_not_downloadable",
       "what_not_to_copy": "Do not trace the MAD SEEN letterforms, name, character, flame motif or complete train-car composition.",
       "confidence": "high for catalogue description; medium for composition layers; low for specific letterform grammar"
+    },
+    {
+      "specimen_id": "SI-CH-016",
+      "source_record_id": "ACQ-SI-02",
+      "item_url": "https://n2t.net/ark:/65665/qa7c4a0f7c5-9695-4802-9b99-951c2b070589",
+      "archive_title": "ZEPHYR",
+      "creator_or_writer": "unknown; catalogue title is not verified artist attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1979",
+      "place": "New York City, New York, USA",
+      "dimensions": "8 × 10 inches",
+      "identifier": "ACMA.06-124.9, Item acma-06 -124-9_09-a",
+      "visible_glyphs": "not assessed; title transcription only",
+      "candidate_grammar_tags": [],
+      "execution_format": "chromogenic coupler print",
+      "composition_mode": "unknown",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected",
+      "word_composition_notes": "not visually inspected",
+      "rights_status": "appointment required; reproduction possible but copyright and other rights not guaranteed",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace photographed work or writer name",
+      "confidence": "high for catalogue metadata; none for visual style classification"
+    },
+    {
+      "specimen_id": "SI-CH-017",
+      "source_record_id": "ACQ-SI-02",
+      "item_url": "https://n2t.net/ark:/65665/qa7a38c4dbb-d946-4ccb-ad46-ee35e1a788a0",
+      "archive_title": "VANDAL",
+      "creator_or_writer": "unknown; catalogue title is not verified artist attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1979",
+      "place": "New York City, New York, USA",
+      "dimensions": "10 × 22 inches",
+      "identifier": "ACMA.06-124.9, Item acma_06-124-9_04-a",
+      "visible_glyphs": "not assessed; title transcription only",
+      "candidate_grammar_tags": [],
+      "execution_format": "chromogenic coupler print",
+      "composition_mode": "unknown",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected",
+      "word_composition_notes": "not visually inspected",
+      "rights_status": "appointment required; reproduction possible but copyright and other rights not guaranteed",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace photographed work or writer name",
+      "confidence": "high for catalogue metadata; none for visual style classification"
     }
   ]
 }
