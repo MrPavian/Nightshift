@@ -596,3 +596,12 @@
 - Measured, not gated: Bubble keeps 16–20 % of the counter area of A/B/R, Blockbuster 44–47 %. Human review pending; nothing promoted.
 - Review decisions now include `unsure` and `cannot-assess` (`src/proof/review.js`, owner request on #22); only `pass` can support a maturity proposal.
 - Owner review (19 Nov): technical proof accepted, no visual or stylistic acceptance. Straight and Blockbuster need a new letterform concept; Bubble defects stay open (`CLAUDE_TASK_C03_BUBBLE_BOUNCE_GATES_01.md`). Maturity stays `rendered` for the base operations; all 38 templates remain `documented-draft`.
+
+## 2026-11-19 — C03 Bubble counter safety and Bounce collision safety (Issue #24)
+
+- Resolver 1.1.0, contract `nightshift.style-resolver@1.2.0`: Bubble tries its inflation candidates strongest first and logs each with stable reason codes; new operation `letterform.bubble.counter-safety` rejects candidates whose counters keep less than 40 % of their neutral area or 60 % of their neutral opening (largest inscribed circle). Provisional, reject-only, uncalibrated. A/B/P/R now inflate by 5, D/O/Q by 7, glyphs without counters by 9.
+- `src/style/negative-space.js`: counter area, opening and wall clearance (from the validator) per counter; apertures report connectivity, throat `not-evaluable`.
+- `src/style/render.js` word layout 1.1.0: Bounce tests transformed contours of every earlier glyph (intersection / tangency / too-close / safe / authorised overlap), steps right until safe, and returns a placement report (`layoutWordWithReport`). Overlap only through a declared relationship (instance IDs, region, layer). Neutral layout unchanged.
+- Proof run `docs/reports/proof/style-library/phase-a-02/` (before/after plates, negative-space and placement reports). Phase A-01 is frozen and checked by checksum.
+- Tests: `tests/style-safety.test.js` (9), `tests/style-proof-run-a02.test.js` (4); the old Bounce test that required overlapping letters was replaced. Total 207.
+- Known limitation: mixed inflation distances make words uneven in mass. Owner review required; nothing calibrated.

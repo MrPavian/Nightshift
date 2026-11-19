@@ -1,3 +1,5 @@
+// FROZEN: this builder produced docs/reports/proof/style-library/phase-a-01 with resolver 1.0. It is kept
+// as provenance and for its constants; it is no longer run (resolver 1.1 changed Bubble). See style-run-a02.js.
 // Style Library Phase A proof run: neutral, monochrome comparison of the style grammars the
 // C03 resolver actually implements (Neutral, Straight, Bubble, Blockbuster = Straight + Block-fit).
 // Wildstyle is requested only as a diagnostic: its interlocking step is skipped (C04 missing) and

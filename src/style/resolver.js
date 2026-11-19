@@ -5,9 +5,10 @@
 import { validateGlyphGeometry } from '../glyph/validate-geometry.js';
 import { sha256Hex } from '../core/sha256.js';
 import { stableStringify } from '../core/stable-json.js';
+import { negativeSpaceMetrics, checkCounterSafety } from './negative-space.js';
 import { contourToPolygon, polyArea, offsetPolygon, removeLoops, bowEdges, chaikin, reducePoints, clipSharpCorners, polygonSegments, chamferCurves, bounds, affine } from './polygon.js';
 
-export const RESOLVER_VERSION = 'style-resolver/1.0.0';
+export const RESOLVER_VERSION = 'style-resolver/1.1.0'; // 1.1.0: Bubble counter-safety gate, candidate log, negative-space metrics
 
 /** Normalise a request: a preset id, or explicit axes (missing axes default to neutral/none). */
 export function normaliseRequest(contract, request) {
@@ -51,7 +52,8 @@ function check(glyph, contours, profile, expectCounters, style) {
   const counters = v.negativeSpace.counters.filter((c) => c.boundedFace).length;
   const components = v.topology.connectedComponents;
   const ok = v.hardChecksPassed && counters === expectCounters && components === 1;
-  return { ok, rec, report: v, reason: ok ? null : errors.length ? `Validierung: ${[...new Set(errors)].join(', ')}` : counters !== expectCounters ? `Punzen: ${counters} statt ${expectCounters}` : `Teile: ${components} statt 1` };
+  const code = ok ? null : errors.length ? 'VALIDATION_FAILED' : counters !== expectCounters ? 'COUNTER_COUNT_CHANGED' : 'COMPONENTS_CHANGED';
+  return { ok, rec, report: v, code, reason: ok ? null : errors.length ? `Validierung: ${[...new Set(errors)].join(', ')}` : counters !== expectCounters ? `Punzen: ${counters} statt ${expectCounters}` : `Teile: ${components} statt 1` };
 }
 
 const polysOf = (contours) => contours.map((c) => ({ contourId: c.contourId, role: c.role, poly: contourToPolygon(c) }));
@@ -69,10 +71,12 @@ export function resolveStyle(glyph, request, { contract, profile }) {
   const ops = [];
   const op = (id, status, reason = null, params = undefined) => ops.push({ operationId: id, axis: contract.operations[id]?.axis ?? id.split('.')[0], status, reason, ...(params ? { params } : {}) });
   const master = glyph.variants[0];
+  let nsMetrics = null;
   const out = (status, derived) => ({
     resolverVersion: RESOLVER_VERSION, glyphId: glyph.glyphId, character: glyph.character, request: req, status, operations: ops,
     derived, geometryHash: derived ? derived.variants[0].geometryHash : master.geometryHash,
     nonGeometricAxes: { practiceContext: req.practiceContext, rendering: req.rendering },
+    ...(nsMetrics ? { negativeSpace: nsMetrics } : {}),
   });
 
   if (master.geometry.editability !== 'fully-editable' || glyph.maturity !== 'authored-contour') {
@@ -112,20 +116,31 @@ export function resolveStyle(glyph, request, { contract, profile }) {
       if (swell && p.role === 'outer') q = removeLoops(bowEdges(q, { ratio, max }));
       return { ...p, poly: reducePoints(chaikin(q, iterations)) };
     });
+    // Candidates are tried strongest first; each is logged with a stable reason code. The counter-safety
+    // floors (reject-only, provisional) stop a candidate from shrinking counters to slits or pinholes.
+    const safety = contract.operations['letterform.bubble.counter-safety']?.params ?? null;
+    const candidates = [];
     let done = null;
     for (const d of contract.operations['letterform.bubble.inflate'].params.distanceCandidates) {
       for (const swell of [true, false]) {
         const cand = toContours(base, build(d, swell));
-        if (check(glyph, cand, profile, expectCounters, styleKey).ok) { done = { cand, d, swell }; break; }
+        const v = check(glyph, cand, profile, expectCounters, styleKey);
+        if (!v.ok) { candidates.push({ distance: d, swell, result: 'rejected', reasons: [v.code] }); continue; }
+        const metrics = negativeSpaceMetrics(glyph, neutralReport, v.rec, v.report);
+        const gate = safety ? checkCounterSafety(metrics, safety) : { ok: true, reasons: [] };
+        if (!gate.ok) { candidates.push({ distance: d, swell, result: 'rejected', reasons: gate.reasons }); continue; }
+        candidates.push({ distance: d, swell, result: 'accepted', reasons: [] });
+        done = { cand, d, swell, metrics };
+        break;
       }
       if (done) break;
     }
     if (done) {
-      contours = done.cand; changed = true;
-      op('letterform.bubble.inflate', 'applied', null, { distance: done.d });
+      contours = done.cand; changed = true; nsMetrics = done.metrics;
+      op('letterform.bubble.inflate', 'applied', null, { distance: done.d, candidates, counterSafety: safety ? { ...safety } : 'disabled' });
       if (done.swell) op('letterform.bubble.swell-sides', 'applied', null, { ratio, max }); else op('letterform.bubble.swell-sides', 'skipped', 'Wölbung würde Punzen oder Lücken schließen.');
       op('letterform.bubble.smooth', 'applied', null, { iterations });
-    } else op('letterform.bubble.inflate', 'skipped', 'Keine Aufblasstärke hält die Punzen offen.');
+    } else op('letterform.bubble.inflate', 'skipped', 'Keine Aufblasstärke hält die Punzen offen (siehe Kandidaten).', { candidates, counterSafety: safety ? { ...safety } : 'disabled' });
   }
 
   // ---- composition ----

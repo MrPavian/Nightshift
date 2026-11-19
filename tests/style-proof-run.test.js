@@ -1,25 +1,25 @@
-// Style Library Phase A proof run: honesty, finish isolation and reproducibility checks.
+// Style Library Phase A-01 proof run (frozen): honesty, finish isolation and integrity checks.
+// The run was produced by resolver 1.0 and is no longer regenerated (resolver 1.1 changed Bubble);
+// these tests read the committed files and verify them against their own checksums.
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
-import { generate, RUN_DIR } from '../tools/proof-style-plates.mjs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { join, relative } from 'node:path';
+import { RUN_DIR, verifyFrozenRun } from '../tools/proof-style-plates.mjs';
 import { loadRegistry } from '../src/glyph/load-node.js';
 import { PRIMARY_GLYPHS, COMPARED_PRESETS, INK } from '../src/proof/style-run.js';
 
-const run = generate();
-const { manifest, report, files } = run;
+const walk = (d) => readdirSync(d).flatMap((n) => (statSync(join(d, n)).isDirectory() ? walk(join(d, n)) : [join(d, n)]));
+const files = Object.fromEntries(walk(RUN_DIR).map((p) => [relative(RUN_DIR, p), readFileSync(p, 'utf8')]));
+const manifest = JSON.parse(files['manifest.json']);
+const report = JSON.parse(files['report/operations.json']);
 const plates = Object.entries(files).filter(([p]) => p.startsWith('plates/'));
 
-test('run is deterministic and the committed run is up to date', () => {
-  const again = generate();
-  assert.deepEqual(Object.keys(again.files), Object.keys(files));
-  for (const [p, text] of Object.entries(files)) assert.equal(again.files[p], text, p);
-  for (const [p, text] of Object.entries(files)) {
-    const path = join(RUN_DIR, p);
-    assert.ok(existsSync(path), `${path} missing — run node tools/proof-style-plates.mjs`);
-    if (p !== 'review/ratings.json') assert.equal(readFileSync(path, 'utf8'), text, `${path} is stale — run node tools/proof-style-plates.mjs`);
-  }
+test('frozen Phase A-01 run is intact (checksums match every committed file)', () => {
+  assert.deepEqual(verifyFrozenRun(RUN_DIR), []);
+  const sums = JSON.parse(files['checksums.json']);
+  assert.equal(sums.runId, manifest.runId);
+  for (const p of Object.keys(manifest.artifactHashes)) assert.ok(p in sums, p);
 });
 
 test('primary comparison plates are monochrome silhouettes without any finish', () => {

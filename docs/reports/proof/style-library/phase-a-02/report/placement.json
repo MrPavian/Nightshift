@@ -1,0 +1,1528 @@
+{
+  "policy": {
+    "classes": [
+      "intersection",
+      "tangency",
+      "too-close",
+      "safe",
+      "authorized-overlap"
+    ],
+    "default": "no-contact",
+    "fallback": "step right by stepIncrement until clearance >= minClearance (max maxExtraSteps)",
+    "measuredOn": "transformed glyph contours (translation + rotation about the glyph box centre), all earlier glyphs of the word",
+    "overlapRatio": "preferred tightness only; not a permission to overlap",
+    "relationships": "an overlap is allowed only for a declared relationship naming both glyph-instance IDs, type 'overlap', a permitted region (word coordinates) and a layer order",
+    "status": "provisional-uncalibrated"
+  },
+  "runId": "run.style-library-phase-a-02.312d68901550",
+  "words": {
+    "ABRA": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.0.latin.upper.A",
+            "rotate": -3,
+            "x": 8.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 148.876375,
+              "w": 112.54467100000001,
+              "x0": -6.598076,
+              "x1": 105.946595,
+              "y0": -4.180378,
+              "y1": 144.695997
+            },
+            "geometryHash": "2ba211e10b1462128643dcbc3dff4c8e428cb43c900aa74d1eedc081d939d9a1",
+            "instanceId": "inst.1.latin.upper.B",
+            "rotate": 4,
+            "x": 132.25068976,
+            "y": -6
+          },
+          {
+            "box": {
+              "h": 147.14274999999998,
+              "w": 114.835335,
+              "x0": -6.447355,
+              "x1": 108.38798,
+              "y0": -4.554591,
+              "y1": 142.588159
+            },
+            "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+            "instanceId": "inst.2.latin.upper.R",
+            "rotate": -3,
+            "x": 245.13927923999998,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.3.latin.upper.A",
+            "rotate": 4,
+            "x": 358.34509504,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.A",
+            "accepted": {
+              "against": "inst.0.latin.upper.A",
+              "class": "safe",
+              "clearance": 4.429,
+              "extraSteps": 19,
+              "shift": 19
+            },
+            "b": "inst.1.latin.upper.B",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          },
+          {
+            "a": "inst.1.latin.upper.B",
+            "accepted": {
+              "against": "inst.1.latin.upper.B",
+              "class": "safe",
+              "clearance": 4.596,
+              "extraSteps": 14,
+              "shift": 14
+            },
+            "b": "inst.2.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.1.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          },
+          {
+            "a": "inst.2.latin.upper.R",
+            "accepted": {
+              "against": "inst.2.latin.upper.R",
+              "class": "safe",
+              "clearance": 4.472,
+              "extraSteps": 10,
+              "shift": 10
+            },
+            "b": "inst.3.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.2.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.0.latin.upper.A",
+            "rotate": -3,
+            "x": 12.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 158.01287200000002,
+              "w": 120.43638,
+              "x0": -10.598076,
+              "x1": 109.838304,
+              "y0": -8.728742,
+              "y1": 149.28413
+            },
+            "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+            "instanceId": "inst.1.latin.upper.B",
+            "rotate": 4,
+            "x": 124.29068976000002,
+            "y": -6
+          },
+          {
+            "box": {
+              "h": 156.842225,
+              "w": 127.431956,
+              "x0": -10.447355,
+              "x1": 116.984601,
+              "y0": -9.031001,
+              "y1": 147.811224
+            },
+            "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+            "instanceId": "inst.2.latin.upper.R",
+            "rotate": -3,
+            "x": 230.12398316,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.3.latin.upper.A",
+            "rotate": 4,
+            "x": 344.41482544,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.A",
+            "accepted": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.B",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          },
+          {
+            "a": "inst.1.latin.upper.B",
+            "accepted": {
+              "against": "inst.1.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.2.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.1.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          },
+          {
+            "a": "inst.2.latin.upper.R",
+            "accepted": {
+              "against": "inst.2.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.3.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.2.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "AR": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.0.latin.upper.A",
+            "rotate": -3,
+            "x": 8.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 147.14274999999998,
+              "w": 114.835335,
+              "x0": -6.447355,
+              "x1": 108.38798,
+              "y0": -4.554591,
+              "y1": 142.588159
+            },
+            "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 132.09996876,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.A",
+            "accepted": {
+              "against": "inst.0.latin.upper.A",
+              "class": "safe",
+              "clearance": 4.237,
+              "extraSteps": 19,
+              "shift": 19
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.0.latin.upper.A",
+            "rotate": -3,
+            "x": 12.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 156.842225,
+              "w": 127.431956,
+              "x0": -10.447355,
+              "x1": 116.984601,
+              "y0": -9.031001,
+              "y1": 147.811224
+            },
+            "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 124.13996876000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.A",
+            "accepted": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.A",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "BA": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 148.876375,
+              "w": 112.54467100000001,
+              "x0": -6.598076,
+              "x1": 105.946595,
+              "y0": -4.180378,
+              "y1": 144.695997
+            },
+            "geometryHash": "2ba211e10b1462128643dcbc3dff4c8e428cb43c900aa74d1eedc081d939d9a1",
+            "instanceId": "inst.0.latin.upper.B",
+            "rotate": -3,
+            "x": 6.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 126.63738648000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.B",
+            "accepted": {
+              "against": "inst.0.latin.upper.B",
+              "class": "safe",
+              "clearance": 4.718,
+              "extraSteps": 19,
+              "shift": 19
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 158.01287200000002,
+              "w": 120.43638,
+              "x0": -10.598076,
+              "x1": 109.838304,
+              "y0": -8.728742,
+              "y1": 149.28413
+            },
+            "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+            "instanceId": "inst.0.latin.upper.B",
+            "rotate": -3,
+            "x": 10.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 118.58209040000001,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.B",
+            "accepted": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "BR": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 148.876375,
+              "w": 112.54467100000001,
+              "x0": -6.598076,
+              "x1": 105.946595,
+              "y0": -4.180378,
+              "y1": 144.695997
+            },
+            "geometryHash": "2ba211e10b1462128643dcbc3dff4c8e428cb43c900aa74d1eedc081d939d9a1",
+            "instanceId": "inst.0.latin.upper.B",
+            "rotate": -3,
+            "x": 6.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 147.14274999999998,
+              "w": 114.835335,
+              "x0": -6.447355,
+              "x1": 108.38798,
+              "y0": -4.554591,
+              "y1": 142.588159
+            },
+            "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 122.48666548000001,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.B",
+            "accepted": {
+              "against": "inst.0.latin.upper.B",
+              "class": "safe",
+              "clearance": 4.389,
+              "extraSteps": 17,
+              "shift": 17
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 158.01287200000002,
+              "w": 120.43638,
+              "x0": -10.598076,
+              "x1": 109.838304,
+              "y0": -8.728742,
+              "y1": 149.28413
+            },
+            "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+            "instanceId": "inst.0.latin.upper.B",
+            "rotate": -3,
+            "x": 10.598076,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 156.842225,
+              "w": 127.431956,
+              "x0": -10.447355,
+              "x1": 116.984601,
+              "y0": -9.031001,
+              "y1": 147.811224
+            },
+            "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 116.43136940000001,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.B",
+            "accepted": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.B",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "GR": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.195069,
+              "w": 124.868016,
+              "x0": -11.461542,
+              "x1": 113.406474,
+              "y0": -4.925533,
+              "y1": 148.269536
+            },
+            "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+            "instanceId": "inst.0.latin.upper.G",
+            "rotate": -3,
+            "x": 11.461542,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 147.14274999999998,
+              "w": 114.835335,
+              "x0": -6.447355,
+              "x1": 108.38798,
+              "y0": -4.554591,
+              "y1": 142.588159
+            },
+            "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 135.33120907999998,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.G",
+            "accepted": {
+              "against": "inst.0.latin.upper.G",
+              "class": "safe",
+              "clearance": 4.006,
+              "extraSteps": 19,
+              "shift": 19
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.195069,
+              "w": 124.868016,
+              "x0": -11.461542,
+              "x1": 113.406474,
+              "y0": -4.925533,
+              "y1": 148.269536
+            },
+            "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+            "instanceId": "inst.0.latin.upper.G",
+            "rotate": -3,
+            "x": 11.461542,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 156.842225,
+              "w": 127.431956,
+              "x0": -10.447355,
+              "x1": 116.984601,
+              "y0": -9.031001,
+              "y1": 147.811224
+            },
+            "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+            "instanceId": "inst.1.latin.upper.R",
+            "rotate": 4,
+            "x": 120.33120908,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.G",
+            "accepted": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.R",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "GS": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.195069,
+              "w": 124.868016,
+              "x0": -11.461542,
+              "x1": 113.406474,
+              "y0": -4.925533,
+              "y1": 148.269536
+            },
+            "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+            "instanceId": "inst.0.latin.upper.G",
+            "rotate": -3,
+            "x": 11.461542,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.1.latin.upper.S",
+            "rotate": 4,
+            "x": 139.75509208,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.G",
+            "accepted": {
+              "against": "inst.0.latin.upper.G",
+              "class": "safe",
+              "clearance": 4.748,
+              "extraSteps": 23,
+              "shift": 23
+            },
+            "b": "inst.1.latin.upper.S",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 153.195069,
+              "w": 124.868016,
+              "x0": -11.461542,
+              "x1": 113.406474,
+              "y0": -4.925533,
+              "y1": 148.269536
+            },
+            "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+            "instanceId": "inst.0.latin.upper.G",
+            "rotate": -3,
+            "x": 11.461542,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.1.latin.upper.S",
+            "rotate": 4,
+            "x": 116.75509208,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.G",
+            "accepted": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.S",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.G",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "RA": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 147.14274999999998,
+              "w": 114.835335,
+              "x0": -6.447355,
+              "x1": 108.38798,
+              "y0": -4.554591,
+              "y1": 142.588159
+            },
+            "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+            "instanceId": "inst.0.latin.upper.R",
+            "rotate": -3,
+            "x": 6.447355,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 119.65317080000001,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.R",
+            "accepted": {
+              "against": "inst.0.latin.upper.R",
+              "class": "safe",
+              "clearance": 4.472,
+              "extraSteps": 10,
+              "shift": 10
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 156.842225,
+              "w": 127.431956,
+              "x0": -10.447355,
+              "x1": 116.984601,
+              "y0": -9.031001,
+              "y1": 147.811224
+            },
+            "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+            "instanceId": "inst.0.latin.upper.R",
+            "rotate": -3,
+            "x": 10.447355,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 124.73819728000001,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.R",
+            "accepted": {
+              "against": "inst.0.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.R",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "SA": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.0.latin.upper.S",
+            "rotate": -3,
+            "x": 6.871238,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 143.971833,
+              "w": 121.19615200000001,
+              "x0": -8.598076,
+              "x1": 112.598076,
+              "y0": -2.121742,
+              "y1": 141.850091
+            },
+            "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 133.89479984000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.S",
+            "accepted": {
+              "against": "inst.0.latin.upper.S",
+              "class": "safe",
+              "clearance": 4.114,
+              "extraSteps": 20,
+              "shift": 20
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.0.latin.upper.S",
+            "rotate": -3,
+            "x": 6.871238,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 153.713307,
+              "w": 129.196152,
+              "x0": -12.598076,
+              "x1": 116.598076,
+              "y0": -6.759628,
+              "y1": 146.953679
+            },
+            "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+            "instanceId": "inst.1.latin.upper.A",
+            "rotate": 4,
+            "x": 117.89479984000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.S",
+            "accepted": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.A",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    },
+    "SB": {
+      "after": {
+        "channels": "none-declared",
+        "collisionPolicy": "no-contact",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.0.latin.upper.S",
+            "rotate": -3,
+            "x": 6.871238,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 148.876375,
+              "w": 112.54467100000001,
+              "x0": -6.598076,
+              "x1": 105.946595,
+              "y0": -4.180378,
+              "y1": 144.695997
+            },
+            "geometryHash": "2ba211e10b1462128643dcbc3dff4c8e428cb43c900aa74d1eedc081d939d9a1",
+            "instanceId": "inst.1.latin.upper.B",
+            "rotate": 4,
+            "x": 129.89479984000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.S",
+            "accepted": {
+              "against": "inst.0.latin.upper.S",
+              "class": "safe",
+              "clearance": 4.105,
+              "extraSteps": 18,
+              "shift": 18
+            },
+            "b": "inst.1.latin.upper.B",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "moved-to-safe"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      },
+      "before": {
+        "channels": "none-declared",
+        "collisionPolicy": "legacy-unchecked",
+        "composition": "bounce",
+        "items": [
+          {
+            "box": {
+              "h": 155.858081,
+              "w": 119.65536800000001,
+              "x0": -6.871238,
+              "x1": 112.78413,
+              "y0": -7.158735,
+              "y1": 148.699346
+            },
+            "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+            "instanceId": "inst.0.latin.upper.S",
+            "rotate": -3,
+            "x": 6.871238,
+            "y": 5
+          },
+          {
+            "box": {
+              "h": 158.01287200000002,
+              "w": 120.43638,
+              "x0": -10.598076,
+              "x1": 109.838304,
+              "y0": -8.728742,
+              "y1": 149.28413
+            },
+            "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+            "instanceId": "inst.1.latin.upper.B",
+            "rotate": 4,
+            "x": 115.89479984000002,
+            "y": -6
+          }
+        ],
+        "layoutVersion": "word-layout/1.1.0",
+        "pairs": [
+          {
+            "a": "inst.0.latin.upper.S",
+            "accepted": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "extraSteps": 0,
+              "shift": 0
+            },
+            "b": "inst.1.latin.upper.B",
+            "errorBound": 0.6,
+            "minClearance": 4,
+            "preferred": {
+              "against": "inst.0.latin.upper.S",
+              "class": "intersection",
+              "clearance": 0,
+              "overlapRatio": 0.12
+            },
+            "result": "unchecked (legacy)"
+          }
+        ],
+        "params": {
+          "maxExtraSteps": 120,
+          "minClearance": 4,
+          "overlapRatio": 0.12,
+          "shiftY": [
+            5,
+            -6
+          ],
+          "stepIncrement": 1,
+          "tiltDeg": [
+            -3,
+            4
+          ]
+        },
+        "relationships": []
+      }
+    }
+  }
+}
