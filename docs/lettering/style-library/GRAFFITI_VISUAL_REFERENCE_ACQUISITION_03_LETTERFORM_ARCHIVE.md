@@ -1,7 +1,7 @@
 # Graffiti Reference Acquisition 03 — Letterform Archive Permanent Collection
 
 **Date:** 2026-11-19  
-**Status:** source and access strategy; no new specimen has been counted as visually reviewed in this pass.
+**Status:** source/access strategy plus first hi-fi gallery inspection pass; six item-level records added in the follow-up analysis.
 
 ## Why this source matters
 
@@ -104,3 +104,21 @@ The Archive's emphasis on letterform invention, community vocabulary and provena
 ## Next deliverable
 
 Produce a set of at least 12 individually inspected examples per target grammar, beginning with Throw-up and Bubble/Softie, then Simple/Straight, Blockbuster and Wildstyle. The present corpus has only one individually inspected, explicitly labelled throw-up specimen; no other target grammar is yet at its evidence threshold.
+
+
+## Pass A result — hi-fi gallery inspection (19 November 2026)
+
+The five gallery images in the article were opened directly at their hi-fi image URLs. They yielded six separately recorded objects because the Bomb magazine scan contains two separately captioned covers:
+
+- IGTimes 6 interior spread (1993) — inspected as an editorial/photo index, not one glyph specimen.
+- Just Hangin' Out (2021), Greg Lamarche (Sp.One) — two separate lettering compositions observed on one sheet.
+- The Bomb no. 44 (1995), cover by Cokes — editorial title lettering integrated with illustration.
+- The Bomb no. 46 (1996), cover by Serkit — heavy BOMB display title integrated with cover illustration.
+- Skills 6 (1994), cover by Greg Lamarche (Sp.One) — custom masthead, spine typography and train-photo graffiti separated.
+- TCI Crew / Graffito interior spread (circa 1990s) — train piece and monochrome outline sketch separately noted.
+
+Analysis: `GRAFFITI_VISUAL_ANALYSIS_05_LFA_MAGAZINES_AND_ZINES.md`.
+
+The Online Archive catalogue itself is currently showing a scheduled-maintenance / temporary-offline notice, so its item pages could not be independently checked in this pass. The article's hi-fi gallery images and captions remained accessible. This is an evidence limitation, not a reason to count uninspected archive records as specimens.
+
+Corpus after this pass: 39 item-level records, 15 individually inspected objects, one explicitly archive-labelled Throw-up. Editorial covers and montage spreads are not counted toward any target grammar's specimen threshold. Rights remain link-only.
