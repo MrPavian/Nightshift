@@ -15,6 +15,21 @@
       "generatorRelevance": "research-lead",
       "relatedEntries": [],
       "editorialState": "source-checked"
+    },
+    {
+      "id": "FND-D-COUNTER-CONNECTIVITY-01",
+      "axis": "isolated-connected",
+      "observationIds": [
+        "GLY-BSCI-SEA-2018-D1",
+        "GLY-INGRID-DERK-D1"
+      ],
+      "findingDe": "Beide D-Formen zeigen einen geraden linken Stamm und einen geschlossenen, gerundeten Außenbogen. Im Sea-Alphabet bleibt das D als Einzelglyph mit langem Auslauf erkennbar; im INGRID-Piece ist die Kontur enger mit dem Nachbarbuchstaben verzahnt. Die Grundkonstruktion ist ähnlich, die Einbindung in den Schriftzug unterscheidet sich.",
+      "evidenceBasisDe": "Direkter Vergleich des D aus Seas einzeln gesetztem Handstyle-Alphabet (ACQ-BSCI-02) mit dem D aus dem im INGRID-Manual reproduzierten Piece DERK (ACQ-INGRID-01). Beide Glyphen wurden separat visuell geprüft.",
+      "limitationDe": "Nur zwei D-Beispiele aus unterschiedlichen Medien und Schreibsituationen. Der Vergleich beschreibt diese beiden Formen und erlaubt keine Verallgemeinerung über Plattformen, Writer oder Stilgruppen.",
+      "confidence": "medium",
+      "generatorRelevance": "research-lead",
+      "relatedEntries": [],
+      "editorialState": "source-checked"
     }
   ],
   "schemaVersion": "1.0"
