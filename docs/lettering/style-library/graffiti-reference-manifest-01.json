@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "corpus_status": "source_leads_only_not_individually_reviewed_specimens",
+  "reviewed_at": "2026-11-19",
+  "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
+  "style_targets": [
+    {
+      "id": "bubble_softie",
+      "target_specimens": {
+        "min": 12,
+        "max": 20
+      },
+      "current_individually_reviewed_specimens": 0
+    },
+    {
+      "id": "simple_straight",
+      "target_specimens": {
+        "min": 12,
+        "max": 20
+      },
+      "current_individually_reviewed_specimens": 0
+    },
+    {
+      "id": "blockbuster_block",
+      "target_specimens": {
+        "min": 12,
+        "max": 20
+      },
+      "current_individually_reviewed_specimens": 0
+    },
+    {
+      "id": "throw_up",
+      "target_specimens": {
+        "min": 12,
+        "max": 20
+      },
+      "current_individually_reviewed_specimens": 0
+    },
+    {
+      "id": "wildstyle_semi_wildstyle",
+      "target_specimens": {
+        "min": 12,
+        "max": 20
+      },
+      "current_individually_reviewed_specimens": 0
+    }
+  ],
+  "source_records": [
+    {
+      "id": "ACQ-CHAL-01",
+      "title": "Henry Chalfant — Graffiti Archives",
+      "url": "https://www.henrychalfant.com/",
+      "source_type": "photographer_archive",
+      "source_scope": "collection",
+      "target_grammars": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "bubble_softie"
+      ],
+      "evidence": "Photographer archive described as containing over 1,500 photographs documenting ephemeral original works.",
+      "rights_status": "link_only_no_blanket_reuse_permission",
+      "confidence": "high",
+      "next_action": "Identify item-level works and credits; create specimen records only after direct visual inspection."
+    },
+    {
+      "id": "ACQ-SI-01",
+      "title": "Smithsonian — Henry Chalfant Subway Graffiti Series Photographs",
+      "url": "https://collections.si.edu/search/results.htm?fq=object_type%3A%22Collection+descriptions%22&q=%22Graffiti+artists%22",
+      "source_type": "museum_archive_catalogue",
+      "source_scope": "collection_description",
+      "target_grammars": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "24 photographic prints dated 1977–1980 described in the Archives of American Art collection search.",
+      "rights_status": "item_level_rights_check_required",
+      "confidence": "high",
+      "next_action": "Open each item record and capture stable identifiers, credits, dates and rights."
+    },
+    {
+      "id": "ACQ-SI-02",
+      "title": "Smithsonian — Chalfant series item search",
+      "url": "https://collections.si.edu/search/results.htm?q=set_name%3A%22Henry+Chalfant+Subway+Graffiti+Series+Photographs%22&start=0",
+      "source_type": "museum_archive_search",
+      "source_scope": "item_search",
+      "target_grammars": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Search interface returns records from the 24-print series.",
+      "rights_status": "item_level_rights_check_required",
+      "confidence": "high",
+      "next_action": "Inspect item records individually; no inference from collection-level metadata."
+    },
+    {
+      "id": "ACQ-BX-01",
+      "title": "Bronx Museum — Henry Chalfant: Art vs. Transit, 1977–1987",
+      "url": "https://bronxmuseum.org/exhibition/henry-chalfant-art-vs-transit-1977-1987/",
+      "source_type": "museum_exhibition",
+      "source_scope": "exhibition_context",
+      "target_grammars": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Museum exhibition page documents Chalfant's archive and names multiple writers represented in the work.",
+      "rights_status": "credited_photographs_not_reusable_by_default",
+      "confidence": "high",
+      "next_action": "Use named writers as search keys into credited archive items."
+    },
+    {
+      "id": "ACQ-LFA-01",
+      "title": "Letterform Archive — An Undercover Look at its Graffiti Collection",
+      "url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/",
+      "source_type": "letterform_archive_article",
+      "source_scope": "collection_introduction",
+      "target_grammars": [
+        "simple_straight",
+        "bubble_softie"
+      ],
+      "evidence": "Article describes a graffiti zine collection and writer/type-designer perspective on alphabet invention and personal styles.",
+      "rights_status": "article_images_rights_check_required",
+      "confidence": "high",
+      "next_action": "Identify zine titles and catalogue records; distinguish editorial images from reusable assets."
+    },
+    {
+      "id": "ACQ-MCNY-01",
+      "title": "Museum of the City of New York — City as Canvas background guide",
+      "url": "https://mcny.org/sites/default/files/2016-11/City%20as%20Canvas%20Pre%20and%20Post%20Material%20Background%20Information.pdf",
+      "source_type": "museum_education_pdf",
+      "source_scope": "historical_context",
+      "target_grammars": [
+        "bubble_softie",
+        "throw_up"
+      ],
+      "evidence": "Historical account discusses progression from tags to pieces, bubble lettering, light/shadow and colour complexity.",
+      "rights_status": "classroom_use_only_notice_images_not_for_reuse",
+      "confidence": "high",
+      "next_action": "Use for historical context only; do not extract images for the public repo."
+    },
+    {
+      "id": "ACQ-MUCEM-01",
+      "title": "Mucem — Tagging and Graffiti: Illegal Art at the Museum",
+      "url": "https://mucem.org/en/focus-des-collections/tagging-and-graffiti-illegal-art-at-the-museum/",
+      "source_type": "museum_collection_essay",
+      "source_scope": "collection_policy",
+      "target_grammars": [
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Museum collection policy describes a range of lettering styles and varied material forms.",
+      "rights_status": "collection_images_rights_check_required",
+      "confidence": "high",
+      "next_action": "Explore collection objects and item-level credits."
+    },
+    {
+      "id": "ACQ-MOMA-01",
+      "title": "MoMA — Evan Roth, Graffiti Taxonomy: New York (2011)",
+      "url": "https://www.moma.org/collection/works/147174",
+      "source_type": "museum_object_record",
+      "source_scope": "letterform_taxonomy_artwork",
+      "target_grammars": [
+        "simple_straight"
+      ],
+      "evidence": "MoMA describes comparative taxonomies of graffiti tags, letters, regional styles, commonalities and deviations.",
+      "rights_status": "artwork_copyrighted_no_tracing",
+      "confidence": "high",
+      "next_action": "Use as a methodological reference for comparing repeated glyphs across writers."
+    },
+    {
+      "id": "ACQ-URBAN-01",
+      "title": "Urban Nation — SEEN: Black Books Vol. 3 review",
+      "url": "https://urban-nation.com/2023/09/books-in-the-mcl-on-the-run-magazine-black-books-volume-3-seen-zebster-with-additional-archival-photos-by-martha-cooper-henry-chalfant/",
+      "source_type": "museum_library_book_review",
+      "source_scope": "book_review",
+      "target_grammars": [
+        "bubble_softie",
+        "throw_up",
+        "blockbuster_block"
+      ],
+      "evidence": "Review identifies throw-ups, blockbusters and whole-car work within SEEN's documented practice.",
+      "rights_status": "photographs_credited_no_reuse_assumed",
+      "confidence": "medium",
+      "next_action": "Use bibliographic reference to locate the book; do not treat review as individual specimen."
+    },
+    {
+      "id": "ACQ-GAC-01",
+      "title": "Google Arts & Culture — Moving Murals: Henry Chalfant & Martha Cooper's All City Graffiti Archive",
+      "url": "https://artsandculture.google.com/story/QAWhfRB--CVOIQ?hl=en-GB",
+      "source_type": "curated_digital_exhibition",
+      "source_scope": "visual_archive_story",
+      "target_grammars": [
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "blockbuster_block"
+      ],
+      "evidence": "Curated story credits photographs to Henry Chalfant and Martha Cooper and discusses documentation of throw-ups and burners.",
+      "rights_status": "media_credits_do_not_grant_reuse",
+      "confidence": "high",
+      "next_action": "Inspect individual story frames and record visible credits and item provenance."
+    }
+  ],
+  "specimen_record_template": {
+    "specimen_id": "SPEC-YYYY-####",
+    "source_record_id": "ACQ-...",
+    "item_url": "",
+    "creator_or_writer": "unknown",
+    "photographer_or_archive_credit": "unknown",
+    "date": "unknown",
+    "place": "unknown",
+    "access_date": "YYYY-MM-DD",
+    "rights_status": "link_only_or_unknown",
+    "visible_glyphs": [],
+    "candidate_grammar_tags": [],
+    "execution_format": "unknown",
+    "composition_mode": "unknown",
+    "rendering_treatment": [],
+    "letter_anatomy_notes": "",
+    "word_composition_notes": "",
+    "what_not_to_copy": "",
+    "visual_review_status": "not_reviewed",
+    "confidence": "low"
+  }
+}
