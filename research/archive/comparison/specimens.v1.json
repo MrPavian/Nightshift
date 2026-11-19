@@ -1692,6 +1692,132 @@
         "wordCompositionNotes": "Rejected alternative by the same writer; not an independent source or writer."
       },
       "title": "knowme — 2018 rejected handstyle alphabet"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Sea",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "id": "BSCI-SEA-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #2",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "photographerName": null,
+      "place": null,
+      "raw": {
+        "candidateGrammarTags": [
+          "tag_handstyle"
+        ],
+        "compositionMode": "Complete A–Z alphabet on the shared four-column challenge sheet; separate personal tag in the bottom row.",
+        "confidence": "high for the labelled A–Z grid and visible marker/calligraphic forms; glyph-level confidence is assessed separately.",
+        "creator": "Sea",
+        "date": "2018-04-24",
+        "dimensions": null,
+        "executionFormat": "marker/ink on printed challenge sheet, photographed",
+        "identifier": "Forum post #2; 1227466_2a80ad7efec6d9b16abc4f16a9871f80.jpeg",
+        "letterAnatomyNotes": "Thin black marker alphabet with angular, often single-line forms; long exit strokes cross some cell boundaries. C, D and O are visually distinct in their labelled cells.",
+        "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
+        "place": null,
+        "renderingTreatment": [
+          "black marker",
+          "single-line handstyle"
+        ],
+        "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/04/1227466_2a80ad7efec6d9b16abc4f16a9871f80.jpeg",
+        "visibleGlyphs": "Complete labelled A–Z sequence is visible; individual glyph observations are to be recorded separately only when their contours are clearly legible.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace or reproduce the submitted alphabet, tag, letter contours or page layout.",
+        "wordCompositionNotes": "Standardized challenge sheet; this is an alphabet drill, not a finished word-piece."
+      },
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Sea — Alphabet Challenge submission"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Enzoen (Soen T2K)",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "id": "BSCI-ENZOEN-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #3",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "photographerName": null,
+      "place": null,
+      "raw": {
+        "candidateGrammarTags": [
+          "tag_handstyle"
+        ],
+        "compositionMode": "Complete A–Z alphabet on the shared four-column challenge sheet; separate personal tag in the bottom row.",
+        "confidence": "high for the labelled A–Z grid and visible marker/calligraphic forms; glyph-level confidence is assessed separately.",
+        "creator": "Enzoen (Soen T2K)",
+        "date": "2018-04-24",
+        "dimensions": null,
+        "executionFormat": "marker/ink on printed challenge sheet, photographed",
+        "identifier": "Forum post #3; 1227470_d48b06f414da2d977db0d90b73536a93.jpeg",
+        "letterAnatomyNotes": "Compact angular alphabet with repeated wedge-like terminals, sharp corners and mostly closed or partially closed counters; individual forms remain inside the labelled grid more consistently than several other submissions.",
+        "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
+        "place": null,
+        "renderingTreatment": [
+          "black marker",
+          "angular handstyle"
+        ],
+        "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/04/1227470_d48b06f414da2d977db0d90b73536a93.jpeg",
+        "visibleGlyphs": "Complete labelled A–Z sequence is visible; individual glyph observations are to be recorded separately only when their contours are clearly legible.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace or reproduce the submitted alphabet, tag, letter contours or page layout.",
+        "wordCompositionNotes": "Standardized challenge sheet; this is an alphabet drill, not a finished word-piece."
+      },
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Enzoen (Soen T2K) — Alphabet Challenge submission"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "XCALET",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "id": "BSCI-XCALET-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #6",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "photographerName": null,
+      "place": null,
+      "raw": {
+        "candidateGrammarTags": [
+          "tag_handstyle"
+        ],
+        "compositionMode": "Complete A–Z alphabet on the shared four-column challenge sheet; separate personal tag in the bottom row.",
+        "confidence": "high for the labelled A–Z grid and visible marker/calligraphic forms; glyph-level confidence is assessed separately.",
+        "creator": "XCALET",
+        "date": "2018-04-24",
+        "dimensions": null,
+        "executionFormat": "marker/ink on printed challenge sheet, photographed",
+        "identifier": "Forum post #6; 1227495_6215a4973333688e4c436c3001e432ff.jpeg",
+        "letterAnatomyNotes": "Broad blue marker forms with high contrast, extended terminals and strong variation in letter width; several letters touch or exceed their cell borders.",
+        "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
+        "place": null,
+        "renderingTreatment": [
+          "blue marker",
+          "broad-nib handstyle"
+        ],
+        "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/04/1227495_6215a4973333688e4c436c3001e432ff.jpeg",
+        "visibleGlyphs": "Complete labelled A–Z sequence is visible; individual glyph observations are to be recorded separately only when their contours are clearly legible.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace or reproduce the submitted alphabet, tag, letter contours or page layout.",
+        "wordCompositionNotes": "Standardized challenge sheet; this is an alphabet drill, not a finished word-piece."
+      },
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "XCALET — Alphabet Challenge submission"
     }
   ]
 }
