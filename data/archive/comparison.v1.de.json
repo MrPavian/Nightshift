@@ -30,23 +30,23 @@
   "generatedFrom": [
     {
       "path": "contracts/letterform-comparison.v1.json",
-      "sha256": "5d49a1fcd0195789569f2b300294ed4296c441f9c224c2a28772c77fcbfb431d"
+      "sha256": "3d0d270b0f7c314de095a93da397968ffb742c808a0c117a82728f66bb0060cd"
     },
     {
       "path": "research/archive/comparison/findings.v1.json",
-      "sha256": "f2d812de7828821100ef8b4f947c74e6aa6d4bc15b747487feaf38cdcdb0ce10"
+      "sha256": "c208096ddb97f4d4b29346c8d4da3869a46d01fe2401f21607394fd4f230716c"
     },
     {
       "path": "research/archive/comparison/observations.v1.json",
-      "sha256": "4558dcb675c0a8b42b44fc0df1225e0e0f6973d579ddb264ea28c7bdf5906f0f"
+      "sha256": "a2249be8dbfe7c3fc63ccb278e7cfd04a305f39efe6488b7aaf59ebc2b583966"
     },
     {
       "path": "research/archive/comparison/sources.v1.json",
-      "sha256": "b4491ce3ec87903cb88c81e2f49d1617c595cbbe8855d0b35f8311a454e84182"
+      "sha256": "1390c1f545587e1457564b62d96fd6238501d2a67be12e60d97f7dece19ee2c7"
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "fcf0f2aa29ef37610a6b1d8dd132f598bc650682cf45d2a40459c0a88efad463"
+      "sha256": "14effef8e4fc5bbbedd3a88e539041e732ee1fcbc23e82e54c0114ba92201d43"
     }
   ],
   "glyphObservations": [
@@ -128,6 +128,35 @@
     {
       "editorialState": "source-checked",
       "features": [
+        "open-counter",
+        "curved-stroke",
+        "tapered-terminals",
+        "monoline"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-RALI-2018-C1",
+      "legibility": "high",
+      "observationDe": "Das C ist als offener, nach rechts geöffneter Bogen ausgeführt. Die beiden Enden laufen spitz zu; die Kontur bleibt innerhalb des beschrifteten Feldes klar vom Nachbarfeld getrennt.",
+      "specimenId": "BSCI-RALI-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "diagonal-cross",
+        "no-counter",
+        "monoline"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-RALI-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
+      "specimenId": "BSCI-RALI-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
         "angular",
         "open-counter",
         "monoline"
@@ -183,35 +212,6 @@
       "legibility": "high",
       "observationDe": "Das X entsteht aus zwei sich kreuzenden Diagonalzügen. Ein Zug setzt sich deutlich über den Kreuzungspunkt hinaus fort.",
       "specimenId": "BSCI-SEA-2018-01",
-      "transcriptionConfidence": "high"
-    },
-    {
-      "editorialState": "source-checked",
-      "features": [
-        "open-counter",
-        "curved-stroke",
-        "tapered-terminals",
-        "monoline"
-      ],
-      "glyph": "C",
-      "id": "GLY-BSCI-SKU2ER-2018-C1",
-      "legibility": "high",
-      "observationDe": "Das C ist als offener, nach rechts geöffneter Bogen ausgeführt. Die beiden Enden laufen spitz zu; die Kontur bleibt innerhalb des beschrifteten Feldes klar vom Nachbarfeld getrennt.",
-      "specimenId": "BSCI-SKU2ER-2018-01",
-      "transcriptionConfidence": "high"
-    },
-    {
-      "editorialState": "source-checked",
-      "features": [
-        "diagonal-cross",
-        "no-counter",
-        "monoline"
-      ],
-      "glyph": "X",
-      "id": "GLY-BSCI-SKU2ER-2018-X1",
-      "legibility": "high",
-      "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
-      "specimenId": "BSCI-SKU2ER-2018-01",
       "transcriptionConfidence": "high"
     },
     {
@@ -543,6 +543,31 @@
       "accessDate": "2026-11-19",
       "archiveStyleLabel": "handstyle alphabet",
       "creatorAttribution": "named-by-source",
+      "creatorName": "Rali",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-RALI-2018-C1",
+        "GLY-BSCI-RALI-2018-X1"
+      ],
+      "id": "BSCI-RALI-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #11",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Rali — Alphabet Challenge submission",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Sea",
       "date": "2018-04-24",
       "dateQualifier": "as-catalogued",
@@ -564,31 +589,6 @@
       "place": null,
       "sourceRecordId": "ACQ-BSCI-02",
       "title": "Sea — Alphabet Challenge submission",
-      "visualState": "hi_fi_image_opened_and_inspected"
-    },
-    {
-      "accessDate": "2026-11-19",
-      "archiveStyleLabel": "handstyle alphabet",
-      "creatorAttribution": "named-by-source",
-      "creatorName": "Sku2er",
-      "date": "2018-04-24",
-      "dateQualifier": "as-catalogued",
-      "decade": null,
-      "displayMode": "link-only",
-      "glyphObservationIds": [
-        "GLY-BSCI-SKU2ER-2018-C1",
-        "GLY-BSCI-SKU2ER-2018-X1"
-      ],
-      "id": "BSCI-SKU2ER-2018-01",
-      "identifier": "Bombing Science Forums — Alphabet Challenge, post #7",
-      "imageRights": "do-not-reuse",
-      "institution": "Bombing Science Forums",
-      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
-      "observationIds": [],
-      "photographerName": null,
-      "place": null,
-      "sourceRecordId": "ACQ-BSCI-02",
-      "title": "Sku2er — Alphabet Challenge submission",
       "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
