@@ -417,12 +417,12 @@
       "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
     },
     {
-      "confidenceRaw": "high for project scope, access model and published rights statement; individual example provenance is limited to the annotation manual",
-      "evidenceRaw": "The University of Paderborn and Karlsruhe Institute of Technology describe INGRID as a research database containing more than 100,000 digitized and annotated graffiti photographs from 1980 onward. The public project page provides direct image examples and a freely accessible database login. INGRID states that publicly available photographs are licensed CC BY-SA for scientific use; this record uses only links and does not copy images.",
+      "confidenceRaw": "high for project scope, public access model, knowledge-graph availability and published licences; item-level image provenance still requires inspection",
+      "evidenceRaw": "The University of Paderborn and Karlsruhe Institute of Technology describe INGRID as a research database with more than 100,000 digitized and annotated graffiti photographs. The project offers a free research login and a public knowledge graph/RDF dump. The public dataset includes a subset of photographs from private collector Peter Kreuzer; police-provided Mannheim, Munich and Cologne photographs are not publicly visible in the dump. The public image archive is published separately.",
       "id": "ACQ-INGRID-01",
       "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
-      "nextActionRaw": "Prioritize publicly viewable individual INGRID records with stable identifiers and sufficiently clear lettering; retain item-level credits and rights notes and accept only individually visible A–Z glyphs.",
-      "rightsRaw": "INGRID states that public photographs are CC BY-SA for scientific use; check item-level credit and conditions. NIGHTSHIFT stores page links only and does not copy, embed or trace third-party images.",
+      "nextActionRaw": "Query the public RDF/knowledge graph for records from the Peter Kreuzer collection, filter to readable short item strings and clear public image links, then inspect item-level images directly. Prefer persistent resource URIs and original system IDs over manual reproductions.",
+      "rightsRaw": "Public graffiti photographs in the INGRID dataset are CC BY-SA 4.0; generated metadata is CC0 and INGRIDKG is CC BY 4.0. Only a subset of photographs is public (not police-provided Mannheim/Munich/Cologne images); verify the collection and item-level record before use. NIGHTSHIFT remains link-only and does not copy, embed or trace images.",
       "scope": "100000_plus_annotated_graffiti_photographs_1980_to_present",
       "sourceType": "university_research_graffiti_image_database",
       "targetGrammarsRaw": [
