@@ -207,6 +207,90 @@
       "observationDe": "Das O im Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die Kontur sitzt in einer schweren, stark verdichteten Titelgestaltung; Details werden durch die umgebende Illustration begrenzt.",
       "specimenId": "LFA-BOMB-046-001",
       "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "closed-counter",
+        "overlapping"
+      ],
+      "glyph": "D",
+      "id": "GLY-INGRID-DERK-D1",
+      "legibility": "medium",
+      "observationDe": "Das D besitzt einen kräftigen, nahezu senkrechten Stamm und einen breiten, gerundeten Bogen. Die Innenfläche bleibt als geschlossene Punze erkennbar; die Kontur ist durch den angrenzenden Buchstaben eng gefasst.",
+      "specimenId": "INGRID-MANUAL-DERK-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "closed-counter",
+        "overlapping"
+      ],
+      "glyph": "R",
+      "id": "GLY-INGRID-DERK-R1",
+      "legibility": "medium",
+      "observationDe": "Das R zeigt einen aufrechten Stamm, eine geschlossene obere Punze und einen schräg nach rechts unten auslaufenden Beinzug. Der Beinzug berührt die angrenzende Form.",
+      "specimenId": "INGRID-MANUAL-DERK-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "overlapping"
+      ],
+      "glyph": "K",
+      "id": "GLY-INGRID-DERK-K1",
+      "legibility": "medium",
+      "observationDe": "Das K besteht aus einem senkrechten Stamm und zwei deutlich unterscheidbaren Diagonalarmen, die nach rechts auseinanderlaufen. Die Arme enden spitz; die Außenkontur wird vom Nachbarbuchstaben berührt.",
+      "specimenId": "INGRID-MANUAL-DERK-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "closed-counter",
+        "overlapping"
+      ],
+      "glyph": "R",
+      "id": "GLY-INGRID-REMS-R1",
+      "legibility": "medium",
+      "observationDe": "Das R verbindet einen kräftigen Stamm mit einer rund geführten oberen Punze und einem schräg nach rechts unten laufenden Beinzug. Die Konturen liegen eng an den Nachbarbuchstaben.",
+      "specimenId": "INGRID-MANUAL-REMS-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "overlapping"
+      ],
+      "glyph": "M",
+      "id": "GLY-INGRID-REMS-M1",
+      "legibility": "medium",
+      "observationDe": "Das M ist breit proportioniert; die beiden Außenstämme rahmen zwei schräge Innenzüge, die in einem tiefen mittleren Winkel zusammentreffen. Die Innenform bleibt trotz der engen Buchstabenabstände erkennbar.",
+      "specimenId": "INGRID-MANUAL-REMS-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "no-counter",
+        "overlapping"
+      ],
+      "glyph": "S",
+      "id": "GLY-INGRID-REMS-S1",
+      "legibility": "medium",
+      "observationDe": "Das S zeigt einen durchgehenden, geschwungenen Hauptzug mit enger Taille. Der obere Bogen ist kleiner als der untere; die Enden laufen kantig aus.",
+      "specimenId": "INGRID-MANUAL-REMS-01",
+      "transcriptionConfidence": "high"
     }
   ],
   "objectObservations": [],
