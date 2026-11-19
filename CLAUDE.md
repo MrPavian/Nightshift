@@ -4,6 +4,7 @@
 **Project:** NIGHTSHIFT / THE BLACKBOOK ARCHIVE  
 **Last maintained:** 2026-11-15  
 **Owner:** MrPavian  
+**Current project state:** [`docs/STATUS.md`](docs/STATUS.md) — read it first; it supersedes the dated status notes further down in this file. Shared Git workflow for ChatGPT and Claude: `AGENTS.md`, section “Collaboration between ChatGPT and Claude”.  
 **Purpose of this file:** canonical, continuously maintained handover for Claude. Read this file before every new task and update it when project state materially changes.
 
 > This file is the current project briefing, not a replacement for the detailed specifications linked below. If a task-specific instruction conflicts with this file, follow the current explicit instruction from the project owner. If two specifications conflict, report the conflict rather than silently choosing.
@@ -231,7 +232,7 @@ Therefore:
 - Do not overwrite or duplicate ongoing work.
 - If the owner says a task has been skipped or reprioritized, preserve that decision and report the dependency/risk rather than silently reverting it.
 
-### Verified implementation state (Claude, 2026-11-15, afternoon)
+### Verified implementation state (Claude, 2026-11-15, afternoon) — historical; superseded by `docs/STATUS.md` after PR #19
 
 Checked against code, tests and open PRs; details in `docs/reports/CAPABILITY_MATRIX_01.md`.
 
