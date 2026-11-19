@@ -134,6 +134,15 @@
       "source_id": "ACQ-ALT-01",
       "specimen_id": "ALT-WOSHE-M-MAMMOUTH-01",
       "status": "glyph_observation_accepted"
+    },
+    {
+      "archive_observation_id": "GLY-HOAKI-WOSHE-C1",
+      "glyph": "C",
+      "id": "QUEUE-GLY-HOAKI-WOSHE-C1",
+      "note": "Die akzeptierte Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "source_id": "ACQ-HOAKI-01",
+      "specimen_id": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "status": "glyph_observation_accepted"
     }
   ],
   "page_records": [
@@ -718,6 +727,22 @@
       "title": "Woshe — M le Mammouth, instructional spread",
       "url": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
       "visual_review_status": "glyph_observation_accepted"
+    },
+    {
+      "catalogue_description": "Publisher/retailer sample page from Woshe's Alphabeatz; the page is explicitly headed C/c and shows two separate graffiti letter constructions.",
+      "creator": "Woshe",
+      "date_range": "Book edition 2019–2021; individual page date unknown",
+      "glyph_eligibility": "eligible",
+      "id": "PAGE-HOAKI-WOSHE-C-001",
+      "image_url": "https://designbook.com.ua/product_img/cache/4b12cfc3a6d5593bf773fb8e2ccb9610_720_820.jpg",
+      "next_action": "Weitere eindeutig beschriftete Buchstaben-Seiten des Alphabeatz-Buchs prüfen; Seiten- und Editionsangaben vor Ergänzung weiterer Fundstücke präzisieren.",
+      "priority": "high",
+      "reason": "Die Seite trägt die eindeutige Überschrift C/c und zeigt zwei voneinander getrennte C-Konstruktionen. Die Buchstabenidentität ist nicht aus dem Kontext geraten, sondern direkt auf der Seite ausgewiesen.",
+      "rights_status": "Copyright Woshe / publisher; link-only; no copying or tracing.",
+      "source_id": "ACQ-HOAKI-01",
+      "title": "Woshe — Alphabeatz: C/c",
+      "url": "https://designbook.com.ua/book/alphabeatz-graffiti-alphabets-from-a-to-z-14602",
+      "visual_review_status": "glyph_observation_accepted"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
@@ -737,10 +762,10 @@
     "ACQ-LFA-03"
   ],
   "summary": {
-    "accepted_glyph_observations": 15,
-    "note": "15 akzeptierte Einzelglyph-Beobachtungen; neu ergänzt wurde M aus Woshes ausdrücklich beschrifteter und visuell geprüfter Lehrbuchseite „M le Mammouth“. Die Chaz-Seite im Getty-Black-Book bleibt eine Seitenbeobachtung ohne zugewiesene A–Z-Glyphen.",
-    "page_records": 38,
-    "source_records_referenced": 11,
-    "visually_reviewed_page_records": 16
+    "accepted_glyph_observations": 16,
+    "note": "16 akzeptierte Einzelglyph-Beobachtungen. Neu ergänzt: M aus Woshes ausdrücklich beschrifteter „M le Mammouth“-Seite sowie C aus der separat beschrifteten C/c-Seite seines Alphabeatz-Buchs. Die Getty/Chaz-Seite bleibt eine Seitenbeobachtung ohne zugewiesene A–Z-Glyphen.",
+    "page_records": 39,
+    "source_records_referenced": 10,
+    "visually_reviewed_page_records": 17
   }
 }
