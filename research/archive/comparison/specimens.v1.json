@@ -1882,13 +1882,13 @@
           "wildstyle_semi_wildstyle"
         ],
         "compositionMode": "Instructional two-page spread with several separate outlined sketches and a larger central lettering composition.",
-        "confidence": "high for page layout and visible drawn forms; no isolated glyph observation accepted.",
+        "confidence": "high for the labelled M page and clearly separated M studies; this observation describes the M letter family on one spread, not an individual exact tracing.",
         "creator": "Woshe",
         "date": "2013 updated edition; preview PDF",
         "dimensions": null,
         "executionFormat": "printed book spread reproduced in a digital PDF preview",
         "identifier": "Printed spread pp. 48–49; section heading 'M le Mammouth'",
-        "letterAnatomyNotes": "The spread presents several separate outlined lettering sketches alongside a larger central composition. The visible examples show angular, extended and interlocking contours, but individual letter boundaries are not consistently isolated in the preview.",
+        "letterAnatomyNotes": "The spread is explicitly headed “M le Mammouth” and presents multiple separate M constructions. The examples use broad angular outer contours, pronounced diagonals and extended terminals; the surrounding prose discusses the M's visual mass and the need to cut into that mass to create rhythm. This supports a page-level M construction observation, not a universal M template.",
         "photographerCredit": "Éditions Alternatives / All City Blog publication preview",
         "place": "France",
         "renderingTreatment": [
@@ -1896,9 +1896,9 @@
           "larger rendered lettering example"
         ],
         "rightsStatus": "Copyright Woshe / Éditions Alternatives; link-only; no reuse or tracing permission established.",
-        "viewUrl": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
-        "visibleGlyphs": "Multiple outlined lettering sketches and a larger central composition are visible; the preview does not provide a clean isolated A–Z sheet on this spread.",
-        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "viewUrl": "https://www.editionsalternatives.com/voir/images/1148_2749.jpg",
+        "visibleGlyphs": "Several separately drawn M variants are visible and explicitly identified as M by the printed heading and explanatory text.",
+        "visualReviewStatus": "Publisher sample image opened and visually inspected; printed spread pp. 48–49, reproduced in the public All City PDF preview.",
         "whatNotToCopy": "Do not trace the letter sketches, finished composition, contours or layout.",
         "wordCompositionNotes": "This is a didactic book spread, not a standalone blackbook alphabet page."
       },
