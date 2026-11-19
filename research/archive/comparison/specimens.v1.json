@@ -1905,6 +1905,43 @@
       "sourceRecordId": "ACQ-ALT-01",
       "title": "Woshe — M le Mammouth instructional spread",
       "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "Letterform study grid",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Chaz",
+      "date": "2012",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "id": "GETTY-CHAZ-2012-001",
+      "identifier": "L.A. Graffiti Black Book; reproduced page captioned Chaz",
+      "imageRights": "link-only",
+      "itemUrl": "https://crewestshop.com/graffitibooks/la-graffiti-black-book",
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "raw": {
+        "candidateGrammarTags": [
+          "alphabet_study",
+          "letterform_construction_study",
+          "calligraphic_lettering",
+          "dimensional_block_lettering"
+        ],
+        "compositionMode": "Multiple individual letterform studies arranged in a regular grid; a larger CHAZ signature/wordmark anchors the lower edge.",
+        "confidence": "medium for page-level visual description; individual A–Z identities not verified.",
+        "creator": "Chaz (page signature/caption)",
+        "date": "2012 (visible page signature/caption)",
+        "executionFormat": "Ink and graphite-style letterform studies on paper, reproduced in L.A. Graffiti Black Book.",
+        "rightsStatus": "Copyright held by contributing artist; link-only; no image copied or traced.",
+        "viewUrl": "https://images.squarespace-cdn.com/content/v1/53f40cd1e4b0ba399aaf6df4/1622359916624-67F8XWV0009C3UWI0AAH/F05D24B2-6A19-4249-89FE-C722C978F52F.jpeg?format=2500w",
+        "visibleGlyphs": "A grid of separately positioned experimental letterform drawings, including angular, curved and shaded dimensional constructions. Individual alphabetic identities are not securely assignable from the available preview.",
+        "visualReviewStatus": "high-resolution retailer reproduction preview opened and visually inspected; original Getty item image not independently accessed.",
+        "whatNotToCopy": "Do not trace or reproduce the exact glyph contours, grid layout, signature or page artwork.",
+        "wordCompositionNotes": "This is a letterform study sheet rather than a conventional graffiti word piece; useful for construction-method research, but not yet a source of accepted A–Z glyph observations."
+      },
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Chaz — letterform study grid, L.A. Graffiti Black Book",
+      "visualState": "image_preview_seen"
     }
   ]
 }
