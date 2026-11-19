@@ -7,8 +7,8 @@
   "inputs": {
     "data/archive/archive.v1.de.json": "d23b078058089d08a5e68e2d605563efd5eb42d9df1c93c41fa8cf48b711eb02",
     "archive/index.html": "072090887147cba14d90f9ffd679b2821f5c1f54726dae09e17ff9b5972a50ea",
-    "archive/app.js": "bd8a38963f542ac496342eae2be791ff50b30ea1ef3f7e35de27ff8d3aceb417",
-    "archive/app.css": "5ec1d32e34f579bd9b36746d76c52b3c8c4b913b1da73f1e7f387100fb2e594a",
+    "archive/app.js": "fbfac0698c8d287da6b2c5d7cf51212c1d6a5ed3a3458ef07282dbe011b656cd",
+    "archive/app.css": "820dbd59494c5606412076f287adbcdbd93de0690f6c89b8b5eb844dc07e417c",
     "src/bridge/editor-bridge.js": "3d44fce950a192a70e643eb9dfe8aa0e12c32e4cc9f807cdf089b91a78842620"
   },
   "screenshots": {

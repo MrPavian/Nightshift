@@ -1,0 +1,105 @@
+{
+  "initialOutputSha256": {
+    "findings.v1.json": "a8ff84b136bbe274fbb122b1aac35a2a8179868cc04c3ce8cb681491f706deec",
+    "observations.v1.json": "8540ce24d4894ef297b5ba59f212f8c40e4f616b658bc9657d8fdf620d47d24a",
+    "sources.v1.json": "6f02fec8903743b99ef26c9ee848e7f4753d42516ecd28b0610cd733da949f5d",
+    "specimens.v1.json": "4387169e9744ada3af74cd4ad2270e2c34834b6fbc479c9991aabca6dc7ca1ed"
+  },
+  "input": {
+    "path": "research/archive/comparison/legacy/graffiti-reference-manifest-01.json",
+    "reviewedAt": "2026-11-19",
+    "schemaVersion": "1.0.0",
+    "sha256": "0ff3c7b696894b2f3a880e720fb471a4b1e092c26743fe9c9fda855f675e8b47",
+    "sources": 18,
+    "specimens": 39
+  },
+  "migrationVersion": "comparison-migration/1.0.0",
+  "needsConfirmation": [],
+  "notMigrated": {
+    "glyphObservations": "visible_glyphs is free text in every record; no glyph observation is derived from it",
+    "styleTargets": "style_targets (acquisition goals) stay in the legacy snapshot; they are research planning, not archive data"
+  },
+  "rightsMapping": {
+    "Link-only. Image reuse rights not established; do not download into repository or reproduce.": {
+      "count": 1,
+      "to": "link-only"
+    },
+    "NGA media unavailable for download; contact NGA about image usage": {
+      "count": 1,
+      "to": "rights-unknown"
+    },
+    "NGA says media unavailable for download; contact NGA about image usage": {
+      "count": 2,
+      "to": "rights-unknown"
+    },
+    "NGA states media unavailable for download; contact NGA about image usage": {
+      "count": 4,
+      "to": "rights-unknown"
+    },
+    "appointment required; reproduction possible but Smithsonian disclaims copyright guarantees; item-level clearance required": {
+      "count": 15,
+      "to": "rights-unknown"
+    },
+    "appointment required; reproduction possible but copyright and other rights not guaranteed": {
+      "count": 2,
+      "to": "rights-unknown"
+    },
+    "link-only; image reuse rights and reproduction permission not established": {
+      "count": 3,
+      "to": "link-only"
+    },
+    "link-only; image reuse rights and reproduction permission not established; no image copied": {
+      "count": 6,
+      "to": "link-only"
+    },
+    "link-only; image rights and reproduction permission not established": {
+      "count": 5,
+      "to": "link-only"
+    }
+  },
+  "visualStateMapping": {
+    "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection": {
+      "count": 4,
+      "to": "catalogue_metadata_only"
+    },
+    "NGA_catalogue_visual_description_reviewed_image_not_downloadable": {
+      "count": 1,
+      "to": "catalogue_metadata_only"
+    },
+    "catalogue_description_and_search_preview_reviewed_full_resolution_not_available": {
+      "count": 2,
+      "to": "image_preview_seen"
+    },
+    "hi_fi_gallery_image_opened_and_visually_inspected": {
+      "count": 6,
+      "to": "hi_fi_image_opened_and_inspected"
+    },
+    "hi_fi_image_opened_and_visually_inspected": {
+      "count": 7,
+      "to": "hi_fi_image_opened_and_inspected"
+    },
+    "hi_fi_images_opened_and_visually_inspected": {
+      "count": 1,
+      "to": "hi_fi_image_opened_and_inspected"
+    },
+    "individual_image_opened_and_visually_inspected; archive_style_label_explicit": {
+      "count": 1,
+      "to": "hi_fi_image_opened_and_inspected"
+    },
+    "metadata_verified_image_not_inspected": {
+      "count": 17,
+      "to": "catalogue_metadata_only"
+    }
+  },
+  "confirmedMappings": [
+    {
+      "source": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "count": 5,
+      "target": "catalogue_metadata_only",
+      "status": "confirmed",
+      "confirmedAt": "2026-11-19",
+      "confirmedBy": "ChatGPT research review",
+      "rationale": "All five records rely on the National Gallery of Art catalogue descriptions. The underlying image could not be independently inspected at full resolution; reading or summarizing catalogue prose is not direct visual inspection. These records therefore remain catalogue metadata only and must not count as visually reviewed specimens or glyph evidence."
+    }
+  ]
+}

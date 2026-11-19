@@ -62,9 +62,9 @@ Hollow, outline, inline, fill, 3D/extrusion, chrome, shadow, drips, texture and 
 ## Template maturity and engine support
 | Family | Documentation | Current engine support |
 |---|---|---|
-| Bubble | 3 templates documented | Base Bubble operation exists; variants not separate/calibrated |
-| Straight / Simple | 4 templates documented | Base Straight operations exist; variants not separate/calibrated |
-| Blockbuster | 3 templates documented | Straight + Block-fit composition exists; no separate alphabet |
+| Bubble | 3 templates documented | Base Bubble operation exists and is **rendered**; T1–T3 not separate; uncalibrated. Phase A-01 showed counters of A/B/R at 16–20 % and fused letters under Bounce. Since resolver 1.1 (Phase A-02, Issue #24): provisional reject-only counter floors (A/B/R now 42–47 %) and no-contact Bounce placement — **measured-uncalibrated, owner-review-required** |
+| Straight / Simple | 4 templates documented | Base Straight operations exist and are **rendered** (Phase A); variants not separate; uncalibrated |
+| Blockbuster | 3 templates documented | Straight + Block-fit composition exists and is **rendered** (Phase A); no separate alphabet |
 | Wildstyle | 3 templates documented | Relationship/interlocking operation unavailable pending C04 |
 | Tag / Handstyle | 3 templates documented | No gesture/stroke renderer |
 | Throw-up | 3 templates documented | Context enum exists; dedicated presentation renderer absent |
@@ -77,3 +77,9 @@ Hollow, outline, inline, fill, 3D/extrusion, chrome, shadow, drips, texture and 
 - **Generator-ready:** parameter ranges calibrated and regression tests pass.
 
 No template in this index should be assumed generator-ready merely because it is documented.
+
+**Phase A run** (`docs/reports/proof/style-library/phase-a-01/`): only the *base* operations of Bubble, Straight and Blockbuster reached **rendered**. None of the 38 templates is *compared*, *practitioner-reviewed* or *calibrated*; every entry in `templates.json` stays `documented-draft`.
+
+**Owner review of Phase A (19 Nov 2026, PR #22):** accepted as a technical proof of current resolver behaviour, **not** as a visual or stylistic acceptance. Straight and Blockbuster read as geometrically edited display/block type and need a new letterform concept before further calibration. Bubble is the only direction with a graffiti character but stays unreleased because of the counter and Bounce defects (`CLAUDE_TASK_C03_BUBBLE_BOUNCE_GATES_01.md`).
+
+**Phase A-02** (`docs/reports/proof/style-library/phase-a-02/`, Issue #24): before/after proof of the Bubble counter-safety gate and the Bounce collision check. Maturity of the base Bubble operation: `rendered`, `measured-uncalibrated`, `owner-review-required`. Nothing is calibrated or generator-ready; the floors are provisional and reject-only.

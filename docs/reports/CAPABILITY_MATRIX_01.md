@@ -67,3 +67,14 @@ These conflicts are open and need an owner decision; they are mirrored in `CLAUD
   - 5 instead of 9 navigation sections;
   - no "Visual Archive" or "Tools & Materials" section.
 - **C06 content vs. the German drafts 01–06 and `BLACKBOOK_ARCHIVE_CLAIM_SOURCE_MATRIX_01.md`.** Two parallel German content bases exist and must be merged.
+
+## Addendum — 19 November 2026 (resolver 1.1, Issue #24)
+
+This addendum updates single rows; the rest of the matrix keeps its 15 November baseline.
+
+| Capability | State | Evidence |
+|---|---|---|
+| Letterform grammars Bubble / Straight / Block (C03) | implemented subset, uncalibrated (resolver 1.1.0, contract 1.2.0) | `src/style/resolver.js`, `tests/style-resolver.test.js`, proof runs `docs/reports/proof/style-library/phase-a-01/` (frozen) and `phase-a-02/` |
+| Bubble counter safety | implemented: provisional reject-only floors (counter area ≥ 40 %, opening ≥ 60 % of the neutral master); every candidate logged with reason codes; aperture throat not evaluable | `src/style/negative-space.js`, `tests/style-safety.test.js` |
+| Bounce collision safety | implemented: transformed-contour contact test (intersection / tangency / too-close / safe / authorised overlap), deterministic step-to-safe fallback, placement report; overlap only via declared relationship | `src/style/render.js` (`layoutWordWithReport`), `tests/style-safety.test.js` |
+| Letter connections / relationship solver (C04) | not implemented | Bounce avoids contact; it does not design joins |

@@ -1,0 +1,222 @@
+{
+  "artifactHashes": {
+    "README.md": "53a38d39c0dc0e9699834f767cdf0a6d9edc7a9b067a30adeee748432e29ae70",
+    "plates/glyph-before-after.svg": "ba17fb46b2fe8623fd196d8db4c909c2fbf9947749132d8fe7ba4ee779fc0012",
+    "plates/pairs-before-after.svg": "c90cc7ff000013db3a65a590154ec1540c4047f74f06cafd38f2b8941b2347bc",
+    "plates/word-before-after.svg": "4d0a63be9547d0a21f30ff677857b033e999a44461a61982d1fdfbcc60ae6c20",
+    "report/negative-space.json": "5a10330f55397087818c6f2bd62ceb8b7364e3cfb8780beedaddb93fc8c4d8ef",
+    "report/placement.json": "508691678ff4c0180b923fc500dd14686766622c84e0784d8a326078aa601d4c"
+  },
+  "brief": "docs/lettering/style-library/CLAUDE_TASK_C03_BUBBLE_BOUNCE_GATES_01.md",
+  "engineVersions": {
+    "before": "style-resolver/1.1.0 with letterform.bubble.counter-safety removed (= resolver 1.0 count-only gate); word-layout/1.1.0 collisionPolicy legacy-unchecked",
+    "geometryValidator": "geometry-validator/1.0.0; nightshift.validator-profile.legacy-v06@1.0.0",
+    "negativeSpace": "negative-space-metrics/1.0.0",
+    "renderer": "render-model/1.0.0; style-proof-plates-a02/1.0.0",
+    "styleResolver": "style-resolver/1.1.0; nightshift.style-resolver@1.2.0",
+    "wordLayout": "word-layout/1.1.0"
+  },
+  "fixtures": {
+    "glyphs": [
+      "A",
+      "B",
+      "G",
+      "R",
+      "S"
+    ],
+    "pairs": [
+      "AR",
+      "BA",
+      "BR",
+      "GR",
+      "RA",
+      "SA",
+      "SB",
+      "GS"
+    ],
+    "words": [
+      "ABRA"
+    ]
+  },
+  "issue": 24,
+  "limitations": [
+    "Counter-safety floors are provisional and reject-only; nothing is calibrated. Owner/practitioner review is required before any promotion.",
+    "Glyphs now get different inflation distances (A/B/P/R 5, D/O/Q 7, glyphs without counters 9), so words mix stroke masses; this is visible and unresolved.",
+    "Aperture throat width is not evaluable (no aperture boundary definition); only exterior connectivity is reported.",
+    "No inter-letter channels are declared, so none are checked. No relationships are declared, so no overlap is authorised.",
+    "Bounce placement avoids contact by stepping right; it does not design connections (C04)."
+  ],
+  "maturity": [
+    "rendered",
+    "measured-uncalibrated",
+    "owner-review-required"
+  ],
+  "previousRun": "docs/reports/proof/style-library/phase-a-01/ (frozen; not overwritten)",
+  "renderProfile": {
+    "background": "#f2efe6",
+    "finish": "none (solid silhouettes)",
+    "ink": "#111111",
+    "scale": "one scale per plate for all columns"
+  },
+  "review": {
+    "automatedMaturityPromotion": false,
+    "status": "owner-review-required"
+  },
+  "runId": "run.style-library-phase-a-02.312d68901550",
+  "schemaVersion": "1.0",
+  "sourceRevision": {
+    "kind": "registry-content-sha256",
+    "value": "409b86f863aea9cf0d57b57afe1edcd89a9a511718caefdceb3895069e6e27a0"
+  },
+  "summary": {
+    "bounce": {
+      "ABRA": {
+        "after": [
+          "safe",
+          "safe",
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe",
+          "moved-to-safe",
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection",
+          "intersection",
+          "intersection"
+        ]
+      },
+      "AR": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "BA": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "BR": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "GR": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "GS": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "RA": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "SA": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      },
+      "SB": {
+        "after": [
+          "safe"
+        ],
+        "afterResults": [
+          "moved-to-safe"
+        ],
+        "before": [
+          "intersection"
+        ]
+      }
+    },
+    "bubble": {
+      "A": {
+        "distanceAfter": 5,
+        "distanceBefore": 9,
+        "minAreaRatioAfter": 0.415,
+        "minAreaRatioBefore": 0.164,
+        "minOpeningRatioAfter": 0.663,
+        "minOpeningRatioBefore": 0.407
+      },
+      "B": {
+        "distanceAfter": 5,
+        "distanceBefore": 9,
+        "minAreaRatioAfter": 0.441,
+        "minAreaRatioBefore": 0.172,
+        "minOpeningRatioAfter": 0.642,
+        "minOpeningRatioBefore": 0.356
+      },
+      "G": {
+        "distanceAfter": 9,
+        "distanceBefore": 9,
+        "minAreaRatioAfter": null,
+        "minAreaRatioBefore": null,
+        "minOpeningRatioAfter": null,
+        "minOpeningRatioBefore": null
+      },
+      "R": {
+        "distanceAfter": 5,
+        "distanceBefore": 9,
+        "minAreaRatioAfter": 0.465,
+        "minAreaRatioBefore": 0.203,
+        "minOpeningRatioAfter": 0.676,
+        "minOpeningRatioBefore": 0.419
+      },
+      "S": {
+        "distanceAfter": 9,
+        "distanceBefore": 9,
+        "minAreaRatioAfter": null,
+        "minAreaRatioBefore": null,
+        "minOpeningRatioAfter": null,
+        "minOpeningRatioBefore": null
+      }
+    }
+  }
+}

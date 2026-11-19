@@ -1,0 +1,53 @@
+{
+  "contractId": "nightshift.letterform-comparison",
+  "version": "1.1.0",
+  "status": "implemented (Gate 1 data contract and pipeline, Gate 2 object browser)",
+  "spec": "docs/lettering/style-library/LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md",
+  "adr": "docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md",
+  "inputs": {
+    "sources": "research/archive/comparison/sources.v1.json",
+    "specimens": "research/archive/comparison/specimens.v1.json",
+    "observations": "research/archive/comparison/observations.v1.json",
+    "findings": "research/archive/comparison/findings.v1.json"
+  },
+  "output": "data/archive/comparison.v1.<lang>.json",
+  "entities": {
+    "source": "collection- or archive-level source record (provenance of a specimen)",
+    "specimen": "one source object: archive item, blackbook page, outline, zine or publication spread",
+    "objectObservation": "what was directly seen on one specimen (page level)",
+    "glyphObservation": "one individually identified glyph (A–Z) on one specimen",
+    "finding": "cross-object interpretation over two or more independent observations"
+  },
+  "idPatterns": {
+    "source": "^ACQ-[A-Z0-9]+-\\d{2}$",
+    "specimen": "^[A-Z]+(-[A-Z0-9]+)+$",
+    "objectObservation": "^OBS-[A-Z0-9-]+$",
+    "glyphObservation": "^GLY-[A-Z0-9-]+$",
+    "finding": "^FND-[A-Z0-9-]+$"
+  },
+  "enums": {
+    "visualState": ["catalogue_metadata_only", "image_preview_seen", "hi_fi_image_opened_and_inspected", "physical_item_inspected"],
+    "imageRights": ["link-only", "rights-unknown", "permission-requested", "cleared", "do-not-reuse"],
+    "displayMode": ["link-only", "embed-permitted"],
+    "creatorAttribution": ["named-by-source", "catalogue-title-only", "unknown"],
+    "dateQualifier": ["as-catalogued", "circa", "unknown"],
+    "confidence": ["high", "medium", "low"],
+    "observationKind": ["direct-observation", "interpretation"],
+    "generatorRelevance": ["none", "research-lead", "study-candidate", "validated-capability"],
+    "editorialState": ["draft", "source-checked", "editorial-reviewed", "approved-for-archive"],
+    "comparisonAxis": ["rounded-angular", "open-closed-counters", "simple-interlocking", "compact-extended", "isolated-connected", "flat-dimensional", "regular-irregular"]
+  },
+  "rules": [
+    "A glyph observation requires a specimen with visualState hi_fi_image_opened_and_inspected or physical_item_inspected, a glyph A–Z, and transcription and legibility confidence of medium or high.",
+    "A finding compares at least two observations from at least two different source records.",
+    "A finding states evidence basis, confidence and limitation; generatorRelevance validated-capability must name an available bridge capability.",
+    "Only published records (editorialState source-checked or later) are exported; every exported observation and finding has German display text (…De).",
+    "Display links are page URLs (itemUrl / source url). Image file URLs are rejected; nothing is embedded unless imageRights is cleared and displayMode is embed-permitted.",
+    "No ranking, score or style classifier; candidate grammar tags are research notes and never glyph evidence."
+  ],
+  "pilotGate": {
+    "glyphComparison": { "minEligibleGlyphObservations": 20, "minIndependentInstitutions": 3 },
+    "independence": "Owner decision 19 Nov 2026: independence for the pilot gate is counted by distinct archives/platforms (source institution), not by source records; two threads of one forum count once.",
+    "note": "Until the gate is met, the archive shows the object browser and labels glyph comparison as a research view in progress (spec §7)."
+  }
+}

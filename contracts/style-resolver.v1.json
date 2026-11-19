@@ -1,6 +1,6 @@
 {
   "contractId": "nightshift.style-resolver",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "status": "implemented-subset",
   "implements": "contracts/az-style-grammar-application.v1.json (C03 subset)",
   "axes": {
@@ -97,6 +97,16 @@
         ]
       }
     },
+    "letterform.bubble.counter-safety": {
+      "axis": "letterform",
+      "labelDe": "Punzen schützen (Kandidaten ablehnen, die Punzen zu Schlitzen machen)",
+      "params": {
+        "minAreaRatio": 0.4,
+        "minOpeningRatio": 0.6
+      },
+      "status": "provisional-reject-only",
+      "note": "Floors relative to the neutral master: counter area and counter opening (largest inscribed circle). Reject-only: they make the resolver choose a gentler candidate or skip; they never certify a result. Not calibrated; owner/practitioner review required (Issue #24)."
+    },
     "composition.block-fit.thicken": {
       "axis": "composition",
       "labelDe": "Strich verstärken (Gehrung)",
@@ -140,7 +150,7 @@
     "composition.bounce": {
       "axis": "composition",
       "scope": "word",
-      "labelDe": "Buchstaben im Wort wippen, kippen und überlappen",
+      "labelDe": "Buchstaben im Wort wippen und kippen; Überlappung nur mit erklärter Beziehung",
       "params": {
         "tiltDeg": [
           -3,
@@ -150,7 +160,25 @@
           5,
           -6
         ],
-        "overlapRatio": 0.12
+        "overlapRatio": 0.12,
+        "minClearance": 4,
+        "stepIncrement": 1,
+        "maxExtraSteps": 120
+      },
+      "collisionPolicy": {
+        "default": "no-contact",
+        "measuredOn": "transformed glyph contours (translation + rotation about the glyph box centre), all earlier glyphs of the word",
+        "classes": [
+          "intersection",
+          "tangency",
+          "too-close",
+          "safe",
+          "authorized-overlap"
+        ],
+        "overlapRatio": "preferred tightness only; not a permission to overlap",
+        "fallback": "step right by stepIncrement until clearance >= minClearance (max maxExtraSteps)",
+        "relationships": "an overlap is allowed only for a declared relationship naming both glyph-instance IDs, type 'overlap', a permitted region (word coordinates) and a layer order",
+        "status": "provisional-uncalibrated"
       }
     }
   },
@@ -158,7 +186,9 @@
   "validationGates": [
     "hard geometry checks of src/glyph/validate-geometry.js pass on the derived geometry",
     "same number of counters as the neutral master",
-    "exactly one connected component"
+    "exactly one connected component",
+    "Bubble only: every counter keeps at least minAreaRatio of its neutral area and minOpeningRatio of its neutral opening (provisional, reject-only); declared apertures stay exterior-connected",
+    "Bounce only: adjacent transformed glyphs must not intersect, touch or come closer than minClearance unless a declared relationship authorises the overlap"
   ],
   "missingCapability": {
     "unsupportedGlyph": "neutral-fallback: the glyph is returned unchanged with reason",

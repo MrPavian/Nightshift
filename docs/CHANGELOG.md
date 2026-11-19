@@ -588,3 +588,38 @@
 - PR #19 merged all open Claude work into `main`: editor freeze fix (#10), C02 waves 1–4, C03, Creator 0.1/0.2 (#6, #11–#13, #17, #18), C06 Blackbook Archive (#8) and the Academy A study, A–Z reference sheets and gallery (#14–#16). Tests: 184 passing plus all browser checks.
 - New `docs/STATUS.md` as the single current project state for ChatGPT, Claude and the owner.
 - `AGENTS.md`: shared Git workflow (branch + pull request for code, data, contracts and assets; ChatGPT may commit research/spec documents in `research/` and `docs/` directly to `main`; at most one stacking level, status update per PR, `Agent:` commit trailer); codebase constraints updated to the actual module stack. `CLAUDE.md`, `docs/AI_HANDOFF.md` and `docs/ROADMAP.md` point to the status file.
+
+## 2026-11-19 — Style Library Phase A: neutral proof plates
+
+- New proof run `docs/reports/proof/style-library/phase-a-01/` (brief: `docs/lettering/style-library/CLAUDE_TASK_PHASE_A_PROOF_PLATES_01.md`): monochrome, effect-free comparison of Neutral, Straight, Bubble and Blockbuster (= Straight + Block-fit) for A/B/G/R/S, the A/B/G/R/S pair fixtures and the word fixtures (ABRA first), plus thumbnails, an operation/validation report, manifest, checksums and a blank review template. Wildstyle is recorded as skipped (C04) and not drawn.
+- Builder `src/proof/style-run.js`, runner `tools/proof-style-plates.mjs` (`npm run proof:styles`, `--check` in CI), tests `tests/style-proof-run.test.js` (9).
+- Measured, not gated: Bubble keeps 16–20 % of the counter area of A/B/R, Blockbuster 44–47 %. Human review pending; nothing promoted.
+- Review decisions now include `unsure` and `cannot-assess` (`src/proof/review.js`, owner request on #22); only `pass` can support a maturity proposal.
+- Owner review (19 Nov): technical proof accepted, no visual or stylistic acceptance. Straight and Blockbuster need a new letterform concept; Bubble defects stay open (`CLAUDE_TASK_C03_BUBBLE_BOUNCE_GATES_01.md`). Maturity stays `rendered` for the base operations; all 38 templates remain `documented-draft`.
+
+## 2026-11-19 — C03 Bubble counter safety and Bounce collision safety (Issue #24)
+
+- Resolver 1.1.0, contract `nightshift.style-resolver@1.2.0`: Bubble tries its inflation candidates strongest first and logs each with stable reason codes; new operation `letterform.bubble.counter-safety` rejects candidates whose counters keep less than 40 % of their neutral area or 60 % of their neutral opening (largest inscribed circle). Provisional, reject-only, uncalibrated. A/B/P/R now inflate by 5, D/O/Q by 7, glyphs without counters by 9.
+- `src/style/negative-space.js`: counter area, opening and wall clearance (from the validator) per counter; apertures report connectivity, throat `not-evaluable`.
+- `src/style/render.js` word layout 1.1.0: Bounce tests transformed contours of every earlier glyph (intersection / tangency / too-close / safe / authorised overlap), steps right until safe, and returns a placement report (`layoutWordWithReport`). Overlap only through a declared relationship (instance IDs, region, layer). Neutral layout unchanged.
+- Proof run `docs/reports/proof/style-library/phase-a-02/` (before/after plates, negative-space and placement reports). Phase A-01 is frozen and checked by checksum.
+- Tests: `tests/style-safety.test.js` (9), `tests/style-proof-run-a02.test.js` (4); the old Bounce test that required overlapping letters was replaced. Total 207.
+- Known limitation: mixed inflation distances make words uneven in mass. Owner review required; nothing calibrated.
+
+## 2026-11-19 — Letterform Comparison Library: Gate 0 architecture decision
+
+- `docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md` (proposal): typed sidecar under `research/archive/comparison/` read by the existing archive builder (no Markdown entries, no second app), separate output `data/archive/comparison.v1.de.json`, routes under `#/vergleich` hanging off „Stile & Buchstaben“ and „Bildarchiv“, validation and pilot gate, deterministic migration of the PR #25 manifest (8 review-status and 9 rights spellings mapped to enums; free-text glyphs not migrated), German display fields, test plan. No code, UI or data migration.
+
+## 2026-11-19 — Letterform Comparison Library: Gate 1 (data contract) and Gate 2 (object browser)
+
+- Contract `contracts/letterform-comparison.v1.json`; typed sidecar `research/archive/comparison/` (sources, specimens, observations, findings) migrated once and deterministically from the PR #25 manifest (`legacy/` snapshot, `MIGRATION_REPORT_01.json`): 18 sources, 39 specimens, review status (8 spellings) and rights (9 spellings) mapped to enums, credits/dates/places/identifiers structured, every original value kept in `raw`.
+- `src/archive/comparison.js` validates IDs, references, enums, glyph eligibility, source independence, rights (no image URLs, no embedding without clearance), German display text and capability links; `tools/archive-build.mjs` writes and checks `data/archive/comparison.v1.de.json` (display fields only).
+- Archive UI: `#/vergleich` (overview, counts, pilot-gate status), `#/vergleich/fundstuecke` (search and filters by review state, archive, decade, place, rights), `#/vergleich/fundstueck/<id>` (provenance, status, „Originalquelle öffnen“; no third-party image). Entry points from „Stile & Buchstaben“ and „Bildarchiv“; offline cache v3.
+- Tests: `tests/archive-comparison.test.js` (13); archive smoke covers the new routes (phone/desktop, filters, search, no images, original-source link). Proof screenshots `docs/reports/proof/comparison/`; C06 proof re-captured.
+- Glyph comparison (Gate 3) stays closed: 0 eligible glyph observations. Nothing was inferred from free-text notes.
+
+## 2026-11-19 — Comparison pilot gate counts archives/platforms
+
+- Owner decision: the glyph-comparison pilot gate requires 20 eligible glyph observations from at least 3 different archives/platforms (`contracts/letterform-comparison.v1.json` 1.1.0, `minIndependentInstitutions`). Several source records of one platform (e.g. two forum threads) count once. Current state: 12 observations from 3 source records / 2 platforms; gate closed.
+- Fixed CI after PR #31: missing `visualState` on `ALT-WOSHE-M-MAMMOUTH-01`; count test recomputes from source files.
+- Research for the comparison library is done by ChatGPT only (owner decision); Claude reviews and integrates.

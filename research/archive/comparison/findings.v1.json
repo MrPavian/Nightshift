@@ -1,0 +1,21 @@
+{
+  "findings": [
+    {
+      "id": "FND-X-DIAGONAL-CROSS-01",
+      "axis": "simple-interlocking",
+      "observationIds": [
+        "GLY-BSCI-SEA-2018-X1",
+        "GLY-BSCI-XCALET-2018-X1",
+        "GLY-BSCI-KNOME-2018-X1"
+      ],
+      "findingDe": "In den drei geprüften X-Beispielen bleibt das Grundgerüst ein Kreuz aus zwei Diagonalzügen. Die Ausführung reicht von schmalen, linearen Strichen bis zu breiten Markerzügen mit langen, unterschiedlich zugespitzten Ausläufen.",
+      "evidenceBasisDe": "Direkter Vergleich der X-Beobachtungen von Sea und XCALET aus dem Alphabet-Challenge-Thread (ACQ-BSCI-02) mit knowmes 2018er Alphabet (ACQ-BSCI-01).",
+      "limitationDe": "Die beiden Challenge-Beiträge stammen aus demselben Thread und die drei Beispiele sind keine repräsentative Stilstatistik. Der Befund beschreibt nur die sichtbare Grundkonstruktion und Strichbehandlung.",
+      "confidence": "medium",
+      "generatorRelevance": "research-lead",
+      "relatedEntries": [],
+      "editorialState": "source-checked"
+    }
+  ],
+  "schemaVersion": "1.0"
+}

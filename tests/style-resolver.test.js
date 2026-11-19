@@ -102,14 +102,16 @@ test('Bubble swells the outline (not just thicker): sides bulge, counters shrink
   assert.ok(minX < 10 - 9 - 1, `E bulges beyond the plain offset (min x ${minX})`);
 });
 
-test('bounce is word composition only: same glyph geometry, glyphs tilt, shift and overlap in the word', async () => {
+test('bounce is word composition only: same glyph geometry, glyphs tilt and shift, no undeclared overlap', async () => {
   const { layoutWord } = await import('../src/style/render.js');
   const neutral = resolveStyle(registry.getByChar('B'), { letterform: 'bubble', composition: 'neutral' }, ctx);
   assert.equal(neutral.geometryHash, res('B', 'bubble').geometryHash);
   const recs = [...'ABRA'].map((c) => res(c, 'bubble').derived);
   const placed = layoutWord(recs, 'bounce', contract.operations['composition.bounce'].params);
   assert.ok(placed.some((p) => p.rotate !== 0) && placed.some((p) => p.y !== 0));
-  for (let i = 1; i < placed.length; i++) assert.ok(placed[i].x + placed[i].box.x0 < placed[i - 1].x + placed[i - 1].box.x1, 'letters overlap');
+  // The old assertion here required overlapping letters; Issue #24 replaced it with the no-contact policy
+  // (see tests/style-safety.test.js for the transformed-contour checks).
+  for (let i = 1; i < placed.length; i++) assert.ok(placed[i].x > placed[i - 1].x, 'letters stay in order');
   const flat = layoutWord(recs, 'neutral');
   assert.ok(flat.every((p) => p.rotate === 0 && p.y === 0));
 });

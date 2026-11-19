@@ -2,6 +2,7 @@
 // German edition: interface and content are German. Other editions load archive.v1.<lang>.json.
 // No editorial content lives in this file: everything shown comes from the build output.
 import { bridgeHref } from '../src/bridge/editor-bridge.js';
+import { comparisonViews } from './comparison.js';
 
 const LANG = 'de';
 
@@ -50,6 +51,7 @@ const SECTIONS = [
 const ORDER = ['history', 'scene', 'practice', 'style', 'construction', 'format', 'media', 'object', 'person', 'concept'];
 
 let A, byId, claims, sources;
+let CV = null, cvLoading = null; // letterform comparison library: loaded on first visit to #/vergleich
 
 // ---------- persistence (per viewer, optional) ----------
 const visited = new Set((() => { try { return JSON.parse(localStorage.getItem('nightshift.archive.visited') || '[]'); } catch { return []; } })());
@@ -261,10 +263,15 @@ function viewSection(key) {
   if (!sec || ['zeitleiste', 'szenen', 'glossar'].includes(key)) return viewMissing(key);
   const list = A.entries.filter((e) => sec.types.includes(e.type)).sort((a, b) => a.title.localeCompare(b.title, 'de'));
   const empty = `<div class="empty"><p><strong>In diesem Bereich gibt es noch keine geprüften Einträge.</strong></p><p>Weitere Einträge zu Markern und Material erscheinen erst, wenn ihre Quellen geprüft sind. Bis dahin: <a href="#/bereich/praxis">Praktiken &amp; Formate</a> oder die <a href="#/suche">Suche</a>.</p></div>`;
+  const cmpCard = key === 'stile'
+    ? `<section class="panel" style="margin:var(--s4) 0"><h2><a href="#/vergleich">Buchstaben vergleichen</a></h2><p>Fundstücke aus Archiven und Sammlungen – mit Herkunft, Sichtungsstand und Bildrechten. Der Buchstabenvergleich wächst mit jeder gesicherten Beobachtung.</p></section>`
+    : key === 'bildarchiv'
+      ? `<section class="panel" style="margin:var(--s4) 0"><h2><a href="#/vergleich/fundstuecke">Fundstücke</a></h2><p>Erfasste Objekte aus Sammlungen mit Herkunft und Bildrechten. Die Bilder selbst bleiben bei den Sammlungen; jedes Fundstück verlinkt auf seine Originalquelle.</p></section>`
+      : '';
   const diagrams = key === 'bildarchiv' ? `<h2 style="margin-top:var(--s5)">Eigene Diagramme</h2><p class="orient">Alle Abbildungen dieser Ausgabe sind eigene Produktionen von NIGHTSHIFT.</p>${Object.keys(A.diagrams).map((d) => figure(d, 'plate')).join('')}` : '';
   return {
     title: sec.label,
-    html: `${crumbs([[sec.label]])}<h1 class="page-title">${esc(sec.label)}</h1><p class="orient">${esc(sec.intro)}</p>${list.length ? tabs(list) : empty}${diagrams}`,
+    html: `${crumbs([[sec.label]])}<h1 class="page-title">${esc(sec.label)}</h1><p class="orient">${esc(sec.intro)}</p>${cmpCard}${list.length ? tabs(list) : empty}${diagrams}`,
   };
 }
 
@@ -377,13 +384,19 @@ function route() {
     case 'bereich': v = viewSection(arg); break;
     case 'quellen': v = viewSources(); break;
     case 'so-liest-du': v = viewEntry('concept.reading-the-evidence', params); break;
+    case 'vergleich': {
+      if (!CV) { loadComparison(); v = { title: 'Buchstaben vergleichen', html: '<p class="loading">Fundstücke werden geladen …</p>' }; break; }
+      const [sub, sid] = rest;
+      v = !sub ? CV.landing() : sub === 'fundstuecke' ? CV.browser(params) : sub === 'fundstueck' ? (CV.detail(decodeURIComponent(sid ?? '')) ?? viewMissing(sid)) : viewMissing(sub);
+      break;
+    }
     default: v = viewMissing(head);
   }
   const main = $('#main');
   main.innerHTML = v.html;
   document.title = `${v.title} · Blackbook-Archiv`;
   const entryNow = head === 'entry' ? byId.get(arg) : head === 'so-liest-du' ? byId.get('concept.reading-the-evidence') : null;
-  const section = head === '' ? 'entdecken' : head === 'bereich' ? arg : head === 'a-z' ? 'glossar' : entryNow ? sectionOf(entryNow.type) : head;
+  const section = head === '' ? 'entdecken' : head === 'bereich' ? arg : head === 'a-z' ? 'glossar' : head === 'vergleich' ? 'stile' : entryNow ? sectionOf(entryNow.type) : head;
   for (const a of document.querySelectorAll('[data-nav]')) {
     if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
@@ -396,7 +409,38 @@ function route() {
   publish();
 }
 
+async function loadComparison() {
+  cvLoading ??= (async () => {
+    try {
+      const res = await fetch(`../data/archive/comparison.v1.${LANG}.json`);
+      if (!res.ok) throw new Error(`Vergleichsdaten nicht erreichbar (HTTP ${res.status})`);
+      const C = await res.json();
+      CV = comparisonViews(C, { esc, norm, crumbs });
+      selftest.comparison = { specimens: C.specimens.length, pilotGateOpen: C.pilotGate.open };
+    } catch (e) {
+      selftest.errors.push(e.message);
+      $('#main').innerHTML = `<div class="empty"><h1 style="font-size:var(--step-2)">Die Fundstücke konnten nicht geladen werden.</h1><p>${esc(e.message)}. Lade die Seite neu.</p></div>`;
+      cvLoading = null;
+      publish();
+      return;
+    }
+    if (location.hash.startsWith('#/vergleich')) {
+      route();
+      if (new URLSearchParams(location.search).has('selftest')) { selftest.results = document.querySelectorAll('#main .tabs li').length; publish(); }
+    }
+  })();
+  return cvLoading;
+}
+
 document.addEventListener('submit', (ev) => {
+  const c = ev.target.closest('[data-cmp-search]');
+  if (c) {
+    ev.preventDefault();
+    const u = new URLSearchParams();
+    for (const [k, v] of new FormData(c)) if (v) u.set(k, v);
+    location.hash = `#/vergleich/fundstuecke${u.size ? `?${u}` : ''}`;
+    return;
+  }
   const f = ev.target.closest('[data-search]');
   if (!f) return;
   ev.preventDefault();

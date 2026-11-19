@@ -1,0 +1,1034 @@
+{
+  "counterSafety": {
+    "axis": "letterform",
+    "labelDe": "Punzen schützen (Kandidaten ablehnen, die Punzen zu Schlitzen machen)",
+    "note": "Floors relative to the neutral master: counter area and counter opening (largest inscribed circle). Reject-only: they make the resolver choose a gentler candidate or skip; they never certify a result. Not calibrated; owner/practitioner review required (Issue #24).",
+    "params": {
+      "minAreaRatio": 0.4,
+      "minOpeningRatio": 0.6
+    },
+    "status": "provisional-reject-only"
+  },
+  "glyphs": {
+    "A": {
+      "after": {
+        "geometryHash": "836025f000060816d1aae9f0ae8c4e7b893c25169ec0e6b4b4b97aa14c2ad7e2",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 428.24,
+              "areaRatio": 0.415,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.A.contour.counter.primary",
+              "counterId": "glyph.A.negative.counter.primary",
+              "neutralArea": 1032.5,
+              "neutralOpening": 30.8,
+              "opening": 20.409,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.663,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 35.003,
+                "neutral": 17
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.A.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.A.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.A.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.A.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.A.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.A.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.A.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.A.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 5,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": {
+                "minAreaRatio": 0.4,
+                "minOpeningRatio": 0.6
+              },
+              "distance": 5
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "before": {
+        "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 169.717,
+              "areaRatio": 0.164,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.A.contour.counter.primary",
+              "counterId": "glyph.A.negative.counter.primary",
+              "neutralArea": 1032.5,
+              "neutralOpening": 30.8,
+              "opening": 12.541,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.407,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 43.002,
+                "neutral": 17
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": "disabled",
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "glyphId": "latin.upper.A",
+      "masterGeometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "maturity": "authored-contour",
+      "maturityLabels": [
+        "rendered",
+        "measured-uncalibrated",
+        "owner-review-required"
+      ]
+    },
+    "B": {
+      "after": {
+        "geometryHash": "2ba211e10b1462128643dcbc3dff4c8e428cb43c900aa74d1eedc081d939d9a1",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 428.265,
+              "areaRatio": 0.441,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.B.contour.counter.upper",
+              "counterId": "glyph.B.negative.counter.upper",
+              "neutralArea": 970.667,
+              "neutralOpening": 28,
+              "opening": 17.981,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.642,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 29.033,
+                "neutral": 17.421
+              }
+            },
+            {
+              "area": 534.659,
+              "areaRatio": 0.469,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.B.contour.counter.lower",
+              "counterId": "glyph.B.negative.counter.lower",
+              "neutralArea": 1140.667,
+              "neutralOpening": 29,
+              "opening": 18.986,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.655,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 27.743,
+                "neutral": 16.301
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.lower",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.lower"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.lower",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.lower"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.lower",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.lower"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.upper",
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.B.negative.counter.lower",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.B.negative.counter.lower"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 5,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": {
+                "minAreaRatio": 0.4,
+                "minOpeningRatio": 0.6
+              },
+              "distance": 5
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "before": {
+        "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 166.639,
+              "areaRatio": 0.172,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.B.contour.counter.upper",
+              "counterId": "glyph.B.negative.counter.upper",
+              "neutralArea": 970.667,
+              "neutralOpening": 28,
+              "opening": 9.961,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.356,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 38.045,
+                "neutral": 17.421
+              }
+            },
+            {
+              "area": 234.452,
+              "areaRatio": 0.206,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.B.contour.counter.lower",
+              "counterId": "glyph.B.negative.counter.lower",
+              "neutralArea": 1140.667,
+              "neutralOpening": 29,
+              "opening": 10.993,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.379,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 36.718,
+                "neutral": 16.301
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": "disabled",
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "glyphId": "latin.upper.B",
+      "masterGeometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+      "maturity": "authored-contour",
+      "maturityLabels": [
+        "rendered",
+        "measured-uncalibrated",
+        "owner-review-required"
+      ]
+    },
+    "G": {
+      "after": {
+        "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": []
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": {
+                "minAreaRatio": 0.4,
+                "minOpeningRatio": 0.6
+              },
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "before": {
+        "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": []
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": "disabled",
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "glyphId": "latin.upper.G",
+      "masterGeometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "maturity": "authored-contour",
+      "maturityLabels": [
+        "rendered",
+        "measured-uncalibrated",
+        "owner-review-required"
+      ]
+    },
+    "R": {
+      "after": {
+        "geometryHash": "3124aca95fe2706bf02ff09971675b8c8894734b3177ad09cb091bc009ba1c0d",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 499.359,
+              "areaRatio": 0.465,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.R.contour.counter.primary",
+              "counterId": "glyph.R.negative.counter.primary",
+              "neutralArea": 1074.667,
+              "neutralOpening": 31,
+              "opening": 20.944,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.676,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 31.492,
+                "neutral": 20.906
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.R.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.R.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 9,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.R.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.R.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.R.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.R.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": true
+                },
+                {
+                  "distance": 7,
+                  "reasons": [
+                    "COUNTER_AREA_BELOW_FLOOR:glyph.R.negative.counter.primary",
+                    "COUNTER_OPENING_BELOW_FLOOR:glyph.R.negative.counter.primary"
+                  ],
+                  "result": "rejected",
+                  "swell": false
+                },
+                {
+                  "distance": 5,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": {
+                "minAreaRatio": 0.4,
+                "minOpeningRatio": 0.6
+              },
+              "distance": 5
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "before": {
+        "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": [
+            {
+              "area": 218.488,
+              "areaRatio": 0.203,
+              "calibrationStatus": "measured-uncalibrated",
+              "contourId": "glyph.R.contour.counter.primary",
+              "counterId": "glyph.R.negative.counter.primary",
+              "neutralArea": 1074.667,
+              "neutralOpening": 31,
+              "opening": 12.988,
+              "openingErrorBound": 0.283,
+              "openingRatio": 0.419,
+              "present": true,
+              "wallClearance": {
+                "calibrationStatus": "uncalibrated",
+                "errorBound": 0,
+                "minimumDistance": 39.717,
+                "neutral": 20.906
+              }
+            }
+          ]
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": "disabled",
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "glyphId": "latin.upper.R",
+      "masterGeometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+      "maturity": "authored-contour",
+      "maturityLabels": [
+        "rendered",
+        "measured-uncalibrated",
+        "owner-review-required"
+      ]
+    },
+    "S": {
+      "after": {
+        "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": []
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": {
+                "minAreaRatio": 0.4,
+                "minOpeningRatio": 0.6
+              },
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "before": {
+        "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+        "negativeSpace": {
+          "apertures": [],
+          "calibrationStatus": "measured-uncalibrated",
+          "counters": []
+        },
+        "operations": [
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.inflate",
+            "params": {
+              "candidates": [
+                {
+                  "distance": 9,
+                  "reasons": [],
+                  "result": "accepted",
+                  "swell": true
+                }
+              ],
+              "counterSafety": "disabled",
+              "distance": 9
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.swell-sides",
+            "params": {
+              "max": 12,
+              "ratio": 0.14
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "letterform",
+            "operationId": "letterform.bubble.smooth",
+            "params": {
+              "iterations": 3
+            },
+            "reason": null,
+            "status": "applied"
+          },
+          {
+            "axis": "composition",
+            "operationId": "composition.bounce",
+            "params": {
+              "maxExtraSteps": 120,
+              "minClearance": 4,
+              "overlapRatio": 0.12,
+              "shiftY": [
+                5,
+                -6
+              ],
+              "stepIncrement": 1,
+              "tiltDeg": [
+                -3,
+                4
+              ]
+            },
+            "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+            "status": "applied"
+          }
+        ],
+        "status": "applied"
+      },
+      "glyphId": "latin.upper.S",
+      "masterGeometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+      "maturity": "authored-contour",
+      "maturityLabels": [
+        "rendered",
+        "measured-uncalibrated",
+        "owner-review-required"
+      ]
+    }
+  },
+  "runId": "run.style-library-phase-a-02.312d68901550"
+}

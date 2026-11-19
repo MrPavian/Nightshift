@@ -1,0 +1,17 @@
+{
+  "package": "letterform-comparison Gate 2",
+  "result": "pass",
+  "routes": 5,
+  "inputs": {
+    "data/archive/comparison.v1.de.json": "780171ad4a545d916ca2ef7ee50814434ae21505f0a5a6d9eb6beff869c72727",
+    "archive/comparison.js": "9285d0a1b3265697d99260bce4cf802cd3009e15c5bc77434fa317b6e56d62c4",
+    "archive/app.js": "fbfac0698c8d287da6b2c5d7cf51212c1d6a5ed3a3458ef07282dbe011b656cd"
+  },
+  "screenshots": {
+    "landing-phone.png": "0d2daaf672699500b9508e3933c554a0a764fddd20b7fab894d94c4d1c098b23",
+    "browser-phone.png": "53f75fa818fe5dcce75e340d6e2434bcf24f1a8c18233768f6ba2e85586b1fb9",
+    "browser-tablet.png": "8b8de1e162c4f79102f36f42e0217c40342e05570a248ffaae71b3ecdbfdb519",
+    "detail-desktop.png": "684b05d623d7deacb11d97a973597a47d1e3cda9172863f5184fe9c6d77e9b81",
+    "detail-phone-catalogue-only.png": "06f8f10635300d56f8ceb00bff5242b002aa363b8573f5c0a2c69d10d42c6491"
+  }
+}
