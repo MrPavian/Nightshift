@@ -2,12 +2,12 @@
   "comparisonSchemaVersion": "1.0",
   "contract": "nightshift.letterform-comparison@1.1.0",
   "counts": {
-    "eligibleGlyphObservations": 12,
+    "eligibleGlyphObservations": 14,
     "findings": 1,
     "glyphInstitutions": 2,
     "glyphSources": 3,
-    "inspectedSpecimens": 21,
-    "specimens": 45
+    "inspectedSpecimens": 22,
+    "specimens": 46
   },
   "findings": [
     {
@@ -38,7 +38,7 @@
     },
     {
       "path": "research/archive/comparison/observations.v1.json",
-      "sha256": "a20b945dbef9f5d9187b5e0b564424ca47d285f6a371c02f5528706aebd2725a"
+      "sha256": "2dd3ea286481d681b8ff58909096edd69e0e0177c8fe757cdeb4edce02bbe910"
     },
     {
       "path": "research/archive/comparison/sources.v1.json",
@@ -46,7 +46,7 @@
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "569755be920a51e8bb62e215a240cd838f13679f4bce41c2578ef9ce8557b855"
+      "sha256": "fe374f7dfb48b7dc5aa9e2c8c36a36e2e5c12433376a23d42f2246693926d703"
     }
   ],
   "glyphObservations": [
@@ -229,6 +229,34 @@
       "observationDe": "Das O im Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die Kontur sitzt in einer schweren, stark verdichteten Titelgestaltung; Details werden durch die umgebende Illustration begrenzt.",
       "specimenId": "LFA-BOMB-046-001",
       "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "wide-crossbar",
+        "vertical-stem",
+        "irregular-proportions"
+      ],
+      "glyph": "T",
+      "id": "GLY-LFA-JHO-001-T1",
+      "legibility": "medium",
+      "observationDe": "Das T am Ende von „JUST“ ist als einzelner Buchstabe erkennbar. Es besitzt einen breiten, massiven Querbalken und einen kräftigen, leicht unregelmäßigen Stamm. Die gelbe Buchstabenfläche wird von einer dunklen, versetzten Tiefen- beziehungsweise Schattenform begleitet; diese gehört zur Darstellung und nicht zur Grundkontur des T.",
+      "specimenId": "LFA-JHO-001",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "narrow-oval-counter",
+        "upright-axis",
+        "broad-marker-stroke"
+      ],
+      "glyph": "O",
+      "id": "GLY-LFA-JOKER-001-O1",
+      "legibility": "medium",
+      "observationDe": "Das O in „JOKER“ ist als hoher, schmaler und leicht unregelmäßiger Ovalzug ausgeführt. Die Innenöffnung bleibt geschlossen und deutlich sichtbar; die Strichbreite variiert durch den Markerzug. Die Form ist Teil eines verbundenen Tags, kein isolierter Alphabetbuchstabe.",
+      "specimenId": "LFA-JOKER-001",
+      "transcriptionConfidence": "high"
     }
   ],
   "labels": {
@@ -274,7 +302,7 @@
   "language": "de",
   "objectObservations": [],
   "pilotGate": {
-    "eligible": 12,
+    "eligible": 14,
     "independentInstitutions": 2,
     "minEligibleGlyphObservations": 20,
     "minIndependentInstitutions": 3,
@@ -703,7 +731,9 @@
       "dateQualifier": "as-catalogued",
       "decade": "2020er",
       "displayMode": "link-only",
-      "glyphObservationIds": [],
+      "glyphObservationIds": [
+        "GLY-LFA-JHO-001-T1"
+      ],
       "id": "LFA-JHO-001",
       "identifier": null,
       "imageRights": "link-only",
@@ -714,6 +744,30 @@
       "place": null,
       "sourceRecordId": "ACQ-LFA-03",
       "title": "Just Hangin' Out",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Joker",
+      "date": "1993",
+      "dateQualifier": "circa",
+      "decade": "1990er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-LFA-JOKER-001-O1"
+      ],
+      "id": "LFA-JOKER-001",
+      "identifier": null,
+      "imageRights": "link-only",
+      "institution": "Letterform Archive",
+      "itemUrl": "https://exhibitions.letterformarchive.org/mischief/artworks/joker-tag-sticker",
+      "observationIds": [],
+      "photographerName": null,
+      "place": "Walnut Creek, California, USA",
+      "sourceRecordId": "ACQ-LFA-03",
+      "title": "Joker Tag Sticker",
       "visualState": "hi_fi_image_opened_and_inspected"
     },
     {

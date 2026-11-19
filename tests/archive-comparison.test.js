@@ -81,7 +81,15 @@ test('migration is deterministic, complete and keeps every original value', () =
   const report = read(`${COMPARISON_DIR}/MIGRATION_REPORT_01.json`);
   assert.equal(report.input.sha256, sha256Hex(legacyText));
   assert.equal(Object.values(report.visualStateMapping).reduce((n, x) => n + x.count, 0), 39);
-  assert.ok(report.needsConfirmation.length >= 1, 'NGA catalogue descriptions are flagged for confirmation');
+  // The NGA catalogue-description mapping is either still pending or explicitly confirmed as catalogue-only.
+  const nga = Object.entries(report.visualStateMapping).filter(([k]) => /nga.catalogue.visual.description/i.test(k));
+  assert.ok(nga.length >= 1);
+  for (const [k, v] of nga) {
+    assert.equal(v.to, 'catalogue_metadata_only', k);
+    const pending = report.needsConfirmation.includes(k);
+    const confirmed = (report.confirmedMappings ?? []).some((c) => c.target === 'catalogue_metadata_only' && c.status === 'confirmed' && /nga catalogue visual description/i.test(c.source));
+    assert.ok(pending || confirmed, `${k}: pending or confirmed`);
+  }
 });
 
 test('status and rights mapping: every spelling is mapped; unknown spellings fail loudly', () => {

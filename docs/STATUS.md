@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 19. November 2026, C03 Bubble/Bounce-Gates (Issue #24), auf Phase A (#22)
+**Stand:** 19. November 2026, nach der Integration von #22, #26–#32
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -21,8 +21,8 @@
 | **Academy A-Studie** (`letter-study_A_01.svg`, generiert) | implementiert, Layout-QA 0 Probleme | Claude | Owner-Freigabe; B–Z erst danach | Owner: Freigabe A |
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
-| **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung gemergt: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry. Alle Templates bleiben `documented-draft`; Engine-Support ist je Familie ausgewiesen. Resolver weiterhin nur Teilmenge Neutral, Straight, Bubble, Block-fit und Bounce; Wildstyle-Interlocking blockiert durch C04 | ChatGPT (Research/Brief), Claude (Engine) | Phase A gemäß `CLAUDE_TASK_PHASE_A_PROOF_PLATES_01.md`: neutrale, monochrome Proof-Plates für A/B/G/R/S und ABRA; danach Bubble/Straight kalibrieren | Owner: visuelle Sichtung / Praxisreview |
-| **Letterform-Vergleichsbibliothek** (Spec `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md`) | **Gate 1 und 2 umgesetzt:** Datenvertrag `contracts/letterform-comparison.v1.json`, Daten unter `research/archive/comparison/` (aus dem Manifest von PR #25 überführt), Build nach `data/archive/comparison.v1.de.json`, Fundstück-Browser unter `#/vergleich`. 39 Fundstücke, 15 gesichtet, **0 zulässige Buchstabenbeobachtungen** → Buchstabenvergleich (Gate 3) gesperrt; Gate 4 offen | ChatGPT (Beobachtungen, deutsche Texte), Claude (Build, UI) | ChatGPT: Glyph-Pilot (≥ 20 Beobachtungen aus ≥ 3 Quellen) per PR; Claude: Gate 3 danach | Owner: Sichtung; ChatGPT: NGA-Abbildung bestätigen |
+| **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry; alle Templates `documented-draft`. Resolver 1.1: Neutral, Straight, Bubble, Block-fit, Bounce; Wildstyle-Interlocking blockiert durch C04. **Phase A-01** (eingefroren): Owner-Review 19.11. — technischer Proof ok, gestalterisch nicht abgenommen; Straight/Blockbuster neu konzipieren. **Phase A-02** (`phase-a-02/`, Issue #24): Bubble-Punzenschutz (A/B/R jetzt 42–47 % statt 16–20 % Punzenfläche) und kollisionsfreies Bounce; vorläufig, nur ablehnend, `measured-uncalibrated` | ChatGPT (Research/Brief), Claude (Engine) | Owner-Sichtung Phase A-02; Letterform-Grammatiken für Straight/Blockbuster neu definieren (PR #25) | Owner: Sichtung A-02 (Schwellen, ungleiche Masse im Wort); Stildefinition vor dem nächsten Proof |
+| **Letterform-Vergleichsbibliothek** (Spec `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md`) | **Gate 1 und 2 umgesetzt:** Datenvertrag `contracts/letterform-comparison.v1.json` (1.1.0), Daten unter `research/archive/comparison/`, Build nach `data/archive/comparison.v1.de.json`, Fundstück-Browser unter `#/vergleich`. 46 Fundstücke, 22 gesichtet, **14 zulässige Buchstabenbeobachtungen** aus 4 Quellen bzw. 2 Archiven/Plattformen; 1 Befund. Buchstabenvergleich (Gate 3) gesperrt, bis 20 Beobachtungen aus 3 verschiedenen Archiven/Plattformen vorliegen; Gate 4 offen. NGA-Abbildung bestätigt (#29) | **Recherche nur ChatGPT** (Owner-Entscheidung 19.11.); Claude prüft und integriert | ChatGPT: Beobachtungen aus weiteren Archiven per PR; Claude: Gate 3, sobald das Gate offen ist | Owner: Sichtung |
 | **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
 
 ## Offene Owner-Entscheidungen
@@ -37,7 +37,7 @@
 
 ```bash
 npm ci
-npm test                 # Unit- und Abnahmetests (207 am 19.11., nach Issue #24)
+npm test                 # Unit- und Abnahmetests (220 am 19.11., nach der Integration)
 npm run test:browser     # Prüfstand, Editor, Creator, Archiv, Academy (CHROME=<pfad> setzen)
 npm run perf:editor      # Editor-Antwortzeiten
 ```
@@ -46,5 +46,5 @@ Erzeugte Berichte prüft die CI zusätzlich mit `--check` (siehe `.github/workfl
 
 ## Repository-Hygiene
 
-- **Offene Pull Requests:** #22 (Style-Library Phase A), #25 (Research: eigenständige Graffiti-Letterform-Grammatiken), C03 Bubble/Bounce-Gates (auf #22 gestapelt). Stand 19.11.
+- **Offene Pull Requests:** #25 (Research-Entwurf von ChatGPT). Stand 19.11., nach der Integration.
 - **Alte Branches:** aufgeräumt (19.11.); GitHub löscht Branches nach dem Merge automatisch.
