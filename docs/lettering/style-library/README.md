@@ -11,6 +11,8 @@ A source-aware, construction-first library for original NIGHTSHIFT graffiti lett
 - [TEMPLATE_INDEX.md](TEMPLATE_INDEX.md) — compact family/template index and engine support snapshot.
 - [STYLE_TAXONOMY.md](STYLE_TAXONOMY.md) — separates letterform, composition, practice/context and rendering.
 - [STYLE_COMPARISON_MATRIX.md](STYLE_COMPARISON_MATRIX.md) — controlled comparison of core grammars.
+- [letterform-research-queue.v1.json](letterform-research-queue.v1.json) — typed source/page acquisition queue, with strict separation from accepted glyph observations.
+- [GRAFFITI_VISUAL_ANALYSIS_06_RIJKSMUSEUM_AND_BLACKBOOK_QUEUES.md](GRAFFITI_VISUAL_ANALYSIS_06_RIJKSMUSEUM_AND_BLACKBOOK_QUEUES.md) — current acquisition pass and evidence boundaries.
 - [LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md](LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md) — specification for a browsable, evidence-led letterform comparison area inside THE BLACKBOOK ARCHIVE.
 - [RENDERING_TREATMENTS.md](RENDERING_TREATMENTS.md) — hollow, outline, fill, 3D, chrome, drips and other non-letterform treatments.
 - [QUALITY_CONTROL.md](QUALITY_CONTROL.md) — visual acceptance gates.
