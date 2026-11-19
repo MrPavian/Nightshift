@@ -179,6 +179,22 @@
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-REMS-01",
       "status": "glyph_observation_candidate"
+    },
+    {
+      "archive_observation_id": "GLY-BSCI-SKU2ER-2018-C1",
+      "glyph": "C",
+      "id": "QUEUE-GLY-BSCI-SKU2ER-2018-C1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SKU2ER-2018-01",
+      "status": "glyph_observation_accepted"
+    },
+    {
+      "archive_observation_id": "GLY-BSCI-SKU2ER-2018-X1",
+      "glyph": "X",
+      "id": "QUEUE-GLY-BSCI-SKU2ER-2018-X1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SKU2ER-2018-01",
+      "status": "glyph_observation_accepted"
     }
   ],
   "page_records": [
@@ -859,6 +875,22 @@
       "title": "INGRID / DDB — WASCHMASCHINEN LEBEN LÄNGER (Sammlung Kreuzer)",
       "url": "https://www.deutsche-digitale-bibliothek.de/item/XL4M7KON4LWTKPLWHCLPZ3VDCBLYMNPS",
       "visual_review_status": "catalogued_page_not_visually_reviewed"
+    },
+    {
+      "catalogue_description": "Named submission in the 2018 Bombing Science Alphabet Challenge; full labelled A–Z handstyle sheet directly inspected.",
+      "creator": "Sku2er",
+      "date_range": "2018-04-24",
+      "glyph_eligibility": "eligible",
+      "id": "PAGE-BSCI-SKU2ER-2018-01",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227497_e0f63b4adb34e647e5cb906f040e8678.jpg",
+      "next_action": "Weitere Buchstaben nur bei unabhängiger klarer Konturprüfung ergänzen; keine Duplikate erzeugen.",
+      "priority": "high",
+      "reason": "Post #7 nennt Sku2er und zeigt eine vollständige beschriftete A–Z-Vorlage. C und X wurden direkt im Bild geprüft und als Einzelglyphen akzeptiert; keine weiteren Glyphen wurden daraus abgeleitet.",
+      "rights_status": "Artist copyright; link-only; do not copy, trace, embed or redistribute.",
+      "source_id": "ACQ-BSCI-02",
+      "title": "Sku2er — Alphabet Challenge submission",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "visual_review_status": "glyph_observation_accepted"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
@@ -878,10 +910,10 @@
     "ACQ-LFA-03"
   ],
   "summary": {
-    "accepted_glyph_observations": 18,
-    "note": "18 akzeptierte Glyph-Beobachtungen bleiben unverändert. Neu dokumentiert: zwei direkt gesichtete FTA-Ink-Outlines (beide nicht glyph-geeignet wegen starker Überlappung) sowie zwei DDB-Katalogleads aus der Sammlung Kreuzer. Die DDB-Bilder und die zugehörigen INGRID-RDF-URIs konnten in diesem Durchgang nicht direkt geöffnet/aufgelöst werden; daher keine neuen Glyphen.",
-    "page_records": 44,
+    "accepted_glyph_observations": 20,
+    "note": "20 akzeptierte Glyph-Beobachtungen. Neu ergänzt: zwei direkt geprüfte Einzelglyphen (C, X) aus Sku2ers beschriftetem A–Z-Handstyle-Alphabet, Bombing Science Alphabet Challenge, Post #7. Die beiden Beobachtungen sind im Archiv mit Bild- und Quellenprovenienz gespeichert; es wurden keine weiteren Buchstaben aus derselben Seite ohne Einzelprüfung übernommen. Drei Plattformen; Pilot-Gate-Schwelle erreicht, vorbehaltlich erfolgreicher Build-/Schema-Prüfung.",
+    "page_records": 45,
     "source_records_referenced": 11,
-    "visually_reviewed_page_records": 20
+    "visually_reviewed_page_records": 21
   }
 }
