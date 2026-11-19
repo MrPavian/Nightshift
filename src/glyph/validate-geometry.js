@@ -37,7 +37,10 @@ export function validateGlyphGeometry(glyph, profile, opts = {}) {
   stage('schema-and-reference-integrity', schema.some((d) => d.severity === 'error') ? 'failed' : 'passed');
 
   // 2–3. curve-normalization + geometric-degeneracy (analysis is exact on canonical segments)
-  const a = analyseContours(contours, profile.numerical);
+  const declaredList = sg.topology.signature?.declaredCrossings ?? [];
+  const a = analyseContours(contours, profile.numerical, {
+    isDeclaredCrossing: (ids) => declaredList.some((c) => Array.isArray(c.order) && c.order.length >= 2 && ids.every((id) => c.contourIds.includes(id))),
+  });
   for (const d of a.degeneracies) {
     if (d.kind === 'unclosed') diag('curve-normalization', 'VAL_CLOSURE', 'error', d.affectedIds, `Contour ${d.contourId} is not closed.`);
     else if (d.kind === 'zero-length-handle') diag('geometric-degeneracy', 'GEO_ZERO_HANDLE', 'info', d.affectedIds, 'Curve handle coincides with an endpoint (exact).');

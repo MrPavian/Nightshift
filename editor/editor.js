@@ -66,7 +66,21 @@ function toGlyph(evt) {
 }
 
 /** Rebuild the derived scene from a canonical record (committed or preview). */
-function rebuildScene(record, { provisional = false, report = null } = {}) {
+function rebuildScene(record, opts = {}) {
+  try {
+    rebuildSceneUnsafe(record, opts);
+  } catch (err) {
+    // A preview that cannot be drawn must never leave an empty scene: fall back to the
+    // committed glyph and say what happened (reported phone bug: letter disappeared).
+    selftest.renderFallbacks = (selftest.renderFallbacks ?? 0) + 1;
+    if (opts.provisional) {
+      setBanner(`Vorschau kann nicht gezeichnet werden (${err.message}) — übernommener Stand bleibt sichtbar.`, 'err');
+      rebuildSceneUnsafe(store.get(glyphId), {});
+    } else throw err;
+  }
+}
+
+function rebuildSceneUnsafe(record, { provisional = false, report = null } = {}) {
   root.clear();
   handles = [];
   const rep = report ?? validateGlyphGeometry(record, profile);
@@ -186,8 +200,23 @@ canvas.addEventListener('pointerdown', (e) => {
   }
   pan = { x: e.clientX, y: e.clientY, panX: view.panX, panY: view.panY };
 });
+// Coalesce pointer moves: at most one validated preview per animation frame, always for
+// the newest position. Without this, slow devices queue validations faster than they finish.
+let pendingMove = null, moveScheduled = false;
+function flushMove() {
+  moveScheduled = false;
+  if (!pendingMove || !interaction) return;
+  const to = pendingMove; pendingMove = null;
+  const last = interaction.lastPreview?.cmd.payload.to;
+  if (last && last.x === snap(to.x) && last.y === snap(to.y)) return;
+  dragMove(to);
+}
 canvas.addEventListener('pointermove', (e) => {
-  if (interaction) { dragMove(toGlyph(e)); return; }
+  if (interaction) {
+    pendingMove = toGlyph(e);
+    if (!moveScheduled) { moveScheduled = true; requestAnimationFrame(flushMove); }
+    return;
+  }
   if (pan) {
     const wpp = worldPerPixel();
     view.panX = pan.panX - (e.clientX - pan.x) * wpp;
@@ -195,7 +224,7 @@ canvas.addEventListener('pointermove', (e) => {
     draw();
   }
 });
-canvas.addEventListener('pointerup', () => { if (interaction) dragEnd(); pan = null; });
+canvas.addEventListener('pointerup', () => { if (interaction) { if (pendingMove) flushMove(); dragEnd(); } pan = null; });
 canvas.addEventListener('pointercancel', () => { cancelInteraction('pointer-cancel'); pan = null; });
 canvas.addEventListener('wheel', (e) => { e.preventDefault(); setZoom(view.zoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15)); }, { passive: false });
 window.addEventListener('keydown', (e) => {
@@ -376,6 +405,29 @@ function runSelftest() {
   fire('pointermove', screenOf(n3.x + 3, n3.y - 2));
   fire('pointerup', screenOf(n3.x + 3, n3.y - 2));
   S.pointerPath = hash() !== before && node(NODE3).x === n3.x + 3 && node(NODE3).y === n3.y - 2 && store.undoStack.at(-1).affected_entity_ids[0] === NODE3;
+
+  // Reported phone bug: dragging a B node far across the outline froze the editor and the
+  // letter disappeared. The preview must stay fast, the scene must never be empty, and the
+  // rejected drag must restore the committed glyph.
+  glyphId = 'latin.upper.B'; selection = { glyphId, nodeId: null }; refreshUi();
+  const bBefore = store.get(glyphId).variants[0].geometryHash;
+  dragStart('glyph.B.contour.outer.node.02');
+  const t0 = performance.now();
+  const far = dragMove({ x: 94.9, y: 150.6 });
+  const farMs = performance.now() - t0;
+  const sceneNotEmpty = root.children.length > 0;
+  const farEnd = dragEnd();
+  S.farDragKeepsGlyph = farMs < 2000 && sceneNotEmpty && !far.ok && !farEnd.committed && root.userData.valid === true && root.userData.geometryHash === bBefore;
+  selftest.farDragMs = Math.round(farMs);
+
+  // A burst of pointer moves is coalesced; release commits the newest position once.
+  glyphId = A; selection = { glyphId, nodeId: null }; refreshUi();
+  const n3b = node(NODE3), undoBefore = store.undoStack.length;
+  fire('pointerdown', screenOf(n3b.x, n3b.y));
+  for (let i = 1; i <= 30; i++) fire('pointermove', screenOf(n3b.x + (i % 4), n3b.y - 1));
+  fire('pointermove', screenOf(n3b.x + 2, n3b.y - 1));
+  fire('pointerup', screenOf(n3b.x + 2, n3b.y - 1));
+  S.burstCoalesced = store.undoStack.length === undoBefore + 1 && node(NODE3).x === n3b.x + 2 && node(NODE3).y === n3b.y - 1;
 
   S.paramsDisabled = document.querySelectorAll('#params input[type=range]').length > 0 && [...document.querySelectorAll('#params input')].every((i) => i.disabled);
   selftest.pass = Object.values(S).every(Boolean) && selftest.errors.length === 0;

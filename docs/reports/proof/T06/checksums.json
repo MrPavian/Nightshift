@@ -1,5 +1,5 @@
 {
-  "manifest.json": "21b96ef063938040e12a79c74d64d7903eba19315f4d5ad5627f1d33590d4fa4",
+  "manifest.json": "9868eb176f2bda83e923a7eb07bf9f67672375de6f4b32334ede255b99d0ca77",
   "plates/glyph-identity.svg": "3350bda0caaca44f6743c1b028c8ed8e9b9678efbd71052fcaf55d612483e80e",
   "plates/pair-context.svg": "8d7783f69aa5d92e42999e7ad164778b6b7d42d98eada49c6284fa5d54929756",
   "plates/semantic-topology.svg": "ab2669633a944385dce77d61517c01eef6da2ff82afba3277b57a37444792ed1",
@@ -17,7 +17,7 @@
   "validation/M.json": "6810502789b2107bfd997035b939eb088c8f023aa6e99ad202e2dea3a55b7af0",
   "validation/N.json": "9cf1be32d6ba3839002f6c8dc8640cf0b8b6470fc09be5377c44be01e7b08e06",
   "validation/O.json": "f52a9fb902eb20ee8adcb39f3bb0c37f1d8f050ffa27fd2a9827bd088ee0115a",
-  "validation/Q.json": "d3eb233db7123dbf927f2a1973c96c75b8271feac991524e804543ac0d1a3ab8",
+  "validation/Q.json": "931a8fa056543184ff9ace8d301094e4cac7aa8d1ae4dce184a5c377ccc991cc",
   "validation/R.json": "dbe7f9fd44346e8020517d446c5587b2f61c2466144e5b998b3342af234ee3a8",
   "validation/S.json": "57ae24c974051d79e1e074d7c559c0cc20366fd37d772f0806fa8cbe66f80f24",
   "validation/T.json": "027aef7b3fd2eac897263bd9c7f366decd64b06ffc24ec2e5242e386f94240bf",

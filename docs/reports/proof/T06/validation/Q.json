@@ -78,8 +78,8 @@
       "glyphId": "latin.upper.Q",
       "measured": {
         "point": [
-          86.215887,
-          119.882079
+          65.545462,
+          131.427005
         ]
       },
       "message": "Contours glyph.Q.contour.outer and glyph.Q.contour.subpath.3 cross without a declared crossing.",
