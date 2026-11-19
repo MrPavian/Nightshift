@@ -605,7 +605,7 @@
       "specimen_id": "LFA-JHO-001",
       "glyph": "T",
       "status": "glyph_observation_candidate",
-      "note": "Historischer Queue-Verweis ohne korrespondierenden Datensatz in observations.v1.json. Vor einer erneuten Annahme muss die Originalquelle visuell nachgeprüft und ein vollständiger Archivdatensatz angelegt werden."
+      "note": "Bisheriger Verweis ohne belastbaren gespeicherten Einzelglyph-Datensatz; bleibt bis zur erneuten Einzelprüfung Kandidat."
     },
     {
       "id": "QUEUE-GLY-LFA-JOKER-001-O1",
@@ -613,7 +613,7 @@
       "specimen_id": "LFA-JOKER-001",
       "glyph": "O",
       "status": "glyph_observation_candidate",
-      "note": "Historischer Queue-Verweis ohne korrespondierenden Datensatz in observations.v1.json. Vor einer erneuten Annahme muss die Originalquelle visuell nachgeprüft und ein vollständiger Archivdatensatz angelegt werden."
+      "note": "Kein korrespondierendes Specimen und kein Einzelglyph-Datensatz in der kanonischen Beobachtungsdatei; nicht akzeptiert."
     },
     {
       "id": "QUEUE-GLY-BSCI-SEA-2018-C1",
@@ -654,14 +654,110 @@
       "glyph": "X",
       "status": "glyph_observation_candidate",
       "note": "Direkt sichtbare X-Form mit kreuzenden Diagonalen im beschrifteten Raster; noch kein Archivdatensatz in observations.v1.json."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-C1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "C",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-SEA-2018-C1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-D1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "D",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-SEA-2018-D1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-O1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "O",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-SEA-2018-O1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-X1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "X",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-SEA-2018-X1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-ENZOEN-2018-H1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-ENZOEN-2018-01",
+      "glyph": "H",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-ENZOEN-2018-H1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-ENZOEN-2018-T1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-ENZOEN-2018-01",
+      "glyph": "T",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-ENZOEN-2018-T1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-ENZOEN-2018-V1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-ENZOEN-2018-01",
+      "glyph": "V",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-ENZOEN-2018-V1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-XCALET-2018-C1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-XCALET-2018-01",
+      "glyph": "C",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-XCALET-2018-C1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-XCALET-2018-X1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-XCALET-2018-01",
+      "glyph": "X",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-XCALET-2018-X1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-KNOME-2018-T1",
+      "source_id": "ACQ-BSCI-01",
+      "specimen_id": "BSCI-KNOME-2018-ALPHA-01",
+      "glyph": "T",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-KNOME-2018-T1"
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-KNOME-2018-X1",
+      "source_id": "ACQ-BSCI-01",
+      "specimen_id": "BSCI-KNOME-2018-ALPHA-01",
+      "glyph": "X",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-BSCI-KNOME-2018-X1"
+    },
+    {
+      "id": "QUEUE-GLY-LFA-BOMB-046-O1",
+      "source_id": "ACQ-LFA-03",
+      "specimen_id": "LFA-BOMB-046-001",
+      "glyph": "O",
+      "status": "glyph_observation_accepted",
+      "archive_observation_id": "GLY-LFA-BOMB-046-O1"
     }
   ],
   "summary": {
     "page_records": 38,
     "visually_reviewed_page_records": 16,
-    "accepted_glyph_observations": 0,
-    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. Zusätzlich sind 5 direkt geprüfte Einzelglyphen aus dem Bombing-Science-Alphabet-Challenge-Thread vorgemerkt. 16 Seiten/Bildobjekte sind visuell geprüft oder enthalten visuell geprüfte Glyph-Kandidaten; 22 Queue-Leads bleiben ungesichtet.",
-    "source_records_referenced": 10
+    "accepted_glyph_observations": 12,
+    "note": "12 akzeptierte Einzelglyph-Beobachtungen in observations.v1.json. Sie stammen aus 3 unterschiedlichen sourceRecordIds (ACQ-BSCI-01, ACQ-BSCI-02, ACQ-LFA-03); die beiden Bombing-Science-Quellen sind getrennte Threads derselben Plattform. Weitere 2 historische LFA-Queue-Verweise bleiben Kandidaten, bis sie sauber neu geprüft sind.",
+    "source_records_referenced": 9
   },
   "sources_ref": [
     "ACQ-RIJK-01",
