@@ -383,6 +383,21 @@
       ],
       "title": "Bombing Science Forums — Over a decade of handstyle alphabets (knowme)",
       "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/"
+    },
+    {
+      "confidenceRaw": "high for challenge rules, submission attribution and dates; three individual alphabet images directly opened and inspected",
+      "evidenceRaw": "The forum challenge explicitly asks participants to submit a complete alphabet in tags/handstyles only, using a shared printed A–Z sheet. The thread contains submissions by multiple named forum users, each with an individual post and image.",
+      "id": "ACQ-BSCI-02",
+      "institution": "Bombing Science Forums",
+      "nextActionRaw": "Continue inspecting individual submissions on the nine-page thread; record artist, post date, image URL and medium for each. Promote only individually legible glyphs after direct visual inspection.",
+      "rightsRaw": "artist copyright for each submission; link-only; no copying, tracing, embedding or redistribution",
+      "scope": "multi_artist_handstyle_alphabet_challenge_2018",
+      "sourceType": "graffiti_forum_alphabet_challenge",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Bombing Science Forums — Alphabet Challenge (2018)",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
     }
   ]
 }
