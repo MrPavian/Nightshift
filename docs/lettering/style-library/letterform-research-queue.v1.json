@@ -533,6 +533,54 @@
       "reason": "Useful for same-writer variation, but not an independent writer/source. Broad marker strokes overlap cell boundaries, preventing safe isolated-glyph acceptance in this pass.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
       "next_action": "Use only as a same-writer variation comparison; do not count as an independent source or duplicate alphabet evidence."
+    },
+    {
+      "id": "PAGE-BSCI-SEA-2018-01",
+      "source_id": "ACQ-BSCI-02",
+      "title": "Sea — Alphabet Challenge submission",
+      "creator": "Sea",
+      "date_range": "2018-04-24",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227466_2a80ad7efec6d9b16abc4f16a9871f80.jpeg",
+      "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
+      "visual_review_status": "glyph_observation_candidate",
+      "glyph_eligibility": "candidate",
+      "priority": "high",
+      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "rights_status": "Artist copyright; link-only; do not copy or trace.",
+      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+    },
+    {
+      "id": "PAGE-BSCI-ENZOEN-2018-01",
+      "source_id": "ACQ-BSCI-02",
+      "title": "Enzoen (Soen T2K) — Alphabet Challenge submission",
+      "creator": "Enzoen (Soen T2K)",
+      "date_range": "2018-04-24",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227470_d48b06f414da2d977db0d90b73536a93.jpeg",
+      "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
+      "visual_review_status": "glyph_observation_candidate",
+      "glyph_eligibility": "candidate",
+      "priority": "high",
+      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "rights_status": "Artist copyright; link-only; do not copy or trace.",
+      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+    },
+    {
+      "id": "PAGE-BSCI-XCALET-2018-01",
+      "source_id": "ACQ-BSCI-02",
+      "title": "XCALET — Alphabet Challenge submission",
+      "creator": "XCALET",
+      "date_range": "2018-04-24",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227495_6215a4973333688e4c436c3001e432ff.jpeg",
+      "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
+      "visual_review_status": "glyph_observation_candidate",
+      "glyph_eligibility": "candidate",
+      "priority": "high",
+      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "rights_status": "Artist copyright; link-only; do not copy or trace.",
+      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
     }
   ],
   "glyph_observations": [
@@ -551,14 +599,54 @@
       "glyph": "O",
       "status": "glyph_observation_candidate",
       "note": "Historischer Queue-Verweis ohne korrespondierenden Datensatz in observations.v1.json. Vor einer erneuten Annahme muss die Originalquelle visuell nachgeprüft und ein vollständiger Archivdatensatz angelegt werden."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-C1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "C",
+      "status": "glyph_observation_candidate",
+      "note": "Direkt sichtbare C-Form im beschrifteten Raster; vollständige Kontur in der Zelle erkennbar. Noch kein Archivdatensatz in observations.v1.json."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-D1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "D",
+      "status": "glyph_observation_candidate",
+      "note": "Direkt sichtbare D-Form im beschrifteten Raster; Stamm und Bogen visuell unterscheidbar. Noch kein Archivdatensatz in observations.v1.json."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-SEA-2018-O1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-SEA-2018-01",
+      "glyph": "O",
+      "status": "glyph_observation_candidate",
+      "note": "Direkt sichtbare geschlossene O-Form im beschrifteten Raster. Noch kein Archivdatensatz in observations.v1.json."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-ENZOEN-2018-T1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-ENZOEN-2018-01",
+      "glyph": "T",
+      "status": "glyph_observation_candidate",
+      "note": "Direkt sichtbare T-Form mit oberem Querbalken und abwärts geführtem Stamm; noch kein Archivdatensatz in observations.v1.json."
+    },
+    {
+      "id": "QUEUE-GLY-BSCI-XCALET-2018-X1",
+      "source_id": "ACQ-BSCI-02",
+      "specimen_id": "BSCI-XCALET-2018-01",
+      "glyph": "X",
+      "status": "glyph_observation_candidate",
+      "note": "Direkt sichtbare X-Form mit kreuzenden Diagonalen im beschrifteten Raster; noch kein Archivdatensatz in observations.v1.json."
     }
   ],
   "summary": {
-    "page_records": 34,
-    "visually_reviewed_page_records": 12,
+    "page_records": 37,
+    "visually_reviewed_page_records": 15,
     "accepted_glyph_observations": 0,
-    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. 12 Seiten/Bildobjekte sind visuell geprüft, aber nicht glyph-eligible; die übrigen Queue-Einträge bleiben ungesichtet.",
-    "source_records_referenced": 7
+    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. Zusätzlich sind 5 direkt geprüfte Glyph-Kandidaten aus dem Bombing-Science-Alphabet-Challenge-Thread vorgemerkt. 15 Seiten/Bildobjekte sind visuell geprüft oder enthalten visuell geprüfte Glyph-Kandidaten; 22 Queue-Leads bleiben ungesichtet.",
+    "source_records_referenced": 9
   },
   "sources_ref": [
     "ACQ-RIJK-01",
@@ -567,6 +655,8 @@
     "ACQ-FTA-01",
     "ACQ-GETTY-01",
     "ACQ-STREETFONTS-01",
-    "ACQ-BSCI-01"
+    "ACQ-BSCI-01",
+    "ACQ-BSCI-02",
+    "ACQ-LFA-03"
   ]
 }
