@@ -588,3 +588,7 @@
 - PR #19 merged all open Claude work into `main`: editor freeze fix (#10), C02 waves 1–4, C03, Creator 0.1/0.2 (#6, #11–#13, #17, #18), C06 Blackbook Archive (#8) and the Academy A study, A–Z reference sheets and gallery (#14–#16). Tests: 184 passing plus all browser checks.
 - New `docs/STATUS.md` as the single current project state for ChatGPT, Claude and the owner.
 - `AGENTS.md`: shared Git workflow (branch + pull request for code, data, contracts and assets; ChatGPT may commit research/spec documents in `research/` and `docs/` directly to `main`; at most one stacking level, status update per PR, `Agent:` commit trailer); codebase constraints updated to the actual module stack. `CLAUDE.md`, `docs/AI_HANDOFF.md` and `docs/ROADMAP.md` point to the status file.
+
+## 2026-11-19 — Letterform Comparison Library: Gate 0 architecture decision
+
+- `docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md` (proposal): typed sidecar under `research/archive/comparison/` read by the existing archive builder (no Markdown entries, no second app), separate output `data/archive/comparison.v1.de.json`, routes under `#/vergleich` hanging off „Stile & Buchstaben“ and „Bildarchiv“, validation and pilot gate, deterministic migration of the PR #25 manifest (8 review-status and 9 rights spellings mapped to enums; free-text glyphs not migrated), German display fields, test plan. No code, UI or data migration.
