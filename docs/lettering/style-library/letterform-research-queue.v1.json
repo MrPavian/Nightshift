@@ -543,12 +543,12 @@
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
       "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227466_2a80ad7efec6d9b16abc4f16a9871f80.jpeg",
       "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
-      "visual_review_status": "glyph_observation_candidate",
-      "glyph_eligibility": "candidate",
+      "visual_review_status": "glyph_observation_accepted",
+      "glyph_eligibility": "eligible",
       "priority": "high",
-      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "reason": "Direkt geprüfte Einzelglyphen wurden als source-checked in observations.v1.json gespeichert.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
-      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+      "next_action": "Nur weitere klar isolierte Glyphen ergänzen und bestehende Beobachtungen nicht duplizieren."
     },
     {
       "id": "PAGE-BSCI-ENZOEN-2018-01",
@@ -559,12 +559,12 @@
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
       "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227470_d48b06f414da2d977db0d90b73536a93.jpeg",
       "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
-      "visual_review_status": "glyph_observation_candidate",
-      "glyph_eligibility": "candidate",
+      "visual_review_status": "glyph_observation_accepted",
+      "glyph_eligibility": "eligible",
       "priority": "high",
-      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "reason": "Direkt geprüfte Einzelglyphen wurden als source-checked in observations.v1.json gespeichert.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
-      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+      "next_action": "Nur weitere klar isolierte Glyphen ergänzen und bestehende Beobachtungen nicht duplizieren."
     },
     {
       "id": "PAGE-BSCI-XCALET-2018-01",
@@ -575,12 +575,12 @@
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
       "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227495_6215a4973333688e4c436c3001e432ff.jpeg",
       "catalogue_description": "Named forum submission in the 2018 challenge; complete labelled A–Z handstyle sheet directly opened and visually inspected.",
-      "visual_review_status": "glyph_observation_candidate",
-      "glyph_eligibility": "candidate",
+      "visual_review_status": "glyph_observation_accepted",
+      "glyph_eligibility": "eligible",
       "priority": "high",
-      "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
+      "reason": "Direkt geprüfte Einzelglyphen wurden als source-checked in observations.v1.json gespeichert.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
-      "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+      "next_action": "Nur weitere klar isolierte Glyphen ergänzen und bestehende Beobachtungen nicht duplizieren."
     },
     {
       "id": "PAGE-ALT-WOSHE-M-MAMMOUTH",
