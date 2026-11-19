@@ -78,3 +78,28 @@ NIGHTSHIFT inference: split between Block grammar and Blockbuster context, param
 Open: period/region-specific practices and practitioner validation.
 
 Sources: SOURCES.md S1–S7.
+
+
+## Template variants
+
+### T1 — Broad Block
+- **Intent:** robust, squared letter construction with generous counters.
+- **Construction:** build broad stems and bars; use square or clipped joins; adjust each glyph width independently.
+- **Parameters:** stemMass, counterScale, cornerTreatment, barAlignment.
+- **Tests:** A, B, E, M, R; POWER, TRAIN.
+
+### T2 — Angled Block
+- **Intent:** block construction with a controlled slant or directional rhythm.
+- **Construction:** set a shared word angle; retain stable vertical/horizontal relationships inside glyphs; compensate spacing for the slant.
+- **Parameters:** globalSlant, localAngleOverride, stemMass, spacingCompensation.
+- **Guardrail:** do not shear glyphs so far that counters and bars lose their anatomy.
+- **Tests:** A, K, M, N, W; KRAFT, MIND.
+
+### T3 — Monumental Blockbuster Context
+- **Intent:** a large, economical word-block presentation using a chosen Block/Straight grammar.
+- **Construction:** choose a base grammar; establish word block proportions; simplify secondary detail; keep glyph widths anatomy-driven.
+- **Parameters:** blockAspectRatio, density, capHeight, outlineHierarchy, detailBudget.
+- **Guardrail:** scale and coverage are context properties, not proof of a separate letterform grammar.
+- **Tests:** same word at normal and monumental layout scale.
+
+These templates distinguish letter construction from format/context. They are operational NIGHTSHIFT variants.
