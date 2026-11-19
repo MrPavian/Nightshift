@@ -14,10 +14,7 @@
     "specimens": 39
   },
   "migrationVersion": "comparison-migration/1.0.0",
-  "needsConfirmation": [
-    "NGA_catalogue_visual_description_reviewed_image_not_downloadable",
-    "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection"
-  ],
+  "needsConfirmation": [],
   "notMigrated": {
     "glyphObservations": "visible_glyphs is free text in every record; no glyph observation is derived from it",
     "styleTargets": "style_targets (acquisition goals) stay in the legacy snapshot; they are research planning, not archive data"
@@ -93,5 +90,16 @@
       "count": 17,
       "to": "catalogue_metadata_only"
     }
-  }
+  },
+  "confirmedMappings": [
+    {
+      "source": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "count": 5,
+      "target": "catalogue_metadata_only",
+      "status": "confirmed",
+      "confirmedAt": "2026-11-19",
+      "confirmedBy": "ChatGPT research review",
+      "rationale": "All five records rely on the National Gallery of Art catalogue descriptions. The underlying image could not be independently inspected at full resolution; reading or summarizing catalogue prose is not direct visual inspection. These records therefore remain catalogue metadata only and must not count as visually reviewed specimens or glyph evidence."
+    }
+  ]
 }
