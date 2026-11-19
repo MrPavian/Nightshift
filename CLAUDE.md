@@ -101,6 +101,9 @@ Regional histories must not be flattened into an NYC-only origin story. The Ruhr
 - `docs/lettering/style-library/RENDERING_TREATMENTS.md` — independent rendering layer catalogue.
 - `docs/lettering/style-library/styles/` — twelve style cards; all are research/design drafts pending practitioner review.
 - `docs/lettering/style-library/references/SOURCES.md` — expanded source register.
+- `docs/lettering/style-library/PROOF_IMPLEMENTATION_PLAN_01.md` — binding gap audit and staged implementation plan for template proof sheets.
+
+Before adding a new style preset, inspect the resolver contract and proof plan. Never claim a template is rendered or generator-ready based only on its Markdown card.
 
 Do not treat documented templates as generator-ready or historically authenticated. Preserve evidence/inference labels and the originality policy.
 
