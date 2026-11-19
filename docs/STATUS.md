@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 19. November 2026, nach dem Merge von #21 (`main` enthält die vollständige Template-Registry)
+**Stand:** 19. November 2026, nach den Proof- und Research-Commits in den offenen PRs #22, #25 und #26
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -21,7 +21,7 @@
 | **Academy A-Studie** (`letter-study_A_01.svg`, generiert) | implementiert, Layout-QA 0 Probleme | Claude | Owner-Freigabe; B–Z erst danach | Owner: Freigabe A |
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
-| **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung gemergt: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry. Alle Templates bleiben `documented-draft`; Engine-Support ist je Familie ausgewiesen. Resolver weiterhin nur Teilmenge Neutral, Straight, Bubble, Block-fit und Bounce; Wildstyle-Interlocking blockiert durch C04 | ChatGPT (Research/Brief), Claude (Engine) | Phase A gemäß `CLAUDE_TASK_PHASE_A_PROOF_PLATES_01.md`: neutrale, monochrome Proof-Plates für A/B/G/R/S und ABRA; danach Bubble/Straight kalibrieren | Owner: visuelle Sichtung / Praxisreview |
+| **Style Reference Library** (`docs/lettering/style-library/`) | 12 Familien / 38 dokumentierte Templates in `main`; alle bleiben `documented-draft`. Phase-A-Proofs liegen in offenem PR #22; Bubble-/Bounce-Sicherheitskorrektur in offenem, darauf gestapeltem PR #26. Offener Research-PR #25 ergänzt Quellenkarte und erste visuelle Gegenüberstellung von A–Z-Vorlagen (Bubble, Bomb/Throw-up, Tag, Wild/Semi-Wild, 3D/Schatten, Gothic, Block, Angular). Keine Practitioner-Freigabe und keine Generator-Kalibrierung behauptet. | ChatGPT (Research/Brief), Claude (Engine) | Owner-Sichtung der Phase-A/Phase-A-02-Bögen; danach autorisierte Blackbook-/Ink-Outline-Stichprobe und Vergleich wiederkehrender Glyphen über mehrere Writer | Owner: visuelle Sichtung / Praxisreview; rechtekonforme Referenzstichprobe |
 | **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
 
 ## Offene Owner-Entscheidungen
@@ -45,5 +45,5 @@ Erzeugte Berichte prüft die CI zusätzlich mit `--check` (siehe `.github/workfl
 
 ## Repository-Hygiene
 
-- **Offene Pull Requests:** Statusänderung nach Merge #21 wird separat nachgezogen; aktuelle PR-Liste prüfen.
+- **Offene Pull Requests (19.11.):** #22 Phase-A-Proofs; #25 Letterform-Research (dieser Research-Stand); #26 Bubble/Bounce-Sicherheit, gestapelt auf #22. Vor Änderungen an `main` erneut PR-Basen und Merge-Status prüfen.
 - **Alte Branches:** die 16 Branches `claude/*` aus der Zeit vor #19 sind vollständig in `main` enthalten (die drei ältesten über PR #1, #3 bzw. den geschlossenen #2) und können gelöscht werden.
