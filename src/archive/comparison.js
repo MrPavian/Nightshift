@@ -142,6 +142,8 @@ export function buildComparison({ contract, sources, specimens, observations, fi
     inspectedSpecimens: [...specById.values()].filter((s) => ELIGIBLE_STATES.has(s.visualState)).length,
     eligibleGlyphObservations: glyphObs.length,
     glyphSources: glyphSources.size,
+    // Different source records can sit on the same platform or archive; this is the stricter count.
+    glyphInstitutions: new Set([...glyphSources].map((id) => srcById.get(id)?.institution ?? id)).size,
     findings: findingsOut.length,
   };
   const pilotGate = { ...gate, eligible: counts.eligibleGlyphObservations, independentSources: counts.glyphSources, open: counts.eligibleGlyphObservations >= gate.minEligibleGlyphObservations && counts.glyphSources >= gate.minIndependentSources };

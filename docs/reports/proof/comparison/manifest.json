@@ -3,15 +3,15 @@
   "result": "pass",
   "routes": 5,
   "inputs": {
-    "data/archive/comparison.v1.de.json": "d473461377204c08d349494015588cbc86c0c19e5e7202d24e3dd20f75c58d37",
-    "archive/comparison.js": "f34bed8323a8b2170a1e956a15d8bc91d1574ad3d47f419360750399c324fd0f",
+    "data/archive/comparison.v1.de.json": "34496b2297ac719e30c8c4920be4eab3e429c7c320ce8c08dbc0604915d6e57c",
+    "archive/comparison.js": "1d14c0152d36fbb7aed2ccf9f4e1b3a1cedf81252f4f3c6253ebd9ab413cca44",
     "archive/app.js": "fbfac0698c8d287da6b2c5d7cf51212c1d6a5ed3a3458ef07282dbe011b656cd"
   },
   "screenshots": {
-    "landing-phone.png": "7c54b6315ec12e7e7d3b3141fd7762eb236338aa75eee003bdfc6e06d1e5cf8f",
-    "browser-phone.png": "33eaeaf356695d5c614ef53ea998e0ee8995eb4babfb6200c7bda657fd5e9290",
-    "browser-tablet.png": "ad0ba65e7c49ff7f53320465f94f6dabe372b4a83ea5e15201865309c67c85a2",
-    "detail-desktop.png": "dc55a91f2f8284d1342393d9e6a9f3515a63a32a79874495693722b9fdfe35cb",
+    "landing-phone.png": "a4b609d7df0878a6f619d9851b8816ad48780661fa59cdd723a4f297f87b875b",
+    "browser-phone.png": "53f75fa818fe5dcce75e340d6e2434bcf24f1a8c18233768f6ba2e85586b1fb9",
+    "browser-tablet.png": "8b8de1e162c4f79102f36f42e0217c40342e05570a248ffaae71b3ecdbfdb519",
+    "detail-desktop.png": "684b05d623d7deacb11d97a973597a47d1e3cda9172863f5184fe9c6d77e9b81",
     "detail-phone-catalogue-only.png": "06f8f10635300d56f8ceb00bff5242b002aa363b8573f5c0a2c69d10d42c6491"
   }
 }

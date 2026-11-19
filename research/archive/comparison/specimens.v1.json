@@ -1613,14 +1613,12 @@
       "date": "2018",
       "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
+      "id": "BSCI-KNOME-2018-ALPHA-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as 2018 effort",
       "imageRights": "do-not-reuse",
       "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
       "photographerName": null,
       "place": null,
-      "sourceRecordId": "ACQ-BSCI-01",
-      "visualState": "hi_fi_image_opened_and_inspected",
-      "id": "BSCI-KNOME-2018-ALPHA-01",
-      "identifier": "Bombing Science Forums post #1, image captioned as 2018 effort",
       "raw": {
         "candidateGrammarTags": [
           "tag_handstyle"
@@ -1647,7 +1645,9 @@
         "whatNotToCopy": "Do not trace the alphabet, tag, individual letter contours or page layout.",
         "wordCompositionNotes": "Alphabet drill rather than a word piece; the separate tag should not be conflated with the A–Z samples."
       },
-      "title": "knowme — 2018 handstyle alphabet"
+      "sourceRecordId": "ACQ-BSCI-01",
+      "title": "knowme — 2018 handstyle alphabet",
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-19",
@@ -1657,14 +1657,12 @@
       "date": "2018",
       "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
+      "id": "BSCI-KNOME-2018-REJECT-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as reject pile",
       "imageRights": "do-not-reuse",
       "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
       "photographerName": null,
       "place": null,
-      "sourceRecordId": "ACQ-BSCI-01",
-      "visualState": "hi_fi_image_opened_and_inspected",
-      "id": "BSCI-KNOME-2018-REJECT-01",
-      "identifier": "Bombing Science Forums post #1, image captioned as reject pile",
       "raw": {
         "candidateGrammarTags": [
           "tag_handstyle"
@@ -1691,7 +1689,9 @@
         "whatNotToCopy": "Do not trace the alphabet, tag, individual letter contours or page layout.",
         "wordCompositionNotes": "Rejected alternative by the same writer; not an independent source or writer."
       },
-      "title": "knowme — 2018 rejected handstyle alphabet"
+      "sourceRecordId": "ACQ-BSCI-01",
+      "title": "knowme — 2018 rejected handstyle alphabet",
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-19",
@@ -1863,7 +1863,8 @@
         "wordCompositionNotes": "This is a didactic book spread, not a standalone blackbook alphabet page."
       },
       "sourceRecordId": "ACQ-ALT-01",
-      "title": "Woshe — M le Mammouth instructional spread"
+      "title": "Woshe — M le Mammouth instructional spread",
+      "visualState": "hi_fi_image_opened_and_inspected"
     }
   ]
 }
