@@ -349,6 +349,25 @@
       ],
       "title": "Getty Research Institute — LA Liber Amicorum / Getty Graffiti Black Book",
       "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html"
+    },
+    {
+      "confidenceRaw": "high for publication scope, artist count, standardized alphabet brief and bibliographic provenance; individual letterform inspection requires access to the printed pages",
+      "evidenceRaw": "Claudia Walde (MadC) spent over two years collecting alphabets by 154 artists from 30 countries. Each contributor was asked to design all 26 Latin letters within one book page. The publisher describes the results as original alphabets spanning sketches, sculpture, digital art and photography. Bibliographic details are corroborated by Google Books, Thames & Hudson and the German Prestel edition.",
+      "id": "ACQ-STREETFONTS-01",
+      "institution": "Thames & Hudson / Prestel; curated by Claudia Walde (MadC)",
+      "nextActionRaw": "Obtain a physical or legitimate digital copy and inspect artist pages directly. Build an artist-to-page index from the contents list, then sample repeated glyphs (A, B, E, R, S, T) across distinct artists. Record the work as an authored alphabet specimen, distinguishing hand-drawn, digital, sculptural and photographic approaches.",
+      "rightsRaw": "Copyright held by individual artists and publisher; book access does not grant reproduction rights; link-only and no scanning/copying into repo without permission",
+      "scope": "154_complete_A_to_Z_alphabets_by_artists_from_30_countries",
+      "sourceType": "curated_published_graffiti_alphabet_compendium",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Street Fonts — Graffiti Alphabets from Around the World (Claudia Walde / MadC)",
+      "url": "https://www.thamesandhudson.com/products/street-fonts"
     }
   ]
 }
