@@ -123,8 +123,8 @@
   "summary": {
     "page_records": 6,
     "visually_reviewed_page_records": 0,
-    "accepted_glyph_observations": 0,
-    "note": "The queue has been expanded with stable, catalogue-backed page leads. No glyph observations are claimed because page images were not available for direct visual inspection in this pass.",
+    "accepted_glyph_observations": 1,
+    "note": "One directly inspected glyph observation is accepted and referenced by archive ID only; the observation record itself is stored in research/archive/comparison/observations.v1.json. Six additional page-level leads remain uninspected.",
     "source_records_referenced": 4
   },
   "sources_ref": [
