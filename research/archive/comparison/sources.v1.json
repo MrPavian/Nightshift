@@ -415,6 +415,25 @@
       ],
       "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
       "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
+    },
+    {
+      "confidenceRaw": "high for project scope, access model and published rights statement; individual example provenance is limited to the annotation manual",
+      "evidenceRaw": "The University of Paderborn and Karlsruhe Institute of Technology describe INGRID as a research database containing more than 100,000 digitized and annotated graffiti photographs from 1980 onward. The public project page provides direct image examples and a freely accessible database login. INGRID states that publicly available photographs are licensed CC BY-SA for scientific use; this record uses only links and does not copy images.",
+      "id": "ACQ-INGRID-01",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "nextActionRaw": "Prioritize publicly viewable individual INGRID records with stable identifiers and sufficiently clear lettering; retain item-level credits and rights notes and accept only individually visible A–Z glyphs.",
+      "rightsRaw": "INGRID states that public photographs are CC BY-SA for scientific use; check item-level credit and conditions. NIGHTSHIFT stores page links only and does not copy, embed or trace third-party images.",
+      "scope": "100000_plus_annotated_graffiti_photographs_1980_to_present",
+      "sourceType": "university_research_graffiti_image_database",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "tag_handstyle"
+      ],
+      "title": "INGRID — Informationssystem Graffiti in Deutschland",
+      "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid"
     }
   ]
 }
