@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "item_level_records_added_with_limited_visual_previews;_full_image_access_and_rights_pending",
+  "corpus_status": "17_item_level_records_plus_1_NGA_visual_description_specimen;_full_image_access_and_rights_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -651,6 +651,39 @@
       "visual_review_status": "catalogue_description_and_search_preview_reviewed_full_resolution_not_available",
       "what_not_to_copy": "Do not reproduce the message-piece layout, letter sequence or distinctive symbol system.",
       "confidence": "high for object metadata; medium for broad composition notes; low for style-family assignment"
+    },
+    {
+      "specimen_id": "NGA-HC-003",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173342-mad-seen",
+      "archive_title": "Mad Seen",
+      "creator_or_writer": "MAD / SEEN (catalogue title and image description; individual writer attribution should not be assumed from title alone)",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1980",
+      "place": "unknown",
+      "identifier": "NGA object 173342",
+      "dimensions": "unknown",
+      "visible_glyphs": "MAD SEEN (NGA visual description)",
+      "candidate_grammar_tags": [
+        "large_scale_piece",
+        "dimensional_lettering",
+        "multi-layer_composition"
+      ],
+      "execution_format": "subway train-car piece documented photographically",
+      "composition_mode": "large horizontal lettering with cartoon figure, tags and secondary writing",
+      "rendering_treatment": [
+        "orange and pink fill",
+        "black outline",
+        "white wavy upper contour transitioning to yellow flame-like motif",
+        "three-dimensional effect",
+        "cartoon figure"
+      ],
+      "letter_anatomy_notes": "NGA visual description confirms large bold MAD SEEN lettering with a three-dimensional effect and strong black outlines. It does not expose enough construction detail to specify individual glyph skeletons, counters or terminals.",
+      "word_composition_notes": "Central name lettering dominates the train side; cartoon figure, upper flame-like motif and smaller tags/notes form separate secondary layers.",
+      "rights_status": "NGA media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "NGA_catalogue_visual_description_reviewed_image_not_downloadable",
+      "what_not_to_copy": "Do not trace the MAD SEEN letterforms, name, character, flame motif or complete train-car composition.",
+      "confidence": "high for catalogue description; medium for composition layers; low for specific letterform grammar"
     }
   ]
 }
