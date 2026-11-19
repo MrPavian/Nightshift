@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "30_item_level_records;_6_images_visually_inspected_in_total_including_1_explicitly_labelled_throw_up;_four_Letterform_Archive_correspondence_pages_and_two_Spel_images_inspected;_rights_clearance_pending",
+  "corpus_status": "33_item_level_records;_9_objects_visually_inspected;_1_explicitly_labelled_throw_up;_two_new_piece_images_and_one_freight_piece_inspected;_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -1017,6 +1017,91 @@
       "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
       "confidence": "high for visible layout; medium for handstyle/tag observations; low for named style-family assignment"
+    },
+    {
+      "specimen_id": "LFA-PIECE-001",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/edec-sketch",
+      "archive_title": "Edec Sketch",
+      "creator_or_writer": "Edec (writer)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "circa 1994",
+      "place": "Miami, Florida, USA",
+      "identifier": "Letterform Archive — Community Service",
+      "visible_glyphs": "Large multicolour piece sketch across a horizontal field; angular interlocking letter masses, broad dimensional side planes, dark shadow/outline areas, scattered small stars/arrows and surrounding tags.",
+      "candidate_grammar_tags": [
+        "piece_sketch",
+        "angular_interlocking_letters",
+        "3d_block_lettering_candidate"
+      ],
+      "execution_format": "ink on paper sketch",
+      "composition_mode": "A wide horizontal central piece dominates the page, with smaller tags and doodles distributed around it. Colour fills and dimensional side planes are separate from the base silhouette.",
+      "rendering_treatment": [
+        "multicolour fill and outline treatment visible; specific paint sequence not inferred"
+      ],
+      "letter_anatomy_notes": "The central word is built from broad angular polygonal masses with deep extruded side planes and strong internal overlaps. Letters share a continuous baseline and interlock. Internal counters and exact glyph skeletons require further close study; do not assume a particular named style from this single sketch.",
+      "word_composition_notes": "A wide horizontal central piece dominates the page, with smaller tags and doodles distributed around it. Colour fills and dimensional side planes are separate from the base silhouette.",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace letter paths, exact word, colour arrangement, tags, arrows or complete composition.",
+      "confidence": "high for image-visible composition and broad geometry; medium for construction hypotheses; style-family label unassigned"
+    },
+    {
+      "specimen_id": "LFA-FREIGHT-001",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/king-157-blue-boxcar",
+      "archive_title": "King 157 Blue Boxcar",
+      "creator_or_writer": "King 157 (writer / photographer credit as catalogue)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "1995",
+      "place": "Gilroy, California, USA",
+      "identifier": "Letterform Archive — Community Service",
+      "visible_glyphs": "Large multicolour geometric piece on a blue freight car; angular outlined letter masses, narrow bar-like extensions and several arrow forms. Additional tags appear on the left-side ladder and above the piece.",
+      "candidate_grammar_tags": [
+        "freight_piece",
+        "angular_lettering",
+        "arrows",
+        "thin_bars"
+      ],
+      "execution_format": "freight train photograph",
+      "composition_mode": "The piece spans the side of a blue boxcar. Train hardware, ladder, stencils and tags remain visible and create substrate constraints.",
+      "rendering_treatment": [
+        "multicolour fill and outline treatment visible; specific paint sequence not inferred"
+      ],
+      "letter_anatomy_notes": "Large angular letter bodies with straight segments and sharp directional corners; thin bar-like extensions and arrows are integrated around the primary word. The exact letter sequence is partly cropped in the displayed photograph. Do not label Wildstyle solely because arrows and extensions are present.",
+      "word_composition_notes": "The piece spans the side of a blue boxcar. Train hardware, ladder, stencils and tags remain visible and create substrate constraints.",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace letter paths, exact word, colour arrangement, tags, arrows or complete composition.",
+      "confidence": "high for catalogue facts and image-visible features; medium for broad anatomy; style-family label unassigned"
+    },
+    {
+      "specimen_id": "LFA-PROD-001",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/sane-production",
+      "archive_title": "Sane Production",
+      "creator_or_writer": "Sane (writer); Sax (photographer)",
+      "photographer_or_archive_credit": "Sax (photographer)",
+      "date": "1990",
+      "place": "New York, USA",
+      "identifier": "Letterform Archive — Community Service",
+      "visible_glyphs": "Two adjacent wall pieces shown in a wide photograph: pale upper lettering with dark outlines and red accents; lower pieces include broad dark fills, white internal structures and orange/red outlines. Figures and smaller text occupy gaps and surrounding wall.",
+      "candidate_grammar_tags": [
+        "wall_production",
+        "multi_piece_composition",
+        "lettering_with_figures"
+      ],
+      "execution_format": "wall production photograph",
+      "composition_mode": "Wide multi-piece wall production with separate upper and lower zones, figures and text integrated into the gaps; brick wall and adjacent street context are visible.",
+      "rendering_treatment": [
+        "multicolour fill and outline treatment visible; specific paint sequence not inferred"
+      ],
+      "letter_anatomy_notes": "The photograph shows multiple independent letter systems and treatments across a shared wall. Individual glyph construction varies between pieces; this is not a single alphabet specimen. Treat as a composition-level reference only.",
+      "word_composition_notes": "Wide multi-piece wall production with separate upper and lower zones, figures and text integrated into the gaps; brick wall and adjacent street context are visible.",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace letter paths, exact word, colour arrangement, tags, arrows or complete composition.",
+      "confidence": "high for photograph and catalogue metadata; low for isolated glyph anatomy"
     }
   ]
 }
