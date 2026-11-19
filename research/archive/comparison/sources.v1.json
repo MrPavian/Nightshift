@@ -368,6 +368,21 @@
       ],
       "title": "Street Fonts — Graffiti Alphabets from Around the World (Claudia Walde / MadC)",
       "url": "https://www.thamesandhudson.com/products/street-fonts"
+    },
+    {
+      "confidenceRaw": "high for forum provenance and author chronology; direct visual inspection completed for the two linked 2018 alphabet sheets",
+      "evidenceRaw": "A named forum member presents multiple personal handstyle alphabets over time. The post explicitly labels one sheet as the writer's 2018 effort and a second as a rejected alternative; both linked images are directly viewable. The thread also documents earlier alphabet attempts from 2005 onward.",
+      "id": "ACQ-BSCI-01",
+      "institution": "Bombing Science Forums",
+      "nextActionRaw": "Use the two 2018 A–Z sheets as a single-writer handstyle development specimen; inspect isolated labelled glyphs only where the full contour is clearly separable. Search the same forum for other writers' independent alphabet sheets.",
+      "rightsRaw": "artist copyright; link-only; do not copy, trace, embed or redistribute images",
+      "scope": "single_writer_handstyle_alphabets_2005_to_2019",
+      "sourceType": "graffiti_forum_writer_alphabet_thread",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Bombing Science Forums — Over a decade of handstyle alphabets (knowme)",
+      "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/"
     }
   ]
 }
