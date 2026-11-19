@@ -83,3 +83,27 @@ NIGHTSHIFT inference: relationship graph, parameters, legibility modes, anchor r
 Open: exact regional/period grammar and practitioner review.
 
 Sources: SOURCES.md S1, S4, S5, S8, S9.
+
+
+## Template variants
+
+### T1 — Open Wildstyle
+- **Intent:** introduce directional extensions and selected connections while keeping the skeleton easy to trace.
+- **Construction:** retain independent glyphs as a base; add a small number of anchored extensions; declare every join.
+- **Parameters:** extensionComplexity, connectionDensity, abstractionBudget, negativeSpaceProtection.
+- **Tests:** AB, AR, BA, RA, GHOST.
+
+### T2 — Interlocked Wildstyle
+- **Intent:** dense structural relationships across several glyphs.
+- **Construction:** build a word-level relationship graph; classify attachments, overlaps, crossings, continuations, near-contacts and shared contours; set crossing order.
+- **Parameters:** interlockDepth, acceptedJoinCount, crossingPolicy, sharedContourPolicy.
+- **Tests:** KRAZE, SQUE, MIND, dense five-letter fictional name.
+
+### T3 — Abstract Wildstyle
+- **Intent:** stronger abstraction while retaining deliberate anchors and negative-space logic.
+- **Construction:** document base glyph evidence; select intentional transformations; preserve protected channels; label any purely decorative marks.
+- **Parameters:** abstractionBudget, glyphTraceability, directionalFlow, negativeSpaceProtection.
+- **Guardrail:** do not claim readability where letter evidence has intentionally disappeared.
+- **Tests:** same word in Open, Balanced and Abstract modes.
+
+These are NIGHTSHIFT operational modes, not universal historical substyles.
