@@ -389,6 +389,102 @@
       "reason": "The directly opened crop shows overlapping, crossing wildstyle strokes and partial letter structures, but no isolated glyph can be transcribed defensibly from this crop. It is a derivative crop of the same underlying work and must not be counted as an independent observation or source.",
       "rights_status": "Copyright Full Time Artists / Highground Industries; link-only; unauthorized duplication prohibited",
       "next_action": "Use only for cross-reference to the original sketch; do not create a second specimen or independent glyph record from the crop."
+    },
+    {
+      "id": "PAGE-GETTY-AXIS-001",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — Axis",
+      "creator": "Axis",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_001_Axis.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The gallery preview contains a hand-lettered phrase with illustrative elements. At the available mosaic-preview resolution, individual glyph structure cannot be reliably isolated for a defensible A–Z observation.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-GETTY-ACME-002",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — Acme",
+      "creator": "Acme",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_002_Acme.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The gallery preview shows a dense angular interwoven composition. At the available mosaic-preview resolution, letter boundaries overlap and individual glyphs cannot be isolated confidently.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-GETTY-AISEBORN-004",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — AiseBorn",
+      "creator": "AiseBorn",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_004_AiseBorn.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The artist page was opened from the Getty gallery, but the available preview is too small for reliable individual glyph transcription in this pass.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-GETTY-ANGST-005",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — Angst",
+      "creator": "Angst",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_005_Angst.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The gallery preview shows repeated outlined letter structures within a dense composition, but the mosaic size does not support reliable isolation and transcription of individual glyphs.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-GETTY-CRIME-027",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — Crime (Rick One)",
+      "creator": "Crime (Rick One)",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_027_Crime_RickOne.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The gallery preview shows a dense multicolour wildstyle composition with heavily overlapping letter structures; individual glyph boundaries are not reliably separable at the available preview resolution.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-GETTY-DEFER-030",
+      "source_id": "ACQ-GETTY-01",
+      "title": "LA Liber Amicorum — Defer",
+      "creator": "Defer",
+      "date_range": "2012–2013",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "image_url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/images/mosaic/gri_2013_m_8_030_Defer.jpg",
+      "catalogue_description": "Individual artist work listed in the Getty Research Institute's LA Liber Amicorum / Getty Graffiti Black Book gallery.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The gallery preview shows a monochrome, highly interwoven composition. Individual letter boundaries are too entangled at the available preview resolution for reliable A–Z transcription.",
+      "rights_status": "Copyright held by contributing artist; link-only",
+      "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
     }
   ],
   "glyph_observations": [
@@ -412,17 +508,18 @@
     }
   ],
   "summary": {
-    "page_records": 25,
-    "visually_reviewed_page_records": 4,
+    "page_records": 31,
+    "visually_reviewed_page_records": 10,
     "accepted_glyph_observations": 2,
-    "note": "Two directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 4 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
-    "source_records_referenced": 5
+    "note": "2 directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 10 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
+    "source_records_referenced": 6
   },
   "sources_ref": [
     "ACQ-RIJK-01",
     "ACQ-FTA-01",
     "ACQ-FTA-02",
     "ACQ-DGL-01",
-    "ACQ-ARTCRIMES-01"
+    "ACQ-ARTCRIMES-01",
+    "ACQ-GETTY-01"
   ]
 }
