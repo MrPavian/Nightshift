@@ -293,6 +293,35 @@
       "reviewNoteDe": "Claude-Prüfung 19.11.2026 am deutschen Original (INGRID_Manual_Oktober_2019.pdf, gedruckte S. 62; eingebettetes Bild 523×150 px): Die Form ist stark abstrahiert (großer oberer Rundbogen mit Punkt, unten waagerechte Balken) und nur über die Transkription des Manuals als S lesbar; die Angabe „oberer Bogen kleiner als der untere“ trifft nicht zu. Lesbarkeit als Einzelglyph nicht belastbar; als Entwurf geführt.",
       "specimenId": "INGRID-MANUAL-REMS-01",
       "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "open-counter",
+        "curved-stroke",
+        "tapered-terminals",
+        "monoline"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-SKU2ER-2018-C1",
+      "legibility": "high",
+      "observationDe": "Das C ist als offener, nach rechts geöffneter Bogen ausgeführt. Die beiden Enden laufen spitz zu; die Kontur bleibt innerhalb des beschrifteten Feldes klar vom Nachbarfeld getrennt.",
+      "specimenId": "BSCI-SKU2ER-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "diagonal-cross",
+        "no-counter",
+        "monoline"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-SKU2ER-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
+      "specimenId": "BSCI-SKU2ER-2018-01",
+      "transcriptionConfidence": "high"
     }
   ],
   "objectObservations": [],
