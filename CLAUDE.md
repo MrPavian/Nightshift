@@ -473,3 +473,29 @@ The current A SVG was fetched from the repository, rendered at 1680 × 1188 (A4 
 - The grain filter is subtle; test in the actual PDF export path and retain a clean print variant if filter support or contrast is inconsistent.
 
 Next: perform a 100% crop inspection of panels 2, 4 and 8, refine the construction sequence and graffiti examples if necessary, then export a print proof. Do not start B before owner approval.
+
+
+### Style Reference Library — initial release (19 November 2026)
+
+A new construction-first reference library has been created for Claude and the NIGHTSHIFT Letter Construction Academy.
+
+**Library root:** `docs/lettering/style-library/`
+
+Initial files:
+- `README.md` — entry point, scope and use.
+- `STYLE_TAXONOMY.md` — separates letterform grammar, composition grammar, practice/format context and rendering treatment.
+- `STYLE_COMPARISON_MATRIX.md` — controlled monochrome A comparison for Bubble, Block/Blockbuster and Wildstyle.
+- `QUALITY_CONTROL.md` — review gates, scoring rubric and failure flags.
+- `styles/bubble.md` — original construction-first style card.
+- `styles/blockbuster.md` — separates Block letterform construction from Blockbuster context.
+- `styles/wildstyle.md` — models Wildstyle as a word-level relationship/composition grammar.
+- `references/SOURCES.md` — research source register.
+- `references/IMAGE_REFERENCE_INDEX.md` — external alphabet sources, inspection guidance and rights cautions.
+
+**Research/engineering basis:** extends rather than replaces `research/STYLE_GRAMMAR_SPECIFICATIONS_01.md`, `research/STYLE_GRAMMAR_COMPATIBILITY_AND_PARAMETERS.md`, and the Academy master prompt. The existing taxonomy warning is binding: Bubble, Throw-up, Blockbuster, Wildstyle and 3D do not all belong to the same classification axis.
+
+**Research sources added to the register:** Kunstmuseum Stuttgart / StadtPalais glossary; GraffSpace A–Z; Graffiti-Letters.com twelve-style alphabet; Graffiti Art structure and style lessons; Gottlieb (2006); Macdonald (2001); Austin (2001); DAIM interview (2023); New-York Historical Society TRACY 168 object record; Graffiti Archaeography thesis; Auer Verlag teaching sample. These sources have different evidence levels and are not interchangeable.
+
+**Rights:** external images are linked, not copied. Public access or personal-use permission is not a NIGHTSHIFT commercial reuse license. All generated letterforms remain original and must not reproduce identifiable writers, crews, tags, signatures or existing pieces.
+
+**Status:** initial documentation created; not yet practitioner-approved, not yet a complete twelve-style library, and no generator implementation is implied. First validation task is a monochrome A comparison across the three cards, followed by representative glyph tests.
