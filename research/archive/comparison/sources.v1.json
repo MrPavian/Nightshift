@@ -398,6 +398,23 @@
       ],
       "title": "Bombing Science Forums — Alphabet Challenge (2018)",
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
+    },
+    {
+      "confidenceRaw": "high for publisher/blog bibliographic description and directly viewed sample pages; individual glyph anatomy not accepted from this preview",
+      "evidenceRaw": "All City Blog links a publicly accessible 11-page PDF excerpt of the 2013 updated edition of Woshe's Blackbook. The preview includes cover, contents, introductory material and selected instructional/lettering spreads.",
+      "id": "ACQ-ALT-01",
+      "institution": "Éditions Alternatives / All City Blog",
+      "nextActionRaw": "Use the public excerpt to map the book's didactic method and visible examples; do not infer unseen pages or treat promotional preview images as a complete alphabet. Search for further openly accessible sample spreads.",
+      "rightsRaw": "Copyright Woshe / Éditions Alternatives; link-only; preview access does not grant image reuse or tracing rights",
+      "scope": "public_11_page_excerpt_of_2013_blackbook",
+      "sourceType": "publisher_book_preview",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "wildstyle_semi_wildstyle",
+        "tag_handstyle"
+      ],
+      "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
+      "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
     }
   ]
 }
