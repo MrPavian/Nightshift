@@ -220,6 +220,19 @@
       ],
       "observationDe": "Die Seite ist ausdrücklich mit „M le Mammouth“ überschrieben und zeigt mehrere voneinander getrennte M-Konstruktionen. Die Beispiele besitzen breite, kantig geführte Außenkonturen, deutlich betonte Diagonalzüge und teils weit ausgezogene Enden. Der Begleittext beschreibt die visuelle Masse des M und thematisiert, wie Einschnitte diese Masse rhythmisch aufbrechen können. Erfasst wird die sichtbare M-Formfamilie dieser Seite, keine nachzuzeichnende Einzelvorlage.",
       "editorialState": "source-checked"
+    },
+    {
+      "id": "GLY-HOAKI-WOSHE-C1",
+      "specimenId": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "glyph": "C",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Seite ist ausdrücklich mit „C/c“ überschrieben. Die gezeigte Großbuchstabenform besitzt eine nach rechts offene Kontur; ihre Enden sind kantig und unterschiedlich weit ausgezogen. Daneben steht eine zweite, stärker gerundete und verschlungene C-Variante. Beide Formen sind auf der Seite getrennt dargestellt und eindeutig dem Buchstaben C zugeordnet.",
+      "editorialState": "source-checked"
     }
   ],
   "objectObservations": [],
