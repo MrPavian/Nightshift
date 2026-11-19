@@ -609,3 +609,11 @@
 ## 2026-11-19 — Letterform Comparison Library: Gate 0 architecture decision
 
 - `docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md` (proposal): typed sidecar under `research/archive/comparison/` read by the existing archive builder (no Markdown entries, no second app), separate output `data/archive/comparison.v1.de.json`, routes under `#/vergleich` hanging off „Stile & Buchstaben“ and „Bildarchiv“, validation and pilot gate, deterministic migration of the PR #25 manifest (8 review-status and 9 rights spellings mapped to enums; free-text glyphs not migrated), German display fields, test plan. No code, UI or data migration.
+
+## 2026-11-19 — Letterform Comparison Library: Gate 1 (data contract) and Gate 2 (object browser)
+
+- Contract `contracts/letterform-comparison.v1.json`; typed sidecar `research/archive/comparison/` (sources, specimens, observations, findings) migrated once and deterministically from the PR #25 manifest (`legacy/` snapshot, `MIGRATION_REPORT_01.json`): 18 sources, 39 specimens, review status (8 spellings) and rights (9 spellings) mapped to enums, credits/dates/places/identifiers structured, every original value kept in `raw`.
+- `src/archive/comparison.js` validates IDs, references, enums, glyph eligibility, source independence, rights (no image URLs, no embedding without clearance), German display text and capability links; `tools/archive-build.mjs` writes and checks `data/archive/comparison.v1.de.json` (display fields only).
+- Archive UI: `#/vergleich` (overview, counts, pilot-gate status), `#/vergleich/fundstuecke` (search and filters by review state, archive, decade, place, rights), `#/vergleich/fundstueck/<id>` (provenance, status, „Originalquelle öffnen“; no third-party image). Entry points from „Stile & Buchstaben“ and „Bildarchiv“; offline cache v3.
+- Tests: `tests/archive-comparison.test.js` (13); archive smoke covers the new routes (phone/desktop, filters, search, no images, original-source link). Proof screenshots `docs/reports/proof/comparison/`; C06 proof re-captured.
+- Glyph comparison (Gate 3) stays closed: 0 eligible glyph observations. Nothing was inferred from free-text notes.

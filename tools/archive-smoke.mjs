@@ -31,6 +31,33 @@ try {
   const none = await state(`${base}archive/index.html?nosw&selftest#/suche?q=zzzz`);
   if (none.results !== 0 || !none.ready) fails.push('empty search state');
 
+  // ---- letterform comparison library (Gate 2: object browser) ----
+  const C = JSON.parse(readFileSync('data/archive/comparison.v1.de.json', 'utf8'));
+  const inspected = C.specimens.filter((s) => s.visualState === 'hi_fi_image_opened_and_inspected');
+  const metaOnly = C.specimens.find((s) => s.visualState === 'catalogue_metadata_only');
+  const cmpRoutes = ['/vergleich', '/vergleich/fundstuecke', `/vergleich/fundstueck/${inspected[0].id}`, `/vergleich/fundstueck/${metaOnly.id}`, '/vergleich/fundstueck/GIBT-ES-NICHT'];
+  const dom = async (url, size = '360,800') => chrome([`--window-size=${size}`, '--virtual-time-budget=6000', '--dump-dom', url], { timeout: 180000 });
+  for (const r of cmpRoutes) {
+    const d = await dom(`${base}archive/index.html?nosw&selftest#${r}`);
+    const st = JSON.parse(preText(d, 'selftest') ?? '{}');
+    if (!st.ready || st.errors?.length) fails.push(`${r}: not ready or errors ${JSON.stringify(st.errors)}`);
+    if (st.overflow > 0) fails.push(`${r}: horizontal overflow ${st.overflow}px at 360px`);
+    if (!st.comparison) fails.push(`${r}: comparison data not loaded`);
+    if (/<img\b/i.test(d.split('<main')[1] ?? '')) fails.push(`${r}: an image is embedded`);
+    if (!/aria-current="page"[^>]*>Stile/.test(d) && !/data-nav="stile" aria-current="page"/.test(d)) fails.push(`${r}: navigation does not mark „Stile & Buchstaben“`);
+    if (r.includes(inspected[0].id) && !d.includes(`href="${inspected[0].itemUrl.replace(/&/g, '&amp;')}"`)) fails.push(`${r}: original source link missing`);
+    if (r.endsWith('GIBT-ES-NICHT') && !d.includes('Diesen Eintrag gibt es nicht')) fails.push(`${r}: missing specimen not reported`);
+  }
+  const filtered = await state(`${base}archive/index.html?nosw&selftest#/vergleich/fundstuecke?sichtung=hi_fi_image_opened_and_inspected`);
+  if (filtered.results !== inspected.length) fails.push(`filter Sichtung returned ${filtered.results}, expected ${inspected.length}`);
+  const chalfant = C.specimens.filter((s) => /chalfant/i.test(s.photographerName ?? '')).length;
+  const searched = await state(`${base}archive/index.html?nosw&selftest#/vergleich/fundstuecke?q=chalfant`);
+  if (searched.results !== chalfant) fails.push(`search „chalfant“ returned ${searched.results}, expected ${chalfant}`);
+  const cmpNone = await state(`${base}archive/index.html?nosw&selftest#/vergleich/fundstuecke?q=zzzz`);
+  if (cmpNone.results !== 0) fails.push('comparison empty search state');
+  const cmpDesk = await state(`${base}archive/index.html?nosw#/vergleich/fundstuecke`, '1280,900');
+  if (cmpDesk.overflow > 0 || cmpDesk.errors?.length) fails.push('comparison desktop view');
+
   let bridges = 0;
   for (const [id, cap] of Object.entries(BRIDGE_CAPABILITIES).filter(([, c]) => c.status === 'available')) {
     const params = cap.params.glyph ? { glyph: 'G' } : cap.params.word ? { word: 'GRAB' } : {};
@@ -61,6 +88,16 @@ try {
     }
     const inputs = Object.fromEntries(['data/archive/archive.v1.de.json', 'archive/index.html', 'archive/app.js', 'archive/app.css', 'src/bridge/editor-bridge.js'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
     writeFileSync(`${dir}/manifest.json`, JSON.stringify({ package: 'C06', result: 'pass', routes: routes.length, claimSheets: sheets, bridgeTargets: bridges, inputs, screenshots: out }, null, 2) + '\n');
+    const cdir = 'docs/reports/proof/comparison';
+    mkdirSync(cdir, { recursive: true });
+    const cshots = [['landing-phone', '/vergleich', '390,1400'], ['browser-phone', '/vergleich/fundstuecke', '390,2400'], ['browser-tablet', '/vergleich/fundstuecke?sichtung=hi_fi_image_opened_and_inspected', '820,1600'], ['detail-desktop', `/vergleich/fundstueck/${inspected[0].id}`, '1280,1100'], ['detail-phone-catalogue-only', `/vergleich/fundstueck/${metaOnly.id}`, '390,1500']];
+    const cout = {};
+    for (const [name, hash, size] of cshots) {
+      await chrome([`--window-size=${size}`, '--virtual-time-budget=6000', `--screenshot=${cdir}/${name}.png`, `${base}archive/index.html?nosw#${hash}`], { timeout: 180000 });
+      cout[`${name}.png`] = createHash('sha256').update(rf(`${cdir}/${name}.png`)).digest('hex');
+    }
+    const cinputs = Object.fromEntries(['data/archive/comparison.v1.de.json', 'archive/comparison.js', 'archive/app.js'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
+    writeFileSync(`${cdir}/manifest.json`, JSON.stringify({ package: 'letterform-comparison Gate 2', result: 'pass', routes: cmpRoutes.length, inputs: cinputs, screenshots: cout }, null, 2) + '\n');
     console.log(`Wrote ${dir}/manifest.json and ${shots.length} screenshots`);
   }
   const summary = { routes: routes.length, claimSheets: sheets, bridgeTargets: bridges, fails };

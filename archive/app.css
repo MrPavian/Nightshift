@@ -157,6 +157,7 @@ main:focus { outline: none; }
 .status li { display: flex; justify-content: space-between; gap: var(--s3); padding: .4rem 0; border-bottom: 1px solid var(--bba-border); }
 .status li:last-child { border-bottom: 0; }
 .status li span:last-child { font-weight: 600; text-align: right; }
+.status.cmp li span:first-child { flex-shrink: 0; }
 .status-note { font-size: var(--step--1); color: var(--bba-text-muted); margin: var(--s2) 0 0; }
 .actions { display: grid; gap: var(--s2); }
 .action { display: block; padding: .7rem .8rem; border: 1px solid var(--bba-border); border-radius: var(--radius); text-decoration: none; background: var(--bba-surface-raised); }

@@ -1,6 +1,6 @@
 # ADR — Letterform-Vergleichsbibliothek, Gate 0: Architekturentscheidung
 
-**Status:** Vorschlag (Claude), wartet auf Owner-Entscheidung
+**Status:** umgesetzt (Gate 1 und 2). Der Owner hat die Spec am 19. November 2026 als Auftrag erteilt. Die offenen Punkte aus §5 sind mit den hier vorgeschlagenen Werten umgesetzt (20 Beobachtungen aus mindestens 3 Quellen; PR-Pflicht) und bleiben änderbar.
 **Datum:** 19. November 2026
 **Auftrag:** `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md` §9 „Gate 0“, Übergabe-Kommentar in PR #25
 **Umfang:** nur Entscheidung. Keine UI, keine Datenmigration, kein Code in diesem Schritt.
