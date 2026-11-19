@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>NIGHTSHIFT Academy – Großbuchstaben A–Z (Entwurf, Version 1)</title>
+<style>
+@page{size:297mm 210mm;margin:9mm}
+*{box-sizing:border-box}
+body{margin:0;font:10pt/1.4 "DejaVu Sans","Segoe UI",system-ui,sans-serif;color:#111}
+.page{page-break-after:always;height:190mm;overflow:hidden}
+.page:last-child{page-break-after:auto}
+h1{font-size:30pt;margin:18mm 0 4mm}
+h2{font-size:15pt;margin:0 0 3mm}
+.lead{font-size:12pt;max-width:180mm}
+.draft{border-left:2.5mm solid #f5d400;padding:3mm 4mm;background:#f6f3ea;max-width:200mm;font-size:11pt}
+.sheet{display:grid;grid-template-columns:204mm 1fr;gap:6mm;height:100%}
+.sheet img{width:204mm;height:136mm;object-fit:contain;display:block;border:.3mm solid #999}
+.side h2{font-size:22pt;margin:0}
+.side .stamp{display:inline-block;border:.4mm solid #b08d00;color:#7a6200;padding:.3mm 2mm;font-size:8.5pt;margin:1mm 0 3mm}
+ol{padding-left:4.5mm;margin:0}
+li{margin:0 0 2.2mm;font-size:8.6pt}
+.kind{font-weight:700}
+.fix{display:block;color:#333}
+.fix::before{content:"Richtig: ";font-weight:700;color:#111}
+.word{margin-top:3mm;font-size:9pt}.word b{font-size:16pt;letter-spacing:.05em;display:block}
+.below{font-size:8.5pt;color:#444;margin-top:3mm;max-width:204mm}
+.general li{font-size:10pt;margin-bottom:3mm}
+.foot{margin-top:14mm;font-size:8pt;color:#555;max-width:200mm}
+</style>
+</head>
+<body>
+<section class="page">
+  <p>NIGHTSHIFT · Letter Construction Academy</p>
+  <h1>Großbuchstaben A–Z</h1>
+  <p class="lead">26 Lernblätter mit je neun Feldern: Grundform, Anatomie, Proportionen, Konstruktion, Variationen, Formcharakter, Kalligrafie, Graffiti-Transfer und Aufgaben.</p>
+  <p class="draft"><strong>Entwurf, Version 1.</strong> Die Blätter wurden mit ChatGPT entwickelt und vom Owner freigegeben. Ihre Texte sind noch nicht fachlich geprüft. Neben jedem Blatt steht, was falsch ist und was richtig wäre. Auf der nächsten Seite stehen die Hinweise, die für alle Blätter gelten.</p>
+  <p class="lead"><strong>So arbeitest du mit dem Heft:</strong> Blatt ansehen, die Korrekturen daneben lesen, dann die Aufgaben aus Feld 9 auf eigenem Papier üben. Eigene Entwürfe statt Nachzeichnen.</p>
+  <p class="foot" id="meta"></p>
+</section>
+<section class="page general">
+  <h2>Allgemeine Hinweise für alle 26 Blätter</h2>
+  <ol id="general"></ol>
+</section>
+<div id="letters"></div>
+<script type="module">
+const data = await (await fetch('../data/academy/uppercase-reference.v1.json')).json();
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const pn = (p) => (p === 0 ? 'Kopfzeile' : `Feld ${p}`);
+const li = (i, where) => `<li><span class="kind">${esc(i.kind)}, ${esc(where)}:</span> ${esc(i.issue)}<span class="fix">${esc(i.correction)}</span></li>`;
+document.getElementById('meta').textContent = `Stand ${data.review.date}. Prüfung der Blätter: ${data.review.by}, ohne Prüfung durch Menschen. ${data.review.limits}`;
+document.getElementById('general').innerHTML = data.general.map((g) => li(g, g.panels.map(pn).join(', '))).join('');
+document.getElementById('letters').innerHTML = Object.entries(data.letters).map(([c, L]) => `<section class="page"><div class="sheet"><div><img src=".print-cache/${c}.jpg" alt="Lernblatt ${c}"><p class="below">Zusätzlich gelten die allgemeinen Hinweise auf Seite 2.</p></div><div class="side"><h2>Lernblatt ${c}</h2><span class="stamp">Entwurf, Texte ungeprüft</span><ol>${L.issues.map((x) => li(x, pn(x.panel))).join('')}</ol><p class="word">Übungswort aus Feld 9:<b>${esc(L.practiceWord)}</b></p></div></div></section>`).join('');
+await Promise.all([...document.images].map((im) => im.decode().catch(() => {})));
+document.documentElement.dataset.ready = 'true';
+</script>
+</body>
+</html>

@@ -504,3 +504,82 @@
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
 - 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
+
+
+## 2026-11-15 — C02 wave 1: authored C, D, O, P, Q
+
+- New authoring snapshot `data/glyphs/authored/c02-wave1.v1.json` (original, Claude-authored, review pending) and importer `src/glyph/import-authored.js`; the v0.6 bases remain as reference-only second variants.
+- C (classified exterior aperture with an authored mouth construction), O, D, P and Q (one enclosed counter each, Q with an explicit tail) pass all hard checks. All 26 letters now validate and render.
+- Semantic overlay 1.2.0 adds component proposals and identity profiles for the five letters; reports, proof run, test page and editor follow the authored set automatically.
+- Report: `docs/C02_GLYPH_AUTHORING_REPORT.md`. Tests: 111 passing plus browser tests.
+
+## 2026-11-15 — C02 wave 2: authored E, F, H, I, L, T masters
+
+- `data/glyphs/authored/c02-wave2.v1.json`: bar-and-stem masters normalised to the family (stems 26, bars 23, shared 59–81 middle band); v0.6 bases kept as reference-only variants.
+- Semantic overlay 1.3.0 with component proposals, junctions and identity profiles; new decidable identity check `no-enclosed-counter`.
+- 16/26 letters authored; GHOST is fully authored. Reports, T06 proof run and T07 editor proof regenerated.
+- Tests: 118 pass; browser SMOKE, REVIEW-PAGE and EDITOR-PASS.
+
+## 2026-11-15 — C02 wave 3: authored K, M, N, V, W, X, Y, Z masters
+
+- Diagonal letters constructed from parallel stroke edges at a perpendicular thickness of 25 (`tools/lib/wave3-construction.mjs`, verified against the committed paths).
+- Overlay 1.4.0 with components that partition every outline; junction kinds `branch` and `crossing`.
+- 24/26 letters authored; all six word fixtures are fully authored. Tests: 123 pass; browser smoke, review page and editor pass.
+
+
+## 2026-11-15 — C02 wave 4: authored J, U masters (C02 authoring complete)
+- `data/glyphs/authored/c02-wave4.v1.json`: original masters for U (two stems, base curve with a wall of 23) and J (stem with a left hook). Both end exactly at the baseline.
+- Overlay 1.5.0: components and junctions for J and U.
+- All 26 letters now have an editable authored master; none is reviewed.
+- The `OP_NOT_EDITABLE` protection test now runs on the pure v0.6 import.
+- Tests: 126 passing plus browser tests (smoke, review page, editor).
+
+## 2026-11-18 — C03: style grammar resolver (Bubble, Straight, Blockbuster; Wildstyle study)
+- `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`. Styles change the monochrome geometry of the authored masters through registered, validated, deterministic operations. Every step is reported with status and reason.
+- Axes are kept separate: letterform and composition change geometry; practice context and rendering do not.
+- Wildstyle is a study mode: interlocking is skipped until C04.
+- Proofs and report in `docs/reports/proof/C03/` (`node tools/proof-styles.mjs`); 7 new tests. Report: `docs/C03_STYLE_RESOLVER_REPORT.md`.
+
+## 2026-11-15 — C06: THE BLACKBOOK ARCHIVE, first edition
+
+- Executed immediately after C01 under the owner-approved sequencing override (C02–C05 deferred, not cancelled).
+- Content pipeline:
+  - `research/archive/entries/` (27 entries), `TIMELINE.md` (20 events) and `LEARNING_PATHS.md` (4 paths) are compiled by `npm run archive:build` into `data/archive/archive.v1.json`, with 96 claims and 32 cited sources.
+  - The validator rejects unsourced claims, dead links, leads in published entries, placeholders, unknown capabilities and invalid bridge parameters.
+- Archive UI `archive/`:
+  - Pages: start, search with aliases and type/region filters, entry detail with claim sheets, timeline, scenes, learning paths with progress, A–Z, sources.
+  - German interface, English entry text.
+  - Responsive and accessible; offline via service worker and bundled OFL fonts.
+- Original SVG diagrams are rendered at build time; seven diagrams, two of them from NIGHTSHIFT's canonical glyph geometry.
+- Editor bridge contract 1.0.0 (`src/bridge/editor-bridge.js`, `docs/EDITOR_BRIDGE_CONTRACT_01.md`):
+  - Four verified capabilities (anatomy, contour edit, word tester, proof sheets) with receivers in `review/` and `editor/` and a return link to the archive.
+  - Three future capabilities are shown as unavailable (C03–C05).
+- The T07 editor proof was re-run because `editor/editor.js` gained the bridge receiver; it passes with all 13 steps.
+- Tests: 123 passing; `tools/archive-smoke.mjs` covers 40 views at 360 px, 27 claim sheets and 4 bridge targets. Proof: `docs/reports/proof/C06/`.
+- Pages: the archive is deployed at `/archive/`; the site root now links archive, review page and editor.
+
+## 2026-11-15 — C06: complete German edition of the archive
+
+- Owner decision: the archive is completely German; a complete English edition follows after C07 (roadmap section “Sprachausgaben”, D-015).
+- Edition-aware pipeline:
+  - entry sources in `research/archive/de/`, output `data/archive/archive.v1.de.json` (schema 2.0, `language: "de"`);
+  - German section headings are parsed (`SECTION_HEADINGS`);
+  - NYC ledger claims are cited through German entry claims and are no longer shown verbatim in English.
+- All entries, claims, timeline, paths and diagram labels rewritten in German.
+- IDs aligned with the 30-entry launch plan where possible: `history.modern-name-writing`, `history.global-circulation`, `scene.paris-banlieue`.
+- New entry `concept.local-terms` and new path `path.how-the-archive-remembers`. Totals: 28 entries, 110 claims, 5 paths.
+- Fixed: the section “Woran man es erkennt” (formerly “How to recognize it”) was never rendered because of a key mismatch; a test now guards this.
+- Editor bridge 1.1.0 adds German descriptions.
+- Tests: 125 passing; the archive smoke covers 42 views, 28 claim sheets and 4 bridge targets.
+
+## 2026-11-15 — C06: archive revised against styleguide; content merged with claim/source matrix
+
+- UI follows `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md` and `ARCHIVE_DESIGN_SYSTEM_01.md`:
+  - dark ink environment, paper reading sheet, one accent, no per-type colours;
+  - nine primary sections, breadcrumbs, phone menu;
+  - status vocabulary §5;
+  - WCAG AA contrast test.
+- Archive schema 2.1: claims cite the central claim/source matrix and the Dortmund audit register (`matrix:ID`); strength, status, main source and limitation are shown per claim.
+- 34 existing claims linked to registers. New draft entries: Wildstyle, Aerosol, Getting Up/Bombing; DOR-05 on Dortmunder Style. Totals: 31 entries, 128 claims.
+- Tests: 128 pass; archive smoke covers 51 views and 31 claim sheets; proofs on phone, tablet and desktop.
+

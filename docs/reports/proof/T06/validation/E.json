@@ -5,104 +5,104 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            82,
-            56
+            36,
+            59
           ],
           [
-            82,
-            34
-          ]
-        ],
-        "featureId": "glyph.E.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 22,
-        "segmentIds": [
-          "glyph.E.contour.outer.seg.08",
-          "glyph.E.contour.outer.seg.11"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            59.5,
-            56
-          ],
-          [
-            59.5,
-            34
-          ]
-        ],
-        "featureId": "glyph.E.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 22,
-        "segmentIds": [
-          "glyph.E.contour.outer.seg.09",
-          "glyph.E.contour.outer.seg.11"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            59.5,
-            106
-          ],
-          [
-            59.5,
+            36,
             81
           ]
         ],
         "featureId": "glyph.E.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
-        "segmentIds": [
-          "glyph.E.contour.outer.seg.05",
-          "glyph.E.contour.outer.seg.07"
-        ],
-        "side": "unfilled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            82,
-            106
-          ],
-          [
-            82,
-            81
-          ]
-        ],
-        "featureId": "glyph.E.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 22,
         "segmentIds": [
           "glyph.E.contour.outer.seg.05",
           "glyph.E.contour.outer.seg.08"
         ],
-        "side": "unfilled"
+        "side": "filled"
       },
       {
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            37,
-            81
+            36,
+            59
           ],
           [
-            37,
-            56
+            36,
+            81
           ]
         ],
         "featureId": "glyph.E.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 22,
+        "segmentIds": [
+          "glyph.E.contour.outer.seg.05",
+          "glyph.E.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            58,
+            59
+          ],
+          [
+            58,
+            81
+          ]
+        ],
+        "featureId": "glyph.E.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 22,
+        "segmentIds": [
+          "glyph.E.contour.outer.seg.06",
+          "glyph.E.contour.outer.seg.08"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            36,
+            59
+          ],
+          [
+            36,
+            81
+          ]
+        ],
+        "featureId": "glyph.E.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 22,
         "segmentIds": [
           "glyph.E.contour.outer.seg.06",
           "glyph.E.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            64,
+            8
+          ],
+          [
+            64,
+            31
+          ]
+        ],
+        "featureId": "glyph.E.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 23,
+        "segmentIds": [
+          "glyph.E.contour.outer.seg.02",
+          "glyph.E.contour.outer.seg.04"
         ],
         "side": "filled"
       }
@@ -119,13 +119,34 @@
       "message": "5 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
       "severity": "warning",
       "stage": "clearance-analysis",
-      "variantId": "e.provisional"
+      "variantId": "e.master"
     }
   ],
-  "geometryHash": "2cc3b3ed01ef4eb67ccc4f44290c4d0e2e7139382c10f7ad2190aebe3bab2e4b",
+  "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
   "glyphId": "latin.upper.E",
   "hardChecksPassed": true,
-  "identityChecks": [],
+  "identityChecks": [
+    {
+      "name": "single-required-connected-contour",
+      "reason": "one closed contour, one connected component",
+      "status": "passed"
+    },
+    {
+      "name": "no-unintended-self-intersection",
+      "reason": "no undeclared intersections (certified)",
+      "status": "passed"
+    },
+    {
+      "name": "no-enclosed-counter",
+      "reason": "single outer contour, no inner contour: no enclosed counter",
+      "status": "passed"
+    },
+    {
+      "name": "distinction-from-F-and-B-review",
+      "reason": "human visual review required",
+      "status": "not-evaluable"
+    }
+  ],
   "negativeSpace": {
     "apertures": [],
     "channels": [],
@@ -173,7 +194,7 @@
     },
     {
       "stage": "glyph-identity-invariants",
-      "status": "passed"
+      "status": "partial"
     },
     {
       "note": "No renderer exists yet (T05).",
@@ -189,13 +210,13 @@
         "parent": null
       }
     ],
-    "declaredFillRule": "nonzero",
-    "expectedConnectedComponents": null,
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
     "facePoints": {
       "glyph.E.contour.outer": {
-        "margin": 13.5,
+        "margin": 13,
         "point": [
-          23.5,
+          23,
           34.02961
         ]
       }
@@ -212,5 +233,5 @@
     }
   },
   "validatorVersion": "geometry-validator/1.0.0",
-  "variantId": "e.provisional"
+  "variantId": "e.master"
 }

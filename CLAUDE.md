@@ -231,6 +231,27 @@ Therefore:
 - Do not overwrite or duplicate ongoing work.
 - If the owner says a task has been skipped or reprioritized, preserve that decision and report the dependency/risk rather than silently reverting it.
 
+### Verified implementation state (Claude, 2026-11-15, afternoon)
+
+Checked against code, tests and open PRs; details in `docs/reports/CAPABILITY_MATRIX_01.md`.
+
+| Work | State | Where |
+|---|---|---|
+| C01 engine and editor (registry, validator, renderer, proof sheets, review page, contour editor) | merged, tested | main |
+| Editor freeze reported on the phone (dragging a B node far across the outline froze the editor; the letter disappeared) | fixed, tested; **not merged** | PR for `claude/fix-editor-freeze`: worst validation 177 ms instead of up to 37 s, previews coalesced per frame, rendering fallback |
+| C02 wave 1 (masters C, D, O, P, Q) | waiting for owner design approval | PR #6 |
+| C06 archive, German edition (28 entries, 111 claims, timeline, 5 paths, offline, editor bridge 1.1.0) | complete as a package; **not merged** | PR #8, `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md` |
+| C02 waves 2–4, C03, C04, C05, C08 | not implemented (spec only) | Issue #9 |
+
+**Owner decision, 2026-11-15, 14:00:** do both, one after the other.
+1. First, revise the C06 archive (PR #8) against the styleguide and merge its content with drafts 01–06 and the claim/source matrix, then merge PR #8.
+2. After that, Creator-first per Issue #9: C02 waves 2–4 → C03 → C04 → C05 → C08.
+
+**Open conflicts (priority resolved, see above):**
+1. **Priority.** (resolved) Issue #9 (08:42 UTC) sets the order C02 → C03 → C04 → C05 → C08 (Creator-first). This briefing (10:15 UTC) names archive reference views as P1 and does not mention Issue #9.
+2. **C06 vs. styleguide.** The C06 archive UI predates `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md`. It uses a light paper environment instead of a dark ink environment, one colour per entry type (the styleguide forbids that), no monospaced metadata face, and 5 navigation sections instead of the 9 in styleguide §3. PR #8 needs a revision against the styleguide before merging.
+3. **Archive content vs. the new German drafts 01–06 and the claim/source matrix.** PR #8 has its own 28 entries in `research/archive/de/`. The drafts in `research/BLACKBOOK_ARCHIVE_ENTRY_DRAFTS_GERMAN_0*.md` and the claim/source matrix were written in parallel. They need to be merged, not duplicated.
+
 ## 8. Working priorities
 
 Use this order unless the owner explicitly changes it:
@@ -499,3 +520,137 @@ Initial files:
 **Rights:** external images are linked, not copied. Public access or personal-use permission is not a NIGHTSHIFT commercial reuse license. All generated letterforms remain original and must not reproduce identifiable writers, crews, tags, signatures or existing pieces.
 
 **Status:** initial documentation created; not yet practitioner-approved, not yet a complete twelve-style library, and no generator implementation is implied. First validation task is a monochrome A comparison across the three cards, followed by representative glyph tests.
+
+
+## C03 — Style grammar resolver (18 November 2026, Claude)
+
+Branch `claude/c03-style-resolver`, stacked on the C02 waves (#6 → #11 → #12 → #13).
+
+- **Implemented:** `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`.
+- **Results for all 26 authored masters:**
+  - Bubble and Blockbuster change the monochrome geometry of every letter.
+  - Straight changes 13 letters (curves and sharp corners). The other 13 have right angles only; they are reported unchanged, with that reason.
+  - Wildstyle is a study mode. The interlocking step is skipped with a reason, because it needs C04.
+- **Axes stay separate:** practice context and rendering never change geometry. Blockbuster = straight letterform + block-fit composition.
+- **Guarantees:**
+  - Masters are never mutated. Derived records are `reference-only`.
+  - Every step is validated: hard checks pass, the counter count is unchanged, and the glyph is one connected part.
+  - The parameters are uncalibrated grammar defaults.
+- **Proofs and docs:** `docs/reports/proof/C03/`, `docs/C03_STYLE_RESOLVER_REPORT.md`, `tests/style-resolver.test.js`.
+- **Not done:** a style switch in the editor or studio UI (C08), identity-specific checks such as the G/C apertures (only hard checks and counter count are checked), and human review of how the shapes look.
+
+
+## Creator 0.1 — early Creator page (owner decision D-016, 18 November 2026)
+
+The owner sees the editor as a robot that learns to make graffiti. The user enters a word, picks styles, priorities and colours, chooses from several proposals and can co-design all the way to full manual authoring. On that basis the owner asked for an early, small Creator page.
+
+Branch `claude/creator-0-1`, stacked on C03 (#17).
+
+**Implemented:**
+- **Page:** `creator/index.html`, `creator.js`, `creator.css`, with the logic in `src/creator/proposals.js`.
+- **Brief:** word, artwork form (Throw-up / Piece; Tag disabled with reason), style (Bubble / Straight / Blockbuster; Wildstyle disabled with reason), three priorities (readability, dynamics, compactness: „egal“, „wichtig“, „sehr wichtig“), five palettes plus custom colours.
+- **Four proposals:**
+  - Deterministic for a given seed; „Neue Vorschläge“ increments the seed.
+  - Each priority the user cares about leads one proposal.
+  - Proposals differ pairwise in at least 3 of 5 composition dimensions: spacing, slant, baseline (flat / bounce / arc / step), proportion and size rhythm.
+  - Each card explains its choices and names its lead priority.
+- **Colour and form never change construction:** they only repaint. A „Nur Form zeigen“ toggle shows the black construction view.
+- **Export:** SVG, PNG and game JSON (`nightshift.game-artwork.v0`, containing brief, composition, rendering, glyph hashes, placements, SVG and limits).
+- **Saving:** the brief is kept in localStorage.
+
+**Checks:**
+- `tests/creator.test.js` (6 tests).
+- `tools/creator/check-creator.mjs`, part of `test:browser`.
+- Screenshots: `docs/reports/proof/creator/`.
+- Deployed to Pages at `/creator/`.
+
+**Limits:**
+- No per-letter variants and no connections; these come with C04.
+- No editing of the chosen piece; that is Studio/C05.
+- Throw-up differs from Piece only in finish (no 3D), not in construction.
+- Tag is HST-01, still open: whether Tag belongs in 1.0 is an open owner question.
+- Bombing is game logic, not a style.
+
+
+## Graffiti engine — Creator 0.2 (D-017, 18 November 2026)
+
+**Why:** The owner judged the C03 output as „just thicker letters, not a style“ and asked for web research on graffiti alphabets, analysis of the styles, and imitation.
+
+**Research:** `research/GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`, based on tutorial sources. The image search showed images to the owner only; the AI did not see them.
+
+**Implementation:**
+- `src/style/skeletons.js`: centre lines A–Z with free ends and crossbars.
+- `src/style/graffiti-engine.js`: bars per base style; moves serif, cut, kick, arrow, split and drop; 3D, outline and highlight rendering.
+- **Base styles:**
+  - Bubble (round, wide)
+  - Straight
+  - Blockbuster
+  - Semi-Wild (new; true Wildstyle interlocking still needs C04)
+- **Proposals:** each proposal picks one move set that recurs through the word. The four proposals prefer different move sets.
+- **Creator:** `creator/` and `src/creator/proposals.js` 0.2 now use the engine.
+
+**Open:**
+- Skeletons are not linked to the C02 masters (D-017).
+- No taper and no true connections.
+- Nothing calibrated.
+- How the shapes look is for the owner to judge.
+
+**Tests:** `tests/creator.test.js` (8 tests); browser check `tools/creator/check-creator.mjs` (4 styles × 4).
+
+
+### Owner reference set A–Z and work split (16 November 2026)
+
+The owner handed over the complete approved uppercase reference set (26 sheets, developed with ChatGPT and approved by the owner). It is stored as a style and layout reference in `assets/design/reference/academy-uppercase/`: `A.webp`–`Z.webp`, plus `manifest.json` with the original PNG hashes and a `README.md` stating what the set may and may not be used for.
+
+- The set is a visual and compositional target only. It is **not** a factual source: its generated texts contain known errors, which the studies must correct.
+- It is not to be traced and not to be shipped as a product asset.
+- **Owner decisions, 16 November 2026:**
+  - Claude rebuilds the A study (`assets/design/letter-study_A_01.svg`) against this reference first, then continues with C03.
+  - ChatGPT works in parallel on lowercase letters and numerals.
+- The approval gate stays: B–Z studies only after the owner explicitly approves A.
+
+
+### A study — rebuilt as a generated SVG (16 November 2026, Claude)
+
+`assets/design/letter-study_A_01.svg` has been rebuilt against the owner reference `assets/design/reference/academy-uppercase/A.webp`. It replaces ChatGPT's earlier hand-written SVG, which is superseded.
+
+- **Source of truth:** `tools/academy/build-letter-study-a.mjs`, with drawing helpers in `tools/academy/lib.mjs`.
+  - Rebuild with `npm run build:academy`.
+  - Do not edit the SVGs by hand: a test compares them byte for byte with the generator output.
+- **Outputs:** `letter-study_A_01.svg` (full) and `letter-study_A_01_clean.svg` (clean print version without paper texture, distress and spray).
+- **Layers:** paper, distress, spray, under, frames, letters, construction, labels. Each is a named group (`layer-*`).
+- **Text:** every label is real SVG text. The fonts are embedded: Permanent Marker (Apache 2.0) and Kalam (OFL); see `assets/fonts/academy/`.
+- **Graffiti letters:** all are original vector constructions. None is a font glyph or a tracing.
+- **Factual corrections applied:**
+  - Percentages are example values of this drawing, derived from its geometry: width 91 %, crossbar top 37 %, counter 31 %, stroke 20 %.
+  - The sheet states that capitals have no x-height.
+  - There is no three-movement claim. The stroke sequence is marked as an assumption.
+  - Nib and brush technique is explicitly not transferable to aerosol.
+  - The counter is labelled Punze, not „Auge“. There is no speed claim for throw-ups.
+  - Construction stages 4 (contour) and 5 (filled form) are visibly different.
+  - The three graffiti directions are marked as parallel, not as a ladder.
+- **QA:**
+  - `tools/academy/check-letter-study.mjs`, also part of `npm run test:browser`, checks text containment, text overlaps, spray over text and anatomy leader targets.
+  - Result: 0 issues in both versions.
+  - Proofs, 2× crops and a greyscale check are in `docs/reports/proof/academy-A/`.
+  - Unit tests: `tests/academy-study.test.js`.
+- **Status:** owner review pending. The sheet is not print-approved and has not been checked in Inkscape, Illustrator or a PDF export. B–Z stay blocked until the owner approves A.
+
+
+### Reference sheets A–Z in use as version 1 (draft), with correction list (owner decision 16 November 2026)
+
+The owner decided to use the 26 approved sheets right away, for personal learning and visible in the project. They are always marked as a draft, and their errors are documented, not hidden.
+
+- `data/academy/uppercase-reference.v1.json` holds the correction list:
+  - 9 general notes that apply to every sheet.
+  - 72 sheet-specific findings. Each names the panel, a kind (Sachfehler, Begriff, Tippfehler, Prozessbehauptung, Lesbarkeit, …), the problem and the correct version.
+  - The practice word from panel 9.
+  - Reviewer: Claude (AI), working from the full-resolution images. No human has reviewed the list. Small text in the images may have been misread.
+- Notable errors found: wrong terms in many sheets („Theke“ and „Auge“ instead of Punze, „Abstrich“ used as a part), N's diagonal at 45° contradicting its stated width, the W's peaks and valleys swapped, garbled headers on U–Z, „Bandsatz“ instead of „Bandzug“, stroke-order and stroke-count claims, and round variants that read as 8, 3, & or 2.
+- **Gallery:** `academy/index.html` with `app.js` and `app.css` (archive design tokens, German UI, keyboard ← → and Esc, hash routes `#A`–`#Z`). It shows the overview, each sheet with its corrections, and the general notes. Deployed to Pages via `deploy-pages.yml` (copies `academy/` and the reference folder).
+- **Booklet:** `academy/heft.pdf` (A4 landscape, 28 pages: cover, general notes, one page per letter with its corrections), printed from `academy/heft.html` with `npm run build:heft`. That needs Python/Pillow for the JPEG conversion into the git-ignored `academy/.print-cache/`.
+- **Checks:**
+  - `tests/academy-reference.test.js` (data).
+  - `tools/academy/check-gallery.mjs`, part of `npm run test:browser`.
+  - Screenshots in `docs/reports/proof/academy-gallery/`.
+- The generated A study (`letter-study_A_01.svg`) stays as the path to an editable, corrected, print-ready version. It is still pending owner review.

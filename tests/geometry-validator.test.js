@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadRegistry } from '../src/glyph/load-node.js';
+import { GlyphRegistry } from '../src/glyph/registry.js';
 import { validateGlyphGeometry, checkCandidate } from '../src/glyph/validate-geometry.js';
 import { flattenContour } from '../src/geometry/flatten.js';
 import { buildContour } from '../src/glyph/import-v06.js';
@@ -84,10 +85,12 @@ test('clearance is measured but never passed without calibration', () => {
   }
 });
 
-test('provisional alphabet: only Q fails (undeclared crossing of its tail), others pass', () => {
-  const failing = registry.list().filter((g) => !run(g).hardChecksPassed).map((g) => g.character);
+test('v0.6 legacy alphabet: only Q fails (undeclared crossing of its tail); the current registry has no failures', () => {
+  const legacy = GlyphRegistry.fromLegacyV06(JSON.parse(readFileSync('data/legacy/v06-glyph-paths.json', 'utf8')));
+  const failing = legacy.list().filter((g) => !run(g).hardChecksPassed).map((g) => g.character);
   assert.deepEqual(failing, ['Q']);
-  const q = run(registry.getByChar('Q'));
+  assert.deepEqual(registry.list().filter((g) => !run(g).hardChecksPassed).map((g) => g.character), []);
+  const q = run(legacy.getByChar('Q'));
   assert.ok(errors(q).every((c) => c === 'VAL_UNDECLARED_CROSSING'));
   assert.ok(q.diagnostics.some((d) => d.affectedIds.some((id) => id.startsWith('glyph.Q.contour.subpath.3'))));
 });

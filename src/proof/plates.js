@@ -43,10 +43,11 @@ function slotSvg(slot, resolved, ox, oy, scale = 1) {
 
 /** Identity plate: A/B/G/R/S neutral silhouettes at full size and thumbnail size. */
 export function identityPlate(specimens, resolved, runId) {
-  const cell = 130, top = 34, thumbScale = 0.18;
+  const cell = 130, top = 34, thumbScale = 0.18, perRow = 5, rowH = 240;
   const parts = [];
   specimens.forEach((sp, i) => {
-    const x = 10 + i * cell;
+    const x = 10 + (i % perRow) * cell;
+    const top = 34 + Math.floor(i / perRow) * rowH;
     const s = sp.slots[0];
     const r = resolved.get(s.character);
     const b = r.glyph.baseMetrics.visibleBounds;
@@ -61,8 +62,10 @@ export function identityPlate(specimens, resolved, runId) {
     parts.push(slotSvg(s, resolved, x + cell / 2 - (w * thumbScale) / 2, ly + 20 - b.minY * thumbScale, thumbScale));
     parts.push('</g>');
   });
-  parts.push(`<text x="10" y="${top + 212}" font-size="4.5" fill="#666">Row 1: native size. Row 2: thumbnail at ${thumbScale}× (thumbnail resilience check).</text>`);
-  return doc(10 + specimens.length * cell + 10, top + 222, 'Glyph identity — neutral silhouette (A/B/G/R/S)', parts.join(''), runId);
+  const rows = Math.ceil(specimens.length / perRow);
+  const h = top + (rows - 1) * rowH + 222;
+  parts.push(`<text x="10" y="${h - 10}" font-size="4.5" fill="#666">Each cell: native size, then thumbnail at ${thumbScale}× (thumbnail resilience check).</text>`);
+  return doc(10 + Math.min(specimens.length, perRow) * cell + 10, h, `Glyph identity — neutral silhouette (${specimens.map((s) => s.text).join('/')})`, parts.join(''), runId);
 }
 
 /** Per-segment path pieces of one contour (for component colouring). */
@@ -83,15 +86,17 @@ function segmentPieces(contour) {
 
 /** Semantic/topology plate: component proposals, counters, junction candidates, aperture flag. */
 export function semanticPlate(specimens, resolved, runId) {
-  const cell = 180, top = 30;
+  const cell = 180, perRow = 5, rowH = 245;
   const parts = [];
   specimens.forEach((sp, i) => {
+    const top = 30 + Math.floor(i / perRow) * rowH;
+    const col = i % perRow;
     const s = sp.slots[0];
     const { glyph, report, model } = resolved.get(s.character);
     const sg = glyph.semanticGraph;
     const contours = glyph.variants[0].geometry.contours;
     const b = glyph.baseMetrics.visibleBounds;
-    const x0 = 10 + i * cell + (cell - (b.maxX - b.minX)) / 2 - b.minX;
+    const x0 = 10 + col * cell + (cell - (b.maxX - b.minX)) / 2 - b.minX;
     const y0 = top + 10 - b.minY;
     const colorOf = new Map();
     sg.components.forEach((c, k) => colorOf.set(c.id, COMPONENT_COLORS[k % COMPONENT_COLORS.length]));
@@ -114,12 +119,16 @@ export function semanticPlate(specimens, resolved, runId) {
         if (seg) parts.push(`<circle cx="${seg.x}" cy="${seg.y}" r="2.6" fill="#fff" stroke="#111" stroke-width="0.8" data-junction-id="${esc(j.id)}"/>`);
       }
     }
+    for (const a of sg.negativeSpaces.filter((n) => n.kind === 'aperture' && n.mouthNodeRefs)) {
+      const pts = a.mouthNodeRefs.map((ref) => contours.flatMap((c) => c.segments).find((x) => x.nodeId === ref)).filter(Boolean);
+      if (pts.length === 2) parts.push(`<line x1="${pts[0].x}" y1="${pts[0].y}" x2="${pts[1].x}" y2="${pts[1].y}" stroke="#2e7d32" stroke-width="1.4" stroke-dasharray="3 2" data-aperture-id="${esc(a.id)}"/>`);
+    }
     if (sg.topology.apertureStatus === 'interpretation-required') {
       parts.push(`<rect x="${b.minX - 4}" y="${b.minY - 4}" width="${b.maxX - b.minX + 8}" height="${b.maxY - b.minY + 8}" fill="none" stroke="#e53935" stroke-dasharray="4 3"/>`);
     }
     parts.push('</g>');
     // Legend.
-    const lx = 10 + i * cell + 6;
+    const lx = 10 + col * cell + 6;
     let ly = top + 150;
     parts.push(`<text x="${lx}" y="${ly}" font-size="6" fill="#222">${esc(s.character)} — components (proposals, unreviewed)</text>`);
     for (const c of sg.components) {
@@ -136,9 +145,9 @@ export function semanticPlate(specimens, resolved, runId) {
     ly += 6;
     parts.push(`<text x="${lx}" y="${ly}" font-size="4.6" fill="#333">automated hard checks: ${report.hardChecksPassed ? 'pass' : 'FAIL'}</text>`);
   });
-  const h = top + 150 + 7 * 7 + 36;
-  parts.push(`<text x="10" y="${h - 8}" font-size="4.5" fill="#666">Coloured strokes: candidate segments per component (proposal). Dashed: counter boundaries. Circles: junction candidate nodes. Red dashed frame: aperture unresolved (AUD-01).</text>`);
-  return doc(10 + specimens.length * cell + 10, h, 'Semantic / topology diagnostics (A/B/G/R/S)', parts.join(''), runId);
+  const h = 30 + (Math.ceil(specimens.length / perRow) - 1) * rowH + 150 + 7 * 7 + 36;
+  parts.push(`<text x="10" y="${h - 8}" font-size="4.5" fill="#666">Coloured strokes: candidate segments per component (proposal). Dashed: counter boundaries. Circles: junction candidate nodes. Red dashed frame: aperture unresolved (AUD-01). Green line: authored aperture mouth.</text>`);
+  return doc(10 + Math.min(specimens.length, perRow) * cell + 10, h, `Semantic / topology diagnostics (${specimens.map((s) => s.text).join('/')})`, parts.join(''), runId);
 }
 
 /** Context plate (pairs or words): naive layout, provisional and missing slots marked. */
@@ -158,6 +167,6 @@ export function contextPlate(specimens, resolved, runId, { title, columns = 1, s
   });
   const rows = Math.ceil(specimens.length / columns);
   const h = 30 + rows * rowH + 16;
-  parts.push(`<text x="10" y="${h - 6}" font-size="4.5" fill="#666">Black: authored-contour master. Grey: provisional base (reference only). Red dashed: missing — provisional glyph cannot be rendered (invalid or undeclared topology). Layout: naive fixed gap, no relationship solver.</text>`);
+  parts.push(`<text x="10" y="${h - 6}" font-size="4.5" fill="#666">Black: authored-contour master (review pending). Grey: provisional base (reference only). Red dashed: missing — provisional glyph cannot be rendered (invalid or undeclared topology). Layout: naive fixed gap, no relationship solver.</text>`);
   return doc(10 + columns * colW + 10, h, title, parts.join(''), runId);
 }

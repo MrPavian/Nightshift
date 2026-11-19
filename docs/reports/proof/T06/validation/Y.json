@@ -5,82 +5,19 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            57,
-            52
+            33,
+            8
           ],
           [
-            80.269364,
-            63.949133
+            10.478751,
+            18.04326
           ]
         ],
         "featureId": "glyph.Y.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 26.158079,
+        "minimumDistance": 24.659151,
         "segmentIds": [
           "glyph.Y.contour.outer.seg.02",
-          "glyph.Y.contour.outer.seg.05"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            57,
-            52
-          ],
-          [
-            33.730636,
-            63.949133
-          ]
-        ],
-        "featureId": "glyph.Y.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 26.158079,
-        "segmentIds": [
-          "glyph.Y.contour.outer.seg.02",
-          "glyph.Y.contour.outer.seg.09"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            57,
-            52
-          ],
-          [
-            80.269364,
-            63.949133
-          ]
-        ],
-        "featureId": "glyph.Y.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 26.158079,
-        "segmentIds": [
-          "glyph.Y.contour.outer.seg.03",
-          "glyph.Y.contour.outer.seg.05"
-        ],
-        "side": "filled"
-      },
-      {
-        "calibrationStatus": "uncalibrated",
-        "closestPointPair": [
-          [
-            57,
-            52
-          ],
-          [
-            33.730636,
-            63.949133
-          ]
-        ],
-        "featureId": "glyph.Y.contour.outer",
-        "measurementErrorBound": 0,
-        "minimumDistance": 26.158079,
-        "segmentIds": [
-          "glyph.Y.contour.outer.seg.03",
           "glyph.Y.contour.outer.seg.09"
         ],
         "side": "filled"
@@ -90,16 +27,79 @@
         "closestPointPair": [
           [
             71,
+            8
+          ],
+          [
+            93.521249,
+            18.04326
+          ]
+        ],
+        "featureId": "glyph.Y.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 24.659151,
+        "segmentIds": [
+          "glyph.Y.contour.outer.seg.03",
+          "glyph.Y.contour.outer.seg.05"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            52,
+            50
+          ],
+          [
+            29.253313,
+            60.143793
+          ]
+        ],
+        "featureId": "glyph.Y.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 24.905989,
+        "segmentIds": [
+          "glyph.Y.contour.outer.seg.03",
+          "glyph.Y.contour.outer.seg.09"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            52,
+            50
+          ],
+          [
+            74.746687,
+            60.143793
+          ]
+        ],
+        "featureId": "glyph.Y.contour.outer",
+        "measurementErrorBound": 0,
+        "minimumDistance": 24.905989,
+        "segmentIds": [
+          "glyph.Y.contour.outer.seg.02",
+          "glyph.Y.contour.outer.seg.05"
+        ],
+        "side": "filled"
+      },
+      {
+        "calibrationStatus": "uncalibrated",
+        "closestPointPair": [
+          [
+            65,
             82
           ],
           [
-            43,
+            39,
             82
           ]
         ],
         "featureId": "glyph.Y.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 28,
+        "minimumDistance": 26,
         "segmentIds": [
           "glyph.Y.contour.outer.seg.05",
           "glyph.Y.contour.outer.seg.08"
@@ -119,13 +119,34 @@
       "message": "5 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
       "severity": "warning",
       "stage": "clearance-analysis",
-      "variantId": "y.provisional"
+      "variantId": "y.master"
     }
   ],
-  "geometryHash": "728b137f22b205f19749e15c27fc86b15bfa47389789a6603623d584c05c815b",
+  "geometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
   "glyphId": "latin.upper.Y",
   "hardChecksPassed": true,
-  "identityChecks": [],
+  "identityChecks": [
+    {
+      "name": "single-required-connected-contour",
+      "reason": "one closed contour, one connected component",
+      "status": "passed"
+    },
+    {
+      "name": "no-unintended-self-intersection",
+      "reason": "no undeclared intersections (certified)",
+      "status": "passed"
+    },
+    {
+      "name": "no-enclosed-counter",
+      "reason": "single outer contour, no inner contour: no enclosed counter",
+      "status": "passed"
+    },
+    {
+      "name": "distinction-from-V-and-T-review",
+      "reason": "human visual review required",
+      "status": "not-evaluable"
+    }
+  ],
   "negativeSpace": {
     "apertures": [],
     "channels": [],
@@ -173,7 +194,7 @@
     },
     {
       "stage": "glyph-identity-invariants",
-      "status": "passed"
+      "status": "partial"
     },
     {
       "note": "No renderer exists yet (T05).",
@@ -189,13 +210,13 @@
         "parent": null
       }
     ],
-    "declaredFillRule": "nonzero",
-    "expectedConnectedComponents": null,
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
     "facePoints": {
       "glyph.Y.contour.outer": {
-        "margin": 17.937968,
+        "margin": 16.76244,
         "point": [
-          57,
+          52,
           69.994805
         ]
       }
@@ -212,5 +233,5 @@
     }
   },
   "validatorVersion": "geometry-validator/1.0.0",
-  "variantId": "y.provisional"
+  "variantId": "y.master"
 }

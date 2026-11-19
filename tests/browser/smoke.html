@@ -5,15 +5,12 @@
 // Loads the canonical model in a real browser (no Node APIs) and reports the result.
 // Serve the repository root (e.g. `python3 -m http.server`) and open /tests/browser/smoke.html.
 import { GlyphRegistry } from '../../src/glyph/registry.js';
+import { loadRegistryInputs } from '../../src/glyph/load-browser.js';
 import { topologyReport } from '../../src/glyph/semantic-overlay.js';
 const get = (p) => fetch(`../../${p}`).then((r) => r.json());
 const out = document.getElementById('out');
 try {
-  const [snapshot, overlay, parameterContract, validationContract] = await Promise.all([
-    get('data/legacy/v06-glyph-paths.json'), get('data/semantic/abgrs-semantic-overlay.v1.json'),
-    get('contracts/glyph-parameter-contract.v1.json'), get('contracts/glyph-geometry-validation.v1.json'),
-  ]);
-  const r = GlyphRegistry.build({ snapshot, overlay, parameterContract, validationContract });
+  const r = GlyphRegistry.build(await loadRegistryInputs('../../'));
   const roundTrip = GlyphRegistry.fromJSON(r.serialize()).serialize() === r.serialize();
   const g = topologyReport(r.getByChar('G')).findings.map((f) => f.code);
   const ok = r.isValid && roundTrip && r.list().length === 26 && g.includes('TOPO_APERTURE_UNRESOLVED');

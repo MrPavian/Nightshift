@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIGHTSHIFT Creator</title>
+<link rel="stylesheet" href="creator.css">
+</head>
+<body>
+<a class="skip" href="#brief">Zum Auftrag springen</a>
+<header class="top">
+  <p class="brand">NIGHTSHIFT</p>
+  <h1>Name rein, Style wählen, Piece aussuchen</h1>
+  <p class="lead">Gib ein Wort ein und sag, was dir wichtig ist. Du bekommst vier verschiedene Vorschläge und nimmst den besten.</p>
+</header>
+<main>
+  <form id="brief" class="brief" novalidate>
+    <div class="field">
+      <label for="word">Wort oder Name</label>
+      <input id="word" name="word" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="24" value="ABRA" aria-describedby="word-msg">
+      <p id="word-msg" class="msg" role="status"></p>
+    </div>
+
+    <fieldset class="field">
+      <legend>Was soll es werden?</legend>
+      <div class="seg" id="forms"></div>
+      <p class="hint" id="form-hint"></p>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>Style</legend>
+      <div class="seg" id="styles"></div>
+      <p class="hint" id="style-hint"></p>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>Was ist dir wichtig?</legend>
+      <div id="priorities" class="prio"></div>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>Farben</legend>
+      <div class="swatches" id="palettes"></div>
+      <details class="own">
+        <summary>Eigene Farben</summary>
+        <div class="colors">
+          <label>Füllung <input type="color" id="c-fill"></label>
+          <label>Kontur <input type="color" id="c-outline"></label>
+          <label>3D-Schatten <input type="color" id="c-depth"></label>
+        </div>
+      </details>
+    </fieldset>
+
+    <button class="go" id="go" type="submit">Vorschläge erzeugen</button>
+  </form>
+
+  <section id="results" class="results" hidden aria-labelledby="res-title">
+    <div class="res-head">
+      <h2 id="res-title" tabindex="-1">Vier Vorschläge</h2>
+      <div class="res-tools">
+        <label class="toggle"><input type="checkbox" id="neutral"> Nur Form zeigen (schwarz)</label>
+        <button class="btn ghost" id="again" type="button">Neue Vorschläge</button>
+      </div>
+    </div>
+    <ol class="cards" id="cards"></ol>
+    <p class="note" id="limits"></p>
+  </section>
+
+  <section id="chosen" class="chosen" hidden aria-labelledby="chosen-title">
+    <h2 id="chosen-title">Dein Piece</h2>
+    <div class="stage" id="stage"></div>
+    <div class="export">
+      <button class="btn" id="dl-svg" type="button">Als SVG speichern</button>
+      <button class="btn" id="dl-png" type="button">Als PNG speichern</button>
+      <button class="btn ghost" id="dl-json" type="button">Fürs Spiel speichern (JSON)</button>
+    </div>
+    <p class="note">Bearbeiten einzelner Buchstaben kommt mit dem Studio. Bis dahin kannst du die SVG in einem Vektorprogramm weiterbearbeiten.</p>
+  </section>
+</main>
+<footer class="foot"><p id="version"></p></footer>
+<script type="module" src="creator.js"></script>
+</body>
+</html>

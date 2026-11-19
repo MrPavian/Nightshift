@@ -32,17 +32,17 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 
 Build 0.6 is a standalone HTML prototype. It supports A–Z addressing, five authored contour masters (A, B, G, R, S), 21 provisional bases, early style profiles, basic word layout, layer controls, SVG export, browser-local archive and a Three.js wall preview.
 
-Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the in-game archive UI and content pipeline are not implemented yet.
+Do not mistake the provisional bases or style labels for a finished graffiti alphabet or researched style engine. The research library under `research/` and the machine-readable contracts under `contracts/` exist and are actively maintained; the archive content pipeline and first-edition UI exist since C06 (`archive/`).
 
 Production implementation has started: `src/` contains the canonical glyph registry, legacy v0.6 import, semantic overlays, geometry validator, topology-correct renderer, proof sheets, a test/review page and a Three.js editor with a validated edit loop (0.7A-T01–T07). Run `npm install` once (Three.js).. Status, module map and next ticket are in `docs/IMPLEMENTATION_PLAN_0_7A.md`.
 
 ## Next engine task
 
-**Build 0.7 — Authentic Letter Construction.** 0.7A (T01–T07) is complete; the first-slice release gate is met. Next: `docs/CLAUDE_TICKET_PACK_0_7B_01.md` (remaining alphabet construction, style rules, first relationship slice). Open owner actions: human review of A/B/G/R/S (`docs/reports/proof/T06/review/ratings.json`), G aperture boundary (AUD-01/AUD-03), topology of D/O/P/Q.
+**Build 0.7 — Authentic Letter Construction.** 0.7A (T01–T07) is complete; the first-slice release gate is met. Current package: C02 (`docs/CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md`). Wave 1 (C/D/O/P/Q) is authored; see `docs/C02_GLYPH_AUTHORING_REPORT.md`. Next: wave 2 (E F H I L T). Open owner actions: human review of A/B/G/R/S (`docs/reports/proof/T06/review/ratings.json`), G aperture boundary (AUD-01/AUD-03), topology of D/O/P/Q.
 
 ## Next archive task
 
-**THE BLACKBOOK ARCHIVE — Phase A/B.** Start with product taxonomy, research methodology and source-backed pilot entries. Read the archive masterprompt and roadmap. Do not begin with a decorative UI shell or bulk-generated unsourced definitions.
+**C06 first edition is implemented as a complete German edition** (owner approval pending): `archive/` UI, `research/archive/de/` entry sources, `data/archive/archive.v1.de.json` (generated, `npm run archive:check` in CI), and the bridge contract `docs/EDITOR_BRIDGE_CONTRACT_01.md`. Report: `docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md`. Under the owner-approved sequence (C01 → C06 → C02 → C03 → C04 → C05 → C07), the next package is **C02**. Archive follow-ups are listed as gaps in the C06 report: owner editorial and visual review, Berlin/Cologne/Munich chapters after source checks, and the English edition after C07 (roadmap section “Sprachausgaben”). When C03–C05 make a bridge capability real, set it to `available` in `src/bridge/editor-bridge.js` and add a receiver.
 
 ## What a useful first response should contain
 

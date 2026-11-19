@@ -187,7 +187,7 @@ function validateSegments(c, req) {
 }
 
 function validateLegacySnapshot(v, err) {
-  const snap = v.legacySnapshot;
+  const snap = v.legacySnapshot ?? v.authoringSnapshot;
   if (!snap) return;
   const contours = new Map(v.geometry.contours.map((c) => [c.contourId, c]));
   for (const p of snap.paths ?? []) {

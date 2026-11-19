@@ -5,7 +5,8 @@
 // are never edited as persistence. Selection is bound to stable canonical IDs.
 
 import * as THREE from 'three';
-import { GlyphRegistry } from '../src/glyph/registry.js';
+import { loadRegistryAndProfile } from '../src/glyph/load-browser.js';
+import { readBridgeRequest, mountReturnLink } from '../src/bridge/editor-bridge.js';
 import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
 import { buildRenderModel } from '../src/render/render-model.js';
 import { buildGlyphObject } from '../src/editor/three-glyph.js';
@@ -16,7 +17,7 @@ import { disabledParameterOperations, findNode } from '../src/model/operations.j
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const get = async (p) => { const r = await fetch(p); if (!r.ok) throw new Error(`${p}: HTTP ${r.status}`); return r.json(); };
-const EDITABLE = ['A', 'B', 'G', 'R', 'S'];
+let EDITABLE = [];
 const STORAGE_KEY = 'nightshift.editor.project.v1';
 const SNAP = 0.5;
 const snap = (v) => Math.round(v / SNAP) * SNAP;
@@ -66,7 +67,21 @@ function toGlyph(evt) {
 }
 
 /** Rebuild the derived scene from a canonical record (committed or preview). */
-function rebuildScene(record, { provisional = false, report = null } = {}) {
+function rebuildScene(record, opts = {}) {
+  try {
+    rebuildSceneUnsafe(record, opts);
+  } catch (err) {
+    // A preview that cannot be drawn must never leave an empty scene: fall back to the
+    // committed glyph and say what happened (reported phone bug: letter disappeared).
+    selftest.renderFallbacks = (selftest.renderFallbacks ?? 0) + 1;
+    if (opts.provisional) {
+      setBanner(`Vorschau kann nicht gezeichnet werden (${err.message}) — übernommener Stand bleibt sichtbar.`, 'err');
+      rebuildSceneUnsafe(store.get(glyphId), {});
+    } else throw err;
+  }
+}
+
+function rebuildSceneUnsafe(record, { provisional = false, report = null } = {}) {
   root.clear();
   handles = [];
   const rep = report ?? validateGlyphGeometry(record, profile);
@@ -186,8 +201,23 @@ canvas.addEventListener('pointerdown', (e) => {
   }
   pan = { x: e.clientX, y: e.clientY, panX: view.panX, panY: view.panY };
 });
+// Coalesce pointer moves: at most one validated preview per animation frame, always for
+// the newest position. Without this, slow devices queue validations faster than they finish.
+let pendingMove = null, moveScheduled = false;
+function flushMove() {
+  moveScheduled = false;
+  if (!pendingMove || !interaction) return;
+  const to = pendingMove; pendingMove = null;
+  const last = interaction.lastPreview?.cmd.payload.to;
+  if (last && last.x === snap(to.x) && last.y === snap(to.y)) return;
+  dragMove(to);
+}
 canvas.addEventListener('pointermove', (e) => {
-  if (interaction) { dragMove(toGlyph(e)); return; }
+  if (interaction) {
+    pendingMove = toGlyph(e);
+    if (!moveScheduled) { moveScheduled = true; requestAnimationFrame(flushMove); }
+    return;
+  }
   if (pan) {
     const wpp = worldPerPixel();
     view.panX = pan.panX - (e.clientX - pan.x) * wpp;
@@ -195,7 +225,7 @@ canvas.addEventListener('pointermove', (e) => {
     draw();
   }
 });
-canvas.addEventListener('pointerup', () => { if (interaction) dragEnd(); pan = null; });
+canvas.addEventListener('pointerup', () => { if (interaction) { if (pendingMove) flushMove(); dragEnd(); } pan = null; });
 canvas.addEventListener('pointercancel', () => { cancelInteraction('pointer-cancel'); pan = null; });
 canvas.addEventListener('wheel', (e) => { e.preventDefault(); setZoom(view.zoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15)); }, { passive: false });
 window.addEventListener('keydown', (e) => {
@@ -291,15 +321,15 @@ function setupControls() {
 const selftest = { ready: false, steps: {}, errors: [] };
 window.addEventListener('error', (e) => selftest.errors.push(String(e.message)));
 try {
-  const [snapshot, overlay, parameterContract, validationContract] = await Promise.all([
-    get('../data/legacy/v06-glyph-paths.json'), get('../data/semantic/abgrs-semantic-overlay.v1.json'),
-    get('../contracts/glyph-parameter-contract.v1.json'), get('../contracts/glyph-geometry-validation.v1.json'),
-  ]);
-  profile = await get('../data/validator-profiles/legacy-v06.v1.json');
-  paramContract = parameterContract;
-  registry = GlyphRegistry.build({ snapshot, overlay, parameterContract, validationContract });
+  let inputs;
+  ({ registry, profile, inputs } = await loadRegistryAndProfile('../'));
+  paramContract = inputs.parameterContract;
+  EDITABLE = registry.list().filter((g) => g.variants[0].geometry.editability === 'fully-editable').map((g) => g.character);
   disabledOps = disabledParameterOperations(paramContract);
   store = new EditorStore(registry.list(), profile, disabledOps);
+  const bridge = readBridgeRequest(location.search, 'editor');
+  if (bridge?.glyph && EDITABLE.includes(bridge.glyph)) { glyphId = `latin.upper.${bridge.glyph}`; selection = { glyphId, nodeId: null }; }
+  if (bridge) { selftest.bridge = bridge; mountReturnLink(document, bridge); }
   setupControls();
   refreshUi();
   selftest.ready = true;
@@ -376,6 +406,29 @@ function runSelftest() {
   fire('pointermove', screenOf(n3.x + 3, n3.y - 2));
   fire('pointerup', screenOf(n3.x + 3, n3.y - 2));
   S.pointerPath = hash() !== before && node(NODE3).x === n3.x + 3 && node(NODE3).y === n3.y - 2 && store.undoStack.at(-1).affected_entity_ids[0] === NODE3;
+
+  // Reported phone bug: dragging a B node far across the outline froze the editor and the
+  // letter disappeared. The preview must stay fast, the scene must never be empty, and the
+  // rejected drag must restore the committed glyph.
+  glyphId = 'latin.upper.B'; selection = { glyphId, nodeId: null }; refreshUi();
+  const bBefore = store.get(glyphId).variants[0].geometryHash;
+  dragStart('glyph.B.contour.outer.node.02');
+  const t0 = performance.now();
+  const far = dragMove({ x: 94.9, y: 150.6 });
+  const farMs = performance.now() - t0;
+  const sceneNotEmpty = root.children.length > 0;
+  const farEnd = dragEnd();
+  S.farDragKeepsGlyph = farMs < 2000 && sceneNotEmpty && !far.ok && !farEnd.committed && root.userData.valid === true && root.userData.geometryHash === bBefore;
+  selftest.farDragMs = Math.round(farMs);
+
+  // A burst of pointer moves is coalesced; release commits the newest position once.
+  glyphId = A; selection = { glyphId, nodeId: null }; refreshUi();
+  const n3b = node(NODE3), undoBefore = store.undoStack.length;
+  fire('pointerdown', screenOf(n3b.x, n3b.y));
+  for (let i = 1; i <= 30; i++) fire('pointermove', screenOf(n3b.x + (i % 4), n3b.y - 1));
+  fire('pointermove', screenOf(n3b.x + 2, n3b.y - 1));
+  fire('pointerup', screenOf(n3b.x + 2, n3b.y - 1));
+  S.burstCoalesced = store.undoStack.length === undoBefore + 1 && node(NODE3).x === n3b.x + 2 && node(NODE3).y === n3b.y - 1;
 
   S.paramsDisabled = document.querySelectorAll('#params input[type=range]').length > 0 && [...document.querySelectorAll('#params input')].every((i) => i.disabled);
   selftest.pass = Object.values(S).every(Boolean) && selftest.errors.length === 0;

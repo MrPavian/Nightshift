@@ -1,0 +1,3730 @@
+{
+  "resolverVersion": "style-resolver/1.0.0",
+  "contract": "nightshift.style-resolver@1.1.0",
+  "words": [
+    "ABRA",
+    "BOMB",
+    "GHOST",
+    "KRAZE",
+    "MIND",
+    "NYX"
+  ],
+  "glyphs": {
+    "neutral:A": {
+      "status": "unchanged",
+      "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "operations": []
+    },
+    "neutral:B": {
+      "status": "unchanged",
+      "geometryHash": "d63d11e73aba8a950b7cee49d4389879afcf2baaad795ef0d6b37f1bc1801a0f",
+      "operations": []
+    },
+    "neutral:C": {
+      "status": "unchanged",
+      "geometryHash": "fd36ea2ab51992ef5f00cf0626795ffeb3a92ea8d0a70c1f54f6e09839ca00f1",
+      "operations": []
+    },
+    "neutral:D": {
+      "status": "unchanged",
+      "geometryHash": "1aba4ce4d17869e06ecf85ac2443faad24d6acdfa7a10637f7523fb4429d299a",
+      "operations": []
+    },
+    "neutral:E": {
+      "status": "unchanged",
+      "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+      "operations": []
+    },
+    "neutral:F": {
+      "status": "unchanged",
+      "geometryHash": "2aa3f6b88ba4851158c2b1f50530d025f84727cf89fff69691e7e0a3da876fc1",
+      "operations": []
+    },
+    "neutral:G": {
+      "status": "unchanged",
+      "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "operations": []
+    },
+    "neutral:H": {
+      "status": "unchanged",
+      "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+      "operations": []
+    },
+    "neutral:I": {
+      "status": "unchanged",
+      "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+      "operations": []
+    },
+    "neutral:J": {
+      "status": "unchanged",
+      "geometryHash": "63e904ddd616e368495e309a2134c057479bed4b31f2e4c26b22ece719d6b704",
+      "operations": []
+    },
+    "neutral:K": {
+      "status": "unchanged",
+      "geometryHash": "68895485b99cb7de706fec34abb2a6fd1e57825761e6c84568fe507e5c51d27a",
+      "operations": []
+    },
+    "neutral:L": {
+      "status": "unchanged",
+      "geometryHash": "b55f11141b7c8c84452ab4513e1e6a52692a6ffeab2295a223c373ffa165e6c2",
+      "operations": []
+    },
+    "neutral:M": {
+      "status": "unchanged",
+      "geometryHash": "fcf83ac3fc8c511fad5901ad8fbe27281f3d5bb8428f53c49ed03524fbfc9040",
+      "operations": []
+    },
+    "neutral:N": {
+      "status": "unchanged",
+      "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+      "operations": []
+    },
+    "neutral:O": {
+      "status": "unchanged",
+      "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+      "operations": []
+    },
+    "neutral:P": {
+      "status": "unchanged",
+      "geometryHash": "753f287f9270677db68718e67d3be4bc75694ef7ad2592c36336bf508211d486",
+      "operations": []
+    },
+    "neutral:Q": {
+      "status": "unchanged",
+      "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+      "operations": []
+    },
+    "neutral:R": {
+      "status": "unchanged",
+      "geometryHash": "296004717abcb1189d0fe08b15a21e778f335b5213ee9a52cf070d03a511d47d",
+      "operations": []
+    },
+    "neutral:S": {
+      "status": "unchanged",
+      "geometryHash": "cbeacc65e147b242a1ee01903cac8c83df57dd166d6335a865566b97ed6c85b9",
+      "operations": []
+    },
+    "neutral:T": {
+      "status": "unchanged",
+      "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+      "operations": []
+    },
+    "neutral:U": {
+      "status": "unchanged",
+      "geometryHash": "661f2f9b35329d7e3a69ee27ee29161235c25382c176530e680c345ec4b976a6",
+      "operations": []
+    },
+    "neutral:V": {
+      "status": "unchanged",
+      "geometryHash": "4fb0d4868e55dceaa4e9a2412eafefc524e7c872419b10d26028af452a4f6251",
+      "operations": []
+    },
+    "neutral:W": {
+      "status": "unchanged",
+      "geometryHash": "9d3e487b32504013a25f0dc1fb3edcfea5ef97a3224073cbaf5c2909008e3e84",
+      "operations": []
+    },
+    "neutral:X": {
+      "status": "unchanged",
+      "geometryHash": "3090a1c3d004feedde5a93be3060d95b65dd230ca2ef6cb31d3406ebfe93bab4",
+      "operations": []
+    },
+    "neutral:Y": {
+      "status": "unchanged",
+      "geometryHash": "5b670463984a9994f752242cbc4ced2eb45049c810a515a095f67e8d5a824021",
+      "operations": []
+    },
+    "neutral:Z": {
+      "status": "unchanged",
+      "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+      "operations": []
+    },
+    "straight:A": {
+      "status": "unchanged",
+      "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:B": {
+      "status": "applied",
+      "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 8
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:C": {
+      "status": "unchanged",
+      "geometryHash": "fd36ea2ab51992ef5f00cf0626795ffeb3a92ea8d0a70c1f54f6e09839ca00f1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:D": {
+      "status": "applied",
+      "geometryHash": "254bdcd9da8c02fb4e95385f8feb6f6562b941a9003550db94e60610c1b8a8e3",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:E": {
+      "status": "unchanged",
+      "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:F": {
+      "status": "unchanged",
+      "geometryHash": "2aa3f6b88ba4851158c2b1f50530d025f84727cf89fff69691e7e0a3da876fc1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:G": {
+      "status": "unchanged",
+      "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:H": {
+      "status": "unchanged",
+      "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:I": {
+      "status": "unchanged",
+      "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:J": {
+      "status": "applied",
+      "geometryHash": "a3a989a97bdf8a62307473326a06761343078854ef6e8e6e576e74b3bde27cdc",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:K": {
+      "status": "applied",
+      "geometryHash": "9980cf10830f9e57d7c37ccff8c4a9b181ccfff9cf6865329e95763933cf476a",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:L": {
+      "status": "unchanged",
+      "geometryHash": "b55f11141b7c8c84452ab4513e1e6a52692a6ffeab2295a223c373ffa165e6c2",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:M": {
+      "status": "applied",
+      "geometryHash": "acf9f6d728c7f381c3c5c6511bf178ce847130b67b493719c12d32073df99ac5",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:N": {
+      "status": "unchanged",
+      "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:O": {
+      "status": "unchanged",
+      "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:P": {
+      "status": "applied",
+      "geometryHash": "6190f1072399601197744e88716cc6490723056e4731ce7c33b0b09b3fa94c75",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:Q": {
+      "status": "unchanged",
+      "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:R": {
+      "status": "applied",
+      "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:S": {
+      "status": "applied",
+      "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:T": {
+      "status": "unchanged",
+      "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:U": {
+      "status": "applied",
+      "geometryHash": "0cf39ca3870f2f03d81e5b63e2e13fbe6f87b8eb488473a17aac05017e0d46d8",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "straight:V": {
+      "status": "applied",
+      "geometryHash": "a93f398eb206afc7cbda7f02ff51fa518408db69485373f243fcbefd90a200e9",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:W": {
+      "status": "applied",
+      "geometryHash": "c76e792dca3c11e135fdadb5ddd46b74b5a3203ada6d3f7c601b060032396418",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:X": {
+      "status": "applied",
+      "geometryHash": "2c96ba3e71909d55f47c8dba94fd0832e28bcbd450d98a26b7f68511e509e6c1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 4,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:Y": {
+      "status": "applied",
+      "geometryHash": "1962429b2459a6913708f288d2c24b5504951870dc4b3cfd9d93b88f8447a295",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        }
+      ]
+    },
+    "straight:Z": {
+      "status": "unchanged",
+      "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        }
+      ]
+    },
+    "bubble:A": {
+      "status": "applied",
+      "geometryHash": "ad643a6c76b6bbd99820146ec361866f4306c05dcbe5e8336725b254787eaa4a",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:B": {
+      "status": "applied",
+      "geometryHash": "3389abdc893ec5441c609f5282e11129369341713f0c6442d8e827d767d887e3",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:C": {
+      "status": "applied",
+      "geometryHash": "86c8eeb48700ce42be82a2c2673762e8a4b9bc6066c6ec73a896aea425a86539",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:D": {
+      "status": "applied",
+      "geometryHash": "5476782e12f763ffb39362f7c77facc102512a69e25b4caca87c4b89e52449b6",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:E": {
+      "status": "applied",
+      "geometryHash": "ac80d8ead70cd18ea0e6a29ef15248bcc94649e14a87674d8d5aeb4a1c578bcb",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:F": {
+      "status": "applied",
+      "geometryHash": "80e4299097c194e5b5836db73a47af5cc662720ea3d8c88836cfdfba97491fe1",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:G": {
+      "status": "applied",
+      "geometryHash": "55771afa7d8eaff38a42557b6ccb3bf8fa7d3fd84fa2ffba0f6c3c7fc01f5cfd",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:H": {
+      "status": "applied",
+      "geometryHash": "dec40aa8548b45cc5907495a2d9ac2efefb392ea1bab504dc5b9cd12d548b5af",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:I": {
+      "status": "applied",
+      "geometryHash": "f459f93b8347f447e141b09a1e994748ea404f6c1e442fcd02742f152f85cc05",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:J": {
+      "status": "applied",
+      "geometryHash": "587b23adae36678a74dedd7ee0ea529ac3b8f1a03296ea02eac34eee2321ee76",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:K": {
+      "status": "applied",
+      "geometryHash": "bc253ee94f3f4db6de8716f401fa494638a0726864fc66e8bab0c6aefd4f67ea",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:L": {
+      "status": "applied",
+      "geometryHash": "7abc45789f1e21e44455b16aa183864a8c3cff800c16954b369adc8a01104c8e",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:M": {
+      "status": "applied",
+      "geometryHash": "6c4a00177f7f86ebc825ccd4f881b5556aba3eca00d3725c84517b4cd4649a7a",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:N": {
+      "status": "applied",
+      "geometryHash": "736672967912c5df87ebcb27a093d03371d71a49ce81fb94c735ce1a392c1a26",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:O": {
+      "status": "applied",
+      "geometryHash": "1ccffba32a7e208b97a865e9fa181485baddc920554490ab044d4036f55dc7d7",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:P": {
+      "status": "applied",
+      "geometryHash": "24ad5f948a0a5de6ab1c6d41c0bc4a9da888fbb4ac57d7ef77a950a6d9792ec1",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:Q": {
+      "status": "applied",
+      "geometryHash": "1434d1ff91c91e1d2fc32adf3ea7cbbd3ce3f326388c7574093a14840a8eae08",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:R": {
+      "status": "applied",
+      "geometryHash": "37ad07f1159a7368d617f4b8cefe54e1262ea7978093e8e5aa78205f92f54223",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:S": {
+      "status": "applied",
+      "geometryHash": "2a4de6e00af613393f70ecbac3f1bb0f0a0f046073be257ae76423dcb13731e7",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:T": {
+      "status": "applied",
+      "geometryHash": "63b39d7ab395f80da33ef660545a9c85cc640a3c3d07aafc7f8fd5fb4fb4c258",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:U": {
+      "status": "applied",
+      "geometryHash": "64e9c4af88d50436c11bbe321f38dd9c79b2e54edbc5f0abafccae2f738ce650",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:V": {
+      "status": "applied",
+      "geometryHash": "84fa91e8702eace05ded93dbb6d726f81c3f8a147832204e5b526d1ae3c186df",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:W": {
+      "status": "applied",
+      "geometryHash": "1b8376d6a7c917e12eda34f8349229e62789abf0c1fa25766428e787dd240adb",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:X": {
+      "status": "applied",
+      "geometryHash": "b05ccb0a9fe9fba93eb09edbf359ac75f727c86fda8dc2c5ede37c4db2929b02",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:Y": {
+      "status": "applied",
+      "geometryHash": "38f2acf163e6611dc80e9fa06e06a99f97fcf2e74a519b482b02a8bcdf4bd5eb",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "bubble:Z": {
+      "status": "applied",
+      "geometryHash": "6cbc4a3e61f0d97c88f701ded41c31731e8fbb72218a2e7791582975f501acb3",
+      "operations": [
+        {
+          "operationId": "letterform.bubble.inflate",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 9
+          }
+        },
+        {
+          "operationId": "letterform.bubble.swell-sides",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "ratio": 0.14,
+            "max": 12
+          }
+        },
+        {
+          "operationId": "letterform.bubble.smooth",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "iterations": 3
+          }
+        },
+        {
+          "operationId": "composition.bounce",
+          "axis": "composition",
+          "status": "applied",
+          "reason": "Wirkt nur im Wort (Platzierung), nicht auf die Form des einzelnen Buchstabens.",
+          "params": {
+            "tiltDeg": [
+              -3,
+              4
+            ],
+            "shiftY": [
+              5,
+              -6
+            ],
+            "overlapRatio": 0.12
+          }
+        }
+      ]
+    },
+    "blockbuster:A": {
+      "status": "applied",
+      "geometryHash": "5a4849e2bc213f2fe46be43edf2f2f606f00aabe798ec7411347586180d541b4",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:B": {
+      "status": "applied",
+      "geometryHash": "e4cb4dd5df2ffd3286863feeda18a9d9890f85e4c695668ca3527bda2d8a2ac1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 8
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:C": {
+      "status": "applied",
+      "geometryHash": "f10596dc7a92898c487e041a188f30c54f5d37afee587921b131295a3001bf8d",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:D": {
+      "status": "applied",
+      "geometryHash": "5314489ec757fcff5cefbc4e970bd6249ac4e1c89658be4893e94cbb3ea45703",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:E": {
+      "status": "applied",
+      "geometryHash": "9688da7b455a31647d57c4ccecc3feb4f9b12a74c1b2b30e82cddf783a12e374",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:F": {
+      "status": "applied",
+      "geometryHash": "289320134462d4cb2b7481be9c61cb04bb8fc708197839e9200a7864bf605679",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1.011,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:G": {
+      "status": "applied",
+      "geometryHash": "5332dd941811e2bbb15f20ba7a86ad9eabf051586b538b865631596a0188fc00",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.924
+          }
+        }
+      ]
+    },
+    "blockbuster:H": {
+      "status": "applied",
+      "geometryHash": "8963e6ccb1a7a16d581247ae636b72ea0b23c4f9794ffdf01305a45c035fc61c",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:I": {
+      "status": "applied",
+      "geometryHash": "7b50ccf97387861724cd84bf34bb8f7898a61c31fba486f087ba59161d93a3bd",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1.368,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:J": {
+      "status": "applied",
+      "geometryHash": "c1c289fe7a6f03768fd3d4d87e6cd13a3d2f2e5d8c943631ac63fdee64994239",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:K": {
+      "status": "applied",
+      "geometryHash": "0ce52eadbc47d3c0c8bdcfb1d9ed6e208b2990169d7709cdae359c05a5cda555",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:L": {
+      "status": "applied",
+      "geometryHash": "21f9c802712754fa4cc424e83e8c7ab5ddb9e054ca7af8818234e534c9d06ca1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1.011,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:M": {
+      "status": "applied",
+      "geometryHash": "7bb1ca94fb716208e6d41df51e1d3b89973d328cb5798661d86236b376862567",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:N": {
+      "status": "applied",
+      "geometryHash": "3db78d7e2d1680cc4c741f81206942ca57b5f4e19d9fe714fb769cd16e8a2667",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:O": {
+      "status": "applied",
+      "geometryHash": "5f6be8534993e44f3a8f18a217076a28527b751dd8ded0f3d28de54357dc398e",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:P": {
+      "status": "applied",
+      "geometryHash": "a9009ed4e86fb69320379c7b8948f6786a9f14b69bd91f4d5d52f21407adfbad",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:Q": {
+      "status": "applied",
+      "geometryHash": "5c4c9ca041a71c4894b71ad9d0b447ea8eb178c205f3b903ba87651bf9986a36",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.832
+          }
+        }
+      ]
+    },
+    "blockbuster:R": {
+      "status": "applied",
+      "geometryHash": "6588b554da6194b2ea43c336b0652bf24ea2187229ee670b4f694f2d758cf969",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:S": {
+      "status": "applied",
+      "geometryHash": "da6569ba4cfcd457ec9e77f7254563e711b3f8874614a73fa19e976496f6c832",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.919
+          }
+        }
+      ]
+    },
+    "blockbuster:T": {
+      "status": "applied",
+      "geometryHash": "a4e15b7e7a66e083c22cf8a6c9f448cd6f0a5413967ca424457f61d34ee42d3c",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:U": {
+      "status": "applied",
+      "geometryHash": "e8417b141e045c10be5fc937eff28ee73bc01f3e938a36fc2d87e4b92f690b04",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:V": {
+      "status": "applied",
+      "geometryHash": "3b71c55effda6708c335875cbb3f2a63f9538d9c950079d806541b1113d7e789",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:W": {
+      "status": "applied",
+      "geometryHash": "440ff75cd94690640d22a532723e7be418d26c33c1f13459bb3e0e9d2f876f97",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:X": {
+      "status": "applied",
+      "geometryHash": "9db4622920dd19e12096183308ffaae1e6348ac64c169ffa087b4e0e82413019",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 4,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:Y": {
+      "status": "applied",
+      "geometryHash": "8526aba5d3e73416898e0747b368e8d9202e78371264e3ece9fe5b3cd3adb965",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "blockbuster:Z": {
+      "status": "applied",
+      "geometryHash": "21d4847a0d565b8c8fc86cad6a58a469e090a912e272d2902898aed6d416beaa",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.block-fit.thicken",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "distance": 5
+          }
+        },
+        {
+          "operationId": "composition.block-fit.fit-box",
+          "axis": "composition",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "scaleX": 1,
+            "scaleY": 0.925
+          }
+        }
+      ]
+    },
+    "wildstyle:A": {
+      "status": "partial",
+      "geometryHash": "e9a15fff589da30bf08c490a9a6896087201eff34876c50f6705cea3101ceb97",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:B": {
+      "status": "partial",
+      "geometryHash": "1ee03d33ea102092ffa3d631bc551ffd430d20e80376488e900cddbdc252ba48",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 8
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:C": {
+      "status": "partial",
+      "geometryHash": "fd36ea2ab51992ef5f00cf0626795ffeb3a92ea8d0a70c1f54f6e09839ca00f1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:D": {
+      "status": "partial",
+      "geometryHash": "254bdcd9da8c02fb4e95385f8feb6f6562b941a9003550db94e60610c1b8a8e3",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:E": {
+      "status": "partial",
+      "geometryHash": "6d0d94b025a2920a1c89d32d161168d5e01111af569e910b56cae4ec5c0bf388",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:F": {
+      "status": "partial",
+      "geometryHash": "2aa3f6b88ba4851158c2b1f50530d025f84727cf89fff69691e7e0a3da876fc1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:G": {
+      "status": "partial",
+      "geometryHash": "c148c58c1f4e599ca2e7b932e7bff9838fcbf1dbbadf4f4c810fe02469d3f6ae",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:H": {
+      "status": "partial",
+      "geometryHash": "3fcff0be501ee919a502812d79d4775b558186c87611dfe4f8f2a7a56d270db1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:I": {
+      "status": "partial",
+      "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:J": {
+      "status": "partial",
+      "geometryHash": "a3a989a97bdf8a62307473326a06761343078854ef6e8e6e576e74b3bde27cdc",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:K": {
+      "status": "partial",
+      "geometryHash": "9980cf10830f9e57d7c37ccff8c4a9b181ccfff9cf6865329e95763933cf476a",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:L": {
+      "status": "partial",
+      "geometryHash": "b55f11141b7c8c84452ab4513e1e6a52692a6ffeab2295a223c373ffa165e6c2",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:M": {
+      "status": "partial",
+      "geometryHash": "acf9f6d728c7f381c3c5c6511bf178ce847130b67b493719c12d32073df99ac5",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:N": {
+      "status": "partial",
+      "geometryHash": "89de935df103460348c3e8b328231be933335e85c547658b651e3b43a7e9ef75",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:O": {
+      "status": "partial",
+      "geometryHash": "c4804eb56ee64be9f4f3f1b4f71e24d07e436b2d49e7423f574af9228787f152",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:P": {
+      "status": "partial",
+      "geometryHash": "6190f1072399601197744e88716cc6490723056e4731ce7c33b0b09b3fa94c75",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:Q": {
+      "status": "partial",
+      "geometryHash": "dae7043438d8ff42ba896c54d2698fbd0b29a1cb5450f88d44052ed33a7a1257",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:R": {
+      "status": "partial",
+      "geometryHash": "48f83188a3846a3b8a468884eb0ba682666eead168af936c974927892c9b7645",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 1,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:S": {
+      "status": "partial",
+      "geometryHash": "61ac1886f74fbbbeb73aaf166f1854e32a213a04968b383eaa1459fb647726e3",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:T": {
+      "status": "partial",
+      "geometryHash": "5ec6397a01d9a242f085095c8b716fa303dfa824bb2f1a87dcfa0e269caaa008",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:U": {
+      "status": "partial",
+      "geometryHash": "0cf39ca3870f2f03d81e5b63e2e13fbe6f87b8eb488473a17aac05017e0d46d8",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "curves": 4
+          }
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:V": {
+      "status": "partial",
+      "geometryHash": "a93f398eb206afc7cbda7f02ff51fa518408db69485373f243fcbefd90a200e9",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:W": {
+      "status": "partial",
+      "geometryHash": "c76e792dca3c11e135fdadb5ddd46b74b5a3203ada6d3f7c601b060032396418",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:X": {
+      "status": "partial",
+      "geometryHash": "2c96ba3e71909d55f47c8dba94fd0832e28bcbd450d98a26b7f68511e509e6c1",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 4,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:Y": {
+      "status": "partial",
+      "geometryHash": "1962429b2459a6913708f288d2c24b5504951870dc4b3cfd9d93b88f8447a295",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "applied",
+          "reason": null,
+          "params": {
+            "corners": 2,
+            "size": 5,
+            "maxAngleDeg": 80
+          }
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    },
+    "wildstyle:Z": {
+      "status": "partial",
+      "geometryHash": "5fc2f48d57f716f7afca5e80b66e585991ff30fa041ea34db945f8592660110e",
+      "operations": [
+        {
+          "operationId": "letterform.straight.chamfer-curves",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Der Master hat keine Kurven."
+        },
+        {
+          "operationId": "letterform.straight.clip-sharp-corners",
+          "axis": "letterform",
+          "status": "unchanged",
+          "reason": "Keine Außenecke spitzer als 80°."
+        },
+        {
+          "operationId": "composition.interlocking",
+          "axis": "composition",
+          "status": "skipped",
+          "reason": "Verschränkung braucht den Beziehungslöser (C04), der noch fehlt. Nur die Buchstabenform wird gezeigt; nichts wird als verschränkt ausgegeben."
+        }
+      ]
+    }
+  },
+  "summary": {
+    "neutral": {
+      "applied": 0,
+      "unchanged": 26,
+      "partial": 0,
+      "fallback": 0
+    },
+    "straight": {
+      "applied": 13,
+      "unchanged": 13,
+      "partial": 0,
+      "fallback": 0
+    },
+    "bubble": {
+      "applied": 26,
+      "unchanged": 0,
+      "partial": 0,
+      "fallback": 0
+    },
+    "blockbuster": {
+      "applied": 26,
+      "unchanged": 0,
+      "partial": 0,
+      "fallback": 0
+    },
+    "wildstyle": {
+      "applied": 0,
+      "unchanged": 0,
+      "partial": 26,
+      "fallback": 0
+    }
+  }
+}

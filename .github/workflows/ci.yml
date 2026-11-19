@@ -27,6 +27,9 @@ jobs:
           node tools/report-topology.mjs --check
           node tools/report-validation.mjs --check
           node tools/proof-run.mjs --check
+          node tools/archive-build.mjs --check
+      - name: Editor responsiveness (no multi-second validations)
+        run: npm run -s perf:editor
       - name: Browser tests (headless Chrome)
         run: |
           CHROME=$(command -v google-chrome || command -v chromium) npm run -s test:browser

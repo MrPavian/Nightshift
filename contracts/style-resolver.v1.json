@@ -1,0 +1,168 @@
+{
+  "contractId": "nightshift.style-resolver",
+  "version": "1.1.0",
+  "status": "implemented-subset",
+  "implements": "contracts/az-style-grammar-application.v1.json (C03 subset)",
+  "axes": {
+    "letterform": [
+      "neutral",
+      "straight",
+      "bubble"
+    ],
+    "composition": [
+      "neutral",
+      "bounce",
+      "block-fit",
+      "interlocking"
+    ],
+    "practiceContext": [
+      "none",
+      "tag",
+      "throw-up",
+      "piece",
+      "panel",
+      "wholecar"
+    ],
+    "rendering": [
+      "fill",
+      "outline",
+      "inline",
+      "depth",
+      "highlights",
+      "texture"
+    ]
+  },
+  "axisRules": [
+    "Letterform and composition change geometry; practice context and rendering never do.",
+    "Blockbuster is not an alphabet: straight letterform plus block-fit composition.",
+    "Wildstyle is a composition and relationship grammar. Interlocking needs the relationship solver (C04); until then the composition step is skipped and reported.",
+    "Throw-up is a practice/form context, not a letterform; it does not force bubble geometry.",
+    "Bounce is a word-level composition: it never changes a glyph's own geometry, only its placement in the word."
+  ],
+  "presets": {
+    "neutral": {
+      "labelDe": "Neutral",
+      "letterform": "neutral",
+      "composition": "neutral",
+      "practiceContext": "none"
+    },
+    "straight": {
+      "labelDe": "Straight / Simple",
+      "letterform": "straight",
+      "composition": "neutral",
+      "practiceContext": "none"
+    },
+    "bubble": {
+      "labelDe": "Bubble",
+      "letterform": "bubble",
+      "composition": "bounce",
+      "practiceContext": "none"
+    },
+    "blockbuster": {
+      "labelDe": "Blockbuster",
+      "letterform": "straight",
+      "composition": "block-fit",
+      "practiceContext": "none"
+    },
+    "wildstyle": {
+      "labelDe": "Wildstyle (Studie)",
+      "letterform": "straight",
+      "composition": "interlocking",
+      "practiceContext": "piece"
+    }
+  },
+  "operations": {
+    "letterform.straight.chamfer-curves": {
+      "axis": "letterform",
+      "labelDe": "Kurven in gerade Facetten umwandeln",
+      "params": {}
+    },
+    "letterform.straight.clip-sharp-corners": {
+      "axis": "letterform",
+      "labelDe": "spitze Außenecken kappen",
+      "params": {
+        "size": 5,
+        "maxAngleDeg": 80
+      }
+    },
+    "letterform.bubble.inflate": {
+      "axis": "letterform",
+      "labelDe": "Masse aufblasen (Kontur nach außen, Punzen werden zu Schlitzen)",
+      "params": {
+        "distanceCandidates": [
+          9,
+          7,
+          5,
+          3
+        ]
+      }
+    },
+    "composition.block-fit.thicken": {
+      "axis": "composition",
+      "labelDe": "Strich verstärken (Gehrung)",
+      "params": {
+        "distanceCandidates": [
+          5,
+          3
+        ]
+      }
+    },
+    "composition.block-fit.fit-box": {
+      "axis": "composition",
+      "labelDe": "in Block einpassen: Versalhöhe, Mindestbreite",
+      "params": {
+        "capTop": 8,
+        "baseline": 132,
+        "minWidthRatio": 0.75
+      }
+    },
+    "composition.interlocking": {
+      "axis": "composition",
+      "labelDe": "Buchstaben verschränken",
+      "requires": "relationship-solver (C04)",
+      "available": false
+    },
+    "letterform.bubble.swell-sides": {
+      "axis": "letterform",
+      "labelDe": "Außenseiten wölben (nur zwischen zwei konvexen Ecken, damit Lücken zwischen Armen offen bleiben)",
+      "params": {
+        "ratio": 0.14,
+        "max": 12
+      }
+    },
+    "letterform.bubble.smooth": {
+      "axis": "letterform",
+      "labelDe": "Kontur glätten (Chaikin, drei Durchgänge)",
+      "params": {
+        "iterations": 3
+      }
+    },
+    "composition.bounce": {
+      "axis": "composition",
+      "scope": "word",
+      "labelDe": "Buchstaben im Wort wippen, kippen und überlappen",
+      "params": {
+        "tiltDeg": [
+          -3,
+          4
+        ],
+        "shiftY": [
+          5,
+          -6
+        ],
+        "overlapRatio": 0.12
+      }
+    }
+  },
+  "parameterPolicy": "Grammar defaults chosen for the authored family (stroke 23–26 units). Not calibrated against reviewed reference pieces; the resolver tries candidates in order and keeps the first one that passes validation.",
+  "validationGates": [
+    "hard geometry checks of src/glyph/validate-geometry.js pass on the derived geometry",
+    "same number of counters as the neutral master",
+    "exactly one connected component"
+  ],
+  "missingCapability": {
+    "unsupportedGlyph": "neutral-fallback: the glyph is returned unchanged with reason",
+    "operationFails": "the operation is skipped with reason; earlier operations stay applied",
+    "compositionUnavailable": "skipped with reason; the letterform result stands alone"
+  }
+}

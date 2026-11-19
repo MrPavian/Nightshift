@@ -12,7 +12,7 @@ let code = 1;
 try {
   const dom = await chrome(['--virtual-time-budget=15000', `--window-size=${size}`, '--dump-dom', url]);
   const st = JSON.parse(preText(dom, 'selftest') ?? '{}');
-  const ok = st.ready && st.tiles === 26 && st.three === 'ok' && st.errors.length === 0 && JSON.stringify(st.missing) === JSON.stringify(['D', 'O', 'P', 'Q']);
+  const ok = st.ready && st.tiles === 26 && st.three === 'ok' && st.errors.length === 0 && Array.isArray(st.missing) && st.missing.length === 0;
   console.log(`${ok ? 'REVIEW-PAGE-PASS' : 'REVIEW-PAGE-FAIL'} ${JSON.stringify(st)}`);
   if (shot) await chrome(['--virtual-time-budget=15000', `--window-size=${size}`, `--screenshot=${shot}`, url]);
   code = ok ? 0 : 1;

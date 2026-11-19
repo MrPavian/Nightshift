@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadRegistry } from '../src/glyph/load-node.js';
+import { GlyphRegistry } from '../src/glyph/registry.js';
 import { validateGlyphGeometry } from '../src/glyph/validate-geometry.js';
 import { buildRenderModel, renderModelArea, reverseContourSegments, RenderError } from '../src/render/render-model.js';
 import { glyphSvg, glyphGroup } from '../src/render/svg.js';
@@ -30,14 +31,17 @@ test('A/B/G/R/S render models carry declared holes only (A/B/R counters, none fo
 });
 
 test('invalid or undeclared topology produces structured failures, not a misleading render', () => {
-  const err = (ch) => { try { model(ch); return null; } catch (e) { return e; } };
+  const legacy = GlyphRegistry.fromLegacyV06(JSON.parse(readFileSync('data/legacy/v06-glyph-paths.json', 'utf8')));
+  const legacyModel = (ch) => { const g = legacy.getByChar(ch); return buildRenderModel(g, validateGlyphGeometry(g, profile)); };
+  const err = (ch) => { try { legacyModel(ch); return null; } catch (e) { return e; } };
   const q = err('Q');
   assert.ok(q instanceof RenderError);
   assert.equal(q.code, 'RENDER_INVALID_TOPOLOGY');
   assert.ok(q.diagnostics.every((d) => d.code === 'VAL_UNDECLARED_CROSSING'));
   for (const ch of 'DOP') assert.equal(err(ch).code, 'RENDER_UNDECLARED_TOPOLOGY', ch);
-  const rendered = registry.list().filter((g) => !err(g.character)).length;
-  assert.equal(rendered, 22);
+  assert.equal(legacy.list().filter((g) => !err(g.character)).length, 22);
+  // The current registry (with authored C/D/O/P/Q masters) renders all 26 letters.
+  for (const g of registry.list()) assert.ok(model(g.character), g.character);
 });
 
 test('a report from another geometry revision is rejected', () => {

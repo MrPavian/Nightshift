@@ -2,7 +2,8 @@
 // legacy snapshot → registry + overlay → validator → render model → SVG / Three.js.
 // Static and build-free: works from any static host serving the repository root.
 
-import { GlyphRegistry } from '../src/glyph/registry.js';
+import { loadRegistryAndProfile } from '../src/glyph/load-browser.js';
+import { readBridgeRequest, mountReturnLink } from '../src/bridge/editor-bridge.js';
 import { ALPHABET } from '../src/glyph/ids.js';
 import { glyphGroup } from '../src/render/svg.js';
 import { resolveGlyphs, buildSpecimen } from '../src/proof/specimens.js';
@@ -33,13 +34,8 @@ let records = {};
 
 // ---------- boot ----------
 try {
-  const [snapshot, overlay, parameterContract, validationContract] = await Promise.all([
-    get('../data/legacy/v06-glyph-paths.json'), get('../data/semantic/abgrs-semantic-overlay.v1.json'),
-    get('../contracts/glyph-parameter-contract.v1.json'), get('../contracts/glyph-geometry-validation.v1.json'),
-  ]);
-  profile = await get('../data/validator-profiles/legacy-v06.v1.json');
+  ({ registry, profile } = await loadRegistryAndProfile('../'));
   manifest = await get(`${RUN_DIR}manifest.json`).catch(() => null);
-  registry = GlyphRegistry.build({ snapshot, overlay, parameterContract, validationContract });
   resolved = resolveGlyphs(registry, profile, [...ALPHABET]);
   const counts = { rendered: 0, prov: 0, missing: 0 };
   for (const r of resolved.values()) counts[r.status === 'rendered' ? 'rendered' : r.status === 'missing' ? 'missing' : 'prov']++;
@@ -50,6 +46,7 @@ try {
   setupWord();
   buildPlates();
   buildReview();
+  applyBridgeRequest(readBridgeRequest(location.search, 'review'));
   selftest.ready = true;
 } catch (e) {
   $('#status').textContent = `Fehler: ${e.message}`;
@@ -61,6 +58,17 @@ function publishSelftest() {
   let pre = document.getElementById('selftest');
   if (!pre) { pre = document.createElement('pre'); pre.id = 'selftest'; pre.hidden = true; document.body.append(pre); }
   pre.textContent = JSON.stringify(selftest);
+}
+
+// ---------- archive bridge (src/bridge/editor-bridge.js) ----------
+function applyBridgeRequest(req) {
+  if (!req) return;
+  selftest.bridge = req;
+  mountReturnLink(document, req);
+  if (req.diag) $('#diag').checked = true;
+  if (req.glyph) showDetail(req.glyph);
+  if (req.word) { $('#word').value = req.word; $('#word').dispatchEvent(new Event('input')); }
+  if (req.tab) document.querySelector(`nav button[data-tab="${req.tab}"]`)?.click();
 }
 
 // ---------- tabs ----------
@@ -92,7 +100,10 @@ function miniSvg(r, surface = 'light', diagnostic = false, height = 70) {
 }
 
 function badge(r) {
-  if (r.status === 'rendered') return '<span class="badge b-authored">Master</span>';
+  if (r.status === 'rendered') {
+    const claude = r.glyph.provenance[0]?.kind === 'claude-authored';
+    return `<span class="badge b-authored" title="${claude ? 'von Claude gestaltet, Bewertung ausstehend' : 'v0.6-Master'}">${claude ? 'Master·neu' : 'Master'}</span>`;
+  }
   if (r.status === 'rendered-provisional') return '<span class="badge b-prov">provisorisch</span>';
   return '<span class="badge b-missing">verweigert</span>';
 }
@@ -129,6 +140,7 @@ function showDetail(ch) {
   $('#detail-info').innerHTML = `
     <table>
       <tr><th>Geometrieprüfung</th><td>${rep.hardChecksPassed ? '<span class="msg-ok">alle harten Prüfungen bestanden</span>' : `<span class="msg-err">${errs.length} Fehler</span>`}</td></tr>
+      <tr><th>Herkunft</th><td>${esc(r.glyph.provenance[0]?.kind === 'claude-authored' ? `von Claude gestaltet (${r.glyph.provenance[0].date}), Bewertung ausstehend` : r.glyph.provenance[0]?.kind === 'legacy-prototype' ? 'Prototyp v0.6' : r.glyph.provenance[0]?.kind)}</td></tr>
       <tr><th>Darstellung</th><td>${r.status === 'missing' ? `<span class="msg-err">verweigert: ${esc(REFUSAL_TEXT[r.reason] ?? r.reason)}</span>` : 'gerendert aus deklarierter Topologie'}</td></tr>
       <tr><th>Innenräume</th><td>${rep.negativeSpace.counters.length ? rep.negativeSpace.counters.map((c) => (c.boundedFace ? 'umschlossen' : 'NICHT umschlossen')).join(', ') : 'keine'} · Öffnung: ${esc(r.glyph.semanticGraph.topology.apertureStatus)}</td></tr>
       <tr><th>Wand um Innenraum</th><td>${walls} (unkalibriert)</td></tr>

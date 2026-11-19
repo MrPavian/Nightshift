@@ -6,6 +6,7 @@ import { ALPHABET, glyphId as toGlyphId } from './ids.js';
 import { importLegacyV06, IMPORTER_VERSION, GLYPH_SCHEMA_VERSION } from './import-v06.js';
 import { validateRecords } from './schema.js';
 import { applySemanticOverlay, OVERLAY_APPLIER_VERSION } from './semantic-overlay.js';
+import { applyAuthoredSnapshot, AUTHORED_IMPORTER_VERSION } from './import-authored.js';
 
 export const REGISTRY_SCHEMA_VERSION = '1.0';
 
@@ -31,14 +32,18 @@ export class GlyphRegistry {
    * Import v0.6 and apply the A/B/G/R/S semantic overlay (T03).
    * @param {{snapshot:object, overlay:object, parameterContract:object, validationContract:object}} inputs
    */
-  static build({ snapshot, overlay, parameterContract, validationContract }) {
-    const records = applySemanticOverlay(importLegacyV06(snapshot), overlay, { parameterContract, validationContract });
+  static build({ snapshot, overlay, parameterContract, validationContract, authored = [] }) {
+    let imported = importLegacyV06(snapshot);
+    for (const a of authored) imported = applyAuthoredSnapshot(imported, a.snapshot, a.sourcePath);
+    const records = applySemanticOverlay(imported, overlay, { parameterContract, validationContract });
     return new GlyphRegistry(records, {
       source: snapshot.snapshotId,
       sourceSha256: snapshot.source.sha256,
       importer: IMPORTER_VERSION,
       semanticOverlay: `${overlay.overlayId}@${overlay.version}`,
       overlayApplier: OVERLAY_APPLIER_VERSION,
+      authored: authored.map((a) => `${a.snapshot.snapshotId}@${a.snapshot.version}`),
+      authoredImporter: AUTHORED_IMPORTER_VERSION,
     });
   }
 

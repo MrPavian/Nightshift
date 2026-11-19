@@ -5,17 +5,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            79,
+            64,
             8
           ],
           [
-            79,
-            33
+            64,
+            31
           ]
         ],
         "featureId": "glyph.I.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.I.contour.outer.seg.01",
           "glyph.I.contour.outer.seg.03"
@@ -26,17 +26,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            66,
+            56,
             8
           ],
           [
-            66,
-            33
+            56,
+            31
           ]
         ],
         "featureId": "glyph.I.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.I.contour.outer.seg.01",
           "glyph.I.contour.outer.seg.04"
@@ -47,17 +47,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            39,
+            30,
             8
           ],
           [
-            39,
-            33
+            30,
+            31
           ]
         ],
         "featureId": "glyph.I.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.I.contour.outer.seg.01",
           "glyph.I.contour.outer.seg.10"
@@ -68,17 +68,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            25.5,
+            22,
             8
           ],
           [
-            25.5,
-            33
+            22,
+            31
           ]
         ],
         "featureId": "glyph.I.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.I.contour.outer.seg.01",
           "glyph.I.contour.outer.seg.11"
@@ -89,17 +89,17 @@
         "calibrationStatus": "uncalibrated",
         "closestPointPair": [
           [
-            66,
-            107
+            56,
+            109
           ],
           [
-            66,
+            56,
             132
           ]
         ],
         "featureId": "glyph.I.contour.outer",
         "measurementErrorBound": 0,
-        "minimumDistance": 25,
+        "minimumDistance": 23,
         "segmentIds": [
           "glyph.I.contour.outer.seg.04",
           "glyph.I.contour.outer.seg.07"
@@ -119,13 +119,34 @@
       "message": "5 clearance measurement(s) have no calibrated threshold; measured only, cannot support production approval.",
       "severity": "warning",
       "stage": "clearance-analysis",
-      "variantId": "i.provisional"
+      "variantId": "i.master"
     }
   ],
-  "geometryHash": "bf33c5efb40389329e21513573ded4187f3a31432bdddd2d010d011ec65d9d31",
+  "geometryHash": "a1e2f023a3a0a814bd364ed2ee8c9a9885c852d60998f178e50d4e78f6e5dc57",
   "glyphId": "latin.upper.I",
   "hardChecksPassed": true,
-  "identityChecks": [],
+  "identityChecks": [
+    {
+      "name": "single-required-connected-contour",
+      "reason": "one closed contour, one connected component",
+      "status": "passed"
+    },
+    {
+      "name": "no-unintended-self-intersection",
+      "reason": "no undeclared intersections (certified)",
+      "status": "passed"
+    },
+    {
+      "name": "no-enclosed-counter",
+      "reason": "single outer contour, no inner contour: no enclosed counter",
+      "status": "passed"
+    },
+    {
+      "name": "distinction-from-T-and-L-review",
+      "reason": "human visual review required",
+      "status": "not-evaluable"
+    }
+  ],
   "negativeSpace": {
     "apertures": [],
     "channels": [],
@@ -173,7 +194,7 @@
     },
     {
       "stage": "glyph-identity-invariants",
-      "status": "passed"
+      "status": "partial"
     },
     {
       "note": "No renderer exists yet (T05).",
@@ -189,14 +210,14 @@
         "parent": null
       }
     ],
-    "declaredFillRule": "nonzero",
-    "expectedConnectedComponents": null,
+    "declaredFillRule": "evenodd",
+    "expectedConnectedComponents": 1,
     "facePoints": {
       "glyph.I.contour.outer": {
-        "margin": 14.747155,
+        "margin": 14.051602,
         "point": [
-          52,
-          26.037345
+          43,
+          117.948398
         ]
       }
     },
@@ -212,5 +233,5 @@
     }
   },
   "validatorVersion": "geometry-validator/1.0.0",
-  "variantId": "i.provisional"
+  "variantId": "i.master"
 }

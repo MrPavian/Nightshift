@@ -38,26 +38,41 @@ test('manifest carries every field the run contract requires', () => {
   assert.equal(manifest.review.status, 'pending');
 });
 
-test('all canonical pair and word fixtures are present with contract coverage', () => {
+const AUTHORED = loadRegistry().list().filter((g) => g.maturity !== 'provisional').map((g) => g.character);
+
+test('all canonical pair and word fixtures are present; coverage follows current maturity and differences to the contract are listed', () => {
+  const reg = loadRegistry();
+  const changes = new Map(manifest.coverage.contractCoverageChanges.map((c) => [c.fixtureId, c]));
   for (const f of [...fixturesContract.fixtures.pairs, ...fixturesContract.fixtures.words]) {
     const sp = manifest.specimens.find((s) => s.fixtureId === f.fixtureId);
     assert.ok(sp, f.fixtureId);
-    assert.equal(sp.coverage, f.coverage, f.fixtureId);
+    const expected = [...f.text].every((ch) => reg.getByChar(ch).maturity !== 'provisional') ? 'authored-subset' : 'partial-provisional-coverage';
+    assert.equal(sp.coverage, expected, f.fixtureId);
+    assert.equal(changes.has(f.fixtureId), expected !== f.coverage, `${f.fixtureId} change listed`);
   }
-  assert.deepEqual(manifest.specimens.filter((s) => s.family === 'glyph-identity').map((s) => s.text), ['A', 'B', 'G', 'R', 'S']);
+  assert.deepEqual(manifest.specimens.filter((s) => s.family === 'glyph-identity').map((s) => s.text), AUTHORED);
 });
 
-test('missing provisional glyphs are marked, never silently dropped', () => {
-  const missing = Object.fromEntries(manifest.coverage.missingGlyphs.map((m) => [m.glyphId.slice(-1), m.reason]));
-  assert.deepEqual(missing, { D: 'RENDER_UNDECLARED_TOPOLOGY', O: 'RENDER_UNDECLARED_TOPOLOGY', Q: 'RENDER_INVALID_TOPOLOGY' });
-  for (const [word, chars] of [['BOMB', ['O']], ['GHOST', ['O']], ['MIND', ['D']], ['SQUE', ['Q']], ['GO', ['O']], ['RO', ['O']]]) {
-    const sp = manifest.specimens.find((s) => s.text === word);
-    assert.deepEqual(sp.missingSlots.map((m) => m.character), chars, word);
-    assert.equal(sp.slots.length, word.length, `${word} keeps every slot`);
+test('missing and provisional slots are marked, never silently dropped', () => {
+  // Since C02 wave 1 every fixture glyph renders; provisional ones are drawn as provisional.
+  assert.deepEqual(manifest.coverage.missingGlyphs, []);
+  for (const sp of manifest.specimens) {
+    assert.equal(sp.slots.length, sp.text.length, `${sp.text} keeps every slot`);
+    for (const slot of sp.slots) assert.equal(slot.status, slot.maturity === 'provisional' ? 'rendered-provisional' : 'rendered', `${sp.text}/${slot.character}`);
   }
-  const words = files['plates/word-context.svg'];
-  assert.equal((words.match(/data-status="missing"/g) ?? []).length, 4);
-  assert.equal((files['plates/pair-context.svg'].match(/data-status="missing"/g) ?? []).length, 2);
+  const prov = (svg) => (svg.match(/data-status="rendered-provisional"/g) ?? []).length;
+  // Since C02 wave 4 every fixture letter has an authored master; provisional marking is checked on the legacy import below.
+  assert.equal(prov(files['plates/word-context.svg']), 0, 'no fixture letter is provisional any more');
+  assert.equal((files['plates/word-context.svg'].match(/data-status="missing"/g) ?? []).length, 0);
+});
+
+test('a refusal still renders as an explicit missing slot', () => {
+  const legacy = GlyphRegistry.fromLegacyV06(readJson('data/legacy/v06-glyph-paths.json'));
+  const old = buildProofRun({ registry: legacy, profile: readJson('data/validator-profiles/legacy-v06.v1.json'), fixturesContract });
+  const sque = old.manifest.specimens.find((s) => s.text === 'SQUE');
+  assert.deepEqual(sque.missingSlots.map((m) => m.character), ['Q']);
+  assert.ok(old.files['plates/word-context.svg'].includes('data-status="missing"'));
+  assert.ok((old.files['plates/word-context.svg'].match(/data-status="rendered-provisional"/g) ?? []).length > 0, 'provisional letters are still drawn as provisional');
 });
 
 test('every specimen links to existing plates and validation reports; hashes match', () => {
@@ -104,7 +119,7 @@ const codes = (r) => validateReviewRecord(r, manifest).map((d) => d.code);
 
 test('review template exists per authored glyph and is not a valid review by itself', () => {
   const template = JSON.parse(files['review/review-template.json']);
-  assert.deepEqual(template.map((t) => t.glyphId.slice(-1)), ['A', 'B', 'G', 'R', 'S']);
+  assert.deepEqual(template.map((t) => t.glyphId.slice(-1)), AUTHORED);
   assert.ok(codes(template[0]).length > 0);
 });
 
