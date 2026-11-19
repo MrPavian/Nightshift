@@ -11,6 +11,7 @@ A source-aware, construction-first library for original NIGHTSHIFT graffiti lett
 - STYLE_COMPARISON_MATRIX.md — controlled comparison of core grammars.
 - RENDERING_TREATMENTS.md — hollow, outline, fill, 3D, chrome, drips and other non-letterform treatments.
 - QUALITY_CONTROL.md — visual acceptance gates.
+- PROOF_IMPLEMENTATION_PLAN_01.md — audit of what the current engine can actually render and the staged implementation plan.
 - references/SOURCES.md — research source register.
 - references/IMAGE_REFERENCE_INDEX.md — external alphabet references and rights notes.
 - ../../../research/STYLE_GRAMMAR_SPECIFICATIONS_01.md — existing generator-oriented grammar baseline; preserve and extend rather than duplicate.
