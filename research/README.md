@@ -612,3 +612,15 @@ A follow-up check of the KWI essay's notes found that its Dortmund-history refer
 ### Kalligrafie, Handstyle und Graffiti-Lettering
 
 - [Kalligrafie, Handstyle und Graffiti-Lettering — Grundlagen und Transfer 01](CALLIGRAPHY_GRAFFITI_LETTERING_FOUNDATIONS_01.md) — verbindet Form- und Bewegungsanalyse, ordnet wissenschaftliche Quellen ein und definiert einen vorsichtigen Transfer in Buchstabenlehre und Generator.
+
+
+### 2026-11 — NIGHTSHIFT Style Reference Library (initial release)
+
+Created a construction-first reference library for original graffiti lettering. It separates letterform grammar, composition grammar, practice/format context and rendering treatment; includes initial Bubble, Blockbuster/Block and Wildstyle cards, a monochrome A comparison matrix, quality gates, a source register and an external image-reference index with rights cautions.
+
+- [Style Reference Library](../docs/lettering/style-library/README.md)
+- [Style taxonomy](../docs/lettering/style-library/STYLE_TAXONOMY.md)
+- [Style comparison matrix](../docs/lettering/style-library/STYLE_COMPARISON_MATRIX.md)
+- [Quality control](../docs/lettering/style-library/QUALITY_CONTROL.md)
+
+Initial cards are drafts pending practitioner/editor review. No third-party images were copied; no generator implementation or historical authenticity claim is implied.
