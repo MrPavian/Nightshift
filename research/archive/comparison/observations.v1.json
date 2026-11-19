@@ -209,7 +209,7 @@
       "transcriptionConfidence": "medium"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "mixed-contour",
         "closed-counter",
@@ -219,6 +219,7 @@
       "id": "GLY-INGRID-DERK-D1",
       "legibility": "medium",
       "observationDe": "Das D besitzt einen kräftigen, nahezu senkrechten Stamm und einen breiten, gerundeten Bogen. Die Innenfläche bleibt als geschlossene Punze erkennbar; die Kontur ist durch den angrenzenden Buchstaben eng gefasst.",
+      "reviewNoteDe": "Claude-Prüfung 19.11.2026 am deutschen Original (INGRID_Manual_Oktober_2019.pdf, gedruckte S. 62; eingebettetes Bild 699×290 px): Das D hat keinen senkrechten Stamm; die linke Seite besteht aus zwei waagerechten, nach links auslaufenden Balken mit Kerbe, die Punze ist ein kleiner Tropfen. Die Beschreibung trifft die Form nicht. Bis zur Neufassung durch die Recherche als Entwurf geführt.",
       "specimenId": "INGRID-MANUAL-DERK-01",
       "transcriptionConfidence": "high"
     },
@@ -279,7 +280,7 @@
       "transcriptionConfidence": "high"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "mixed-contour",
         "no-counter",
@@ -289,6 +290,7 @@
       "id": "GLY-INGRID-REMS-S1",
       "legibility": "medium",
       "observationDe": "Das S zeigt einen durchgehenden, geschwungenen Hauptzug mit enger Taille. Der obere Bogen ist kleiner als der untere; die Enden laufen kantig aus.",
+      "reviewNoteDe": "Claude-Prüfung 19.11.2026 am deutschen Original (INGRID_Manual_Oktober_2019.pdf, gedruckte S. 62; eingebettetes Bild 523×150 px): Die Form ist stark abstrahiert (großer oberer Rundbogen mit Punkt, unten waagerechte Balken) und nur über die Transkription des Manuals als S lesbar; die Angabe „oberer Bogen kleiner als der untere“ trifft nicht zu. Lesbarkeit als Einzelglyph nicht belastbar; als Entwurf geführt.",
       "specimenId": "INGRID-MANUAL-REMS-01",
       "transcriptionConfidence": "high"
     }

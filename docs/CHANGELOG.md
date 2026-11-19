@@ -623,3 +623,9 @@
 - Owner decision: the glyph-comparison pilot gate requires 20 eligible glyph observations from at least 3 different archives/platforms (`contracts/letterform-comparison.v1.json` 1.1.0, `minIndependentInstitutions`). Several source records of one platform (e.g. two forum threads) count once. Current state: 12 observations from 3 source records / 2 platforms; gate closed.
 - Fixed CI after PR #31: missing `visualState` on `ALT-WOSHE-M-MAMMOUTH-01`; count test recomputes from source files.
 - Research for the comparison library is done by ChatGPT only (owner decision); Claude reviews and integrates.
+
+## 2026-11-19 — INGRID observations reviewed (PR #34 follow-up)
+
+- Built and checked PR #34: 48 specimens, 20 eligible glyph observations from 3 platforms before review.
+- Independent check of the six INGRID glyphs against the German original of the INGRID manual (printed p. 62; the English p. 64 link returns HTTP 404 and was replaced): K, R (DERK) and R, M (ReMS) hold; DERK D (no vertical stem, description does not match the form) and ReMS S (only readable through the manual's transcription) are set to `draft` with a review note, and so is the dependent finding `FND-D-COUNTER-CONNECTIVITY-01`. Queue entries downgraded to candidate.
+- Result: 18 eligible glyph observations from 3 platforms; pilot gate closed; Gate 3 not unlocked.

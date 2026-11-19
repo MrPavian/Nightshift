@@ -130,10 +130,10 @@
       "archive_observation_id": "GLY-INGRID-DERK-D1",
       "glyph": "D",
       "id": "QUEUE-GLY-INGRID-DERK-D1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Von Claude am 19.11.2026 auf Kandidat zurückgestuft; Begründung im Feld reviewNoteDe des Archivdatensatzes.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-DERK-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     },
     {
       "archive_observation_id": "GLY-INGRID-DERK-R1",
@@ -175,10 +175,10 @@
       "archive_observation_id": "GLY-INGRID-REMS-S1",
       "glyph": "S",
       "id": "QUEUE-GLY-INGRID-REMS-S1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Von Claude am 19.11.2026 auf Kandidat zurückgestuft; Begründung im Feld reviewNoteDe des Archivdatensatzes.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-REMS-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     }
   ],
   "page_records": [
@@ -777,7 +777,7 @@
       "rights_status": "INGRID reports CC BY-SA for public images for scientific use; link-only here; no image copied or traced.",
       "source_id": "ACQ-INGRID-01",
       "title": "DERK — INGRID annotation manual example, p. 64",
-      "url": "https://www.uni-paderborn.de/fileadmin/ingrid/images/Annotation_Manual_Oktober_2019%20en__DEEPL_Translation_.pdf#page=64",
+      "url": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
       "visual_review_status": "glyph_observation_accepted"
     },
     {
@@ -793,7 +793,7 @@
       "rights_status": "INGRID reports CC BY-SA for public images for scientific use; link-only here; no image copied or traced.",
       "source_id": "ACQ-INGRID-01",
       "title": "ReMS — INGRID annotation manual example, p. 64",
-      "url": "https://www.uni-paderborn.de/fileadmin/ingrid/images/Annotation_Manual_Oktober_2019%20en__DEEPL_Translation_.pdf#page=64",
+      "url": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
       "visual_review_status": "glyph_observation_accepted"
     }
   ],
@@ -814,8 +814,8 @@
     "ACQ-LFA-03"
   ],
   "summary": {
-    "accepted_glyph_observations": 20,
-    "note": "20 akzeptierte Einzelglyph-Beobachtungen aus drei Archiven/Plattformen (Bombing Science Forums, Letterform Archive und INGRID). Jede akzeptierte ID verweist auf einen Datensatz in research/archive/comparison/observations.v1.json.",
+    "accepted_glyph_observations": 18,
+    "note": "18 akzeptierte Einzelglyph-Beobachtungen aus drei Archiven/Plattformen (Bombing Science Forums, Letterform Archive, INGRID). Zwei INGRID-Beobachtungen (DERK D, ReMS S) wurden nach Einzelprüfung auf Kandidat zurückgestuft. Jede akzeptierte ID verweist auf einen Datensatz in research/archive/comparison/observations.v1.json.",
     "page_records": 40,
     "source_records_referenced": 11,
     "visually_reviewed_page_records": 18

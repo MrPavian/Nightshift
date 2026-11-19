@@ -1,35 +1,36 @@
 {
   "findings": [
     {
-      "id": "FND-X-DIAGONAL-CROSS-01",
       "axis": "simple-interlocking",
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "evidenceBasisDe": "Direkter Vergleich der X-Beobachtungen von Sea und XCALET aus dem Alphabet-Challenge-Thread (ACQ-BSCI-02) mit knowmes 2018er Alphabet (ACQ-BSCI-01).",
+      "findingDe": "In den drei geprüften X-Beispielen bleibt das Grundgerüst ein Kreuz aus zwei Diagonalzügen. Die Ausführung reicht von schmalen, linearen Strichen bis zu breiten Markerzügen mit langen, unterschiedlich zugespitzten Ausläufen.",
+      "generatorRelevance": "research-lead",
+      "id": "FND-X-DIAGONAL-CROSS-01",
+      "limitationDe": "Die beiden Challenge-Beiträge stammen aus demselben Thread und die drei Beispiele sind keine repräsentative Stilstatistik. Der Befund beschreibt nur die sichtbare Grundkonstruktion und Strichbehandlung.",
       "observationIds": [
         "GLY-BSCI-SEA-2018-X1",
         "GLY-BSCI-XCALET-2018-X1",
         "GLY-BSCI-KNOME-2018-X1"
       ],
-      "findingDe": "In den drei geprüften X-Beispielen bleibt das Grundgerüst ein Kreuz aus zwei Diagonalzügen. Die Ausführung reicht von schmalen, linearen Strichen bis zu breiten Markerzügen mit langen, unterschiedlich zugespitzten Ausläufen.",
-      "evidenceBasisDe": "Direkter Vergleich der X-Beobachtungen von Sea und XCALET aus dem Alphabet-Challenge-Thread (ACQ-BSCI-02) mit knowmes 2018er Alphabet (ACQ-BSCI-01).",
-      "limitationDe": "Die beiden Challenge-Beiträge stammen aus demselben Thread und die drei Beispiele sind keine repräsentative Stilstatistik. Der Befund beschreibt nur die sichtbare Grundkonstruktion und Strichbehandlung.",
-      "confidence": "medium",
-      "generatorRelevance": "research-lead",
-      "relatedEntries": [],
-      "editorialState": "source-checked"
+      "relatedEntries": []
     },
     {
-      "id": "FND-D-COUNTER-CONNECTIVITY-01",
       "axis": "isolated-connected",
+      "confidence": "medium",
+      "editorialState": "draft",
+      "evidenceBasisDe": "Direkter Vergleich des D aus Seas einzeln gesetztem Handstyle-Alphabet (ACQ-BSCI-02) mit dem D aus dem im INGRID-Manual reproduzierten Piece DERK (ACQ-INGRID-01). Beide Glyphen wurden separat visuell geprüft.",
+      "findingDe": "Beide D-Formen zeigen einen geraden linken Stamm und einen geschlossenen, gerundeten Außenbogen. Im Sea-Alphabet bleibt das D als Einzelglyph mit langem Auslauf erkennbar; im INGRID-Piece ist die Kontur enger mit dem Nachbarbuchstaben verzahnt. Die Grundkonstruktion ist ähnlich, die Einbindung in den Schriftzug unterscheidet sich.",
+      "generatorRelevance": "research-lead",
+      "id": "FND-D-COUNTER-CONNECTIVITY-01",
+      "limitationDe": "Nur zwei D-Beispiele aus unterschiedlichen Medien und Schreibsituationen. Der Vergleich beschreibt diese beiden Formen und erlaubt keine Verallgemeinerung über Plattformen, Writer oder Stilgruppen.",
       "observationIds": [
         "GLY-BSCI-SEA-2018-D1",
         "GLY-INGRID-DERK-D1"
       ],
-      "findingDe": "Beide D-Formen zeigen einen geraden linken Stamm und einen geschlossenen, gerundeten Außenbogen. Im Sea-Alphabet bleibt das D als Einzelglyph mit langem Auslauf erkennbar; im INGRID-Piece ist die Kontur enger mit dem Nachbarbuchstaben verzahnt. Die Grundkonstruktion ist ähnlich, die Einbindung in den Schriftzug unterscheidet sich.",
-      "evidenceBasisDe": "Direkter Vergleich des D aus Seas einzeln gesetztem Handstyle-Alphabet (ACQ-BSCI-02) mit dem D aus dem im INGRID-Manual reproduzierten Piece DERK (ACQ-INGRID-01). Beide Glyphen wurden separat visuell geprüft.",
-      "limitationDe": "Nur zwei D-Beispiele aus unterschiedlichen Medien und Schreibsituationen. Der Vergleich beschreibt diese beiden Formen und erlaubt keine Verallgemeinerung über Plattformen, Writer oder Stilgruppen.",
-      "confidence": "medium",
-      "generatorRelevance": "research-lead",
       "relatedEntries": [],
-      "editorialState": "source-checked"
+      "reviewNoteDe": "Claude-Prüfung 19.11.2026: Der Befund setzt bei beiden D einen geraden linken Stamm voraus; das D aus DERK hat keinen. Als Entwurf geführt, bis GLY-INGRID-DERK-D1 neu gefasst ist."
     }
   ],
   "schemaVersion": "1.0"
