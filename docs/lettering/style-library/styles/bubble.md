@@ -73,3 +73,29 @@ NIGHTSHIFT inference: parameters, topology constraints, glyph invariants, test p
 Open: regional/period variations and practitioner validation.
 
 Sources: SOURCES.md S1–S7.
+
+
+## Template variants
+
+### T1 — Classic Inflated
+- **Intent:** rounded, buoyant mass with a balanced counter.
+- **Construction:** expand the skeleton with moderate, glyph-specific inflation; round outer corners; preserve bridges and apertures.
+- **Parameters:** inflationAmount, cornerRoundness, strokeMass, counterPreservation.
+- **Guardrail:** avoid uniform ovalization.
+- **Tests:** A, B, G, O, R, S, U; BUBBLE, GHOST.
+
+### T2 — Softie / Organic
+- **Intent:** more elastic, uneven and hand-authored rounded forms.
+- **Construction:** vary bowl tension, width and terminal mass by glyph; retain a consistent family rhythm rather than identical geometry.
+- **Parameters:** bowlElasticity, widthVariation, terminalRoundness, asymmetryBudget.
+- **Guardrail:** organic variation must not damage glyph anatomy.
+- **Tests:** B, C, G, S, U; SOUL, MARS.
+
+### T3 — Compact Bubble
+- **Intent:** tighter, denser forms with reinforced internal openings.
+- **Construction:** reduce overall width and spacing selectively; strengthen necks; revalidate counters after every mass increase.
+- **Parameters:** compactness, neckStrength, counterClearance, overlapTolerance.
+- **Guardrail:** compactness cannot be achieved by collapsing counters or fusing letters.
+- **Tests:** A, B, R, S, O; RISK, BOMB.
+
+All three are NIGHTSHIFT templates, not historical substyles with universal definitions.
