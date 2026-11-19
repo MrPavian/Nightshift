@@ -21,7 +21,7 @@
 | **Academy A-Studie** (`letter-study_A_01.svg`, generiert) | implementiert, Layout-QA 0 Probleme | Claude | Owner-Freigabe; B–Z erst danach | Owner: Freigabe A |
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
-| **Style Reference Library** (`docs/lettering/style-library/`) | v2-Arbeitsbibliothek: 12 Karten, Template-Index, unabhängige Rendering-Treatments, Taxonomie und Quellenregister erweitert; alle Karten weiterhin Entwürfe | ChatGPT | monochrome Template-Proof-Sheets für repräsentative Glyphen/Wörter; danach Praxis-/Redaktionsreview und Parameterkalibrierung | Owner: visuelle Sichtung / Praxisreview |
+| **Style Reference Library** (`docs/lettering/style-library/`) | v2-Arbeitsbibliothek: 12 Karten / 38 Templates; Capability-Audit und gestufter Proof-Implementierungsplan ergänzt. Aktueller Resolver unterstützt nur Neutral, Straight, Bubble, Block-fit und Bounce; Wildstyle-Interlocking blockiert durch C04 | ChatGPT (Research/Brief), Claude (Engine) | Phase A: neutrale, monochrome Proof-Plates für A/B/G/R/S; danach Bubble/Straight kalibrieren; neue Templates nur mit echten Resolver-Operationen | Owner: visuelle Sichtung / Praxisreview |
 | **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
 
 ## Offene Owner-Entscheidungen
