@@ -207,6 +207,19 @@
       "observationDe": "Das O im Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die Kontur sitzt in einer schweren, stark verdichteten Titelgestaltung; Details werden durch die umgebende Illustration begrenzt.",
       "specimenId": "LFA-BOMB-046-001",
       "transcriptionConfidence": "medium"
+    },
+    {
+      "id": "GLY-ALT-WOSHE-2013-M1",
+      "specimenId": "ALT-WOSHE-M-MAMMOUTH-01",
+      "glyph": "M",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Seite ist ausdrücklich mit „M le Mammouth“ überschrieben und zeigt mehrere voneinander getrennte M-Konstruktionen. Die Beispiele besitzen breite, kantig geführte Außenkonturen, deutlich betonte Diagonalzüge und teils weit ausgezogene Enden. Der Begleittext beschreibt die visuelle Masse des M und thematisiert, wie Einschnitte diese Masse rhythmisch aufbrechen können. Erfasst wird die sichtbare M-Formfamilie dieser Seite, keine nachzuzeichnende Einzelvorlage.",
+      "editorialState": "source-checked"
     }
   ],
   "objectObservations": [],
