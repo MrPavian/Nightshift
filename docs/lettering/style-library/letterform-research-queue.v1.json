@@ -709,6 +709,22 @@
       "title": "Woshe — M le Mammouth, instructional spread",
       "url": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
       "visual_review_status": "visually_reviewed_not_glyph_eligible"
+    },
+    {
+      "catalogue_description": "Reproduzierte Seite aus dem Getty L.A. Graffiti Black Book; Bildvorschau zeigt ein Raster einzelner Letterform-Studien und die Signatur CHAZ.",
+      "creator": "Chaz",
+      "date_range": "2012 (Signatur/Bildcaption)",
+      "glyph_eligibility": "not_eligible",
+      "id": "PAGE-GETTY-CHAZ-2012-001",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/53f40cd1e4b0ba399aaf6df4/1622359916624-67F8XWV0009C3UWI0AAH/F05D24B2-6A19-4249-89FE-C722C978F52F.jpeg?format=2500w",
+      "next_action": "Eine autorisierte, höher aufgelöste Reproduktion oder die Buchseite selbst prüfen; einzelne Rasterformen nur dann als A–Z-Glyphen erfassen, wenn ihre Buchstabenidentität eindeutig ist.",
+      "priority": "high",
+      "reason": "Die Rasteranordnung trennt die Studien räumlich und ist konstruktiv interessant. Die Buchstabenidentitäten der Einzelzellen sind in der verfügbaren Vorschau jedoch nicht zuverlässig lesbar; daher keine Glyph-Beobachtung erzwingen.",
+      "rights_status": "Copyright des beitragenden Künstlers; nur verlinken, nicht kopieren oder nachzeichnen.",
+      "source_id": "ACQ-GETTY-01",
+      "title": "Chaz — Letterform Study Grid (L.A. Graffiti Black Book)",
+      "url": "https://crewestshop.com/graffitibooks/la-graffiti-black-book",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
@@ -729,9 +745,9 @@
   ],
   "summary": {
     "accepted_glyph_observations": 14,
-    "note": "14 akzeptierte Einzelglyph-Beobachtungen; jede verweist nur auf ihren Datensatz in research/archive/comparison/observations.v1.json. Die beiden LFA-Verweise (JHO T, Joker O) sind wieder akzeptiert, weil ihre Archivdatensätze aus PR #30 jetzt vorhanden sind. Zähler beim Zusammenführen von PR #30 und #31 aus dem Inhalt neu berechnet (Claude).",
-    "page_records": 38,
+    "note": "14 akzeptierte Einzelglyph-Beobachtungen bleiben unverändert. Neu aufgenommen: eine direkt geprüfte Getty/Chaz-Seite mit Letterform-Raster als Seitenbeobachtung; wegen nicht sicher zuordenbarer A–Z-Identitäten wurde kein Glyph ergänzt.",
+    "page_records": 39,
     "source_records_referenced": 11,
-    "visually_reviewed_page_records": 16
+    "visually_reviewed_page_records": 17
   }
 }
