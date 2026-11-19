@@ -46,6 +46,14 @@ Dortmund is the starting pilot, not the limit. The INGRID programme expands from
 - [Synthetic INGRID relationship fixture v1](../contracts/fixtures/ingrid-research-record.relationships.v1.json)
 - [INGRID regional SPARQL query pack — Dortmund pilot](INGRID_DORTMUND_SPARQL_QUERY_PACK_01.md)
 
+## Style reference library
+
+- [NIGHTSHIFT Style Reference Library](../docs/lettering/style-library/README.md) — source-aware construction cards for twelve lettering, composition, format and hybrid categories.
+- [Style Taxonomy](../docs/lettering/style-library/STYLE_TAXONOMY.md) — independent axes and terminology cautions.
+- [Template Index](../docs/lettering/style-library/TEMPLATE_INDEX.md) — documented template families.
+- [Rendering Treatments](../docs/lettering/style-library/RENDERING_TREATMENTS.md) — hollow, outline, 3D, chrome, drips and other independent layers.
+- [Source Register](../docs/lettering/style-library/references/SOURCES.md) — source register and evidence handling.
+
 ## Current research files
 
 - [Generator Knowledge Translation 01 — From Graffiti Research to Engine Rules](GENERATOR_KNOWLEDGE_TRANSLATION_01.md)
