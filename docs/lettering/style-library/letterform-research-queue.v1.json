@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "nightshift-letterform-research-queue",
+  "reviewed_at": "2026-11-19",
+  "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
+  "evidence_policy": {
+    "statuses": [
+      "collection_lead",
+      "catalogued_page_not_visually_reviewed",
+      "visually_reviewed_not_glyph_eligible",
+      "glyph_observation_candidate",
+      "glyph_observation_accepted"
+    ],
+    "rule": "A record may enter glyph_observation_candidate only after direct inspection of a legible individual glyph. Catalogue metadata or collection descriptions never count as visual inspection.",
+    "rights": "Link-only by default. No third-party image is copied or traced. Copyright and reuse permission are tracked separately from access."
+  },
+  "page_records": [
+    {
+      "id": "PAGE-RIJK-DELTA-006",
+      "source_id": "ACQ-RIJK-01",
+      "title": "Bladzijde 6 uit Black Book I",
+      "creator": "Boris Tellegen (DELTA)",
+      "date_range": "1986–1992",
+      "catalogue_id": "RP-T-2021-450-6",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Bladzijde-6-uit-Black-Book-I--69ff2f101ec1fa51bcc5c22d21e2acde",
+      "persistent_url": "https://id.rijksmuseum.nl/200104391",
+      "catalogue_description": "Three pieces by Delta; pencil on paper; 297 × 205 mm.",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "high",
+      "reason": "Multiple pieces on one page may provide repeated letter structures and construction comparisons.",
+      "rights_status": "Copyright Boris Tellegen; link-only",
+      "next_action": "Open high-resolution page image, segment each of the three pieces, then assess individual legible glyphs."
+    },
+    {
+      "id": "PAGE-RIJK-DELTA-007",
+      "source_id": "ACQ-RIJK-01",
+      "title": "Bladzijde 7 uit Black Book I",
+      "creator": "Boris Tellegen (DELTA)",
+      "date_range": "1986–1992",
+      "catalogue_id": "RP-T-2021-450-7",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Bladzijde-7-uit-Black-Book-I--7f30b57f65b685bba7a4111b7edd0e1f",
+      "persistent_url": "https://id.rijksmuseum.nl/200104392",
+      "catalogue_description": "Two colour photographs and one design drawing by Delta; pencil and photographic material; 297 × 205 mm.",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "high",
+      "reason": "Potential drawing-to-photograph relationship can help distinguish sketch construction from finished rendering.",
+      "rights_status": "Copyright Boris Tellegen; link-only",
+      "next_action": "Inspect the design drawing separately from both photographs; do not presume they depict the same piece."
+    },
+    {
+      "id": "PAGE-RIJK-DELTA-028",
+      "source_id": "ACQ-RIJK-01",
+      "title": "Bladzijde 28 uit Black Book I",
+      "creator": "Boris Tellegen (DELTA)",
+      "date_range": "1986–1992",
+      "catalogue_id": "RP-T-2021-450-28",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Bladzijde-28-uit-Black-Book-I--60428b921d845dfbb956a1bbfb61c265",
+      "persistent_url": "https://id.rijksmuseum.nl/200104413",
+      "catalogue_description": "Pencil drawing of a seated man with the letters DELTA on the belt buckle.",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "low",
+      "reason": "The catalogue description identifies lettering, but only as a small belt-buckle detail; likely contextual rather than a useful letterform specimen.",
+      "rights_status": "Copyright Boris Tellegen; link-only",
+      "next_action": "Inspect only if the image is legible enough to support a small-scale lettering note."
+    },
+    {
+      "id": "PAGE-DGL-ERAS-BOOK",
+      "source_id": "ACQ-DGL-01",
+      "title": "Eras — blackbook",
+      "creator": "Multiple contributors to be verified",
+      "date_range": "1990–2020",
+      "url": "https://dutch-graffiti-library.nl/blackbook/eras/",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "high",
+      "reason": "Catalogue explicitly spans tags, throw-ups and pieces over three decades.",
+      "rights_status": "Per-object rights check required",
+      "next_action": "Access the page sequence and record each visible contribution as a separate page/object."
+    },
+    {
+      "id": "PAGE-DGL-SKI-BOOK",
+      "source_id": "ACQ-DGL-01",
+      "title": "Ski from Amsterdam — blackbook",
+      "creator": "Ski from Amsterdam",
+      "date_range": "2015–2022",
+      "url": "https://dutch-graffiti-library.nl/blackbook/ski-from-amsterdam/",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "medium",
+      "reason": "Pencil and marker are explicitly identified, making this useful for studying construction stages.",
+      "rights_status": "Per-object rights check required",
+      "next_action": "Inspect pages and identify whether pencil underdrawing and marker final contours are both visible."
+    },
+    {
+      "id": "PAGE-DGL-COLT-DEAL-BOOK",
+      "source_id": "ACQ-DGL-01",
+      "title": "Colt & Deal — blackbook",
+      "creator": "Colt and Deal; individual authorship to verify",
+      "date_range": "1985–1989",
+      "url": "https://dutch-graffiti-library.nl/blackbook/colt-deal/",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "high",
+      "reason": "Period-specific blackbook archive with train and subway context.",
+      "rights_status": "Per-object rights check required",
+      "next_action": "Inspect page images, separate contributors, and identify legible repeated letters."
+    }
+  ],
+  "glyph_observations": [],
+  "summary": {
+    "page_records": 6,
+    "visually_reviewed_page_records": 0,
+    "accepted_glyph_observations": 0,
+    "note": "The queue has been expanded with stable, catalogue-backed page leads. No glyph observations are claimed because page images were not available for direct visual inspection in this pass.",
+    "source_records_referenced": 4
+  },
+  "sources_ref": [
+    "ACQ-RIJK-01",
+    "ACQ-FTA-01",
+    "ACQ-FTA-02",
+    "ACQ-DGL-01"
+  ]
+}
