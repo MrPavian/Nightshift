@@ -817,7 +817,7 @@
     "accepted_glyph_observations": 20,
     "note": "20 akzeptierte Einzelglyph-Beobachtungen aus drei Archiven/Plattformen (Bombing Science Forums, Letterform Archive und INGRID). Jede akzeptierte ID verweist auf einen Datensatz in research/archive/comparison/observations.v1.json.",
     "page_records": 40,
-    "source_records_referenced": 10,
+    "source_records_referenced": 11,
     "visually_reviewed_page_records": 18
   }
 }
