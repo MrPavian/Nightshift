@@ -330,6 +330,25 @@
       ],
       "title": "Art Crimes — Blackbook Sketch Archive",
       "url": "https://www.graffiti.org/sketch/blackbook/index.html"
+    },
+    {
+      "confidenceRaw": "high for institutional provenance and gallery structure; individual glyph analysis limited to low-resolution gallery previews",
+      "evidenceRaw": "Getty Research Institute documents LA Liber Amicorum / Getty Graffiti Black Book as 143 original works on paper by 151 invited graffiti and tattoo artists. Individual artist pages are presented in a digitized online gallery. The gallery's directly opened mosaic previews support page-level visual screening but are not sufficient for reliable isolated glyph transcription at this resolution.",
+      "id": "ACQ-GETTY-01",
+      "institution": "Getty Research Institute",
+      "nextActionRaw": "Inspect individual artist works at the highest available resolution; record artist attribution and item provenance; prioritize pages with isolated letters or complete alphabets. Seek the published L.A. Graffiti Black Book or Getty research access when gallery previews are insufficient.",
+      "rightsRaw": "Copyright held by contributing artists; link-only; no image copying, tracing or redistribution without item-level permission",
+      "scope": "143_original_works_on_paper_by_151_graffiti_and_tattoo_artists",
+      "sourceType": "institutional_digitized_graffiti_blackbook_gallery",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Getty Research Institute — LA Liber Amicorum / Getty Graffiti Black Book",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html"
     }
   ]
 }
