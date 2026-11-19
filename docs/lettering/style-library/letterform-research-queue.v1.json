@@ -357,6 +357,38 @@
       "reason": "The directly opened blackbook photograph contains a large overlapping piece and numerous surrounding signatures/tags. The page is useful for historical context and multi-hand composition, but the visible marks are too entangled or small for a defensible isolated-glyph record in this pass.",
       "rights_status": "Copyright Priz, Stan and other artists as marked; link-only",
       "next_action": "Seek item-level attribution and any larger page scan; inspect each tag independently before promoting a glyph candidate."
+    },
+    {
+      "id": "PAGE-FTA-RASE-NEWMASTER-1997",
+      "source_id": "ACQ-FTA-01",
+      "title": "New Master — RaseOne original blackbook sketch",
+      "creator": "Matthew Napolitano (RaseOne)",
+      "date_range": "1997",
+      "url": "https://www.fulltimeartists.com/artwork/rase_newmaster.php",
+      "image_url": "https://www.fulltimeartists.com/images/graffiti_images/blackbooks_640/blackbook_016.jpg",
+      "catalogue_description": "The artist identifies this as the original 1997 blackbook sketch from which a cropped section was used for the 1998 FTA cassette cover and a 24 × 36 inch print.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The original blackbook page was opened directly. It contains a large, highly interwoven wildstyle composition; at this available image size the letter boundaries and individual A–Z glyphs cannot be separated with sufficient confidence. The adjacent cropped print image is also a detail of the same composition, not independent glyph evidence.",
+      "rights_status": "Copyright Full Time Artists / Highground Industries; link-only; unauthorized duplication prohibited",
+      "next_action": "Retain as a provenance-verified RaseOne 1997 blackbook specimen lead. Seek a larger scan or physical inspection before reconsidering individual glyph eligibility."
+    },
+    {
+      "id": "PAGE-FTA-NEWMASTER-CROP-1997",
+      "source_id": "ACQ-FTA-01",
+      "title": "New Master — published crop from the 1997 sketch",
+      "creator": "Matthew Napolitano (RaseOne)",
+      "date_range": "1997",
+      "url": "https://www.fulltimeartists.com/artwork/rase_newmaster.php",
+      "image_url": "https://www.fulltimeartists.com/images/graffiti_print_images/graffiti_prints_640/newmaster.jpg",
+      "catalogue_description": "A cropped section of the 1997 blackbook sketch used as a 24 × 36 inch print and for the FTA 1998 cassette cover.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "medium",
+      "reason": "The directly opened crop shows overlapping, crossing wildstyle strokes and partial letter structures, but no isolated glyph can be transcribed defensibly from this crop. It is a derivative crop of the same underlying work and must not be counted as an independent observation or source.",
+      "rights_status": "Copyright Full Time Artists / Highground Industries; link-only; unauthorized duplication prohibited",
+      "next_action": "Use only for cross-reference to the original sketch; do not create a second specimen or independent glyph record from the crop."
     }
   ],
   "glyph_observations": [
@@ -380,10 +412,10 @@
     }
   ],
   "summary": {
-    "page_records": 23,
-    "visually_reviewed_page_records": 2,
+    "page_records": 25,
+    "visually_reviewed_page_records": 4,
     "accepted_glyph_observations": 2,
-    "note": "Two directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 2 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
+    "note": "Two directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 4 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
     "source_records_referenced": 5
   },
   "sources_ref": [
