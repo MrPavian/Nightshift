@@ -1,6 +1,6 @@
 # NIGHTSHIFT Template Index
 
-This index describes the currently documented template families. Templates are design hypotheses until rendered, compared and practitioner-reviewed.
+This index describes the currently documented template families. Templates are design hypotheses until rendered, compared and practitioner-reviewed. Current capability mapping: see [PROOF_IMPLEMENTATION_PLAN_01.md](PROOF_IMPLEMENTATION_PLAN_01.md). The existing resolver only implements a subset of Neutral, Straight, Bubble and Blockbuster operations; the presence of a card here does not imply code support.
 
 ## Letterform grammars
 
@@ -63,6 +63,17 @@ This index describes the currently documented template families. Templates are d
 Hollow, outline, inline, fill, 3D/extrusion, chrome, shadow, drips, texture and stencil are selected independently. See RENDERING_TREATMENTS.md.
 
 ## Template maturity
+
+| Family | Documentation | Current engine support |
+|---|---|---|
+| Bubble | 3 templates documented | Base Bubble operation exists; variants not separate/calibrated |
+| Straight / Simple | 4 templates documented | Base Straight operations exist; variants not separate/calibrated |
+| Blockbuster | 3 templates documented | Straight + Block-fit composition exists; no separate alphabet |
+| Wildstyle | 3 templates documented | Relationship/interlocking operation unavailable pending C04 |
+| Tag / Handstyle | 3 templates documented | No gesture/stroke renderer |
+| Throw-up | 3 templates documented | Context enum exists; dedicated presentation renderer absent |
+| All other families | Documented only | No distinct generator operations |
+
 - **Documented:** card and construction hypothesis exist.
 - **Rendered:** representative glyphs and words exist.
 - **Compared:** controlled monochrome comparison completed.
