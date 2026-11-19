@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "item_level_catalogue_records_added_visual_inspection_pending",
+  "corpus_status": "item_level_records_added_with_limited_visual_previews;_full_image_access_and_rights_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -205,6 +205,24 @@
       "rights_status": "media_credits_do_not_grant_reuse",
       "confidence": "high",
       "next_action": "Inspect individual story frames and record visible credits and item provenance."
+    },
+    {
+      "id": "ACQ-NGA-01",
+      "title": "National Gallery of Art — Henry Chalfant photographic works",
+      "url": "https://www.nga.gov/artists/40960-henry-chalfant/artworks",
+      "source_type": "museum_collection_artist_index",
+      "source_scope": "item_level_artwork_records",
+      "target_grammars": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "NGA catalogue exposes 29 Chalfant works with dates, accession IDs, media and visual descriptions; selected works have individual records.",
+      "rights_status": "media_not_available_for_download_contact_NGA_about_image_usage",
+      "confidence": "high",
+      "next_action": "Use item pages as visual-analysis and provenance leads; obtain image permissions before embedding."
     }
   ],
   "specimen_record_template": {
@@ -573,6 +591,66 @@
       "visual_review_status": "metadata_verified_image_not_inspected",
       "what_not_to_copy": "Do not trace the photographed work, writer name, or composition",
       "confidence": "high for catalogue metadata; none for visual style classification"
+    },
+    {
+      "specimen_id": "NGA-HC-001",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173387-hand-doom-seen",
+      "archive_title": "Hand of Doom by Seen",
+      "creator_or_writer": "SEEN (as named in NGA inscription)",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1980",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4919",
+      "dimensions": "image/sheet 17.78 × 103.25 cm",
+      "visible_glyphs": "Title inscription identifies Hand of Doom; full letter sequence not independently transcribed here",
+      "candidate_grammar_tags": [
+        "piece_composition",
+        "lettering_with_figural_narrative"
+      ],
+      "execution_format": "subway-car piece documented in 4 chromogenic prints",
+      "composition_mode": "wide horizontal mural with figural narrative and lettering",
+      "rendering_treatment": [
+        "multi-colour fill",
+        "outline",
+        "illustrative imagery"
+      ],
+      "letter_anatomy_notes": "NGA record and available visual description show lettering integrated with a large illustrated composition; do not treat as a pure Bubble alphabet specimen.",
+      "word_composition_notes": "Lettering shares the long horizontal train-car field with central figure, background and secondary graphic elements.",
+      "rights_status": "NGA says media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "catalogue_description_and_search_preview_reviewed_full_resolution_not_available",
+      "what_not_to_copy": "Do not trace SEEN's name, lettering, hand motif or full composition.",
+      "confidence": "high for object metadata; medium for broad composition notes; low for style-family assignment"
+    },
+    {
+      "specimen_id": "NGA-HC-002",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173382-stop-bomb-lee",
+      "archive_title": "Stop the Bomb by Lee",
+      "creator_or_writer": "LEE (as named in NGA inscription)",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1979",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4915",
+      "dimensions": "image/sheet 17.78 × 100.97 cm",
+      "visible_glyphs": "STOP THE BOMB (catalogue inscription and NGA visual description)",
+      "candidate_grammar_tags": [
+        "message_piece",
+        "large_scale_train_lettering"
+      ],
+      "execution_format": "subway-car piece documented in 5 chromogenic prints",
+      "composition_mode": "long horizontal message composition across train car",
+      "rendering_treatment": [
+        "multi-colour fill",
+        "outline",
+        "illustrative symbols"
+      ],
+      "letter_anatomy_notes": "NGA visual description identifies large bold STOP THE BOMB lettering; actual glyph construction needs direct image inspection before grammar annotation.",
+      "word_composition_notes": "Large message text shares the train surface with anti-war symbols and secondary slogans.",
+      "rights_status": "NGA says media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "catalogue_description_and_search_preview_reviewed_full_resolution_not_available",
+      "what_not_to_copy": "Do not reproduce the message-piece layout, letter sequence or distinctive symbol system.",
+      "confidence": "high for object metadata; medium for broad composition notes; low for style-family assignment"
     }
   ]
 }
