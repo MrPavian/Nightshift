@@ -520,3 +520,79 @@ Initial files:
 **Rights:** external images are linked, not copied. Public access or personal-use permission is not a NIGHTSHIFT commercial reuse license. All generated letterforms remain original and must not reproduce identifiable writers, crews, tags, signatures or existing pieces.
 
 **Status:** initial documentation created; not yet practitioner-approved, not yet a complete twelve-style library, and no generator implementation is implied. First validation task is a monochrome A comparison across the three cards, followed by representative glyph tests.
+
+
+## C03 — Style grammar resolver (18 November 2026, Claude)
+
+Branch `claude/c03-style-resolver`, stacked on the C02 waves (#6 → #11 → #12 → #13).
+
+- **Implemented:** `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`.
+- **Results for all 26 authored masters:**
+  - Bubble and Blockbuster change the monochrome geometry of every letter.
+  - Straight changes 13 letters (curves and sharp corners). The other 13 have right angles only; they are reported unchanged, with that reason.
+  - Wildstyle is a study mode. The interlocking step is skipped with a reason, because it needs C04.
+- **Axes stay separate:** practice context and rendering never change geometry. Blockbuster = straight letterform + block-fit composition.
+- **Guarantees:**
+  - Masters are never mutated. Derived records are `reference-only`.
+  - Every step is validated: hard checks pass, the counter count is unchanged, and the glyph is one connected part.
+  - The parameters are uncalibrated grammar defaults.
+- **Proofs and docs:** `docs/reports/proof/C03/`, `docs/C03_STYLE_RESOLVER_REPORT.md`, `tests/style-resolver.test.js`.
+- **Not done:** a style switch in the editor or studio UI (C08), identity-specific checks such as the G/C apertures (only hard checks and counter count are checked), and human review of how the shapes look.
+
+
+## Creator 0.1 — early Creator page (owner decision D-016, 18 November 2026)
+
+The owner sees the editor as a robot that learns to make graffiti. The user enters a word, picks styles, priorities and colours, chooses from several proposals and can co-design all the way to full manual authoring. On that basis the owner asked for an early, small Creator page.
+
+Branch `claude/creator-0-1`, stacked on C03 (#17).
+
+**Implemented:**
+- **Page:** `creator/index.html`, `creator.js`, `creator.css`, with the logic in `src/creator/proposals.js`.
+- **Brief:** word, artwork form (Throw-up / Piece; Tag disabled with reason), style (Bubble / Straight / Blockbuster; Wildstyle disabled with reason), three priorities (readability, dynamics, compactness: „egal“, „wichtig“, „sehr wichtig“), five palettes plus custom colours.
+- **Four proposals:**
+  - Deterministic for a given seed; „Neue Vorschläge“ increments the seed.
+  - Each priority the user cares about leads one proposal.
+  - Proposals differ pairwise in at least 3 of 5 composition dimensions: spacing, slant, baseline (flat / bounce / arc / step), proportion and size rhythm.
+  - Each card explains its choices and names its lead priority.
+- **Colour and form never change construction:** they only repaint. A „Nur Form zeigen“ toggle shows the black construction view.
+- **Export:** SVG, PNG and game JSON (`nightshift.game-artwork.v0`, containing brief, composition, rendering, glyph hashes, placements, SVG and limits).
+- **Saving:** the brief is kept in localStorage.
+
+**Checks:**
+- `tests/creator.test.js` (6 tests).
+- `tools/creator/check-creator.mjs`, part of `test:browser`.
+- Screenshots: `docs/reports/proof/creator/`.
+- Deployed to Pages at `/creator/`.
+
+**Limits:**
+- No per-letter variants and no connections; these come with C04.
+- No editing of the chosen piece; that is Studio/C05.
+- Throw-up differs from Piece only in finish (no 3D), not in construction.
+- Tag is HST-01, still open: whether Tag belongs in 1.0 is an open owner question.
+- Bombing is game logic, not a style.
+
+
+## Graffiti engine — Creator 0.2 (D-017, 18 November 2026)
+
+**Why:** The owner judged the C03 output as „just thicker letters, not a style“ and asked for web research on graffiti alphabets, analysis of the styles, and imitation.
+
+**Research:** `research/GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`, based on tutorial sources. The image search showed images to the owner only; the AI did not see them.
+
+**Implementation:**
+- `src/style/skeletons.js`: centre lines A–Z with free ends and crossbars.
+- `src/style/graffiti-engine.js`: bars per base style; moves serif, cut, kick, arrow, split and drop; 3D, outline and highlight rendering.
+- **Base styles:**
+  - Bubble (round, wide)
+  - Straight
+  - Blockbuster
+  - Semi-Wild (new; true Wildstyle interlocking still needs C04)
+- **Proposals:** each proposal picks one move set that recurs through the word. The four proposals prefer different move sets.
+- **Creator:** `creator/` and `src/creator/proposals.js` 0.2 now use the engine.
+
+**Open:**
+- Skeletons are not linked to the C02 masters (D-017).
+- No taper and no true connections.
+- Nothing calibrated.
+- How the shapes look is for the owner to judge.
+
+**Tests:** `tests/creator.test.js` (8 tests); browser check `tools/creator/check-creator.mjs` (4 styles × 4).

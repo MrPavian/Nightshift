@@ -20,7 +20,6 @@ export const RENDER_PROFILE = {
   sizes: { full: 'native legacy units ×2 px', thumbnail: '0.18 × native' },
 };
 
-const AUTHORED = ['A', 'B', 'G', 'R', 'S'];
 
 /**
  * @param {{registry, profile, fixturesContract}} inputs
@@ -29,13 +28,14 @@ const AUTHORED = ['A', 'B', 'G', 'R', 'S'];
 export function buildProofRun({ registry, profile, fixturesContract }) {
   const pairs = fixturesContract.fixtures.pairs.map((f) => ({ ...f, family: 'pair-context' }));
   const words = fixturesContract.fixtures.words.map((f) => ({ ...f, family: 'word-context' }));
+  const AUTHORED = registry.list().filter((g) => g.maturity !== 'provisional').map((g) => g.character);
   const isolated = AUTHORED.map((ch) => ({ fixtureId: `glyph-${ch.toLowerCase()}`, text: ch, family: 'glyph-identity' }));
   const chars = [...isolated, ...pairs, ...words].flatMap((f) => [...f.text]);
   const resolved = resolveGlyphs(registry, profile, chars);
 
   const sourceRevision = sha256Hex(registry.serialize());
   const engineVersions = {
-    glyphLibrary: `${registry.meta.importer}; ${registry.meta.semanticOverlay}`,
+    glyphLibrary: [registry.meta.importer, ...(registry.meta.authored ?? []), registry.meta.semanticOverlay].join('; '),
     grammar: 'none (no style grammar in 0.7A)',
     generator: 'none (legacy import, no procedural generation)',
     relationshipSolver: `none — ${LAYOUT_VERSION}`,
@@ -77,6 +77,8 @@ export function buildProofRun({ registry, profile, fixturesContract }) {
     validationReportRefs: validationRefs,
     coverage: {
       authoredContourGlyphs: AUTHORED,
+      contractCoverageChanges: [...pairs, ...words].map((f) => ({ fixtureId: f.fixtureId, contract: f.coverage, current: [...pairSpecs, ...wordSpecs].find((s) => s.fixtureId === f.fixtureId).coverage }))
+        .filter((x) => x.contract !== x.current),
       pairs: Object.fromEntries(pairSpecs.map((s) => [s.text, s.coverage])),
       words: Object.fromEntries(wordSpecs.map((s) => [s.text, s.coverage])),
       missingGlyphs: [...resolved.values()].filter((r) => r.status === 'missing').map((r) => ({ glyphId: r.glyph.glyphId, reason: r.reason })),

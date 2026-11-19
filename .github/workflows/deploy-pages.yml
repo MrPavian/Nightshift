@@ -33,6 +33,7 @@ jobs:
           mkdir -p _site/docs/reports
           cp -r review editor src data contracts _site/
           cp -r docs/reports/proof _site/docs/reports/
+          cp -r creator _site/
           printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=review/"><a href="review/">NIGHTSHIFT test &amp; review page</a>\n' > _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

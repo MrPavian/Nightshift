@@ -3,15 +3,16 @@
 import { readFileSync } from 'node:fs';
 import { GlyphRegistry } from './registry.js';
 
-export const DEFAULT_INPUTS = {
-  snapshot: 'data/legacy/v06-glyph-paths.json',
-  overlay: 'data/semantic/abgrs-semantic-overlay.v1.json',
-  parameterContract: 'contracts/glyph-parameter-contract.v1.json',
-  validationContract: 'contracts/glyph-geometry-validation.v1.json',
-};
+import { REGISTRY_INPUTS, AUTHORED_SNAPSHOTS } from './inputs.js';
 
-export function readInputs(paths = DEFAULT_INPUTS) {
-  return Object.fromEntries(Object.entries(paths).map(([k, p]) => [k, JSON.parse(readFileSync(p, 'utf8'))]));
+export const DEFAULT_INPUTS = REGISTRY_INPUTS;
+
+export { AUTHORED_SNAPSHOTS };
+
+export function readInputs(paths = DEFAULT_INPUTS, authoredPaths = AUTHORED_SNAPSHOTS) {
+  const inputs = Object.fromEntries(Object.entries(paths).map(([k, p]) => [k, JSON.parse(readFileSync(p, 'utf8'))]));
+  inputs.authored = authoredPaths.map((sourcePath) => ({ sourcePath, snapshot: JSON.parse(readFileSync(sourcePath, 'utf8')) }));
+  return inputs;
 }
 
 export const loadRegistry = (paths) => GlyphRegistry.build(readInputs(paths));

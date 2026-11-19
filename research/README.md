@@ -624,3 +624,6 @@ Created a construction-first reference library for original graffiti lettering. 
 - [Quality control](../docs/lettering/style-library/QUALITY_CONTROL.md)
 
 Initial cards are drafts pending practitioner/editor review. No third-party images were copied; no generator implementation or historical authenticity claim is implied.
+
+
+- `GRAFFITI_STYLE_MOVES_WEB_SURVEY_01.md`: web survey of graffiti style moves (bars, serifs, cuts, kicks, arrows, overlaps, bubble rules) and their translation into the graffiti engine (2026-11-18, Claude).

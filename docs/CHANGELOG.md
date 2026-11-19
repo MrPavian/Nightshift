@@ -504,3 +504,38 @@
 - Editor page `editor/` (Three.js): drag contour nodes of A/B/G/R/S with live provisional preview, commit on release, rejection with reasons and scene restore, Escape cancel, nudge buttons/arrow keys, undo/redo, zoom/pan that never touches the model, save to browser/file.
 - First enabled operation `contour.move-node` (D-013); all parameter operations remain disabled until calibrated.
 - 0.7A first-slice release gate met. Proof: `docs/reports/proof/T07/`. Tests: 99 passing plus scripted browser edit loop. Closes C01 (#4).
+
+
+## 2026-11-15 — C02 wave 1: authored C, D, O, P, Q
+
+- New authoring snapshot `data/glyphs/authored/c02-wave1.v1.json` (original, Claude-authored, review pending) and importer `src/glyph/import-authored.js`; the v0.6 bases remain as reference-only second variants.
+- C (classified exterior aperture with an authored mouth construction), O, D, P and Q (one enclosed counter each, Q with an explicit tail) pass all hard checks. All 26 letters now validate and render.
+- Semantic overlay 1.2.0 adds component proposals and identity profiles for the five letters; reports, proof run, test page and editor follow the authored set automatically.
+- Report: `docs/C02_GLYPH_AUTHORING_REPORT.md`. Tests: 111 passing plus browser tests.
+
+## 2026-11-15 — C02 wave 2: authored E, F, H, I, L, T masters
+
+- `data/glyphs/authored/c02-wave2.v1.json`: bar-and-stem masters normalised to the family (stems 26, bars 23, shared 59–81 middle band); v0.6 bases kept as reference-only variants.
+- Semantic overlay 1.3.0 with component proposals, junctions and identity profiles; new decidable identity check `no-enclosed-counter`.
+- 16/26 letters authored; GHOST is fully authored. Reports, T06 proof run and T07 editor proof regenerated.
+- Tests: 118 pass; browser SMOKE, REVIEW-PAGE and EDITOR-PASS.
+
+## 2026-11-15 — C02 wave 3: authored K, M, N, V, W, X, Y, Z masters
+
+- Diagonal letters constructed from parallel stroke edges at a perpendicular thickness of 25 (`tools/lib/wave3-construction.mjs`, verified against the committed paths).
+- Overlay 1.4.0 with components that partition every outline; junction kinds `branch` and `crossing`.
+- 24/26 letters authored; all six word fixtures are fully authored. Tests: 123 pass; browser smoke, review page and editor pass.
+
+
+## 2026-11-15 — C02 wave 4: authored J, U masters (C02 authoring complete)
+- `data/glyphs/authored/c02-wave4.v1.json`: original masters for U (two stems, base curve with a wall of 23) and J (stem with a left hook). Both end exactly at the baseline.
+- Overlay 1.5.0: components and junctions for J and U.
+- All 26 letters now have an editable authored master; none is reviewed.
+- The `OP_NOT_EDITABLE` protection test now runs on the pure v0.6 import.
+- Tests: 126 passing plus browser tests (smoke, review page, editor).
+
+## 2026-11-18 — C03: style grammar resolver (Bubble, Straight, Blockbuster; Wildstyle study)
+- `src/style/resolver.js` and `src/style/polygon.js`, with contract `contracts/style-resolver.v1.json`. Styles change the monochrome geometry of the authored masters through registered, validated, deterministic operations. Every step is reported with status and reason.
+- Axes are kept separate: letterform and composition change geometry; practice context and rendering do not.
+- Wildstyle is a study mode: interlocking is skipped until C04.
+- Proofs and report in `docs/reports/proof/C03/` (`node tools/proof-styles.mjs`); 7 new tests. Report: `docs/C03_STYLE_RESOLVER_REPORT.md`.

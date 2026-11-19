@@ -1,0 +1,81 @@
+{
+  "snapshotId": "nightshift.authored.c02-wave1",
+  "version": "1.0.0",
+  "schemaVersion": "1.0",
+  "status": "authored-contour; human review pending",
+  "frame": "legacy-v06 (same glyph-local frame as A/B/G/R/S, y down)",
+  "provenance": {
+    "kind": "claude-authored",
+    "author": "Claude (AI), NIGHTSHIFT implementation session",
+    "date": "2026-11-15",
+    "roadmap": "C02 Wave 1 (research/A_Z_GLYPH_AUTHORING_AND_PRIORITY_PLAN_01.md \u00a73)",
+    "method": "Original hand-authored line/quadratic contours drawn to match the existing A/B/G/R/S family: stroke and wall thickness about 25 units, chamfered C/G/O family, curved B/D/P/R bowls, cap height 8\u2013132. Not traced or derived from any font, artwork, photograph or identifiable writer.",
+    "review": "pending"
+  },
+  "notes": [
+    "Never edit by hand without bumping version; geometry changes after import go through editor commands.",
+    "The legacy v0.6 provisional base of each glyph is kept as a reference-only second variant."
+  ],
+  "glyphs": {
+    "C": {
+      "brief": "Chamfered open bowl in the C/G/O family: upper and lower arcs ending in horizontal terminals with vertical end caps; exterior-connected aperture on the right, no bar (distinguishes it from G) and no closed counter (distinguishes it from O).",
+      "outer": {
+        "d": "M30 8 L76 8 L100 32 L100 46 L76 46 L66 33 L42 33 L31 44 L31 96 L42 107 L66 107 L76 94 L100 94 L100 108 L76 132 L30 132 L6 108 L6 32 Z",
+        "sha256": "ce3b26fbd87a86867705bb9c23eba537c6bab502d9290233a19015865e95a3c0"
+      },
+      "counters": []
+    },
+    "D": {
+      "brief": "Straight spine with one curved bowl in the B/P/R bowl family; one enclosed counter.",
+      "outer": {
+        "d": "M10 8 L56 8 Q100 8 100 70 Q100 132 56 132 L10 132 Z",
+        "sha256": "42939f71d678a4ea437ec2554e0f549ec0ebce539576e17d3cf01f59d65b1816"
+      },
+      "counters": [
+        {
+          "d": "M35 33 L55 33 Q75 33 75 70 Q75 107 55 107 L35 107 Z",
+          "sha256": "7152e0b66300e11797e59a41751b832fc0c06e44db3a74a7da788f55b990fcff"
+        }
+      ]
+    },
+    "O": {
+      "brief": "Chamfered closed bowl in the C/G/O family; one enclosed counter with chamfered corners echoing the outer silhouette.",
+      "outer": {
+        "d": "M30 8 L76 8 L100 32 L100 108 L76 132 L30 132 L6 108 L6 32 Z",
+        "sha256": "a136423f2be6ad8fb7609ae35fc15348a689ee617bf230b6e2133a11a3dae74d"
+      },
+      "counters": [
+        {
+          "d": "M42 33 L64 33 L75 44 L75 96 L64 107 L42 107 L31 96 L31 44 Z",
+          "sha256": "704fb45727d05ce66132b708193c49de590e4245105cd0b0822e03d50817759a"
+        }
+      ]
+    },
+    "P": {
+      "brief": "Spine with an upper curved bowl matching R; open lower structure (stem only below the bowl); one enclosed counter.",
+      "outer": {
+        "d": "M10 132 L10 8 L61 8 Q99 8 99 46 Q99 84 61 84 L36 84 L36 132 Z",
+        "sha256": "47359817336da6739214d91cd3314ec836318edd78f30b6e554d2ccb58cc32ba"
+      },
+      "counters": [
+        {
+          "d": "M36 30 L36 62 L59 62 Q74 62 74 46 Q74 30 59 30 Z",
+          "sha256": "bb703b6b93be624a916822e2d8c49801403ee234421ef2296ef5f8c1934e5367"
+        }
+      ]
+    },
+    "Q": {
+      "brief": "The O construction plus an explicit diagonal tail leaving the lower-right chamfer outward (perpendicular to the chamfer). The tail is part of the outer contour, never enters the counter, and descends below the baseline.",
+      "outer": {
+        "d": "M30 8 L76 8 L100 32 L100 108 L97 111 L117 131 L103 145 L83 125 L76 132 L30 132 L6 108 L6 32 Z",
+        "sha256": "c1cb5cb817a73dff44170c5fa63763f56100c3268f27519993234d036f3102c2"
+      },
+      "counters": [
+        {
+          "d": "M42 33 L64 33 L75 44 L75 96 L64 107 L42 107 L31 96 L31 44 Z",
+          "sha256": "704fb45727d05ce66132b708193c49de590e4245105cd0b0822e03d50817759a"
+        }
+      ]
+    }
+  }
+}

@@ -75,7 +75,24 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
     }
 
     // Identity invariants (parameter contract) and per-counter protection.
-    const inv = invariantsByGlyph.get(rec.glyphId)?.identityInvariants ?? [];
+    // Declared apertures (authored glyphs may define the aperture mouth explicitly).
+    for (const a of spec.apertures ?? []) {
+      sg.negativeSpaces.push({
+        id: `${glyphPrefix(ch)}.negative.aperture.${a.name}`,
+        kind: 'aperture',
+        status: 'provisional',
+        boundaryComponentIds: a.boundaryComponents.map(cid),
+        mouthNodeRefs: a.mouthNodeRefs.map((r) => resolveRef(ch, r)),
+        protected: true,
+        notes: a.notes,
+      });
+    }
+    if ((spec.apertures ?? []).length) {
+      sg.topology.apertureIds = sg.negativeSpaces.filter((n) => n.kind === 'aperture').map((n) => n.id);
+      sg.topology.apertureStatus = 'classified';
+    }
+
+    const inv = invariantsByGlyph.get(rec.glyphId)?.identityInvariants ?? spec.identityInvariants ?? [];
     sg.constraints = [
       ...inv.map((text) => ({
         id: constraintId(ch, `identity.${slug(text).slice(0, 48)}`),
@@ -84,7 +101,7 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
         targetIds: sg.components.filter((c) => c.required).map((c) => c.id),
         severity: 'error',
         status: 'declared-unverified',
-        source: 'contracts/glyph-parameter-contract.v1.json',
+        source: invariantsByGlyph.has(rec.glyphId) ? 'contracts/glyph-parameter-contract.v1.json' : 'data/semantic overlay (authoring brief)',
       })),
       ...sg.negativeSpaces.filter((n) => n.kind === 'counter').map((n) => ({
         id: constraintId(ch, `preserve.${n.id.split('.negative.')[1]}`),
@@ -96,6 +113,17 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
         source: 'contracts/abgrs-glyph-construction.v1.json',
       })),
     ];
+    for (const a of sg.negativeSpaces.filter((n) => n.kind === 'aperture')) {
+      sg.constraints.push({
+        id: constraintId(ch, `preserve.${a.id.split('.negative.')[1]}`),
+        kind: 'preserve-aperture',
+        description: `Aperture ${a.id} must stay connected to exterior space.`,
+        targetIds: [a.id],
+        severity: 'error',
+        status: 'declared-unverified',
+        source: 'semantic overlay (authored aperture)',
+      });
+    }
     if (ch === 'G') {
       sg.constraints.push({
         id: constraintId(ch, 'preserve.aperture'),
@@ -109,7 +137,8 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
     }
 
     // Declared topology signature (fields per validation contract topologyModel).
-    const profile = profiles[rec.glyphId];
+    const profile = profiles[rec.glyphId] ?? spec.identityProfile;
+    if (!profile) throw new Error(`No identity profile for ${rec.glyphId} (contract or overlay)`);
     sg.topology.signature = {
       connectedComponentCount: spec.expectedConnectedComponents,
       requiredCounterIds: sg.topology.counterIds.slice(),
@@ -121,7 +150,7 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
       status: 'declared-unverified',
     };
     sg.identityProfile = {
-      source: 'contracts/glyph-geometry-validation.v1.json#glyphIdentityProfiles',
+      source: profiles[rec.glyphId] ? 'contracts/glyph-geometry-validation.v1.json#glyphIdentityProfiles' : 'semantic overlay (authoring brief; not yet in the validation contract)',
       required: profile.required,
       expectedNegativeSpace: profile.negativeSpace,
       checks: profile.checks.map((name) => ({ name, status: 'pending-validator' })),
@@ -137,7 +166,7 @@ export function applySemanticOverlay(records, overlay, { parameterContract, vali
     g.provenance.push({
       id: `prov.semantic-overlay.${ch}`,
       kind: 'derived',
-      sourcePath: 'data/semantic/abgrs-semantic-overlay.v1.json',
+      sourcePath: overlay.sourcePath ?? 'data/semantic/abgrs-semantic-overlay.v1.json',
       claim: `Provisional engineering component proposals for ${ch} (${overlay.overlayId} ${overlay.version}).`,
       evidenceGrade: 'not-applicable',
       rightsStatus: 'original',

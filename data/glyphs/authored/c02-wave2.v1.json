@@ -1,0 +1,70 @@
+{
+  "snapshotId": "nightshift.authored.c02-wave2",
+  "version": "1.0.0",
+  "schemaVersion": "1.0",
+  "status": "authored-contour; human review pending",
+  "frame": "legacy-v06 (same glyph-local frame as A/B/G/R/S and wave 1, y down)",
+  "provenance": {
+    "kind": "claude-authored",
+    "author": "Claude (AI), NIGHTSHIFT implementation session",
+    "date": "2026-11-15",
+    "roadmap": "C02 Wave 2 (contracts/alphabet-authoring-plan.v1.json: bar and stem systems E, F, H, I, L, T)",
+    "method": "Original hand-authored line contours normalised to the family metrics of the authored masters: spine/stem 26 units (as B, D, P, R), bar thickness 23, cap height 8–132, shared middle-bar band 59–81 for E, F and H, top bar 8–31 for E, F, T. Straight construction without decoration; letterform grammars come later (C03). Not traced or derived from any font, artwork, photograph or identifiable writer.",
+    "review": "pending"
+  },
+  "notes": [
+    "Never edit by hand without bumping version; geometry changes after import go through editor commands.",
+    "The legacy v0.6 provisional base of each glyph is kept as a reference-only second variant.",
+    "Compared with the v0.6 bases, the masters unify stem width (v0.6: 27–28) and bar thickness (v0.6: 25–27) with the authored family."
+  ],
+  "glyphs": {
+    "E": {
+      "brief": "Spine with three bars: top and foot bars to full width, middle bar shorter and at the optical centre; no enclosed counter (distinction from B).",
+      "outer": {
+        "d": "M10 132 L10 8 L92 8 L92 31 L36 31 L36 59 L80 59 L80 81 L36 81 L36 109 L94 109 L94 132 Z",
+        "sha256": "659f35dc5ddc6ca6bacd15b7bab5823a60333d9b2d207910280ea364bd586203"
+      },
+      "counters": []
+    },
+    "F": {
+      "brief": "Spine with top bar and the same shortened middle bar as E; open foot (distinction from E by the missing foot bar).",
+      "outer": {
+        "d": "M10 132 L10 8 L92 8 L92 31 L36 31 L36 59 L80 59 L80 81 L36 81 L36 132 Z",
+        "sha256": "147c82db2c1e4b6e9f06cb90be32d4b397133a653f100a22eebe8f7364f370aa"
+      },
+      "counters": []
+    },
+    "H": {
+      "brief": "Two full-height stems joined by one crossbar at the same height as the E/F middle bar; two open notches above and below (no counter).",
+      "outer": {
+        "d": "M10 132 L10 8 L36 8 L36 59 L74 59 L74 8 L100 8 L100 132 L74 132 L74 81 L36 81 L36 132 Z",
+        "sha256": "8a20a8a14186ddbe16c75e021009008f5af7b87b44d2b4140fee705c0c45e742"
+      },
+      "counters": []
+    },
+    "I": {
+      "brief": "Single stem with terminal bars at cap height and baseline, so I keeps a readable width in words; stem centred.",
+      "outer": {
+        "d": "M14 8 L72 8 L72 31 L56 31 L56 109 L72 109 L72 132 L14 132 L14 109 L30 109 L30 31 L14 31 Z",
+        "sha256": "c412188ef997b5418db87100c69af25fb55ab451d04387e24b2fe918c204b0c7"
+      },
+      "counters": []
+    },
+    "L": {
+      "brief": "Spine with a foot bar to the right; open upper right (distinction from E/F by bar position).",
+      "outer": {
+        "d": "M10 132 L10 8 L36 8 L36 109 L92 109 L92 132 Z",
+        "sha256": "a9d4571383d7da7a0acc7449b97d7fb48379b7a1c9872808f9f64f07e83dfaef"
+      },
+      "counters": []
+    },
+    "T": {
+      "brief": "Full-width top bar with a centred stem; stem width equal to the family spine.",
+      "outer": {
+        "d": "M6 8 L98 8 L98 31 L65 31 L65 132 L39 132 L39 31 L6 31 Z",
+        "sha256": "9d8ba7a2eb7b7fd9f3132f664d2ba6d738f3c3afb286ba7a965da4705c9411b3"
+      },
+      "counters": []
+    }
+  }
+}

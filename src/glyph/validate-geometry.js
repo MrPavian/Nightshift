@@ -339,15 +339,25 @@ function evaluateIdentity(glyph, ctx) {
     'no-unintended-self-intersection': () => ctx.crossingFree
       ? { status: 'passed', reason: 'no undeclared intersections (certified)' }
       : { status: 'failed', reason: 'undeclared intersection present' },
-    'aperture-exterior-connected': () => ctx.unfilledAllExterior
-      ? NE('unfilled space is proven exterior-connected, but no aperture entity is classified yet (AUD-01)')
-      : NE('aperture unclassified and exterior connectivity not proven'),
+    'aperture-exterior-connected': () => {
+      const ap = ctx.negative.apertures;
+      if (ap.length) return ap.every((a) => a.exteriorConnected)
+        ? { status: 'passed', reason: 'declared aperture is connected to exterior space (certified)' }
+        : { status: 'failed', reason: 'declared aperture is not exterior-connected' };
+      return ctx.unfilledAllExterior
+        ? NE('unfilled space is proven exterior-connected, but no aperture entity is classified yet (AUD-01)')
+        : NE('aperture unclassified and exterior connectivity not proven');
+    },
+    'no-enclosed-counter': () => ctx.contours.length === 1 && counters.length === 0
+      ? { status: 'passed', reason: 'single outer contour, no inner contour: no enclosed counter' }
+      : { status: 'failed', reason: `expected no counter, found ${ctx.contours.length - 1} inner contour(s)` },
+    'tail-counter-clearance': () => NE('requires reviewed tail mapping and a calibrated threshold'),
     'neck-clearance': () => NE('neck location requires reviewed mapping and a calibrated threshold'),
     'leg-counter-clearance': () => NE('requires reviewed leg mapping and a calibrated threshold'),
     'clearance-measured': () => NE('measured; threshold uncalibrated'),
     'distinction-from-C-and-O-review': () => NE('human visual review required'),
   };
-  return checks.map(({ name }) => ({ name, ...(evaluators[name]?.() ?? NE(mappingReason)) }));
+  return checks.map(({ name }) => ({ name, ...(evaluators[name]?.() ?? (name.endsWith('-review') ? NE('human visual review required') : NE(mappingReason))) }));
 }
 
 /**
