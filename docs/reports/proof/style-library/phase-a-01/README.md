@@ -52,7 +52,7 @@ Solid black front-face silhouettes on a plain light background; counters are rea
 - No joins or relationship solving; pairs and words use a fixed gap (Bubble: bounce placement).
 - All 26 uppercase glyphs are authored-contour masters since C02. The fixture contract still labels some fixtures "partial-provisional-coverage"; the manifest records those labels next to the current maturity.
 - The Creator graffiti engine (D-017) uses separate skeletons and is not part of this run.
-- The review schema offers pass / fail / needs-revision only.
+- Review decisions: pass / fail / needs-revision / unsure / cannot-assess; rubric scores also allow cannot-judge. Pairwise tie / neither comes with the calibration slice.
 
 ## Reproduce
 

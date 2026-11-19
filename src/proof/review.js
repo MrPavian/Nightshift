@@ -19,7 +19,9 @@ export const RUBRIC = [
   { key: 'surface', label: 'Surface behavior' },
   { key: 'renderConsistency', label: 'Render consistency — SVG vs Three.js' },
 ];
-export const DECISIONS = ['pass', 'fail', 'needs-revision'];
+// 'unsure' and 'cannot-assess' let a reviewer decline a verdict instead of being forced into one
+// (owner request on #22). Only 'pass' can ever support a maturity proposal.
+export const DECISIONS = ['pass', 'fail', 'needs-revision', 'unsure', 'cannot-assess'];
 export const STAGES = ['semantic', 'render'];
 export const SEVERITIES = ['critical', 'major', 'minor'];
 

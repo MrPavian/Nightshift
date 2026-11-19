@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 19. November 2026, Style-Library Phase A
+**Stand:** 19. November 2026, nach #21/#23 (Template-Registry) und Style-Library Phase A (#22)
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -21,7 +21,7 @@
 | **Academy A-Studie** (`letter-study_A_01.svg`, generiert) | implementiert, Layout-QA 0 Probleme | Claude | Owner-Freigabe; B–Z erst danach | Owner: Freigabe A |
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
-| **Style Reference Library** (`docs/lettering/style-library/`) | v2-Arbeitsbibliothek: 12 Karten / 38 Templates. **Phase A erledigt** (`docs/reports/proof/style-library/phase-a-01/`): monochrome Vergleichsbögen Neutral/Straight/Bubble/Blockbuster für A/B/G/R/S, Paare und Wörter. Befund: Bubble lässt A/B/R nur 16–20 % Punzenfläche, mit Bounce verschmelzen Buchstaben im Wort. Die Creator-Graffiti-Engine (D-017) ist nicht Teil von Phase A | ChatGPT (Research/Brief), Claude (Engine) | Owner-Sichtung der Bögen; danach Bubble/Straight kalibrieren | Owner: Sichtung Phase A; Entscheidung, ob die Graffiti-Engine ebenfalls auf Vergleichsbögen soll |
+| **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry; alle Templates `documented-draft`. Resolver nur Teilmenge Neutral, Straight, Bubble, Block-fit, Bounce; Wildstyle-Interlocking blockiert durch C04. **Phase A** (`docs/reports/proof/style-library/phase-a-01/`): Basisoperationen von Straight, Bubble und Blockbuster nur `rendered`. Owner-Review 19.11.: technischer Proof in Ordnung, **gestalterisch nicht abgenommen**; Straight/Blockbuster wirken wie bearbeitete Display-Schriften und müssen neu konzipiert werden; Bubble ist die einzige Richtung mit Graffiti-Anmutung, hat aber offene Defekte (Punzen A/B/R nur 16–20 % der Neutralfläche, Bounce verschmilzt Buchstaben) | ChatGPT (Research/Brief), Claude (Engine) | C03 Bubble-Punzen und Bounce-Überlapp absichern (`CLAUDE_TASK_C03_BUBBLE_BOUNCE_GATES_01.md`); Letterform-Grammatiken für Straight/Blockbuster neu definieren (PR #25) | Owner: Stildefinition vor dem nächsten Proof |
 | **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
 
 ## Offene Owner-Entscheidungen
@@ -36,7 +36,7 @@
 
 ```bash
 npm ci
-npm test                 # Unit- und Abnahmetests (184 am 19.11.)
+npm test                 # Unit- und Abnahmetests (194 am 19.11., nach #22)
 npm run test:browser     # Prüfstand, Editor, Creator, Archiv, Academy (CHROME=<pfad> setzen)
 npm run perf:editor      # Editor-Antwortzeiten
 ```
@@ -45,5 +45,5 @@ Erzeugte Berichte prüft die CI zusätzlich mit `--check` (siehe `.github/workfl
 
 ## Repository-Hygiene
 
-- **Offene Pull Requests:** keine (Stand 19.11., nach #19).
+- **Offene Pull Requests:** #22 (Style-Library Phase A), #25 (Research: eigenständige Graffiti-Letterform-Grammatiken). Stand 19.11.
 - **Alte Branches:** aufgeräumt (19.11.); GitHub löscht Branches nach dem Merge automatisch.

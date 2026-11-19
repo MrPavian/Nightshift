@@ -120,3 +120,16 @@ test('human review stays pending: blank template, no ratings, no automated promo
   }
   assert.equal(files['review/ratings.json'], '[]\n');
 });
+
+test('reviewers can decline a verdict: unsure / cannot-assess are valid and never promote', async () => {
+  const { DECISIONS, validateReviewRecord, proposeMaturity } = await import('../src/proof/review.js');
+  assert.ok(DECISIONS.includes('unsure') && DECISIONS.includes('cannot-assess'));
+  assert.deepEqual(manifest.review.decisionOptions, DECISIONS);
+  const base = JSON.parse(files['review/review-template.json'])[0];
+  for (const decision of ['unsure', 'cannot-assess']) {
+    const rec = { ...base, reviewId: `rev.${decision}`, reviewer: 'Test', date: '2026-11-19', decision, rationale: 'kann ich nicht beurteilen' };
+    assert.deepEqual(validateReviewRecord(rec, manifest).map((d) => d.code), [], decision);
+    const glyph = loadRegistry().getByChar(rec.glyphId.split('.').pop());
+    assert.equal(proposeMaturity(glyph, [rec]).proposed, null, `${decision} proposes nothing`);
+  }
+});

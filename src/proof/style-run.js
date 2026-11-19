@@ -16,7 +16,7 @@ import { glyphGroup } from '../render/svg.js';
 import { resolveStyle, RESOLVER_VERSION } from '../style/resolver.js';
 import { layoutWord, glyphPolygons } from '../style/render.js';
 import { bounds } from '../style/polygon.js';
-import { REVIEW_SCHEMA_VERSION, blankReview } from './review.js';
+import { REVIEW_SCHEMA_VERSION, DECISIONS, blankReview } from './review.js';
 
 export const STYLE_RUN_SCHEMA_VERSION = '1.0';
 export const STYLE_PLATES_VERSION = 'style-proof-plates/1.0.0';
@@ -226,7 +226,9 @@ export function buildStyleProofRun({ registry, profile, styleContract, fixturesC
       records: 'review/ratings.json',
       template: 'review/review-template.json',
       automatedMaturityPromotion: false,
-      note: 'Plates are evidence, not approval. Reviews here concern derived, reference-only style geometry and never change the maturity of a master. The current review schema offers pass / fail / needs-revision only; there is no tie / neither / cannot-judge option.',
+      decisionOptions: DECISIONS,
+      scoreOptions: '0–3, cannot-judge or empty per rubric item',
+      note: 'Plates are evidence, not approval. Reviews here concern derived, reference-only style geometry and never change the maturity of a master. Reviewers may answer unsure or cannot-assess instead of a verdict. Pairwise tie / neither options belong to the later calibration slice (contracts/visual-calibration.v1.json).',
     },
   };
   files['review/review-template.json'] = stableStringify(specimens.filter((s) => s.family === 'glyph-comparison').map((s) => ({ ...blankReview(manifest, s), preset: s.preset, maturityAtReview: 'derived-reference-only', masterMaturity: s.slots[0].maturity })), 2) + '\n';
@@ -288,7 +290,7 @@ Solid black front-face silhouettes on a plain light background; counters are rea
 - No joins or relationship solving; pairs and words use a fixed gap (Bubble: bounce placement).
 - All 26 uppercase glyphs are authored-contour masters since C02. The fixture contract still labels some fixtures "partial-provisional-coverage"; the manifest records those labels next to the current maturity.
 - The Creator graffiti engine (D-017) uses separate skeletons and is not part of this run.
-- The review schema offers pass / fail / needs-revision only.
+- Review decisions: pass / fail / needs-revision / unsure / cannot-assess; rubric scores also allow cannot-judge. Pairwise tie / neither comes with the calibration slice.
 
 ## Reproduce
 

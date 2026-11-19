@@ -1,6 +1,6 @@
 {
   "artifactHashes": {
-    "README.md": "d1c180345c10d5ee1149950684e4cc6c188ab498d414655be8bc992dedce0c05",
+    "README.md": "f4302441a87d8cf5a9d5d57a8b19518d17d35ad36c32c97d1c21cf2a53ab3b35",
     "plates/glyph-comparison.svg": "6c8875031ae12524edbb6cfcc942b35571f5ba2b7419cf7280a6a4c1e1448cc9",
     "plates/pair-context.svg": "8ca3393fb0da1caf73cf0c04f9d404ebe0ea3d510ed6c0b38816bca2893223c9",
     "plates/thumbnails.svg": "57e63af36b88ac74fcb90c0d51fdf6cc911c31f54aeebf484b28d59a0a3e6c01",
@@ -349,9 +349,17 @@
   },
   "review": {
     "automatedMaturityPromotion": false,
-    "note": "Plates are evidence, not approval. Reviews here concern derived, reference-only style geometry and never change the maturity of a master. The current review schema offers pass / fail / needs-revision only; there is no tie / neither / cannot-judge option.",
+    "decisionOptions": [
+      "pass",
+      "fail",
+      "needs-revision",
+      "unsure",
+      "cannot-assess"
+    ],
+    "note": "Plates are evidence, not approval. Reviews here concern derived, reference-only style geometry and never change the maturity of a master. Reviewers may answer unsure or cannot-assess instead of a verdict. Pairwise tie / neither options belong to the later calibration slice (contracts/visual-calibration.v1.json).",
     "records": "review/ratings.json",
     "schemaVersion": "1.0",
+    "scoreOptions": "0–3, cannot-judge or empty per rubric item",
     "status": "pending",
     "template": "review/review-template.json"
   },
