@@ -18,8 +18,8 @@ export function comparisonViews(C, h) {
   function landing() {
     const g = C.pilotGate, k = C.counts;
     const glyphPart = g.open
-      ? `<p class="orient">${k.eligibleGlyphObservations} Buchstabenbeobachtungen aus ${k.glyphSources} unabhängigen Quellen.</p>`
-      : `<div class="empty"><p><strong>Buchstabenvergleich: Forschungsansicht im Aufbau.</strong></p><p>Ein Buchstabe wird erst verglichen, wenn er auf einem gesichteten Fundstück eindeutig erkennbar ist. Für den Start braucht es mindestens ${g.minEligibleGlyphObservations} solche Beobachtungen aus ${g.minIndependentSources} unabhängigen Quellen; vorhanden sind ${k.eligibleGlyphObservations} aus ${k.glyphSources}. Bis dahin lassen sich die Fundstücke selbst durchsehen.</p></div>`;
+      ? `<p class="orient">${k.eligibleGlyphObservations} Buchstabenbeobachtungen aus ${k.glyphSources} Quellen (${k.glyphInstitutions} Archive bzw. Plattformen).</p>`
+      : `<div class="empty"><p><strong>Buchstabenvergleich: Forschungsansicht im Aufbau.</strong></p><p>Ein Buchstabe wird erst verglichen, wenn er auf einem gesichteten Fundstück eindeutig erkennbar ist. Für den Start braucht es mindestens ${g.minEligibleGlyphObservations} solche Beobachtungen aus ${g.minIndependentInstitutions} verschiedenen Archiven bzw. Plattformen; vorhanden sind ${k.eligibleGlyphObservations} aus ${k.glyphInstitutions} (${k.glyphSources} Quellen, mehrere Quellen derselben Plattform zählen einmal). Bis dahin lassen sich die Fundstücke selbst durchsehen.</p></div>`;
     return {
       title: 'Buchstaben vergleichen',
       html: `${crumbs([base[0], [base[1][0]]])}<h1 class="page-title">Buchstaben vergleichen</h1>

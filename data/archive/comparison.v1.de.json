@@ -1,37 +1,236 @@
 {
   "comparisonSchemaVersion": "1.0",
-  "contract": "nightshift.letterform-comparison@1.0.0",
+  "contract": "nightshift.letterform-comparison@1.1.0",
   "counts": {
-    "eligibleGlyphObservations": 0,
-    "findings": 0,
-    "glyphSources": 0,
-    "inspectedSpecimens": 15,
-    "specimens": 39
+    "eligibleGlyphObservations": 12,
+    "findings": 1,
+    "glyphInstitutions": 2,
+    "glyphSources": 3,
+    "inspectedSpecimens": 21,
+    "specimens": 45
   },
-  "findings": [],
+  "findings": [
+    {
+      "axis": "simple-interlocking",
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "evidenceBasisDe": "Direkter Vergleich der X-Beobachtungen von Sea und XCALET aus dem Alphabet-Challenge-Thread (ACQ-BSCI-02) mit knowmes 2018er Alphabet (ACQ-BSCI-01).",
+      "findingDe": "In den drei geprüften X-Beispielen bleibt das Grundgerüst ein Kreuz aus zwei Diagonalzügen. Die Ausführung reicht von schmalen, linearen Strichen bis zu breiten Markerzügen mit langen, unterschiedlich zugespitzten Ausläufen.",
+      "generatorRelevance": "research-lead",
+      "id": "FND-X-DIAGONAL-CROSS-01",
+      "limitationDe": "Die beiden Challenge-Beiträge stammen aus demselben Thread und die drei Beispiele sind keine repräsentative Stilstatistik. Der Befund beschreibt nur die sichtbare Grundkonstruktion und Strichbehandlung.",
+      "observationIds": [
+        "GLY-BSCI-SEA-2018-X1",
+        "GLY-BSCI-XCALET-2018-X1",
+        "GLY-BSCI-KNOME-2018-X1"
+      ],
+      "relatedEntries": []
+    }
+  ],
   "generatedFrom": [
     {
       "path": "contracts/letterform-comparison.v1.json",
-      "sha256": "3eeabe8b5b9e577bb7aa363b13b04cc98b8e4324b29b9f5e1262778fbef48021"
+      "sha256": "3d0d270b0f7c314de095a93da397968ffb742c808a0c117a82728f66bb0060cd"
     },
     {
       "path": "research/archive/comparison/findings.v1.json",
-      "sha256": "a8ff84b136bbe274fbb122b1aac35a2a8179868cc04c3ce8cb681491f706deec"
+      "sha256": "c43cff5eaec373ebe95559861668a7c41f10fc2f2c2bc1909ab40592310a443f"
     },
     {
       "path": "research/archive/comparison/observations.v1.json",
-      "sha256": "8540ce24d4894ef297b5ba59f212f8c40e4f616b658bc9657d8fdf620d47d24a"
+      "sha256": "a20b945dbef9f5d9187b5e0b564424ca47d285f6a371c02f5528706aebd2725a"
     },
     {
       "path": "research/archive/comparison/sources.v1.json",
-      "sha256": "6f02fec8903743b99ef26c9ee848e7f4753d42516ecd28b0610cd733da949f5d"
+      "sha256": "84afb0187ba8d74e8b9f91da6ec40c38f86f5c05e2c6e0bbe466fc1783aa7691"
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "4387169e9744ada3af74cd4ad2270e2c34834b6fbc479c9991aabca6dc7ca1ed"
+      "sha256": "569755be920a51e8bb62e215a240cd838f13679f4bce41c2578ef9ce8557b855"
     }
   ],
-  "glyphObservations": [],
+  "glyphObservations": [
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar"
+      ],
+      "glyph": "H",
+      "id": "GLY-BSCI-ENZOEN-2018-H1",
+      "legibility": "high",
+      "observationDe": "Das H besteht aus zwei getrennten, leicht geneigten Stämmen, die durch einen quer verlaufenden Zug verbunden werden. Die breiten Striche zeigen kantige Richtungswechsel.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar"
+      ],
+      "glyph": "T",
+      "id": "GLY-BSCI-ENZOEN-2018-T1",
+      "legibility": "high",
+      "observationDe": "Das T hat einen breiten, leicht gebogenen Querbalken und einen kurzen, nach unten geführten Stamm. Die Enden sind kantig und leicht ausgestellt.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib"
+      ],
+      "glyph": "V",
+      "id": "GLY-BSCI-ENZOEN-2018-V1",
+      "legibility": "high",
+      "observationDe": "Das V wird aus zwei breiten Diagonalzügen gebildet, die in einem schmalen unteren Winkel zusammentreffen. Die Strichenden sind stumpf bis leicht zugespitzt.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar",
+        "extended-terminal"
+      ],
+      "glyph": "T",
+      "id": "GLY-BSCI-KNOME-2018-T1",
+      "legibility": "medium",
+      "observationDe": "Das T kombiniert einen breiten, annähernd waagerechten Querzug mit einem schräg abwärts laufenden Stamm. Der Querzug ragt deutlich über den Stamm hinaus.",
+      "specimenId": "BSCI-KNOME-2018-ALPHA-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "diagonal-cross"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-KNOME-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X wird durch zwei breite Diagonalzüge gebildet, die sich zentral kreuzen. Die Enden sind lang ausgezogen und unterschiedlich stark zugespitzt.",
+      "specimenId": "BSCI-KNOME-2018-ALPHA-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "open-counter",
+        "monoline"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-SEA-2018-C1",
+      "legibility": "high",
+      "observationDe": "Das C besteht aus einem einzelnen gebogenen Zug mit zwei offenen Enden. Die Öffnung weist nach rechts; die Enden laufen spitz aus.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "closed-counter",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "D",
+      "id": "GLY-BSCI-SEA-2018-D1",
+      "legibility": "high",
+      "observationDe": "Das D besitzt einen geraden linken Stamm und einen gerundeten Außenbogen. Ein langer Auslauf zieht aus dem unteren rechten Bereich über die Zellgrenze.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "O",
+      "id": "GLY-BSCI-SEA-2018-O1",
+      "legibility": "medium",
+      "observationDe": "Das O ist als geschlossene, ovale Schleife angelegt. Ein Zug läuft rechts aus der Form heraus und verlängert die Kontur.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "monoline",
+        "diagonal-cross",
+        "extended-terminal"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-SEA-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X entsteht aus zwei sich kreuzenden Diagonalzügen. Ein Zug setzt sich deutlich über den Kreuzungspunkt hinaus fort.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "open-counter",
+        "broad-nib",
+        "extended-terminal"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-XCALET-2018-C1",
+      "legibility": "medium",
+      "observationDe": "Das C ist als offener, spitz zulaufender Bogen ausgeführt. Die breiten Markerzüge erzeugen wechselnde Strichbreiten; die Öffnung bleibt deutlich sichtbar.",
+      "specimenId": "BSCI-XCALET-2018-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "diagonal-cross",
+        "extended-terminal"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-XCALET-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X besteht aus zwei breiten, sich kreuzenden Diagonalzügen. Beide Züge laufen über den Kreuzungspunkt hinaus und bilden lange, spitz zulaufende Enden.",
+      "specimenId": "BSCI-XCALET-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "heavy-mass"
+      ],
+      "glyph": "O",
+      "id": "GLY-LFA-BOMB-046-O1",
+      "legibility": "medium",
+      "observationDe": "Das O im Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die Kontur sitzt in einer schweren, stark verdichteten Titelgestaltung; Details werden durch die umgebende Illustration begrenzt.",
+      "specimenId": "LFA-BOMB-046-001",
+      "transcriptionConfidence": "medium"
+    }
+  ],
   "labels": {
     "comparisonAxis": {
       "compact-extended": "kompakt ↔ gestreckt",
@@ -75,13 +274,31 @@
   "language": "de",
   "objectObservations": [],
   "pilotGate": {
-    "eligible": 0,
-    "independentSources": 0,
+    "eligible": 12,
+    "independentInstitutions": 2,
     "minEligibleGlyphObservations": 20,
-    "minIndependentSources": 3,
+    "minIndependentInstitutions": 3,
     "open": false
   },
   "sources": [
+    {
+      "id": "ACQ-ALT-01",
+      "institution": "Éditions Alternatives / All City Blog",
+      "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
+      "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
+    },
+    {
+      "id": "ACQ-BSCI-01",
+      "institution": "Bombing Science Forums",
+      "title": "Bombing Science Forums — Over a decade of handstyle alphabets (knowme)",
+      "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/"
+    },
+    {
+      "id": "ACQ-BSCI-02",
+      "institution": "Bombing Science Forums",
+      "title": "Bombing Science Forums — Alphabet Challenge (2018)",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
+    },
     {
       "id": "ACQ-LFA-02",
       "institution": "Letterform Archive",
@@ -108,6 +325,153 @@
     }
   ],
   "specimens": [
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Woshe",
+      "date": "2013",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "ALT-WOSHE-M-MAMMOUTH-01",
+      "identifier": "All City 11-page PDF excerpt, PDF page 7 / printed spread pp. 48–49",
+      "imageRights": "do-not-reuse",
+      "institution": "Éditions Alternatives / All City Blog",
+      "itemUrl": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
+      "observationIds": [],
+      "photographerName": null,
+      "place": "France",
+      "sourceRecordId": "ACQ-ALT-01",
+      "title": "Woshe — M le Mammouth instructional spread",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Enzoen (Soen T2K)",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-ENZOEN-2018-H1",
+        "GLY-BSCI-ENZOEN-2018-T1",
+        "GLY-BSCI-ENZOEN-2018-V1"
+      ],
+      "id": "BSCI-ENZOEN-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #3",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Enzoen (Soen T2K) — Alphabet Challenge submission",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "knowme",
+      "date": "2018",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-KNOME-2018-T1",
+        "GLY-BSCI-KNOME-2018-X1"
+      ],
+      "id": "BSCI-KNOME-2018-ALPHA-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as 2018 effort",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-01",
+      "title": "knowme — 2018 handstyle alphabet",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "knowme",
+      "date": "2018",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "BSCI-KNOME-2018-REJECT-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as reject pile",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-01",
+      "title": "knowme — 2018 rejected handstyle alphabet",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Sea",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-SEA-2018-C1",
+        "GLY-BSCI-SEA-2018-D1",
+        "GLY-BSCI-SEA-2018-O1",
+        "GLY-BSCI-SEA-2018-X1"
+      ],
+      "id": "BSCI-SEA-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #2",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Sea — Alphabet Challenge submission",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "XCALET",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-XCALET-2018-C1",
+        "GLY-BSCI-XCALET-2018-X1"
+      ],
+      "id": "BSCI-XCALET-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #6",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "XCALET — Alphabet Challenge submission",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
     {
       "accessDate": "2026-11-19",
       "archiveStyleLabel": null,
@@ -139,7 +503,9 @@
       "dateQualifier": "as-catalogued",
       "decade": "1990er",
       "displayMode": "link-only",
-      "glyphObservationIds": [],
+      "glyphObservationIds": [
+        "GLY-LFA-BOMB-046-O1"
+      ],
       "id": "LFA-BOMB-046-001",
       "identifier": null,
       "imageRights": "link-only",

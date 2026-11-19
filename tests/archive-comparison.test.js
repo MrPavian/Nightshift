@@ -36,13 +36,23 @@ test('committed comparison data is valid and up to date', () => {
   assert.equal(readFileSync(COMPARISON_OUT, 'utf8'), stableStringify(r.data, 2) + '\n', `${COMPARISON_OUT} is stale — run node tools/archive-build.mjs`);
 });
 
-test('honest counts: 39 objects, 15 inspected, no glyph observation, pilot gate closed', () => {
+test('honest counts: recomputed independently from the source files; pilot gate follows the contract thresholds', () => {
   const { data } = buildComparisonData('de');
-  assert.equal(data.counts.specimens, 39);
-  assert.equal(data.counts.inspectedSpecimens, 15);
-  assert.equal(data.counts.eligibleGlyphObservations, 0);
-  assert.equal(data.pilotGate.open, false);
-  assert.equal(data.pilotGate.minEligibleGlyphObservations, contract.pilotGate.glyphComparison.minEligibleGlyphObservations);
+  const specs = live.specimens.specimens, inspectedIds = new Set(specs.filter((x) => ['hi_fi_image_opened_and_inspected', 'physical_item_inspected'].includes(x.visualState)).map((x) => x.id));
+  const published = (o) => ['source-checked', 'editorial-reviewed', 'approved-for-archive'].includes(o.editorialState);
+  const eligible = live.observations.glyphObservations.filter((g) => published(g) && inspectedIds.has(g.specimenId));
+  const sourcesOf = new Set(eligible.map((g) => specs.find((x) => x.id === g.specimenId).sourceRecordId));
+  const institutionsOf = new Set([...sourcesOf].map((id) => live.sources.sources.find((x) => x.id === id).institution));
+  assert.equal(data.counts.specimens, specs.length);
+  assert.equal(data.counts.inspectedSpecimens, inspectedIds.size);
+  assert.equal(data.counts.eligibleGlyphObservations, eligible.length);
+  assert.equal(data.counts.glyphSources, sourcesOf.size);
+  const gate = contract.pilotGate.glyphComparison;
+  assert.equal(data.counts.glyphInstitutions, institutionsOf.size);
+  assert.equal(data.pilotGate.open, eligible.length >= gate.minEligibleGlyphObservations && institutionsOf.size >= gate.minIndependentInstitutions, 'gate counts archives/platforms, not source records');
+  // Every exported glyph observation sits on an inspected specimen and has German text; none comes from the migrated free text.
+  for (const g of data.glyphObservations) { assert.ok(inspectedIds.has(g.specimenId), g.id); assert.ok(g.observationDe.trim(), g.id); }
+  assert.deepEqual(migrateManifest(legacy).observations.glyphObservations, []);
 });
 
 test('output carries display fields only: no English research notes, no image URLs, link-only display', () => {

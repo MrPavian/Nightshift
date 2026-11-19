@@ -617,3 +617,9 @@
 - Archive UI: `#/vergleich` (overview, counts, pilot-gate status), `#/vergleich/fundstuecke` (search and filters by review state, archive, decade, place, rights), `#/vergleich/fundstueck/<id>` (provenance, status, „Originalquelle öffnen“; no third-party image). Entry points from „Stile & Buchstaben“ and „Bildarchiv“; offline cache v3.
 - Tests: `tests/archive-comparison.test.js` (13); archive smoke covers the new routes (phone/desktop, filters, search, no images, original-source link). Proof screenshots `docs/reports/proof/comparison/`; C06 proof re-captured.
 - Glyph comparison (Gate 3) stays closed: 0 eligible glyph observations. Nothing was inferred from free-text notes.
+
+## 2026-11-19 — Comparison pilot gate counts archives/platforms
+
+- Owner decision: the glyph-comparison pilot gate requires 20 eligible glyph observations from at least 3 different archives/platforms (`contracts/letterform-comparison.v1.json` 1.1.0, `minIndependentInstitutions`). Several source records of one platform (e.g. two forum threads) count once. Current state: 12 observations from 3 source records / 2 platforms; gate closed.
+- Fixed CI after PR #31: missing `visualState` on `ALT-WOSHE-M-MAMMOUTH-01`; count test recomputes from source files.
+- Research for the comparison library is done by ChatGPT only (owner decision); Claude reviews and integrates.

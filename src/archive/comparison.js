@@ -142,9 +142,12 @@ export function buildComparison({ contract, sources, specimens, observations, fi
     inspectedSpecimens: [...specById.values()].filter((s) => ELIGIBLE_STATES.has(s.visualState)).length,
     eligibleGlyphObservations: glyphObs.length,
     glyphSources: glyphSources.size,
+    // Different source records can sit on the same platform or archive; this is the stricter count.
+    glyphInstitutions: new Set([...glyphSources].map((id) => srcById.get(id)?.institution ?? id)).size,
     findings: findingsOut.length,
   };
-  const pilotGate = { ...gate, eligible: counts.eligibleGlyphObservations, independentSources: counts.glyphSources, open: counts.eligibleGlyphObservations >= gate.minEligibleGlyphObservations && counts.glyphSources >= gate.minIndependentSources };
+  // Independence is counted by archive/platform (owner decision, contract 1.1.0), not by source record.
+  const pilotGate = { ...gate, eligible: counts.eligibleGlyphObservations, independentInstitutions: counts.glyphInstitutions, open: counts.eligibleGlyphObservations >= gate.minEligibleGlyphObservations && counts.glyphInstitutions >= gate.minIndependentInstitutions };
 
   // ---- output: display fields only ----
   const decade = (d) => (d && /^\d{4}$/.test(d) ? `${d.slice(0, 3)}0er` : null);
