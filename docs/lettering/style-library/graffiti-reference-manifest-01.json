@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "20_item_level_records_across_Smithsonian_and_NGA;_visual_inspection_and_rights_clearance_pending",
+  "corpus_status": "24_item_level_records_across_Smithsonian_and_NGA;_visual_inspection_and_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -730,6 +730,102 @@
       "visual_review_status": "metadata_verified_image_not_inspected",
       "what_not_to_copy": "Do not trace photographed work or writer name",
       "confidence": "high for catalogue metadata; none for visual style classification"
+    },
+    {
+      "specimen_id": "NGA-HC-004",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173385-dondi",
+      "archive_title": "Dondi",
+      "creator_or_writer": "as titled in NGA catalogue; title is not sufficient to verify every writer attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1980",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4917",
+      "visible_glyphs": "not fully transcribed; see catalogue visual description",
+      "candidate_grammar_tags": [],
+      "execution_format": "subway-car piece documented in chromogenic prints",
+      "composition_mode": "large-scale lettering with hand/character imagery",
+      "rendering_treatment": [
+        "multi-colour lettering and/or imagery; exact layer boundaries require direct inspection"
+      ],
+      "letter_anatomy_notes": "NGA-generated visual description is insufficient to identify glyph skeletons, counters, terminals, joins or consistent letter construction.",
+      "word_composition_notes": "Dondi / inscriptions include DONDI CIA; large circular abstract forms, cartoon-like hand, text elements and illustrated train-car composition.",
+      "rights_status": "NGA states media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "what_not_to_copy": "Do not trace lettering, writer name, characters, symbols or full train-car composition.",
+      "confidence": "high for catalogue metadata; low for glyph anatomy and style-family classification"
+    },
+    {
+      "specimen_id": "NGA-HC-005",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173373-quik",
+      "archive_title": "Quik",
+      "creator_or_writer": "as titled in NGA catalogue; title is not sufficient to verify every writer attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1980",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4912",
+      "visible_glyphs": "not fully transcribed; see catalogue visual description",
+      "candidate_grammar_tags": [],
+      "execution_format": "subway-car piece documented in chromogenic prints",
+      "composition_mode": "lettering with highlight treatment and surrounding tags",
+      "rendering_treatment": [
+        "multi-colour lettering and/or imagery; exact layer boundaries require direct inspection"
+      ],
+      "letter_anatomy_notes": "NGA-generated visual description is insufficient to identify glyph skeletons, counters, terminals, joins or consistent letter construction.",
+      "word_composition_notes": "Large letters, abstract shapes and patterns in pink, blue, black and white; sparkling highlights; smaller tags; train windows and route signage.",
+      "rights_status": "NGA states media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "what_not_to_copy": "Do not trace lettering, writer name, characters, symbols or full train-car composition.",
+      "confidence": "high for catalogue metadata; low for glyph anatomy and style-family classification"
+    },
+    {
+      "specimen_id": "NGA-HC-006",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173381-lee",
+      "archive_title": "Lee",
+      "creator_or_writer": "as titled in NGA catalogue; title is not sufficient to verify every writer attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1980",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4914",
+      "visible_glyphs": "not fully transcribed; see catalogue visual description",
+      "candidate_grammar_tags": [],
+      "execution_format": "subway-car piece documented in chromogenic prints",
+      "composition_mode": "message-led lettering with environmental/illustrative background",
+      "rendering_treatment": [
+        "multi-colour lettering and/or imagery; exact layer boundaries require direct inspection"
+      ],
+      "letter_anatomy_notes": "NGA-generated visual description is insufficient to identify glyph skeletons, counters, terminals, joins or consistent letter construction.",
+      "word_composition_notes": "Sky-blue background, mountain/cloud shapes, red root- or vein-like lines, bold text about graffiti and the Fabulous 5; train structure remains visible.",
+      "rights_status": "NGA states media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "what_not_to_copy": "Do not trace lettering, writer name, characters, symbols or full train-car composition.",
+      "confidence": "high for catalogue metadata; low for glyph anatomy and style-family classification"
+    },
+    {
+      "specimen_id": "NGA-HC-007",
+      "source_record_id": "ACQ-NGA-01",
+      "item_url": "https://www.nga.gov/artworks/173339-passion-zephyr",
+      "archive_title": "Passion by Zephyr",
+      "creator_or_writer": "as titled in NGA catalogue; title is not sufficient to verify every writer attribution",
+      "photographer_or_archive_credit": "Henry Chalfant",
+      "date": "1981",
+      "place": "unknown",
+      "identifier": "NGA accession 2015.19.4900",
+      "visible_glyphs": "not fully transcribed; see catalogue visual description",
+      "candidate_grammar_tags": [],
+      "execution_format": "subway-car piece documented in chromogenic prints",
+      "composition_mode": "overlapping lettering and narrative illustration",
+      "rendering_treatment": [
+        "multi-colour lettering and/or imagery; exact layer boundaries require direct inspection"
+      ],
+      "letter_anatomy_notes": "NGA-generated visual description is insufficient to identify glyph skeletons, counters, terminals, joins or consistent letter construction.",
+      "word_composition_notes": "Overlapping letters and imagery; central cracked red heart, yellow text panel and skull with Uncle Sam hat, pink glasses and exaggerated smile.",
+      "rights_status": "NGA states media unavailable for download; contact NGA about image usage",
+      "visual_review_status": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
+      "what_not_to_copy": "Do not trace lettering, writer name, characters, symbols or full train-car composition.",
+      "confidence": "high for catalogue metadata; low for glyph anatomy and style-family classification"
     }
   ]
 }
