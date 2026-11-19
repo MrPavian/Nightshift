@@ -18,9 +18,9 @@ A source-aware, construction-first library for original NIGHTSHIFT graffiti lett
 ## Style cards
 | Card | Primary axis | Templates |
 |---|---|---:|
-| Bubble | Letterform | 3 planned |
-| Blockbuster / Block | Letterform + format context | 3 planned |
-| Wildstyle | Composition | 3 planned |
+| Bubble | Letterform | 3 |
+| Blockbuster / Block | Letterform + format context | 3 |
+| Wildstyle | Composition | 3 |
 | Tag / Handstyle | Inscription + movement | 3 |
 | Throw-up | Work format | 3 |
 | Simple / Straight | Letterform | 4 |
@@ -31,7 +31,7 @@ A source-aware, construction-first library for original NIGHTSHIFT graffiti lett
 | Calligraffiti | Hybrid letterform / movement | 3 |
 | Anti-Style / Experimental | Experimental grammar | 3 |
 
-“Planned” means the existing card needs explicit template decomposition before it is implementation-ready. These cards are drafts, not practitioner-approved definitions.
+The templates are documented design hypotheses, not practitioner-approved definitions or generator-ready presets.
 
 ## Core modelling rule
 Do not encode styles as one flat list of mutually exclusive presets. Keep separate axes:
