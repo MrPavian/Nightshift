@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "25_item_level_records_across_Smithsonian_NGA_and_Letterform_Archive;_1_explicitly_labelled_throw_up_image_visually_inspected;_rights_clearance_pending",
+  "corpus_status": "30_item_level_records_across_Smithsonian_NGA_and_Letterform_Archive;_1_explicitly_labelled_throw_up_image_visually_inspected;_5_additional_Letterform_Archive_correspondence_records_metadata_only;_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -888,6 +888,126 @@
       "visual_review_status": "individual_image_opened_and_visually_inspected; archive_style_label_explicit",
       "what_not_to_copy": "Do not trace the photographed outline, exact letter sequence, spacing, tags or train-car composition. Derive only general construction principles.",
       "confidence": "high for archive title/date/credit/style label; medium for broad visual structure; low for exact glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-COMM-001",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/spel-letter-and-sketch",
+      "archive_title": "Spel Letter and Sketch",
+      "creator_or_writer": "Spel ETC",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "1994",
+      "place": "Philadelphia",
+      "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
+      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "candidate_grammar_tags": [
+        "handstyle_or_correspondence_context"
+      ],
+      "execution_format": "Ink on paper; letter and sketch, each approximately 28 cm wide.",
+      "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
+      "rights_status": "link-only; image rights and reproduction permission not established",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
+      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+    },
+    {
+      "specimen_id": "LFA-COMM-002",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/letter-from-nace",
+      "archive_title": "Letter from Nace",
+      "creator_or_writer": "Nace (writer)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "1994",
+      "place": "Colonia, New Jersey, USA",
+      "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
+      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "candidate_grammar_tags": [
+        "handstyle_or_correspondence_context"
+      ],
+      "execution_format": "Photocopy; ink on paper.",
+      "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
+      "rights_status": "link-only; image rights and reproduction permission not established",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
+      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+    },
+    {
+      "specimen_id": "LFA-COMM-003",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/letter-from-ease",
+      "archive_title": "Letter from Ease",
+      "creator_or_writer": "Ease (writer)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "1995",
+      "place": "Miami, Florida, USA",
+      "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
+      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "candidate_grammar_tags": [
+        "handstyle_or_correspondence_context"
+      ],
+      "execution_format": "Ink on paper.",
+      "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
+      "rights_status": "link-only; image rights and reproduction permission not established",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
+      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+    },
+    {
+      "specimen_id": "LFA-COMM-004",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/letter-from-edec",
+      "archive_title": "Letter from Edec",
+      "creator_or_writer": "Edec (writer)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "circa 1994",
+      "place": "Miami, Florida, USA",
+      "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
+      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "candidate_grammar_tags": [
+        "handstyle_or_correspondence_context"
+      ],
+      "execution_format": "Ink on yellow lined paper.",
+      "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
+      "rights_status": "link-only; image rights and reproduction permission not established",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
+      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+    },
+    {
+      "specimen_id": "LFA-COMM-005",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/letter-from-reel",
+      "archive_title": "Letter from Reel",
+      "creator_or_writer": "Reel (writer)",
+      "photographer_or_archive_credit": "Letterform Archive collection record",
+      "date": "1993",
+      "place": "Caguas, Puerto Rico",
+      "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
+      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "candidate_grammar_tags": [
+        "handstyle_or_correspondence_context"
+      ],
+      "execution_format": "Ink on ruled paper.",
+      "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
+      "rendering_treatment": [],
+      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
+      "rights_status": "link-only; image rights and reproduction permission not established",
+      "visual_review_status": "metadata_verified_image_not_inspected",
+      "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
+      "confidence": "high for catalogue metadata; none for visual handstyle classification"
     }
   ]
 }
