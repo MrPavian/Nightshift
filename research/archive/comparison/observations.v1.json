@@ -15,6 +15,20 @@
       ],
       "observationDe": "Das T am Ende von „JUST“ ist als einzelner Buchstabe erkennbar. Es besitzt einen breiten, massiven Querbalken und einen kräftigen, leicht unregelmäßigen Stamm. Die gelbe Buchstabenfläche wird von einer dunklen, versetzten Tiefen- beziehungsweise Schattenform begleitet; diese gehört zur Darstellung und nicht zur Grundkontur des T.",
       "editorialState": "source-checked"
+    },
+    {
+      "id": "GLY-LFA-JOKER-001-O1",
+      "specimenId": "LFA-JOKER-001",
+      "glyph": "O",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "narrow-oval-counter",
+        "upright-axis",
+        "broad-marker-stroke"
+      ],
+      "observationDe": "Das O in „JOKER“ ist als hoher, schmaler und leicht unregelmäßiger Ovalzug ausgeführt. Die Innenöffnung bleibt geschlossen und deutlich sichtbar; die Strichbreite variiert durch den Markerzug. Die Form ist Teil eines verbundenen Tags, kein isolierter Alphabetbuchstabe.",
+      "editorialState": "source-checked"
     }
   ]
 }
