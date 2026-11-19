@@ -511,12 +511,12 @@
       "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
       "image_url": "https://bsciforums.s3.amazonaws.com/2018/05/1228638_70bb2bcbd78edc76d72fa3df98e25ecb.jpg",
       "catalogue_description": "Forum post presents this as the writer's 2018 handstyle alphabet effort; directly opened image shows a labelled A–Z grid in broad marker strokes.",
-      "visual_review_status": "visually_reviewed_not_glyph_eligible",
-      "glyph_eligibility": "not_eligible",
+      "visual_review_status": "glyph_observation_accepted",
+      "glyph_eligibility": "eligible",
       "priority": "high",
-      "reason": "A complete, labelled handstyle alphabet is directly visible, but broad strokes frequently extend across cell boundaries and individual glyph contours are not yet isolated confidently enough for acceptance.",
+      "reason": "Zwei einzelne Glyphen (T, X) wurden direkt geprüft und als source-checked in observations.v1.json gespeichert.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
-      "next_action": "Revisit individual labelled cells at higher image detail only where the entire glyph contour can be separated from neighbouring forms; search for independent writers' alphabet sheets."
+      "next_action": "Bei späterer Sichtung weitere klar isolierte Glyphen aus demselben Alphabet ergänzen; keine Duplikate erzeugen."
     },
     {
       "id": "PAGE-BSCI-KNOME-2018-REJECT",
