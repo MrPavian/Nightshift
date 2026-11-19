@@ -329,6 +329,34 @@
       "reason": "An early source explicitly focused on collecting tags and meeting other writers; high potential for handstyle comparison and multiple distinct tag forms.",
       "rights_status": "Per-object rights check required",
       "next_action": "Inspect each tag as a separate visual item, preserve writer attribution where available and transcribe only confidently legible individual glyphs."
+    },
+    {
+      "id": "PAGE-ARTCRIMES-CRIME2-001",
+      "source_id": "ACQ-ARTCRIMES-01",
+      "title": "Crime 2 — Blackbook sketch",
+      "creator": "Crime 2 (archive page label; personal attribution unverified)",
+      "date_range": "undated",
+      "url": "https://www.graffiti.org/sketch/blackbook/crime2.html",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "medium",
+      "reason": "The directly opened image shows a dense, interlocking outlined composition with overlapping letter structures and annotations; the individual glyph boundaries are not reliably separable at the available image resolution.",
+      "rights_status": "Copyright by artist; link-only",
+      "next_action": "Retain as a composition/construction reference only; revisit only if a larger original scan becomes available. Do not transcribe letters from the current image."
+    },
+    {
+      "id": "PAGE-ARTCRIMES-PRIZ-STAN-001",
+      "source_id": "ACQ-ARTCRIMES-01",
+      "title": "Priz and Stan — photographed blackbook page",
+      "creator": "Priz and Stan; page-level individual authorship unverified",
+      "date_range": "circa 1990s",
+      "url": "https://www.graffiti.org/priz_stan/index.html",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The directly opened blackbook photograph contains a large overlapping piece and numerous surrounding signatures/tags. The page is useful for historical context and multi-hand composition, but the visible marks are too entangled or small for a defensible isolated-glyph record in this pass.",
+      "rights_status": "Copyright Priz, Stan and other artists as marked; link-only",
+      "next_action": "Seek item-level attribution and any larger page scan; inspect each tag independently before promoting a glyph candidate."
     }
   ],
   "glyph_observations": [
@@ -352,16 +380,17 @@
     }
   ],
   "summary": {
-    "page_records": 21,
-    "visually_reviewed_page_records": 0,
+    "page_records": 23,
+    "visually_reviewed_page_records": 2,
     "accepted_glyph_observations": 2,
-    "note": "Two directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 21 additional page-level leads remain uninspected.",
-    "source_records_referenced": 4
+    "note": "Two directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 2 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
+    "source_records_referenced": 5
   },
   "sources_ref": [
     "ACQ-RIJK-01",
     "ACQ-FTA-01",
     "ACQ-FTA-02",
-    "ACQ-DGL-01"
+    "ACQ-DGL-01",
+    "ACQ-ARTCRIMES-01"
   ]
 }
