@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 19. November 2026, nach dem Merge von #19 (`main` = `1ca8607`)
+**Stand:** 19. November 2026, nach dem Merge von #21 (`main` enthält die vollständige Template-Registry)
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -21,7 +21,7 @@
 | **Academy A-Studie** (`letter-study_A_01.svg`, generiert) | implementiert, Layout-QA 0 Probleme | Claude | Owner-Freigabe; B–Z erst danach | Owner: Freigabe A |
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
-| **Style Reference Library** (`docs/lettering/style-library/`) | v2-Arbeitsbibliothek: 12 Karten / 38 Templates; Capability-Audit und gestufter Proof-Implementierungsplan ergänzt. Aktueller Resolver unterstützt nur Neutral, Straight, Bubble, Block-fit und Bounce; Wildstyle-Interlocking blockiert durch C04 | ChatGPT (Research/Brief), Claude (Engine) | Phase A: neutrale, monochrome Proof-Plates für A/B/G/R/S; danach Bubble/Straight kalibrieren; neue Templates nur mit echten Resolver-Operationen | Owner: visuelle Sichtung / Praxisreview |
+| **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung gemergt: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry. Alle Templates bleiben `documented-draft`; Engine-Support ist je Familie ausgewiesen. Resolver weiterhin nur Teilmenge Neutral, Straight, Bubble, Block-fit und Bounce; Wildstyle-Interlocking blockiert durch C04 | ChatGPT (Research/Brief), Claude (Engine) | Phase A gemäß `CLAUDE_TASK_PHASE_A_PROOF_PLATES_01.md`: neutrale, monochrome Proof-Plates für A/B/G/R/S und ABRA; danach Bubble/Straight kalibrieren | Owner: visuelle Sichtung / Praxisreview |
 | **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
 
 ## Offene Owner-Entscheidungen
@@ -45,5 +45,5 @@ Erzeugte Berichte prüft die CI zusätzlich mit `--check` (siehe `.github/workfl
 
 ## Repository-Hygiene
 
-- **Offene Pull Requests:** keine (Stand 19.11., nach #19).
+- **Offene Pull Requests:** Statusänderung nach Merge #21 wird separat nachgezogen; aktuelle PR-Liste prüfen.
 - **Alte Branches:** die 16 Branches `claude/*` aus der Zeit vor #19 sind vollständig in `main` enthalten (die drei ältesten über PR #1, #3 bzw. den geschlossenen #2) und können gelöscht werden.
