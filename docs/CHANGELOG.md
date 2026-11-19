@@ -587,4 +587,4 @@
 
 - PR #19 merged all open Claude work into `main`: editor freeze fix (#10), C02 waves 1–4, C03, Creator 0.1/0.2 (#6, #11–#13, #17, #18), C06 Blackbook Archive (#8) and the Academy A study, A–Z reference sheets and gallery (#14–#16). Tests: 184 passing plus all browser checks.
 - New `docs/STATUS.md` as the single current project state for ChatGPT, Claude and the owner.
-- `AGENTS.md`: shared Git workflow (branch + pull request for every change, at most one stacking level, status update per PR, `Agent:` commit trailer); codebase constraints updated to the actual module stack. `CLAUDE.md`, `docs/AI_HANDOFF.md` and `docs/ROADMAP.md` point to the status file.
+- `AGENTS.md`: shared Git workflow (branch + pull request for code, data, contracts and assets; ChatGPT may commit research/spec documents in `research/` and `docs/` directly to `main`; at most one stacking level, status update per PR, `Agent:` commit trailer); codebase constraints updated to the actual module stack. `CLAUDE.md`, `docs/AI_HANDOFF.md` and `docs/ROADMAP.md` point to the status file.
