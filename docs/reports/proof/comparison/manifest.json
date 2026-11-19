@@ -3,14 +3,14 @@
   "result": "pass",
   "routes": 5,
   "inputs": {
-    "data/archive/comparison.v1.de.json": "8f6f8388098f7bea0d630fc916f5c3b0f1543859deb5ec0ddeabdc027414a5fb",
+    "data/archive/comparison.v1.de.json": "41790ed761d7e2a8cd75ef56f40c74a9132a0d284e9d876fc0d4f31bbfc9362a",
     "archive/comparison.js": "9285d0a1b3265697d99260bce4cf802cd3009e15c5bc77434fa317b6e56d62c4",
     "archive/app.js": "fbfac0698c8d287da6b2c5d7cf51212c1d6a5ed3a3458ef07282dbe011b656cd"
   },
   "screenshots": {
-    "landing-phone.png": "ea1c625dd021f687da6a8d5f4ae312b26c49ba18a7221f1d4dcd30056e04069d",
-    "browser-phone.png": "214c75cdc0196a2e419014c85b8e5ebebf987d1eacbe24fb006079de3daf9bca",
-    "browser-tablet.png": "4d6345663f64c02493bfa93574466b8de36f265fcc7abaff593fec640d0f42c5",
+    "landing-phone.png": "889115e80eecf8ab2b24a349537d159f4b041f01593ddf49c88bfb68c257e961",
+    "browser-phone.png": "f21a530b7af95ceae27f6a55dcbc142c2c5bcdccea2d6a14003ce571ca8f2a81",
+    "browser-tablet.png": "ad659fcac0a236a719bd41066aced63f8c6542b1392d14568673f2a240ba2f1f",
     "detail-desktop.png": "684b05d623d7deacb11d97a973597a47d1e3cda9172863f5184fe9c6d77e9b81",
     "detail-phone-catalogue-only.png": "06f8f10635300d56f8ceb00bff5242b002aa363b8573f5c0a2c69d10d42c6491"
   }

@@ -116,6 +116,18 @@ test('glyph eligibility gate: not inspected, not A–Z, or low confidence is rej
   }
 });
 
+test('a draft glyph observation may be parked on a non-eligible specimen; publishing it there fails', () => {
+  const meta = live.specimens.specimens.find((x) => x.visualState === 'catalogue_metadata_only');
+  const { s } = fixture();
+  Object.assign(s.observations.glyphObservations[0], { specimenId: meta.id, editorialState: 'draft' });
+  s.findings.findings = [];
+  const r = run(s);
+  assert.ok(!codes(r).includes('CMP_GLYPH_NOT_ELIGIBLE'), 'draft is allowed');
+  assert.ok(!r.data.glyphObservations.some((g) => g.id === 'GLY-TEST-001'), 'draft is not exported');
+  s.observations.glyphObservations[0].editorialState = 'source-checked';
+  assert.ok(codes(run(s)).includes('CMP_GLYPH_NOT_ELIGIBLE'), 'published fails');
+});
+
 test('a finding needs two observations from two independent sources', () => {
   const { s, a } = fixture();
   s.observations.glyphObservations[1].specimenId = a.id;

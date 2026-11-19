@@ -139,37 +139,37 @@
       "archive_observation_id": "GLY-INGRID-DERK-R1",
       "glyph": "R",
       "id": "QUEUE-GLY-INGRID-DERK-R1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Owner-Entscheidung 19.11.2026: Handbuch-Reproduktion zählt nicht als hochaufgelöste Sichtung; Kandidat bis zur Neuerfassung an einem INGRID-Einzelobjekt.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-DERK-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     },
     {
       "archive_observation_id": "GLY-INGRID-DERK-K1",
       "glyph": "K",
       "id": "QUEUE-GLY-INGRID-DERK-K1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Owner-Entscheidung 19.11.2026: Handbuch-Reproduktion zählt nicht als hochaufgelöste Sichtung; Kandidat bis zur Neuerfassung an einem INGRID-Einzelobjekt.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-DERK-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     },
     {
       "archive_observation_id": "GLY-INGRID-REMS-R1",
       "glyph": "R",
       "id": "QUEUE-GLY-INGRID-REMS-R1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Owner-Entscheidung 19.11.2026: Handbuch-Reproduktion zählt nicht als hochaufgelöste Sichtung; Kandidat bis zur Neuerfassung an einem INGRID-Einzelobjekt.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-REMS-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     },
     {
       "archive_observation_id": "GLY-INGRID-REMS-M1",
       "glyph": "M",
       "id": "QUEUE-GLY-INGRID-REMS-M1",
-      "note": "Die akzeptierte Einzelglyph-Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "note": "Owner-Entscheidung 19.11.2026: Handbuch-Reproduktion zählt nicht als hochaufgelöste Sichtung; Kandidat bis zur Neuerfassung an einem INGRID-Einzelobjekt.",
       "source_id": "ACQ-INGRID-01",
       "specimen_id": "INGRID-MANUAL-REMS-01",
-      "status": "glyph_observation_accepted"
+      "status": "glyph_observation_candidate"
     },
     {
       "archive_observation_id": "GLY-INGRID-REMS-S1",
@@ -794,7 +794,7 @@
       "source_id": "ACQ-INGRID-01",
       "title": "DERK — INGRID annotation manual example, p. 64",
       "url": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
-      "visual_review_status": "glyph_observation_accepted"
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
     },
     {
       "catalogue_description": "Graffiti-piece example reproduced in the INGRID annotation manual; the printed text box transcribes the main lettering as ReMS. The page image was opened directly and the R, M and S glyphs were visually checked.",
@@ -810,7 +810,7 @@
       "source_id": "ACQ-INGRID-01",
       "title": "ReMS — INGRID annotation manual example, p. 64",
       "url": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
-      "visual_review_status": "glyph_observation_accepted"
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
     },
     {
       "catalogue_description": "Monochrome ink outline in the FTA gallery, captioned Rase. The page is a dense interlocking wildstyle word composition with overlapping contours and extended angular terminals.",
@@ -910,8 +910,8 @@
     "ACQ-LFA-03"
   ],
   "summary": {
-    "accepted_glyph_observations": 20,
-    "note": "20 akzeptierte Glyph-Beobachtungen. Neu ergänzt: zwei direkt geprüfte Einzelglyphen (C, X) aus Ralis beschriftetem A–Z-Handstyle-Alphabet, Bombing Science Alphabet Challenge, Post #11. Die Beobachtungen sind im Archiv mit Bild- und Quellenprovenienz gespeichert; keine weiteren Buchstaben aus derselben Seite wurden ohne Einzelprüfung übernommen. Drei Plattformen; Pilot-Gate-Schwelle erreicht, vorbehaltlich erfolgreicher Build-/Schema-Prüfung.",
+    "accepted_glyph_observations": 16,
+    "note": "16 akzeptierte Einzelglyph-Beobachtungen aus zwei Archiven/Plattformen (Bombing Science Forums, Letterform Archive). Die INGRID-Handbuchbeispiele gelten nach Owner-Entscheidung vom 19.11.2026 als Vorschaubild; ihre Glyphen sind Kandidaten, bis INGRID-Einzelobjekte vorliegen.",
     "page_records": 45,
     "source_records_referenced": 11,
     "visually_reviewed_page_records": 21

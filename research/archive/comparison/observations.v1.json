@@ -224,7 +224,7 @@
       "transcriptionConfidence": "high"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "mixed-contour",
         "closed-counter",
@@ -234,11 +234,12 @@
       "id": "GLY-INGRID-DERK-R1",
       "legibility": "medium",
       "observationDe": "Das R zeigt einen aufrechten Stamm, eine geschlossene obere Punze und einen schräg nach rechts unten auslaufenden Beinzug. Der Beinzug berührt die angrenzende Form.",
+      "reviewNoteDe": "Owner-Entscheidung 19.11.2026: Die Handbuch-Reproduktionen (DERK 699×290 px, ReMS 523×150 px) gelten als Vorschaubild, nicht als Sichtung in hoher Auflösung. INGRID braucht Einzelobjekte mit UID und ausreichender Auflösung. Als Entwurf geparkt; kann an einem belastbaren Einzelobjekt neu erfasst werden.",
       "specimenId": "INGRID-MANUAL-DERK-01",
       "transcriptionConfidence": "high"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "angular",
         "no-counter",
@@ -248,11 +249,12 @@
       "id": "GLY-INGRID-DERK-K1",
       "legibility": "medium",
       "observationDe": "Das K besteht aus einem senkrechten Stamm und zwei deutlich unterscheidbaren Diagonalarmen, die nach rechts auseinanderlaufen. Die Arme enden spitz; die Außenkontur wird vom Nachbarbuchstaben berührt.",
+      "reviewNoteDe": "Owner-Entscheidung 19.11.2026: Die Handbuch-Reproduktionen (DERK 699×290 px, ReMS 523×150 px) gelten als Vorschaubild, nicht als Sichtung in hoher Auflösung. INGRID braucht Einzelobjekte mit UID und ausreichender Auflösung. Als Entwurf geparkt; kann an einem belastbaren Einzelobjekt neu erfasst werden.",
       "specimenId": "INGRID-MANUAL-DERK-01",
       "transcriptionConfidence": "high"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "mixed-contour",
         "closed-counter",
@@ -262,11 +264,12 @@
       "id": "GLY-INGRID-REMS-R1",
       "legibility": "medium",
       "observationDe": "Das R verbindet einen kräftigen Stamm mit einer rund geführten oberen Punze und einem schräg nach rechts unten laufenden Beinzug. Die Konturen liegen eng an den Nachbarbuchstaben.",
+      "reviewNoteDe": "Owner-Entscheidung 19.11.2026: Die Handbuch-Reproduktionen (DERK 699×290 px, ReMS 523×150 px) gelten als Vorschaubild, nicht als Sichtung in hoher Auflösung. INGRID braucht Einzelobjekte mit UID und ausreichender Auflösung. Als Entwurf geparkt; kann an einem belastbaren Einzelobjekt neu erfasst werden.",
       "specimenId": "INGRID-MANUAL-REMS-01",
       "transcriptionConfidence": "high"
     },
     {
-      "editorialState": "source-checked",
+      "editorialState": "draft",
       "features": [
         "angular",
         "no-counter",
@@ -276,6 +279,7 @@
       "id": "GLY-INGRID-REMS-M1",
       "legibility": "medium",
       "observationDe": "Das M ist breit proportioniert; die beiden Außenstämme rahmen zwei schräge Innenzüge, die in einem tiefen mittleren Winkel zusammentreffen. Die Innenform bleibt trotz der engen Buchstabenabstände erkennbar.",
+      "reviewNoteDe": "Owner-Entscheidung 19.11.2026: Die Handbuch-Reproduktionen (DERK 699×290 px, ReMS 523×150 px) gelten als Vorschaubild, nicht als Sichtung in hoher Auflösung. INGRID braucht Einzelobjekte mit UID und ausreichender Auflösung. Als Entwurf geparkt; kann an einem belastbaren Einzelobjekt neu erfasst werden.",
       "specimenId": "INGRID-MANUAL-REMS-01",
       "transcriptionConfidence": "high"
     },
