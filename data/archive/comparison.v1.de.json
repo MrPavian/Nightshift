@@ -1,6 +1,6 @@
 {
   "comparisonSchemaVersion": "1.0",
-  "contract": "nightshift.letterform-comparison@1.0.0",
+  "contract": "nightshift.letterform-comparison@1.1.0",
   "counts": {
     "eligibleGlyphObservations": 12,
     "findings": 1,
@@ -30,7 +30,7 @@
   "generatedFrom": [
     {
       "path": "contracts/letterform-comparison.v1.json",
-      "sha256": "3eeabe8b5b9e577bb7aa363b13b04cc98b8e4324b29b9f5e1262778fbef48021"
+      "sha256": "3d0d270b0f7c314de095a93da397968ffb742c808a0c117a82728f66bb0060cd"
     },
     {
       "path": "research/archive/comparison/findings.v1.json",
@@ -275,9 +275,9 @@
   "objectObservations": [],
   "pilotGate": {
     "eligible": 12,
-    "independentSources": 3,
+    "independentInstitutions": 2,
     "minEligibleGlyphObservations": 20,
-    "minIndependentSources": 3,
+    "minIndependentInstitutions": 3,
     "open": false
   },
   "sources": [

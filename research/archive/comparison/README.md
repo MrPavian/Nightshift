@@ -85,7 +85,7 @@ Nur Tags vergeben, die direkt am Einzelglyph sichtbar sind. Ein Merkmal darf nic
 
 ## Pilot-Gate
 
-Der Buchstabenvergleich in der App öffnet erst ab **20 zulässigen Glyph-Beobachtungen aus mindestens 3 unabhängigen Quellen** (`contracts/letterform-comparison.v1.json` → `pilotGate`). Bis dahin zeigt die App den Fundstück-Browser und nennt den aktuellen Stand.
+Der Buchstabenvergleich in der App öffnet erst ab **20 zulässigen Glyph-Beobachtungen aus mindestens 3 verschiedenen Archiven bzw. Plattformen** (Owner-Entscheidung 19.11.: mehrere Quellen-Records derselben Plattform, z. B. zwei Forum-Threads, zählen einmal) (`contracts/letterform-comparison.v1.json` → `pilotGate`). Bis dahin zeigt die App den Fundstück-Browser und nennt den aktuellen Stand.
 
 ## Offene Bestätigung
 

@@ -1,6 +1,6 @@
 {
   "contractId": "nightshift.letterform-comparison",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "implemented (Gate 1 data contract and pipeline, Gate 2 object browser)",
   "spec": "docs/lettering/style-library/LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md",
   "adr": "docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md",
@@ -46,7 +46,8 @@
     "No ranking, score or style classifier; candidate grammar tags are research notes and never glyph evidence."
   ],
   "pilotGate": {
-    "glyphComparison": { "minEligibleGlyphObservations": 20, "minIndependentSources": 3 },
+    "glyphComparison": { "minEligibleGlyphObservations": 20, "minIndependentInstitutions": 3 },
+    "independence": "Owner decision 19 Nov 2026: independence for the pilot gate is counted by distinct archives/platforms (source institution), not by source records; two threads of one forum count once.",
     "note": "Until the gate is met, the archive shows the object browser and labels glyph comparison as a research view in progress (spec §7)."
   }
 }
