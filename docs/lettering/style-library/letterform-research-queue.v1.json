@@ -493,13 +493,13 @@
       "creator": "154 graffiti artists; curated by Claudia Walde (MadC)",
       "date_range": "2011 (reissued 2018; German edition 2015)",
       "url": "https://www.thamesandhudson.com/products/street-fonts",
-      "catalogue_description": "318–320-page publication presenting more than 150 original alphabets. Each artist was asked to design all 26 Latin letters on a single page; contributions span 30 countries and multiple media.",
+      "catalogue_description": "318–320-page publication presenting 154 original alphabets by artists from 30 countries. Each artist was asked to design all 26 Latin letters on a single page. A page-level artist index with page numbers is maintained in docs/lettering/style-library/street-fonts-artist-index.v1.json. Contributions span multiple media.",
       "visual_review_status": "catalogued_page_not_visually_reviewed",
       "glyph_eligibility": "not_assessed",
       "priority": "highest",
       "reason": "This is unusually well matched to the research goal: standardized complete A–Z pages allow direct cross-writer comparison of the same letters, including repeated A/B/E/R/S/T forms. It is an authored alphabet collection, not necessarily raw spontaneous blackbook writing; each contribution's medium and construction method must be recorded.",
       "rights_status": "Copyright individual artists and publisher; book access only; link-only",
-      "next_action": "Acquire or borrow the book; index all 154 artist names and page numbers from the contents; directly inspect pages and prioritize distinct hand-drawn/marker/sketch alphabets. Do not create glyph observations from catalogue descriptions or promotional previews."
+      "next_action": "Use docs/lettering/style-library/street-fonts-artist-index.v1.json to navigate the 154 artist entries and their page numbers; obtain/borrow the book, inspect each alphabet directly, record medium and technique, and prioritize hand-drawn/marker/sketch contributions. Do not create glyph observations from catalogue descriptions or promotional previews."
     }
   ],
   "glyph_observations": [
