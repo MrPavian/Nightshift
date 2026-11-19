@@ -72,7 +72,7 @@
         "dimensions": null,
         "executionFormat": "illustrated magazine cover",
         "identifier": "Letterform Archive gallery caption: The Bomb no. 46",
-        "letterAnatomyNotes": "The title suggests a compact four-letter word with heavy mass and a prominent rounded O, but the cover alone does not establish a general Blockbuster grammar.",
+        "letterAnatomyNotes": "Das O im lesbaren Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die übrigen Titelbuchstaben sind in die dichte Covergestaltung eingebunden; aus dieser Seite wird hier nur das O als Einzelglyph erfasst.",
         "photographerCredit": "Letterform Archive gallery caption",
         "place": "USA",
         "renderingTreatment": [
@@ -1632,7 +1632,7 @@
         "dimensions": "1000 × 1000 px forum image",
         "executionFormat": "marker on paper, photographed",
         "identifier": "Bombing Science Forums image 1228638_70bb2bcbd78edc76d72fa3df98e25ecb.jpg",
-        "letterAnatomyNotes": "The alphabet is laid out in labelled cells A–Z. Broad marker strokes use angular, sharply tapered terminals and long sweeping extensions; many forms exceed their cells and overlap adjacent areas. No individual glyph is yet accepted into the comparison dataset.",
+        "letterAnatomyNotes": "The alphabet is laid out in labelled cells A–Z. Broad marker strokes use angular, sharply tapered terminals and long sweeping extensions; many forms exceed their cells and overlap adjacent areas. No individual glyph is yet accepted into the comparison dataset. Einzelglyph-Beobachtungen sind separat in observations.v1.json dokumentiert; die Seite selbst wird nicht als übergreifende Stilregel behandelt.",
         "photographerCredit": "Forum member post; photographer not separately credited",
         "place": null,
         "renderingTreatment": [
@@ -1718,7 +1718,7 @@
         "dimensions": null,
         "executionFormat": "marker/ink on printed challenge sheet, photographed",
         "identifier": "Forum post #2; 1227466_2a80ad7efec6d9b16abc4f16a9871f80.jpeg",
-        "letterAnatomyNotes": "Thin black marker alphabet with angular, often single-line forms; long exit strokes cross some cell boundaries. C, D and O are visually distinct in their labelled cells.",
+        "letterAnatomyNotes": "Thin black marker alphabet with angular, often single-line forms; long exit strokes cross some cell boundaries. C, D and O are visually distinct in their labelled cells. Einzelglyph-Beobachtungen sind separat in observations.v1.json dokumentiert; die Seite selbst wird nicht als übergreifende Stilregel behandelt.",
         "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
         "place": null,
         "renderingTreatment": [
@@ -1760,7 +1760,7 @@
         "dimensions": null,
         "executionFormat": "marker/ink on printed challenge sheet, photographed",
         "identifier": "Forum post #3; 1227470_d48b06f414da2d977db0d90b73536a93.jpeg",
-        "letterAnatomyNotes": "Compact angular alphabet with repeated wedge-like terminals, sharp corners and mostly closed or partially closed counters; individual forms remain inside the labelled grid more consistently than several other submissions.",
+        "letterAnatomyNotes": "Compact angular alphabet with repeated wedge-like terminals, sharp corners and mostly closed or partially closed counters; individual forms remain inside the labelled grid more consistently than several other submissions. Einzelglyph-Beobachtungen sind separat in observations.v1.json dokumentiert; die Seite selbst wird nicht als übergreifende Stilregel behandelt.",
         "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
         "place": null,
         "renderingTreatment": [
@@ -1801,8 +1801,8 @@
         "date": "2018-04-24",
         "dimensions": null,
         "executionFormat": "marker/ink on printed challenge sheet, photographed",
-        "identifier": "Forum post #6; 1227495_6215a4973333688e4c436c3001e432ff.jpeg",
-        "letterAnatomyNotes": "Broad blue marker forms with high contrast, extended terminals and strong variation in letter width; several letters touch or exceed their cell borders.",
+        "identifier": "Bombing Science Forums image 1227476_8d82824250d0097ad50231837599dba3.jpg",
+        "letterAnatomyNotes": "Broad blue marker forms with high contrast, extended terminals and strong variation in letter width; several letters touch or exceed their cell borders. Einzelglyph-Beobachtungen sind separat in observations.v1.json dokumentiert; die Seite selbst wird nicht als übergreifende Stilregel behandelt.",
         "photographerCredit": "Submission image posted by the named forum member; photographer not separately credited.",
         "place": null,
         "renderingTreatment": [
@@ -1810,7 +1810,7 @@
           "broad-nib handstyle"
         ],
         "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
-        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/04/1227495_6215a4973333688e4c436c3001e432ff.jpeg",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/04/1227476_8d82824250d0097ad50231837599dba3.jpg",
         "visibleGlyphs": "Complete labelled A–Z sequence is visible; individual glyph observations are to be recorded separately only when their contours are clearly legible.",
         "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
         "whatNotToCopy": "Do not trace or reproduce the submitted alphabet, tag, letter contours or page layout.",
