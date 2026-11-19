@@ -181,19 +181,19 @@
       "status": "glyph_observation_candidate"
     },
     {
-      "archive_observation_id": "GLY-BSCI-SKU2ER-2018-C1",
+      "archive_observation_id": "GLY-BSCI-RALI-2018-C1",
       "glyph": "C",
-      "id": "QUEUE-GLY-BSCI-SKU2ER-2018-C1",
+      "id": "QUEUE-GLY-BSCI-RALI-2018-C1",
       "source_id": "ACQ-BSCI-02",
-      "specimen_id": "BSCI-SKU2ER-2018-01",
+      "specimen_id": "BSCI-RALI-2018-01",
       "status": "glyph_observation_accepted"
     },
     {
-      "archive_observation_id": "GLY-BSCI-SKU2ER-2018-X1",
+      "archive_observation_id": "GLY-BSCI-RALI-2018-X1",
       "glyph": "X",
-      "id": "QUEUE-GLY-BSCI-SKU2ER-2018-X1",
+      "id": "QUEUE-GLY-BSCI-RALI-2018-X1",
       "source_id": "ACQ-BSCI-02",
-      "specimen_id": "BSCI-SKU2ER-2018-01",
+      "specimen_id": "BSCI-RALI-2018-01",
       "status": "glyph_observation_accepted"
     }
   ],
@@ -878,17 +878,17 @@
     },
     {
       "catalogue_description": "Named submission in the 2018 Bombing Science Alphabet Challenge; full labelled A–Z handstyle sheet directly inspected.",
-      "creator": "Sku2er",
+      "creator": "Rali",
       "date_range": "2018-04-24",
       "glyph_eligibility": "eligible",
-      "id": "PAGE-BSCI-SKU2ER-2018-01",
+      "id": "PAGE-BSCI-RALI-2018-01",
       "image_url": "https://bsciforums.s3.amazonaws.com/2018/04/1227497_e0f63b4adb34e647e5cb906f040e8678.jpg",
       "next_action": "Weitere Buchstaben nur bei unabhängiger klarer Konturprüfung ergänzen; keine Duplikate erzeugen.",
       "priority": "high",
-      "reason": "Post #7 nennt Sku2er und zeigt eine vollständige beschriftete A–Z-Vorlage. C und X wurden direkt im Bild geprüft und als Einzelglyphen akzeptiert; keine weiteren Glyphen wurden daraus abgeleitet.",
+      "reason": "Post #11 nennt Rali und zeigt eine vollständige beschriftete A–Z-Vorlage. C und X wurden direkt im Bild geprüft und als Einzelglyphen akzeptiert; keine weiteren Glyphen wurden daraus abgeleitet.",
       "rights_status": "Artist copyright; link-only; do not copy, trace, embed or redistribute.",
       "source_id": "ACQ-BSCI-02",
-      "title": "Sku2er — Alphabet Challenge submission",
+      "title": "Rali — Alphabet Challenge submission",
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
       "visual_review_status": "glyph_observation_accepted"
     }
@@ -911,7 +911,7 @@
   ],
   "summary": {
     "accepted_glyph_observations": 20,
-    "note": "20 akzeptierte Glyph-Beobachtungen. Neu ergänzt: zwei direkt geprüfte Einzelglyphen (C, X) aus Sku2ers beschriftetem A–Z-Handstyle-Alphabet, Bombing Science Alphabet Challenge, Post #7. Die beiden Beobachtungen sind im Archiv mit Bild- und Quellenprovenienz gespeichert; es wurden keine weiteren Buchstaben aus derselben Seite ohne Einzelprüfung übernommen. Drei Plattformen; Pilot-Gate-Schwelle erreicht, vorbehaltlich erfolgreicher Build-/Schema-Prüfung.",
+    "note": "20 akzeptierte Glyph-Beobachtungen. Neu ergänzt: zwei direkt geprüfte Einzelglyphen (C, X) aus Ralis beschriftetem A–Z-Handstyle-Alphabet, Bombing Science Alphabet Challenge, Post #11. Die Beobachtungen sind im Archiv mit Bild- und Quellenprovenienz gespeichert; keine weiteren Buchstaben aus derselben Seite wurden ohne Einzelprüfung übernommen. Drei Plattformen; Pilot-Gate-Schwelle erreicht, vorbehaltlich erfolgreicher Build-/Schema-Prüfung.",
     "page_records": 45,
     "source_records_referenced": 11,
     "visually_reviewed_page_records": 21
