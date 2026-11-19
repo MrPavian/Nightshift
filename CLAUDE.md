@@ -93,6 +93,17 @@ Regional histories must not be flattened into an NYC-only origin story. The Ruhr
 
 ## 4. Current project structure and important documents
 
+### Graffiti lettering style reference library
+
+- `docs/lettering/style-library/README.md` — overview of the expanded twelve-card style reference library.
+- `docs/lettering/style-library/STYLE_TAXONOMY.md` — keep letterform, composition, practice/format and rendering axes independent.
+- `docs/lettering/style-library/TEMPLATE_INDEX.md` — template inventory and maturity stages.
+- `docs/lettering/style-library/RENDERING_TREATMENTS.md` — independent rendering layer catalogue.
+- `docs/lettering/style-library/styles/` — twelve style cards; all are research/design drafts pending practitioner review.
+- `docs/lettering/style-library/references/SOURCES.md` — expanded source register.
+
+Do not treat documented templates as generator-ready or historically authenticated. Preserve evidence/inference labels and the originality policy.
+
 ### Core editorial and production system
 
 - `docs/BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md`
