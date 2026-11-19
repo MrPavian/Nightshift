@@ -605,3 +605,7 @@
 - Proof run `docs/reports/proof/style-library/phase-a-02/` (before/after plates, negative-space and placement reports). Phase A-01 is frozen and checked by checksum.
 - Tests: `tests/style-safety.test.js` (9), `tests/style-proof-run-a02.test.js` (4); the old Bounce test that required overlapping letters was replaced. Total 207.
 - Known limitation: mixed inflation distances make words uneven in mass. Owner review required; nothing calibrated.
+
+## 2026-11-19 — Letterform Comparison Library: Gate 0 architecture decision
+
+- `docs/lettering/style-library/ADR_LETTERFORM_COMPARISON_LIBRARY_GATE0_01.md` (proposal): typed sidecar under `research/archive/comparison/` read by the existing archive builder (no Markdown entries, no second app), separate output `data/archive/comparison.v1.de.json`, routes under `#/vergleich` hanging off „Stile & Buchstaben“ and „Bildarchiv“, validation and pilot gate, deterministic migration of the PR #25 manifest (8 review-status and 9 rights spellings mapped to enums; free-text glyphs not migrated), German display fields, test plan. No code, UI or data migration.
