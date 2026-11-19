@@ -26,7 +26,7 @@
     "data/legacy/v06-glyph-paths.json": "3bc3954448a3c43789006f4550745d176d34d5a7686cfa6e921eb8b46972d0e4",
     "data/semantic/abgrs-semantic-overlay.v1.json": "1e854ea09552509b178077f3c89d0f654ca789a26c041191b4df73287cd95054",
     "data/validator-profiles/legacy-v06.v1.json": "32a4cdb2424d5fa829de9f8a8e325d8dbc3e14a131c2f4edf46b85c9b48dd4c8",
-    "editor/editor.js": "0c7e575ab006fbcec93521add65be2c1cd9832d51e149e1908f28c839e44f811",
+    "editor/editor.js": "4358d0cff5b3914ca2710f88ef45b571f0a5ae25ae4e5deb0bdd2ae8018d6778",
     "src/model/editor-store.js": "c532d48ec221e3af206cfc6f493708ad9d51084501ea565c444d13c2b589f416",
     "src/model/operations.js": "ac932332e75740d07218c8c52d0bc934f7db692ed7b827206807abc216d2c0c9"
   },

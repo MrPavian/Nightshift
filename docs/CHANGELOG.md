@@ -539,3 +539,47 @@
 - Axes are kept separate: letterform and composition change geometry; practice context and rendering do not.
 - Wildstyle is a study mode: interlocking is skipped until C04.
 - Proofs and report in `docs/reports/proof/C03/` (`node tools/proof-styles.mjs`); 7 new tests. Report: `docs/C03_STYLE_RESOLVER_REPORT.md`.
+
+## 2026-11-15 — C06: THE BLACKBOOK ARCHIVE, first edition
+
+- Executed immediately after C01 under the owner-approved sequencing override (C02–C05 deferred, not cancelled).
+- Content pipeline:
+  - `research/archive/entries/` (27 entries), `TIMELINE.md` (20 events) and `LEARNING_PATHS.md` (4 paths) are compiled by `npm run archive:build` into `data/archive/archive.v1.json`, with 96 claims and 32 cited sources.
+  - The validator rejects unsourced claims, dead links, leads in published entries, placeholders, unknown capabilities and invalid bridge parameters.
+- Archive UI `archive/`:
+  - Pages: start, search with aliases and type/region filters, entry detail with claim sheets, timeline, scenes, learning paths with progress, A–Z, sources.
+  - German interface, English entry text.
+  - Responsive and accessible; offline via service worker and bundled OFL fonts.
+- Original SVG diagrams are rendered at build time; seven diagrams, two of them from NIGHTSHIFT's canonical glyph geometry.
+- Editor bridge contract 1.0.0 (`src/bridge/editor-bridge.js`, `docs/EDITOR_BRIDGE_CONTRACT_01.md`):
+  - Four verified capabilities (anatomy, contour edit, word tester, proof sheets) with receivers in `review/` and `editor/` and a return link to the archive.
+  - Three future capabilities are shown as unavailable (C03–C05).
+- The T07 editor proof was re-run because `editor/editor.js` gained the bridge receiver; it passes with all 13 steps.
+- Tests: 123 passing; `tools/archive-smoke.mjs` covers 40 views at 360 px, 27 claim sheets and 4 bridge targets. Proof: `docs/reports/proof/C06/`.
+- Pages: the archive is deployed at `/archive/`; the site root now links archive, review page and editor.
+
+## 2026-11-15 — C06: complete German edition of the archive
+
+- Owner decision: the archive is completely German; a complete English edition follows after C07 (roadmap section “Sprachausgaben”, D-015).
+- Edition-aware pipeline:
+  - entry sources in `research/archive/de/`, output `data/archive/archive.v1.de.json` (schema 2.0, `language: "de"`);
+  - German section headings are parsed (`SECTION_HEADINGS`);
+  - NYC ledger claims are cited through German entry claims and are no longer shown verbatim in English.
+- All entries, claims, timeline, paths and diagram labels rewritten in German.
+- IDs aligned with the 30-entry launch plan where possible: `history.modern-name-writing`, `history.global-circulation`, `scene.paris-banlieue`.
+- New entry `concept.local-terms` and new path `path.how-the-archive-remembers`. Totals: 28 entries, 110 claims, 5 paths.
+- Fixed: the section “Woran man es erkennt” (formerly “How to recognize it”) was never rendered because of a key mismatch; a test now guards this.
+- Editor bridge 1.1.0 adds German descriptions.
+- Tests: 125 passing; the archive smoke covers 42 views, 28 claim sheets and 4 bridge targets.
+
+## 2026-11-15 — C06: archive revised against styleguide; content merged with claim/source matrix
+
+- UI follows `BLACKBOOK_ARCHIVE_STYLEGUIDE_01.md` and `ARCHIVE_DESIGN_SYSTEM_01.md`:
+  - dark ink environment, paper reading sheet, one accent, no per-type colours;
+  - nine primary sections, breadcrumbs, phone menu;
+  - status vocabulary §5;
+  - WCAG AA contrast test.
+- Archive schema 2.1: claims cite the central claim/source matrix and the Dortmund audit register (`matrix:ID`); strength, status, main source and limitation are shown per claim.
+- 34 existing claims linked to registers. New draft entries: Wildstyle, Aerosol, Getting Up/Bombing; DOR-05 on Dortmunder Style. Totals: 31 entries, 128 claims.
+- Tests: 128 pass; archive smoke covers 51 views and 31 claim sheets; proofs on phone, tablet and desktop.
+

@@ -31,7 +31,7 @@ test('editor page: same pinned Three.js, relative paths, deployed by the Pages w
   assert.equal(editorHtml.match(/THREE_VERSION = '([^']+)'/)[1], pkg.dependencies.three);
   const absolute = [...editorJs.matchAll(/(?:get|fetch|import)\(\s*[`'"](\/[^`'"]*)/g)].map((m) => m[1]);
   assert.deepEqual(absolute, []);
-  assert.ok(readFileSync('.github/workflows/deploy-pages.yml', 'utf8').includes('cp -r review editor src data contracts'));
+  assert.ok(readFileSync('.github/workflows/deploy-pages.yml', 'utf8').includes('cp -r archive review editor src data contracts'));
 });
 
 test('editor never persists through Three.js objects', () => {

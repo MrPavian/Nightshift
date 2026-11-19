@@ -3,6 +3,7 @@
 // Static and build-free: works from any static host serving the repository root.
 
 import { loadRegistryAndProfile } from '../src/glyph/load-browser.js';
+import { readBridgeRequest, mountReturnLink } from '../src/bridge/editor-bridge.js';
 import { ALPHABET } from '../src/glyph/ids.js';
 import { glyphGroup } from '../src/render/svg.js';
 import { resolveGlyphs, buildSpecimen } from '../src/proof/specimens.js';
@@ -45,6 +46,7 @@ try {
   setupWord();
   buildPlates();
   buildReview();
+  applyBridgeRequest(readBridgeRequest(location.search, 'review'));
   selftest.ready = true;
 } catch (e) {
   $('#status').textContent = `Fehler: ${e.message}`;
@@ -56,6 +58,17 @@ function publishSelftest() {
   let pre = document.getElementById('selftest');
   if (!pre) { pre = document.createElement('pre'); pre.id = 'selftest'; pre.hidden = true; document.body.append(pre); }
   pre.textContent = JSON.stringify(selftest);
+}
+
+// ---------- archive bridge (src/bridge/editor-bridge.js) ----------
+function applyBridgeRequest(req) {
+  if (!req) return;
+  selftest.bridge = req;
+  mountReturnLink(document, req);
+  if (req.diag) $('#diag').checked = true;
+  if (req.glyph) showDetail(req.glyph);
+  if (req.word) { $('#word').value = req.word; $('#word').dispatchEvent(new Event('input')); }
+  if (req.tab) document.querySelector(`nav button[data-tab="${req.tab}"]`)?.click();
 }
 
 // ---------- tabs ----------

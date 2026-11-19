@@ -62,6 +62,18 @@ D-013 — First enabled editor operation: `contour.move-node`
 **Implication:** Keep practice/activity, artwork form, letterform grammar, composition grammar, surface/format, user priorities and rendering/finish as independent axes. Creator is the novice entry level; Studio supports refinement; Writer Lab supports full authoring. Tag requires gesture-based handstyle construction and must not be simulated by shrinking a piece font. Throw-up is not synonymous with Bubble; Piece is not one style; Burner is an evaluative descriptor; Bombing is an activity/session context; Panel/Wholecar are surface formats. Unsupported capabilities must be reported honestly. The existing finite 1.0 scope and dependency order remain binding; C08 is scheduled after C02–C05 and before C07.
 **Status:** owner-confirmed product direction, 2026-11-15. See [Creator-First Product Vision 01](NIGHTSHIFT_CREATOR_FIRST_PRODUCT_VISION_01.md), [Generator Knowledge Translation 01](../research/GENERATOR_KNOWLEDGE_TRANSLATION_01.md) and [Claude Ticket C08](CLAUDE_TICKET_C08_CREATOR_FIRST_STUDIO_01.md).
 
+D-015 — Blackbook Archive: generated data, complete German edition, versioned editor bridge
+**Decision:** The archive's only content source is `research/`. Each edition language keeps its own entry sources in `research/archive/<lang>/`, while sources and the NYC ledger stay shared. Each edition is generated deterministically into `data/archive/archive.v1.<lang>.json` and checked in CI; the UI never holds content.
+- **German edition first.** The first edition is completely German: interface, entries, claims, timeline, learning paths and diagram labels. Source titles keep their original language.
+- **Ledger citations.** English-language ledger claims are never shown verbatim. Each entry states its own German claim and names the ledger claim as its basis; the build resolves the sources.
+- **English edition later.** A complete English edition is planned after C07.
+- **Editor bridge.** Links into the review page and editor go through one shared, semver-versioned module (`src/bridge/editor-bridge.js`). Only capabilities verified in the current code are `available`.
+- **Fonts.** Barlow and Barlow Condensed (SIL OFL) are bundled for offline use.
+
+**Implication:** Entry, claim and source IDs are language-neutral and must stay identical across editions. Adding a bridge capability is a minor version; renaming or removing one is a major version.
+
+**Status:** German edition and English follow-up decided by the project owner on 2026-11-15. The rest of D-015 is proposed with C06.
+
 ## D-016 — Early Creator 0.1 before C04/C05 (owner decision 2026-11-18)
 **Decision:** The owner chose to bring a first, deliberately small Creator page forward instead of waiting for C04, C05 and C07. The page lets the user enter a word, pick an artwork form, a style, priorities and colours, get four proposals, choose one and export it as SVG, PNG or JSON for the game. It only offers what actually works.
 **Context:** The owner sees the editor as a robot that is taught to make graffiti. A user should be able to enter a name, choose styles, priorities and colours, and pick from several proposals, with the option to co-design all the way to full manual authoring.

@@ -298,6 +298,8 @@ No further general history dossiers are added unless a named release blocker dep
 
 This is a deliberate sequencing override, not a scope reduction or cancellation of C02–C05.
 
+**Archive languages (owner decision 2026-11-15):** C06 ships a complete German edition. A complete English edition is a planned follow-up after C07; see `docs/BLACKBOOK_ARCHIVE_ROADMAP.md`, section “Sprachausgaben”.
+
 The detailed Claude handoff is in [CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md](CLAUDE_FINAL_RELEASE_TICKET_PACK_01.md). Claude must report a package as complete only when its acceptance evidence exists.
 
 ## 8. NIGHTSHIFT 1.0 release checklist

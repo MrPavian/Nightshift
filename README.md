@@ -14,6 +14,8 @@ The wider game concept is a grounded New York graffiti crew simulator. The edito
 
 **Try it:** open [`review/`](review/index.html) from any static server at the repository root (e.g. `python3 -m http.server`, then `http://localhost:8000/review/`): live A–Z, SVG and Three.js views, word tester, proof sheets and review form; [`editor/`](editor/index.html) lets you drag contour nodes of A/B/G/R/S with validation, undo/redo and save. Live: https://mrpavian.github.io/Nightshift/ Proof sheets: [`docs/reports/proof/T06/plates/`](docs/reports/proof/T06/plates/).
 
+**THE BLACKBOOK ARCHIVE — erste Ausgabe, komplett deutsch (C06):** [`archive/`](archive/index.html) ist ein belegtes Graffiti-Lexikon mit 28 Einträgen. Es deckt das New-York-Fundament ab sowie Philadelphia, Amsterdam, Paris, São Paulo, China, Dortmund/Ruhrgebiet und Hamburg, mit Suche, Zeitleiste, Szenen, fünf Lernpfaden und Belegen auf Aussageebene; es läuft offline. Die Inhalte werden aus `research/archive/de/` erzeugt (`npm run archive:build`, siehe [research/archive/README.md](research/archive/README.md)); eine englische Ausgabe ist nach C07 geplant. Links in Prüfstand und Editor folgen dem [Editor-Bridge-Vertrag](docs/EDITOR_BRIDGE_CONTRACT_01.md). Bericht: [docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md](docs/reports/C06_BLACKBOOK_ARCHIVE_REPORT.md).
+
 **Latest prototype (legacy reference): Build 0.6 — Full Alphabet / Glyph Relationships**
 
 - A–Z glyph addressing is available.
