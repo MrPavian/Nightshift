@@ -209,6 +209,15 @@
       "transcriptionConfidence": "medium"
     }
   ],
-  "objectObservations": [],
+  "objectObservations": [
+    {
+      "id": "OBS-GETTY-CHAZ-2012-001",
+      "specimenId": "GETTY-CHAZ-2012-001",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Seite zeigt mehrere einzeln angelegte Letterform-Studien in einem regelmäßigen Raster. Die Formen unterscheiden sich sichtbar in ihrer Konstruktion: Neben kantigen, geometrisch geführten Konturen stehen geschwungene, kalligrafisch wirkende Züge und schattierte, räumlich angelegte Blockformen. Am unteren Rand steht die größere Signatur beziehungsweise Wortmarke „CHAZ“. Die alphabetische Identität der einzelnen Rasterformen lässt sich aus der verfügbaren Vorschau nicht sicher zuordnen; deshalb wird kein A–Z-Glyph erfasst.",
+      "editorialState": "source-checked"
+    }
+  ],
   "schemaVersion": "1.0"
 }
