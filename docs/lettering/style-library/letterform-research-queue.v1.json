@@ -795,6 +795,70 @@
       "title": "ReMS — INGRID annotation manual example, p. 64",
       "url": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
       "visual_review_status": "glyph_observation_accepted"
+    },
+    {
+      "catalogue_description": "Monochrome ink outline in the FTA gallery, captioned Rase. The page is a dense interlocking wildstyle word composition with overlapping contours and extended angular terminals.",
+      "creator": "Rase (gallery caption)",
+      "date_range": "Archive range 1991–2012; item date not specified",
+      "glyph_eligibility": "not_eligible",
+      "id": "PAGE-FTA-INK-13-RASE",
+      "image_url": "https://www.fulltimeartists.com/images/graffiti_images/ink_outlines_640/Site_Ink_13%28Rase%29.png",
+      "next_action": "Retain as a construction/composition reference only; do not transcribe letters unless a higher-resolution view makes individual glyph boundaries independently legible.",
+      "priority": "medium",
+      "reason": "The image was directly opened and visually inspected. Multiple letter-like forms overlap heavily; individual A–Z boundaries cannot be assigned confidently without guessing.",
+      "rights_status": "Copyright Full Time Artists / original author; link-only; no copying, embedding or tracing.",
+      "source_id": "ACQ-FTA-02",
+      "title": "Full Time Artists — Ink Outline 13 (Rase)",
+      "url": "https://www.fulltimeartists.com/graffiti/ink_outlines.php",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
+    },
+    {
+      "catalogue_description": "Monochrome ink outline in the FTA gallery, captioned SJS. The page shows a long interwoven wildstyle composition with angular and curved contours.",
+      "creator": "SJS (gallery caption)",
+      "date_range": "Archive range 1991–2012; item date not specified",
+      "glyph_eligibility": "not_eligible",
+      "id": "PAGE-FTA-INK-14-SJS",
+      "image_url": "https://www.fulltimeartists.com/images/graffiti_images/ink_outlines_640/Site_Ink_14%28SJS%29.png",
+      "next_action": "Retain as a construction/composition reference only; do not transcribe letters unless a higher-resolution view makes individual glyph boundaries independently legible.",
+      "priority": "medium",
+      "reason": "The image was directly opened and visually inspected. The lettering is highly interwoven; there is no sufficiently isolated glyph for defensible A–Z transcription.",
+      "rights_status": "Copyright Full Time Artists / original author; link-only; no copying, embedding or tracing.",
+      "source_id": "ACQ-FTA-02",
+      "title": "Full Time Artists — Ink Outline 14 (SJS)",
+      "url": "https://www.fulltimeartists.com/graffiti/ink_outlines.php",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
+    },
+    {
+      "catalogue_description": "INGRID / Deutsche Digitale Bibliothek catalogue record. The inscription is transcribed as “NAZiS RAUSS”; the collection field identifies Stadtarchiv München, Sammlung Kreuzer.",
+      "catalogue_id": "DDB:B7KKUAJROBNCMDRQIXOJ4IK4357OKICD",
+      "creator": "Not named in the indexed catalogue result",
+      "date_range": "Unknown",
+      "glyph_eligibility": "not_assessed",
+      "id": "PAGE-INGRID-KREUZER-DDB-NAZISRAUSS",
+      "next_action": "Resolve the corresponding INGRID RDF resource URI and image ID from the public RDF dump; open the original image at sufficient resolution before assessing individual letters.",
+      "priority": "high",
+      "reason": "The DDB record supplies a stable catalogue identifier, collection provenance and text transcription, but the image itself was not accessible for direct inspection in this pass. Text metadata is not glyph evidence.",
+      "rights_status": "INGRID public-image rights reported as CC BY-SA; link-only in NIGHTSHIFT; verify object-level credit before any further use.",
+      "source_id": "ACQ-INGRID-01",
+      "title": "INGRID / DDB — NAZiS RAUSS (Sammlung Kreuzer)",
+      "url": "https://www.deutsche-digitale-bibliothek.de/item/B7KKUAJROBNCMDRQIXOJ4IK4357OKICD",
+      "visual_review_status": "catalogued_page_not_visually_reviewed"
+    },
+    {
+      "catalogue_description": "INGRID / Deutsche Digitale Bibliothek catalogue record. The inscription is transcribed as “‘WASCHMASCHINEN LEBEN LÄNGER’ | 84”; the collection field identifies Stadtarchiv München, Sammlung Kreuzer.",
+      "catalogue_id": "DDB:XL4M7KON4LWTKPLWHCLPZ3VDCBLYMNPS",
+      "creator": "Not named in the indexed catalogue result",
+      "date_range": "Unknown",
+      "glyph_eligibility": "not_assessed",
+      "id": "PAGE-INGRID-KREUZER-DDB-WASCHMASCHINEN",
+      "next_action": "Resolve the corresponding INGRID RDF resource URI and image ID from the public RDF dump; open the original image at sufficient resolution before assessing individual letters.",
+      "priority": "high",
+      "reason": "The DDB record supplies a stable catalogue identifier, collection provenance and text transcription, but the image itself was not accessible for direct inspection in this pass. Text metadata is not glyph evidence.",
+      "rights_status": "INGRID public-image rights reported as CC BY-SA; link-only in NIGHTSHIFT; verify object-level credit before any further use.",
+      "source_id": "ACQ-INGRID-01",
+      "title": "INGRID / DDB — WASCHMASCHINEN LEBEN LÄNGER (Sammlung Kreuzer)",
+      "url": "https://www.deutsche-digitale-bibliothek.de/item/XL4M7KON4LWTKPLWHCLPZ3VDCBLYMNPS",
+      "visual_review_status": "catalogued_page_not_visually_reviewed"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
@@ -815,9 +879,9 @@
   ],
   "summary": {
     "accepted_glyph_observations": 18,
-    "note": "18 akzeptierte Einzelglyph-Beobachtungen aus drei Archiven/Plattformen (Bombing Science Forums, Letterform Archive, INGRID). Zwei INGRID-Beobachtungen (DERK D, ReMS S) wurden nach Einzelprüfung auf Kandidat zurückgestuft. Jede akzeptierte ID verweist auf einen Datensatz in research/archive/comparison/observations.v1.json.",
-    "page_records": 40,
+    "note": "18 akzeptierte Glyph-Beobachtungen bleiben unverändert. Neu dokumentiert: zwei direkt gesichtete FTA-Ink-Outlines (beide nicht glyph-geeignet wegen starker Überlappung) sowie zwei DDB-Katalogleads aus der Sammlung Kreuzer. Die DDB-Bilder und die zugehörigen INGRID-RDF-URIs konnten in diesem Durchgang nicht direkt geöffnet/aufgelöst werden; daher keine neuen Glyphen.",
+    "page_records": 44,
     "source_records_referenced": 11,
-    "visually_reviewed_page_records": 18
+    "visually_reviewed_page_records": 20
   }
 }
