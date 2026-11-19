@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "33_item_level_records;_9_objects_visually_inspected;_1_explicitly_labelled_throw_up;new_large_scale_blackbook_and_outline_archives_identified_for_alphabet_harvesting;rights_clearance_pending",
+  "corpus_status": "39_item_level_records;_15_objects_visually_inspected;_1_explicitly_labelled_throw_up;additional_Letterform_Archive_gallery_objects_inspected;rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -1184,6 +1184,195 @@
       "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace letter paths, exact word, colour arrangement, tags, arrows or complete composition.",
       "confidence": "high for photograph and catalogue metadata; low for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-IGTIMES6-001",
+      "item_url": "https://oa.letterformarchive.org/item?workID=lfa_graffiti_0001",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/lfa_graffiti_0001_063-web.jpg",
+      "archive_title": "IGTimes 6 — interior spread",
+      "creator_or_writer": "David Schmidlapp (coeditor/publisher); PHASE 2 (coeditor/art director)",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "1993",
+      "place": "New York, USA",
+      "identifier": "Letterform Archive gallery caption: interior spread from IGTimes 6",
+      "visible_glyphs": "Many distinct graffiti pieces visible in small photographic panels; masthead and editorial framing are separate from photographed lettering. Individual glyphs are mostly too small for reliable measurement.",
+      "candidate_grammar_tags": [
+        "graffiti_zine",
+        "editorial_composition",
+        "multi_specimen_photo_index"
+      ],
+      "execution_format": "printed zine interior spread",
+      "composition_mode": "Dense montage of train photographs and graffiti pieces in panels framed by heavy dark rules and a large masthead.",
+      "rendering_treatment": [
+        "printed reproduction",
+        "photographic documentation",
+        "editorial framing"
+      ],
+      "letter_anatomy_notes": "Not one alphabet specimen. The spread indexes many independent pieces, but the displayed panels are too small for reliable glyph-level analysis.",
+      "word_composition_notes": "Separate editorial masthead, photographed pieces, and page framing. Select individual flicks for future item-level analysis.",
+      "source_record_id": "ACQ-LFA-03",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace the masthead, any photographed piece, exact words, tags, or page layout.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-JHO-001",
+      "item_url": "https://oa.letterformarchive.org/item?workID=lfa_skillscollections_0160",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/lfa_skillscollections_0160_001-web.jpg",
+      "archive_title": "Just Hangin' Out",
+      "creator_or_writer": "Greg Lamarche (Sp.One)",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "2021",
+      "place": "unknown",
+      "identifier": "Letterform Archive gallery caption: Just Hangin' Out",
+      "visible_glyphs": "Two distinct compositions: upper dense multicolour arrangement of rounded and angular letter-like masses; lower readable phrase JUST HANGIN' OUT in compact heavy irregular block-like letters.",
+      "candidate_grammar_tags": [
+        "piece_composition",
+        "compact_block_lettering_candidate",
+        "dense_overlap"
+      ],
+      "execution_format": "lettering artwork on paper",
+      "composition_mode": "Two independent lettering compositions on one sheet; spider and ground marks are separate illustration elements.",
+      "rendering_treatment": [
+        "multicolour fill",
+        "dark internal outlines/divisions",
+        "dark offset mass behind lower yellow letter faces"
+      ],
+      "letter_anatomy_notes": "Upper piece shows overlapping rounded/angular masses and protruding terminals; lower phrase shows compact heavy forms, irregular rhythm and dark offset depth. Do not assign a named family from this single sheet.",
+      "word_composition_notes": "Upper composition text is not confidently transcribed. Lower phrase is readable; treat the two compositions separately.",
+      "source_record_id": "ACQ-LFA-03",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace either composition, the readable phrase as artwork, colour arrangement, spider, or exact letter contours.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-BOMB-044-001",
+      "source_record_id": "ACQ-LFA-03",
+      "item_url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/Graf_BombMag-web.jpg#left-cover",
+      "archive_title": "The Bomb Hip-Hop Magazine no. 44 — cover",
+      "creator_or_writer": "Cokes (cover artist); David Paul (creator)",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "1995",
+      "place": "USA",
+      "identifier": "Letterform Archive gallery caption: The Bomb no. 44",
+      "visible_glyphs": "Large elongated outlined title lettering across the upper cover; exact title contours are integrated with illustration and smaller marks.",
+      "candidate_grammar_tags": [
+        "editorial_display_lettering",
+        "illustrated_magazine_cover"
+      ],
+      "execution_format": "illustrated magazine cover",
+      "composition_mode": "Central illustrated scene with elongated title treatment and secondary handwritten/illustrative elements.",
+      "rendering_treatment": [
+        "monochrome line art",
+        "outlined display lettering",
+        "dense illustration"
+      ],
+      "letter_anatomy_notes": "Title contours appear irregular and directional but are not isolated from the illustration sufficiently for a reliable grammar classification.",
+      "word_composition_notes": "Editorial title hierarchy is integrated into a cover illustration; this is not a standalone piece or alphabet specimen.",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace the title, illustration, exact composition or secondary marks.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-BOMB-046-001",
+      "source_record_id": "ACQ-LFA-03",
+      "item_url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/Graf_BombMag-web.jpg#right-cover",
+      "archive_title": "The Bomb Hip-Hop Magazine no. 46 — cover",
+      "creator_or_writer": "Serkit (cover artist); David Paul (creator)",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "1996",
+      "place": "USA",
+      "identifier": "Letterform Archive gallery caption: The Bomb no. 46",
+      "visible_glyphs": "Large BOMB title with broad heavy block-like masses; O is a dominant rounded form. Individual glyphs are embedded in dense cover illustration.",
+      "candidate_grammar_tags": [
+        "editorial_display_lettering",
+        "heavy_block_form_candidate"
+      ],
+      "execution_format": "illustrated magazine cover",
+      "composition_mode": "Large title retains hierarchy over dense surrounding illustration and smaller lettering.",
+      "rendering_treatment": [
+        "high-contrast monochrome line art",
+        "large display title",
+        "dense illustration"
+      ],
+      "letter_anatomy_notes": "The title suggests a compact four-letter word with heavy mass and a prominent rounded O, but the cover alone does not establish a general Blockbuster grammar.",
+      "word_composition_notes": "Useful as a study of title hierarchy and B/O/M/B rhythm; distinguish editorial masthead from graffiti piece.",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace the title, exact glyph contours, illustration or cover layout.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-SKILLS6-001",
+      "item_url": "https://oa.letterformarchive.org/item?workID=lfa_skillscollections_0006",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/lfa_skillscollections_0006_001-web.jpg",
+      "archive_title": "Skills 6 — cover",
+      "creator_or_writer": "Greg Lamarche (Sp.One), cover artist",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "1994",
+      "place": "USA",
+      "identifier": "Letterform Archive gallery caption: Skills 6 cover",
+      "visible_glyphs": "Custom outlined SKILLS masthead at upper left; separate condensed vertical SKILLS MAGAZINE #6 spine text; multiple photographed train pieces in the cover photograph.",
+      "candidate_grammar_tags": [
+        "editorial_masthead",
+        "photographic_graffiti_index"
+      ],
+      "execution_format": "magazine cover with subway-train photograph",
+      "composition_mode": "Train photograph dominates; masthead, vertical spine text and photographed graffiti are separate layers.",
+      "rendering_treatment": [
+        "outlined display masthead",
+        "photographic reproduction",
+        "vertical condensed spine typography"
+      ],
+      "letter_anatomy_notes": "The SKILLS masthead uses broad geometric strokes and stepped/clipped internal joins. The train writing is too small in this cover view for reliable glyph measurement.",
+      "word_composition_notes": "Keep masthead, spine typography and photographed train pieces as separate evidence types.",
+      "source_record_id": "ACQ-LFA-03",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace masthead, train pieces, exact words or cover layout.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
+    },
+    {
+      "specimen_id": "LFA-GRAFFITO-TCI-001",
+      "source_record_id": "ACQ-LFA-03",
+      "item_url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/",
+      "view_url": "https://letterformarchive.org/wp-content/uploads/2026/10/lfa_graffiti_0031_002-web.jpg",
+      "archive_title": "TCI Crew — interior spread from Graffito",
+      "creator_or_writer": "TCI Crew (spread credit; individual writer not identified)",
+      "photographer_or_archive_credit": "Letterform Archive gallery caption",
+      "date": "circa 1990s",
+      "place": "USA",
+      "identifier": "Letterform Archive gallery caption: TCI Crew, interior spread from Graffito",
+      "visible_glyphs": "Upper-left train photograph with angular overlapping letter masses; lower-left monochrome outline sketch with large angular contours, sharp internal cuts and overlaps. Exact word not confidently legible.",
+      "candidate_grammar_tags": [
+        "freight_piece_candidate",
+        "monochrome_piece_sketch",
+        "angular_interlocking_candidate"
+      ],
+      "execution_format": "printed zine interior spread containing train photograph and sketch",
+      "composition_mode": "Two-page spread with colour train photograph above and monochrome sketch below on left page; right page is mostly dark negative space; dice are separate decorations.",
+      "rendering_treatment": [
+        "photographic colour piece",
+        "monochrome outline sketch",
+        "printed reproduction"
+      ],
+      "letter_anatomy_notes": "The lower sketch is high-value front-face construction evidence because it removes fill and depth distractions while retaining contour relationships. Do not infer that it depicts the same piece as the upper photograph.",
+      "word_composition_notes": "Treat photo, sketch, dice decorations and page layout separately. Pair relationships and negative-space channels require closer crop-level study.",
+      "access_date": "2026-11-19",
+      "rights_status": "link-only; image reuse rights and reproduction permission not established; no image copied",
+      "visual_review_status": "hi_fi_gallery_image_opened_and_visually_inspected",
+      "what_not_to_copy": "Do not trace the photographed piece, lower sketch, dice, exact word or spread layout.",
+      "confidence": "high for article caption and visible page-level facts; limited for isolated glyph anatomy"
     }
   ]
 }
