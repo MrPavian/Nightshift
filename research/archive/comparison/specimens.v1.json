@@ -1818,6 +1818,49 @@
       },
       "sourceRecordId": "ACQ-BSCI-02",
       "title": "XCALET — Alphabet Challenge submission"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Woshe",
+      "date": "2013",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "id": "ALT-WOSHE-M-MAMMOUTH-01",
+      "identifier": "All City 11-page PDF excerpt, PDF page 7 / printed spread pp. 48–49",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
+      "photographerName": null,
+      "place": "France",
+      "raw": {
+        "candidateGrammarTags": [
+          "letter_construction_study",
+          "wildstyle_semi_wildstyle"
+        ],
+        "compositionMode": "Instructional two-page spread with several separate outlined sketches and a larger central lettering composition.",
+        "confidence": "high for page layout and visible drawn forms; no isolated glyph observation accepted.",
+        "creator": "Woshe",
+        "date": "2013 updated edition; preview PDF",
+        "dimensions": null,
+        "executionFormat": "printed book spread reproduced in a digital PDF preview",
+        "identifier": "Printed spread pp. 48–49; section heading 'M le Mammouth'",
+        "letterAnatomyNotes": "The spread presents several separate outlined lettering sketches alongside a larger central composition. The visible examples show angular, extended and interlocking contours, but individual letter boundaries are not consistently isolated in the preview.",
+        "photographerCredit": "Éditions Alternatives / All City Blog publication preview",
+        "place": "France",
+        "renderingTreatment": [
+          "monochrome outline sketches",
+          "larger rendered lettering example"
+        ],
+        "rightsStatus": "Copyright Woshe / Éditions Alternatives; link-only; no reuse or tracing permission established.",
+        "viewUrl": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
+        "visibleGlyphs": "Multiple outlined lettering sketches and a larger central composition are visible; the preview does not provide a clean isolated A–Z sheet on this spread.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace the letter sketches, finished composition, contours or layout.",
+        "wordCompositionNotes": "This is a didactic book spread, not a standalone blackbook alphabet page."
+      },
+      "sourceRecordId": "ACQ-ALT-01",
+      "title": "Woshe — M le Mammouth instructional spread"
     }
   ]
 }
