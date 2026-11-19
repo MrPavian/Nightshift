@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "24_item_level_records_across_Smithsonian_and_NGA;_visual_inspection_and_rights_clearance_pending",
+  "corpus_status": "25_item_level_records_across_Smithsonian_NGA_and_Letterform_Archive;_1_explicitly_labelled_throw_up_image_visually_inspected;_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -34,7 +34,7 @@
         "min": 12,
         "max": 20
       },
-      "current_individually_reviewed_specimens": 0
+      "current_individually_reviewed_specimens": 1
     },
     {
       "id": "wildstyle_semi_wildstyle",
@@ -223,6 +223,21 @@
       "rights_status": "media_not_available_for_download_contact_NGA_about_image_usage",
       "confidence": "high",
       "next_action": "Use item pages as visual-analysis and provenance leads; obtain image permissions before embedding."
+    },
+    {
+      "id": "ACQ-LFA-02",
+      "title": "Letterform Archive — Subscription to Mischief: Iz the Wiz Throw-up",
+      "url": "https://exhibitions.letterformarchive.org/mischief/artworks/iz-the-wiz",
+      "source_type": "museum_exhibition_object_record",
+      "source_scope": "individual_artwork_with_image",
+      "target_grammars": [
+        "throw_up",
+        "bubble_softie"
+      ],
+      "evidence": "Individual object record identifies Iz the Wiz Throw-up, ca. 1983, photographed by Atco / Lou Romain, and explicitly defines the form as overlapping bubble letters with an outline and fill. Image is directly viewable from the record.",
+      "rights_status": "image copyright/reuse terms not established; link-only; no image copied",
+      "confidence": "high for catalogue style label and object metadata; medium for visible structure from displayed photograph",
+      "next_action": "Use as one labelled throw-up specimen; seek additional object pages with explicit style labels and independently inspect each image."
     }
   ],
   "specimen_record_template": {
@@ -826,6 +841,35 @@
       "visual_review_status": "NGA catalogue visual description reviewed; image not downloadable for independent full-resolution inspection",
       "what_not_to_copy": "Do not trace lettering, writer name, characters, symbols or full train-car composition.",
       "confidence": "high for catalogue metadata; low for glyph anatomy and style-family classification"
+    },
+    {
+      "specimen_id": "LFA-THROWUP-001",
+      "source_record_id": "ACQ-LFA-02",
+      "item_url": "https://exhibitions.letterformarchive.org/mischief/artworks/iz-the-wiz",
+      "archive_title": "Iz the Wiz Throw-up",
+      "creator_or_writer": "IZ the WIZ (as titled by Letterform Archive)",
+      "photographer_or_archive_credit": "Atco / Lou Romain",
+      "date": "circa 1983",
+      "place": "New York, USA",
+      "identifier": "Letterform Archive Exhibition No. 3 — Subscription to Mischief",
+      "visible_glyphs": "Large overlapping rounded/bubble-like outline forms; exact letter sequence not confidently transcribed from the displayed photograph",
+      "candidate_grammar_tags": [
+        "throw_up",
+        "overlapping_bubble_letters"
+      ],
+      "execution_format": "subway-car throw-up photographed in situ",
+      "composition_mode": "large-scale compact throw-up occupying train-car panels; adjacent tags and window/door structure remain visible",
+      "rendering_treatment": [
+        "single red outline visible",
+        "pale/unfilled interior or low-contrast fill in the displayed reproduction",
+        "secondary tags nearby"
+      ],
+      "letter_anatomy_notes": "Directly inspected displayed image: broad continuous rounded outer contour, large inflated proportions, simplified internal divisions, and strong overlap/near-contact between forms. The photograph and reproduction do not support confident reconstruction of individual glyph skeletons or exact letter sequence.",
+      "word_composition_notes": "The main outlined forms span multiple train-car panels; surrounding tags are separate secondary marks. The archive's explicit definition is 'overlapping bubble letters with an outline and fill'.",
+      "rights_status": "Link-only. Image reuse rights not established; do not download into repository or reproduce.",
+      "visual_review_status": "individual_image_opened_and_visually_inspected; archive_style_label_explicit",
+      "what_not_to_copy": "Do not trace the photographed outline, exact letter sequence, spacing, tags or train-car composition. Derive only general construction principles.",
+      "confidence": "high for archive title/date/credit/style label; medium for broad visual structure; low for exact glyph anatomy"
     }
   ]
 }
