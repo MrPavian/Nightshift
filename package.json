@@ -11,7 +11,7 @@
     "test": "node --test tests/*.test.js",
     "extract:v06": "node tools/extract-v06-paths.mjs",
     "check:v06": "node tools/extract-v06-paths.mjs --check",
-    "test:browser": "node tools/browser-smoke.mjs && node tools/review-smoke.mjs && node tools/editor-smoke.mjs && node tools/creator/check-creator.mjs && node tools/archive-smoke.mjs",
+    "test:browser": "node tools/browser-smoke.mjs && node tools/review-smoke.mjs && node tools/editor-smoke.mjs && node tools/creator/check-creator.mjs && node tools/archive-smoke.mjs && node tools/academy/check-letter-study.mjs assets/design/letter-study_A_01.svg && node tools/academy/check-letter-study.mjs assets/design/letter-study_A_01_clean.svg && node tools/academy/check-gallery.mjs",
     "report:topology": "node tools/report-topology.mjs",
     "report:validation": "node tools/report-validation.mjs",
     "proof:render": "node tools/render-proof.mjs",
@@ -20,7 +20,10 @@
     "perf:editor": "node tools/editor-perf.mjs --grid 5 --budget-ms 600",
     "proof:archive": "node tools/archive-smoke.mjs --capture",
     "archive:build": "node tools/archive-build.mjs",
-    "archive:check": "node tools/archive-build.mjs --check"
+    "archive:check": "node tools/archive-build.mjs --check",
+    "build:academy": "node tools/academy/build-letter-study-a.mjs",
+    "proof:academy": "node tools/academy/check-letter-study.mjs assets/design/letter-study_A_01.svg docs/reports/proof/academy-A && node tools/academy/check-letter-study.mjs assets/design/letter-study_A_01_clean.svg docs/reports/proof/academy-A",
+    "build:heft": "node tools/academy/build-heft.mjs"
   },
   "dependencies": {
     "three": "0.187.0"

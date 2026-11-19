@@ -1,0 +1,44 @@
+{
+  "file": "/assets/design/letter-study_A_01.svg",
+  "texts": 172,
+  "leaders": [
+    {
+      "target": "834,261.64",
+      "expect": "fill",
+      "inFill": true,
+      "ok": true
+    },
+    {
+      "target": "834,360.24",
+      "expect": "counter",
+      "inFill": false,
+      "ok": true
+    },
+    {
+      "target": "797.47,365.68",
+      "expect": "fill",
+      "inFill": true,
+      "ok": true
+    },
+    {
+      "target": "870.53,365.68",
+      "expect": "fill",
+      "inFill": true,
+      "ok": true
+    },
+    {
+      "target": "817.68,392.88",
+      "expect": "fill",
+      "inFill": true,
+      "ok": true
+    },
+    {
+      "target": "900.64,444.56",
+      "expect": "fill",
+      "inFill": true,
+      "ok": true
+    }
+  ],
+  "issues": [],
+  "ready": true
+}

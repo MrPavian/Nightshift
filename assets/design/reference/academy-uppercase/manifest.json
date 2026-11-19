@@ -1,0 +1,210 @@
+{
+  "A": {
+    "file": "A.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "47ae65cb9f74eac0cc9133d36ec5da435893f201db105c508155191cc9f4f364"
+  },
+  "B": {
+    "file": "B.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "e7c08bade28b8a4ee741f91fd78b7c7bf67f8474514572308b8726c5c6c6bded"
+  },
+  "C": {
+    "file": "C.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "760e01d632c06267da46d83e136b2b5456c08281e496736c50f7994d8eae7830"
+  },
+  "D": {
+    "file": "D.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "b02c60b3aa0593382ec91f6659e907ae2d5981363cf80482fdbdbed1d74858f3"
+  },
+  "E": {
+    "file": "E.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "91d74a61e87ee91625f8018375752db438c4bd4305e49fd0136bea67f5184a2f"
+  },
+  "F": {
+    "file": "F.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "733cb53c978fa7d16f056c9129ab4f8cc8f502ce66528f30ca455b025588aca7"
+  },
+  "G": {
+    "file": "G.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "88fea0ca6a836cf760c684565a4a3bf8ce0dd67d7a220fe3394f0abf97fae983"
+  },
+  "H": {
+    "file": "H.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "35f1a3344fbed942ad843b6b3f067e902084cf08088d27719c4f0fb5d4428975"
+  },
+  "I": {
+    "file": "I.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "51c02494f774b4c4a70b7d660133e776aed90e0352d949c63bed7592c212b5d6"
+  },
+  "J": {
+    "file": "J.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "41907c5b56d856616001cd73e33baa1c6961e61cdf6f03785bfad22ac87715ac"
+  },
+  "K": {
+    "file": "K.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "00d0f665130415df0cec92d949ad131d65d16672d84d3eb16c3abf5a9e02268a"
+  },
+  "L": {
+    "file": "L.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "57df4336aa5a40ede980a8838b5a1e620c2959c48d85c715fbf3bc6cb5e975da"
+  },
+  "M": {
+    "file": "M.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "9e52321f3e5b49e6c72e87b867ccc259c0cbaf89573814c74bef4a2c5147988c"
+  },
+  "N": {
+    "file": "N.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "b00cfe548e02d7f2c13a56c4edb9c9a416e1c5cf5673fed666c0918e5cb380b0"
+  },
+  "O": {
+    "file": "O.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "c9e5abd92689cf2cc65da62d63ab80c34511c78541b1d22bcbffacf31253de0e"
+  },
+  "P": {
+    "file": "P.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "d624b7665cd228b898b93d5d453d4df17d70504513c7c560f41ea08e248dae64"
+  },
+  "Q": {
+    "file": "Q.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "87d78cc0c5016aed80688e1e411ece4505edef06acdcf6feca00a10069128969"
+  },
+  "R": {
+    "file": "R.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "2067b263be2e253d2e4b63f95a4a65fba697fd599099c34860270a3f96d8ea51"
+  },
+  "S": {
+    "file": "S.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "1bca9843f8dabc07a47e06141c32659e40aa9e43708dfd4924b99a7eb2c3742e"
+  },
+  "T": {
+    "file": "T.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "69934884081793e367469f186b6538b79ead04602045179ea141ed3e039047b0"
+  },
+  "U": {
+    "file": "U.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "7aa419c8f434595067426a8733b8b2ee0798e88b2e176bba2e57a131c6fec265"
+  },
+  "V": {
+    "file": "V.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "565f60574f0fe87a0c4a8b40d80241aca69ad4e3bd6e2ed5be960467465f9f2d"
+  },
+  "W": {
+    "file": "W.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "819103800711bb9afe4dd66dc74e1c4465e05554745dcc30334068965bea6502"
+  },
+  "X": {
+    "file": "X.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "4724b8a454fd31d44d4262be72bab70a1cc510a3d61b19e1aef5dd50566cabb7"
+  },
+  "Y": {
+    "file": "Y.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "37ad200b320e4c90611b1eea3f33ee59341f63821922a932f45ff7e57f23551e"
+  },
+  "Z": {
+    "file": "Z.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "sourcePngSha256": "33da20089d0ffef6fc83cdfe65cda428f0622e3e3263e500548614458639afa5"
+  }
+}

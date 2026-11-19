@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><title>Academy QA</title>
+<style>html,body{margin:0;background:#fff}#host svg{display:block;width:1680px;height:1188px}#qa{display:none}</style></head>
+<body><div id="host"></div><pre id="qa"></pre>
+<script type="module">
+// Layout QA for Academy sheets: loads ?file=..., then checks every text against its panel box,
+// against other texts, against spray marks, and every anatomy leader against its target.
+const file = new URLSearchParams(location.search).get('file');
+const host = document.getElementById('host');
+host.innerHTML = await (await fetch(file)).text();
+await document.fonts.ready;
+const svg = host.querySelector('svg');
+const r = (e) => { const b = e.getBoundingClientRect(); return { x0: b.left, y0: b.top, x1: b.right, y1: b.bottom }; };
+const inter = (a, b) => Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0)) * Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
+const boxes = Object.fromEntries([...svg.querySelectorAll('[data-box]')].map((g) => { const [x, y, w, h] = g.dataset.box.split(' ').map(Number); return [g.id.replace('-frame', ''), { x0: x + 3, y0: y + 3, x1: x + w - 3, y1: y + h - 3 }]; }));
+boxes.header = { x0: 0, y0: 0, x1: 1680, y1: 152 }; boxes.footer = { x0: 16, y0: 1100, x1: 1664, y1: 1174 };
+// Line boxes from the browser include the full ascent/descent of the font (about 1.6 em for Kalam), so two
+// consecutive lines always "overlap". Use the horizontal extent from the browser and a vertical ink band
+// around the baseline instead (cap height and descenders of both fonts stay inside it).
+const ink = (t) => { const b = r(t), y = +t.getAttribute('y'), fs = +t.getAttribute('font-size'); return { x0: b.x0, x1: b.x1, y0: y - 0.8 * fs, y1: y + 0.24 * fs }; };
+const texts = [...svg.querySelectorAll('text')].filter((t) => !t.dataset.qa).map((t) => ({ t, s: t.textContent, p: t.dataset.panel, b: ink(t) }));
+const issues = [];
+const fontsOk = document.fonts.check("16px 'NS Hand'") && document.fonts.check("16px 'NS Marker'");
+if (!fontsOk) issues.push({ kind: 'fonts-not-loaded' });
+for (const x of texts) {
+  const pb = boxes[x.p];
+  if (!pb) issues.push({ kind: 'text-without-panel', s: x.s });
+  else if (x.b.x0 < pb.x0 - 0.5 || x.b.x1 > pb.x1 + 0.5 || x.b.y0 < pb.y0 - 0.5 || x.b.y1 > pb.y1 + 0.5) issues.push({ kind: 'text-outside-panel', panel: x.p, s: x.s, box: x.b });
+}
+for (let i = 0; i < texts.length; i++) for (let j = i + 1; j < texts.length; j++) {
+  const a = texts[i], b = texts[j], o = inter(a.b, b.b);
+  if (o > 6) issues.push({ kind: 'text-overlap', a: a.s, b: b.s, area: Math.round(o) });
+}
+const marks = [...svg.querySelectorAll('#layer-spray .splat > *')].map(r);
+for (const x of texts) for (const m of marks) if (inter(x.b, m) > 4) { issues.push({ kind: 'spray-over-text', s: x.s }); break; }
+const a = svg.querySelector('#anatomy-a');
+const leaders = [...svg.querySelectorAll('[data-target]')].map((g) => {
+  const [x, y] = g.dataset.target.split(',').map(Number), inFill = a.isPointInFill(new DOMPoint(x, y));
+  const ok = g.dataset.expect === 'fill' ? inFill : !inFill && a.isPointInFill(new DOMPoint(x, y - 30)) === false;
+  if (!ok) issues.push({ kind: 'leader-misses-target', target: g.dataset.target, expect: g.dataset.expect });
+  return { target: g.dataset.target, expect: g.dataset.expect, inFill, ok };
+});
+document.getElementById('qa').textContent = JSON.stringify({ file, texts: texts.length, leaders, issues, ready: true });
+</script></body></html>

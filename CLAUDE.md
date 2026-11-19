@@ -596,3 +596,61 @@ Branch `claude/creator-0-1`, stacked on C03 (#17).
 - How the shapes look is for the owner to judge.
 
 **Tests:** `tests/creator.test.js` (8 tests); browser check `tools/creator/check-creator.mjs` (4 styles × 4).
+
+
+### Owner reference set A–Z and work split (16 November 2026)
+
+The owner handed over the complete approved uppercase reference set (26 sheets, developed with ChatGPT and approved by the owner). It is stored as a style and layout reference in `assets/design/reference/academy-uppercase/`: `A.webp`–`Z.webp`, plus `manifest.json` with the original PNG hashes and a `README.md` stating what the set may and may not be used for.
+
+- The set is a visual and compositional target only. It is **not** a factual source: its generated texts contain known errors, which the studies must correct.
+- It is not to be traced and not to be shipped as a product asset.
+- **Owner decisions, 16 November 2026:**
+  - Claude rebuilds the A study (`assets/design/letter-study_A_01.svg`) against this reference first, then continues with C03.
+  - ChatGPT works in parallel on lowercase letters and numerals.
+- The approval gate stays: B–Z studies only after the owner explicitly approves A.
+
+
+### A study — rebuilt as a generated SVG (16 November 2026, Claude)
+
+`assets/design/letter-study_A_01.svg` has been rebuilt against the owner reference `assets/design/reference/academy-uppercase/A.webp`. It replaces ChatGPT's earlier hand-written SVG, which is superseded.
+
+- **Source of truth:** `tools/academy/build-letter-study-a.mjs`, with drawing helpers in `tools/academy/lib.mjs`.
+  - Rebuild with `npm run build:academy`.
+  - Do not edit the SVGs by hand: a test compares them byte for byte with the generator output.
+- **Outputs:** `letter-study_A_01.svg` (full) and `letter-study_A_01_clean.svg` (clean print version without paper texture, distress and spray).
+- **Layers:** paper, distress, spray, under, frames, letters, construction, labels. Each is a named group (`layer-*`).
+- **Text:** every label is real SVG text. The fonts are embedded: Permanent Marker (Apache 2.0) and Kalam (OFL); see `assets/fonts/academy/`.
+- **Graffiti letters:** all are original vector constructions. None is a font glyph or a tracing.
+- **Factual corrections applied:**
+  - Percentages are example values of this drawing, derived from its geometry: width 91 %, crossbar top 37 %, counter 31 %, stroke 20 %.
+  - The sheet states that capitals have no x-height.
+  - There is no three-movement claim. The stroke sequence is marked as an assumption.
+  - Nib and brush technique is explicitly not transferable to aerosol.
+  - The counter is labelled Punze, not „Auge“. There is no speed claim for throw-ups.
+  - Construction stages 4 (contour) and 5 (filled form) are visibly different.
+  - The three graffiti directions are marked as parallel, not as a ladder.
+- **QA:**
+  - `tools/academy/check-letter-study.mjs`, also part of `npm run test:browser`, checks text containment, text overlaps, spray over text and anatomy leader targets.
+  - Result: 0 issues in both versions.
+  - Proofs, 2× crops and a greyscale check are in `docs/reports/proof/academy-A/`.
+  - Unit tests: `tests/academy-study.test.js`.
+- **Status:** owner review pending. The sheet is not print-approved and has not been checked in Inkscape, Illustrator or a PDF export. B–Z stay blocked until the owner approves A.
+
+
+### Reference sheets A–Z in use as version 1 (draft), with correction list (owner decision 16 November 2026)
+
+The owner decided to use the 26 approved sheets right away, for personal learning and visible in the project. They are always marked as a draft, and their errors are documented, not hidden.
+
+- `data/academy/uppercase-reference.v1.json` holds the correction list:
+  - 9 general notes that apply to every sheet.
+  - 72 sheet-specific findings. Each names the panel, a kind (Sachfehler, Begriff, Tippfehler, Prozessbehauptung, Lesbarkeit, …), the problem and the correct version.
+  - The practice word from panel 9.
+  - Reviewer: Claude (AI), working from the full-resolution images. No human has reviewed the list. Small text in the images may have been misread.
+- Notable errors found: wrong terms in many sheets („Theke“ and „Auge“ instead of Punze, „Abstrich“ used as a part), N's diagonal at 45° contradicting its stated width, the W's peaks and valleys swapped, garbled headers on U–Z, „Bandsatz“ instead of „Bandzug“, stroke-order and stroke-count claims, and round variants that read as 8, 3, & or 2.
+- **Gallery:** `academy/index.html` with `app.js` and `app.css` (archive design tokens, German UI, keyboard ← → and Esc, hash routes `#A`–`#Z`). It shows the overview, each sheet with its corrections, and the general notes. Deployed to Pages via `deploy-pages.yml` (copies `academy/` and the reference folder).
+- **Booklet:** `academy/heft.pdf` (A4 landscape, 28 pages: cover, general notes, one page per letter with its corrections), printed from `academy/heft.html` with `npm run build:heft`. That needs Python/Pillow for the JPEG conversion into the git-ignored `academy/.print-cache/`.
+- **Checks:**
+  - `tests/academy-reference.test.js` (data).
+  - `tools/academy/check-gallery.mjs`, part of `npm run test:browser`.
+  - Screenshots in `docs/reports/proof/academy-gallery/`.
+- The generated A study (`letter-study_A_01.svg`) stays as the path to an editable, corrected, print-ready version. It is still pending owner review.
