@@ -581,6 +581,21 @@
       "reason": "The shared grid labels the alphabet cells and the image is clear enough to identify some individual letter candidates; candidate observations must still record only glyphs whose contours are separable from adjacent marks.",
       "rights_status": "Artist copyright; link-only; do not copy or trace.",
       "next_action": "Record isolated glyphs from this submission only after checking each complete contour and its label; preserve the artist's post attribution."
+    },
+    {
+      "id": "PAGE-ALT-WOSHE-M-MAMMOUTH",
+      "source_id": "ACQ-ALT-01",
+      "title": "Woshe — M le Mammouth, instructional spread",
+      "creator": "Woshe",
+      "date_range": "2013 edition",
+      "url": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
+      "catalogue_description": "Public 11-page PDF preview; directly inspected spread with several outlined lettering sketches and a larger central composition.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "The preview is useful for studying Woshe's didactic approach and letter construction, but the visible forms are embedded in larger compositions and do not provide a securely isolated glyph for the current comparison dataset.",
+      "rights_status": "Copyright Woshe / Éditions Alternatives; link-only; do not copy or trace.",
+      "next_action": "Use as a visual-method reference; seek other openly accessible pages in the same book only through legitimate web previews."
     }
   ],
   "glyph_observations": [
@@ -642,11 +657,11 @@
     }
   ],
   "summary": {
-    "page_records": 37,
-    "visually_reviewed_page_records": 15,
+    "page_records": 38,
+    "visually_reviewed_page_records": 16,
     "accepted_glyph_observations": 0,
-    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. Zusätzlich sind 5 direkt geprüfte Glyph-Kandidaten aus dem Bombing-Science-Alphabet-Challenge-Thread vorgemerkt. 15 Seiten/Bildobjekte sind visuell geprüft oder enthalten visuell geprüfte Glyph-Kandidaten; 22 Queue-Leads bleiben ungesichtet.",
-    "source_records_referenced": 9
+    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. Zusätzlich sind 5 direkt geprüfte Einzelglyphen aus dem Bombing-Science-Alphabet-Challenge-Thread vorgemerkt. 16 Seiten/Bildobjekte sind visuell geprüft oder enthalten visuell geprüfte Glyph-Kandidaten; 22 Queue-Leads bleiben ungesichtet.",
+    "source_records_referenced": 10
   },
   "sources_ref": [
     "ACQ-RIJK-01",
@@ -657,6 +672,7 @@
     "ACQ-STREETFONTS-01",
     "ACQ-BSCI-01",
     "ACQ-BSCI-02",
+    "ACQ-ALT-01",
     "ACQ-LFA-03"
   ]
 }
