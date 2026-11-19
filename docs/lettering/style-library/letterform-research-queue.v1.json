@@ -499,7 +499,8 @@
       "priority": "highest",
       "reason": "This is unusually well matched to the research goal: standardized complete A–Z pages allow direct cross-writer comparison of the same letters, including repeated A/B/E/R/S/T forms. It is an authored alphabet collection, not necessarily raw spontaneous blackbook writing; each contribution's medium and construction method must be recorded.",
       "rights_status": "Copyright individual artists and publisher; book access only; link-only",
-      "next_action": "Use docs/lettering/style-library/street-fonts-artist-index.v1.json to navigate the 154 artist entries and their page numbers; obtain/borrow the book, inspect each alphabet directly, record medium and technique, and prioritize hand-drawn/marker/sketch contributions. Do not create glyph observations from catalogue descriptions or promotional previews."
+      "next_action": "Request a reading-room appointment at Martha Cooper Library / URBAN NATION Berlin (catalogue lists the German edition as available Präsenzbestand; no interlibrary loan). Confirm title availability and photography/reproduction rules before travel. At inspection, work through the 154-entry index, record medium/technique and prioritize hand-drawn, marker and sketch alphabets; do not create glyph observations from catalogue descriptions.",
+      "access_note": "A confirmed physical access route is listed in docs/lettering/style-library/street-fonts-artist-index.v1.json: Martha Cooper Library, Berlin; appointment and registration required."
     }
   ],
   "glyph_observations": [
