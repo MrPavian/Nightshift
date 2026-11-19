@@ -501,6 +501,38 @@
       "rights_status": "Copyright individual artists and publisher; book access only; link-only",
       "next_action": "Request a reading-room appointment at Martha Cooper Library / URBAN NATION Berlin (catalogue lists the German edition as available Präsenzbestand; no interlibrary loan). Confirm title availability and photography/reproduction rules before travel. At inspection, work through the 154-entry index, record medium/technique and prioritize hand-drawn, marker and sketch alphabets; do not create glyph observations from catalogue descriptions.",
       "access_note": "A confirmed physical access route is listed in docs/lettering/style-library/street-fonts-artist-index.v1.json: Martha Cooper Library, Berlin; appointment and registration required."
+    },
+    {
+      "id": "PAGE-BSCI-KNOME-2018-ALPHA",
+      "source_id": "ACQ-BSCI-01",
+      "title": "knowme — 2018 handstyle alphabet",
+      "creator": "knowme (forum handle)",
+      "date_range": "2018",
+      "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/05/1228638_70bb2bcbd78edc76d72fa3df98e25ecb.jpg",
+      "catalogue_description": "Forum post presents this as the writer's 2018 handstyle alphabet effort; directly opened image shows a labelled A–Z grid in broad marker strokes.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "high",
+      "reason": "A complete, labelled handstyle alphabet is directly visible, but broad strokes frequently extend across cell boundaries and individual glyph contours are not yet isolated confidently enough for acceptance.",
+      "rights_status": "Artist copyright; link-only; do not copy or trace.",
+      "next_action": "Revisit individual labelled cells at higher image detail only where the entire glyph contour can be separated from neighbouring forms; search for independent writers' alphabet sheets."
+    },
+    {
+      "id": "PAGE-BSCI-KNOME-2018-REJECT",
+      "source_id": "ACQ-BSCI-01",
+      "title": "knowme — 2018 rejected handstyle alphabet",
+      "creator": "knowme (forum handle)",
+      "date_range": "2018",
+      "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "image_url": "https://bsciforums.s3.amazonaws.com/2018/05/1228639_1eada95b626553d34c9c24210af70e25.jpg",
+      "catalogue_description": "Second labelled A–Z handstyle sheet described by the writer as a rejected alternative; directly opened image.",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible",
+      "glyph_eligibility": "not_eligible",
+      "priority": "medium",
+      "reason": "Useful for same-writer variation, but not an independent writer/source. Broad marker strokes overlap cell boundaries, preventing safe isolated-glyph acceptance in this pass.",
+      "rights_status": "Artist copyright; link-only; do not copy or trace.",
+      "next_action": "Use only as a same-writer variation comparison; do not count as an independent source or duplicate alphabet evidence."
     }
   ],
   "glyph_observations": [
@@ -509,34 +541,32 @@
       "source_id": "ACQ-LFA-03",
       "specimen_id": "LFA-JHO-001",
       "glyph": "T",
-      "status": "glyph_observation_accepted",
-      "archive_observation_id": "GLY-LFA-JHO-001-T1",
-      "note": "Die akzeptierte Beobachtung selbst liegt ausschließlich in research/archive/comparison/observations.v1.json."
+      "status": "glyph_observation_candidate",
+      "note": "Historischer Queue-Verweis ohne korrespondierenden Datensatz in observations.v1.json. Vor einer erneuten Annahme muss die Originalquelle visuell nachgeprüft und ein vollständiger Archivdatensatz angelegt werden."
     },
     {
       "id": "QUEUE-GLY-LFA-JOKER-001-O1",
       "source_id": "ACQ-LFA-03",
       "specimen_id": "LFA-JOKER-001",
       "glyph": "O",
-      "status": "glyph_observation_accepted",
-      "archive_observation_id": "GLY-LFA-JOKER-001-O1",
-      "note": "Die Beobachtung selbst liegt ausschließlich in research/archive/comparison/observations.v1.json."
+      "status": "glyph_observation_candidate",
+      "note": "Historischer Queue-Verweis ohne korrespondierenden Datensatz in observations.v1.json. Vor einer erneuten Annahme muss die Originalquelle visuell nachgeprüft und ein vollständiger Archivdatensatz angelegt werden."
     }
   ],
   "summary": {
-    "page_records": 32,
-    "visually_reviewed_page_records": 10,
-    "accepted_glyph_observations": 2,
-    "note": "2 directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 10 page records have been visually reviewed but are not glyph-eligible; 22 page-level leads remain uninspected.",
+    "page_records": 34,
+    "visually_reviewed_page_records": 12,
+    "accepted_glyph_observations": 0,
+    "note": "0 aktuell nachweisbare akzeptierte Glyph-Beobachtungen: observations.v1.json enthält derzeit keine glyphObservations. Zwei frühere Queue-Verweise wurden auf Kandidaten zurückgestuft, da die korrespondierenden Archivdatensätze fehlen. 12 Seiten/Bildobjekte sind visuell geprüft, aber nicht glyph-eligible; die übrigen Queue-Einträge bleiben ungesichtet.",
     "source_records_referenced": 7
   },
   "sources_ref": [
     "ACQ-RIJK-01",
-    "ACQ-FTA-01",
-    "ACQ-FTA-02",
     "ACQ-DGL-01",
     "ACQ-ARTCRIMES-01",
+    "ACQ-FTA-01",
     "ACQ-GETTY-01",
-    "ACQ-STREETFONTS-01"
+    "ACQ-STREETFONTS-01",
+    "ACQ-BSCI-01"
   ]
 }
