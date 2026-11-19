@@ -1,0 +1,848 @@
+{
+  "schemaVersion": "1.0.0",
+  "collection": "nightshift.lettering.templates",
+  "templateCount": 38,
+  "familyCount": 12,
+  "maturity": "documented-draft",
+  "axes": [
+    "letterform",
+    "composition",
+    "practice-format",
+    "rendering-treatment"
+  ],
+  "templates": [
+    {
+      "id": "bubble.classic-inflated",
+      "family": "Bubble",
+      "axis": "letterform",
+      "title": "Classic Inflated",
+      "intent": "Runde, aufgeblasene Masse mit klarer Glyphen-Anatomie.",
+      "construction": "Skelett glyphenspezifisch aufblasen; Außenkontur runden; Counter und Brücken separat sichern.",
+      "parameters": [
+        "inflationAmount",
+        "cornerRoundness",
+        "strokeMass",
+        "counterPreservation"
+      ],
+      "guardrails": "Keine uniforme Ovalisierung; A/B/R-Counter, G-Öffnung und S-Waist erhalten.",
+      "tests": [
+        "A B G O R S U",
+        "BUBBLE GHOST"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/bubble.md"
+    },
+    {
+      "id": "bubble.softie-organic",
+      "family": "Bubble",
+      "axis": "letterform",
+      "title": "Softie / Organic",
+      "intent": "Elastische, organische Bubble-Form mit kontrollierter Asymmetrie.",
+      "construction": "Bowl-Spannung, Breite und Terminalmasse je Glyph variieren; Familienrhythmus halten.",
+      "parameters": [
+        "bowlElasticity",
+        "widthVariation",
+        "terminalRoundness",
+        "asymmetryBudget"
+      ],
+      "guardrails": "Organische Variation darf keine Glyphen-Anatomie zerstören.",
+      "tests": [
+        "B C G S U",
+        "SOUL MARS"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/bubble.md"
+    },
+    {
+      "id": "bubble.compact-bubble",
+      "family": "Bubble",
+      "axis": "letterform",
+      "title": "Compact Bubble",
+      "intent": "Dichte, kompakte Bubble-Form mit verstärkten Engstellen.",
+      "construction": "Breite und Abstände selektiv reduzieren; Hälse verstärken; Counter nach jeder Massenerhöhung prüfen.",
+      "parameters": [
+        "compactness",
+        "neckStrength",
+        "counterClearance",
+        "overlapTolerance"
+      ],
+      "guardrails": "Kompaktheit nie durch geschlossene Counter oder ungewollte Fusion erkaufen.",
+      "tests": [
+        "A B R S O",
+        "RISK BOMB"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/bubble.md"
+    },
+    {
+      "id": "blockbuster.broad-block",
+      "family": "Blockbuster / Block",
+      "axis": "letterform + format",
+      "title": "Broad Block",
+      "intent": "Breite, robuste Straight-/Block-Konstruktion.",
+      "construction": "Breite Stämme und Balken aufbauen; eckige Übergänge setzen; Glyphenbreiten individuell halten.",
+      "parameters": [
+        "stemMass",
+        "counterScale",
+        "cornerTreatment",
+        "barAlignment"
+      ],
+      "guardrails": "Nicht jeden Buchstaben zum identischen Rechteck machen.",
+      "tests": [
+        "A B E M R",
+        "POWER TRAIN"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "partial-operation",
+      "familyCard": "styles/blockbuster.md"
+    },
+    {
+      "id": "blockbuster.angled-block",
+      "family": "Blockbuster / Block",
+      "axis": "letterform + format",
+      "title": "Angled Block",
+      "intent": "Block-Konstruktion mit kontrollierter Schräglage und Richtung.",
+      "construction": "Gemeinsamen Wortwinkel definieren; Glyphen-Innenachsen stabil halten; Spacing kompensieren.",
+      "parameters": [
+        "globalSlant",
+        "localAngleOverride",
+        "stemMass",
+        "spacingCompensation"
+      ],
+      "guardrails": "Scherung darf Counter und Balken nicht entstellen.",
+      "tests": [
+        "A K M N W",
+        "KRAFT MIND"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "partial-operation",
+      "familyCard": "styles/blockbuster.md"
+    },
+    {
+      "id": "blockbuster.monumental-blockbuster",
+      "family": "Blockbuster / Block",
+      "axis": "letterform + format",
+      "title": "Monumental Blockbuster Context",
+      "intent": "Großflächiger, ökonomischer Wortblock auf Basis einer Letterform-Grammatik.",
+      "construction": "Basisgrammatik wählen; Blockproportionen und Detailbudget definieren; Glyphen nicht willkürlich stauchen.",
+      "parameters": [
+        "blockAspectRatio",
+        "density",
+        "capHeight",
+        "detailBudget"
+      ],
+      "guardrails": "Format-/Flächeneigenschaft, keine eigenständige Alphabet-Grammatik.",
+      "tests": [
+        "POWER TRAIN",
+        "gleicher Schriftzug in zwei Layoutmaßstäben"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "partial-operation",
+      "familyCard": "styles/blockbuster.md"
+    },
+    {
+      "id": "wildstyle.open-wildstyle",
+      "family": "Wildstyle",
+      "axis": "composition",
+      "title": "Open Wildstyle",
+      "intent": "Richtungsbetonte Extensions bei gut nachvollziehbarem Buchstabenskelett.",
+      "construction": "Glyphen zunächst getrennt setzen; wenige Extensions von dokumentierten Ankern ergänzen; Verbindungen deklarieren.",
+      "parameters": [
+        "extensionComplexity",
+        "connectionDensity",
+        "abstractionBudget",
+        "negativeSpaceProtection"
+      ],
+      "guardrails": "Keine ankerlosen Spikes oder undeklarierten Kreuzungen.",
+      "tests": [
+        "AB AR BA RA",
+        "GHOST"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "blocked-c04",
+      "familyCard": "styles/wildstyle.md"
+    },
+    {
+      "id": "wildstyle.interlocked-wildstyle",
+      "family": "Wildstyle",
+      "axis": "composition",
+      "title": "Interlocked Wildstyle",
+      "intent": "Dichte strukturelle Verflechtung mehrerer Glyphen.",
+      "construction": "Beziehungsgraph aus Attachment, Overlap, Crossing, Continuation, Near-contact und Shared contour; Layerfolge festlegen.",
+      "parameters": [
+        "interlockDepth",
+        "acceptedJoinCount",
+        "crossingPolicy",
+        "sharedContourPolicy"
+      ],
+      "guardrails": "Jede Verbindung braucht Anker, Typ, Clearance und Layerfolge.",
+      "tests": [
+        "KRAZE SQUE MIND",
+        "dichter Fünfbuchstabenname"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "blocked-c04",
+      "familyCard": "styles/wildstyle.md"
+    },
+    {
+      "id": "wildstyle.abstract-wildstyle",
+      "family": "Wildstyle",
+      "axis": "composition",
+      "title": "Abstract Wildstyle",
+      "intent": "Stärkere Abstraktion mit explizit dokumentierter Rest-Lesbarkeit.",
+      "construction": "Basisglyphen dokumentieren; gezielte Transformationen wählen; Negativraumkanäle schützen; dekorative Marks trennen.",
+      "parameters": [
+        "abstractionBudget",
+        "glyphTraceability",
+        "directionalFlow",
+        "negativeSpaceProtection"
+      ],
+      "guardrails": "Nicht Lesbarkeit behaupten, wenn Glyphenbelege absichtlich verschwinden.",
+      "tests": [
+        "gleicher Schriftzug in Open/Balanced/Abstract"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "blocked-c04",
+      "familyCard": "styles/wildstyle.md"
+    },
+    {
+      "id": "tag-handstyle.monoline-handstyle",
+      "family": "Tag / Handstyle",
+      "axis": "practice + movement",
+      "title": "Monoline Handstyle",
+      "intent": "Einheitlicher Strichcharakter mit rhythmischer, persönlicher Form.",
+      "construction": "Schreibfluss, Neigung, Verbindungen und Abstände als zusammenhängende Bewegung modellieren.",
+      "parameters": [
+        "strokeWeight",
+        "slant",
+        "rhythm",
+        "spacing",
+        "continuity"
+      ],
+      "guardrails": "Keine Font-Mechanik vortäuschen; statische Form beweist keine reale Schreibbewegung.",
+      "tests": [
+        "A R S N",
+        "kurze Fantasienamen"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/tag-handstyle.md"
+    },
+    {
+      "id": "tag-handstyle.broad-nib-flatline",
+      "family": "Tag / Handstyle",
+      "axis": "practice + movement",
+      "title": "Broad-Nib / Flatline",
+      "intent": "Gerichteter Strichkontrast durch breite oder flache Schreibkante.",
+      "construction": "Kantenwinkel und Strichrichtung definieren; Thick/Thin aus Werkzeugorientierung ableiten.",
+      "parameters": [
+        "nibAngle",
+        "pressure",
+        "strokeContrast",
+        "terminalCut"
+      ],
+      "guardrails": "Kontrast muss aus konsistenter Werkzeuglogik folgen, nicht zufällig variieren.",
+      "tests": [
+        "E F H K",
+        "Fantasiename mit diagonalen Strichen"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/tag-handstyle.md"
+    },
+    {
+      "id": "tag-handstyle.brush-gestural",
+      "family": "Tag / Handstyle",
+      "axis": "practice + movement",
+      "title": "Brush / Gestural",
+      "intent": "Elastische, gestische Striche mit variabler Masse und zugespitzten Enden.",
+      "construction": "Druck-/Geschwindigkeitskurve simulieren; Strichenden und Überlappungen kontrollieren.",
+      "parameters": [
+        "pressureCurve",
+        "speedInfluence",
+        "taper",
+        "overlap"
+      ],
+      "guardrails": "Keine Pinseloptik als Ersatz für lesbare Buchstabenstruktur.",
+      "tests": [
+        "A M R S",
+        "kurze gestische Wortprobe"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/tag-handstyle.md"
+    },
+    {
+      "id": "throw-up.rounded-throw-up",
+      "family": "Throw-up",
+      "axis": "practice / format",
+      "title": "Rounded Throw-up",
+      "intent": "Ökonomisches Throw-up-Format mit Bubble-basierter Letterform.",
+      "construction": "Bubble-Grammatik wählen; vereinfachte Kontur und kompakte Wortform definieren; Finish separat halten.",
+      "parameters": [
+        "simplification",
+        "wordDensity",
+        "outlineMode",
+        "fillMode"
+      ],
+      "guardrails": "Throw-up-Kontext ist kein Bubble-Synonym und schreibt keine Farbe vor.",
+      "tests": [
+        "BOMB GHOST",
+        "kurzer Name"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "context-only",
+      "familyCard": "styles/throw-up.md"
+    },
+    {
+      "id": "throw-up.straight-throw-up",
+      "family": "Throw-up",
+      "axis": "practice / format",
+      "title": "Straight Throw-up",
+      "intent": "Ökonomisches Throw-up-Format mit Straight-/Block-Buchstaben.",
+      "construction": "Straight-Basis wählen; robuste, reduzierte Kontur; kompakte Wortorganisation.",
+      "parameters": [
+        "simplification",
+        "stemMass",
+        "wordDensity",
+        "outlineMode"
+      ],
+      "guardrails": "Nicht automatisch Blockbuster oder Bubble nennen.",
+      "tests": [
+        "RISK TRAIN",
+        "kurzer Name"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "context-only",
+      "familyCard": "styles/throw-up.md"
+    },
+    {
+      "id": "throw-up.hollow-outline-throw-up",
+      "family": "Throw-up",
+      "axis": "practice / format",
+      "title": "Hollow / Outline Throw-up",
+      "intent": "Throw-up-Präsentation mit konturbetonter, ungefüllter Darstellung.",
+      "construction": "Format und Letterform wählen; Fill deaktivieren; Outline als Darstellungsschicht führen.",
+      "parameters": [
+        "outlineWeight",
+        "contourPriority",
+        "fillEnabled",
+        "simplification"
+      ],
+      "guardrails": "Hollow ist Behandlung/Präsentation, keine eigene Letterform-Grammatik.",
+      "tests": [
+        "A B R S",
+        "identisches Wort filled vs hollow"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "context-only",
+      "familyCard": "styles/throw-up.md"
+    },
+    {
+      "id": "simple-straight.classic-straight",
+      "family": "Simple / Straight",
+      "axis": "letterform",
+      "title": "Classic Straight",
+      "intent": "Lesbare, klare Grundkonstruktion mit kontrollierter Masse.",
+      "construction": "Skelett und Proportionen definieren; Stämme/Balken konsistent ausbauen; lokale Anatomie bewahren.",
+      "parameters": [
+        "stemMass",
+        "widthClass",
+        "baseline",
+        "spacing"
+      ],
+      "guardrails": "Einfach bedeutet nicht generisch oder mechanisch identisch.",
+      "tests": [
+        "A B G R S",
+        "ABRA"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/simple-straight.md"
+    },
+    {
+      "id": "simple-straight.condensed-straight",
+      "family": "Simple / Straight",
+      "axis": "letterform",
+      "title": "Condensed Straight",
+      "intent": "Schmalere, dichte Straight-Konstruktion.",
+      "construction": "Glyphenbreite selektiv reduzieren; Counter und Innenräume proportional schützen.",
+      "parameters": [
+        "widthScale",
+        "stemMass",
+        "counterClearance",
+        "spacing"
+      ],
+      "guardrails": "Keine globale horizontale Stauchung ohne glyphenspezifische Korrektur.",
+      "tests": [
+        "M N R S",
+        "MIND RISK"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/simple-straight.md"
+    },
+    {
+      "id": "simple-straight.serif-extended",
+      "family": "Simple / Straight",
+      "axis": "letterform",
+      "title": "Serif / Extended",
+      "intent": "Straight-Grundkörper mit strukturellen Serifen oder verlängerten Terminals.",
+      "construction": "Serifenrollen und Endpunkte definieren; Hauptstämme lesbar halten; Extensions in Advance/Spacing einrechnen.",
+      "parameters": [
+        "serifLength",
+        "serifWeight",
+        "terminalExtension",
+        "spacingCompensation"
+      ],
+      "guardrails": "Serifen dürfen keine neuen Glyphen oder zufällige Kollisionen erzeugen.",
+      "tests": [
+        "E F I L T",
+        "TITLE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/simple-straight.md"
+    },
+    {
+      "id": "simple-straight.hollow-straight",
+      "family": "Simple / Straight",
+      "axis": "letterform",
+      "title": "Hollow Straight",
+      "intent": "Straight-Letterform als reine Kontur-/Hohlform-Präsentation.",
+      "construction": "Classic-Straight-Geometrie beibehalten; Fill als Rendering-Layer aus; Konturstärke separat setzen.",
+      "parameters": [
+        "outlineWeight",
+        "fillEnabled",
+        "contourOffset"
+      ],
+      "guardrails": "Hollow darf Frontface-Geometrie nicht verändern.",
+      "tests": [
+        "A B R S",
+        "gleiches Wort filled vs hollow"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "base-operation",
+      "familyCard": "styles/simple-straight.md"
+    },
+    {
+      "id": "angular-blade.faceted-angular",
+      "family": "Angular / Blade",
+      "axis": "letterform",
+      "title": "Faceted Angular",
+      "intent": "Facettierte, kantige Kontur mit klaren Segmentwechseln.",
+      "construction": "Kontur in gerichtete Segmente zerlegen; Knicke nach Glyphenrolle setzen; Innenräume schützen.",
+      "parameters": [
+        "facetCount",
+        "cornerSharpness",
+        "segmentAngle",
+        "counterClearance"
+      ],
+      "guardrails": "Facettierung nicht als zufälliges Zackenrauschen erzeugen.",
+      "tests": [
+        "A K M N W",
+        "KRAZE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/angular-blade.md"
+    },
+    {
+      "id": "angular-blade.blade-tapered",
+      "family": "Angular / Blade",
+      "axis": "letterform",
+      "title": "Blade / Tapered",
+      "intent": "Gerichtete, keilförmige Stämme und zugespitzte Terminals.",
+      "construction": "Taper von definierten Stammachsen ableiten; Terminalspitzen kontrolliert auslaufen lassen.",
+      "parameters": [
+        "taperLength",
+        "taperWidth",
+        "directionVector",
+        "terminalSharpness"
+      ],
+      "guardrails": "Taper darf Stämme nicht unter Mindestbreite reduzieren.",
+      "tests": [
+        "A K R V Y",
+        "BLADE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/angular-blade.md"
+    },
+    {
+      "id": "angular-blade.cut-shard",
+      "family": "Angular / Blade",
+      "axis": "letterform",
+      "title": "Cut / Shard",
+      "intent": "Gezielte Einschnitte und abgesetzte Konturfragmente.",
+      "construction": "Schnittpositionen als explizite Kontur-Features markieren; Fragmentbeziehungen dokumentieren.",
+      "parameters": [
+        "cutDepth",
+        "cutAngle",
+        "shardOffset",
+        "continuityPolicy"
+      ],
+      "guardrails": "Jeder Cut muss bewusst und reproduzierbar sein; keine zufälligen Löcher.",
+      "tests": [
+        "E F K X Z",
+        "FRACTURE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/angular-blade.md"
+    },
+    {
+      "id": "semi-wildstyle.open-semi-wild",
+      "family": "Semi-Wildstyle",
+      "axis": "composition",
+      "title": "Open Semi-Wild",
+      "intent": "Lesbare Basis mit wenigen gerichteten Erweiterungen.",
+      "construction": "Straight/Bubble-Basis wählen; kleine Zahl an Extensions mit klaren Ursprüngen ergänzen.",
+      "parameters": [
+        "extensionCount",
+        "anchorStrength",
+        "abstractionBudget",
+        "flow"
+      ],
+      "guardrails": "Erweiterungen dürfen nicht die Grundform dominieren.",
+      "tests": [
+        "A R S",
+        "GHOST"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/semi-wildstyle.md"
+    },
+    {
+      "id": "semi-wildstyle.connected-semi-wild",
+      "family": "Semi-Wildstyle",
+      "axis": "composition",
+      "title": "Connected Semi-Wild",
+      "intent": "Selektive Verbindungen und kontrollierte Überlagerungen.",
+      "construction": "Verbindungsgraph aufbauen; Join-Typ und Layerfolge pro Paar deklarieren.",
+      "parameters": [
+        "joinDensity",
+        "overlapDepth",
+        "crossingOrder",
+        "clearance"
+      ],
+      "guardrails": "Keine Verbindung ohne nachvollziehbare Glyphenanker.",
+      "tests": [
+        "AB AR RA",
+        "KRAZE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/semi-wildstyle.md"
+    },
+    {
+      "id": "semi-wildstyle.graphic-semi-wild",
+      "family": "Semi-Wildstyle",
+      "axis": "composition",
+      "title": "Graphic Semi-Wild",
+      "intent": "Zurückhaltende sekundäre Strukturen als Teil des Wortflusses.",
+      "construction": "Sekundärformen aus Glyphenachsen ableiten; Primärglyphen visuell priorisieren.",
+      "parameters": [
+        "secondaryStructureBudget",
+        "axisAlignment",
+        "flow",
+        "contrast"
+      ],
+      "guardrails": "Dekoration nicht als strukturelle Verbindung ausgeben.",
+      "tests": [
+        "MIND GHOST",
+        "Monochromvergleich"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/semi-wildstyle.md"
+    },
+    {
+      "id": "traditional-old-school.early-simple-outline",
+      "family": "Traditional / Old-School",
+      "axis": "historical umbrella / mixed",
+      "title": "Early Simple Outline",
+      "intent": "Historische Studienvorlage für einfache Outline-Schriftzüge.",
+      "construction": "Reduzierte Glyphenbasis; Konturführung und frühe Outline-Hierarchie getrennt dokumentieren.",
+      "parameters": [
+        "outlineWeight",
+        "simplification",
+        "spacing",
+        "baseline"
+      ],
+      "guardrails": "Keine universelle historische Vorlage behaupten; Zeitraum/Region angeben.",
+      "tests": [
+        "A B E R",
+        "kurzer Name"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/traditional-old-school.md"
+    },
+    {
+      "id": "traditional-old-school.classic-softie",
+      "family": "Traditional / Old-School",
+      "axis": "historical umbrella / mixed",
+      "title": "Classic Softie",
+      "intent": "Historische Studienvorlage für gerundete, weiche Buchstaben.",
+      "construction": "Softie/Bubble-Formmerkmale mit eigener Glyphenproportion kombinieren.",
+      "parameters": [
+        "inflation",
+        "roundness",
+        "counterScale",
+        "rhythm"
+      ],
+      "guardrails": "Nicht als einzig gültige Old-School-Form darstellen.",
+      "tests": [
+        "B O S U",
+        "SOUL"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/traditional-old-school.md"
+    },
+    {
+      "id": "traditional-old-school.classic-straight-block",
+      "family": "Traditional / Old-School",
+      "axis": "historical umbrella / mixed",
+      "title": "Classic Straight / Block",
+      "intent": "Historische Studienvorlage für einfache, breite Straight-/Block-Buchstaben.",
+      "construction": "Gerade Stämme und Balken mit robuster Wortorganisation kombinieren.",
+      "parameters": [
+        "stemMass",
+        "widthClass",
+        "cornerTreatment",
+        "spacing"
+      ],
+      "guardrails": "Nicht mit einem einzigen Blockbuster-Kanon gleichsetzen.",
+      "tests": [
+        "A E H M",
+        "POWER"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/traditional-old-school.md"
+    },
+    {
+      "id": "traditional-old-school.classic-piece-treatment",
+      "family": "Traditional / Old-School",
+      "axis": "historical umbrella / mixed",
+      "title": "Classic Piece Treatment",
+      "intent": "Piece-Kontext als Schicht über frei gewählter Letterform-Grammatik.",
+      "construction": "Letterform und Komposition wählen; Piece-Rahmen/Anordnung als Kontextparameter führen.",
+      "parameters": [
+        "compositionScale",
+        "detailBudget",
+        "layout",
+        "context"
+      ],
+      "guardrails": "Piece ist Formatkontext, keine einzelne Letterformfamilie.",
+      "tests": [
+        "gleiches Wort mit zwei Letterform-Grammatiken"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/traditional-old-school.md"
+    },
+    {
+      "id": "blackletter.textura-inspired",
+      "family": "Blackletter",
+      "axis": "script-derived letterform",
+      "title": "Textura-Inspired",
+      "intent": "Dichter vertikaler Rhythmus und gebrochene Bögen, inspiriert von Textura.",
+      "construction": "Vertikale Stämme, gebrochene Bögen und enge Binnenräume als eigene Struktur modellieren.",
+      "parameters": [
+        "stemContrast",
+        "verticalRhythm",
+        "archBreak",
+        "counterShape"
+      ],
+      "guardrails": "Textura nicht mit Fraktur oder pauschal Old English gleichsetzen.",
+      "tests": [
+        "H M N U",
+        "TEXT"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/blackletter.md"
+    },
+    {
+      "id": "blackletter.fraktur-inspired",
+      "family": "Blackletter",
+      "axis": "script-derived letterform",
+      "title": "Fraktur-Inspired",
+      "intent": "Gebrochene Striche mit variierenden Kurven und ausgewählten Schwüngen.",
+      "construction": "Gebrochene Hauptzüge und kontrollierte Kurven kombinieren; historische Details bewusst auswählen.",
+      "parameters": [
+        "strokeContrast",
+        "breakAngle",
+        "curveTension",
+        "terminalForm"
+      ],
+      "guardrails": "Nicht beliebige Spikes als Fraktur-Merkmal deklarieren.",
+      "tests": [
+        "A G R S",
+        "FRAKTUR"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/blackletter.md"
+    },
+    {
+      "id": "blackletter.contemporary-hybrid",
+      "family": "Blackletter",
+      "axis": "script-derived letterform",
+      "title": "Contemporary Hybrid",
+      "intent": "Ausgewählte Blackletter-Merkmale in eine moderne Graffiti-Komposition übertragen.",
+      "construction": "Konkrete Skriptmerkmale benennen; mit zeitgenössischer Wortkomposition kombinieren.",
+      "parameters": [
+        "sourceFeatureSet",
+        "contrast",
+        "width",
+        "compositionFlow"
+      ],
+      "guardrails": "Keine unspezifische Blackletter-Mischung; Herkunftsmerkmale dokumentieren.",
+      "tests": [
+        "A R S T",
+        "HYBRID"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/blackletter.md"
+    },
+    {
+      "id": "calligraffiti.broad-nib-calligraffiti",
+      "family": "Calligraffiti",
+      "axis": "hybrid letterform / movement",
+      "title": "Broad-Nib Calligraffiti",
+      "intent": "Breitkantenkontrast mit großmaßstäblicher Graffiti-Komposition.",
+      "construction": "Werkzeugwinkel festlegen; Strichkontrast konsistent ableiten; Glyphen in Wortfluss setzen.",
+      "parameters": [
+        "nibAngle",
+        "contrastRatio",
+        "terminalCut",
+        "spacing"
+      ],
+      "guardrails": "Werkzeuglogik muss über alle Buchstaben konsistent bleiben.",
+      "tests": [
+        "E H M T",
+        "SCRIPT"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/calligraffiti.md"
+    },
+    {
+      "id": "calligraffiti.pointed-brush-calligraffiti",
+      "family": "Calligraffiti",
+      "axis": "hybrid letterform / movement",
+      "title": "Pointed / Brush Calligraffiti",
+      "intent": "Elastische Striche mit druckabhängiger Breite und gestischen Enden.",
+      "construction": "Druckkurve und Strichrichtung definieren; Übergänge und Überlagerungen kontrollieren.",
+      "parameters": [
+        "pressureCurve",
+        "taper",
+        "strokeContrast",
+        "gestureAmplitude"
+      ],
+      "guardrails": "Nicht Brush-Optik mit zufälliger Verzerrung verwechseln.",
+      "tests": [
+        "A R S Y",
+        "FLOW"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/calligraffiti.md"
+    },
+    {
+      "id": "calligraffiti.script-hybrid-calligraffiti",
+      "family": "Calligraffiti",
+      "axis": "hybrid letterform / movement",
+      "title": "Script-Hybrid Calligraffiti",
+      "intent": "Benannte Script-Merkmale werden in eine eigenständige Graffiti-Letterform übersetzt.",
+      "construction": "Ausgangsskript benennen; ausgewählte Merkmale abstrahieren; neue Glyphenstruktur und Wortkomposition definieren.",
+      "parameters": [
+        "scriptFeatureSet",
+        "abstraction",
+        "rhythm",
+        "connectionPolicy"
+      ],
+      "guardrails": "Keine bloße Kopie eines bestehenden Schriftzugs oder einer identifizierbaren Handschrift.",
+      "tests": [
+        "G R S T",
+        "HYBRID"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/calligraffiti.md"
+    },
+    {
+      "id": "anti-style.raw-unpolished",
+      "family": "Anti-Style / Experimental",
+      "axis": "experimental grammar",
+      "title": "Raw / Unpolished",
+      "intent": "Kontrollierte Unregelmäßigkeit statt sauberer, polierter Kontur.",
+      "construction": "Abweichungen in Breite, Ausrichtung und Kontur bewusst setzen; Glyphenidentität dokumentieren.",
+      "parameters": [
+        "irregularityBudget",
+        "baselineDrift",
+        "widthVariance",
+        "contourRoughness"
+      ],
+      "guardrails": "Rauheit muss gestaltet und reproduzierbar sein, nicht Zufallsrauschen.",
+      "tests": [
+        "A E M R S",
+        "STATIC"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/anti-style.md"
+    },
+    {
+      "id": "anti-style.deconstructed-fragmented",
+      "family": "Anti-Style / Experimental",
+      "axis": "experimental grammar",
+      "title": "Deconstructed / Fragmented",
+      "intent": "Gezielte Verschiebung oder Trennung ausgewählter Glyphenkomponenten.",
+      "construction": "Basisglyph dokumentieren; Fragmente wählen und verschieben; Beziehungen und Lesesignale erhalten.",
+      "parameters": [
+        "fragmentCount",
+        "displacement",
+        "omission",
+        "reconstructionCues"
+      ],
+      "guardrails": "Keine willkürliche Fragmentierung; Unlesbarkeit ehrlich kennzeichnen.",
+      "tests": [
+        "K R X Z",
+        "FRACTURE"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/anti-style.md"
+    },
+    {
+      "id": "anti-style.abstract-illegible",
+      "family": "Anti-Style / Experimental",
+      "axis": "experimental grammar",
+      "title": "Abstract / Illegible-by-Design",
+      "intent": "Bewusste Bewegung von lesbarer Schrift zur visuellen Komposition.",
+      "construction": "Ausgangswort festhalten; verbleibende Buchstabenmerkmale deklarieren; Ambiguität markieren.",
+      "parameters": [
+        "abstractionLevel",
+        "retainedFeatures",
+        "glyphTraceability",
+        "negativeSpace"
+      ],
+      "guardrails": "Keine Lesbarkeit behaupten, wo keine mehr vorhanden ist.",
+      "tests": [
+        "gleiches Wort in open/partial/abstract"
+      ],
+      "maturity": "documented-draft",
+      "engineStatus": "documentation-only",
+      "familyCard": "styles/anti-style.md"
+    }
+  ]
+}
