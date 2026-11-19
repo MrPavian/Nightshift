@@ -1,34 +1,214 @@
 {
-  "schemaVersion": "1.0",
-  "objectObservations": [],
   "glyphObservations": [
     {
-      "id": "GLY-LFA-JHO-001-T1",
-      "specimenId": "LFA-JHO-001",
-      "glyph": "T",
-      "transcriptionConfidence": "high",
-      "legibility": "medium",
+      "editorialState": "source-checked",
       "features": [
         "wide-crossbar",
         "vertical-stem",
         "irregular-proportions"
       ],
+      "glyph": "T",
+      "id": "GLY-LFA-JHO-001-T1",
+      "legibility": "medium",
       "observationDe": "Das T am Ende von „JUST“ ist als einzelner Buchstabe erkennbar. Es besitzt einen breiten, massiven Querbalken und einen kräftigen, leicht unregelmäßigen Stamm. Die gelbe Buchstabenfläche wird von einer dunklen, versetzten Tiefen- beziehungsweise Schattenform begleitet; diese gehört zur Darstellung und nicht zur Grundkontur des T.",
-      "editorialState": "source-checked"
+      "specimenId": "LFA-JHO-001",
+      "transcriptionConfidence": "high"
     },
     {
-      "id": "GLY-LFA-JOKER-001-O1",
-      "specimenId": "LFA-JOKER-001",
-      "glyph": "O",
-      "transcriptionConfidence": "high",
-      "legibility": "medium",
+      "editorialState": "source-checked",
       "features": [
         "narrow-oval-counter",
         "upright-axis",
         "broad-marker-stroke"
       ],
+      "glyph": "O",
+      "id": "GLY-LFA-JOKER-001-O1",
+      "legibility": "medium",
       "observationDe": "Das O in „JOKER“ ist als hoher, schmaler und leicht unregelmäßiger Ovalzug ausgeführt. Die Innenöffnung bleibt geschlossen und deutlich sichtbar; die Strichbreite variiert durch den Markerzug. Die Form ist Teil eines verbundenen Tags, kein isolierter Alphabetbuchstabe.",
-      "editorialState": "source-checked"
+      "specimenId": "LFA-JOKER-001",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "open-counter",
+        "monoline"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-SEA-2018-C1",
+      "legibility": "high",
+      "observationDe": "Das C besteht aus einem einzelnen gebogenen Zug mit zwei offenen Enden. Die Öffnung weist nach rechts; die Enden laufen spitz aus.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "mixed-contour",
+        "closed-counter",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "D",
+      "id": "GLY-BSCI-SEA-2018-D1",
+      "legibility": "high",
+      "observationDe": "Das D besitzt einen geraden linken Stamm und einen gerundeten Außenbogen. Ein langer Auslauf zieht aus dem unteren rechten Bereich über die Zellgrenze.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "O",
+      "id": "GLY-BSCI-SEA-2018-O1",
+      "legibility": "medium",
+      "observationDe": "Das O ist als geschlossene, ovale Schleife angelegt. Ein Zug läuft rechts aus der Form heraus und verlängert die Kontur.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "monoline",
+        "diagonal-cross",
+        "extended-terminal"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-SEA-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X entsteht aus zwei sich kreuzenden Diagonalzügen. Ein Zug setzt sich deutlich über den Kreuzungspunkt hinaus fort.",
+      "specimenId": "BSCI-SEA-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar"
+      ],
+      "glyph": "H",
+      "id": "GLY-BSCI-ENZOEN-2018-H1",
+      "legibility": "high",
+      "observationDe": "Das H besteht aus zwei getrennten, leicht geneigten Stämmen, die durch einen quer verlaufenden Zug verbunden werden. Die breiten Striche zeigen kantige Richtungswechsel.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar"
+      ],
+      "glyph": "T",
+      "id": "GLY-BSCI-ENZOEN-2018-T1",
+      "legibility": "high",
+      "observationDe": "Das T hat einen breiten, leicht gebogenen Querbalken und einen kurzen, nach unten geführten Stamm. Die Enden sind kantig und leicht ausgestellt.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib"
+      ],
+      "glyph": "V",
+      "id": "GLY-BSCI-ENZOEN-2018-V1",
+      "legibility": "high",
+      "observationDe": "Das V wird aus zwei breiten Diagonalzügen gebildet, die in einem schmalen unteren Winkel zusammentreffen. Die Strichenden sind stumpf bis leicht zugespitzt.",
+      "specimenId": "BSCI-ENZOEN-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "open-counter",
+        "broad-nib",
+        "extended-terminal"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-XCALET-2018-C1",
+      "legibility": "medium",
+      "observationDe": "Das C ist als offener, spitz zulaufender Bogen ausgeführt. Die breiten Markerzüge erzeugen wechselnde Strichbreiten; die Öffnung bleibt deutlich sichtbar.",
+      "specimenId": "BSCI-XCALET-2018-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "diagonal-cross",
+        "extended-terminal"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-XCALET-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X besteht aus zwei breiten, sich kreuzenden Diagonalzügen. Beide Züge laufen über den Kreuzungspunkt hinaus und bilden lange, spitz zulaufende Enden.",
+      "specimenId": "BSCI-XCALET-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "crossbar",
+        "extended-terminal"
+      ],
+      "glyph": "T",
+      "id": "GLY-BSCI-KNOME-2018-T1",
+      "legibility": "medium",
+      "observationDe": "Das T kombiniert einen breiten, annähernd waagerechten Querzug mit einem schräg abwärts laufenden Stamm. Der Querzug ragt deutlich über den Stamm hinaus.",
+      "specimenId": "BSCI-KNOME-2018-ALPHA-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "no-counter",
+        "broad-nib",
+        "diagonal-cross"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-KNOME-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X wird durch zwei breite Diagonalzüge gebildet, die sich zentral kreuzen. Die Enden sind lang ausgezogen und unterschiedlich stark zugespitzt.",
+      "specimenId": "BSCI-KNOME-2018-ALPHA-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "heavy-mass"
+      ],
+      "glyph": "O",
+      "id": "GLY-LFA-BOMB-046-O1",
+      "legibility": "medium",
+      "observationDe": "Das O im Titel BOMB ist als dominante, gerundete Form mit geschlossener Innenfläche sichtbar. Die Kontur sitzt in einer schweren, stark verdichteten Titelgestaltung; Details werden durch die umgebende Illustration begrenzt.",
+      "specimenId": "LFA-BOMB-046-001",
+      "transcriptionConfidence": "medium"
     }
-  ]
+  ],
+  "objectObservations": [],
+  "schemaVersion": "1.0"
 }

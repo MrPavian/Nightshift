@@ -1,0 +1,1460 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "nightshift-street-fonts-artist-index",
+  "title": "Street Fonts — Artist and page index",
+  "book": {
+    "title": "Street Fonts: Graffiti Alphabets from Around the World",
+    "author": "Claudia Walde (MadC)",
+    "publisher": "Thames & Hudson",
+    "edition": "2018 reprint",
+    "isbn": "9780500294161",
+    "total_pages": 320,
+    "alphabet_pages": "8–314"
+  },
+  "purpose": "Navigation index for direct inspection of the 154 artist-designed alphabet entries. This is bibliographic navigation data, not visual glyph evidence.",
+  "source_records": [
+    {
+      "url": "https://www.kriso.lv/graffiti-alphabets-street-fonts-from-around-db-9780500294291.html",
+      "role": "Detailed contents listing with artist names and page numbers; page sequence transcribed from the visible contents excerpt."
+    },
+    {
+      "url": "https://library.tcdc.or.th/record/view/b00040632",
+      "role": "Independent library catalogue confirming the book and artist contents list."
+    },
+    {
+      "url": "https://www.thamesandhudson.com/products/street-fonts",
+      "role": "Publisher description confirming 154 artists, 30 countries, and the shared one-page A–Z brief."
+    }
+  ],
+  "editorial_notes": [
+    "The publisher states 154 artists. The detailed contents listing runs from page 8 to page 314 in two-page increments, yielding 154 alphabet entries.",
+    "Names are transcribed as printed in the detailed contents listing; variants and spelling differences in other catalogues are not silently reconciled.",
+    "The two consecutive Does entries (pages 84 and 86) are retained separately because the contents listing gives two entries with the same name; identity must be checked in the book.",
+    "A page entry is not automatically a hand-drawn graffiti specimen. Record medium, technique, context and visual inspection status after direct inspection.",
+    "Do not create accepted glyph observations from this index or catalogue descriptions.",
+    "Artist spellings were corrected against the detailed contents listing for ISBN 9780500294291. A second independent catalogue (TCDC) confirms the general contributor sequence but contains spelling/spacing variants; do not silently merge variants.",
+    "The Martha Cooper Library at URBAN NATION Museum lists the German edition as available in its Präsenzbestand. This is a confirmed reading-room access route, not remote access or interlibrary loan. Confirm appointment and photography permissions before travel."
+  ],
+  "entries": [
+    {
+      "artist": "123 Klan",
+      "page_start": 8,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "44 Flavours",
+      "page_start": 10,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Aislap",
+      "page_start": 12,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Akor",
+      "page_start": 14,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Antistatik",
+      "page_start": 16,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Apashe",
+      "page_start": 18,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Aple 76",
+      "page_start": 20,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Artime Joe",
+      "page_start": 22,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ashes",
+      "page_start": 24,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Aske",
+      "page_start": 26,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Askew One",
+      "page_start": 28,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Atom One",
+      "page_start": 30,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Baron",
+      "page_start": 32,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Been 3",
+      "page_start": 34,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Beet 74",
+      "page_start": 36,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Berst",
+      "page_start": 38,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Bonzer",
+      "page_start": 40,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Cakes",
+      "page_start": 42,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Can Two",
+      "page_start": 44,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Cap One",
+      "page_start": 46,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Casper",
+      "page_start": 48,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ceet",
+      "page_start": 50,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ces One",
+      "page_start": 52,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Chas",
+      "page_start": 54,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Cheque",
+      "page_start": 56,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Choer",
+      "page_start": 58,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "CMP One",
+      "page_start": 60,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Crash",
+      "page_start": 62,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Cren One",
+      "page_start": 64,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dare",
+      "page_start": 66,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dasone",
+      "page_start": 68,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dater",
+      "page_start": 70,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Demi 89",
+      "page_start": 72,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Demer",
+      "page_start": 74,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dems 333",
+      "page_start": 76,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ders",
+      "page_start": 78,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Desk7",
+      "page_start": 80,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dezio",
+      "page_start": 82,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Does",
+      "page_start": 84,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Does",
+      "page_start": 86,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dope78",
+      "page_start": 88,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Dream",
+      "page_start": 90,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Erni Vales",
+      "page_start": 92,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Esow",
+      "page_start": 94,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Faith47",
+      "page_start": 96,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Fisek",
+      "page_start": 98,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Flying Fortress",
+      "page_start": 100,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Hera",
+      "page_start": 102,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Hesoe",
+      "page_start": 104,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Homer",
+      "page_start": 106,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Honet",
+      "page_start": 108,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Hooks",
+      "page_start": 110,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ikaroz",
+      "page_start": 112,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ilk",
+      "page_start": 114,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Inkie",
+      "page_start": 116,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Izzy",
+      "page_start": 118,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jaba One",
+      "page_start": 120,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jay Flow",
+      "page_start": 122,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jeremyville",
+      "page_start": 124,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jeroo",
+      "page_start": 126,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "JINSBH",
+      "page_start": 128,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jordae",
+      "page_start": 130,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Jorz",
+      "page_start": 132,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Justi95",
+      "page_start": 134,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Kapi",
+      "page_start": 136,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Katchi",
+      "page_start": 138,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Kesy One",
+      "page_start": 140,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Kies",
+      "page_start": 142,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Kio",
+      "page_start": 144,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Klark Kent",
+      "page_start": 146,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Klub7",
+      "page_start": 148,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Kola",
+      "page_start": 150,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Lady Diva",
+      "page_start": 152,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Late",
+      "page_start": 154,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "L'Atlas",
+      "page_start": 156,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Loomit",
+      "page_start": 158,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "MadC",
+      "page_start": 160,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Mahon",
+      "page_start": 162,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ment",
+      "page_start": 164,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Mise",
+      "page_start": 166,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Mister",
+      "page_start": 168,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Mover",
+      "page_start": 170,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Nerf",
+      "page_start": 172,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ogre",
+      "page_start": 174,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ozer",
+      "page_start": 176,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Paism",
+      "page_start": 178,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Panic",
+      "page_start": 180,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Pariz One",
+      "page_start": 182,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Persue",
+      "page_start": 184,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Phati",
+      "page_start": 186,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Pisco",
+      "page_start": 188,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Pistone",
+      "page_start": 190,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Plaque",
+      "page_start": 192,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Poch",
+      "page_start": 194,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Popil",
+      "page_start": 196,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Puppet",
+      "page_start": 198,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Qbrick",
+      "page_start": 200,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rake",
+      "page_start": 202,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rater",
+      "page_start": 204,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Reece",
+      "page_start": 206,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Replete",
+      "page_start": 208,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rew",
+      "page_start": 210,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Riam",
+      "page_start": 212,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rime",
+      "page_start": 214,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Ripo",
+      "page_start": 216,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Roket",
+      "page_start": 218,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rosy One",
+      "page_start": 220,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Rusl",
+      "page_start": 222,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Saint",
+      "page_start": 224,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Scheme",
+      "page_start": 226,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Scope",
+      "page_start": 228,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Scotty76",
+      "page_start": 230,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sen2",
+      "page_start": 232,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Serch",
+      "page_start": 234,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Serial",
+      "page_start": 236,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Shaw One",
+      "page_start": 238,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Shem",
+      "page_start": 240,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sign",
+      "page_start": 242,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sirek",
+      "page_start": 244,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sirum",
+      "page_start": 246,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Skore",
+      "page_start": 248,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Slider",
+      "page_start": 250,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Smashi37",
+      "page_start": 252,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sonic",
+      "page_start": 254,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Soten",
+      "page_start": 256,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Stan",
+      "page_start": 258,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Staynice",
+      "page_start": 260,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Stereo",
+      "page_start": 262,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Stuka",
+      "page_start": 264,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Super A",
+      "page_start": 266,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Sweetuno",
+      "page_start": 268,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Swet",
+      "page_start": 270,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Take2",
+      "page_start": 272,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Takecare",
+      "page_start": 274,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Tilt",
+      "page_start": 276,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Tizer",
+      "page_start": 278,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Toast One",
+      "page_start": 280,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Totem",
+      "page_start": 282,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Towns",
+      "page_start": 284,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Tweb76",
+      "page_start": 286,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Vans The Omega",
+      "page_start": 288,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Vents",
+      "page_start": 290,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Vibes",
+      "page_start": 292,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Vision",
+      "page_start": 294,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Wane",
+      "page_start": 296,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Mr. Wany",
+      "page_start": 298,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Wert",
+      "page_start": 300,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Wok",
+      "page_start": 302,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Wow123",
+      "page_start": 304,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Xeva",
+      "page_start": 306,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Xpome",
+      "page_start": 308,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Zedz",
+      "page_start": 310,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Zeus40",
+      "page_start": 312,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    },
+    {
+      "artist": "Zombie",
+      "page_start": 314,
+      "page_count": 2,
+      "visual_status": "not_inspected",
+      "medium": "unknown",
+      "glyph_eligibility": "not_assessed",
+      "contents_source": "Kriso detailed contents listing"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kriso.lv/graffiti-alphabets-street-fonts-from-around-db-9780500294291.html",
+      "role": "Detailed contents listing with exact contributor spellings and page numbers; primary navigation transcription source."
+    },
+    {
+      "url": "https://library.tcdc.or.th/record/view/b00040632",
+      "role": "Independent library catalogue and contributor-list cross-check; some names are normalized or OCR-like variants, so the detailed contents listing is preferred for spelling."
+    },
+    {
+      "url": "https://www.thamesandhudson.com/products/street-fonts",
+      "role": "Publisher description confirming 154 artists, 30 countries and the shared one-page A–Z brief."
+    },
+    {
+      "url": "https://open.urban-nation.com/de-de/Mediensuche/Einfache-Suche?detail=5&searchhash=OCLC_327eb83214df669b39bc9e035ccc9d20ecc3ddce&top=y",
+      "role": "Martha Cooper Library catalogue record for the German edition, ISBN 9783791381794; status listed as available, reading-room reference copy."
+    }
+  ],
+  "access_points": [
+    {
+      "institution": "Martha Cooper Library at URBAN NATION Museum",
+      "city": "Berlin, Germany",
+      "edition": "Street fonts: Graffiti-Schriften von Berlin bis New York",
+      "isbn": "9783791381794",
+      "catalogue_status": "available; Präsenzbestand",
+      "access": "Reading-room use by prior appointment and registration; no interlibrary loan; request title from closed stacks to reading room.",
+      "opening_hours": "Tuesday 10:00–15:30; Thursday 12:00–15:30",
+      "address": "Bülowstraße 7, 10783 Berlin, Germany",
+      "contact": "mcl@stiftung-berliner-leben.de",
+      "website": "https://urban-nation.com/about-us/martha-cooper-library/",
+      "catalogue_url": "https://open.urban-nation.com/de-de/Mediensuche/Einfache-Suche?detail=5&searchhash=OCLC_327eb83214df669b39bc9e035ccc9d20ecc3ddce&top=y",
+      "note": "Bestätigter Bestandseintrag, aber keine Fernleihe. Vor einer Reise Termin, Verfügbarkeit und Fotoregeln direkt mit der Bibliothek klären."
+    }
+  ]
+}

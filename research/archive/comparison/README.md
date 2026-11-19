@@ -42,6 +42,18 @@ Nur wenn das Fundstück `visualState: hi_fi_image_opened_and_inspected` (oder `p
 - Kein Buchstabe wird aus einem unleserlichen Wort erschlossen.
 - `observationDe` ist der sichtbare, deutsche Text. Was gesehen wurde und was gedeutet ist, bleibt getrennt; eine Deutung gehört als `objectObservation` mit `kind: "interpretation"` erfasst.
 
+## Merkmals-Tags für Glyphen
+
+Die Werte in `features` sind beobachtbare Formmerkmale, keine Stilnamen und keine Qualitätsurteile. Möglichst wenige, konkret sichtbare Tags verwenden:
+
+- **Kontur:** `angular`, `rounded`, `mixed-contour`
+- **Innenraum:** `open-counter`, `closed-counter`, `no-counter`
+- **Struktur:** `crossbar`, `diagonal-cross`, `looped`, `connected`, `overlapping`
+- **Strich:** `monoline`, `broad-nib`, `variable-width`
+- **Ausläufe:** `extended-terminal`
+
+Nur Tags vergeben, die direkt am Einzelglyph sichtbar sind. Ein Merkmal darf nicht aus dem vermuteten Stil oder aus anderen Buchstaben derselben Seite abgeleitet werden.
+
 ## Einen Vergleichsbefund eintragen
 
 ```json

@@ -311,6 +311,110 @@
       ],
       "title": "Urban Nation — SEEN: Black Books Vol. 3 review",
       "url": "https://urban-nation.com/2023/09/books-in-the-mcl-on-the-run-magazine-black-books-volume-3-seen-zebster-with-additional-archival-photos-by-martha-cooper-henry-chalfant/"
+    },
+    {
+      "confidenceRaw": "high for archive structure and directly opened page images; item-level authorship and dates require verification",
+      "evidenceRaw": "Art Crimes maintains an A–Z blackbook sketch archive with individual artist pages. Direct image URLs are available for some entries, including Crime 2; a separate Priz and Stan feature includes a photographed blackbook page and first-person historical context.",
+      "id": "ACQ-ARTCRIMES-01",
+      "institution": "Art Crimes",
+      "nextActionRaw": "Prioritize individual page images with clear, non-overlapping letterforms; capture artist/page/date provenance and inspect the image itself before accepting any glyph.",
+      "rightsRaw": "artist and contributor copyright; link-only; no image copying, tracing or redistribution without item-level permission",
+      "scope": "artist_indexed_blackbook_sketch_archive_and_related_writer_features",
+      "sourceType": "graffiti_archive_blackbook_pages",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Art Crimes — Blackbook Sketch Archive",
+      "url": "https://www.graffiti.org/sketch/blackbook/index.html"
+    },
+    {
+      "confidenceRaw": "high for institutional provenance and gallery structure; individual glyph analysis limited to low-resolution gallery previews",
+      "evidenceRaw": "Getty Research Institute documents LA Liber Amicorum / Getty Graffiti Black Book as 143 original works on paper by 151 invited graffiti and tattoo artists. Individual artist pages are presented in a digitized online gallery. The gallery's directly opened mosaic previews support page-level visual screening but are not sufficient for reliable isolated glyph transcription at this resolution.",
+      "id": "ACQ-GETTY-01",
+      "institution": "Getty Research Institute",
+      "nextActionRaw": "Inspect individual artist works at the highest available resolution; record artist attribution and item provenance; prioritize pages with isolated letters or complete alphabets. Seek the published L.A. Graffiti Black Book or Getty research access when gallery previews are insufficient.",
+      "rightsRaw": "Copyright held by contributing artists; link-only; no image copying, tracing or redistribution without item-level permission",
+      "scope": "143_original_works_on_paper_by_151_graffiti_and_tattoo_artists",
+      "sourceType": "institutional_digitized_graffiti_blackbook_gallery",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Getty Research Institute — LA Liber Amicorum / Getty Graffiti Black Book",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html"
+    },
+    {
+      "confidenceRaw": "high for publication scope, artist count, standardized alphabet brief and bibliographic provenance; individual letterform inspection requires access to the printed pages",
+      "evidenceRaw": "Claudia Walde (MadC) spent over two years collecting alphabets by 154 artists from 30 countries. Each contributor was asked to design all 26 Latin letters within one book page. The publisher describes the results as original alphabets spanning sketches, sculpture, digital art and photography. Bibliographic details are corroborated by Google Books, Thames & Hudson and the German Prestel edition.",
+      "id": "ACQ-STREETFONTS-01",
+      "institution": "Thames & Hudson / Prestel; curated by Claudia Walde (MadC)",
+      "nextActionRaw": "Obtain a physical or legitimate digital copy and inspect artist pages directly. Build an artist-to-page index from the contents list, then sample repeated glyphs (A, B, E, R, S, T) across distinct artists. Record the work as an authored alphabet specimen, distinguishing hand-drawn, digital, sculptural and photographic approaches.",
+      "rightsRaw": "Copyright held by individual artists and publisher; book access does not grant reproduction rights; link-only and no scanning/copying into repo without permission",
+      "scope": "154_complete_A_to_Z_alphabets_by_artists_from_30_countries",
+      "sourceType": "curated_published_graffiti_alphabet_compendium",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Street Fonts — Graffiti Alphabets from Around the World (Claudia Walde / MadC)",
+      "url": "https://www.thamesandhudson.com/products/street-fonts"
+    },
+    {
+      "confidenceRaw": "high for forum provenance and author chronology; direct visual inspection completed for the two linked 2018 alphabet sheets",
+      "evidenceRaw": "A named forum member presents multiple personal handstyle alphabets over time. The post explicitly labels one sheet as the writer's 2018 effort and a second as a rejected alternative; both linked images are directly viewable. The thread also documents earlier alphabet attempts from 2005 onward.",
+      "id": "ACQ-BSCI-01",
+      "institution": "Bombing Science Forums",
+      "nextActionRaw": "Use the two 2018 A–Z sheets as a single-writer handstyle development specimen; inspect isolated labelled glyphs only where the full contour is clearly separable. Search the same forum for other writers' independent alphabet sheets.",
+      "rightsRaw": "artist copyright; link-only; do not copy, trace, embed or redistribute images",
+      "scope": "single_writer_handstyle_alphabets_2005_to_2019",
+      "sourceType": "graffiti_forum_writer_alphabet_thread",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Bombing Science Forums — Over a decade of handstyle alphabets (knowme)",
+      "url": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/"
+    },
+    {
+      "confidenceRaw": "high for challenge rules, submission attribution and dates; three individual alphabet images directly opened and inspected",
+      "evidenceRaw": "The forum challenge explicitly asks participants to submit a complete alphabet in tags/handstyles only, using a shared printed A–Z sheet. The thread contains submissions by multiple named forum users, each with an individual post and image.",
+      "id": "ACQ-BSCI-02",
+      "institution": "Bombing Science Forums",
+      "nextActionRaw": "Continue inspecting individual submissions on the nine-page thread; record artist, post date, image URL and medium for each. Promote only individually legible glyphs after direct visual inspection.",
+      "rightsRaw": "artist copyright for each submission; link-only; no copying, tracing, embedding or redistribution",
+      "scope": "multi_artist_handstyle_alphabet_challenge_2018",
+      "sourceType": "graffiti_forum_alphabet_challenge",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Bombing Science Forums — Alphabet Challenge (2018)",
+      "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
+    },
+    {
+      "confidenceRaw": "high for publisher/blog bibliographic description and directly viewed sample pages; individual glyph anatomy not accepted from this preview",
+      "evidenceRaw": "All City Blog links a publicly accessible 11-page PDF excerpt of the 2013 updated edition of Woshe's Blackbook. The preview includes cover, contents, introductory material and selected instructional/lettering spreads.",
+      "id": "ACQ-ALT-01",
+      "institution": "Éditions Alternatives / All City Blog",
+      "nextActionRaw": "Use the public excerpt to map the book's didactic method and visible examples; do not infer unseen pages or treat promotional preview images as a complete alphabet. Search for further openly accessible sample spreads.",
+      "rightsRaw": "Copyright Woshe / Éditions Alternatives; link-only; preview access does not grant image reuse or tracing rights",
+      "scope": "public_11_page_excerpt_of_2013_blackbook",
+      "sourceType": "publisher_book_preview",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "wildstyle_semi_wildstyle",
+        "tag_handstyle"
+      ],
+      "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
+      "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
     }
   ]
 }
