@@ -1604,6 +1604,46 @@
       "sourceRecordId": "ACQ-SI-02",
       "title": "VANDAL",
       "visualState": "catalogue_metadata_only"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Joker",
+      "date": "1993",
+      "dateQualifier": "circa",
+      "displayMode": "link-only",
+      "id": "LFA-JOKER-001",
+      "identifier": null,
+      "imageRights": "link-only",
+      "itemUrl": "https://exhibitions.letterformarchive.org/mischief/artworks/joker-tag-sticker",
+      "photographerName": null,
+      "place": "Walnut Creek, California, USA",
+      "raw": {
+        "candidateGrammarTags": [
+          "handstyle",
+          "marker-tag"
+        ],
+        "compositionMode": "Single marker tag across a rectangular adhesive label.",
+        "confidence": "high for catalogue caption and visible word; medium for individual letter anatomy",
+        "creator": "Joker (as credited by Letterform Archive)",
+        "date": "ca. 1993",
+        "dimensions": "3.375 × 2.5 inches",
+        "executionFormat": "marker tag on adhesive label",
+        "identifier": null,
+        "letterAnatomyNotes": "The five-letter word JOKER is visibly transcribed. Individual strokes connect and overlap; isolate only glyphs whose counters and principal strokes remain identifiable.",
+        "photographerCredit": "Letterform Archive gallery image",
+        "place": "Walnut Creek, California",
+        "rightsStatus": "link-only; image reuse rights and reproduction permission not established; no image copied",
+        "viewUrl": "https://exhibitions.letterformarchive.org/mischief/media/pages/artworks/joker-tag-sticker/cd0074c072-1687555462/lfa_skillscollections_0375_001.jpg",
+        "visibleGlyphs": "Large black marker tag reading JOKER across a blue-bordered rectangular label; the five-letter sequence is legible, though adjacent strokes connect and overlap.",
+        "visualReviewStatus": "hi_fi_gallery_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace the tag, its word, exact contours, marker texture, or label composition.",
+        "wordCompositionNotes": "A single connected handstyle/tag; this is not a constructed block alphabet or isolated type specimen."
+      },
+      "sourceRecordId": "ACQ-LFA-03",
+      "title": "Joker Tag Sticker",
+      "visualState": "hi_fi_image_opened_and_inspected"
     }
   ]
 }
