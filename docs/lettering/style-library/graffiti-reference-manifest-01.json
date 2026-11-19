@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "33_item_level_records;_9_objects_visually_inspected;_1_explicitly_labelled_throw_up;_two_new_piece_images_and_one_freight_piece_inspected;_rights_clearance_pending",
+  "corpus_status": "33_item_level_records;_9_objects_visually_inspected;_1_explicitly_labelled_throw_up;new_large_scale_blackbook_and_outline_archives_identified_for_alphabet_harvesting;rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -256,6 +256,88 @@
       "rights_status": "viewing/research access does not grant reproduction rights; link-only until item-level permission confirmed",
       "confidence": "high",
       "next_action": "Use the online gallery and research visit to identify specific zines/pages and record object-level provenance, page numbers, visible lettering and exact terminology."
+    },
+    {
+      "id": "ACQ-FTA-01",
+      "title": "Full Time Artists — Graffiti Blackbook Sketches",
+      "url": "https://www.fulltimeartists.com/graffiti/graffiti_blackbooks.php",
+      "source_type": "writer_crew_blackbook_archive",
+      "source_scope": "hundreds_of_blackbook_pages",
+      "target_grammars": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Archive describes hundreds of blackbook pages by FTA crew members and writers from San Jose, San Francisco and elsewhere, with works from 1991 to present; pages are from physical sketchbooks and use varied media.",
+      "rights_status": "copyright FTA/original authors; link-only; no duplication or redistribution",
+      "confidence": "high for collection description; individual visual inspection required",
+      "next_action": "Open individual image pages, record artist/page/date where available, and compare repeated letters across pages."
+    },
+    {
+      "id": "ACQ-FTA-02",
+      "title": "Full Time Artists — Ink Outlines",
+      "url": "https://www.fulltimeartists.com/graffiti/ink_outlines.php",
+      "source_type": "writer_crew_outline_archive",
+      "source_scope": "hundreds_of_monochrome_outline_pages",
+      "target_grammars": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Archive describes hundreds of monochrome outlines extracted from sketchbooks, created 1991 onward with rapidograph/inkers, markers and ballpoints; some are blueprints for full-scale spray pieces.",
+      "rights_status": "copyright FTA/original authors; link-only; no duplication or redistribution",
+      "confidence": "high for collection description; individual visual inspection required",
+      "next_action": "Prioritize clean outlines because they expose letter skeletons without fill colour or rendering effects."
+    },
+    {
+      "id": "ACQ-RIJK-01",
+      "title": "Rijksmuseum — Boris Tellegen / DELTA, Blackbook I",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Blackbook-I--5ee1ac7c85cbe5a1b873b4649201df2a",
+      "source_type": "museum_object_record_and_related_pages",
+      "source_scope": "blackbook_1986_1992_with_80_plus_related_pages",
+      "target_grammars": [
+        "blockbuster_block",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Rijksmuseum record identifies Blackbook I by Boris Tellegen (DELTA), 1986–1992, object RP-T-2021-450, and lists dozens of individual related page objects. Museum notes his recognizable 3D-looking letters. Main book image is unavailable due to copyright, but related page records may provide object-level access.",
+      "rights_status": "copyright Boris Tellegen; main image unavailable; check each related page rights",
+      "confidence": "high for metadata; page-level visual access not yet verified",
+      "next_action": "Inspect related page records individually; prioritize pages with full words and repeated glyphs."
+    },
+    {
+      "id": "ACQ-DGL-01",
+      "title": "Dutch Graffiti Library — Blackbooks collection",
+      "url": "https://dutch-graffiti-library.nl/collection/blackbooks/",
+      "source_type": "graffiti_library_blackbook_collection",
+      "source_scope": "multiple_artist_blackbooks_1990s_to_present",
+      "target_grammars": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Collection lists blackbooks including Eras (1990–2020) with tags, throw-ups and pieces, and other named books; describes blackbooks as sites for sketches, signatures and style development.",
+      "rights_status": "collection access does not grant reproduction rights; item-level terms required",
+      "confidence": "high for search-result collection description; page images not yet inspected",
+      "next_action": "Catalogue artist, year, page and letter content from individual blackbook records."
+    },
+    {
+      "id": "ACQ-GML-01",
+      "title": "000000book — Graffiti Markup Language archive",
+      "url": "https://jamiedubs.com/blackbook/",
+      "source_type": "digital_graffiti_tag_dataset",
+      "source_scope": "75000_plus_digital_tag_records",
+      "target_grammars": [
+        "tag_handstyle"
+      ],
+      "evidence": "Archive describes over 75,000 GML tags from graffiti applications, with replayable stroke data and metadata. Useful for stroke order, speed, rhythm and handstyle variation, not a substitute for piece alphabets.",
+      "rights_status": "check dataset/API licence and each contributor's permissions before reuse",
+      "confidence": "high for archive description; data-level sampling not yet performed",
+      "next_action": "Inspect API and licence; determine whether tag stroke traces can be used only for non-commercial research or feature design."
     }
   ],
   "specimen_record_template": {
