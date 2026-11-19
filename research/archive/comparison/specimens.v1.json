@@ -1905,6 +1905,44 @@
       "sourceRecordId": "ACQ-ALT-01",
       "title": "Woshe — M le Mammouth instructional spread",
       "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "Alphabet study — C/c",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Woshe",
+      "date": null,
+      "dateQualifier": "unknown",
+      "displayMode": "link-only",
+      "id": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "identifier": "Alphabeatz; publisher ISBN 9788417412029; sample page explicitly headed C/c",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://designbook.com.ua/book/alphabeatz-graffiti-alphabets-from-a-to-z-14602",
+      "photographerName": null,
+      "place": null,
+      "raw": {
+        "candidateGrammarTags": [
+          "letter_construction_study",
+          "alphabet_study",
+          "wildstyle_semi_wildstyle"
+        ],
+        "compositionMode": "A page devoted to C/c, with two separate large graffiti letter constructions and explanatory text.",
+        "confidence": "high for the labelled letter C/c and visible separation of the two constructions; exact print page number not established.",
+        "creator": "Woshe",
+        "date": "Unknown for this individual page; book edition metadata varies by market.",
+        "executionFormat": "Printed alphabet-study book page, shown in a retailer sample preview.",
+        "identifier": "Alphabeatz, ISBN 9788417412029",
+        "letterAnatomyNotes": "The page is explicitly headed C/c. It presents a large uppercase C construction with an open right side and extended angular terminals, alongside a second, more rounded/interwoven variant. The two variants remain visually separate.",
+        "rightsStatus": "Copyright Woshe / publisher; link-only; no image copied or traced.",
+        "viewUrl": "https://designbook.com.ua/product_img/cache/4b12cfc3a6d5593bf773fb8e2ccb9610_720_820.jpg",
+        "visibleGlyphs": "Two C/c letter constructions on a page explicitly labelled C/c.",
+        "visualReviewStatus": "Retailer sample page preview opened and visually inspected; original publisher page file not independently accessed.",
+        "whatNotToCopy": "Do not trace the exact C contours, interlocking details or page composition.",
+        "wordCompositionNotes": "This is a didactic single-letter page, not a word piece or full alphabet sheet."
+      },
+      "sourceRecordId": "ACQ-HOAKI-01",
+      "title": "Woshe — Alphabeatz: C/c study page",
+      "visualState": "hi_fi_image_opened_and_inspected"
     }
   ]
 }
