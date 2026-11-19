@@ -11,6 +11,7 @@ A source-aware, construction-first library for original NIGHTSHIFT graffiti lett
 - [TEMPLATE_INDEX.md](TEMPLATE_INDEX.md) — compact family/template index and engine support snapshot.
 - [STYLE_TAXONOMY.md](STYLE_TAXONOMY.md) — separates letterform, composition, practice/context and rendering.
 - [STYLE_COMPARISON_MATRIX.md](STYLE_COMPARISON_MATRIX.md) — controlled comparison of core grammars.
+- [GRAFFITI_ALPHABET_VISUAL_COMPARISON_01.md](GRAFFITI_ALPHABET_VISUAL_COMPARISON_01.md) — first inspected A–Z comparison across Tag, Bubble, Bomb, Wild/Semi-Wild, 3D, shadow, Gothic, Block and Angular examples.
 - [RENDERING_TREATMENTS.md](RENDERING_TREATMENTS.md) — hollow, outline, fill, 3D, chrome, drips and other non-letterform treatments.
 - [QUALITY_CONTROL.md](QUALITY_CONTROL.md) — visual acceptance gates.
 - [PROOF_IMPLEMENTATION_PLAN_01.md](PROOF_IMPLEMENTATION_PLAN_01.md) — audit of what the current engine can actually render and staged implementation plan.
