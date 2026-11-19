@@ -7,6 +7,8 @@ import { dirname } from 'node:path';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildArchive } from '../src/archive/build.js';
+import { buildComparison } from '../src/archive/comparison.js';
+import { CAPABILITIES } from '../src/archive/capabilities.js';
 import { DIAGRAM_IDS, renderDiagram } from '../src/archive/diagrams.js';
 import { loadRegistry } from '../src/glyph/load-node.js';
 import { resolveGlyphs } from '../src/proof/specimens.js';
@@ -15,6 +17,10 @@ import { stableStringify } from '../src/core/stable-json.js';
 export const LANGS = ['de'];
 export const outFor = (lang) => `data/archive/archive.v1.${lang}.json`;
 export const OUT = outFor('de');
+export const comparisonOutFor = (lang) => `data/archive/comparison.v1.${lang}.json`;
+export const COMPARISON_OUT = comparisonOutFor('de');
+export const COMPARISON_DIR = 'research/archive/comparison';
+const COMPARISON_FILES = ['sources', 'specimens', 'observations', 'findings'];
 
 export function readResearch() {
   const files = [];
@@ -51,17 +57,36 @@ export function build(lang = 'de') {
   return result;
 }
 
+/** Letterform comparison library: typed sidecar → data/archive/comparison.v1.<lang>.json. */
+export function buildComparisonData(lang = 'de', entryIds = null) {
+  const inputFiles = [...COMPARISON_FILES.map((k) => `${COMPARISON_DIR}/${k}.v1.json`), 'contracts/letterform-comparison.v1.json'].map((path) => ({ path, text: readFileSync(path, 'utf8') }));
+  const json = Object.fromEntries(inputFiles.map((f) => [f.path, JSON.parse(f.text)]));
+  const ids = entryIds ?? build(lang).data.entries.map((e) => e.id);
+  return buildComparison({
+    contract: json['contracts/letterform-comparison.v1.json'],
+    ...Object.fromEntries(COMPARISON_FILES.map((k) => [k, json[`${COMPARISON_DIR}/${k}.v1.json`]])),
+    entryIds: ids, capabilities: CAPABILITIES, lang, inputFiles,
+  });
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { data, diagnostics, ok } = build();
   for (const d of diagnostics) console.log(`${d.severity.toUpperCase()} ${d.code} ${d.where}: ${d.message}`);
   const text = stableStringify(data, 2) + '\n';
+  const cmp = buildComparisonData('de', data.entries.map((e) => e.id));
+  for (const d of cmp.diagnostics) console.log(`${d.severity.toUpperCase()} ${d.code} ${d.where}: ${d.message}`);
+  const cmpText = stableStringify(cmp.data, 2) + '\n';
   if (process.argv.includes('--check')) {
     const same = existsSync(OUT) && readFileSync(OUT, 'utf8') === text;
+    const cmpSame = existsSync(COMPARISON_OUT) && readFileSync(COMPARISON_OUT, 'utf8') === cmpText;
     console.log(same ? 'Archive data up to date.' : `${OUT} is stale`);
-    process.exit(same && ok ? 0 : 1);
+    console.log(cmpSame ? 'Comparison data up to date.' : `${COMPARISON_OUT} is stale`);
+    process.exit(same && ok && cmpSame && cmp.ok ? 0 : 1);
   }
-  if (!ok) { console.error('Archive build failed; data not written.'); process.exit(1); }
+  if (!ok || !cmp.ok) { console.error('Archive build failed; data not written.'); process.exit(1); }
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, text);
+  writeFileSync(COMPARISON_OUT, cmpText);
+  console.log(`Wrote ${COMPARISON_OUT}: ${cmp.data.counts.specimens} specimens (${cmp.data.counts.inspectedSpecimens} inspected), ${cmp.data.counts.eligibleGlyphObservations} eligible glyph observations, pilot gate ${cmp.data.pilotGate.open ? 'open' : 'closed'}.`);
   console.log(`Wrote ${OUT}: ${data.entries.length} entries, ${data.claims.length} claims, ${data.sources.length} sources, ${data.timeline.length} timeline events, ${data.paths.length} paths.`);
 }

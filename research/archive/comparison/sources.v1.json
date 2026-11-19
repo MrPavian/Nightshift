@@ -1,0 +1,316 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Museum exhibition page documents Chalfant's archive and names multiple writers represented in the work.",
+      "id": "ACQ-BX-01",
+      "institution": "Bronx Museum",
+      "nextActionRaw": "Use named writers as search keys into credited archive items.",
+      "rightsRaw": "credited_photographs_not_reusable_by_default",
+      "scope": "exhibition_context",
+      "sourceType": "museum_exhibition",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Bronx Museum — Henry Chalfant: Art vs. Transit, 1977–1987",
+      "url": "https://bronxmuseum.org/exhibition/henry-chalfant-art-vs-transit-1977-1987/"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Photographer archive described as containing over 1,500 photographs documenting ephemeral original works.",
+      "id": "ACQ-CHAL-01",
+      "institution": "Henry Chalfant",
+      "nextActionRaw": "Identify item-level works and credits; create specimen records only after direct visual inspection.",
+      "rightsRaw": "link_only_no_blanket_reuse_permission",
+      "scope": "collection",
+      "sourceType": "photographer_archive",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "bubble_softie"
+      ],
+      "title": "Henry Chalfant — Graffiti Archives",
+      "url": "https://www.henrychalfant.com/"
+    },
+    {
+      "confidenceRaw": "high for search-result collection description; page images not yet inspected",
+      "evidenceRaw": "Collection lists blackbooks including Eras (1990–2020) with tags, throw-ups and pieces, and other named books; describes blackbooks as sites for sketches, signatures and style development.",
+      "id": "ACQ-DGL-01",
+      "institution": "Dutch Graffiti Library",
+      "nextActionRaw": "Catalogue artist, year, page and letter content from individual blackbook records.",
+      "rightsRaw": "collection access does not grant reproduction rights; item-level terms required",
+      "scope": "multiple_artist_blackbooks_1990s_to_present",
+      "sourceType": "graffiti_library_blackbook_collection",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Dutch Graffiti Library — Blackbooks collection",
+      "url": "https://dutch-graffiti-library.nl/collection/blackbooks/"
+    },
+    {
+      "confidenceRaw": "high for collection description; individual visual inspection required",
+      "evidenceRaw": "Archive describes hundreds of blackbook pages by FTA crew members and writers from San Jose, San Francisco and elsewhere, with works from 1991 to present; pages are from physical sketchbooks and use varied media.",
+      "id": "ACQ-FTA-01",
+      "institution": "Full Time Artists",
+      "nextActionRaw": "Open individual image pages, record artist/page/date where available, and compare repeated letters across pages.",
+      "rightsRaw": "copyright FTA/original authors; link-only; no duplication or redistribution",
+      "scope": "hundreds_of_blackbook_pages",
+      "sourceType": "writer_crew_blackbook_archive",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Full Time Artists — Graffiti Blackbook Sketches",
+      "url": "https://www.fulltimeartists.com/graffiti/graffiti_blackbooks.php"
+    },
+    {
+      "confidenceRaw": "high for collection description; individual visual inspection required",
+      "evidenceRaw": "Archive describes hundreds of monochrome outlines extracted from sketchbooks, created 1991 onward with rapidograph/inkers, markers and ballpoints; some are blueprints for full-scale spray pieces.",
+      "id": "ACQ-FTA-02",
+      "institution": "Full Time Artists",
+      "nextActionRaw": "Prioritize clean outlines because they expose letter skeletons without fill colour or rendering effects.",
+      "rightsRaw": "copyright FTA/original authors; link-only; no duplication or redistribution",
+      "scope": "hundreds_of_monochrome_outline_pages",
+      "sourceType": "writer_crew_outline_archive",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Full Time Artists — Ink Outlines",
+      "url": "https://www.fulltimeartists.com/graffiti/ink_outlines.php"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Curated story credits photographs to Henry Chalfant and Martha Cooper and discusses documentation of throw-ups and burners.",
+      "id": "ACQ-GAC-01",
+      "institution": "Google Arts & Culture",
+      "nextActionRaw": "Inspect individual story frames and record visible credits and item provenance.",
+      "rightsRaw": "media_credits_do_not_grant_reuse",
+      "scope": "visual_archive_story",
+      "sourceType": "curated_digital_exhibition",
+      "targetGrammarsRaw": [
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "blockbuster_block"
+      ],
+      "title": "Google Arts & Culture — Moving Murals: Henry Chalfant & Martha Cooper's All City Graffiti Archive",
+      "url": "https://artsandculture.google.com/story/QAWhfRB--CVOIQ?hl=en-GB"
+    },
+    {
+      "confidenceRaw": "high for archive description; data-level sampling not yet performed",
+      "evidenceRaw": "Archive describes over 75,000 GML tags from graffiti applications, with replayable stroke data and metadata. Useful for stroke order, speed, rhythm and handstyle variation, not a substitute for piece alphabets.",
+      "id": "ACQ-GML-01",
+      "institution": "000000book",
+      "nextActionRaw": "Inspect API and licence; determine whether tag stroke traces can be used only for non-commercial research or feature design.",
+      "rightsRaw": "check dataset/API licence and each contributor's permissions before reuse",
+      "scope": "75000_plus_digital_tag_records",
+      "sourceType": "digital_graffiti_tag_dataset",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "000000book — Graffiti Markup Language archive",
+      "url": "https://jamiedubs.com/blackbook/"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Article describes a graffiti zine collection and writer/type-designer perspective on alphabet invention and personal styles.",
+      "id": "ACQ-LFA-01",
+      "institution": "Letterform Archive",
+      "nextActionRaw": "Identify zine titles and catalogue records; distinguish editorial images from reusable assets.",
+      "rightsRaw": "article_images_rights_check_required",
+      "scope": "collection_introduction",
+      "sourceType": "letterform_archive_article",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "bubble_softie"
+      ],
+      "title": "Letterform Archive — An Undercover Look at its Graffiti Collection",
+      "url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/"
+    },
+    {
+      "confidenceRaw": "high for catalogue style label and object metadata; medium for visible structure from displayed photograph",
+      "evidenceRaw": "Individual object record identifies Iz the Wiz Throw-up, ca. 1983, photographed by Atco / Lou Romain, and explicitly defines the form as overlapping bubble letters with an outline and fill. Image is directly viewable from the record.",
+      "id": "ACQ-LFA-02",
+      "institution": "Letterform Archive",
+      "nextActionRaw": "Use as one labelled throw-up specimen; seek additional object pages with explicit style labels and independently inspect each image.",
+      "rightsRaw": "image copyright/reuse terms not established; link-only; no image copied",
+      "scope": "individual_artwork_with_image",
+      "sourceType": "museum_exhibition_object_record",
+      "targetGrammarsRaw": [
+        "throw_up",
+        "bubble_softie"
+      ],
+      "title": "Letterform Archive — Subscription to Mischief: Iz the Wiz Throw-up",
+      "url": "https://exhibitions.letterformarchive.org/mischief/artworks/iz-the-wiz"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Letterform Archive reports 700 books, zines and ephemera spanning the 1980s–today; article gallery images are hi-fi captures; research visits can request specific material. Curatorial consultant Kel Troughton describes the collection as a reference library focused on printed materials and emphasizes community terminology and provenance.",
+      "id": "ACQ-LFA-03",
+      "institution": "Letterform Archive",
+      "nextActionRaw": "Use the online gallery and research visit to identify specific zines/pages and record object-level provenance, page numbers, visible lettering and exact terminology.",
+      "rightsRaw": "viewing/research access does not grant reproduction rights; link-only until item-level permission confirmed",
+      "scope": "collection_access_and_high_fidelity_gallery",
+      "sourceType": "institutional_collection_and_research_access",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Letterform Archive — Permanent Graffiti Collection / Hi-fi Gallery",
+      "url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Historical account discusses progression from tags to pieces, bubble lettering, light/shadow and colour complexity.",
+      "id": "ACQ-MCNY-01",
+      "institution": "Museum of the City of New York",
+      "nextActionRaw": "Use for historical context only; do not extract images for the public repo.",
+      "rightsRaw": "classroom_use_only_notice_images_not_for_reuse",
+      "scope": "historical_context",
+      "sourceType": "museum_education_pdf",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "throw_up"
+      ],
+      "title": "Museum of the City of New York — City as Canvas background guide",
+      "url": "https://mcny.org/sites/default/files/2016-11/City%20as%20Canvas%20Pre%20and%20Post%20Material%20Background%20Information.pdf"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "MoMA describes comparative taxonomies of graffiti tags, letters, regional styles, commonalities and deviations.",
+      "id": "ACQ-MOMA-01",
+      "institution": "MoMA",
+      "nextActionRaw": "Use as a methodological reference for comparing repeated glyphs across writers.",
+      "rightsRaw": "artwork_copyrighted_no_tracing",
+      "scope": "letterform_taxonomy_artwork",
+      "sourceType": "museum_object_record",
+      "targetGrammarsRaw": [
+        "simple_straight"
+      ],
+      "title": "MoMA — Evan Roth, Graffiti Taxonomy: New York (2011)",
+      "url": "https://www.moma.org/collection/works/147174"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Museum collection policy describes a range of lettering styles and varied material forms.",
+      "id": "ACQ-MUCEM-01",
+      "institution": "Mucem",
+      "nextActionRaw": "Explore collection objects and item-level credits.",
+      "rightsRaw": "collection_images_rights_check_required",
+      "scope": "collection_policy",
+      "sourceType": "museum_collection_essay",
+      "targetGrammarsRaw": [
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Mucem — Tagging and Graffiti: Illegal Art at the Museum",
+      "url": "https://mucem.org/en/focus-des-collections/tagging-and-graffiti-illegal-art-at-the-museum/"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "NGA catalogue exposes 29 Chalfant works with dates, accession IDs, media and visual descriptions; selected works have individual records.",
+      "id": "ACQ-NGA-01",
+      "institution": "National Gallery of Art",
+      "nextActionRaw": "Use item pages as visual-analysis and provenance leads; obtain image permissions before embedding.",
+      "rightsRaw": "media_not_available_for_download_contact_NGA_about_image_usage",
+      "scope": "item_level_artwork_records",
+      "sourceType": "museum_collection_artist_index",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "National Gallery of Art — Henry Chalfant photographic works",
+      "url": "https://www.nga.gov/artists/40960-henry-chalfant/artworks"
+    },
+    {
+      "confidenceRaw": "high for metadata; page-level visual access not yet verified",
+      "evidenceRaw": "Rijksmuseum record identifies Blackbook I by Boris Tellegen (DELTA), 1986–1992, object RP-T-2021-450, and lists dozens of individual related page objects. Museum notes his recognizable 3D-looking letters. Main book image is unavailable due to copyright, but related page records may provide object-level access.",
+      "id": "ACQ-RIJK-01",
+      "institution": "Rijksmuseum",
+      "nextActionRaw": "Inspect related page records individually; prioritize pages with full words and repeated glyphs.",
+      "rightsRaw": "copyright Boris Tellegen; main image unavailable; check each related page rights",
+      "scope": "blackbook_1986_1992_with_80_plus_related_pages",
+      "sourceType": "museum_object_record_and_related_pages",
+      "targetGrammarsRaw": [
+        "blockbuster_block",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Rijksmuseum — Boris Tellegen / DELTA, Blackbook I",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Blackbook-I--5ee1ac7c85cbe5a1b873b4649201df2a"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "24 photographic prints dated 1977–1980 described in the Archives of American Art collection search.",
+      "id": "ACQ-SI-01",
+      "institution": "Smithsonian",
+      "nextActionRaw": "Open each item record and capture stable identifiers, credits, dates and rights.",
+      "rightsRaw": "item_level_rights_check_required",
+      "scope": "collection_description",
+      "sourceType": "museum_archive_catalogue",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Smithsonian — Henry Chalfant Subway Graffiti Series Photographs",
+      "url": "https://collections.si.edu/search/results.htm?fq=object_type%3A%22Collection+descriptions%22&q=%22Graffiti+artists%22"
+    },
+    {
+      "confidenceRaw": "high",
+      "evidenceRaw": "Search interface returns records from the 24-print series.",
+      "id": "ACQ-SI-02",
+      "institution": "Smithsonian",
+      "nextActionRaw": "Inspect item records individually; no inference from collection-level metadata.",
+      "rightsRaw": "item_level_rights_check_required",
+      "scope": "item_search",
+      "sourceType": "museum_archive_search",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Smithsonian — Chalfant series item search",
+      "url": "https://collections.si.edu/search/results.htm?q=set_name%3A%22Henry+Chalfant+Subway+Graffiti+Series+Photographs%22&start=0"
+    },
+    {
+      "confidenceRaw": "medium",
+      "evidenceRaw": "Review identifies throw-ups, blockbusters and whole-car work within SEEN's documented practice.",
+      "id": "ACQ-URBAN-01",
+      "institution": "Urban Nation",
+      "nextActionRaw": "Use bibliographic reference to locate the book; do not treat review as individual specimen.",
+      "rightsRaw": "photographs_credited_no_reuse_assumed",
+      "scope": "book_review",
+      "sourceType": "museum_library_book_review",
+      "targetGrammarsRaw": [
+        "bubble_softie",
+        "throw_up",
+        "blockbuster_block"
+      ],
+      "title": "Urban Nation — SEEN: Black Books Vol. 3 review",
+      "url": "https://urban-nation.com/2023/09/books-in-the-mcl-on-the-run-magazine-black-books-volume-3-seen-zebster-with-additional-archival-photos-by-martha-cooper-henry-chalfant/"
+    }
+  ]
+}

@@ -64,6 +64,10 @@ generator: study.word-layout word=ABRA   # optional; capability IDs from src/bri
 - unknown editor capabilities, and parameters the editor cannot open;
 - invalid timeline events and paths.
 
+## Letterform comparison library
+
+`comparison/` holds the typed data for **Buchstaben vergleichen** and **Fundstücke** (sources, specimens, observations, findings). The same build turns it into `data/archive/comparison.v1.de.json`. Format, rules and examples: [`comparison/README.md`](comparison/README.md).
+
 ## Relationship to the pilot drafts
 
 `research/BLACKBOOK_ARCHIVE_CONTENT_PILOT_01.md`, `…_EXPANSION_01.md` and the German pilots were drafting material. Their content was re-checked at source level for this edition. Where a pilot said more than its sources support, the entry here says less. The pilots stay as research history and are not read by the build.

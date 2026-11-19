@@ -1,11 +1,11 @@
 // Offline cache for THE BLACKBOOK ARCHIVE. Everything the archive needs is packaged here:
 // the page, styles, script, bridge module, fonts and the generated archive data.
 // Network first (so updates arrive immediately), falling back to the cache when offline.
-const CACHE = 'blackbook-archive-v2-de';
+const CACHE = 'blackbook-archive-v3-de';
 const FILES = [
-  'index.html', 'app.css', 'app.js',
+  'index.html', 'app.css', 'app.js', 'comparison.js',
   '../src/bridge/editor-bridge.js',
-  '../data/archive/archive.v1.de.json',
+  '../data/archive/archive.v1.de.json', '../data/archive/comparison.v1.de.json',
   'fonts/barlow-condensed-latin-600-normal.woff2', 'fonts/barlow-condensed-latin-800-normal.woff2',
   'fonts/barlow-latin-400-normal.woff2', 'fonts/barlow-latin-400-italic.woff2', 'fonts/barlow-latin-600-normal.woff2',
 ];
