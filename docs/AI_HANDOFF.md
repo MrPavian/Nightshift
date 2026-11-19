@@ -12,6 +12,7 @@ NIGHTSHIFT is a grounded New York graffiti crew simulator with a procedural lett
 
 ## Read these files
 
+- `docs/STATUS.md` — **current project state; read first.**
 - `AGENTS.md` — rules for AI contributors.
 - `README.md` — project summary and current state.
 - `docs/PROJECT_BRIEF.md` — product intent and current baseline.

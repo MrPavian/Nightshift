@@ -20,7 +20,7 @@ The 1.0 scope, ownership, acceptance criteria and stop conditions are defined in
 
 ## Current implementation baseline
 
-As documented in [0.7A Implementation Plan](IMPLEMENTATION_PLAN_0_7A.md), tickets T01–T06 are complete and T07 remains the next editor-foundation gate. Recheck the actual repository and tests before starting; this status must not be assumed if implementation has advanced.
+The current implementation state is maintained in [STATUS](STATUS.md). As of 19 November 2026, 0.7A (T01–T07), C01, C02, C03, C06 and an early Creator 0.1/0.2 are in `main`; C04, C05, C08 and C07 are next. Recheck the repository and tests before starting.
 
 ## Scope discipline
 
