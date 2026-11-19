@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "corpus_status": "30_item_level_records_across_Smithsonian_NGA_and_Letterform_Archive;_1_explicitly_labelled_throw_up_image_visually_inspected;_5_additional_Letterform_Archive_correspondence_records_metadata_only;_rights_clearance_pending",
+  "corpus_status": "30_item_level_records;_6_images_visually_inspected_in_total_including_1_explicitly_labelled_throw_up;_four_Letterform_Archive_correspondence_pages_and_two_Spel_images_inspected;_rights_clearance_pending",
   "reviewed_at": "2026-11-19",
   "rights_policy": "Link-only by default. No image binary may be copied into the repository without item-level licence or written permission.",
   "style_targets": [
@@ -899,19 +899,21 @@
       "date": "1994",
       "place": "Philadelphia",
       "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
-      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "visible_glyphs": "Two separate images: a letter page crowded with many tags, a large angular outlined piece across the upper edge, a purple multi-loop throw-up-like form, and several other handstyles; second image is a black-and-white angular interlocking piece sketch.",
       "candidate_grammar_tags": [
-        "handstyle_or_correspondence_context"
+        "handstyle",
+        "piece_sketch",
+        "throw_up_candidate"
       ],
       "execution_format": "Ink on paper; letter and sketch, each approximately 28 cm wide.",
       "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
       "rendering_treatment": [],
-      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "letter_anatomy_notes": "The sketch shows angular interlocking block-like letter masses with sharp corners, overlapping strokes and internal negative spaces. Individual letter identities are not confidently legible; do not assign Wildstyle from angularity alone.",
       "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
       "rights_status": "link-only; image rights and reproduction permission not established",
-      "visual_review_status": "metadata_verified_image_not_inspected",
+      "visual_review_status": "hi_fi_images_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
-      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+      "confidence": "high for visible page contents; medium for broad construction observations; no definitive family classification"
     },
     {
       "specimen_id": "LFA-COMM-002",
@@ -923,19 +925,20 @@
       "date": "1994",
       "place": "Colonia, New Jersey, USA",
       "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
-      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "visible_glyphs": "A handwritten blue-pencil letter occupies the right half; a large black geometric vertical motif / illustrated form runs along the left. The letter includes a date-like note and sign-off; the page is a photocopy.",
       "candidate_grammar_tags": [
-        "handstyle_or_correspondence_context"
+        "correspondence_handwriting",
+        "illustrated_page"
       ],
       "execution_format": "Photocopy; ink on paper.",
       "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
       "rendering_treatment": [],
-      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "letter_anatomy_notes": "The prose is handwritten in relatively narrow uppercase forms with variable baseline and spacing; the left motif is a separate geometric illustration, not enough evidence to classify as graffiti lettering.",
       "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
       "rights_status": "link-only; image rights and reproduction permission not established",
-      "visual_review_status": "metadata_verified_image_not_inspected",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
-      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+      "confidence": "high for page-level visual facts; low for any handstyle grammar"
     },
     {
       "specimen_id": "LFA-COMM-003",
@@ -947,19 +950,21 @@
       "date": "1995",
       "place": "Miami, Florida, USA",
       "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
-      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "visible_glyphs": "The page contains a large pink-filled rounded outlined throw-up-like form at top, several black tags / handstyles below and to the right, and a smaller black tag near the lower left.",
       "candidate_grammar_tags": [
-        "handstyle_or_correspondence_context"
+        "throw_up_candidate",
+        "handstyle",
+        "tag"
       ],
       "execution_format": "Ink on paper.",
       "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
       "rendering_treatment": [],
-      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "letter_anatomy_notes": "The top form uses inflated rounded connected masses, a dark outer contour, pink hatched fill and short downward extensions. Adjacent black marks use more linear, angular and gestural strokes. The exact top letter sequence is not transcribed.",
       "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
       "rights_status": "link-only; image rights and reproduction permission not established",
-      "visual_review_status": "metadata_verified_image_not_inspected",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
-      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+      "confidence": "high for visible forms; medium for throw-up-like classification as our visual inference, not catalogue label"
     },
     {
       "specimen_id": "LFA-COMM-004",
@@ -971,19 +976,21 @@
       "date": "circa 1994",
       "place": "Miami, Florida, USA",
       "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
-      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "visible_glyphs": "Yellow broad tag-like mark across upper paper; red handwritten correspondence and red margin tags; a large black stylized word/tag dominates the bottom with yellow offset echo.",
       "candidate_grammar_tags": [
-        "handstyle_or_correspondence_context"
+        "handstyle",
+        "tag",
+        "correspondence"
       ],
       "execution_format": "Ink on yellow lined paper.",
       "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
       "rendering_treatment": [],
-      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "letter_anatomy_notes": "The bottom mark is a dense connected black word-form with rounded and angular transitions, heavy strokes and a separate yellow offset contour. Do not classify as a throw-up or piece without further expert/source confirmation.",
       "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
       "rights_status": "link-only; image rights and reproduction permission not established",
-      "visual_review_status": "metadata_verified_image_not_inspected",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
-      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+      "confidence": "high for visible layout; low for style-family classification"
     },
     {
       "specimen_id": "LFA-COMM-005",
@@ -995,19 +1002,21 @@
       "date": "1993",
       "place": "Caguas, Puerto Rico",
       "identifier": "Letterform Archive — Subscription to Mischief / Community Service",
-      "visible_glyphs": "not assessed from image; handwriting / sketch indicated by catalogue title and medium",
+      "visible_glyphs": "Black handwritten correspondence fills the page; a large vertical black tag runs along the left margin; a red tag/throw-up-like mark and long red arrow-like underline occupy the bottom.",
       "candidate_grammar_tags": [
-        "handstyle_or_correspondence_context"
+        "handstyle",
+        "tag",
+        "throw_up_candidate"
       ],
       "execution_format": "Ink on ruled paper.",
       "composition_mode": "letter / sketch / correspondence; page composition not visually assessed",
       "rendering_treatment": [],
-      "letter_anatomy_notes": "not visually inspected; no glyph construction or handstyle features inferred from creator name or medium",
+      "letter_anatomy_notes": "The body text is handwritten in a relatively consistent, slanted uppercase style. The left-margin mark is a separate vertical signature/tag; the lower red mark is a rounded, connected tag-like form with an extended underline/arrow. Not a clean isolated alphabet sample.",
       "word_composition_notes": "The exhibition section documents mailed letters, sketches and flick-trading. Individual page layout and tag characteristics remain unreviewed.",
       "rights_status": "link-only; image rights and reproduction permission not established",
-      "visual_review_status": "metadata_verified_image_not_inspected",
+      "visual_review_status": "hi_fi_image_opened_and_visually_inspected",
       "what_not_to_copy": "Do not trace handwriting, tags, sketch, letter layout or writer signature.",
-      "confidence": "high for catalogue metadata; none for visual handstyle classification"
+      "confidence": "high for visible layout; medium for handstyle/tag observations; low for named style-family assignment"
     }
   ]
 }
