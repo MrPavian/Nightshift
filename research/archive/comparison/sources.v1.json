@@ -311,6 +311,25 @@
       ],
       "title": "Urban Nation — SEEN: Black Books Vol. 3 review",
       "url": "https://urban-nation.com/2023/09/books-in-the-mcl-on-the-run-magazine-black-books-volume-3-seen-zebster-with-additional-archival-photos-by-martha-cooper-henry-chalfant/"
+    },
+    {
+      "confidenceRaw": "high for archive structure and directly opened page images; item-level authorship and dates require verification",
+      "evidenceRaw": "Art Crimes maintains an A–Z blackbook sketch archive with individual artist pages. Direct image URLs are available for some entries, including Crime 2; a separate Priz and Stan feature includes a photographed blackbook page and first-person historical context.",
+      "id": "ACQ-ARTCRIMES-01",
+      "institution": "Art Crimes",
+      "nextActionRaw": "Prioritize individual page images with clear, non-overlapping letterforms; capture artist/page/date provenance and inspect the image itself before accepting any glyph.",
+      "rightsRaw": "artist and contributor copyright; link-only; no image copying, tracing or redistribution without item-level permission",
+      "scope": "artist_indexed_blackbook_sketch_archive_and_related_writer_features",
+      "sourceType": "graffiti_archive_blackbook_pages",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Art Crimes — Blackbook Sketch Archive",
+      "url": "https://www.graffiti.org/sketch/blackbook/index.html"
     }
   ]
 }
