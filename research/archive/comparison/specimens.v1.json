@@ -1604,6 +1604,94 @@
       "sourceRecordId": "ACQ-SI-02",
       "title": "VANDAL",
       "visualState": "catalogue_metadata_only"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "knowme",
+      "date": "2018",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-01",
+      "visualState": "hi_fi_image_opened_and_inspected",
+      "id": "BSCI-KNOME-2018-ALPHA-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as 2018 effort",
+      "raw": {
+        "candidateGrammarTags": [
+          "tag_handstyle"
+        ],
+        "compositionMode": "Complete A–Z alphabet arranged in a four-column grid with a separate personal tag at the bottom.",
+        "confidence": "high for the visible grid, labelled sequence and broad marker forms; medium for individual glyph anatomy where strokes cross cell boundaries.",
+        "creator": "knowme (forum handle; attribution only as stated in the post)",
+        "date": "2018 (post dated 2018-05-23; author calls it this year's effort)",
+        "dimensions": "1000 × 1000 px forum image",
+        "executionFormat": "marker on paper, photographed",
+        "identifier": "Bombing Science Forums image 1228638_70bb2bcbd78edc76d72fa3df98e25ecb.jpg",
+        "letterAnatomyNotes": "The alphabet is laid out in labelled cells A–Z. Broad marker strokes use angular, sharply tapered terminals and long sweeping extensions; many forms exceed their cells and overlap adjacent areas. No individual glyph is yet accepted into the comparison dataset.",
+        "photographerCredit": "Forum member post; photographer not separately credited",
+        "place": null,
+        "renderingTreatment": [
+          "single-colour marker strokes",
+          "broad nib",
+          "photographed paper"
+        ],
+        "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/05/1228638_70bb2bcbd78edc76d72fa3df98e25ecb.jpg",
+        "visibleGlyphs": "A labelled A–Z sequence is visible across the grid. The sheet also includes a separate black tag at the lower edge.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace the alphabet, tag, individual letter contours or page layout.",
+        "wordCompositionNotes": "Alphabet drill rather than a word piece; the separate tag should not be conflated with the A–Z samples."
+      },
+      "title": "knowme — 2018 handstyle alphabet"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "knowme",
+      "date": "2018",
+      "dateQualifier": "as-catalogued",
+      "displayMode": "link-only",
+      "imageRights": "do-not-reuse",
+      "itemUrl": "https://forum.bombingscience.com/threads/over-a-decade-of-handstyle-alphabets.29938/",
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-01",
+      "visualState": "hi_fi_image_opened_and_inspected",
+      "id": "BSCI-KNOME-2018-REJECT-01",
+      "identifier": "Bombing Science Forums post #1, image captioned as reject pile",
+      "raw": {
+        "candidateGrammarTags": [
+          "tag_handstyle"
+        ],
+        "compositionMode": "Complete A–Z alphabet arranged in a four-column grid with a separate personal tag at the bottom.",
+        "confidence": "high for the visible grid and labelled sequence; medium for individual glyph anatomy because broad strokes overlap across cell boundaries.",
+        "creator": "knowme (forum handle; attribution only as stated in the post)",
+        "date": "2018 (post dated 2018-05-23; author describes it as a reject-pile sheet)",
+        "dimensions": "1000 × 1000 px forum image",
+        "executionFormat": "marker on paper, photographed",
+        "identifier": "Bombing Science Forums image 1228639_1eada95b626553d34c9c24210af70e25.jpg",
+        "letterAnatomyNotes": "A second labelled A–Z handstyle sheet with a similar broad-nib marker approach but visibly different letter proportions and stroke paths from the 2018 effort. No individual glyph is accepted yet.",
+        "photographerCredit": "Forum member post; photographer not separately credited",
+        "place": null,
+        "renderingTreatment": [
+          "single-colour marker strokes",
+          "broad nib",
+          "photographed paper"
+        ],
+        "rightsStatus": "Artist copyright; link-only; no reuse permission established.",
+        "viewUrl": "https://bsciforums.s3.amazonaws.com/2018/05/1228639_1eada95b626553d34c9c24210af70e25.jpg",
+        "visibleGlyphs": "A labelled A–Z sequence is visible across the grid. A separate black tag occupies the lower portion.",
+        "visualReviewStatus": "hi_fi_image_opened_and_visually_inspected",
+        "whatNotToCopy": "Do not trace the alphabet, tag, individual letter contours or page layout.",
+        "wordCompositionNotes": "Rejected alternative by the same writer; not an independent source or writer."
+      },
+      "title": "knowme — 2018 rejected handstyle alphabet"
     }
   ]
 }
