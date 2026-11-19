@@ -485,6 +485,21 @@
       "reason": "The gallery preview shows a monochrome, highly interwoven composition. Individual letter boundaries are too entangled at the available preview resolution for reliable A–Z transcription.",
       "rights_status": "Copyright held by contributing artist; link-only",
       "next_action": "Seek the highest-resolution available reproduction or inspect the published L.A. Graffiti Black Book; reconsider only if individual A–Z glyphs become clearly separable."
+    },
+    {
+      "id": "PAGE-STREETFONTS-BOOK-001",
+      "source_id": "ACQ-STREETFONTS-01",
+      "title": "Street Fonts — 154 artist-designed A–Z alphabets",
+      "creator": "154 graffiti artists; curated by Claudia Walde (MadC)",
+      "date_range": "2011 (reissued 2018; German edition 2015)",
+      "url": "https://www.thamesandhudson.com/products/street-fonts",
+      "catalogue_description": "318–320-page publication presenting more than 150 original alphabets. Each artist was asked to design all 26 Latin letters on a single page; contributions span 30 countries and multiple media.",
+      "visual_review_status": "catalogued_page_not_visually_reviewed",
+      "glyph_eligibility": "not_assessed",
+      "priority": "highest",
+      "reason": "This is unusually well matched to the research goal: standardized complete A–Z pages allow direct cross-writer comparison of the same letters, including repeated A/B/E/R/S/T forms. It is an authored alphabet collection, not necessarily raw spontaneous blackbook writing; each contribution's medium and construction method must be recorded.",
+      "rights_status": "Copyright individual artists and publisher; book access only; link-only",
+      "next_action": "Acquire or borrow the book; index all 154 artist names and page numbers from the contents; directly inspect pages and prioritize distinct hand-drawn/marker/sketch alphabets. Do not create glyph observations from catalogue descriptions or promotional previews."
     }
   ],
   "glyph_observations": [
@@ -508,11 +523,11 @@
     }
   ],
   "summary": {
-    "page_records": 31,
+    "page_records": 32,
     "visually_reviewed_page_records": 10,
     "accepted_glyph_observations": 2,
-    "note": "2 directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 10 page records have been visually reviewed but are not glyph-eligible; 21 page-level leads remain uninspected.",
-    "source_records_referenced": 6
+    "note": "2 directly inspected glyph observations are accepted and referenced by archive ID only; their observation records are stored in research/archive/comparison/observations.v1.json. 10 page records have been visually reviewed but are not glyph-eligible; 22 page-level leads remain uninspected.",
+    "source_records_referenced": 7
   },
   "sources_ref": [
     "ACQ-RIJK-01",
@@ -520,6 +535,7 @@
     "ACQ-FTA-02",
     "ACQ-DGL-01",
     "ACQ-ARTCRIMES-01",
-    "ACQ-GETTY-01"
+    "ACQ-GETTY-01",
+    "ACQ-STREETFONTS-01"
   ]
 }
