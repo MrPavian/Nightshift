@@ -125,6 +125,15 @@
       "source_id": "ACQ-LFA-03",
       "specimen_id": "LFA-BOMB-046-001",
       "status": "glyph_observation_accepted"
+    },
+    {
+      "archive_observation_id": "GLY-ALT-WOSHE-2013-M1",
+      "glyph": "M",
+      "id": "QUEUE-GLY-ALT-WOSHE-2013-M1",
+      "note": "Die akzeptierte Beobachtung liegt ausschließlich in research/archive/comparison/observations.v1.json.",
+      "source_id": "ACQ-ALT-01",
+      "specimen_id": "ALT-WOSHE-M-MAMMOUTH-01",
+      "status": "glyph_observation_accepted"
     }
   ],
   "page_records": [
@@ -699,16 +708,16 @@
       "catalogue_description": "Public 11-page PDF preview; directly inspected spread with several outlined lettering sketches and a larger central composition.",
       "creator": "Woshe",
       "date_range": "2013 edition",
-      "glyph_eligibility": "not_eligible",
+      "glyph_eligibility": "eligible",
       "id": "PAGE-ALT-WOSHE-M-MAMMOUTH",
-      "next_action": "Use as a visual-method reference; seek other openly accessible pages in the same book only through legitimate web previews.",
+      "next_action": "Die M-Seite ist als erste Glyph-Beobachtung erfasst. Weitere Buchstaben nur aus anderen eindeutig beschrifteten und direkt geprüften Seiten ergänzen.",
       "priority": "high",
-      "reason": "The preview is useful for studying Woshe's didactic approach and letter construction, but the visible forms are embedded in larger compositions and do not provide a securely isolated glyph for the current comparison dataset.",
+      "reason": "Die Überschrift „M le Mammouth“ und der Begleittext identifizieren den Buchstaben ausdrücklich; mehrere M-Konstruktionen sind auf der Publisher-Vorschau getrennt sichtbar. Eine Glyph-Beobachtung der M-Formfamilie ist damit belegbar.",
       "rights_status": "Copyright Woshe / Éditions Alternatives; link-only; do not copy or trace.",
       "source_id": "ACQ-ALT-01",
       "title": "Woshe — M le Mammouth, instructional spread",
       "url": "https://allcity.fr/pdf/allcity-blackbook-woshe.pdf#page=7",
-      "visual_review_status": "visually_reviewed_not_glyph_eligible"
+      "visual_review_status": "glyph_observation_accepted"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
@@ -728,8 +737,8 @@
     "ACQ-LFA-03"
   ],
   "summary": {
-    "accepted_glyph_observations": 14,
-    "note": "14 akzeptierte Einzelglyph-Beobachtungen; jede verweist nur auf ihren Datensatz in research/archive/comparison/observations.v1.json. Die beiden LFA-Verweise (JHO T, Joker O) sind wieder akzeptiert, weil ihre Archivdatensätze aus PR #30 jetzt vorhanden sind. Zähler beim Zusammenführen von PR #30 und #31 aus dem Inhalt neu berechnet (Claude).",
+    "accepted_glyph_observations": 15,
+    "note": "15 akzeptierte Einzelglyph-Beobachtungen; neu ergänzt wurde M aus Woshes ausdrücklich beschrifteter und visuell geprüfter Lehrbuchseite „M le Mammouth“. Die Chaz-Seite im Getty-Black-Book bleibt eine Seitenbeobachtung ohne zugewiesene A–Z-Glyphen.",
     "page_records": 38,
     "source_records_referenced": 11,
     "visually_reviewed_page_records": 16
