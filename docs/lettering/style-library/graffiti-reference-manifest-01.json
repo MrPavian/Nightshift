@@ -238,6 +238,24 @@
       "rights_status": "image copyright/reuse terms not established; link-only; no image copied",
       "confidence": "high for catalogue style label and object metadata; medium for visible structure from displayed photograph",
       "next_action": "Use as one labelled throw-up specimen; seek additional object pages with explicit style labels and independently inspect each image."
+    },
+    {
+      "id": "ACQ-LFA-03",
+      "title": "Letterform Archive — Permanent Graffiti Collection / Hi-fi Gallery",
+      "url": "https://letterformarchive.org/news/an-undercover-look-at-letterform-archives-graffiti-collection/",
+      "source_type": "institutional_collection_and_research_access",
+      "source_scope": "collection_access_and_high_fidelity_gallery",
+      "target_grammars": [
+        "bubble_softie",
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "evidence": "Letterform Archive reports 700 books, zines and ephemera spanning the 1980s–today; article gallery images are hi-fi captures; research visits can request specific material. Curatorial consultant Kel Troughton describes the collection as a reference library focused on printed materials and emphasizes community terminology and provenance.",
+      "rights_status": "viewing/research access does not grant reproduction rights; link-only until item-level permission confirmed",
+      "confidence": "high",
+      "next_action": "Use the online gallery and research visit to identify specific zines/pages and record object-level provenance, page numbers, visible lettering and exact terminology."
     }
   ],
   "specimen_record_template": {
