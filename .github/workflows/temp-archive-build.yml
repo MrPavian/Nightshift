@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - chatgpt/dortmund-ruhrgebiet-research-01
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 permissions:
   contents: read
 jobs:
