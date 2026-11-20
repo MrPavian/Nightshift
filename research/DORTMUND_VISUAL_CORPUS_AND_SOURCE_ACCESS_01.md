@@ -1,7 +1,7 @@
 # Dortmund Visual Corpus — Source Access and Analysis Plan 01
 
-**Date:** 2026-11-14  
-**Status:** source-access map; no historical image has been copied into NIGHTSHIFT.  
+**Date:** 2026-11-20  
+**Status:** source-access map; no historical image has been copied into NIGHTSHIFT. Five Dortmund photographs in the Pixelprojekt Ruhrgebiet series have now been visually inspected at page level; no individual glyphs have been transcribed.  
 **Purpose:** identify the strongest available visual records for Dortmund writing and separate handstyle evidence from pieces, train productions and later retrospective documentation.
 
 ## 1. The corpus has two different layers
@@ -188,3 +188,66 @@ Retailer metadata contains a page-count discrepancy (some listings describe 244 
 | *ALL SURFACE* | Multiple current specialist listings provide acquisition routes | Exact pagination and page-level visual sample |
 
 **No images were downloaded, copied, published or coded in this pass. No Dortmund visual frequencies or style rules are claimed.**
+
+
+## 10. Visual access update — 2026-11-20
+
+This pass adds the first rights-aware visual inspection of a regional Ruhrgebiet source. It does **not** add isolated glyph transcriptions or authorize image reuse.
+
+### Pixelprojekt Ruhrgebiet — Benito Barajas, *Lost Spaces Graffiti* (2010)
+
+Official series page: https://www.pixelprojekt-ruhrgebiet.de/serie/lost-spaces-graffiti
+
+The page documents seven photographs, each catalogued at 60 × 40 cm:
+- **Dortmund:** Dortmunder Norden; Südbahnhof (three photographs); Hafen.
+- **Comparative Ruhrgebiet locations:** RuhrUni, Bochum; Alte Fabrik, Hagen.
+- The series describes graffiti and tags in abandoned stations, factories, houses and wall remains, with repeated visits by different writers and accumulated layers over time.
+- The page explicitly states that all usage rights to the photographs belong to Benito Barajas. No image was copied, embedded or redistributed.
+
+**Five Dortmund images opened and inspected at page level:**
+1. **Dortmunder Norden (2010):** dense accumulation of different marks and larger pieces across an industrial/derelict surface. Useful for context and coexistence of formats; no individual letter can be safely isolated from the page view.
+2. **Südbahnhof (2010), image 2:** a broad, highly legible block-like upper composition sits above a denser, more interlocking lower composition. This is a useful within-image contrast between simpler letter mass and more complex overlap, not evidence that one is the canonical Dortmund style.
+3. **Südbahnhof (2010), image 5:** repeated dark handstyle/tag marks across a wall; the page is useful for rhythm and accumulation, not for a clean alphabet sample.
+4. **Hafen (2010):** rounded, inflated letter masses with strong outlines and colour fields, surrounded by smaller secondary marks. Useful as a bubble/throw-up composition reference.
+5. **Südbahnhof (2010), image 7:** a large interlocking composition with layered outlines, internal lines, directional extensions and a strong green fill. Useful for whole-piece relationship analysis, not isolated glyph extraction.
+
+These are page-level observations from a curated 2010 series of abandoned-space locations. They do **not** establish the frequency of any style in Dortmund, and they do not document the early 1980s/1990s period directly. The image file paths use the series' large-image directory, but exact pixel dimensions were not independently verified. Keep all five items link-only and rights-restricted.
+
+### ALL SURFACE — retailer previews opened, still not a representative sample
+
+The Le Grand Jeu and specialist retailer product pages were reopened and their preview images inspected:
+- https://www.legrandj.eu/products/all-surface-tagging-in-dortmund-in-den-1980er-und-1990er-jahren
+- https://hitzerot.com/shop/all-surface/
+- https://www.mrgraffiti.nl/product/all-surface-tagging-in-dortmund-in-the-1980s-and-1990s/
+
+The visible previews show printed pages with multiple tag/handstyle examples, including marker and aerosol material, but the thumbnail views do not support reliable individual letter transcription or page-level provenance. They are **acquisition previews, not a research corpus**. No glyph observations are added from these thumbnails. The bibliographic descriptions consistently identify a 2022 Dortmund-focused tag book and an edition of 500; page-count metadata is inconsistent across retailer fields (244 vs. 288), so verify pagination in a physical copy. No reuse permission is inferred from product photography.
+
+### Da kukse wa — exhibition route and full-scan restriction
+
+- The official author excerpt remains text-focused: https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html
+- Dortmunder U's *I WAS HERE* page describes an online 360° exhibition/brochure route: https://dortmunder-u.de/i-was-here-360/
+- The WordPress digital documentation page explicitly reserves the authors' / publisher's rights and notes that page layout has been altered: https://aphoristhma.wordpress.com/da-kukse-wa/
+
+The exhibition/brochure route was located, but the viewer was not reliably accessible through this research client. The full-scan page is a restricted research lead, not a permission to download, extract, mirror or republish. No image pages have been visually coded from this book in this pass.
+
+### IRON CITY — library route remains unresolved
+
+The 2002 book remains a strong longitudinal source for Dortmund trains, panels and pieces. The Martha Cooper Library / URBAN NATION catalogue provides a bibliographic record, but the catalogue's library-server warning prevented item-level availability confirmation. Treat it as a **catalogued research lead**, not a confirmed consultation or download route. Ask library staff about on-site consultation, reproduction and interlibrary-loan terms before claiming access.
+
+### INGRID — central research corpus, execution still blocked
+
+The Dortmund query pack Q01–Q06 remains the empirical route for counts, recording-year distribution, type, lettering style, carrier medium/technology and candidate visual samples. On 20 November, direct requests to the public SPARQL endpoint again failed through this research client (timeout / inaccessible response), including a minimal Dortmund label lookup. No result rows were returned and no Dortmund counts are claimed. This does not prove that the endpoint itself is offline.
+
+INGRID remains the central source for continuing style education and systematic comparison. The current blocker is execution/access, not the research design. The published ontology/query catalogue and upstream converter still have a documented namespace discrepancy; do not substitute guessed predicates or publish counts until the deployed graph has been checked. If the public UI is usable in a normal browser, run the existing Q01–Q06 pack there and preserve the raw result exports and query timestamp; otherwise request a city-level export from the INGRID team.
+
+### Updated visual access matrix
+
+| Source | Direct visual access checked in this pass | Coding level allowed now | Rights / next action |
+|---|---|---|---|
+| Pixelprojekt *Lost Spaces Graffiti* (2010) | Five Dortmund images opened; two regional comparators catalogued | Page-level context/composition only; no glyph transcriptions | Rights held by Benito Barajas; request written permission for reuse |
+| *ALL SURFACE* (2022) | Retailer preview images opened | Acquisition lead only; no reliable page-level glyph coding | Obtain/borrow physical copy; verify exact page metadata and rights |
+| *Da kukse wa* (1987 / 2020) | Author excerpt and exhibition route checked; full viewer not reliably accessible | Bibliographic and text-level evidence only | Consult physical/reprint copy; full digital scan is rights-reserved |
+| *IRON CITY* (2002) | Institutional catalogue route checked; no item-level availability | Bibliographic lead only | Ask Martha Cooper Library / regional libraries for consultation |
+| INGRID-KG | Query catalogue and endpoint checked; no live result rows | Metadata design only; no Dortmund counts | Execute Q01–Q06 in a working browser/SPARQL client or request export |
+
+**Decision:** the Pixelprojekt series now supplies a small, visually inspected regional context sample, but it is a 2010 abandoned-space series and cannot substitute for the 1980s/1990s primary books. No historical style frequency, canonical Dortmund grammar or individual glyph sample is inferred from it.
