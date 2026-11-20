@@ -323,7 +323,8 @@
       },
       "learningCheck": [
         "Spiegle b nicht einfach blind: konstruiere d mit eigenem Anschluss",
-        "Variiere Bauchbreite und Ascenderhöhe."
+        "Variiere Bauchbreite und Ascenderhöhe.",
+        "Prüfe die Form neben b, p und q in einem kurzen Wort."
       ],
       "confusionRisks": "Stamm rechts; b hat den Stamm links.",
       "relatedCharacters": [
@@ -627,7 +628,8 @@
       },
       "learningCheck": [
         "Zeichne drei Punktformen und drei Abstände",
-        "Prüfe i neben l und j."
+        "Prüfe i neben l und j.",
+        "Setze i in ein Wort und kontrolliere, ob der Punkt als eigener Bestandteil erkennbar bleibt."
       ],
       "confusionRisks": "Punkt nicht weglassen oder mit dem Stamm verschmelzen, wenn die Lesbarkeit leidet.",
       "relatedCharacters": [
@@ -807,7 +809,8 @@
       },
       "learningCheck": [
         "Vergleiche l, I und 1",
-        "Zeichne eine Version mit und ohne Fuß und prüfe Wortkontext."
+        "Zeichne eine Version mit und ohne Fuß und prüfe Wortkontext.",
+        "Teste l in einer kurzen Folge mit i und 1; passe Fuß oder Neigung so an, dass die Identität stabil bleibt."
       ],
       "confusionRisks": "Nicht als verkleinertes I oder als Ziffer 1 behandeln.",
       "relatedCharacters": [
@@ -867,7 +870,8 @@
       },
       "learningCheck": [
         "Zeichne zwei gleich breite und zwei asymmetrische Schultern",
-        "Vergleiche m und n bei gleicher Höhe."
+        "Vergleiche m und n bei gleicher Höhe.",
+        "Setze m neben n und w; kontrolliere die offenen Innenräume zwischen den Schultern."
       ],
       "confusionRisks": "m hat zwei Schultern; die Zwischenräume sind offen, nicht geschlossene Punzen.",
       "relatedCharacters": [
@@ -987,7 +991,8 @@
       },
       "learningCheck": [
         "Zeichne Kreis, Hochoval und Breitoval",
-        "Vergleiche o mit 0 und c."
+        "Vergleiche o mit 0 und c.",
+        "Prüfe o im Wortkontext neben c und a; halte den Counter klar geschlossen."
       ],
       "confusionRisks": "o ist ein Kleinbuchstabe im x-Höhenkörper; 0 ist eine Ziffer im Lining-System.",
       "relatedCharacters": [
@@ -1652,7 +1657,8 @@
       },
       "learningCheck": [
         "Verändere Diagonalwinkel und Balkenlänge",
-        "Vergleiche z mit 2 und s."
+        "Vergleiche z mit 2 und s.",
+        "Setze z neben s und 2; kontrolliere die diagonale Verbindung."
       ],
       "confusionRisks": "Keine Punze; nicht mit der Ziffer 2 gleichsetzen.",
       "relatedCharacters": [
@@ -2015,7 +2021,8 @@
       },
       "learningCheck": [
         "Vergleiche 5 und S",
-        "Verändere die untere Kurve und die obere Balkenlänge getrennt."
+        "Verändere die untere Kurve und die obere Balkenlänge getrennt.",
+        "Setze 5 in eine Zahlenfolge und vergleiche sie mit S im Wortkontext."
       ],
       "confusionRisks": "Nicht nur als S mit gerader Oberkante behandeln.",
       "relatedCharacters": [
