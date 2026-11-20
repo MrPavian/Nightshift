@@ -333,10 +333,10 @@
     },
     {
       "confidenceRaw": "high for institutional provenance and gallery structure; individual glyph analysis limited to low-resolution gallery previews",
-      "evidenceRaw": "Getty Research Institute documents LA Liber Amicorum / Getty Graffiti Black Book as 143 original works on paper by 151 invited graffiti and tattoo artists. Individual artist pages are presented in a digitized online gallery. The gallery's directly opened mosaic previews support page-level visual screening but are not sufficient for reliable isolated glyph transcription at this resolution.",
+      "evidenceRaw": "Getty Research Institute dokumentiert LA Liber Amicorum / Getty Graffiti Black Book als 143 originale Arbeiten auf Papier von 151 eingeladenen Graffiti- und Tattoo-Künstlern. Die offizielle Projektseite verlinkt einzelne Künstlerarbeiten in einer digitisierten Galerie mit Bilddateien (u. a. Chaz, Axis, Acme, Defer). Die direkt geöffneten Getty-Mosaikansichten erlauben eine visuelle Seitenprüfung und Beschreibung der Komposition; sie sind in dieser Prüfung nicht als hochauflösende Originaldateien mit verifizierten Pixelmaßen bestätigt. Einzelne Glyphen dürfen nur bei eindeutiger Buchstabenidentität und ausreichender Ansicht erfasst werden.",
       "id": "ACQ-GETTY-01",
       "institution": "Getty Research Institute",
-      "nextActionRaw": "Inspect individual artist works at the highest available resolution; record artist attribution and item provenance; prioritize pages with isolated letters or complete alphabets. Seek the published L.A. Graffiti Black Book or Getty research access when gallery previews are insufficient.",
+      "nextActionRaw": "Weitere offizielle Künstlerseiten der Getty-Galerie systematisch sichten; Seiten mit explizit lesbaren Einzelbuchstaben oder vollständigen Alphabeten priorisieren. Pro Seite Künstlerattribution, Getty-Bilddatei/Objekt-ID, Medium, Datum, verfügbare Auflösung und Rechtehinweise prüfen. Nicht eindeutig transkribierbare Rasterseiten bleiben reine Seitenbeobachtungen. Für bessere Auflösung die Publikation L.A. Graffiti Black Book (Getty, 2021) oder Forschungszugang anfragen.",
       "rightsRaw": "Copyright held by contributing artists; link-only; no image copying, tracing or redistribution without item-level permission",
       "scope": "143_original_works_on_paper_by_151_graffiti_and_tattoo_artists",
       "sourceType": "institutional_digitized_graffiti_blackbook_gallery",
