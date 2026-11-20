@@ -472,6 +472,38 @@
       "confidence": "medium",
       "observationDe": "Die Paris-Tafel (2011) zeigt ebenfalls eine Reihe eigenständiger Tag-Formen. Im direkten visuellen Vergleich mit der New-York-Tafel treten unterschiedliche Kombinationen aus Schleifen, kantigen Richtungswechseln, kompakten und lang ausgezogenen Formen sowie Strichgewichten hervor. Diese Beobachtung ist auf die beiden konkreten Tafeln begrenzt; daraus wird keine allgemeine regionale Stilregel abgeleitet und keine unbeschriftete Form einem Buchstaben zugeordnet.",
       "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-ACME-2013-01",
+      "specimenId": "GETTY-ACME-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Acme-Seite zeigt eine horizontal gestreckte, monochrome Lettering-Komposition aus dünnen, kantigen und stark überlagerten Zügen. Lange Diagonalen und perspektivische Linien erzeugen räumliche Tiefe. Die Buchstaben sind als zusammenhängende Komposition angelegt; die Einzelidentität ist auf der verfügbaren Mosaikansicht nicht zuverlässig zu transkribieren.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-DEFER-2013-01",
+      "specimenId": "GETTY-DEFER-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Defer-Seite zeigt eine dichte Schwarzweiß-Komposition mit scharfkantigen, ineinandergreifenden Letterform-Strukturen. Mehrere Konturlinien und Binnenlinien staffeln die Formen; die Buchstaben überlagern und verschränken sich über die gesamte Fläche. Ein organisch gemustertes Hintergrundfeld trennt Vordergrund und Umgebung, ohne die Letterforms zu isolieren.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-CHUBBS-2013-01",
+      "specimenId": "GETTY-CHUBBS-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Chubbs-Seite zeigt eine farbige, stark verdichtete Lettering-Komposition. Mehrere Buchstabenmassen überlagern sich; kontrastierende Farben, Umrisslinien und ornamentale Randdetails erzeugen eine klare Schichtung. Die Seite eignet sich zur Analyse von Masse, Überlagerung und Farbebenen, nicht zur isolierten A–Z-Transkription.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-CAB-2013-01",
+      "specimenId": "GETTY-CAB-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Cab-Seite zeigt ein breites, monochromes Piece vor einer gezeichneten Ziegelwand. Dominant sind schwere, kantige Außenkonturen und eine horizontale Gesamtbewegung; kleinere Zeichen und sekundäre Linien liegen in den Zwischenräumen und überlagern die Hauptformen. Die Einzelbuchstaben sind in der verfügbaren Mosaikansicht nicht zuverlässig lesbar.",
+      "editorialState": "source-checked"
     }
   ],
   "schemaVersion": "1.0"
