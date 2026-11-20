@@ -2117,10 +2117,10 @@
     {
       "accessDate": "2026-11-20",
       "archiveStyleLabel": "Graffiti tag taxonomy plate",
-      "creatorAttribution": "artist-authored-taxonomy",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Evan Roth",
       "date": "2004",
-      "dateQualifier": "as-captioned-or-project-dated",
+      "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
       "id": "ROTH-NYC-A-HARLEM-2004-01",
       "identifier": "Evan Roth, Graffiti Taxonomy; 1021 × 1024 px official artist-site image rendition",
@@ -2149,15 +2149,15 @@
       },
       "sourceRecordId": "ACQ-ROTH-TAX-01",
       "title": "Evan Roth — A taxonomy sheet, Harlem (NYC), 2004",
-      "visualState": "hi_fi_image_opened_and_visually_inspected"
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-20",
       "archiveStyleLabel": "Graffiti tag taxonomy plate",
-      "creatorAttribution": "artist-authored-taxonomy",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Evan Roth",
       "date": "2008",
-      "dateQualifier": "as-captioned-or-project-dated",
+      "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
       "id": "ROTH-NYC-E-LOWEREAST-2008-01",
       "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1022 px official artist-site image rendition",
@@ -2186,15 +2186,15 @@
       },
       "sourceRecordId": "ACQ-ROTH-TAX-01",
       "title": "Evan Roth — E taxonomy sheet, Lower East Side (NYC), 2008",
-      "visualState": "hi_fi_image_opened_and_visually_inspected"
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-20",
       "archiveStyleLabel": "Graffiti tag taxonomy plate",
-      "creatorAttribution": "artist-authored-taxonomy",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Evan Roth",
       "date": "2012",
-      "dateQualifier": "as-captioned-or-project-dated",
+      "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
       "id": "ROTH-DETROIT-D-2012-01",
       "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 683 px official artist-site image rendition",
@@ -2223,15 +2223,15 @@
       },
       "sourceRecordId": "ACQ-ROTH-TAX-01",
       "title": "Evan Roth — D taxonomy sheet, Detroit, 2012",
-      "visualState": "hi_fi_image_opened_and_visually_inspected"
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-20",
       "archiveStyleLabel": "Graffiti tag taxonomy plate",
-      "creatorAttribution": "artist-authored-taxonomy",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Evan Roth",
       "date": "2011",
-      "dateQualifier": "as-captioned-or-project-dated",
+      "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
       "id": "ROTH-NYC-TAXONOMY-2011-01",
       "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1024 px official artist-site image rendition",
@@ -2260,15 +2260,15 @@
       },
       "sourceRecordId": "ACQ-ROTH-TAX-01",
       "title": "Evan Roth — Graffiti Taxonomy: New York, 2011",
-      "visualState": "hi_fi_image_opened_and_visually_inspected"
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": "2026-11-20",
       "archiveStyleLabel": "Graffiti tag taxonomy plate",
-      "creatorAttribution": "artist-authored-taxonomy",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Evan Roth",
       "date": "2011",
-      "dateQualifier": "as-captioned-or-project-dated",
+      "dateQualifier": "as-catalogued",
       "displayMode": "link-only",
       "id": "ROTH-PARIS-TAXONOMY-2011-01",
       "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1024 px official artist-site image rendition",
@@ -2297,7 +2297,7 @@
       },
       "sourceRecordId": "ACQ-ROTH-TAX-01",
       "title": "Evan Roth — Graffiti Taxonomy: Paris, 2011",
-      "visualState": "hi_fi_image_opened_and_visually_inspected"
+      "visualState": "hi_fi_image_opened_and_inspected"
     }
   ]
 }
