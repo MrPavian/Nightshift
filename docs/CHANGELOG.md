@@ -9,6 +9,14 @@
 - Added contract tests for character coverage and content completeness.
 - No SVG study sheets or print exports have been generated yet; all content remains draft and requires visual proof production and owner review.
 
+## 2026-11-20 — Dortmund / Ruhrgebiet source access update
+
+- Opened five Dortmund photographs from Benito Barajas' *Lost Spaces Graffiti* (Pixelprojekt Ruhrgebiet, 2010) and recorded page-level composition observations only.
+- Added the series' exact location/year metadata and photographer-held rights notice; no images copied and no individual glyphs transcribed.
+- Opened *ALL SURFACE* retailer preview images; retained them as acquisition leads only, not as a representative or glyph-level sample.
+- Updated the Dortmund visual source-access map, coding rubric and INGRID Q01–Q06 execution log.
+- Re-tried the public INGRID SPARQL endpoint; no result rows returned. No Dortmund counts or frequency claims added.
+
 
 ## Build 0.6 — Full Alphabet / Glyph Relationships
 
