@@ -364,6 +364,46 @@
       "confidence": "medium",
       "observationDe": "Die offizielle Getty-Galerieansicht der Chaz-Arbeit zeigt im oberen Seitenbereich mehrere separat angelegte, tagartige Zeichen- und Letterform-Studien in einer rasterähnlichen Anordnung. Die Formen variieren sichtbar zwischen kurzen, gestischen, schleifenförmigen und stärker kantigen Zügen. Im unteren Bereich steht eine größere, konturierte CHAZ-Wortmarke. Die einzelnen Zeichen des Rasters lassen sich aus der verfügbaren Webansicht nicht zuverlässig als bestimmte lateinische Buchstaben transkribieren; deshalb wird keine A–Z-Glyph-Beobachtung abgeleitet. Pixelmaße und eine höher aufgelöste Originaldatei sind nicht verifiziert.",
       "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-A-HARLEM-2004-01",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die offizielle A-Taxonomietafel zeigt eine Reihe separat angeordneter A-Konstruktionen aus Harlem (NYC, 2004). Sichtbar variieren unter anderem Spitzenwinkel, Verhältnis der beiden Hauptzüge, Lage und Form des Querzugs, offene gegenüber geschlossenen beziehungsweise schleifenartigen Innenräumen sowie zusätzliche Ausläufe. Die Buchstabenidentität bleibt über diese Unterschiede hinweg erkennbar. Die Beobachtung beschreibt die Streuung der Konstruktionen; sie übernimmt keine einzelne Form und leitet keine Häufigkeits- oder Qualitätsnorm ab.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-E-LOWEREAST-2008-01",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die offizielle E-Tafel aus der Lower East Side (NYC, 2008) zeigt unterschiedliche E/e-Ausführungen: geschlossene und offene Schleifen, cursive Kleinbuchstaben-Anmutung, kantigere/blockartige Varianten, stark wechselnde Strichbreiten sowie unterschiedlich integrierte Ein- und Ausläufe. Die Beispiele zeigen, dass die Buchstabenidentität in einer Tag-Sammlung auch bei stark veränderter Strichführung und Gestik erhalten bleiben kann. Keine Einzelkontur wird als Master übernommen.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-DETROIT-D-2012-01",
+      "specimenId": "ROTH-DETROIT-D-2012-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Detroit-Tafel (2012) zeigt wiederholte D-Konstruktionen mit unterschiedlichen Stämmen und Bögen: von offenen, leichten Konturen bis zu schweren, weitgehend geschlossenen Schalen; Innenraum, Stammposition, Strichgewicht und Anschlussbewegung variieren deutlich. Mehrere Beispiele wirken wie ein zusammenhängender gestischer Zug statt einer schematischen Kombination aus senkrechtem Stamm und Bogen. Das ist ein Seitenbefund, keine normative D-Konstruktion.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-TAXONOMY-2011-01",
+      "specimenId": "ROTH-NYC-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die New-York-Tafel (2011) stellt zahlreiche eigenständige Tag-Formen in einem Raster gegenüber. Sichtbar werden unterschiedliche Linienökonomie, Schleifen- und Kreuzungsbewegungen, Winkel, Strichgewichte, Verdichtung und Signaturausläufe. Da die Einzelzeichen auf dieser Tafel nicht durchgehend als Buchstaben beschriftet sind, wird keine A–Z-Zuordnung vorgenommen.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-PARIS-TAXONOMY-2011-01",
+      "specimenId": "ROTH-PARIS-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Paris-Tafel (2011) zeigt ebenfalls eine Reihe eigenständiger Tag-Formen. Im direkten visuellen Vergleich mit der New-York-Tafel treten unterschiedliche Kombinationen aus Schleifen, kantigen Richtungswechseln, kompakten und lang ausgezogenen Formen sowie Strichgewichten hervor. Diese Beobachtung ist auf die beiden konkreten Tafeln begrenzt; daraus wird keine allgemeine regionale Stilregel abgeleitet und keine unbeschriftete Form einem Buchstaben zugeordnet.",
+      "editorialState": "source-checked"
     }
   ],
   "schemaVersion": "1.0"
