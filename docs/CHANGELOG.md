@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-20 — Academy lowercase and numerals (content draft)
+
+- Added a structured content package for all 26 lowercase letters and 10 lining numerals.
+- Each character has letter-specific anatomy, construction guidance, proportion rules, five structural variations, three original graffiti-transfer directions and at least three learning tasks.
+- Explicitly separates lowercase x-height/ascender/descender guides from the lining-numeral figure-height system.
+- Documents single-/double-storey a and g, numeral ambiguity pairs, and optional rather than universal conventions such as slashed zero and crossed seven.
+- Added contract tests for character coverage and content completeness.
+- No SVG study sheets or print exports have been generated yet; all content remains draft and requires visual proof production and owner review.
+
+
 ## Build 0.6 — Full Alphabet / Glyph Relationships
 
 - Added A–Z glyph addressing.

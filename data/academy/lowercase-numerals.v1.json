@@ -1,0 +1,2278 @@
+{
+  "schema": "nightshift.academy.lowercase-numerals.v1",
+  "version": "1.0.0",
+  "status": "Entwurf",
+  "decision": "Owner-Auftrag vom 16.11.2026: ChatGPT verantwortet Kleinbuchstaben a–z und Ziffern 0–9. Dieser Datensatz ist ein redaktionell-konstruktiver Inhaltssatz, noch keine visuelle oder druckfertige Freigabe.",
+  "bindingReferences": {
+    "visualStandard": "docs/lettering/GRAFFITI_ACADEMY_VISUAL_STYLE_STANDARD_01.md",
+    "masterPrompt": "docs/lettering/MASTER_CONTROL_PROMPT_01.md v1.2",
+    "uppercaseReference": "assets/design/letter-study_A_01.svg (visuelle Referenz; keine Formen kopieren)"
+  },
+  "productionRules": {
+    "page": "DIN A4 quer, 297 × 210 mm; 1680 × 1188 px; Header, 3×3 Lernfelder, Footer",
+    "panelOrder": [
+      "Grundform",
+      "Buchstabenanatomie",
+      "Proportionen & Raster",
+      "Konstruktionsanalyse",
+      "Formvariationen",
+      "Formcharakter",
+      "Kalligrafie & Duktus",
+      "Graffiti-Transfer",
+      "Lernkontrolle"
+    ],
+    "minimumStructuralVariants": 5,
+    "minimumGraffitiDirections": 3,
+    "graffitiDirections": [
+      "throw-up-orientiert",
+      "block-style",
+      "piece-/Wildstyle-orientiert"
+    ],
+    "visualStyle": "Warmweißes, leicht abgenutztes Blackbook-Papier; schwarze Marker-Überschriften und Rahmen; Gelb als Signal; Violett für Konstruktion; Spritzer/Drips zurückhaltend und separat editierbar.",
+    "originality": "Alle Letterformen und Graffiti-Entwürfe müssen originär und fiktiv sein. Keine Writer-/Crew-Signaturen, existierenden Pieces oder Buchabbildungen nachzeichnen.",
+    "processEvidence": "Aus Standbildern keine sichere Strichfolge, Geschwindigkeit, Druck, Werkzeughaltung oder Aerosoltechnik ableiten. Bewegungsdarstellungen als Hypothese kennzeichnen.",
+    "output": "Editierbare SVG-Master plus Clean-Print-Variante; alle Beschriftungen als echte SVG-Textobjekte; Proof in A4-Größe und bei 100 Prozent."
+  },
+  "sharedLowercaseSystem": {
+    "guideLines": [
+      "Ascenderlinie",
+      "x-Höhe",
+      "Grundlinie",
+      "Descenderlinie"
+    ],
+    "note": "Kleinbuchstaben sind keine verkleinerten Versalien. Die x-Höhe beschreibt den Hauptkörper; Ascender reichen darüber, Descender darunter. Runde Formen dürfen optisch geringfügig über Grund- und x-Höhe hinausragen. Nicht jeder Buchstabe nutzt alle vier Linien."
+  },
+  "sharedNumeralSystem": {
+    "default": "Lining-Ziffern als gemeinsamer Academy-Referenzsatz: Figurenhöhe nahe Versalhöhe, alle Ziffern stehen auf der Grundlinie. Keine x-Höhe für die Standardziffern.",
+    "alternatives": "Oldstyle-Ziffern mit Ober- und Unterlängen sind ein eigener Satz und dürfen nicht unmarkiert in den Lining-Grundsatz gemischt werden.",
+    "note": "Proportionale und tabellarische Ziffernbreiten sind Satz-/Layoutentscheidungen; die Academy zeichnet zunächst proportionale individuelle Ziffernformen. Ein Slash in 0, Querstrich in 7 und offene/geschlossene 4 sind Optionen, keine universellen Regeln."
+  },
+  "sharedSafeguards": [
+    "Buchstabenidentität vor Effekten; Silhouette und Negativräume müssen ohne Farbe lesbar bleiben.",
+    "Fünf Varianten müssen sich in Konstruktion oder Silhouette unterscheiden, nicht nur durch Farbe, Outline oder Drips.",
+    "Die drei Graffiti-Richtungen sind parallele Entwurfsansätze, keine historische Lernleiter.",
+    "Panel 8 ist groß und gestalterisch zentral; mindestens drei deutlich unterschiedliche Originalentwürfe.",
+    "Anatomie nur benennen, wenn das Bauteil tatsächlich vorkommt; offene Innenräume nicht fälschlich als geschlossene Punzen bezeichnen.",
+    "Prozentwerte und Rastermaße sind Beispielwerte der jeweiligen Zeichnung, keine universellen Regeln.",
+    "Kalligrafie-/Marker-/Brush-Effekte sind nicht mit Aerosoltechnik gleichzusetzen.",
+    "Alle Seiten bleiben Entwurf, bis der Owner sie geprüft hat."
+  ],
+  "references": [
+    {
+      "title": "The Anatomy of a Letterform",
+      "publisher": "WordPress Developer Blog",
+      "url": "https://developer.wordpress.org/news/2023/08/the-anatomy-of-a-letterform/",
+      "use": "Begriffe wie Stem, Bowl, Counter, Shoulder, Eye, Ascender, Descender und Aperture; Typografie-Anatomie, keine Graffiti-Stilnorm."
+    },
+    {
+      "title": "What Is Type Anatomy?",
+      "publisher": "Interaction Design Foundation",
+      "url": "https://ixdf.org/literature/article/what-is-type-anatomy",
+      "use": "Baseline, x-height, Ascender/Descender, Counter, Aperture, Tittle und Terminal."
+    },
+    {
+      "title": "Two Story Type",
+      "publisher": "Monotype / MyFonts",
+      "url": "https://cms.myfonts.com/sites/default/files/2024-10/Manual-Two%20Story%20Type.pdf",
+      "use": "Single- und Double-Storey-Konstruktionen von a und g; als alternative Formfamilien behandeln."
+    },
+    {
+      "title": "Manual: Numerals",
+      "publisher": "Type.today",
+      "url": "https://type.today/en/journal/numerals",
+      "use": "Lining/Oldstyle sowie proportionale/tabellarische Ziffern; dient der Einordnung, nicht als verbindliche Graffiti-Form."
+    },
+    {
+      "title": "INGRID — Informationssystem Graffiti in Deutschland",
+      "publisher": "Universität Paderborn",
+      "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid/seite-2",
+      "use": "Graffiti-Research-Korpus und Annotationskontext; keine einzelne Form wird daraus kopiert. Der konkrete Dortmund-Datensatz bleibt separat zu verifizieren."
+    }
+  ],
+  "characters": [
+    {
+      "id": "lowercase-a",
+      "character": "a",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Doppelgeschossiges a als neutrale Referenz; die alternative einstöckige Form ist ein eigenständiger Konstruktionsmodus, kein Effekt.",
+      "anatomy": [
+        "Oberer Bauch mit Innenraum",
+        "rechter Stamm",
+        "Anschluss/Schulter",
+        "unterer Auslauf",
+        "bei der einstöckigen Alternative geschlossener oder offener Bogen mit Stamm."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; der Bauch darf optisch geringfügig über die x-Höhe hinausragen. Keine Versalhöhe als Ersatz für die x-Höhe.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Doppelgeschossig schmal"
+        },
+        {
+          "id": "v2",
+          "description": "einstöckig geschlossen"
+        },
+        {
+          "id": "v3",
+          "description": "einstöckig offen"
+        },
+        {
+          "id": "v4",
+          "description": "kantiger Bauch mit flacher Schulter"
+        },
+        {
+          "id": "v5",
+          "description": "breiter Bauch mit verlängertem Endzug."
+        }
+      ],
+      "formCharacter": "Bauchöffnung und Anschluss bestimmen die Lesbarkeit stärker als ein dekorativer Abschluss. Die einstöckige Form braucht eine klare Trennung zu o und u.",
+      "calligraphyAndDuctus": "Die doppelte Form eignet sich für eine kompakte, zweigeteilte Masse; die einstöckige Form für einen zusammenhängenden Bogen. Marker und Brush können den Anschluss verdicken; Broad-Nib erzeugt stärkere Richtungs-Kontraste.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runder, geschlossener Bauch mit großzügigem Innenraum; den Anschluss als klare Brücke halten.",
+        "block-style": "block-style: klarer Stamm und kantiger Bauch; Innenraum als bewusst ausgesparte Fläche sichern.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: obere und untere Formzone gegeneinander verschieben; Anschluss und Auslauf als eigene Verbindungen planen, nicht als Effektlinien."
+      },
+      "learningCheck": [
+        "Zeichne beide Grundkonstruktionen nebeneinander",
+        "Verändere nur den Anschluss und vergleiche die Lesbarkeit",
+        "Baue anschließend ein eigenes a in drei deutlich verschiedenen Silhouetten."
+      ],
+      "confusionRisks": "Nicht als verkleinertes A behandeln; einstöckig und doppelgeschossig nicht vermischen.",
+      "relatedCharacters": [
+        "g",
+        "o",
+        "d"
+      ]
+    },
+    {
+      "id": "lowercase-b",
+      "character": "b",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Aufrechter Stamm mit hochreichendem Ascender und rechts angesetztem Bauch.",
+      "anatomy": [
+        "Ascender/Stamm",
+        "Bauch",
+        "Innenraum",
+        "Schulter/Anschluss",
+        "Fuß oder Terminal am Grundlinienkontakt."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Der Stamm reicht über die x-Höhe; Bauch und Stamm müssen optisch ausgewogen sein.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmaler hoher Ascender"
+        },
+        {
+          "id": "v2",
+          "description": "kompakter runder Bauch"
+        },
+        {
+          "id": "v3",
+          "description": "eckiger Bauch"
+        },
+        {
+          "id": "v4",
+          "description": "offener Bauch mit größerer Apertur"
+        },
+        {
+          "id": "v5",
+          "description": "nach außen gezogener unterer Terminal."
+        }
+      ],
+      "formCharacter": "Ein hoher Stamm kann die Masse kopflastig wirken lassen; ein breiter Bauch braucht ausreichend Innenraum. Der Stamm darf nicht wie ein l oder h ohne Bauch wirken.",
+      "calligraphyAndDuctus": "Ein durchgehender Stamm bleibt die tragende Achse; Broad-Nib macht den Bauch schwerer, Marker kann den Anschluss verdicken. Keine feste Strichfolge aus dem Standbild ableiten.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: hoher Stamm mit kompakter, runder Bauchmasse; Counter offen halten.",
+        "block-style": "block-style: gerader Ascender, rechteckig gerundeter Bauch und präzise Innenform.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Bauch und Stamm leicht staffeln; Überlagerung nur an einer geplanten Verbindungsstelle."
+      },
+      "learningCheck": [
+        "Vergleiche Stammhöhe und Bauchbreite",
+        "Zeichne eine offene und eine geschlossene Bauchvariante",
+        "Prüfe b gegen d und h."
+      ],
+      "confusionRisks": "Der Bauch sitzt rechts vom Stamm; nicht mit d spiegeln.",
+      "relatedCharacters": [
+        "d",
+        "h",
+        "p"
+      ]
+    },
+    {
+      "id": "lowercase-c",
+      "character": "c",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Offener, annähernd runder Bogen mit zwei freien Enden und klarer Apertur.",
+      "anatomy": [
+        "Oberer und unterer Bogen",
+        "obere und untere Terminal",
+        "Apertur",
+        "Innenraum als offene Negativform."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; Rundung kann leicht über beide Linien hinausragen. Aperturbreite ist eine bewusste Variable.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Weit offene Apertur"
+        },
+        {
+          "id": "v2",
+          "description": "enge Apertur"
+        },
+        {
+          "id": "v3",
+          "description": "fast geschlossener Bogen"
+        },
+        {
+          "id": "v4",
+          "description": "kantiger C-Bogen"
+        },
+        {
+          "id": "v5",
+          "description": "nach innen oder außen gerichtete Terminals."
+        }
+      ],
+      "formCharacter": "Die Öffnung ist das zentrale Unterscheidungsmerkmal zu o. Eine zu enge Apertur kann c wie o erscheinen lassen.",
+      "calligraphyAndDuctus": "Ein Marker kann die Enden stumpf machen; Brush kann die Terminals verjüngen. Das sind Materialeffekte, nicht Belege für eine konkrete Bewegung.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breiter offener Bogen mit großzügiger Öffnung; nicht zu o schließen.",
+        "block-style": "block-style: kantige C-Silhouette mit klaren Endflächen und kontrollierter Apertur.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: obere und untere Terminals gegeneinander ausrichten; eine Verlängerung darf die Öffnung nicht verdecken."
+      },
+      "learningCheck": [
+        "Zeichne c mit drei Aperturbreiten",
+        "Verändere danach nur die Terminalrichtung",
+        "Vergleiche c und o in Wortabständen."
+      ],
+      "confusionRisks": "Nicht vollständig schließen; sonst geht die Buchstabenidentität verloren.",
+      "relatedCharacters": [
+        "e",
+        "o",
+        "g"
+      ]
+    },
+    {
+      "id": "lowercase-d",
+      "character": "d",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Bauch links, Ascender rechts; der Stamm steigt über die x-Höhe.",
+      "anatomy": [
+        "Bauch",
+        "Innenraum",
+        "rechter Stamm/Ascender",
+        "Anschluss am oberen Bauch",
+        "Fuß/Terminal."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Der Stamm steht rechts; Rundung kann die x-Höhe optisch überschreiten.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmaler Ascender"
+        },
+        {
+          "id": "v2",
+          "description": "breiter Bauch"
+        },
+        {
+          "id": "v3",
+          "description": "eckiger Bauch"
+        },
+        {
+          "id": "v4",
+          "description": "offener Anschluss"
+        },
+        {
+          "id": "v5",
+          "description": "leicht geneigter Stamm mit rundem Bauch."
+        }
+      ],
+      "formCharacter": "Die Lage des Stamms unterscheidet d von b. Ein zu enger Bauch lässt die Form wie cl oder a wirken.",
+      "calligraphyAndDuctus": "Der Stamm bleibt klar; Brush kann die Kurve kontrastieren, Marker erzeugt gleichmäßigere Masse. Bewegung bleibt eine Hypothese.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakter runder Bauch links mit kräftigem rechten Stamm.",
+        "block-style": "block-style: rechteckiger Bauch und hoher gerader Ascender; Counter klar freistellen.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Stamm und Bauch als zwei gekoppelte Massen mit bewusstem Überlappungspunkt planen."
+      },
+      "learningCheck": [
+        "Spiegle b nicht einfach blind: konstruiere d mit eigenem Anschluss",
+        "Variiere Bauchbreite und Ascenderhöhe.",
+        "Prüfe die Form neben b, p und q in einem kurzen Wort."
+      ],
+      "confusionRisks": "Stamm rechts; b hat den Stamm links.",
+      "relatedCharacters": [
+        "b",
+        "o",
+        "q"
+      ]
+    },
+    {
+      "id": "lowercase-e",
+      "character": "e",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Kompakter Bogen mit Querzug, Auge und offener oder enger Apertur.",
+      "anatomy": [
+        "Bauch",
+        "Auge/Counter",
+        "Querzug",
+        "Apertur",
+        "oberer und unterer Terminal."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; Querzug liegt charakterbezogen, nicht automatisch exakt mittig. Rundung darf leicht overshooten.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Weites offenes e"
+        },
+        {
+          "id": "v2",
+          "description": "engeres Auge"
+        },
+        {
+          "id": "v3",
+          "description": "diagonaler Querzug"
+        },
+        {
+          "id": "v4",
+          "description": "kantiger e-Körper"
+        },
+        {
+          "id": "v5",
+          "description": "verlängertes oberes Terminal."
+        }
+      ],
+      "formCharacter": "Auge und Querzug machen e lesbar. Zu kleiner Innenraum oder verdeckter Querzug lässt es wie c oder eine Schleife wirken.",
+      "calligraphyAndDuctus": "Broad-Nib betont Querzug und Kurvenkontrast; Brush erzeugt variable Terminals. Keine Duktus-Reihenfolge als Tatsache behaupten.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: rundes e mit gut sichtbarem Auge und offener Apertur.",
+        "block-style": "block-style: kantiger Bauch, klarer Querzug, großes freies Auge.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Querzug als verbindendes Element nutzen, aber Apertur und Auge frei halten."
+      },
+      "learningCheck": [
+        "Zeichne drei Querzughöhen",
+        "Schließe und öffne die Apertur",
+        "Prüfe e neben c und o."
+      ],
+      "confusionRisks": "Das Auge ist der geschlossene Innenraum; Apertur und Querzug nicht verwechseln.",
+      "relatedCharacters": [
+        "c",
+        "o",
+        "s"
+      ]
+    },
+    {
+      "id": "lowercase-f",
+      "character": "f",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender-descender",
+      "neutralForm": "Schmaler, hoher Ascender mit Querbalken und unterer Kurve oder Descender; die genaue Formfamilie variiert.",
+      "anatomy": [
+        "Ascender",
+        "Stamm",
+        "Querbalken/Arm",
+        "Haken oder unterer Auslauf",
+        "bei langem f Descender."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe, Ascenderlinie und ggf. Descenderlinie. Nicht jedes f muss gleich weit unter die Grundlinie reichen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kurzer Ascender"
+        },
+        {
+          "id": "v2",
+          "description": "langer Ascender"
+        },
+        {
+          "id": "v3",
+          "description": "kurzer Haken ohne langen Descender"
+        },
+        {
+          "id": "v4",
+          "description": "gebogener langer Descender"
+        },
+        {
+          "id": "v5",
+          "description": "kantiger Querbalken mit offenem Terminal."
+        }
+      ],
+      "formCharacter": "Das f braucht eine eindeutige obere Höhe und einen erkennbaren Querzug. Zu viel Schleife kann es wie s oder langes ſ wirken lassen.",
+      "calligraphyAndDuctus": "Broad-Nib zeigt starken Vertikal-/Horizontal-Kontrast; Brush eignet sich für Hakenstudien. Aerosoltechnik nicht aus Kalligrafie ableiten.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakter Stamm mit klar erkennbarem Querzug; unteren Haken nicht überladen.",
+        "block-style": "block-style: gerader Ascender und präziser Querbalken; Haken als kontrollierter Fuß.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: langer unterer Auslauf als gerichtete Verbindung, ohne den Stamm zu verdecken."
+      },
+      "learningCheck": [
+        "Vergleiche kurzes und langes f",
+        "Zeichne den Querbalken an drei Höhen",
+        "Prüfe die Form in einer Wortmitte."
+      ],
+      "confusionRisks": "Ascender und möglicher Descender müssen getrennt erklärt werden; kein pauschaler Strichablauf.",
+      "relatedCharacters": [
+        "t",
+        "l",
+        "s"
+      ]
+    },
+    {
+      "id": "lowercase-g",
+      "character": "g",
+      "characterType": "lowercase",
+      "constructionGroup": "descender",
+      "neutralForm": "Doppelgeschossiges g als neutrale Referenz mit oberem Bauch, Ohr, Verbindung und unterer Schleife; einstöckige Form separat zeigen.",
+      "anatomy": [
+        "Oberer Bauch und Auge",
+        "Ohr",
+        "Verbindung/Link",
+        "untere Schleife",
+        "Descender",
+        "Endung."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Descenderlinie. Oberer Bauch sitzt auf x-Höhe, untere Schleife reicht darunter.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Doppelgeschossig kompakt"
+        },
+        {
+          "id": "v2",
+          "description": "doppelgeschossig mit offener Schleife"
+        },
+        {
+          "id": "v3",
+          "description": "einstöckig geschlossen"
+        },
+        {
+          "id": "v4",
+          "description": "einstöckig offen"
+        },
+        {
+          "id": "v5",
+          "description": "langer schmaler Descender."
+        }
+      ],
+      "formCharacter": "Die beiden Grundformen sind nicht austauschbare Effekte. Bei doppelgeschossig müssen Link und untere Schleife lesbar bleiben; einstöckig braucht klare Abgrenzung zu a und q.",
+      "calligraphyAndDuctus": "Brush und Marker können Schleife/Link unterschiedlich gewichten; statische Darstellung beweist keine Schreibbewegung.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: einstöckige runde Form mit großem, lesbarem unteren Loop oder klarer Endung.",
+        "block-style": "block-style: doppelgeschossige Form mit getrennt lesbaren Bauch- und Schleifenzonen.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Link als geplante Brücke nutzen; Schleife nicht in zufällige Überlagerung auflösen."
+      },
+      "learningCheck": [
+        "Zeichne beide g-Grundformen",
+        "Verändere Linklänge und Schleifenöffnung",
+        "Vergleiche g mit a und q."
+      ],
+      "confusionRisks": "Nicht ein einziges g als universelle Form festlegen.",
+      "relatedCharacters": [
+        "a",
+        "q",
+        "y"
+      ]
+    },
+    {
+      "id": "lowercase-h",
+      "character": "h",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Hoher linker Stamm mit Ascender und rechts angesetzter Schulter, die zur Grundlinie zurückführt.",
+      "anatomy": [
+        "Ascender/Stamm",
+        "Schulter",
+        "rechter Abstrich",
+        "Fuß",
+        "offener Innenraum unter der Schulter."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Schulterhöhe und -breite bestimmen den Charakter.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmaler Stamm"
+        },
+        {
+          "id": "v2",
+          "description": "breite Schulter"
+        },
+        {
+          "id": "v3",
+          "description": "niedrige Schulter"
+        },
+        {
+          "id": "v4",
+          "description": "kantige Schulter"
+        },
+        {
+          "id": "v5",
+          "description": "nach außen verlängertes rechtes Terminal."
+        }
+      ],
+      "formCharacter": "Die Schulter muss den rechten Bogen tragen; ein zu kurzer Bogen kann h wie n wirken lassen.",
+      "calligraphyAndDuctus": "Broad-Nib erzeugt deutliche Stamm-/Schulterkontraste; Marker macht die Schulter kompakter.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kräftiger Stamm und runde, breite Schulter.",
+        "block-style": "block-style: senkrechter Ascender mit gerader oder eckiger Schulter und klarer Öffnung.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Schulter als Richtungswechsel mit einem geplanten Anschluss gestalten."
+      },
+      "learningCheck": [
+        "Vergleiche h und n bei gleicher x-Höhe",
+        "Verändere nur die Ascenderlänge",
+        "Zeichne eine kantige Schulter."
+      ],
+      "confusionRisks": "Ascender links ist entscheidend; n hat keinen hohen linken Stamm.",
+      "relatedCharacters": [
+        "n",
+        "m",
+        "b"
+      ]
+    },
+    {
+      "id": "lowercase-i",
+      "character": "i",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Ein einzelner Stamm innerhalb der x-Höhe mit separat stehendem Punkt (Tittle).",
+      "anatomy": [
+        "Stamm",
+        "Punkt/Tittle",
+        "obere und untere Endung",
+        "Abstand zwischen Stamm und Punkt."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; Punktposition als eigener Abstand, nicht als Teil der Stammhöhe.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Runder Punkt"
+        },
+        {
+          "id": "v2",
+          "description": "quadratischer Punkt"
+        },
+        {
+          "id": "v3",
+          "description": "schräger Punkt"
+        },
+        {
+          "id": "v4",
+          "description": "breiter Stamm"
+        },
+        {
+          "id": "v5",
+          "description": "leicht geneigter Stamm mit versetztem Punkt."
+        }
+      ],
+      "formCharacter": "Der Punkt muss als eigener Bestandteil lesbar bleiben. Zu große Distanz kann wie ein Akzent oder separates Zeichen wirken.",
+      "calligraphyAndDuctus": "Marker kann den Stamm füllen; Broad-Nib verändert die Strichenden. Der Punkt kann als eigene Form variiert werden.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kurzer, kräftiger Stamm mit großem, klar getrenntem Punkt.",
+        "block-style": "block-style: rechteckiger Stamm und präzise ausgerichteter quadratischer Punkt.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Punkt als eigenständiges Element in die Komposition einbinden, aber optisch dem i zuordnen."
+      },
+      "learningCheck": [
+        "Zeichne drei Punktformen und drei Abstände",
+        "Prüfe i neben l und j.",
+        "Setze i in ein Wort und kontrolliere, ob der Punkt als eigener Bestandteil erkennbar bleibt."
+      ],
+      "confusionRisks": "Punkt nicht weglassen oder mit dem Stamm verschmelzen, wenn die Lesbarkeit leidet.",
+      "relatedCharacters": [
+        "j",
+        "l",
+        "t"
+      ]
+    },
+    {
+      "id": "lowercase-j",
+      "character": "j",
+      "characterType": "lowercase",
+      "constructionGroup": "descender",
+      "neutralForm": "Stamm mit separatem Punkt und unter die Grundlinie reichendem, oft gekrümmtem Descender.",
+      "anatomy": [
+        "Stamm",
+        "Tittle/Punkt",
+        "Descender",
+        "unterer Haken oder Terminal."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Descenderlinie. Punkt über dem Stamm; unterer Zug reicht unter die Grundlinie.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Gerader Descender"
+        },
+        {
+          "id": "v2",
+          "description": "gebogener Haken"
+        },
+        {
+          "id": "v3",
+          "description": "kurzer Descender"
+        },
+        {
+          "id": "v4",
+          "description": "langer Loop"
+        },
+        {
+          "id": "v5",
+          "description": "versetzter Punkt."
+        }
+      ],
+      "formCharacter": "Punkt und Descender müssen zusammen als j lesbar bleiben; der untere Haken darf nicht wie ein y wirken.",
+      "calligraphyAndDuctus": "Brush kann den Haken variieren; Marker liefert gleichmäßige Masse. Keine Bewegung aus dem Standbild behaupten.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakter Stamm und klarer, runder Haken unter der Grundlinie.",
+        "block-style": "block-style: gerader Stamm mit eckigem, kontrolliertem Descender.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Descender als gerichtete Verbindung unterhalb der Grundlinie planen."
+      },
+      "learningCheck": [
+        "Verändere die Hakenrichtung",
+        "Vergleiche j und i bei gleicher Stammhöhe",
+        "Prüfe die Punktposition."
+      ],
+      "confusionRisks": "Der Descender ist das Hauptunterscheidungsmerkmal zu i.",
+      "relatedCharacters": [
+        "i",
+        "y",
+        "g"
+      ]
+    },
+    {
+      "id": "lowercase-k",
+      "character": "k",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Hoher Stamm mit zwei unterschiedlich gerichteten Anschlüssen: oberem Arm und unterem Bein.",
+      "anatomy": [
+        "Ascender/Stamm",
+        "oberer Arm",
+        "unteres Bein",
+        "Gelenk/Verbindung",
+        "freie Terminals."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Das Gelenk liegt meist im x-Höhenkörper, kann aber variieren.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kurzer oberer Arm"
+        },
+        {
+          "id": "v2",
+          "description": "langer oberer Arm"
+        },
+        {
+          "id": "v3",
+          "description": "diagonales Bein"
+        },
+        {
+          "id": "v4",
+          "description": "gebogenes Bein"
+        },
+        {
+          "id": "v5",
+          "description": "offenes Gelenk mit versetzten Anschlüssen."
+        }
+      ],
+      "formCharacter": "Das Gelenk muss die drei Richtungen lesbar verbinden. Ein zu dominanter Arm kann wie ein x oder R-Fragment wirken.",
+      "calligraphyAndDuctus": "Broad-Nib betont den Stamm; Brush kann Arme unterschiedlich auslaufen lassen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kräftiger Ascender mit zwei klaren, kompakten Armen.",
+        "block-style": "block-style: gerader Stamm und geometrisch definierter Gelenkpunkt; Bein als klare Diagonale.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Arm und Bein in zwei Richtungen führen, aber am Gelenk kontrolliert verbinden."
+      },
+      "learningCheck": [
+        "Zeichne drei Gelenkpositionen",
+        "Verändere nur die Länge des unteren Beins",
+        "Prüfe die Negativräume."
+      ],
+      "confusionRisks": "Das k hat einen Ascender und ein echtes Gelenk; nicht als kleines K kopieren.",
+      "relatedCharacters": [
+        "h",
+        "x",
+        "r"
+      ]
+    },
+    {
+      "id": "lowercase-l",
+      "character": "l",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Ein einzelner hoher Stamm, häufig mit Fuß, Biegung oder kleinem Terminal.",
+      "anatomy": [
+        "Ascender/Stamm",
+        "oberes Terminal",
+        "Fuß oder unterer Auslauf",
+        "ggf. Biegung."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Die Stammhöhe ist wichtiger als eine x-Höhenmasse.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Gerader Stamm"
+        },
+        {
+          "id": "v2",
+          "description": "leicht geneigter Stamm"
+        },
+        {
+          "id": "v3",
+          "description": "Fuß nach innen"
+        },
+        {
+          "id": "v4",
+          "description": "Fuß nach außen"
+        },
+        {
+          "id": "v5",
+          "description": "gebogene oder loopartige Variante."
+        }
+      ],
+      "formCharacter": "l kann mit I und 1 verwechselt werden. Proportion, Fuß und Kontext müssen die Kleinbuchstabenidentität sichern.",
+      "calligraphyAndDuctus": "Marker erzeugt kräftige gleichmäßige Masse; Brush kann den Fuß verjüngen. Eine Loop-Variante bleibt optional.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: einfacher, leicht gebogener Stamm mit kleinem Fuß, nicht nur ein senkrechter Strich.",
+        "block-style": "block-style: klarer Ascender mit breitem Fuß und eindeutiger Kleinbuchstabenhöhe.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Stamm als hohe Leitachse mit kontrolliertem Fußanschluss einsetzen."
+      },
+      "learningCheck": [
+        "Vergleiche l, I und 1",
+        "Zeichne eine Version mit und ohne Fuß und prüfe Wortkontext.",
+        "Teste l in einer kurzen Folge mit i und 1; passe Fuß oder Neigung so an, dass die Identität stabil bleibt."
+      ],
+      "confusionRisks": "Nicht als verkleinertes I oder als Ziffer 1 behandeln.",
+      "relatedCharacters": [
+        "i",
+        "t",
+        "1"
+      ]
+    },
+    {
+      "id": "lowercase-m",
+      "character": "m",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Drei Stämme mit zwei Schultern; zwei offene Innenräume entstehen zwischen den Bögen.",
+      "anatomy": [
+        "Linker Stamm",
+        "zwei Schultern",
+        "mittlerer und rechter Stamm",
+        "zwei offene Innenräume",
+        "Endungen."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe. Die beiden Schultern können unterschiedlich breit sein; keine geschlossenen Counter erzwingen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmal und hoch"
+        },
+        {
+          "id": "v2",
+          "description": "breit und flach"
+        },
+        {
+          "id": "v3",
+          "description": "zwei runde Schultern"
+        },
+        {
+          "id": "v4",
+          "description": "zwei kantige Schultern"
+        },
+        {
+          "id": "v5",
+          "description": "asymmetrische erste/zweite Schulter."
+        }
+      ],
+      "formCharacter": "Die Doppel-Schulter muss erkennbar bleiben. Zu starke Verdichtung kann m wie rn oder n mit Zusatzstrich erscheinen lassen.",
+      "calligraphyAndDuctus": "Broad-Nib betont die Stämme; Brush kann Schultern unterschiedlich gewichten. Die offenen Innenräume nicht als Counter bezeichnen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite, runde Doppel-Schulter mit gut lesbaren offenen Innenräumen.",
+        "block-style": "block-style: drei klare Stämme und zwei eckige, gleichmäßig getrennte Schultern.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: die zwei Schultern leicht versetzen und die Mittelachse als kontrollierten Übergang nutzen."
+      },
+      "learningCheck": [
+        "Zeichne zwei gleich breite und zwei asymmetrische Schultern",
+        "Vergleiche m und n bei gleicher Höhe.",
+        "Setze m neben n und w; kontrolliere die offenen Innenräume zwischen den Schultern."
+      ],
+      "confusionRisks": "m hat zwei Schultern; die Zwischenräume sind offen, nicht geschlossene Punzen.",
+      "relatedCharacters": [
+        "n",
+        "h",
+        "w"
+      ]
+    },
+    {
+      "id": "lowercase-n",
+      "character": "n",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Ein Stamm mit einer Schulter, die in den rechten Stamm oder Terminal übergeht.",
+      "anatomy": [
+        "Linker Stamm",
+        "Schulter",
+        "rechter Abstrich",
+        "offener Innenraum",
+        "Endungen."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe. Schulterhöhe und Bogenbreite sind die wichtigsten Variablen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmal"
+        },
+        {
+          "id": "v2",
+          "description": "breit"
+        },
+        {
+          "id": "v3",
+          "description": "runde Schulter"
+        },
+        {
+          "id": "v4",
+          "description": "kantige Schulter"
+        },
+        {
+          "id": "v5",
+          "description": "lang ausgezogener rechter Terminal."
+        }
+      ],
+      "formCharacter": "Die einzelne Schulter muss sich von h unterscheiden: n hat keinen hohen linken Ascender. Der Innenraum bleibt offen.",
+      "calligraphyAndDuctus": "Broad-Nib erzeugt Stamm-/Schulterkontrast; Marker hält die Form kompakt.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runde, kompakte Schulter mit breiter Basis.",
+        "block-style": "block-style: gerader linker Stamm und klar definierte eckige Schulter.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: rechter Auslauf als Anschluss zur nächsten Form nutzen, ohne die Schulter zu verdecken."
+      },
+      "learningCheck": [
+        "Vergleiche n und h",
+        "Variiere Schulterhöhe und Breite",
+        "Zeichne ein n mit langem Auslauf."
+      ],
+      "confusionRisks": "Kein Ascender am linken Stamm; h hat einen.",
+      "relatedCharacters": [
+        "m",
+        "h",
+        "r"
+      ]
+    },
+    {
+      "id": "lowercase-o",
+      "character": "o",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Geschlossener, runder oder ovaler Körper mit einer vollständig eingeschlossenen Punze.",
+      "anatomy": [
+        "Bogen/Bowl",
+        "geschlossene Punze/Counter",
+        "obere und untere Rundung",
+        "ggf. Achse/Neigung."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; Rundung kann optisch leicht über beide Linien hinausragen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kreisförmig"
+        },
+        {
+          "id": "v2",
+          "description": "hochoval"
+        },
+        {
+          "id": "v3",
+          "description": "breitoval"
+        },
+        {
+          "id": "v4",
+          "description": "leicht eckig"
+        },
+        {
+          "id": "v5",
+          "description": "geneigte Achse mit asymmetrischem Gewicht."
+        }
+      ],
+      "formCharacter": "Die Punze muss offen bleiben. Zu starkes Verengen macht o wie 0 oder eine geschlossene Schleife; Kontext entscheidet.",
+      "calligraphyAndDuctus": "Broad-Nib kann den Innenraum asymmetrisch drücken; Marker schafft gleichmäßige Masse.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runder, großzügiger Körper mit sauberem Counter.",
+        "block-style": "block-style: kontrolliertes Oval oder abgerundetes Rechteck mit stabiler Wandstärke.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Oval leicht kippen und mit gerichteten Anschlüssen arbeiten, ohne den Counter zu schließen."
+      },
+      "learningCheck": [
+        "Zeichne Kreis, Hochoval und Breitoval",
+        "Vergleiche o mit 0 und c.",
+        "Prüfe o im Wortkontext neben c und a; halte den Counter klar geschlossen."
+      ],
+      "confusionRisks": "o ist ein Kleinbuchstabe im x-Höhenkörper; 0 ist eine Ziffer im Lining-System.",
+      "relatedCharacters": [
+        "c",
+        "a",
+        "0"
+      ]
+    },
+    {
+      "id": "lowercase-p",
+      "character": "p",
+      "characterType": "lowercase",
+      "constructionGroup": "descender",
+      "neutralForm": "Bauch mit Innenraum rechts oder links am Stamm; der Stamm reicht unter die Grundlinie.",
+      "anatomy": [
+        "Stamm/Descender",
+        "Bauch",
+        "Counter",
+        "Schulter/Anschluss",
+        "unterer Terminal."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Descenderlinie. Bauch sitzt im x-Höhenbereich, Stamm reicht darunter.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Langer Descender"
+        },
+        {
+          "id": "v2",
+          "description": "kurzer Descender"
+        },
+        {
+          "id": "v3",
+          "description": "runder Bauch"
+        },
+        {
+          "id": "v4",
+          "description": "kantiger Bauch"
+        },
+        {
+          "id": "v5",
+          "description": "offener Bauch mit größerer Apertur."
+        }
+      ],
+      "formCharacter": "Die Lage des Bauchs zum Stamm ist entscheidend. Ein zu kurzer Descender lässt p wie b wirken.",
+      "calligraphyAndDuctus": "Marker hält den Stamm massiv; Brush kann den Descender verjüngen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakter Bauch mit klar erkennbarem langen Abstieg.",
+        "block-style": "block-style: gerader Descender und rechteckiger Bauch mit sauberem Counter.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Descender als vertikale Leitachse und Bauch als seitliche Masse verbinden."
+      },
+      "learningCheck": [
+        "Vergleiche p und b",
+        "Verändere nur die Länge des Descenders",
+        "Zeichne eine offene und geschlossene Bauchvariante."
+      ],
+      "confusionRisks": "Bauchposition und Descender nicht spiegeln oder mit b verwechseln.",
+      "relatedCharacters": [
+        "b",
+        "q",
+        "g"
+      ]
+    },
+    {
+      "id": "lowercase-q",
+      "character": "q",
+      "characterType": "lowercase",
+      "constructionGroup": "descender",
+      "neutralForm": "Geschlossener Bauch mit Punze und einem unter die Grundlinie reichenden Stamm oder Schwanz; die Richtung kann variieren.",
+      "anatomy": [
+        "Bauch",
+        "Counter",
+        "Descender/Tail",
+        "Anschluss",
+        "Terminal."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Descenderlinie. Die Rundung sitzt im x-Höhenkörper; Tail reicht darunter.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Rechter gerader Tail"
+        },
+        {
+          "id": "v2",
+          "description": "linker Tail"
+        },
+        {
+          "id": "v3",
+          "description": "gebogener Tail"
+        },
+        {
+          "id": "v4",
+          "description": "kurzer Tail"
+        },
+        {
+          "id": "v5",
+          "description": "kantiger Tail mit offenem Terminal."
+        }
+      ],
+      "formCharacter": "Der Tail muss dem q zugeordnet bleiben. Ein linker Stamm kann die Form wie p wirken lassen.",
+      "calligraphyAndDuctus": "Marker gibt dem Bauch Masse; Brush kann den Tail dynamisch verjüngen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runder Bauch mit eindeutig nach unten geführtem Tail.",
+        "block-style": "block-style: stabiler Counter und klarer gerader Descender.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Tail als kontrollierte Verlängerung einsetzen, nicht als zufällige Unterstreichung."
+      },
+      "learningCheck": [
+        "Vergleiche q und p",
+        "Verändere Tailrichtung und -länge",
+        "Prüfe die Form neben o."
+      ],
+      "confusionRisks": "Tailposition nicht beliebig wechseln, ohne die Lesbarkeit zu prüfen.",
+      "relatedCharacters": [
+        "p",
+        "g",
+        "o"
+      ]
+    },
+    {
+      "id": "lowercase-r",
+      "character": "r",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Ein Stamm mit kurzer Schulter oder Arm und freiem Terminal; kein geschlossener Bauch.",
+      "anatomy": [
+        "Stamm",
+        "Schulter",
+        "Arm/Terminal",
+        "offener Innenraum",
+        "Anschluss."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe. Schulteransatz liegt im oberen Teil des x-Höhenkörpers; kein Ascender.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kurze Schulter"
+        },
+        {
+          "id": "v2",
+          "description": "lange Schulter"
+        },
+        {
+          "id": "v3",
+          "description": "gebogener Arm"
+        },
+        {
+          "id": "v4",
+          "description": "kantiger Arm"
+        },
+        {
+          "id": "v5",
+          "description": "terminal mit Haken oder Verlängerung."
+        }
+      ],
+      "formCharacter": "Das r darf nicht wie n mit voller Schulter wirken. Die offene Form und der kurze Arm sind entscheidend.",
+      "calligraphyAndDuctus": "Broad-Nib betont Stamm und Schulter; Brush kann den Terminal ausziehen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kurzer, runder Schulterbogen mit kräftigem Stamm.",
+        "block-style": "block-style: kompakter Stamm und klarer, kurzer Arm mit offenem Raum.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: den Arm als gerichtete Verbindung verlängern, aber nicht zu einem n-Bogen ausbauen."
+      },
+      "learningCheck": [
+        "Vergleiche r und n",
+        "Variiere nur die Schulterlänge",
+        "Teste den Abstand zum Folgebuchstaben."
+      ],
+      "confusionRisks": "Keine geschlossene Punze oder vollständige Schulter wie n hinzufügen.",
+      "relatedCharacters": [
+        "n",
+        "k",
+        "v"
+      ]
+    },
+    {
+      "id": "lowercase-s",
+      "character": "s",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Geschwungene Spine mit oberem und unterem Bogen sowie zwei offenen Terminals.",
+      "anatomy": [
+        "Spine",
+        "oberer Bogen",
+        "unterer Bogen",
+        "obere/untere Endung",
+        "zwei offene Räume."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; die Enden können leicht über die Linien hinausreichen. Gewicht oben/unten variieren.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Top-heavy"
+        },
+        {
+          "id": "v2",
+          "description": "bottom-heavy"
+        },
+        {
+          "id": "v3",
+          "description": "ausgewogen"
+        },
+        {
+          "id": "v4",
+          "description": "kantig"
+        },
+        {
+          "id": "v5",
+          "description": "mit verlängertem oberen oder unteren Terminal."
+        }
+      ],
+      "formCharacter": "S muss als zusammenhängende Gegenkurve lesbar bleiben. Zu starke Winkel können es wie 5 oder Z wirken lassen.",
+      "calligraphyAndDuctus": "Brush zeigt Kontrast entlang der Spine; Marker erzeugt kompakte Masse. Keine universelle Ein-Strich-Regel.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite, runde S-Kurve mit offener Mitte und stabilen Enden.",
+        "block-style": "block-style: klar gegliederte obere und untere Masse mit kontrollierter Taille.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Spine als Richtungsachse nutzen und die Terminals gezielt verlängern."
+      },
+      "learningCheck": [
+        "Vergleiche top-heavy und bottom-heavy",
+        "Zeichne eine runde und eine kantige Version",
+        "Prüfe s gegen 5."
+      ],
+      "confusionRisks": "Keine geschlossene Punze; die Taille muss lesbar bleiben.",
+      "relatedCharacters": [
+        "c",
+        "5",
+        "z"
+      ]
+    },
+    {
+      "id": "lowercase-t",
+      "character": "t",
+      "characterType": "lowercase",
+      "constructionGroup": "ascender",
+      "neutralForm": "Stamm mit Ascender, Querbalken und Fuß oder unterem Terminal.",
+      "anatomy": [
+        "Ascender/Stamm",
+        "Querbalken/Arm",
+        "Fuß",
+        "obere Endung",
+        "ggf. gebogener Ansatz."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Ascenderlinie. Querbalkenposition und Ascenderhöhe sind Gestaltungsvariablen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kurzer Ascender"
+        },
+        {
+          "id": "v2",
+          "description": "hoher Ascender"
+        },
+        {
+          "id": "v3",
+          "description": "hoher Querbalken"
+        },
+        {
+          "id": "v4",
+          "description": "tiefer Querbalken"
+        },
+        {
+          "id": "v5",
+          "description": "gebogener Fuß oder gerades Ende."
+        }
+      ],
+      "formCharacter": "Querbalken und Stamm müssen klar verbunden bleiben. Zu hohe oder zu niedrige Balken können t mit f oder Pluszeichen verwechseln.",
+      "calligraphyAndDuctus": "Broad-Nib erzeugt starken Quer-/Stammkontrast; Marker liefert robuste Balken.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakter Stamm mit kurzem Querbalken und rundem Fuß.",
+        "block-style": "block-style: hoher gerader Stamm und präziser Querbalken, klare Kreuzung.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Querbalken als kontrollierte Brücke einsetzen; Stamm bleibt sichtbar."
+      },
+      "learningCheck": [
+        "Variiere die Querbalkenhöhe",
+        "Vergleiche t und f",
+        "Zeichne einen Fuß mit und ohne Kurve."
+      ],
+      "confusionRisks": "Nicht mit dem Versal T gleichsetzen; x-Höhe und Ascender erklären.",
+      "relatedCharacters": [
+        "f",
+        "l",
+        "i"
+      ]
+    },
+    {
+      "id": "lowercase-u",
+      "character": "u",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Zwei Stämme, verbunden durch einen unteren Bogen; oben bleibt die Form offen.",
+      "anatomy": [
+        "Linker/rechter Stamm",
+        "unterer Bogen",
+        "zwei obere Terminals",
+        "offener Innenraum."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; der untere Bogen darf leicht unter die Grundlinie overshooten.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmal"
+        },
+        {
+          "id": "v2",
+          "description": "breit"
+        },
+        {
+          "id": "v3",
+          "description": "tiefer runder Bogen"
+        },
+        {
+          "id": "v4",
+          "description": "flacher Bogen"
+        },
+        {
+          "id": "v5",
+          "description": "kantiger Grund mit unterschiedlich hohen Stämmen."
+        }
+      ],
+      "formCharacter": "Die obere Öffnung ist entscheidend. Ein zu geschlossener Körper wirkt wie o; ein zu spitzer Grund kann wie v erscheinen.",
+      "calligraphyAndDuctus": "Marker erzeugt stabile Stämme; Brush betont den unteren Bogen und seine Übergänge.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite U-Masse mit offenem oberen Raum.",
+        "block-style": "block-style: parallele Stämme und kontrollierter, flacher Grundbogen.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: einen Stamm verlängern und den Bogen als Übergang nutzen, ohne die Öffnung zu schließen."
+      },
+      "learningCheck": [
+        "Zeichne u mit rundem und flachem Grund",
+        "Vergleiche u und v",
+        "Variiere die Stammabstände."
+      ],
+      "confusionRisks": "Oben offen halten; v hat einen spitzen Treffpunkt.",
+      "relatedCharacters": [
+        "v",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "id": "lowercase-v",
+      "character": "v",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Zwei diagonale Hauptzüge treffen sich in einem unteren Scheitel; oben ist die Form offen.",
+      "anatomy": [
+        "Linker/rechter Diagonalzug",
+        "Scheitel",
+        "zwei obere Terminals",
+        "offener Innenraum."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe. Der Scheitel kann die Grundlinie leicht überschreiten; obere Enden richten sich an x-Höhe aus.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmaler Winkel"
+        },
+        {
+          "id": "v2",
+          "description": "breiter Winkel"
+        },
+        {
+          "id": "v3",
+          "description": "runder Scheitel"
+        },
+        {
+          "id": "v4",
+          "description": "flacher Scheitel"
+        },
+        {
+          "id": "v5",
+          "description": "asymmetrische Schenkel."
+        }
+      ],
+      "formCharacter": "Der Scheitel muss klar bleiben; zu flach kann v wie u, zu breit wie w wirken.",
+      "calligraphyAndDuctus": "Broad-Nib zeigt Richtungswechsel; Marker macht den Scheitel schwerer.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite, weiche V-Form mit klarer Spitze.",
+        "block-style": "block-style: zwei kräftige Diagonalen mit präzisem Scheitel.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Schenkel unterschiedlich neigen und einen Auslauf als Verbindung planen."
+      },
+      "learningCheck": [
+        "Vergleiche v und u bei gleicher Breite",
+        "Verändere den Winkel",
+        "Prüfe den Scheitel in kleiner Größe."
+      ],
+      "confusionRisks": "Nicht mit dem gerundeten Grund von u verwechseln.",
+      "relatedCharacters": [
+        "u",
+        "w",
+        "x"
+      ]
+    },
+    {
+      "id": "lowercase-w",
+      "character": "w",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Vier diagonale Teilzüge mit zwei unteren Richtungswechseln; zwei offene Innenräume.",
+      "anatomy": [
+        "Vier Schenkel",
+        "zwei Scheitel",
+        "obere Terminals",
+        "zwei offene Innenräume."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; beide Scheitel können unterschiedlich tief liegen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Eng"
+        },
+        {
+          "id": "v2",
+          "description": "breit"
+        },
+        {
+          "id": "v3",
+          "description": "zwei gleich tiefe Scheitel"
+        },
+        {
+          "id": "v4",
+          "description": "asymmetrische Scheitel"
+        },
+        {
+          "id": "v5",
+          "description": "runde oder kantige Übergänge."
+        }
+      ],
+      "formCharacter": "Die zwei inneren Täler müssen unterscheidbar bleiben. Zu enge Form kann wie m oder vv wirken.",
+      "calligraphyAndDuctus": "Marker macht die vier Schenkel massiv; Brush kann die Täler differenzieren.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite Doppel-V-Masse mit klaren zwei Tälern.",
+        "block-style": "block-style: vier kräftige Diagonalen und zwei präzise Innenwinkel.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: die zwei Täler versetzen und eine Diagonale als kontrollierte Verbindung verlängern."
+      },
+      "learningCheck": [
+        "Vergleiche w mit m und vv",
+        "Zeichne gleiche und ungleiche Täler",
+        "Prüfe die Innenräume."
+      ],
+      "confusionRisks": "Nicht als bloßes doppeltes v ohne gemeinsame Proportion behandeln.",
+      "relatedCharacters": [
+        "m",
+        "v",
+        "x"
+      ]
+    },
+    {
+      "id": "lowercase-x",
+      "character": "x",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Zwei sich kreuzende Diagonalen mit vier freien Enden; der Kreuzungspunkt ist ein zentrales Strukturmerkmal.",
+      "anatomy": [
+        "Erster und zweiter Diagonalzug",
+        "Kreuzung",
+        "vier Terminals",
+        "vier entstehende Negativräume."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; Enden liegen innerhalb des Körpers, Kreuzung kann optisch leicht versetzt sein.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Symmetrisches x"
+        },
+        {
+          "id": "v2",
+          "description": "asymmetrisches x"
+        },
+        {
+          "id": "v3",
+          "description": "hoher Kreuzungspunkt"
+        },
+        {
+          "id": "v4",
+          "description": "tiefer Kreuzungspunkt"
+        },
+        {
+          "id": "v5",
+          "description": "gebogene oder gerundete Terminals."
+        }
+      ],
+      "formCharacter": "Der Kreuzungspunkt darf nicht zu einer dunklen Masse verschmelzen. Die vier Richtungen müssen lesbar bleiben.",
+      "calligraphyAndDuctus": "Broad-Nib kann die Kreuzung verdicken; Marker benötigt genügend Negativraum am Schnittpunkt.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakte Kreuzung mit vier klaren Enden.",
+        "block-style": "block-style: zwei breite Diagonalen, Kreuzung kontrolliert und nicht überfüllt.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: die Diagonalen gegeneinander versetzen und eine Verbindung über die Kreuzung hinaus planen."
+      },
+      "learningCheck": [
+        "Verschiebe den Kreuzungspunkt nach oben und unten",
+        "Prüfe x gegen k und z",
+        "Zeichne vier Negativräume bewusst."
+      ],
+      "confusionRisks": "Die Kreuzung ist keine geschlossene Punze; nicht mit k oder Multiplikationszeichen verwechseln.",
+      "relatedCharacters": [
+        "k",
+        "v",
+        "z"
+      ]
+    },
+    {
+      "id": "lowercase-y",
+      "character": "y",
+      "characterType": "lowercase",
+      "constructionGroup": "descender",
+      "neutralForm": "Zwei obere Arme vereinigen sich in einem Stamm oder Bogen, der unter die Grundlinie reicht.",
+      "anatomy": [
+        "Linker/rechter Arm",
+        "Verbindung/Gelenk",
+        "Descender",
+        "unteres Terminal oder Loop."
+      ],
+      "proportionGuides": "Grundlinie, x-Höhe und Descenderlinie. Die Arme liegen im x-Höhenkörper, der untere Zug reicht darunter.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kurzer Descender"
+        },
+        {
+          "id": "v2",
+          "description": "langer Descender"
+        },
+        {
+          "id": "v3",
+          "description": "gerader Abstieg"
+        },
+        {
+          "id": "v4",
+          "description": "gebogener Abstieg"
+        },
+        {
+          "id": "v5",
+          "description": "offener oder loopartiger Endzug."
+        }
+      ],
+      "formCharacter": "Die Gabelung muss klar bleiben. Der Descender darf nicht wie ein j-Haken ohne zwei Arme wirken.",
+      "calligraphyAndDuctus": "Brush kann den Abstieg verjüngen; Marker hält die Gabelung kompakt.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite obere Gabel und kräftiger, klarer Abstieg.",
+        "block-style": "block-style: zwei präzise Arme treffen in einem kontrollierten Gelenk zusammen.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Descender als gerichtete Verbindung unterhalb der Grundlinie führen."
+      },
+      "learningCheck": [
+        "Variiere den Gelenkpunkt",
+        "Vergleiche y und v",
+        "Zeichne zwei unterschiedliche Descender."
+      ],
+      "confusionRisks": "Der Abstieg ist unter der Grundlinie; die obere Gabel bleibt sichtbar.",
+      "relatedCharacters": [
+        "j",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "id": "lowercase-z",
+      "character": "z",
+      "characterType": "lowercase",
+      "constructionGroup": "x-height-body",
+      "neutralForm": "Zwei horizontale Balken werden durch einen diagonalen Verbindungszug verbunden.",
+      "anatomy": [
+        "Oberer Balken",
+        "unterer Balken",
+        "Diagonale",
+        "drei freie Endungen",
+        "offene Zwischenräume."
+      ],
+      "proportionGuides": "Grundlinie und x-Höhe; oberer und unterer Balken liegen innerhalb des x-Höhenkörpers.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Gerade Diagonale"
+        },
+        {
+          "id": "v2",
+          "description": "gebogene Diagonale"
+        },
+        {
+          "id": "v3",
+          "description": "schräger Balken"
+        },
+        {
+          "id": "v4",
+          "description": "versetzte Balken"
+        },
+        {
+          "id": "v5",
+          "description": "verlängertes unteres Terminal."
+        }
+      ],
+      "formCharacter": "Die Diagonale muss beide Balken verbinden. Zu starke Rundung kann z wie s, zu steile Form wie 2 wirken lassen.",
+      "calligraphyAndDuctus": "Marker hält Balken stabil; Broad-Nib verändert den Diagonal-/Horizontal-Kontrast.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kompakte Z-Form mit kräftigen Balken und klarer Diagonale.",
+        "block-style": "block-style: parallele Balken und präzise Diagonale, Negativraum sauber halten.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Diagonale als Bewegungsachse verlängern, ohne den Buchstaben in 2 oder s kippen zu lassen."
+      },
+      "learningCheck": [
+        "Verändere Diagonalwinkel und Balkenlänge",
+        "Vergleiche z mit 2 und s.",
+        "Setze z neben s und 2; kontrolliere die diagonale Verbindung."
+      ],
+      "confusionRisks": "Keine Punze; nicht mit der Ziffer 2 gleichsetzen.",
+      "relatedCharacters": [
+        "s",
+        "2",
+        "x"
+      ]
+    },
+    {
+      "id": "numeral-0",
+      "character": "0",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Lining-Ziffer mit geschlossenem Oval oder abgerundetem Viereck; ein Innenraum bleibt offen als Counter.",
+      "anatomy": [
+        "Außenkontur",
+        "geschlossene Punze",
+        "obere/untere Rundung",
+        "optionale Schrägachse oder diagonaler Strich als Unterscheidungszeichen."
+      ],
+      "proportionGuides": "Grundlinie und Versalhöhe/figurenhöhe; keine x-Höhe. Default ist eine Lining-Ziffer, die auf der Grundlinie steht.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schmales Oval"
+        },
+        {
+          "id": "v2",
+          "description": "breites Oval"
+        },
+        {
+          "id": "v3",
+          "description": "eckig gerundetes Rechteck"
+        },
+        {
+          "id": "v4",
+          "description": "geneigte Achse"
+        },
+        {
+          "id": "v5",
+          "description": "optionale durchgehende Schrägmarkierung zur O-Unterscheidung."
+        }
+      ],
+      "formCharacter": "0 muss als Ziffer von o unterscheidbar bleiben; ein Slash ist eine optionale Designentscheidung, kein universeller Standard.",
+      "calligraphyAndDuctus": "Marker hält die Kontur massiv; Brush kann die Achse betonen. Der Innenraum darf nicht zulaufen.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breite, runde Null mit großzügigem Counter.",
+        "block-style": "block-style: geometrische Null mit stabiler Wandstärke und klarer Achse.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: geneigte oder facettierte Null mit geplantem Innenraum; nicht nur ein Effekt-Slash."
+      },
+      "learningCheck": [
+        "Vergleiche 0 und o in gleicher Größe",
+        "Zeichne runde und eckige Null",
+        "Teste eine Version mit und ohne Slash."
+      ],
+      "confusionRisks": "Ziffer im Lining-System; nicht als Kleinbuchstabe o setzen.",
+      "relatedCharacters": [
+        "o",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "id": "numeral-1",
+      "character": "1",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Aufrechter Hauptstamm, häufig mit oberer Fahne und/oder unterem Fuß; die Konstruktion variiert stark.",
+      "anatomy": [
+        "Stamm",
+        "obere Fahne",
+        "unterer Fuß/Basis",
+        "optional diagonaler Einstieg."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe/Versalhöhe; keine x-Höhe. Die Basis muss die Ziffer im Zahlenblock stabilisieren.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Schlichter Stamm"
+        },
+        {
+          "id": "v2",
+          "description": "Fahne links"
+        },
+        {
+          "id": "v3",
+          "description": "Fahne rechts"
+        },
+        {
+          "id": "v4",
+          "description": "breiter Fuß"
+        },
+        {
+          "id": "v5",
+          "description": "diagonaler Einstieg mit geradem Stamm."
+        }
+      ],
+      "formCharacter": "1 muss von I und l unterscheidbar sein. Fahne und Fuß sind hilfreiche, aber nicht zwingende Merkmale.",
+      "calligraphyAndDuctus": "Broad-Nib erzeugt Kontrast zwischen Fahne und Stamm; Marker liefert kompakte, robuste Form.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kräftiger Stamm mit klarer Fahne und stabiler Basis.",
+        "block-style": "block-style: geometrischer Stamm mit breitem Fuß und präziser Oberkante.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Fahne und Fuß als gerichtete Enden gestalten, ohne die Vertikale zu verlieren."
+      },
+      "learningCheck": [
+        "Vergleiche 1, I und l",
+        "Zeichne eine Version mit Fuß und eine ohne",
+        "Teste in einer Zahlenfolge."
+      ],
+      "confusionRisks": "Nicht als Kleinbuchstabe l oder Versal I behandeln.",
+      "relatedCharacters": [
+        "l",
+        "I",
+        "7"
+      ]
+    },
+    {
+      "id": "numeral-2",
+      "character": "2",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Obere Kurve oder Bogen geht in eine Diagonale über, die auf einer unteren Basis endet.",
+      "anatomy": [
+        "Oberer Bogen",
+        "Übergang",
+        "diagonaler Abstieg",
+        "untere Basis",
+        "freie Endungen."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; obere Rundung kann leicht über die Höhe hinausreichen, Basis sitzt auf der Grundlinie.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Runder Kopf"
+        },
+        {
+          "id": "v2",
+          "description": "kantiger Kopf"
+        },
+        {
+          "id": "v3",
+          "description": "lange Diagonale"
+        },
+        {
+          "id": "v4",
+          "description": "flache Basis"
+        },
+        {
+          "id": "v5",
+          "description": "verlängertes unteres Terminal."
+        }
+      ],
+      "formCharacter": "Der Wechsel vom oberen Bogen zur Diagonale muss lesbar sein. Zu geradlinig kann z, zu rund kann 3 ähneln.",
+      "calligraphyAndDuctus": "Brush kann den Bogen betonen; Marker stabilisiert die Basis.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runder Kopf und breite, klare Basisdiagonale.",
+        "block-style": "block-style: definierter Kopf, kräftige Diagonale und gerade Basis.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Diagonale als Hauptbewegung mit kontrolliertem oberen Anschluss verlängern."
+      },
+      "learningCheck": [
+        "Verändere den Kopf und die Basis getrennt",
+        "Vergleiche 2 mit z und 5",
+        "Prüfe die Ziffer in 20."
+      ],
+      "confusionRisks": "Die Basis ist ein entscheidender Abschluss; nicht als z lesen lassen.",
+      "relatedCharacters": [
+        "z",
+        "3",
+        "5"
+      ]
+    },
+    {
+      "id": "numeral-3",
+      "character": "3",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Zwei übereinanderliegende Bögen oder Schalen mit einer offenen rechten Seite und einer Taille.",
+      "anatomy": [
+        "Oberer Bogen",
+        "unterer Bogen",
+        "Taille",
+        "obere/untere Terminals",
+        "zwei offene Innenräume."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; obere und untere Schale können unterschiedlich groß sein.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Obere Schale kleiner"
+        },
+        {
+          "id": "v2",
+          "description": "untere Schale kleiner"
+        },
+        {
+          "id": "v3",
+          "description": "kantige Bögen"
+        },
+        {
+          "id": "v4",
+          "description": "offene breite Taille"
+        },
+        {
+          "id": "v5",
+          "description": "kompakte, eng gestapelte Bögen."
+        }
+      ],
+      "formCharacter": "Taille und offene rechte Seite müssen lesbar bleiben. Zu geschlossene Bögen können 8, zu eckige 5 ergeben.",
+      "calligraphyAndDuctus": "Marker kann die Taille verdichten; Brush verändert die Schalenkontraste.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: zwei runde, gut getrennte Schalen mit offener rechter Seite.",
+        "block-style": "block-style: zwei kantig gerundete Bögen und klare Taille.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: obere und untere Schale gegeneinander versetzen, aber die offene Seite behalten."
+      },
+      "learningCheck": [
+        "Variiere die Schalenproportion",
+        "Vergleiche 3 und 8",
+        "Zeichne eine runde und eine eckige Version."
+      ],
+      "confusionRisks": "Keine zwei geschlossenen Counter wie bei 8 erzeugen.",
+      "relatedCharacters": [
+        "8",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "numeral-4",
+      "character": "4",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Diagonaler oder senkrechter Zug bildet mit Querbalken und Stamm eine offene oder geschlossene obere Struktur.",
+      "anatomy": [
+        "Diagonalzug",
+        "senkrechter Stamm",
+        "Querbalken",
+        "optionaler Innenraum bei geschlossener Konstruktion",
+        "Endungen."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; Querbalken und oberer Anschluss variieren. Default kann offen oder geschlossen sein, muss aber klar benannt werden.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Offenes 4"
+        },
+        {
+          "id": "v2",
+          "description": "geschlossenes 4"
+        },
+        {
+          "id": "v3",
+          "description": "hoher Querbalken"
+        },
+        {
+          "id": "v4",
+          "description": "tiefer Querbalken"
+        },
+        {
+          "id": "v5",
+          "description": "diagonaler Einstieg mit verlängertem Fuß."
+        }
+      ],
+      "formCharacter": "Offene und geschlossene Konstruktionen sind beide gültig. Der Innenraum darf nicht zufällig entstehen; 4 muss von A unterscheidbar bleiben.",
+      "calligraphyAndDuctus": "Broad-Nib betont den Querbalken; Marker stabilisiert den Stamm und Diagonalzug.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: offene, kompakte 4 mit großem Innenraum.",
+        "block-style": "block-style: gerader Stamm, klarer Querbalken und präziser Diagonalzug.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Diagonale und Querbalken als bewusst versetzte Struktur, ohne A-ähnliche Silhouette."
+      },
+      "learningCheck": [
+        "Zeichne offene und geschlossene 4",
+        "Variiere nur die Querbalkenhöhe",
+        "Vergleiche mit A."
+      ],
+      "confusionRisks": "Nicht pauschal als geschlossenes Dreieck konstruieren; offene 4 ist ebenso gültig.",
+      "relatedCharacters": [
+        "A",
+        "1",
+        "7"
+      ]
+    },
+    {
+      "id": "numeral-5",
+      "character": "5",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Oberer Balken und Abstieg gehen in eine untere Kurve oder Schale über.",
+      "anatomy": [
+        "Oberer Balken",
+        "linker Stamm/Abstieg",
+        "mittlere Ecke oder Schulter",
+        "untere Schale",
+        "Terminal."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; die obere Zone und untere Kurve müssen ausgewogen sein.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Kantiger Abstieg"
+        },
+        {
+          "id": "v2",
+          "description": "runde untere Schale"
+        },
+        {
+          "id": "v3",
+          "description": "offene untere Kurve"
+        },
+        {
+          "id": "v4",
+          "description": "kurzer oberer Balken"
+        },
+        {
+          "id": "v5",
+          "description": "verlängerter Endzug."
+        }
+      ],
+      "formCharacter": "5 kann mit S verwechselt werden. Der obere Balken und die linke Kante geben der Ziffer ihre Identität.",
+      "calligraphyAndDuctus": "Marker erzeugt einen stabilen oberen Balken; Brush macht die untere Kurve dynamisch.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: kräftiger oberer Balken und runde, offene untere Schale.",
+        "block-style": "block-style: klare obere Kante, kontrollierte Ecke und stabile Basis.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: die untere Kurve in eine gerichtete Verlängerung führen, ohne die obere Kante zu verlieren."
+      },
+      "learningCheck": [
+        "Vergleiche 5 und S",
+        "Verändere die untere Kurve und die obere Balkenlänge getrennt.",
+        "Setze 5 in eine Zahlenfolge und vergleiche sie mit S im Wortkontext."
+      ],
+      "confusionRisks": "Nicht nur als S mit gerader Oberkante behandeln.",
+      "relatedCharacters": [
+        "s",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "numeral-6",
+      "character": "6",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Oberer Einstieg führt in eine geschlossene oder nahezu geschlossene untere Schale mit Counter.",
+      "anatomy": [
+        "Oberer Terminal",
+        "Bogen",
+        "untere Schale",
+        "Counter",
+        "Anschluss an den Einstieg."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; die Schale sitzt unten, der obere Einstieg kann in die Höhe reichen.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Offener Einstieg"
+        },
+        {
+          "id": "v2",
+          "description": "geschlossener Einstieg"
+        },
+        {
+          "id": "v3",
+          "description": "runde Schale"
+        },
+        {
+          "id": "v4",
+          "description": "eckige Schale"
+        },
+        {
+          "id": "v5",
+          "description": "enger oder weiter Counter."
+        }
+      ],
+      "formCharacter": "Der Einstieg darf nicht wie eine 0 ohne Öffnung wirken; die untere Schale muss klar geschlossen oder bewusst offen sein.",
+      "calligraphyAndDuctus": "Brush betont den oberen Einstieg; Marker stabilisiert die untere Masse.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runde untere Schale mit gut sichtbarem Einstieg.",
+        "block-style": "block-style: geometrische Schale und sauberer Counter mit kontrolliertem oberen Terminal.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Einstieg als Richtungswechsel über der Schale führen, ohne den Counter zu überdecken."
+      },
+      "learningCheck": [
+        "Vergleiche 6 und 0",
+        "Zeichne offene und geschlossene Einstiege",
+        "Teste die Ziffer in 60."
+      ],
+      "confusionRisks": "Nicht mit 9 spiegeln, ohne den Einstieg zu ändern.",
+      "relatedCharacters": [
+        "0",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "numeral-7",
+      "character": "7",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Oberer Balken mit diagonalem Abstieg; optionaler Querstrich oder Fuß.",
+      "anatomy": [
+        "Oberer Balken",
+        "Diagonale",
+        "unterer Terminal/Fuß",
+        "optionaler Querstrich."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; obere Kante sitzt an der Figurenhöhe, Diagonale endet auf der Grundlinie.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Ohne Querstrich"
+        },
+        {
+          "id": "v2",
+          "description": "mit Querstrich"
+        },
+        {
+          "id": "v3",
+          "description": "gebogene Diagonale"
+        },
+        {
+          "id": "v4",
+          "description": "kurzer Fuß"
+        },
+        {
+          "id": "v5",
+          "description": "langer, flacher Balken."
+        }
+      ],
+      "formCharacter": "Die Diagonale muss die Ziffer von 1 und 2 unterscheiden. Querstrich ist eine optionale Konvention, kein Muss.",
+      "calligraphyAndDuctus": "Broad-Nib betont die obere Kante; Marker hält die Diagonale klar.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: breiter oberer Balken und kräftige Diagonale.",
+        "block-style": "block-style: klare horizontale Oberkante und gerader, stabiler Abstieg.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Diagonale als starke Bewegungsachse verlängern, optional mit kontrolliertem Querstrich."
+      },
+      "learningCheck": [
+        "Vergleiche 7 mit 1 und 2",
+        "Zeichne mit und ohne Querstrich",
+        "Prüfe die Diagonale bei kleiner Größe."
+      ],
+      "confusionRisks": "Nicht nur als 1 mit Schrägstrich zeichnen.",
+      "relatedCharacters": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "id": "numeral-8",
+      "character": "8",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Zwei geschlossene Schalen mit zwei Countern, verbunden durch eine Taille.",
+      "anatomy": [
+        "Obere Schale",
+        "untere Schale",
+        "obere und untere Punze",
+        "Taille",
+        "Außenkontur."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; obere und untere Schale dürfen unterschiedlich groß sein, beide Counter müssen offen bleiben.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Gleiche Schalen"
+        },
+        {
+          "id": "v2",
+          "description": "kleinere obere Schale"
+        },
+        {
+          "id": "v3",
+          "description": "kleinere untere Schale"
+        },
+        {
+          "id": "v4",
+          "description": "enge Taille"
+        },
+        {
+          "id": "v5",
+          "description": "eckige oder ovale Schalen."
+        }
+      ],
+      "formCharacter": "Die Taille darf nicht zulaufen. Zwei Counter müssen klar unterscheidbar sein; sonst wirkt 8 wie eine dunkle Fläche oder 3.",
+      "calligraphyAndDuctus": "Marker kann die Taille verdicken; Brush erzeugt unterschiedliche Schalenkontraste.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runde Doppelmasse mit großzügigen Countern.",
+        "block-style": "block-style: zwei kontrollierte Schalen mit klarer Taille und stabiler Wandstärke.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Schalen gegeneinander kippen und die Taille als kontrollierten Verbindungspunkt nutzen."
+      },
+      "learningCheck": [
+        "Variiere obere und untere Counter",
+        "Vergleiche 8 mit 3 und B",
+        "Zeichne eine runde und eine eckige Version."
+      ],
+      "confusionRisks": "Nicht mit B oder zwei gestapelten Kreisen verwechseln.",
+      "relatedCharacters": [
+        "0",
+        "3",
+        "B"
+      ]
+    },
+    {
+      "id": "numeral-9",
+      "character": "9",
+      "characterType": "numeral",
+      "constructionGroup": "lining-numeral",
+      "neutralForm": "Obere Schale mit Counter und nach unten führendem Stamm oder Tail.",
+      "anatomy": [
+        "Obere Schale",
+        "Counter",
+        "Stamm/Tail",
+        "Anschluss",
+        "unterer Terminal."
+      ],
+      "proportionGuides": "Grundlinie und Figurenhöhe; obere Schale liegt im oberen Bereich, Tail endet auf oder nahe der Grundlinie.",
+      "constructionAnalysis": [
+        "Skelett bzw. strukturelle Leitlinien als eigene Ebene zeigen; keine Strichreihenfolge als gesichert ausgeben.",
+        "Die tragenden Strichkörper ergänzen und Übergänge/Anschlüsse sichtbar machen.",
+        "Kontur und geschlossene bzw. offene Negativräume präzisieren.",
+        "Grundform ohne Füllung, Outline, Schatten oder Spray-Effekt abschließen."
+      ],
+      "formVariations": [
+        {
+          "id": "v1",
+          "description": "Gerader Tail"
+        },
+        {
+          "id": "v2",
+          "description": "gebogener Tail"
+        },
+        {
+          "id": "v3",
+          "description": "kurzer Tail"
+        },
+        {
+          "id": "v4",
+          "description": "langer Tail"
+        },
+        {
+          "id": "v5",
+          "description": "offene oder geschlossene Schale."
+        }
+      ],
+      "formCharacter": "Die obere Schale muss als 9 lesbar sein; ein zu kurzer Tail kann 0, ein zu langer wie q wirken.",
+      "calligraphyAndDuctus": "Brush kann den Tail verjüngen; Marker hält den oberen Ring kräftig.",
+      "graffitiTransfer": {
+        "throw-up-oriented": "throw-up-orientiert: runde obere Schale und klarer kurzer Abstieg.",
+        "block-style": "block-style: geometrische obere Schale mit geradem, stabilem Tail.",
+        "piece-wildstyle-oriented": "piece-wildstyle-orientiert: Tail als kontrollierte Verlängerung nach unten führen, Counter frei lassen."
+      },
+      "learningCheck": [
+        "Vergleiche 9 mit 6 und q",
+        "Verändere Tailrichtung und -länge",
+        "Prüfe in einer Zahlenfolge."
+      ],
+      "confusionRisks": "Nicht einfach 6 spiegeln; obere Schale und Tail-Anschluss unterscheiden sich.",
+      "relatedCharacters": [
+        "6",
+        "0",
+        "q"
+      ]
+    }
+  ]
+}
