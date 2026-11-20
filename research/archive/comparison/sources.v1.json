@@ -451,6 +451,39 @@
       ],
       "title": "Woshe — Alphabeatz: Graffiti from A to Z",
       "url": "https://www.hoaki.com/shop/en/books-93/alphabeatz-1120870-000-0001.html"
+    },
+    {
+      "confidenceRaw": "high for collection provenance and broad holdings; low for current online image availability",
+      "evidenceRaw": "Cornell's 2013 institutional report describes the International Graffiti Times archive (1983–1994) as including 4,500 photographs and 1,000 slide transparencies, alongside editorial and print materials. Cornell's current Hip Hop Collection Digital Collections page separately describes approximately 940 digitized slides used for Phase 2 and David Schmidlapp's Aerosol Art Armada, but still labels the IGTimes Archive 'COMING SOON'. These figures must remain distinct: the 940 slides are a described digitized subset, not a replacement total for the full archive.",
+      "id": "ACQ-CORNELL-IGT-01",
+      "institution": "Cornell University Library — Hip Hop Collection / Division of Rare and Manuscript Collections",
+      "nextActionRaw": "Monitor the official Digital Collections page for public release; until then use the ArchivesSpace collection record and contact Cornell for research access. If material becomes viewable, capture item-level IDs, creator/date, slide or photograph medium, image resolution and rights. Do not treat the archive as a currently browsable public image source.",
+      "rightsRaw": "No item-level reuse permission established; public access status for IGTimes remains 'COMING SOON'; request access and permissions from Cornell before any reproduction.",
+      "scope": "International_Graffiti_Times_archive_1983_1994_photographs_slides_editorial_and_print_materials",
+      "sourceType": "institutional_archival_collection_and_digital_access_record",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Cornell Hip Hop Collection — International Graffiti Times Archive (8067)",
+      "url": "https://hiphop.library.cornell.edu/digital-collections/"
+    },
+    {
+      "confidenceRaw": "high for the artist's project documentation and published methodology; individual sample glyphs require a separate visual and rights review",
+      "evidenceRaw": "Evan Roth's official project page documents the Graffiti Taxonomy series and identifies New York, Paris and Detroit studies. The artist's 2009 Selected Works PDF shows letter-sorted sample sheets captioned E (Lower East Side, NYC, 2008), S (Lower East Side, NYC, 2004) and A (Harlem, NYC, 2004). The PDF labels the taxonomy a formal study using samples from New York neighborhoods. MoMA documents the Paris method: 10 selected letters, 18 tags per letter, uppercase and lowercase, spanning simple to ornate forms. A contemporaneous project description reports 2,400+ tags photographed across all 20 Paris districts, then archived, tagged and sorted by letter. The PDF states a Creative Commons Attribution-Noncommercial-Share Alike 3.0 US license; verify scope and attribution before any reuse.",
+      "id": "ACQ-ROTH-TAX-01",
+      "institution": "Evan Roth (artist project archive); MoMA; F.A.T. / historical project documentation",
+      "nextActionRaw": "Use the taxonomy as a methodological and variation reference, not as a canonical alphabet. Prioritize source sheets E/S/A for future visual review at sufficient resolution; preserve each caption's city/neighborhood/year and distinguish NYC from Paris datasets. Any extracted observation must be based on an individually legible letter and recorded with the exact source page and license scope. Do not infer universal frequencies from the Paris sample.",
+      "rightsRaw": "The 2009 Selected Works PDF states CC BY-NC-SA 3.0 US. Confirm that the license covers the relevant page/image and retain attribution; no tracing, no named-writer style presets, and no commercial reuse under the noncommercial license without separate permission.",
+      "scope": "Graffiti_tag_taxonomy_and_letter_variation_studies_New_York_Paris_Detroit",
+      "sourceType": "artist_documented_research_project_and_museum_method_record",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Evan Roth — Graffiti Taxonomy series (NYC / Paris / Detroit)",
+      "url": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/"
     }
   ]
 }
