@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-20 — Integration of #34–#43 into `main` (Claude)
+
+- Integration branch `claude/integrate-2026-11-20` merges, in order: #39 (contains #34, #36, #38), #40, #42, #43.
+- #43 repaired first: archive export rebuilt with `tools/archive-build.mjs` and the C06 proof manifest re-captured; no content changes.
+- Conflicts only in `docs/STATUS.md` and `docs/CHANGELOG.md`; both sides kept. Comparison data identical to #40, Academy data identical to #42, Dortmund research identical to #43.
+- Build after integration: 60 specimens, 27 inspected, 20 eligible glyph observations from 3 institutions; pilot gate open. Gate 3 not started.
+- Archive: 31 entries, 128 claims, 32 sources. Tests: 227/227 unit, all browser checks and `--check` gates pass.
+
 ## 2026-11-20 — Academy lowercase and numerals (content draft)
 
 - Added a structured content package for all 26 lowercase letters and 10 lining numerals.
