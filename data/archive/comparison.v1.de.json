@@ -2,12 +2,12 @@
   "comparisonSchemaVersion": "1.0",
   "contract": "nightshift.letterform-comparison@1.1.0",
   "counts": {
-    "eligibleGlyphObservations": 16,
+    "eligibleGlyphObservations": 20,
     "findings": 1,
-    "glyphInstitutions": 2,
-    "glyphSources": 3,
-    "inspectedSpecimens": 23,
-    "specimens": 49
+    "glyphInstitutions": 3,
+    "glyphSources": 4,
+    "inspectedSpecimens": 27,
+    "specimens": 60
   },
   "findings": [
     {
@@ -38,15 +38,15 @@
     },
     {
       "path": "research/archive/comparison/observations.v1.json",
-      "sha256": "7db865c8947beaa41776f4fcef8d4a6a6fb0d140b5904ce28cecdbc8fdf3354f"
+      "sha256": "2f7ba80fd608b6590d7b2e8550554a6174be67dcf08423442d973d80a575ee66"
     },
     {
       "path": "research/archive/comparison/sources.v1.json",
-      "sha256": "1390c1f545587e1457564b62d96fd6238501d2a67be12e60d97f7dece19ee2c7"
+      "sha256": "2af22850de3be5962bd0d9bc830d9bb05930826e6dbc238201516c1ec5625319"
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "fc62b5171b15827fd71c8f85639b7d5330864557c729e643bc470a64df3f69ea"
+      "sha256": "eae36b674c3cf970d307eea67ef446bc9ca67e09429f9689515e0b6264929ff7"
     }
   ],
   "glyphObservations": [
@@ -286,6 +286,70 @@
       "observationDe": "Das O in „JOKER“ ist als hoher, schmaler und leicht unregelmäßiger Ovalzug ausgeführt. Die Innenöffnung bleibt geschlossen und deutlich sichtbar; die Strichbreite variiert durch den Markerzug. Die Form ist Teil eines verbundenen Tags, kein isolierter Alphabetbuchstabe.",
       "specimenId": "LFA-JOKER-001",
       "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "vertical-stem",
+        "broad-nib",
+        "irregular-proportions"
+      ],
+      "glyph": "D",
+      "id": "GLY-ROTH-DETROIT-D-2012-01",
+      "legibility": "medium",
+      "observationDe": "Einzeln sichtbare D-Form aus der Detroit-Tafel (Rasterposition: Zeile 2, Spalte 1). Ein kräftiger, annähernd senkrechter Stamm geht in einen gerundeten, nahezu geschlossenen Bogen über. Der Innenraum ist schmal und asymmetrisch; die Strichbreite wechselt entlang des Bogens. Die Zuordnung ist visuell plausibel, aber weniger sicher als bei den ausdrücklich mit A und E betitelten Tafeln.",
+      "specimenId": "ROTH-DETROIT-D-2012-01",
+      "transcriptionConfidence": "medium"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "angular",
+        "open-counter",
+        "broad-nib",
+        "crossbar",
+        "irregular-proportions"
+      ],
+      "glyph": "A",
+      "id": "GLY-ROTH-NYC-A-2004-01",
+      "legibility": "high",
+      "observationDe": "Einzeln sichtbare A-Form aus der Harlem-Tafel (Rasterposition: Zeile 1, Spalte 2). Zwei deutlich geneigte Hauptzüge treffen sich in einer hohen Spitze; ein Querzug liegt unterhalb der Mitte. Die Strichmasse ist ungleich verteilt, der Innenraum bleibt offen und die Enden zeigen eine leichte gestische Ausweitung. Die Beschreibung hält nur die lesbare Grundkonstruktion fest und reproduziert keine Signatur oder Kontur.",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "E",
+      "id": "GLY-ROTH-NYC-E-2008-01",
+      "legibility": "high",
+      "observationDe": "Einzeln sichtbare e/E-Form aus der Lower-East-Side-Tafel (Rasterposition: Zeile 1, Spalte 2). Die Form wird als geschlossene, ovale Schleife mit horizontal integrierter Querbewegung aufgebaut; der rechte Auslauf verlängert die Grundbewegung. Die Linie bleibt weitgehend monolinear und wirkt eher als zusammenhängende Geste denn als getrennte Balkenkonstruktion. Die Beobachtung abstrahiert die Struktur, ohne die konkrete Form zu kopieren.",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "rounded",
+        "open-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "glyph": "E",
+      "id": "GLY-ROTH-NYC-E-2008-02",
+      "legibility": "medium",
+      "observationDe": "Zweite, klar getrennte e-Variante aus derselben Tafel (Rasterposition: Zeile 3, Spalte 2). Der Buchstabenkörper ist höher und offener als beim ersten Beispiel; ein längerer Querzug schneidet die Schleife und führt seitlich weiter. Die Form verschiebt den Schwerpunkt nach oben und nutzt einen dünneren, fließenden Zug. Sie ist als e lesbar, bleibt aber wegen der stark gestischen Ausführung nur mittel sicher transkribierbar.",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "transcriptionConfidence": "high"
     }
   ],
   "labels": {
@@ -329,13 +393,94 @@
     }
   },
   "language": "de",
-  "objectObservations": [],
+  "objectObservations": [
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-GETTY-ACME-2013-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Acme-Seite zeigt eine horizontal gestreckte, monochrome Lettering-Komposition aus dünnen, kantigen und stark überlagerten Zügen. Lange Diagonalen und perspektivische Linien erzeugen räumliche Tiefe. Die Buchstaben sind als zusammenhängende Komposition angelegt; die Einzelidentität ist auf der verfügbaren Mosaikansicht nicht zuverlässig zu transkribieren.",
+      "specimenId": "GETTY-ACME-2013-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-GETTY-CAB-2013-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Cab-Seite zeigt ein breites, monochromes Piece vor einer gezeichneten Ziegelwand. Dominant sind schwere, kantige Außenkonturen und eine horizontale Gesamtbewegung; kleinere Zeichen und sekundäre Linien liegen in den Zwischenräumen und überlagern die Hauptformen. Die Einzelbuchstaben sind in der verfügbaren Mosaikansicht nicht zuverlässig lesbar.",
+      "specimenId": "GETTY-CAB-2013-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-GETTY-CHAZ-2012-001",
+      "kind": "direct-observation",
+      "observationDe": "Die offizielle Getty-Galerieansicht der Chaz-Arbeit zeigt im oberen Seitenbereich mehrere separat angelegte, tagartige Zeichen- und Letterform-Studien in einer rasterähnlichen Anordnung. Die Formen variieren sichtbar zwischen kurzen, gestischen, schleifenförmigen und stärker kantigen Zügen. Im unteren Bereich steht eine größere, konturierte CHAZ-Wortmarke. Die einzelnen Zeichen des Rasters lassen sich aus der verfügbaren Webansicht nicht zuverlässig als bestimmte lateinische Buchstaben transkribieren; deshalb wird keine A–Z-Glyph-Beobachtung abgeleitet. Pixelmaße und eine höher aufgelöste Originaldatei sind nicht verifiziert.",
+      "specimenId": "GETTY-CHAZ-2012-001"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-GETTY-CHUBBS-2013-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Chubbs-Seite zeigt eine farbige, stark verdichtete Lettering-Komposition. Mehrere Buchstabenmassen überlagern sich; kontrastierende Farben, Umrisslinien und ornamentale Randdetails erzeugen eine klare Schichtung. Die Seite eignet sich zur Analyse von Masse, Überlagerung und Farbebenen, nicht zur isolierten A–Z-Transkription.",
+      "specimenId": "GETTY-CHUBBS-2013-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-GETTY-DEFER-2013-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Defer-Seite zeigt eine dichte Schwarzweiß-Komposition mit scharfkantigen, ineinandergreifenden Letterform-Strukturen. Mehrere Konturlinien und Binnenlinien staffeln die Formen; die Buchstaben überlagern und verschränken sich über die gesamte Fläche. Ein organisch gemustertes Hintergrundfeld trennt Vordergrund und Umgebung, ohne die Letterforms zu isolieren.",
+      "specimenId": "GETTY-DEFER-2013-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-ROTH-DETROIT-D-2012-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Detroit-Tafel (2012) zeigt wiederholte D-Konstruktionen mit unterschiedlichen Stämmen und Bögen: von offenen, leichten Konturen bis zu schweren, weitgehend geschlossenen Schalen; Innenraum, Stammposition, Strichgewicht und Anschlussbewegung variieren deutlich. Mehrere Beispiele wirken wie ein zusammenhängender gestischer Zug statt einer schematischen Kombination aus senkrechtem Stamm und Bogen. Das ist ein Seitenbefund, keine normative D-Konstruktion.",
+      "specimenId": "ROTH-DETROIT-D-2012-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-ROTH-NYC-A-HARLEM-2004-01",
+      "kind": "direct-observation",
+      "observationDe": "Die offizielle A-Taxonomietafel zeigt eine Reihe separat angeordneter A-Konstruktionen aus Harlem (NYC, 2004). Sichtbar variieren unter anderem Spitzenwinkel, Verhältnis der beiden Hauptzüge, Lage und Form des Querzugs, offene gegenüber geschlossenen beziehungsweise schleifenartigen Innenräumen sowie zusätzliche Ausläufe. Die Buchstabenidentität bleibt über diese Unterschiede hinweg erkennbar. Die Beobachtung beschreibt die Streuung der Konstruktionen; sie übernimmt keine einzelne Form und leitet keine Häufigkeits- oder Qualitätsnorm ab.",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-ROTH-NYC-E-LOWEREAST-2008-01",
+      "kind": "direct-observation",
+      "observationDe": "Die offizielle E-Tafel aus der Lower East Side (NYC, 2008) zeigt unterschiedliche E/e-Ausführungen: geschlossene und offene Schleifen, cursive Kleinbuchstaben-Anmutung, kantigere/blockartige Varianten, stark wechselnde Strichbreiten sowie unterschiedlich integrierte Ein- und Ausläufe. Die Beispiele zeigen, dass die Buchstabenidentität in einer Tag-Sammlung auch bei stark veränderter Strichführung und Gestik erhalten bleiben kann. Keine Einzelkontur wird als Master übernommen.",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-ROTH-NYC-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "observationDe": "Die New-York-Tafel (2011) stellt zahlreiche eigenständige Tag-Formen in einem Raster gegenüber. Sichtbar werden unterschiedliche Linienökonomie, Schleifen- und Kreuzungsbewegungen, Winkel, Strichgewichte, Verdichtung und Signaturausläufe. Da die Einzelzeichen auf dieser Tafel nicht durchgehend als Buchstaben beschriftet sind, wird keine A–Z-Zuordnung vorgenommen.",
+      "specimenId": "ROTH-NYC-TAXONOMY-2011-01"
+    },
+    {
+      "confidence": "medium",
+      "editorialState": "source-checked",
+      "id": "OBS-ROTH-PARIS-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "observationDe": "Die Paris-Tafel (2011) zeigt ebenfalls eine Reihe eigenständiger Tag-Formen. Im direkten visuellen Vergleich mit der New-York-Tafel treten unterschiedliche Kombinationen aus Schleifen, kantigen Richtungswechseln, kompakten und lang ausgezogenen Formen sowie Strichgewichten hervor. Diese Beobachtung ist auf die beiden konkreten Tafeln begrenzt; daraus wird keine allgemeine regionale Stilregel abgeleitet und keine unbeschriftete Form einem Buchstaben zugeordnet.",
+      "specimenId": "ROTH-PARIS-TAXONOMY-2011-01"
+    }
+  ],
   "pilotGate": {
-    "eligible": 16,
-    "independentInstitutions": 2,
+    "eligible": 20,
+    "independentInstitutions": 3,
     "minEligibleGlyphObservations": 20,
     "minIndependentInstitutions": 3,
-    "open": false
+    "open": true
   },
   "sources": [
     {
@@ -355,6 +500,18 @@
       "institution": "Bombing Science Forums",
       "title": "Bombing Science Forums — Alphabet Challenge (2018)",
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
+    },
+    {
+      "id": "ACQ-GETTY-01",
+      "institution": "Getty Research Institute",
+      "title": "Getty Research Institute — LA Liber Amicorum / Getty Graffiti Black Book",
+      "url": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html"
+    },
+    {
+      "id": "ACQ-HOAKI-01",
+      "institution": "Hoaki Books / Promopress",
+      "title": "Woshe — Alphabeatz: Graffiti from A to Z",
+      "url": "https://www.hoaki.com/shop/en/books-93/alphabeatz-1120870-000-0001.html"
     },
     {
       "id": "ACQ-INGRID-01",
@@ -379,6 +536,12 @@
       "institution": "National Gallery of Art",
       "title": "National Gallery of Art — Henry Chalfant photographic works",
       "url": "https://www.nga.gov/artists/40960-henry-chalfant/artworks"
+    },
+    {
+      "id": "ACQ-ROTH-01",
+      "institution": "Evan Roth — official artist project archive",
+      "title": "Evan Roth — Graffiti Taxonomy series (NYC / Paris / Detroit)",
+      "url": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/"
     },
     {
       "id": "ACQ-SI-02",
@@ -408,7 +571,7 @@
       "place": "France",
       "sourceRecordId": "ACQ-ALT-01",
       "title": "Woshe — M le Mammouth instructional spread",
-      "visualState": "hi_fi_image_opened_and_inspected"
+      "visualState": "image_preview_seen"
     },
     {
       "accessDate": "2026-11-19",
@@ -559,6 +722,148 @@
       "sourceRecordId": "ACQ-BSCI-02",
       "title": "XCALET — Alphabet Challenge submission",
       "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Collaborative blackbook page / finished lettering composition",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Acme",
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "GETTY-ACME-2013-01",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_002_Acme",
+      "imageRights": "do-not-reuse",
+      "institution": "Getty Research Institute",
+      "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "observationIds": [
+        "OBS-GETTY-ACME-2013-01"
+      ],
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Getty LA Liber Amicorum — Acme page",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Collaborative blackbook page / finished lettering composition",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Cab",
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "GETTY-CAB-2013-01",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_015_Cab",
+      "imageRights": "do-not-reuse",
+      "institution": "Getty Research Institute",
+      "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
+      "observationIds": [
+        "OBS-GETTY-CAB-2013-01"
+      ],
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Getty LA Liber Amicorum — Cab page",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Letterform study grid",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Chaz",
+      "date": "2012",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "GETTY-CHAZ-2012-001",
+      "identifier": "L.A. Graffiti Black Book; reproduced page captioned Chaz",
+      "imageRights": "link-only",
+      "institution": "Getty Research Institute",
+      "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index2.html",
+      "observationIds": [
+        "OBS-GETTY-CHAZ-2012-001"
+      ],
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Chaz — letterform study grid, L.A. Graffiti Black Book",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Collaborative blackbook page / finished lettering composition",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Chubbs",
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "GETTY-CHUBBS-2013-01",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_022_Chubbs",
+      "imageRights": "do-not-reuse",
+      "institution": "Getty Research Institute",
+      "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index2.html",
+      "observationIds": [
+        "OBS-GETTY-CHUBBS-2013-01"
+      ],
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Getty LA Liber Amicorum — Chubbs page",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Collaborative blackbook page / finished lettering composition",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Defer",
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "GETTY-DEFER-2013-01",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_030_Defer",
+      "imageRights": "do-not-reuse",
+      "institution": "Getty Research Institute",
+      "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index2.html",
+      "observationIds": [
+        "OBS-GETTY-DEFER-2013-01"
+      ],
+      "photographerName": null,
+      "place": "Los Angeles, USA",
+      "sourceRecordId": "ACQ-GETTY-01",
+      "title": "Getty LA Liber Amicorum — Defer page",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Alphabet study — C/c",
+      "creatorAttribution": "named-by-source",
+      "creatorName": "Woshe",
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "identifier": "Alphabeatz; publisher ISBN 9788417412029; sample page explicitly headed C/c",
+      "imageRights": "do-not-reuse",
+      "institution": "Hoaki Books / Promopress",
+      "itemUrl": "https://designbook.com.ua/book/alphabeatz-graffiti-alphabets-from-a-to-z-14602",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-HOAKI-01",
+      "title": "Woshe — Alphabeatz: C/c study page",
+      "visualState": "image_preview_seen"
     },
     {
       "accessDate": "2026-11-19",
@@ -1115,6 +1420,133 @@
       "sourceRecordId": "ACQ-NGA-01",
       "title": "Passion by Zephyr",
       "visualState": "catalogue_metadata_only"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Graffiti tag taxonomy plate",
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": "2012",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-ROTH-DETROIT-D-2012-01"
+      ],
+      "id": "ROTH-DETROIT-D-2012-01",
+      "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 683 px official artist-site image rendition",
+      "imageRights": "do-not-reuse",
+      "institution": "Evan Roth — official artist project archive",
+      "itemUrl": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/",
+      "observationIds": [
+        "OBS-ROTH-DETROIT-D-2012-01"
+      ],
+      "photographerName": "Evan Roth (photographer and taxonomy author; individual tag writers are not identified in this record)",
+      "place": "Detroit, Michigan, USA",
+      "sourceRecordId": "ACQ-ROTH-01",
+      "title": "Evan Roth — D taxonomy sheet, Detroit, 2012",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Graffiti tag taxonomy plate",
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": "2004",
+      "dateQualifier": "as-catalogued",
+      "decade": "2000er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-ROTH-NYC-A-2004-01"
+      ],
+      "id": "ROTH-NYC-A-HARLEM-2004-01",
+      "identifier": "Evan Roth, Graffiti Taxonomy; 1021 × 1024 px official artist-site image rendition",
+      "imageRights": "do-not-reuse",
+      "institution": "Evan Roth — official artist project archive",
+      "itemUrl": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/",
+      "observationIds": [
+        "OBS-ROTH-NYC-A-HARLEM-2004-01"
+      ],
+      "photographerName": "Evan Roth (photographer and taxonomy author; individual tag writers are not identified in this record)",
+      "place": "Harlem, New York City, USA",
+      "sourceRecordId": "ACQ-ROTH-01",
+      "title": "Evan Roth — A taxonomy sheet, Harlem (NYC), 2004",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Graffiti tag taxonomy plate",
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": "2008",
+      "dateQualifier": "as-catalogued",
+      "decade": "2000er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-ROTH-NYC-E-2008-01",
+        "GLY-ROTH-NYC-E-2008-02"
+      ],
+      "id": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1022 px official artist-site image rendition",
+      "imageRights": "do-not-reuse",
+      "institution": "Evan Roth — official artist project archive",
+      "itemUrl": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/",
+      "observationIds": [
+        "OBS-ROTH-NYC-E-LOWEREAST-2008-01"
+      ],
+      "photographerName": "Evan Roth (photographer and taxonomy author; individual tag writers are not identified in this record)",
+      "place": "Lower East Side, New York City, USA",
+      "sourceRecordId": "ACQ-ROTH-01",
+      "title": "Evan Roth — E taxonomy sheet, Lower East Side (NYC), 2008",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Graffiti tag taxonomy plate",
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": "2011",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "ROTH-NYC-TAXONOMY-2011-01",
+      "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1024 px official artist-site image rendition",
+      "imageRights": "do-not-reuse",
+      "institution": "Evan Roth — official artist project archive",
+      "itemUrl": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/",
+      "observationIds": [
+        "OBS-ROTH-NYC-TAXONOMY-2011-01"
+      ],
+      "photographerName": "Evan Roth (photographer and taxonomy author; individual tag writers are not identified in this record)",
+      "place": "New York City, USA",
+      "sourceRecordId": "ACQ-ROTH-01",
+      "title": "Evan Roth — Graffiti Taxonomy: New York, 2011",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-20",
+      "archiveStyleLabel": "Graffiti tag taxonomy plate",
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": "2011",
+      "dateQualifier": "as-catalogued",
+      "decade": "2010er",
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "ROTH-PARIS-TAXONOMY-2011-01",
+      "identifier": "Evan Roth, Graffiti Taxonomy; 1024 × 1024 px official artist-site image rendition",
+      "imageRights": "do-not-reuse",
+      "institution": "Evan Roth — official artist project archive",
+      "itemUrl": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/",
+      "observationIds": [
+        "OBS-ROTH-PARIS-TAXONOMY-2011-01"
+      ],
+      "photographerName": "Evan Roth (photographer and taxonomy author; individual tag writers are not identified in this record)",
+      "place": "Paris, France",
+      "sourceRecordId": "ACQ-ROTH-01",
+      "title": "Evan Roth — Graffiti Taxonomy: Paris, 2011",
+      "visualState": "hi_fi_image_opened_and_inspected"
     },
     {
       "accessDate": null,

@@ -326,8 +326,185 @@
       "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
       "specimenId": "BSCI-RALI-2018-01",
       "transcriptionConfidence": "high"
+    },
+    {
+      "id": "GLY-ALT-WOSHE-2013-M1",
+      "specimenId": "ALT-WOSHE-M-MAMMOUTH-01",
+      "glyph": "M",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Seite ist mit „M le Mammouth“ überschrieben und zeigt mehrere M-Konstruktionen. Die Beispiele besitzen breite, kantige Außenkonturen, betonte Diagonalzüge und teils ausgezogene Enden. Da die aktuell erreichbare Ansicht nicht als hochaufgelöste Bildansicht verifiziert werden konnte, bleibt diese Beobachtung ein Entwurf und zählt nicht zum Pilot-Gate.",
+      "editorialState": "draft",
+      "reviewNoteDe": "Owner-Prüfung aus #37: Pixelmaß/hochauflösende Originalansicht nicht ausreichend verifiziert. Als Entwurf erhalten; nicht exportiert und nicht gate-wirksam."
+    },
+    {
+      "id": "GLY-HOAKI-WOSHE-C1",
+      "specimenId": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "glyph": "C",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Vorschauseite ist ausdrücklich mit „C/c“ überschrieben und zeigt zwei getrennte C-Konstruktionen. Die Großbuchstabenform besitzt eine nach rechts offene Kontur mit kantigen, unterschiedlich weit ausgezogenen Enden; daneben steht eine stärker gerundete und verschlungene Variante. Wegen der nur 720 × 820 px großen Händler-Vorschau bleibt die Beobachtung ein Entwurf und zählt nicht zum Pilot-Gate.",
+      "editorialState": "draft",
+      "reviewNoteDe": "Owner-Prüfung aus #37: Pixelmaß/hochauflösende Originalansicht nicht ausreichend verifiziert. Als Entwurf erhalten; nicht exportiert und nicht gate-wirksam."
+    },
+    {
+      "id": "GLY-ROTH-NYC-A-2004-01",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01",
+      "glyph": "A",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "angular",
+        "open-counter",
+        "broad-nib",
+        "crossbar",
+        "irregular-proportions"
+      ],
+      "observationDe": "Einzeln sichtbare A-Form aus der Harlem-Tafel (Rasterposition: Zeile 1, Spalte 2). Zwei deutlich geneigte Hauptzüge treffen sich in einer hohen Spitze; ein Querzug liegt unterhalb der Mitte. Die Strichmasse ist ungleich verteilt, der Innenraum bleibt offen und die Enden zeigen eine leichte gestische Ausweitung. Die Beschreibung hält nur die lesbare Grundkonstruktion fest und reproduziert keine Signatur oder Kontur.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "A-Identität durch die explizite A-Tafel und die Einzelposition abgesichert; 1021 × 1024 px offizielle Künstlerseiten-Abbildung visuell geprüft. Kein Nachzeichnen."
+    },
+    {
+      "id": "GLY-ROTH-NYC-E-2008-01",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "glyph": "E",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "observationDe": "Einzeln sichtbare e/E-Form aus der Lower-East-Side-Tafel (Rasterposition: Zeile 1, Spalte 2). Die Form wird als geschlossene, ovale Schleife mit horizontal integrierter Querbewegung aufgebaut; der rechte Auslauf verlängert die Grundbewegung. Die Linie bleibt weitgehend monolinear und wirkt eher als zusammenhängende Geste denn als getrennte Balkenkonstruktion. Die Beobachtung abstrahiert die Struktur, ohne die konkrete Form zu kopieren.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "E/e-Zuordnung durch die explizit beschriftete E-Tafel abgesichert; 1024 × 1022 px offizielle Künstlerseiten-Abbildung visuell geprüft. Kein Nachzeichnen."
+    },
+    {
+      "id": "GLY-ROTH-NYC-E-2008-02",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "glyph": "E",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "rounded",
+        "open-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "observationDe": "Zweite, klar getrennte e-Variante aus derselben Tafel (Rasterposition: Zeile 3, Spalte 2). Der Buchstabenkörper ist höher und offener als beim ersten Beispiel; ein längerer Querzug schneidet die Schleife und führt seitlich weiter. Die Form verschiebt den Schwerpunkt nach oben und nutzt einen dünneren, fließenden Zug. Sie ist als e lesbar, bleibt aber wegen der stark gestischen Ausführung nur mittel sicher transkribierbar.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "Separate Rasterposition derselben E-Tafel; nicht als unabhängige Quelle gezählt. 1024 × 1022 px Abbildung visuell geprüft."
+    },
+    {
+      "id": "GLY-ROTH-DETROIT-D-2012-01",
+      "specimenId": "ROTH-DETROIT-D-2012-01",
+      "glyph": "D",
+      "transcriptionConfidence": "medium",
+      "legibility": "medium",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "vertical-stem",
+        "broad-nib",
+        "irregular-proportions"
+      ],
+      "observationDe": "Einzeln sichtbare D-Form aus der Detroit-Tafel (Rasterposition: Zeile 2, Spalte 1). Ein kräftiger, annähernd senkrechter Stamm geht in einen gerundeten, nahezu geschlossenen Bogen über. Der Innenraum ist schmal und asymmetrisch; die Strichbreite wechselt entlang des Bogens. Die Zuordnung ist visuell plausibel, aber weniger sicher als bei den ausdrücklich mit A und E betitelten Tafeln.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "D-Zuordnung aus der sichtbaren Form und dem Detroit-Raster; Bild 1024 × 683 px visuell geprüft. Als mittlere Transkriptionssicherheit geführt."
     }
   ],
-  "objectObservations": [],
+  "objectObservations": [
+    {
+      "id": "OBS-GETTY-CHAZ-2012-001",
+      "specimenId": "GETTY-CHAZ-2012-001",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die offizielle Getty-Galerieansicht der Chaz-Arbeit zeigt im oberen Seitenbereich mehrere separat angelegte, tagartige Zeichen- und Letterform-Studien in einer rasterähnlichen Anordnung. Die Formen variieren sichtbar zwischen kurzen, gestischen, schleifenförmigen und stärker kantigen Zügen. Im unteren Bereich steht eine größere, konturierte CHAZ-Wortmarke. Die einzelnen Zeichen des Rasters lassen sich aus der verfügbaren Webansicht nicht zuverlässig als bestimmte lateinische Buchstaben transkribieren; deshalb wird keine A–Z-Glyph-Beobachtung abgeleitet. Pixelmaße und eine höher aufgelöste Originaldatei sind nicht verifiziert.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-A-HARLEM-2004-01",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die offizielle A-Taxonomietafel zeigt eine Reihe separat angeordneter A-Konstruktionen aus Harlem (NYC, 2004). Sichtbar variieren unter anderem Spitzenwinkel, Verhältnis der beiden Hauptzüge, Lage und Form des Querzugs, offene gegenüber geschlossenen beziehungsweise schleifenartigen Innenräumen sowie zusätzliche Ausläufe. Die Buchstabenidentität bleibt über diese Unterschiede hinweg erkennbar. Die Beobachtung beschreibt die Streuung der Konstruktionen; sie übernimmt keine einzelne Form und leitet keine Häufigkeits- oder Qualitätsnorm ab.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-E-LOWEREAST-2008-01",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die offizielle E-Tafel aus der Lower East Side (NYC, 2008) zeigt unterschiedliche E/e-Ausführungen: geschlossene und offene Schleifen, cursive Kleinbuchstaben-Anmutung, kantigere/blockartige Varianten, stark wechselnde Strichbreiten sowie unterschiedlich integrierte Ein- und Ausläufe. Die Beispiele zeigen, dass die Buchstabenidentität in einer Tag-Sammlung auch bei stark veränderter Strichführung und Gestik erhalten bleiben kann. Keine Einzelkontur wird als Master übernommen.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-DETROIT-D-2012-01",
+      "specimenId": "ROTH-DETROIT-D-2012-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Detroit-Tafel (2012) zeigt wiederholte D-Konstruktionen mit unterschiedlichen Stämmen und Bögen: von offenen, leichten Konturen bis zu schweren, weitgehend geschlossenen Schalen; Innenraum, Stammposition, Strichgewicht und Anschlussbewegung variieren deutlich. Mehrere Beispiele wirken wie ein zusammenhängender gestischer Zug statt einer schematischen Kombination aus senkrechtem Stamm und Bogen. Das ist ein Seitenbefund, keine normative D-Konstruktion.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-NYC-TAXONOMY-2011-01",
+      "specimenId": "ROTH-NYC-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die New-York-Tafel (2011) stellt zahlreiche eigenständige Tag-Formen in einem Raster gegenüber. Sichtbar werden unterschiedliche Linienökonomie, Schleifen- und Kreuzungsbewegungen, Winkel, Strichgewichte, Verdichtung und Signaturausläufe. Da die Einzelzeichen auf dieser Tafel nicht durchgehend als Buchstaben beschriftet sind, wird keine A–Z-Zuordnung vorgenommen.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-ROTH-PARIS-TAXONOMY-2011-01",
+      "specimenId": "ROTH-PARIS-TAXONOMY-2011-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Paris-Tafel (2011) zeigt ebenfalls eine Reihe eigenständiger Tag-Formen. Im direkten visuellen Vergleich mit der New-York-Tafel treten unterschiedliche Kombinationen aus Schleifen, kantigen Richtungswechseln, kompakten und lang ausgezogenen Formen sowie Strichgewichten hervor. Diese Beobachtung ist auf die beiden konkreten Tafeln begrenzt; daraus wird keine allgemeine regionale Stilregel abgeleitet und keine unbeschriftete Form einem Buchstaben zugeordnet.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-ACME-2013-01",
+      "specimenId": "GETTY-ACME-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Acme-Seite zeigt eine horizontal gestreckte, monochrome Lettering-Komposition aus dünnen, kantigen und stark überlagerten Zügen. Lange Diagonalen und perspektivische Linien erzeugen räumliche Tiefe. Die Buchstaben sind als zusammenhängende Komposition angelegt; die Einzelidentität ist auf der verfügbaren Mosaikansicht nicht zuverlässig zu transkribieren.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-DEFER-2013-01",
+      "specimenId": "GETTY-DEFER-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Defer-Seite zeigt eine dichte Schwarzweiß-Komposition mit scharfkantigen, ineinandergreifenden Letterform-Strukturen. Mehrere Konturlinien und Binnenlinien staffeln die Formen; die Buchstaben überlagern und verschränken sich über die gesamte Fläche. Ein organisch gemustertes Hintergrundfeld trennt Vordergrund und Umgebung, ohne die Letterforms zu isolieren.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-CHUBBS-2013-01",
+      "specimenId": "GETTY-CHUBBS-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Chubbs-Seite zeigt eine farbige, stark verdichtete Lettering-Komposition. Mehrere Buchstabenmassen überlagern sich; kontrastierende Farben, Umrisslinien und ornamentale Randdetails erzeugen eine klare Schichtung. Die Seite eignet sich zur Analyse von Masse, Überlagerung und Farbebenen, nicht zur isolierten A–Z-Transkription.",
+      "editorialState": "source-checked"
+    },
+    {
+      "id": "OBS-GETTY-CAB-2013-01",
+      "specimenId": "GETTY-CAB-2013-01",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Cab-Seite zeigt ein breites, monochromes Piece vor einer gezeichneten Ziegelwand. Dominant sind schwere, kantige Außenkonturen und eine horizontale Gesamtbewegung; kleinere Zeichen und sekundäre Linien liegen in den Zwischenräumen und überlagern die Hauptformen. Die Einzelbuchstaben sind in der verfügbaren Mosaikansicht nicht zuverlässig lesbar.",
+      "editorialState": "source-checked"
+    }
+  ],
   "schemaVersion": "1.0"
 }
