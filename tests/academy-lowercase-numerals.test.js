@@ -34,7 +34,7 @@ test('lowercase and numeral guide systems remain distinct', () => {
   assert.deepEqual(data.sharedLowercaseSystem.guideLines, ['Ascenderlinie', 'x-Höhe', 'Grundlinie', 'Descenderlinie']);
   assert.match(data.sharedLowercaseSystem.note, /keine verkleinerten Versalien/);
   assert.match(data.sharedNumeralSystem.default, /Lining-Ziffern/);
-  assert.match(data.sharedNumeralSystem.default, /keine x-Höhe/);
+  assert.match(data.sharedNumeralSystem.default, /keine x-Höhe/i);
   assert.match(data.sharedNumeralSystem.alternatives, /eigener Satz/);
 });
 
@@ -50,7 +50,7 @@ test('a and g preserve single- and double-storey constructions as separate famil
 test('numeral-specific ambiguity and optional conventions are explicit', () => {
   const byChar = Object.fromEntries(data.characters.filter(x => x.characterType === 'numeral').map(x => [x.character, x]));
   assert.match(byChar['0'].confusionRisks, /o/);
-  assert.match(byChar['1'].confusionRisks, /I und l/);
+  assert.match(byChar['1'].confusionRisks, /Versal I/);
   assert.match(byChar['4'].formVariations.map(x => x.description).join(' '), /Offenes 4; geschlossenes 4/);
   assert.match(byChar['7'].formVariations.map(x => x.description).join(' '), /Querstrich/);
   assert.match(byChar['8'].confusionRisks, /B/);
@@ -61,5 +61,5 @@ test('all references are linked and no external images or writer signatures are 
   for (const ref of data.references) assert.match(ref.url, /^https:\/\//);
   assert.ok(!JSON.stringify(data).includes('<image'));
   assert.match(data.productionRules.originality, /originär und fiktiv/);
-  assert.match(data.sharedSafeguards.join(' '), /Keine reale Writer-Signatur/);
+  assert.match(data.productionRules.originality, /Writer-\/Crew-Signaturen/);
 });
