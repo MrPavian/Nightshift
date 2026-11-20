@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 20. November 2026, Gate 3 der Vergleichsbibliothek umgesetzt (Branch `claude/gate3-comparison`, noch nicht in `main`)
+**Stand:** 20. November 2026, nach Gate 3 der Vergleichsbibliothek (#45) und dem Offline-Cache-Fix des Archivs
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.

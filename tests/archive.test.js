@@ -280,6 +280,9 @@ test('offline cache lists only files that exist, including fonts and data', () =
   assert.ok(files.includes('../data/archive/archive.v1.de.json'));
   for (const f of files) assert.ok(existsSync(`archive/${f}`), f);
   assert.ok(existsSync('archive/fonts/OFL.txt'), 'font licence is shipped');
+  // After a deploy the browser's HTTP cache must not hand out an old app.js through the worker.
+  assert.match(sw, /fetch\(e\.request, \{ cache: 'no-cache' \}\)/);
+  assert.match(sw, /new Request\(f, \{ cache: 'no-cache' \}\)/);
 });
 
 test('committed C06 proof passed and is tied to the current archive inputs', async () => {
