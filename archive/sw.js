@@ -1,7 +1,9 @@
 // Offline cache for THE BLACKBOOK ARCHIVE. Everything the archive needs is packaged here:
 // the page, styles, script, bridge module, fonts and the generated archive data.
 // Network first (so updates arrive immediately), falling back to the cache when offline.
-const CACHE = 'blackbook-archive-v3-de';
+// Requests revalidate with the server (cache: 'no-cache'), so the browser's HTTP cache cannot
+// hand out an old app.js after a deploy (GitHub Pages allows 10 minutes of HTTP caching).
+const CACHE = 'blackbook-archive-v4-de';
 const FILES = [
   'index.html', 'app.css', 'app.js', 'comparison.js',
   '../src/bridge/editor-bridge.js',
@@ -11,7 +13,7 @@ const FILES = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: 'no-cache' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {
@@ -21,7 +23,7 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
-  e.respondWith(fetch(e.request).then((res) => {
+  e.respondWith(fetch(e.request, { cache: 'no-cache' }).then((res) => {
     if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); }
     return res;
   }).catch(() => caches.match(e.request, { ignoreSearch: true }).then((hit) => hit ?? Response.error())));

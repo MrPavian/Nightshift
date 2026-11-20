@@ -19,6 +19,8 @@ export function comparisonViews(C, h) {
   const glyphsOf = (c) => C.glyphObservations.filter((g) => g.glyph === c);
   const findingsFor = (ids) => C.findings.filter((f) => f.observationIds.some((o) => ids.has(o)));
   const GATE_CLOSED = (g, k) => `<div class="empty"><p><strong>Buchstabenvergleich: Forschungsansicht im Aufbau.</strong></p><p>Ein Buchstabe wird erst verglichen, wenn er auf einem gesichteten Fundstück eindeutig erkennbar ist. Für den Start braucht es mindestens ${g.minEligibleGlyphObservations} solche Beobachtungen aus ${g.minIndependentInstitutions} verschiedenen Archiven bzw. Plattformen; vorhanden sind ${k.eligibleGlyphObservations} aus ${k.glyphInstitutions} (${k.glyphSources} Quellen, mehrere Quellen derselben Plattform zählen einmal). Bis dahin lassen sich die Fundstücke selbst durchsehen.</p></div>`;
+  // Images stay with the collections (link-only); this button is the way to see the actual letter.
+  const sourceBtn = (s) => `<p class="src-link"><a class="btn" href="${esc(s.itemUrl)}" rel="noopener" target="_blank">Bild ansehen bei ${esc(s.institution ?? 'der Quelle')} <span aria-hidden="true">↗</span><span class="sr"> (öffnet in neuem Tab)</span></a><span class="src-note">Das Bild wird hier nicht gezeigt; es bleibt bei der Sammlung.</span></p>`;
   const dateOf = (s) => (s.date ? `${s.dateQualifier === 'circa' ? 'um ' : ''}${s.date}` : null);
   const creatorOf = (s) => (s.creatorName ? `${esc(s.creatorName)} <span class="muted">(${esc(L.creatorAttribution[s.creatorAttribution])})</span>` : `<span class="muted">${esc(L.creatorAttribution[s.creatorAttribution])}</span>`);
 
@@ -132,6 +134,7 @@ export function comparisonViews(C, h) {
             <p class="kicker">Fundstück · <span class="mono">${esc(s.id)}</span></p>
             <h1>${esc(s.title)}</h1>
             <ul class="facts">${facts.map(([k, v]) => `<li><b>${k}</b> ${v}</li>`).join('')}</ul>
+            ${s.visualState === 'catalogue_metadata_only' ? '' : sourceBtn(s)}
           </header>
           <div class="sheet-paper"><div class="prose">
             <h2>Beobachtungen</h2>
@@ -170,10 +173,11 @@ export function comparisonViews(C, h) {
     ];
     return `<li class="cmp-card${selected ? ' is-selected' : ''}" data-cmp-card data-obs="${esc(o.id)}">
       <p class="kicker">${mode === 'feature' ? `Buchstabe ${esc(o.glyph)} · ` : ''}<span class="mono">${esc(o.id)}</span></p>
+      ${sourceBtn(s)}
       <p class="cmp-label">Direkte Beobachtung</p>
       <p class="cmp-obs">${esc(o.observationDe)}</p>
       <dl class="cmp-fields">${fields.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
-      <p class="cmp-actions">${toggleHref ? `<a class="chip" href="${toggleHref}" aria-pressed="${selected}">${selected ? 'Im Vergleich' : 'Zum Vergleich wählen'}</a>` : ''}<a href="${esc(s.itemUrl)}" rel="noopener" target="_blank">Originalquelle öffnen</a></p>
+      <p class="cmp-actions">${toggleHref ? `<a class="chip" href="${toggleHref}" aria-pressed="${selected}">${selected ? 'Im Vergleich' : 'Zum Vergleich wählen'}</a>` : ''}</p>
     </li>`;
   };
 

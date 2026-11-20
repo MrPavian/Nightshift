@@ -1,6 +1,13 @@
 # Changelog
 
 
+
+## 2026-11-20 — Archive: no stale app after a deploy; prominent original-image link (Claude)
+
+- After the Gate 3 deploy the owner still saw the old archive („Diesen Eintrag gibt es nicht“ on the new routes). The service worker fetched network-first, but through the browser's HTTP cache, which GitHub Pages allows to keep files for 10 minutes.
+- Comparison cards and specimen pages: the link to the original image is now a prominent button at the top („Bild ansehen bei <Archiv> ↗“), with the note that the image stays with the collection. Images remain link-only (owner choice 20.11.: no embedding, no own diagrams for now).
+- `archive/sw.js`: requests and the install pre-cache now revalidate with the server (`cache: 'no-cache'`); cache name bumped to `blackbook-archive-v4-de`, so old caches are removed on activation.
+
 ## 2026-11-20 — Letterform comparison library, Gate 3 (Claude)
 
 - Owner started Gate 3 after the pilot gate opened (20 eligible glyph observations, 3 institutions).
