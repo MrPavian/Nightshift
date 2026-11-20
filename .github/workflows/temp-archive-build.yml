@@ -1,0 +1,24 @@
+name: Temporary archive artifact build
+on:
+  push:
+    branches:
+      - chatgpt/dortmund-ruhrgebiet-research-01
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run archive:build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archive-v1-de
+          path: data/archive/archive.v1.de.json
+          if-no-files-found: error
