@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 19. November 2026, nach der Integration von #22, #26–#32
+**Stand:** 20. November 2026, nach der Integration von #22, #26–#32
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -23,7 +23,7 @@
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | beauftragt (Owner-Entscheidung 16.11.); noch nichts im Repository | ChatGPT | Ergebnisse per Pull Request einbringen | – |
 | **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry; alle Templates `documented-draft`. Resolver 1.1: Neutral, Straight, Bubble, Block-fit, Bounce; Wildstyle-Interlocking blockiert durch C04. **Phase A-01** (eingefroren): Owner-Review 19.11. — technischer Proof ok, gestalterisch nicht abgenommen; Straight/Blockbuster neu konzipieren. **Phase A-02** (`phase-a-02/`, Issue #24): Bubble-Punzenschutz (A/B/R jetzt 42–47 % statt 16–20 % Punzenfläche) und kollisionsfreies Bounce; vorläufig, nur ablehnend, `measured-uncalibrated` | ChatGPT (Research/Brief), Claude (Engine) | Owner-Sichtung Phase A-02; Letterform-Grammatiken für Straight/Blockbuster neu definieren (PR #25) | Owner: Sichtung A-02 (Schwellen, ungleiche Masse im Wort); Stildefinition vor dem nächsten Proof |
 | **Letterform-Vergleichsbibliothek** (Spec `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md`) | **Gate 1 und 2 umgesetzt:** Datenvertrag `contracts/letterform-comparison.v1.json` (1.1.0), Daten unter `research/archive/comparison/`, Build nach `data/archive/comparison.v1.de.json`, Fundstück-Browser unter `#/vergleich`. 46 Fundstücke, 22 gesichtet, **14 zulässige Buchstabenbeobachtungen** aus 3 Quellen bzw. 2 Archiven/Plattformen; 1 Befund. Buchstabenvergleich (Gate 3) gesperrt, bis 20 Beobachtungen aus 3 verschiedenen Archiven/Plattformen vorliegen; Gate 4 offen. NGA-Abbildung bestätigt (#29) | **Recherche nur ChatGPT** (Owner-Entscheidung 19.11.); Claude prüft und integriert | ChatGPT: Beobachtungen aus weiteren Archiven per PR; Claude: Gate 3, sobald das Gate offen ist | Owner: Sichtung |
-| **Recherche Dortmund / Ruhrgebiet** | Quellenaudit, Rubrik, Zugangskarte; keine Seiten visuell codiert | ChatGPT | rechtekonforme Stichprobe | Quellenzugang |
+| **Recherche Dortmund / Ruhrgebiet** | 5 Dortmund-Fotos aus Pixelprojekt *Lost Spaces Graffiti* (2010) auf Seitenebene gesichtet; keine Einzelglyphen transkribiert. *ALL SURFACE*-Vorschaubilder geprüft; INGRID Q01–Q06 weiterhin ohne Resultatzeilen | ChatGPT | Rechteklärung/physische Quellenprüfung und INGRID-Abfrage; erst dann repräsentative Stichprobe | Quellenzugang / Repräsentativität |
 
 ## Offene Owner-Entscheidungen
 
