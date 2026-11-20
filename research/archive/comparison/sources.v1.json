@@ -434,6 +434,23 @@
       ],
       "title": "INGRID — Informationssystem Graffiti in Deutschland",
       "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid"
+    },
+    {
+      "confidenceRaw": "high for publisher provenance and book-level alphabet-study description; medium for the individual sample-page detail",
+      "evidenceRaw": "Hoaki Books / Promopress publishes Woshe's Alphabeatz: Graffiti from A to Z, a book examining the structure and evolution of all 26 letters. A retailer sample image shows a page explicitly headed C/c with two separate graffiti letter constructions.",
+      "id": "ACQ-HOAKI-01",
+      "institution": "Hoaki Books / Promopress",
+      "nextActionRaw": "Seek further publisher-approved sample pages with explicit A–Z headings; inspect each page independently and add only individually legible glyphs.",
+      "rightsRaw": "Copyright Woshe / publisher; link-only; sample access does not grant reuse or tracing permission.",
+      "scope": "Woshe's alphabet-by-alphabet graffiti letterform study, 26 letters A–Z",
+      "sourceType": "publisher_book_and_sample_pages",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "wildstyle_semi_wildstyle",
+        "letter_construction_study"
+      ],
+      "title": "Woshe — Alphabeatz: Graffiti from A to Z",
+      "url": "https://www.hoaki.com/shop/en/books-93/alphabeatz-1120870-000-0001.html"
     }
   ]
 }
