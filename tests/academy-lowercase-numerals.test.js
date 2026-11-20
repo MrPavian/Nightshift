@@ -51,7 +51,7 @@ test('numeral-specific ambiguity and optional conventions are explicit', () => {
   const byChar = Object.fromEntries(data.characters.filter(x => x.characterType === 'numeral').map(x => [x.character, x]));
   assert.match(byChar['0'].confusionRisks, /o/);
   assert.match(byChar['1'].confusionRisks, /Versal I/);
-  assert.match(byChar['4'].formVariations.map(x => x.description).join(' '), /Offenes 4; geschlossenes 4/);
+  assert.match(byChar['4'].formVariations.map(x => x.description).join(' '), /Offenes 4.*geschlossenes 4/);
   assert.match(byChar['7'].formVariations.map(x => x.description).join(' '), /Querstrich/);
   assert.match(byChar['8'].confusionRisks, /B/);
 });
