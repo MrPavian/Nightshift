@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/MrPavian/Nightshift  
 **Project:** NIGHTSHIFT / THE BLACKBOOK ARCHIVE  
-**Last maintained:** 2026-11-15  
+**Last maintained:** 2026-11-20  
 **Owner:** MrPavian  
 **Current project state:** [`docs/STATUS.md`](docs/STATUS.md) — read it first; it supersedes the dated status notes further down in this file. Shared Git workflow for ChatGPT and Claude: `AGENTS.md`, section “Collaboration between ChatGPT and Claude”.  
 **Purpose of this file:** canonical, continuously maintained handover for Claude. Read this file before every new task and update it when project state materially changes.
@@ -669,3 +669,15 @@ The owner decided to use the 26 approved sheets right away, for personal learnin
   - `tools/academy/check-gallery.mjs`, part of `npm run test:browser`.
   - Screenshots in `docs/reports/proof/academy-gallery/`.
 - The generated A study (`letter-study_A_01.svg`) stays as the path to an editable, corrected, print-ready version. It is still pending owner review.
+
+### Lowercase and numerals — owner commission 16 November 2026
+
+ChatGPT owns the content/research work for lowercase `a–z` and numerals `0–9`. The first content package is now available:
+
+- `data/academy/lowercase-numerals.v1.json` — 36 character-specific records. Each contains anatomy, proportion guides, construction analysis, five structural variations, three original graffiti-transfer directions and at least three learning tasks.
+- `docs/lettering/ACADEMY_LOWERCASE_NUMERALS_CONTENT_01.md` — editorial and production brief with character overview, common construction rules, quality gates and sources.
+- Binding visual/content standards remain `docs/lettering/GRAFFITI_ACADEMY_VISUAL_STYLE_STANDARD_01.md` and `docs/lettering/MASTER_CONTROL_PROMPT_01.md` v1.2.
+
+**Important status:** this is a content specification, not a completed set of visual sheets. No lowercase/numeral SVGs or print exports have been generated yet. Next: create and inspect proof sheets for `a` and `0` against the approved A visual system; correct the content/layout; then produce the remaining 34 sheets. Keep all sheets marked draft until owner review.
+
+**Construction rules:** lowercase uses ascender line, x-height, baseline and descender line as applicable; it is not reduced uppercase. Single-/double-storey `a` and `g` remain separate construction families. Numerals default to lining figures aligned to the baseline and figure/cap height; oldstyle figures are a separate system. No universal proportions, stroke counts or inferred stroke order. All graffiti interpretations must be original and fictional.
