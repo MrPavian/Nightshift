@@ -195,6 +195,24 @@
       "source_id": "ACQ-BSCI-02",
       "specimen_id": "BSCI-RALI-2018-01",
       "status": "glyph_observation_accepted"
+    },
+    {
+      "archive_observation_id": "GLY-ALT-WOSHE-2013-M1",
+      "glyph": "M",
+      "id": "QUEUE-GLY-ALT-WOSHE-2013-M1",
+      "note": "Nur als Entwurf geführt: Bildansicht/Pixelmaß nicht als hochaufgelöste Sichtung verifiziert; zählt nicht zum Pilot-Gate.",
+      "source_id": "ACQ-ALT-01",
+      "specimen_id": "ALT-WOSHE-M-MAMMOUTH-01",
+      "status": "glyph_observation_candidate"
+    },
+    {
+      "archive_observation_id": "GLY-HOAKI-WOSHE-C1",
+      "glyph": "C",
+      "id": "QUEUE-GLY-HOAKI-WOSHE-C1",
+      "note": "Nur als Entwurf geführt: Bildansicht/Pixelmaß nicht als hochaufgelöste Sichtung verifiziert; zählt nicht zum Pilot-Gate.",
+      "source_id": "ACQ-HOAKI-01",
+      "specimen_id": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "status": "glyph_observation_candidate"
     }
   ],
   "page_records": [
@@ -771,9 +789,9 @@
       "date_range": "2013 edition",
       "glyph_eligibility": "not_eligible",
       "id": "PAGE-ALT-WOSHE-M-MAMMOUTH",
-      "next_action": "Use as a visual-method reference; seek other openly accessible pages in the same book only through legitimate web previews.",
+      "next_action": "Eine direkt erreichbare, hochaufgelöste Verlagsansicht mit dokumentierten Pixelmaßen prüfen; erst danach über Veröffentlichung der M-Beobachtung entscheiden.",
       "priority": "high",
-      "reason": "The preview is useful for studying Woshe's didactic approach and letter construction, but the visible forms are embedded in larger compositions and do not provide a securely isolated glyph for the current comparison dataset.",
+      "reason": "Die Seite ist mit „M le Mammouth“ bezeichnet, aber eine hochaufgelöste Bildansicht mit verifizierten Pixelmaßen konnte in dieser Übernahme nicht bestätigt werden. M bleibt als Entwurf dokumentiert, nicht als zulässige Glyph-Beobachtung.",
       "rights_status": "Copyright Woshe / Éditions Alternatives; link-only; do not copy or trace.",
       "source_id": "ACQ-ALT-01",
       "title": "Woshe — M le Mammouth, instructional spread",
@@ -891,29 +909,62 @@
       "title": "Rali — Alphabet Challenge submission",
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
       "visual_review_status": "glyph_observation_accepted"
+    },
+    {
+      "catalogue_description": "Publisher/retailer sample page from Woshe's Alphabeatz; the page is explicitly headed C/c and shows two separate graffiti letter constructions.",
+      "creator": "Woshe",
+      "date_range": "Book publication 2019/2021; individual page date unknown",
+      "glyph_eligibility": "not_eligible",
+      "id": "PAGE-HOAKI-WOSHE-C-001",
+      "image_url": "https://designbook.com.ua/product_img/cache/4b12cfc3a6d5593bf773fb8e2ccb9610_720_820.jpg",
+      "next_action": "Eine autorisierte hochaufgelöste Seitenansicht mit dokumentierten Pixelmaßen prüfen; erst dann den C-Entwurf neu bewerten.",
+      "priority": "high",
+      "reason": "Die C/c-Beschriftung und zwei getrennte Konstruktionen sind in einer 720 × 820 px großen Händler-Vorschau erkennbar; die Ansicht wird nach Owner-Regel nicht als hochaufgelöste Sichtung gewertet.",
+      "rights_status": "Copyright Woshe / publisher; link-only; no copying or tracing.",
+      "source_id": "ACQ-HOAKI-01",
+      "title": "Woshe — Alphabeatz: C/c",
+      "url": "https://designbook.com.ua/book/alphabeatz-graffiti-alphabets-from-a-to-z-14602",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
+    },
+    {
+      "catalogue_description": "Reproduced page from the Getty L.A. Graffiti Black Book; preview shows a grid of individual letterform studies and the signature CHAZ.",
+      "creator": "Chaz",
+      "date_range": "2012 (page caption/signature)",
+      "glyph_eligibility": "not_eligible",
+      "id": "GETTY-CHAZ-2012-001",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/53f40cd1e4b0ba399aaf6df4/1622359916624-67F8XWV0009C3UWI0AAH/F05D24B2-6A19-4249-89FE-C722C978F52F.jpeg?format=2500w",
+      "next_action": "Eine autorisierte Originalansicht mit dokumentierten Pixelmaßen prüfen; einzelne Formen nur bei eindeutiger A–Z-Zuordnung als Glyph erfassen.",
+      "priority": "high",
+      "reason": "Die Rasteranordnung und verschiedene Letterform-Konstruktionen sind als Seitenbeobachtung nutzbar. Einzelne Buchstabenidentitäten sind in der verfügbaren Vorschau nicht sicher zuzuordnen; daher kein A–Z-Glyph.",
+      "rights_status": "Copyright of contributing artist; link-only; no image copied or traced.",
+      "source_id": "ACQ-GETTY-01",
+      "title": "Chaz — Letterform Study Grid (L.A. Graffiti Black Book)",
+      "url": "https://crewestshop.com/graffitibooks/la-graffiti-black-book",
+      "visual_review_status": "visually_reviewed_not_glyph_eligible"
     }
   ],
   "purpose": "Track catalogued page-level graffiti lettering sources and explicit next inspection actions. This file is not a glyph specimen dataset.",
   "reviewed_at": "2026-11-19",
   "schema_version": "1.0.0",
   "sources_ref": [
-    "ACQ-RIJK-01",
-    "ACQ-FTA-01",
-    "ACQ-FTA-02",
-    "ACQ-DGL-01",
+    "ACQ-ALT-01",
     "ACQ-ARTCRIMES-01",
-    "ACQ-GETTY-01",
-    "ACQ-STREETFONTS-01",
     "ACQ-BSCI-01",
     "ACQ-BSCI-02",
-    "ACQ-ALT-01",
-    "ACQ-LFA-03"
+    "ACQ-DGL-01",
+    "ACQ-FTA-01",
+    "ACQ-FTA-02",
+    "ACQ-GETTY-01",
+    "ACQ-HOAKI-01",
+    "ACQ-LFA-03",
+    "ACQ-RIJK-01",
+    "ACQ-STREETFONTS-01"
   ],
   "summary": {
     "accepted_glyph_observations": 16,
-    "note": "16 akzeptierte Einzelglyph-Beobachtungen aus zwei Archiven/Plattformen (Bombing Science Forums, Letterform Archive). Die INGRID-Handbuchbeispiele gelten nach Owner-Entscheidung vom 19.11.2026 als Vorschaubild; ihre Glyphen sind Kandidaten, bis INGRID-Einzelobjekte vorliegen.",
-    "page_records": 45,
-    "source_records_referenced": 11,
-    "visually_reviewed_page_records": 21
+    "note": "16 zulässige Glyph-Beobachtungen bleiben unverändert (Bombing Science Forums und Letterform Archive). Woshe M und C aus #37 sind als Entwürfe dokumentiert, da die hochaufgelösten Ansichten/Pixelmaße nicht verifiziert sind. Getty/Chaz aus #35 ist eine Seiten-/Objektbeobachtung ohne A–Z-Glyphen. Quellenplattformen: Getty Research Institute, Éditions Alternatives / All City Blog, Hoaki Books / Promopress zusätzlich als Recherchequellen erfasst; kein zusätzlicher Gate-Beitrag.",
+    "page_records": 47,
+    "source_records_referenced": 12,
+    "visually_reviewed_page_records": 23
   }
 }
