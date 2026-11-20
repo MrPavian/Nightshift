@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-11-20 — Integration of #34–#43 into `main` (Claude)
+
+- Integration branch `claude/integrate-2026-11-20` merges, in order: #39 (contains #34, #36, #38), #40, #42, #43.
+- #43 repaired first: archive export rebuilt with `tools/archive-build.mjs` and the C06 proof manifest re-captured; no content changes.
+- Conflicts only in `docs/STATUS.md` and `docs/CHANGELOG.md`; both sides kept. Comparison data identical to #40, Academy data identical to #42, Dortmund research identical to #43.
+- Build after integration: 60 specimens, 27 inspected, 20 eligible glyph observations from 3 institutions; pilot gate open. Gate 3 not started.
+- Archive: 31 entries, 128 claims, 32 sources. Tests: 227/227 unit, all browser checks and `--check` gates pass.
+
+## 2026-11-20 — Academy lowercase and numerals (content draft)
+
+- Added a structured content package for all 26 lowercase letters and 10 lining numerals.
+- Each character has letter-specific anatomy, construction guidance, proportion rules, five structural variations, three original graffiti-transfer directions and at least three learning tasks.
+- Explicitly separates lowercase x-height/ascender/descender guides from the lining-numeral figure-height system.
+- Documents single-/double-storey a and g, numeral ambiguity pairs, and optional rather than universal conventions such as slashed zero and crossed seven.
+- Added contract tests for character coverage and content completeness.
+- No SVG study sheets or print exports have been generated yet; all content remains draft and requires visual proof production and owner review.
+
+## 2026-11-20 — Dortmund / Ruhrgebiet source access update
+
+- Opened five Dortmund photographs from Benito Barajas' *Lost Spaces Graffiti* (Pixelprojekt Ruhrgebiet, 2010) and recorded page-level composition observations only.
+- Added the series' exact location/year metadata and photographer-held rights notice; no images copied and no individual glyphs transcribed.
+- Opened *ALL SURFACE* retailer preview images; retained them as acquisition leads only, not as a representative or glyph-level sample.
+- Updated the Dortmund visual source-access map, coding rubric and INGRID Q01–Q06 execution log.
+- Re-tried the public INGRID SPARQL endpoint; no result rows returned. No Dortmund counts or frequency claims added.
+
+
 ## Build 0.6 — Full Alphabet / Glyph Relationships
 
 - Added A–Z glyph addressing.
@@ -623,3 +649,16 @@
 - Owner decision: the glyph-comparison pilot gate requires 20 eligible glyph observations from at least 3 different archives/platforms (`contracts/letterform-comparison.v1.json` 1.1.0, `minIndependentInstitutions`). Several source records of one platform (e.g. two forum threads) count once. Current state: 12 observations from 3 source records / 2 platforms; gate closed.
 - Fixed CI after PR #31: missing `visualState` on `ALT-WOSHE-M-MAMMOUTH-01`; count test recomputes from source files.
 - Research for the comparison library is done by ChatGPT only (owner decision); Claude reviews and integrates.
+
+## 2026-11-19 — INGRID observations reviewed (PR #34 follow-up)
+
+- Built and checked PR #34: 48 specimens, 20 eligible glyph observations from 3 platforms before review.
+- Independent check of the six INGRID glyphs against the German original of the INGRID manual (printed p. 62; the English p. 64 link returns HTTP 404 and was replaced): K, R (DERK) and R, M (ReMS) hold; DERK D (no vertical stem, description does not match the form) and ReMS S (only readable through the manual's transcription) are set to `draft` with a review note, and so is the dependent finding `FND-D-COUNTER-CONNECTIVITY-01`. Queue entries downgraded to candidate.
+- Result: 18 eligible glyph observations from 3 platforms; pilot gate closed; Gate 3 not unlocked.
+
+## 2026-11-19 — INGRID manual reproductions no longer count (owner decision); PR #38 integrated
+
+- PR #38 (ChatGPT) adds Rali C and X (Bombing Science); accepted on ChatGPT's inspection (owner decision; the forum blocks automated access).
+- Owner decision: the INGRID manual examples (DERK, ReMS; 699×290 / 523×150 px) are previews, not high-resolution inspections. Both specimens set to `image_preview_seen`; their four glyph observations parked as `draft` with a review note; queue entries back to candidate.
+- Build: draft glyph observations may now stay on specimens that are not (or no longer) eligible; eligibility is enforced for published records only. New test.
+- Result: 16 eligible glyph observations from 2 platforms; pilot gate closed; Gate 3 not started.

@@ -104,13 +104,15 @@ export function buildComparison({ contract, sources, specimens, observations, fi
     obsIds.add(g.id);
     const sp = specById.get(g.specimenId);
     if (!sp) { err('CMP_UNKNOWN_SPECIMEN', w, g.specimenId); continue; }
-    if (!ELIGIBLE_STATES.has(sp.visualState)) err('CMP_GLYPH_NOT_ELIGIBLE', w, `${g.specimenId} is ${sp.visualState}; glyph observations need a high-resolution or physical inspection`);
-    if (!GLYPHS.includes(g.glyph)) err('CMP_GLYPH_NOT_ELIGIBLE', w, `glyph ${g.glyph} is not A–Z`);
-    for (const k of ['transcriptionConfidence', 'legibility']) {
-      enumOk('confidence', g[k], w, k);
-      if (g[k] === 'low') err('CMP_GLYPH_NOT_ELIGIBLE', w, `${k} low`);
-    }
     enumOk('editorialState', g.editorialState, w, 'editorialState');
+    for (const k of ['transcriptionConfidence', 'legibility']) enumOk('confidence', g[k], w, k);
+    // Eligibility gates publication. A draft is not exported, so it may be parked on a specimen that
+    // is (no longer) eligible, e.g. after a review downgrades the specimen's inspection state.
+    if (PUBLISHED.has(g.editorialState)) {
+      if (!ELIGIBLE_STATES.has(sp.visualState)) err('CMP_GLYPH_NOT_ELIGIBLE', w, `${g.specimenId} is ${sp.visualState}; published glyph observations need a high-resolution or physical inspection`);
+      if (!GLYPHS.includes(g.glyph)) err('CMP_GLYPH_NOT_ELIGIBLE', w, `glyph ${g.glyph} is not A–Z`);
+      for (const k of ['transcriptionConfidence', 'legibility']) if (g[k] === 'low') err('CMP_GLYPH_NOT_ELIGIBLE', w, `${k} low`);
+    }
     if (publishedText(g, 'observationDe', w)) glyphObs.push(g);
   }
 

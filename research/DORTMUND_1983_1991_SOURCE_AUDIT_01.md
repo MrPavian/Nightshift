@@ -1,7 +1,7 @@
 # Dortmund 1983–1991 — Quellenkritischer Vertiefungsbaustein 01
 
-**Stand:** 15.11.2026  
-**Status:** Forschungsnotiz / keine Publikationsfreigabe  
+**Stand:** 20.11.2026  
+**Status:** Forschungsnotiz / keine Publikationsfreigabe; ergänzender regionaler Bildkontext visuell geprüft, keine Glyphenfreigabe  
 **Bezug:** `RUHRGEBIET_DORTMUND_SCENE_HISTORY_AND_STYLE_01.md`, `INGRID_REGIONAL_RESEARCH_SCOPE_01.md`  
 **Ziel:** Die frühe Dortmunder Szene anhand der zeitnahen Quelle *Da kukse wa* (1987), der zeitgenössischen Presse und späterer Forschung präziser fassen.
 
@@ -122,3 +122,28 @@ Die INGRID-Bestandsseite nennt für Bilder CC BY-SA und für annotierte Metadate
 ## 9. Rechte- und Nutzungshinweis
 
 Die Autorinnenseite und ein Online-Auszug belegen die Existenz und den Inhalt bestimmter Textpassagen. Sie geben NIGHTSHIFT keine pauschale Erlaubnis, Buchseiten, Fotos oder längere Interviewpassagen zu übernehmen. Für die Archivansicht zunächst bibliografisch beschreiben, kurze zulässige Zitate sparsam einsetzen und eigene schematische Visualisierungen erstellen. Vor kommerzieller Nutzung ist die Rechtekette für jedes Bild separat zu klären.
+
+
+## 10. Ergänzender visueller Gegencheck — Ruhrgebiet 2010 (20.11.2026)
+
+Die regionale Stilbeschreibung wurde gegen eine kleine, tatsächlich geöffnete Bildserie geprüft: Benito Barajas' *Lost Spaces Graffiti* im Pixelprojekt Ruhrgebiet.
+
+- Die Serie umfasst sieben katalogisierte Fotografien aus 2010: fünf Dortmund (Dortmunder Norden, drei Ansichten Südbahnhof, Hafen), eine Bochum (RuhrUni) und eine Hagen (Alte Fabrik).
+- Die fünf Dortmunder Bilder zeigen unterschiedliche Formate und Kompositionsweisen nebeneinander: blockige, gut lesbare Lettering-Massen, dichtere Verschachtelungen, Bubble-/Throw-up-nahe Formen, Handstyle-Tag-Ansammlungen und großflächige interlocking Pieces.
+- Das stützt eine wichtige redaktionelle Vorsicht: Die regionale Bezeichnung „Dortmund Style“ darf nicht als einheitliche Schablone für jedes Werk oder jede Epoche verstanden werden. Selbst die kleine, kuratierte 2010er Stichprobe zeigt mehrere nebeneinander existierende Formsprachen.
+- Die Serie dokumentiert verlassene Bahnhöfe, Fabriken und andere „Lost Spaces“. Sie ist eine spätere, orts- und motivspezifische Kontextquelle, keine repräsentative Stichprobe der Dortmunder Szene der Jahre 1983–1991.
+- Die Seite nennt 60 × 40 cm als Werkgröße und weist sämtliche Nutzungsrechte an den Fotografien Benito Barajas zu. Die Bilder wurden nur angesehen; keine Datei wurde übernommen, und keine einzelne Buchstabenform wurde als Glyph transkribiert.
+
+Quelle: https://www.pixelprojekt-ruhrgebiet.de/serie/lost-spaces-graffiti
+
+### Neue Claim-Ergänzungen
+
+| ID | Aussage | Beleg | Stärke | Grenze / nächster Schritt |
+|---|---|---|---|---|
+| DOR-08 | *Lost Spaces Graffiti* umfasst sieben Fotos aus Dortmund, Bochum und Hagen, datiert 2010; fünf Motive sind in Dortmund verortet. | Pixelprojekt-Ruhrgebiet, Serienseite und Bildunterschriften | A für Katalogmetadaten | Kein Beleg für die Szene der 1980er/90er; nur kuratierte Ortsserie. |
+| DOR-09 | Die geöffneten Dortmunder Ansichten zeigen mehrere Formate und Formsprachen nebeneinander. | Benito Barajas, fünf visuell geprüfte Bildansichten | B für die Seitenbeobachtung | Keine Häufigkeits- oder Repräsentativitätsaussage; keine isolierten Glyphen transkribiert. |
+| DOR-10 | Alle Nutzungsrechte der Fotografien liegen laut Serienseite bei Benito Barajas. | Pixelprojekt-Ruhrgebiet, Rechtehinweis | A | Vor jeder Weiterverwendung schriftliche Freigabe beim Fotografen einholen. |
+
+### Konsequenz für den historischen Claim „Dortmund Style“
+
+Die Aussagen „blockig“ und „klar“ bleiben als historisch belegte Beschreibung von 2022 bzw. als zeitgenössische Medien-/Szenebezeichnung von 1989 erhalten. Sie werden **nicht** zu einem Generator-Preset, einer regionalen Pflichtform oder einem Qualitätsmaßstab verallgemeinert. Für eine visuelle Regelableitung aus 1983–1991 bleibt ein datierter, breiterer Primärquellenkorpus erforderlich.

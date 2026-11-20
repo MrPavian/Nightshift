@@ -1,7 +1,7 @@
 # Dortmund Style — Visuelles Codierprotokoll 01
 
-**Stand:** 15.11.2026  
-**Status:** Methodik / Forschungsinstrument — keine abgeschlossene Stildefinition  
+**Stand:** 20.11.2026  
+**Status:** Methodik / Forschungsinstrument; erstmals auf fünf spätere Dortmund-Bildseiten auf Seitenebene angewandt — keine abgeschlossene Stildefinition  
 **Geltungsbereich:** zunächst Dortmund, Schwerpunkt 1983–1991; spätere Vergleichszeiträume und andere Ruhrgebietsstädte nur als getrennte Stichproben.
 
 ## 1. Zweck und Grenze
@@ -127,6 +127,34 @@ Nicht zulässig:
 
 Die Generatorübersetzung muss als NIGHTSHIFT-Designentscheidung gekennzeichnet und mit synthetischen, eigenständigen Buchstabenformen demonstriert werden.
 
+
+
+## 10. Rubrik-Probelauf — Pixelprojekt *Lost Spaces Graffiti* (2010)
+
+**Zweck:** Prüfen, ob das Codierprotokoll eine regionale Bildseite beschreiben kann, ohne aus einem Einzelbild eine Stilregel abzuleiten. Diese fünf Fotos sind ein später Kontext- und Methodenprobelauf, **nicht** Teil der historischen Stichprobe 1983–1991.
+
+Quelle: Benito Barajas, *Lost Spaces Graffiti*, Pixelprojekt Ruhrgebiet, 2010. Serienseite: https://www.pixelprojekt-ruhrgebiet.de/serie/lost-spaces-graffiti
+
+| Bild/Caption | Format-Ebene | Sichtbare Beobachtung | Unsicherheit / Ausschluss |
+|---|---|---|---|
+| Dortmunder Norden, 2010 | Wand-/Lost-Space-Ansicht, mehrere Arbeiten | Dichte Akkumulation verschiedener Zeichen und größerer Lettering-Flächen auf industriellem Untergrund | Keine Einzelglyphen isoliert; keine Writer-Zuschreibung |
+| Südbahnhof, 2010 (Bild 2) | Wand-Piece-Komposition | Breite, gut lesbare blockartige obere Komposition neben einer stärker verschachtelten unteren Komposition | Kein Beleg für einen kanonischen Dortmund-Stil; keine Buchstaben transkribiert |
+| Südbahnhof, 2010 (Bild 5) | Tag-/Handstyle-Ansammlung | Wiederholte dunkle, gestische Schriftzüge über eine Wandfläche verteilt | Einzelne Namen/Zeichen nicht zuverlässig transkribiert; kein Häufigkeitszähler |
+| Hafen, 2010 | farbige Wand-/Panel-Komposition | Runde, aufgeblasene Lettering-Massen mit kräftigen Konturen und Farbfeldern; kleinere Sekundärzeichen im Umfeld | „Bubble/Throw-up-nah“ bleibt eine beschreibende Formnotiz, keine historische Zuschreibung |
+| Südbahnhof, 2010 (Bild 7) | großflächige Piece-Komposition | Ineinandergreifende Formen, gestaffelte Konturen, Binnenlinien und gerichtete Ausläufe; kräftige grüne Fläche | Keine einzelne Buchstabenidentität sicher isoliert; keine Generatorparameter abgeleitet |
+
+### Codierstatus dieses Probelaufs
+
+- **Metadaten:** Serienseite nennt Künstler/Fotograf Benito Barajas, Orte, Jahr 2010 und Werkgröße 60 × 40 cm. Metadatenvertrauen: hoch.
+- **Sichtbare Beobachtung:** Seitenkomposition, Format und Überlagerung wurden geprüft. Vertrauen: mittel, weil die Analyse auf fotografierten Gesamtansichten beruht.
+- **Werkzeug/Technik:** nicht pro Bild sicher bestimmbar. Keine Spray-/Marker-Technik allein aus der Optik festschreiben.
+- **Glyph-Ebene:** null Einzelglyphen transkribiert; keine A–Z-Beobachtung.
+- **Rechte:** sämtliche Nutzungsrechte an den Fotografien liegen laut Serienseite bei Benito Barajas. Nur Link/Metadaten und eigene Beschreibung; keine Bildkopie, kein Nachzeichnen, keine Weiterverwendung.
+
+### Was dieser Probelauf belegt — und was nicht
+
+Er belegt, dass im Dortmunder Bildkontext 2010 verschiedene Formate und Formsprachen nebeneinander dokumentiert sind. Er belegt **nicht**, wie häufig diese Formen in Dortmund vorkamen, ob sie typisch für die 1980er/1990er waren oder ob ein gemeinsames „Dortmund“-Konstruktionssystem existiert. Für solche Aussagen muss die Stichprobe nach Zeitraum, Format, Sammlung und Writer-Zuschreibung geschichtet werden.
+
 ## 9. Quellen und Reichweite
 
 - Brentzel, Marianne (1987): *Da kukse wa — Dortmunder Graffiti*; offizielle Autorinnenseite und Leseprobe: https://www.mariannebrentzel.de/da-kukse-wa-leseprobe.html — zeitgenössische Publikation; Online-Leseprobe ist kein Ersatz für vollständige Bildsichtung.
@@ -135,5 +163,6 @@ Die Generatorübersetzung muss als NIGHTSHIFT-Designentscheidung gekennzeichnet 
 - Deckers, Florian (2022): „Graffiti im Ruhrgebiet“, KWI-Blog / Beitrag — wissenschaftliche Einordnung, darunter Beschreibung des Dortmund Style als blockig und klar: https://blog.kulturwissenschaften.de/graffiti-im-ruhrgebiet/
 - Sherif et al. (2023): „IngridKG: A FAIR Knowledge Graph of Graffiti“, *Scientific Data* 10, 318 — Datenmodell, Korpuskontext und Lizenzschichten: https://www.nature.com/articles/s41597-023-02199-8
 - INGRID, Universität Paderborn — offizieller Bestandsüberblick: https://www.uni-paderborn.de/forschungsprojekte/ingrid/bestand
+- Barajas, Benito (2010): *Lost Spaces Graffiti*, Pixelprojekt Ruhrgebiet — sieben regionale Fotografien; Rechtehinweis zugunsten des Fotografen: https://www.pixelprojekt-ruhrgebiet.de/serie/lost-spaces-graffiti
 
-**Aktueller Befund:** Das Protokoll ist einsatzbereit. Es wurden in diesem Arbeitsschritt keine historischen Bildwerke neu codiert und keine Dortmund-spezifischen Häufigkeiten berechnet. Eine belastbare visuelle Aussage erfordert die dokumentierte Sichtung einer rechtmäßig zugänglichen, geschichteten Bildstichprobe.
+**Aktueller Befund:** Das Protokoll ist einsatzbereit und wurde an einer kleinen 2010er Kontextstichprobe auf Seitenebene erprobt. Es wurden keine Einzelglyphen transkribiert und keine Dortmund-spezifischen Häufigkeiten berechnet. Eine belastbare Aussage zur Szene 1983–1991 erfordert weiterhin eine rechtmäßig zugängliche, geschichtete Bildstichprobe aus dem Zielzeitraum.

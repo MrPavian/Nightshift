@@ -333,10 +333,10 @@
     },
     {
       "confidenceRaw": "high for institutional provenance and gallery structure; individual glyph analysis limited to low-resolution gallery previews",
-      "evidenceRaw": "Getty Research Institute documents LA Liber Amicorum / Getty Graffiti Black Book as 143 original works on paper by 151 invited graffiti and tattoo artists. Individual artist pages are presented in a digitized online gallery. The gallery's directly opened mosaic previews support page-level visual screening but are not sufficient for reliable isolated glyph transcription at this resolution.",
+      "evidenceRaw": "Getty Research Institute documents LA Liber Amicorum / Getty Graffiti Black Book as 143 original works on paper by 151 invited graffiti and tattoo artists. The official project page links individual artist works through a digitized gallery. Directly opened mosaic images include Chaz (letterform study grid), Acme (linear/perspective lettering), Defer (dense monochrome interlocking composition), Chubbs (multicolour layered composition) and Cab (wide outlined piece). These views support page-level visual screening and composition observations; they are not confirmed high-resolution original files with verified pixel dimensions. Individual glyphs are recorded only where letter identity is clear and the view meets the high-resolution rule.",
       "id": "ACQ-GETTY-01",
       "institution": "Getty Research Institute",
-      "nextActionRaw": "Inspect individual artist works at the highest available resolution; record artist attribution and item provenance; prioritize pages with isolated letters or complete alphabets. Seek the published L.A. Graffiti Black Book or Getty research access when gallery previews are insufficient.",
+      "nextActionRaw": "Continue screening artist pages for clearly isolated and explicitly identifiable alphabet samples. For composition-only pages, keep observations at page level (overlap, negative space, layer order, colour/mass) and do not infer glyph identities. Record item attribution, Getty image filename, medium, date, available resolution and rights. Seek the published L.A. Graffiti Black Book (Getty, 2021) or research access where mosaic previews are insufficient.",
       "rightsRaw": "Copyright held by contributing artists; link-only; no image copying, tracing or redistribution without item-level permission",
       "scope": "143_original_works_on_paper_by_151_graffiti_and_tattoo_artists",
       "sourceType": "institutional_digitized_graffiti_blackbook_gallery",
@@ -415,6 +415,75 @@
       ],
       "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
       "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
+    },
+    {
+      "confidenceRaw": "high for project scope, public access model, knowledge-graph availability and published licences; item-level image provenance still requires inspection",
+      "evidenceRaw": "The University of Paderborn and Karlsruhe Institute of Technology describe INGRID as a research database with more than 100,000 digitized and annotated graffiti photographs. The project offers a free research login and a public knowledge graph/RDF dump. The public dataset includes a subset of photographs from private collector Peter Kreuzer; police-provided Mannheim, Munich and Cologne photographs are not publicly visible in the dump. The public image archive is published separately.",
+      "id": "ACQ-INGRID-01",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "nextActionRaw": "Query the public RDF/knowledge graph for records from the Peter Kreuzer collection, filter to readable short item strings and clear public image links, then inspect item-level images directly. Prefer persistent resource URIs and original system IDs over manual reproductions.",
+      "rightsRaw": "Public graffiti photographs in the INGRID dataset are CC BY-SA 4.0; generated metadata is CC0 and INGRIDKG is CC BY 4.0. Only a subset of photographs is public (not police-provided Mannheim/Munich/Cologne images); verify the collection and item-level record before use. NIGHTSHIFT remains link-only and does not copy, embed or trace images.",
+      "scope": "100000_plus_annotated_graffiti_photographs_1980_to_present",
+      "sourceType": "university_research_graffiti_image_database",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "tag_handstyle"
+      ],
+      "title": "INGRID — Informationssystem Graffiti in Deutschland",
+      "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid"
+    },
+    {
+      "confidenceRaw": "high for publisher provenance and book-level alphabet-study description; medium for the individual sample-page detail",
+      "evidenceRaw": "Hoaki Books / Promopress publishes Woshe's Alphabeatz: Graffiti from A to Z, a book examining the structure and evolution of all 26 letters. A retailer sample image shows a page explicitly headed C/c with two separate graffiti letter constructions.",
+      "id": "ACQ-HOAKI-01",
+      "institution": "Hoaki Books / Promopress",
+      "nextActionRaw": "Seek further publisher-approved sample pages with explicit A–Z headings; inspect each page independently and add only individually legible glyphs.",
+      "rightsRaw": "Copyright Woshe / publisher; link-only; sample access does not grant reuse or tracing permission.",
+      "scope": "Woshe's alphabet-by-alphabet graffiti letterform study, 26 letters A–Z",
+      "sourceType": "publisher_book_and_sample_pages",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "wildstyle_semi_wildstyle",
+        "letter_construction_study"
+      ],
+      "title": "Woshe — Alphabeatz: Graffiti from A to Z",
+      "url": "https://www.hoaki.com/shop/en/books-93/alphabeatz-1120870-000-0001.html"
+    },
+    {
+      "confidenceRaw": "high for collection provenance and broad holdings; low for current online image availability",
+      "evidenceRaw": "Cornell's 2013 institutional report describes the International Graffiti Times archive (1983–1994) as including 4,500 photographs and 1,000 slide transparencies, alongside editorial and print materials. Cornell's current Hip Hop Collection Digital Collections page separately describes approximately 940 digitized slides used for Phase 2 and David Schmidlapp's Aerosol Art Armada, but still labels the IGTimes Archive 'COMING SOON'. These figures must remain distinct: the 940 slides are a described digitized subset, not a replacement total for the full archive.",
+      "id": "ACQ-CORNELL-01",
+      "institution": "Cornell University Library — Hip Hop Collection / Division of Rare and Manuscript Collections",
+      "nextActionRaw": "Monitor the official Digital Collections page for public release; until then use the ArchivesSpace collection record and contact Cornell for research access. If material becomes viewable, capture item-level IDs, creator/date, slide or photograph medium, image resolution and rights. Do not treat the archive as a currently browsable public image source.",
+      "rightsRaw": "No item-level reuse permission established; public access status for IGTimes remains 'COMING SOON'; request access and permissions from Cornell before any reproduction.",
+      "scope": "International_Graffiti_Times_archive_1983_1994_photographs_slides_editorial_and_print_materials",
+      "sourceType": "institutional_archival_collection_and_digital_access_record",
+      "targetGrammarsRaw": [
+        "tag_handstyle",
+        "simple_straight",
+        "throw_up",
+        "wildstyle_semi_wildstyle"
+      ],
+      "title": "Cornell Hip Hop Collection — International Graffiti Times Archive (8067)",
+      "url": "https://hiphop.library.cornell.edu/digital-collections/"
+    },
+    {
+      "confidenceRaw": "high for the artist's project documentation and published methodology; individual sample glyphs require a separate visual and rights review",
+      "evidenceRaw": "Evan Roth's official project page exposes direct image files for several taxonomy plates. Opened 1024-pixel web renditions include: New York 2011 (a broad tag-variation sheet), Paris 2011 (a broad tag-variation sheet), an A study identified in the artist's 2009 Selected Works PDF as Harlem, NYC, 2004, an E study captioned Lower East Side, NYC, 2008, and a Detroit 2012 D study. The A and E plates visibly contain repeated variants of the named character; the Detroit sheet visibly contains repeated D forms. The PDF also captions an S study (Lower East Side, NYC, 2004), though its directly available high-resolution image was not separately confirmed in this pass. MoMA documents the Paris method as 10 selected letters with 18 tags per letter, upper- and lowercase, from simple to ornate; historical project documentation reports 2,400+ tags photographed across all 20 Paris districts and sorted by letter. The 2009 PDF states CC BY-NC-SA 3.0 US; this license statement should not be assumed to cover separately hosted website images without checking scope.",
+      "id": "ACQ-ROTH-01",
+      "institution": "Evan Roth — official artist project archive",
+      "nextActionRaw": "The A (Harlem 2004), E (Lower East Side 2008), and D (Detroit 2012) plates are now directly opened and visually inspected at 1024-pixel web renditions. Record page-level construction observations only unless a sample can be individually transcribed without ambiguity; do not turn the entire sheet into one glyph or infer frequency/quality. Keep exact city/neighborhood/year and separate source URLs. Seek the S sheet in the original PDF or another authorized image rendition. Do not copy or trace the samples.",
+      "rightsRaw": "The 2009 Selected Works PDF states CC BY-NC-SA 3.0 US. Confirm that the license covers the relevant page/image and retain attribution; no tracing, no named-writer style presets, and no commercial reuse under the noncommercial license without separate permission.",
+      "scope": "Graffiti_tag_taxonomy_and_letter_variation_studies_New_York_Paris_Detroit",
+      "sourceType": "artist_documented_research_project_and_museum_method_record",
+      "targetGrammarsRaw": [
+        "tag_handstyle"
+      ],
+      "title": "Evan Roth — Graffiti Taxonomy series (NYC / Paris / Detroit)",
+      "url": "https://www.evan-roth.com/~/works/graffiti-taxonomy-series/"
     }
   ]
 }

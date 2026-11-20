@@ -1,8 +1,29 @@
 # INGRID-KG — Regional SPARQL Query Pack 01 (Dortmund pilot; W02.32)
 
-**Date:** 2026-11-14  
+**Date:** 2026-11-20  
 **Priority:** P1 — foundational empirical research  
 **Status:** Official query catalogue and upstream RDF-conversion code inspected. Dortmund-first templates are adapted from documented examples and should be parameterized for every confirmed Ruhrgebiet/NRW city; no query has returned result rows. The public endpoint timed out through the available research client; a second direct query attempt was inaccessible. No Dortmund counts are claimed.
+
+## 0. Execution log — 2026-11-20
+
+The endpoint was retried after the earlier cache/access failure:
+- Official query catalogue: opened successfully.
+- Public SPARQL endpoint: direct request using the documented endpoint URL returned a timeout/inaccessible response in this research client.
+- Minimal smoke test (label lookup only) was attempted before the full Q01–Q06 queries:
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?city
+WHERE {
+  ?city rdfs:label "Dortmund" .
+}
+LIMIT 5
+```
+
+No result rows were returned. This is a client-access failure, not evidence that the live endpoint is offline or that Dortmund is absent from the graph. Q01–Q06 remain unexecuted; there are still **no verified Dortmund counts**.
+
+The official INGRID project page also exposes a separate public research-database access route. That JavaScript-driven interface could not be operated from this research client. Next valid execution routes are: run the existing pack in a normal browser/SPARQL client, ask an INGRID team member for a Dortmund CSV export, or obtain and parse the documented historical RDF snapshot. Do not substitute search-engine snippets or inferred counts.
 
 ## 1. Why this matters
 
