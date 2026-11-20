@@ -415,6 +415,25 @@
       ],
       "title": "Woshe — Blackbook: Les mains dans l'alphabet (2013 edition preview)",
       "url": "https://www.allcityblog.fr/48861-blackbook-les-mains-dans-lalphabet/"
+    },
+    {
+      "confidenceRaw": "high for project scope, public access model, knowledge-graph availability and published licences; item-level image provenance still requires inspection",
+      "evidenceRaw": "The University of Paderborn and Karlsruhe Institute of Technology describe INGRID as a research database with more than 100,000 digitized and annotated graffiti photographs. The project offers a free research login and a public knowledge graph/RDF dump. The public dataset includes a subset of photographs from private collector Peter Kreuzer; police-provided Mannheim, Munich and Cologne photographs are not publicly visible in the dump. The public image archive is published separately.",
+      "id": "ACQ-INGRID-01",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "nextActionRaw": "Query the public RDF/knowledge graph for records from the Peter Kreuzer collection, filter to readable short item strings and clear public image links, then inspect item-level images directly. Prefer persistent resource URIs and original system IDs over manual reproductions.",
+      "rightsRaw": "Public graffiti photographs in the INGRID dataset are CC BY-SA 4.0; generated metadata is CC0 and INGRIDKG is CC BY 4.0. Only a subset of photographs is public (not police-provided Mannheim/Munich/Cologne images); verify the collection and item-level record before use. NIGHTSHIFT remains link-only and does not copy, embed or trace images.",
+      "scope": "100000_plus_annotated_graffiti_photographs_1980_to_present",
+      "sourceType": "university_research_graffiti_image_database",
+      "targetGrammarsRaw": [
+        "simple_straight",
+        "blockbuster_block",
+        "throw_up",
+        "wildstyle_semi_wildstyle",
+        "tag_handstyle"
+      ],
+      "title": "INGRID — Informationssystem Graffiti in Deutschland",
+      "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid"
     }
   ]
 }

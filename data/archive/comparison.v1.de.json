@@ -2,12 +2,12 @@
   "comparisonSchemaVersion": "1.0",
   "contract": "nightshift.letterform-comparison@1.1.0",
   "counts": {
-    "eligibleGlyphObservations": 14,
+    "eligibleGlyphObservations": 16,
     "findings": 1,
     "glyphInstitutions": 2,
     "glyphSources": 3,
-    "inspectedSpecimens": 22,
-    "specimens": 46
+    "inspectedSpecimens": 23,
+    "specimens": 49
   },
   "findings": [
     {
@@ -34,19 +34,19 @@
     },
     {
       "path": "research/archive/comparison/findings.v1.json",
-      "sha256": "c43cff5eaec373ebe95559861668a7c41f10fc2f2c2bc1909ab40592310a443f"
+      "sha256": "c208096ddb97f4d4b29346c8d4da3869a46d01fe2401f21607394fd4f230716c"
     },
     {
       "path": "research/archive/comparison/observations.v1.json",
-      "sha256": "2dd3ea286481d681b8ff58909096edd69e0e0177c8fe757cdeb4edce02bbe910"
+      "sha256": "7db865c8947beaa41776f4fcef8d4a6a6fb0d140b5904ce28cecdbc8fdf3354f"
     },
     {
       "path": "research/archive/comparison/sources.v1.json",
-      "sha256": "84afb0187ba8d74e8b9f91da6ec40c38f86f5c05e2c6e0bbe466fc1783aa7691"
+      "sha256": "1390c1f545587e1457564b62d96fd6238501d2a67be12e60d97f7dece19ee2c7"
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "fe374f7dfb48b7dc5aa9e2c8c36a36e2e5c12433376a23d42f2246693926d703"
+      "sha256": "fc62b5171b15827fd71c8f85639b7d5330864557c729e643bc470a64df3f69ea"
     }
   ],
   "glyphObservations": [
@@ -123,6 +123,35 @@
       "legibility": "high",
       "observationDe": "Das X wird durch zwei breite Diagonalzüge gebildet, die sich zentral kreuzen. Die Enden sind lang ausgezogen und unterschiedlich stark zugespitzt.",
       "specimenId": "BSCI-KNOME-2018-ALPHA-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "open-counter",
+        "curved-stroke",
+        "tapered-terminals",
+        "monoline"
+      ],
+      "glyph": "C",
+      "id": "GLY-BSCI-RALI-2018-C1",
+      "legibility": "high",
+      "observationDe": "Das C ist als offener, nach rechts geöffneter Bogen ausgeführt. Die beiden Enden laufen spitz zu; die Kontur bleibt innerhalb des beschrifteten Feldes klar vom Nachbarfeld getrennt.",
+      "specimenId": "BSCI-RALI-2018-01",
+      "transcriptionConfidence": "high"
+    },
+    {
+      "editorialState": "source-checked",
+      "features": [
+        "diagonal-cross",
+        "no-counter",
+        "monoline"
+      ],
+      "glyph": "X",
+      "id": "GLY-BSCI-RALI-2018-X1",
+      "legibility": "high",
+      "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
+      "specimenId": "BSCI-RALI-2018-01",
       "transcriptionConfidence": "high"
     },
     {
@@ -302,7 +331,7 @@
   "language": "de",
   "objectObservations": [],
   "pilotGate": {
-    "eligible": 14,
+    "eligible": 16,
     "independentInstitutions": 2,
     "minEligibleGlyphObservations": 20,
     "minIndependentInstitutions": 3,
@@ -326,6 +355,12 @@
       "institution": "Bombing Science Forums",
       "title": "Bombing Science Forums — Alphabet Challenge (2018)",
       "url": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/"
+    },
+    {
+      "id": "ACQ-INGRID-01",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "title": "INGRID — Informationssystem Graffiti in Deutschland",
+      "url": "https://www.uni-paderborn.de/forschungsprojekte/ingrid"
     },
     {
       "id": "ACQ-LFA-02",
@@ -452,6 +487,31 @@
       "accessDate": "2026-11-19",
       "archiveStyleLabel": "handstyle alphabet",
       "creatorAttribution": "named-by-source",
+      "creatorName": "Rali",
+      "date": "2018-04-24",
+      "dateQualifier": "as-catalogued",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [
+        "GLY-BSCI-RALI-2018-C1",
+        "GLY-BSCI-RALI-2018-X1"
+      ],
+      "id": "BSCI-RALI-2018-01",
+      "identifier": "Bombing Science Forums — Alphabet Challenge, post #11",
+      "imageRights": "do-not-reuse",
+      "institution": "Bombing Science Forums",
+      "itemUrl": "https://forum.bombingscience.com/threads/alphabet-challenge.29923/",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-BSCI-02",
+      "title": "Rali — Alphabet Challenge submission",
+      "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": "handstyle alphabet",
+      "creatorAttribution": "named-by-source",
       "creatorName": "Sea",
       "date": "2018-04-24",
       "dateQualifier": "as-catalogued",
@@ -499,6 +559,50 @@
       "sourceRecordId": "ACQ-BSCI-02",
       "title": "XCALET — Alphabet Challenge submission",
       "visualState": "hi_fi_image_opened_and_inspected"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "INGRID-MANUAL-DERK-01",
+      "identifier": "INGRID-Manual (Oktober 2019), deutsches Original, gedruckte Seite 62, Beispiel DERK",
+      "imageRights": "link-only",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "itemUrl": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-INGRID-01",
+      "title": "DERK — INGRID annotation manual example, p. 64",
+      "visualState": "image_preview_seen"
+    },
+    {
+      "accessDate": "2026-11-19",
+      "archiveStyleLabel": null,
+      "creatorAttribution": "unknown",
+      "creatorName": null,
+      "date": null,
+      "dateQualifier": "unknown",
+      "decade": null,
+      "displayMode": "link-only",
+      "glyphObservationIds": [],
+      "id": "INGRID-MANUAL-REMS-01",
+      "identifier": "INGRID-Manual (Oktober 2019), deutsches Original, gedruckte Seite 62, Beispiel ReMS",
+      "imageRights": "link-only",
+      "institution": "Universität Paderborn / Karlsruher Institut für Technologie (INGRID)",
+      "itemUrl": "https://www.uni-paderborn.de/fileadmin/ingrid/INGRID_Manual_Oktober_2019.pdf#page=62",
+      "observationIds": [],
+      "photographerName": null,
+      "place": null,
+      "sourceRecordId": "ACQ-INGRID-01",
+      "title": "ReMS — INGRID annotation manual example, p. 64",
+      "visualState": "image_preview_seen"
     },
     {
       "accessDate": "2026-11-19",
