@@ -326,8 +326,45 @@
       "observationDe": "Das X besteht aus zwei klar unterscheidbaren Diagonalzügen, die sich im Zentrum kreuzen. Die vier Enden bleiben innerhalb des eigenen Buchstabenfeldes; keine zusätzliche Verbindung zu Nachbarbuchstaben ist erkennbar.",
       "specimenId": "BSCI-RALI-2018-01",
       "transcriptionConfidence": "high"
+    },
+    {
+      "id": "GLY-ALT-WOSHE-2013-M1",
+      "specimenId": "ALT-WOSHE-M-MAMMOUTH-01",
+      "glyph": "M",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Seite ist mit „M le Mammouth“ überschrieben und zeigt mehrere M-Konstruktionen. Die Beispiele besitzen breite, kantige Außenkonturen, betonte Diagonalzüge und teils ausgezogene Enden. Da die aktuell erreichbare Ansicht nicht als hochaufgelöste Bildansicht verifiziert werden konnte, bleibt diese Beobachtung ein Entwurf und zählt nicht zum Pilot-Gate.",
+      "editorialState": "draft",
+      "reviewNoteDe": "Owner-Prüfung aus #37: Pixelmaß/hochauflösende Originalansicht nicht ausreichend verifiziert. Als Entwurf erhalten; nicht exportiert und nicht gate-wirksam."
+    },
+    {
+      "id": "GLY-HOAKI-WOSHE-C1",
+      "specimenId": "HOAKI-WOSHE-C-ALPHABEATZ-001",
+      "glyph": "C",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "angular",
+        "extended-terminal"
+      ],
+      "observationDe": "Die Vorschauseite ist ausdrücklich mit „C/c“ überschrieben und zeigt zwei getrennte C-Konstruktionen. Die Großbuchstabenform besitzt eine nach rechts offene Kontur mit kantigen, unterschiedlich weit ausgezogenen Enden; daneben steht eine stärker gerundete und verschlungene Variante. Wegen der nur 720 × 820 px großen Händler-Vorschau bleibt die Beobachtung ein Entwurf und zählt nicht zum Pilot-Gate.",
+      "editorialState": "draft",
+      "reviewNoteDe": "Owner-Prüfung aus #37: Pixelmaß/hochauflösende Originalansicht nicht ausreichend verifiziert. Als Entwurf erhalten; nicht exportiert und nicht gate-wirksam."
     }
   ],
-  "objectObservations": [],
+  "objectObservations": [
+    {
+      "id": "OBS-GETTY-CHAZ-2012-001",
+      "specimenId": "GETTY-CHAZ-2012-001",
+      "kind": "direct-observation",
+      "confidence": "medium",
+      "observationDe": "Die Seite zeigt mehrere einzeln angelegte Letterform-Studien in einem regelmäßigen Raster. Die Formen unterscheiden sich sichtbar in ihrer Konstruktion: Neben kantigen, geometrisch geführten Konturen stehen geschwungene, kalligrafisch wirkende Züge und schattierte, räumlich angelegte Blockformen. Am unteren Rand steht die größere Signatur beziehungsweise Wortmarke „CHAZ“. Die alphabetische Identität der einzelnen Rasterformen lässt sich aus der verfügbaren Vorschau nicht sicher zuordnen; deshalb wird kein A–Z-Glyph erfasst.",
+      "editorialState": "source-checked"
+    }
+  ],
   "schemaVersion": "1.0"
 }
