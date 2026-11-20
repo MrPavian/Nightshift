@@ -31,7 +31,7 @@ const run = (s, extra = {}) => buildComparison({ contract, ...s, entryIds: ['con
 
 test('committed comparison data is valid and up to date', () => {
   const r = buildComparisonData('de');
-  assert.deepEqual(r.diagnostics, []);
+  assert.deepEqual(r.diagnostics.filter((d) => d.severity === 'error'), []);
   assert.ok(existsSync(COMPARISON_OUT));
   assert.equal(readFileSync(COMPARISON_OUT, 'utf8'), stableStringify(r.data, 2) + '\n', `${COMPARISON_OUT} is stale — run node tools/archive-build.mjs`);
 });
@@ -185,4 +185,70 @@ test('archive app: comparison routes exist, data is cached offline, no image ele
   assert.match(sw, /'comparison\.js'/);
   assert.doesNotMatch(cmp, /<img\b/);
   assert.match(cmp, /Originalquelle öffnen/);
+});
+
+// ---- Gate 3: glyph and construction comparison views ----
+const { comparisonViews } = await import('../archive/comparison.js');
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const views = (C) => comparisonViews(C, { esc, norm: (s) => String(s).toLowerCase(), crumbs: () => '' });
+const committed = read(COMPARISON_OUT);
+const cards = (html) => [...html.matchAll(/data-obs="([^"]+)"/g)].map((m) => m[1]);
+
+test('feature tags: the README list is labelled in German; unlisted tags are exported but reported as warnings', () => {
+  const L = committed.labels;
+  for (const [, tags] of L.glyphFeatureGroups) for (const t of tags) assert.ok(L.glyphFeature[t], t);
+  const r = buildComparisonData('de');
+  const unlisted = committed.glyphObservations.flatMap((g) => g.features.filter((t) => !L.glyphFeature[t]).map((t) => `${g.id}:${t}`));
+  assert.deepEqual(r.diagnostics.filter((d) => d.code === 'CMP_UNLISTED_FEATURE').map((d) => `${d.where}:${d.message.split(' ')[2]}`).sort(), unlisted.sort());
+  assert.ok(r.diagnostics.filter((d) => d.code === 'CMP_UNLISTED_FEATURE').every((d) => d.severity === 'warning'));
+  assert.ok(r.ok);
+});
+
+test('letter view shows exactly the eligible observations of that letter; selection ignores foreign IDs', () => {
+  const V = views(committed);
+  for (const c of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+    const expected = committed.glyphObservations.filter((g) => g.glyph === c).map((g) => g.id).sort();
+    const v = V.letter(c, new URLSearchParams());
+    assert.deepEqual(cards(v.html).sort(), expected, c);
+    assert.doesNotMatch(v.html, /<img\b/, c);
+  }
+  const x = committed.glyphObservations.filter((g) => g.glyph === 'X').map((g) => g.id);
+  const other = committed.glyphObservations.find((g) => g.glyph !== 'X').id;
+  const sel = V.letter('X', new URLSearchParams({ auswahl: [x[0], x[1], other].join(',') })).html;
+  const compared = cards(sel.split('Weitere Beobachtungen')[0]);
+  assert.deepEqual(compared.sort(), [x[0], x[1]].sort(), 'only the two X observations are compared');
+  assert.ok(!cards(sel).includes(other));
+  assert.match(sel, /Gegenüberstellung: 2 Beobachtungen/);
+  assert.match(sel, /derselben Plattform/, 'same-platform selection is flagged as not independent');
+  assert.equal(V.letter('1', new URLSearchParams()), null);
+});
+
+test('letter view: direct observations and findings stay separate; findings carry basis and limits', () => {
+  const f = committed.findings[0];
+  const g = committed.glyphObservations.find((o) => o.id === f.observationIds[0]).glyph;
+  const html = V3().letter(g, new URLSearchParams()).html;
+  const [direct, interp] = html.split('Deutung über mehrere Objekte');
+  assert.ok(interp, 'finding section present');
+  assert.ok(!direct.includes(esc(f.findingDe)), 'finding text is not mixed into the observation cards');
+  for (const k of ['findingDe', 'evidenceBasisDe', 'limitationDe']) assert.ok(interp.includes(esc(f[k])), k);
+});
+const V3 = () => views(committed);
+
+test('feature view lists every observation with that tag; unknown tags are missing', () => {
+  const V = V3();
+  const tags = [...new Set(committed.glyphObservations.flatMap((g) => g.features))];
+  for (const t of tags) {
+    const expected = committed.glyphObservations.filter((g) => g.features.includes(t)).map((g) => g.id).sort();
+    assert.deepEqual(cards(V.feature(t).html).sort(), expected, t);
+  }
+  assert.equal(V.feature('gibt-es-nicht'), null);
+});
+
+test('with the pilot gate closed, letter and feature views show the gate message and no observation cards', () => {
+  const closed = structuredClone(committed);
+  closed.pilotGate.open = false;
+  const V = views(closed);
+  const l = V.letter('X', new URLSearchParams()).html, f = V.feature('angular').html, land = V.landing().html;
+  for (const h of [l, f, land]) { assert.match(h, /Forschungsansicht im Aufbau/); assert.equal(cards(h).length, 0); }
+  assert.doesNotMatch(land, /#\/vergleich\/buchstabe\//);
 });

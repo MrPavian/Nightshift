@@ -31,6 +31,22 @@ export const LABELS_DE = {
   },
   confidence: { high: 'hoch', medium: 'mittel', low: 'niedrig' },
   generatorRelevance: { none: 'keine', 'research-lead': 'Rechercheansatz', 'study-candidate': 'Studienkandidat', 'validated-capability': 'geprüfte Generator-Funktion' },
+  // Observable glyph feature tags (research/archive/comparison/README.md, „Merkmals-Tags für Glyphen“).
+  // Tags outside this list are still exported but shown as unchecked and reported as a build warning.
+  glyphFeature: {
+    angular: 'eckig', rounded: 'rund', 'mixed-contour': 'gemischte Kontur',
+    'open-counter': 'offene Punze', 'closed-counter': 'geschlossene Punze', 'no-counter': 'keine Punze',
+    crossbar: 'Querstrich', 'diagonal-cross': 'Diagonalkreuz', looped: 'Schlaufe', connected: 'verbunden', overlapping: 'überlappend',
+    monoline: 'gleichmäßige Strichstärke', 'broad-nib': 'Bandzug (breiter Strich mit Kontrast)', 'variable-width': 'wechselnde Strichstärke',
+    'extended-terminal': 'verlängerter Auslauf',
+  },
+  glyphFeatureGroups: [
+    ['Kontur', ['angular', 'rounded', 'mixed-contour']],
+    ['Innenraum', ['open-counter', 'closed-counter', 'no-counter']],
+    ['Struktur', ['crossbar', 'diagonal-cross', 'looped', 'connected', 'overlapping']],
+    ['Strich', ['monoline', 'broad-nib', 'variable-width']],
+    ['Ausläufe', ['extended-terminal']],
+  ],
   comparisonAxis: {
     'rounded-angular': 'rund ↔ eckig', 'open-closed-counters': 'offene ↔ geschlossene Punzen', 'simple-interlocking': 'einfach ↔ verschränkt',
     'compact-extended': 'kompakt ↔ gestreckt', 'isolated-connected': 'einzeln ↔ verbunden', 'flat-dimensional': 'flach ↔ räumlich', 'regular-irregular': 'regelmäßig ↔ unregelmäßig',
@@ -113,7 +129,10 @@ export function buildComparison({ contract, sources, specimens, observations, fi
       if (!GLYPHS.includes(g.glyph)) err('CMP_GLYPH_NOT_ELIGIBLE', w, `glyph ${g.glyph} is not A–Z`);
       for (const k of ['transcriptionConfidence', 'legibility']) if (g[k] === 'low') err('CMP_GLYPH_NOT_ELIGIBLE', w, `${k} low`);
     }
-    if (publishedText(g, 'observationDe', w)) glyphObs.push(g);
+    if (publishedText(g, 'observationDe', w)) {
+      glyphObs.push(g);
+      for (const t of g.features ?? []) if (!(t in LABELS_DE.glyphFeature)) diags.push({ severity: 'warning', code: 'CMP_UNLISTED_FEATURE', where: w, message: `feature tag ${t} is not in the README tag list` });
+    }
   }
 
   // ---- findings ----

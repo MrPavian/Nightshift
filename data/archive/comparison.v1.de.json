@@ -378,6 +378,65 @@
       "study-candidate": "Studienkandidat",
       "validated-capability": "geprüfte Generator-Funktion"
     },
+    "glyphFeature": {
+      "angular": "eckig",
+      "broad-nib": "Bandzug (breiter Strich mit Kontrast)",
+      "closed-counter": "geschlossene Punze",
+      "connected": "verbunden",
+      "crossbar": "Querstrich",
+      "diagonal-cross": "Diagonalkreuz",
+      "extended-terminal": "verlängerter Auslauf",
+      "looped": "Schlaufe",
+      "mixed-contour": "gemischte Kontur",
+      "monoline": "gleichmäßige Strichstärke",
+      "no-counter": "keine Punze",
+      "open-counter": "offene Punze",
+      "overlapping": "überlappend",
+      "rounded": "rund",
+      "variable-width": "wechselnde Strichstärke"
+    },
+    "glyphFeatureGroups": [
+      [
+        "Kontur",
+        [
+          "angular",
+          "rounded",
+          "mixed-contour"
+        ]
+      ],
+      [
+        "Innenraum",
+        [
+          "open-counter",
+          "closed-counter",
+          "no-counter"
+        ]
+      ],
+      [
+        "Struktur",
+        [
+          "crossbar",
+          "diagonal-cross",
+          "looped",
+          "connected",
+          "overlapping"
+        ]
+      ],
+      [
+        "Strich",
+        [
+          "monoline",
+          "broad-nib",
+          "variable-width"
+        ]
+      ],
+      [
+        "Ausläufe",
+        [
+          "extended-terminal"
+        ]
+      ]
+    ],
     "imageRights": {
       "cleared": "Bildnutzung geklärt",
       "do-not-reuse": "Keine Nutzung – nur Link",

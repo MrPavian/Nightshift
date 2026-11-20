@@ -387,7 +387,9 @@ function route() {
     case 'vergleich': {
       if (!CV) { loadComparison(); v = { title: 'Buchstaben vergleichen', html: '<p class="loading">Fundstücke werden geladen …</p>' }; break; }
       const [sub, sid] = rest;
-      v = !sub ? CV.landing() : sub === 'fundstuecke' ? CV.browser(params) : sub === 'fundstueck' ? (CV.detail(decodeURIComponent(sid ?? '')) ?? viewMissing(sid)) : viewMissing(sub);
+      v = !sub ? CV.landing() : sub === 'fundstuecke' ? CV.browser(params) : sub === 'fundstueck' ? (CV.detail(decodeURIComponent(sid ?? '')) ?? viewMissing(sid))
+        : sub === 'buchstabe' ? (CV.letter(decodeURIComponent(sid ?? ''), params) ?? viewMissing(sid))
+        : sub === 'merkmal' ? (CV.feature(decodeURIComponent(sid ?? '')) ?? viewMissing(sid)) : viewMissing(sub);
       break;
     }
     default: v = viewMissing(head);
@@ -426,7 +428,7 @@ async function loadComparison() {
     }
     if (location.hash.startsWith('#/vergleich')) {
       route();
-      if (new URLSearchParams(location.search).has('selftest')) { selftest.results = document.querySelectorAll('#main .tabs li').length; publish(); }
+      if (new URLSearchParams(location.search).has('selftest')) { selftest.results = document.querySelectorAll('#main .tabs li, #main [data-cmp-card]').length; selftest.selected = document.querySelectorAll('#main .cmp-compare [data-cmp-card]').length; publish(); }
     }
   })();
   return cvLoading;
@@ -485,7 +487,7 @@ try {
     const ref = document.querySelector('.ref');
     if (ref) { ref.click(); selftest.claimSheet = { open: $('#claim').open, hasSource: !!$('#claim-body .src li'), kind: $('#claim-title').textContent };
       if (!new URLSearchParams(location.search).has('keepsheet')) $('#claim').close(); }
-    selftest.results = document.querySelectorAll('#main .tabs li').length;
+    selftest.results = document.querySelectorAll('#main .tabs li, #main [data-cmp-card]').length; selftest.selected = document.querySelectorAll('#main .cmp-compare [data-cmp-card]').length;
   }
 } catch (e) {
   $('#main').innerHTML = `<div class="empty"><h1 style="font-size:var(--step-2)">Das Archiv konnte nicht geladen werden.</h1><p>${esc(e.message)}. Lade die Seite neu; offline funktioniert das Archiv erst nach einem ersten Besuch mit Verbindung.</p></div>`;
