@@ -46,7 +46,7 @@
     },
     {
       "path": "research/archive/comparison/specimens.v1.json",
-      "sha256": "1d53e6ae9cf4f8e9462013f1fe4d09dd82cc12e4ce50a5d9b172c580580e5265"
+      "sha256": "b9c2935bcb5f368d8e4d265fe39ab9ca14367a998405bdb7a8d31aeb5d0113cb"
     }
   ],
   "glyphObservations": [
@@ -734,7 +734,7 @@
       "displayMode": "link-only",
       "glyphObservationIds": [],
       "id": "GETTY-ACME-2013-01",
-      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_002_Acme.jpg",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_002_Acme",
       "imageRights": "do-not-reuse",
       "institution": "Getty Research Institute",
       "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
@@ -758,7 +758,7 @@
       "displayMode": "link-only",
       "glyphObservationIds": [],
       "id": "GETTY-CAB-2013-01",
-      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_015_Cab.jpg",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_015_Cab",
       "imageRights": "do-not-reuse",
       "institution": "Getty Research Institute",
       "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index.html",
@@ -806,7 +806,7 @@
       "displayMode": "link-only",
       "glyphObservationIds": [],
       "id": "GETTY-CHUBBS-2013-01",
-      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_022_Chubbs.jpg",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_022_Chubbs",
       "imageRights": "do-not-reuse",
       "institution": "Getty Research Institute",
       "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index2.html",
@@ -830,7 +830,7 @@
       "displayMode": "link-only",
       "glyphObservationIds": [],
       "id": "GETTY-DEFER-2013-01",
-      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_030_Defer.jpg",
+      "identifier": "LA Liber Amicorum; Getty mosaic image gri_2013_m_8_030_Defer",
       "imageRights": "do-not-reuse",
       "institution": "Getty Research Institute",
       "itemUrl": "https://www.getty.edu/research/special_collections/notable/la_liber_amicorum/index2.html",
