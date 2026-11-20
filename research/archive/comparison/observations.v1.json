@@ -354,6 +354,74 @@
       "observationDe": "Die Vorschauseite ist ausdrücklich mit „C/c“ überschrieben und zeigt zwei getrennte C-Konstruktionen. Die Großbuchstabenform besitzt eine nach rechts offene Kontur mit kantigen, unterschiedlich weit ausgezogenen Enden; daneben steht eine stärker gerundete und verschlungene Variante. Wegen der nur 720 × 820 px großen Händler-Vorschau bleibt die Beobachtung ein Entwurf und zählt nicht zum Pilot-Gate.",
       "editorialState": "draft",
       "reviewNoteDe": "Owner-Prüfung aus #37: Pixelmaß/hochauflösende Originalansicht nicht ausreichend verifiziert. Als Entwurf erhalten; nicht exportiert und nicht gate-wirksam."
+    },
+    {
+      "id": "GLY-ROTH-NYC-A-2004-01",
+      "specimenId": "ROTH-NYC-A-HARLEM-2004-01",
+      "glyph": "A",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "angular",
+        "open-counter",
+        "broad-nib",
+        "crossbar",
+        "irregular-proportions"
+      ],
+      "observationDe": "Einzeln sichtbare A-Form aus der Harlem-Tafel (Rasterposition: Zeile 1, Spalte 2). Zwei deutlich geneigte Hauptzüge treffen sich in einer hohen Spitze; ein Querzug liegt unterhalb der Mitte. Die Strichmasse ist ungleich verteilt, der Innenraum bleibt offen und die Enden zeigen eine leichte gestische Ausweitung. Die Beschreibung hält nur die lesbare Grundkonstruktion fest und reproduziert keine Signatur oder Kontur.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "A-Identität durch die explizite A-Tafel und die Einzelposition abgesichert; 1021 × 1024 px offizielle Künstlerseiten-Abbildung visuell geprüft. Kein Nachzeichnen."
+    },
+    {
+      "id": "GLY-ROTH-NYC-E-2008-01",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "glyph": "E",
+      "transcriptionConfidence": "high",
+      "legibility": "high",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "observationDe": "Einzeln sichtbare e/E-Form aus der Lower-East-Side-Tafel (Rasterposition: Zeile 1, Spalte 2). Die Form wird als geschlossene, ovale Schleife mit horizontal integrierter Querbewegung aufgebaut; der rechte Auslauf verlängert die Grundbewegung. Die Linie bleibt weitgehend monolinear und wirkt eher als zusammenhängende Geste denn als getrennte Balkenkonstruktion. Die Beobachtung abstrahiert die Struktur, ohne die konkrete Form zu kopieren.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "E/e-Zuordnung durch die explizit beschriftete E-Tafel abgesichert; 1024 × 1022 px offizielle Künstlerseiten-Abbildung visuell geprüft. Kein Nachzeichnen."
+    },
+    {
+      "id": "GLY-ROTH-NYC-E-2008-02",
+      "specimenId": "ROTH-NYC-E-LOWEREAST-2008-01",
+      "glyph": "E",
+      "transcriptionConfidence": "high",
+      "legibility": "medium",
+      "features": [
+        "rounded",
+        "open-counter",
+        "curved-stroke",
+        "monoline",
+        "extended-terminal"
+      ],
+      "observationDe": "Zweite, klar getrennte e-Variante aus derselben Tafel (Rasterposition: Zeile 3, Spalte 2). Der Buchstabenkörper ist höher und offener als beim ersten Beispiel; ein längerer Querzug schneidet die Schleife und führt seitlich weiter. Die Form verschiebt den Schwerpunkt nach oben und nutzt einen dünneren, fließenden Zug. Sie ist als e lesbar, bleibt aber wegen der stark gestischen Ausführung nur mittel sicher transkribierbar.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "Separate Rasterposition derselben E-Tafel; nicht als unabhängige Quelle gezählt. 1024 × 1022 px Abbildung visuell geprüft."
+    },
+    {
+      "id": "GLY-ROTH-DETROIT-D-2012-01",
+      "specimenId": "ROTH-DETROIT-D-2012-01",
+      "glyph": "D",
+      "transcriptionConfidence": "medium",
+      "legibility": "medium",
+      "features": [
+        "rounded",
+        "closed-counter",
+        "vertical-stem",
+        "broad-nib",
+        "irregular-proportions"
+      ],
+      "observationDe": "Einzeln sichtbare D-Form aus der Detroit-Tafel (Rasterposition: Zeile 2, Spalte 1). Ein kräftiger, annähernd senkrechter Stamm geht in einen gerundeten, nahezu geschlossenen Bogen über. Der Innenraum ist schmal und asymmetrisch; die Strichbreite wechselt entlang des Bogens. Die Zuordnung ist visuell plausibel, aber weniger sicher als bei den ausdrücklich mit A und E betitelten Tafeln.",
+      "editorialState": "source-checked",
+      "reviewNoteDe": "D-Zuordnung aus der sichtbaren Form und dem Detroit-Raster; Bild 1024 × 683 px visuell geprüft. Als mittlere Transkriptionssicherheit geführt."
     }
   ],
   "objectObservations": [
