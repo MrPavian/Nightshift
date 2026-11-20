@@ -1,17 +1,21 @@
 {
-  "package": "letterform-comparison Gate 2",
+  "package": "letterform-comparison Gates 2 and 3",
   "result": "pass",
-  "routes": 5,
+  "routes": 11,
   "inputs": {
-    "data/archive/comparison.v1.de.json": "41790ed761d7e2a8cd75ef56f40c74a9132a0d284e9d876fc0d4f31bbfc9362a",
-    "archive/comparison.js": "9285d0a1b3265697d99260bce4cf802cd3009e15c5bc77434fa317b6e56d62c4",
-    "archive/app.js": "fbfac0698c8d287da6b2c5d7cf51212c1d6a5ed3a3458ef07282dbe011b656cd"
+    "data/archive/comparison.v1.de.json": "103d34e818c7b070149f254e4d4bff40cfed49189aff4a09ec0707867bd79af1",
+    "archive/comparison.js": "c354678920a14b7c61d78968ccfc5327684a610cf9d36eeff04ba3b551f40d68",
+    "archive/app.js": "1dae947ceef5d0e291d525e98dd7b6fe64c9863b58a57dbbcc0504564ea22cbd",
+    "archive/app.css": "5aa2649092f388ccfce277c37bfb2a642bad04a14e15cb778ae778b0b436112e"
   },
   "screenshots": {
-    "landing-phone.png": "889115e80eecf8ab2b24a349537d159f4b041f01593ddf49c88bfb68c257e961",
-    "browser-phone.png": "f21a530b7af95ceae27f6a55dcbc142c2c5bcdccea2d6a14003ce571ca8f2a81",
-    "browser-tablet.png": "ad659fcac0a236a719bd41066aced63f8c6542b1392d14568673f2a240ba2f1f",
-    "detail-desktop.png": "684b05d623d7deacb11d97a973597a47d1e3cda9172863f5184fe9c6d77e9b81",
-    "detail-phone-catalogue-only.png": "06f8f10635300d56f8ceb00bff5242b002aa363b8573f5c0a2c69d10d42c6491"
+    "landing-phone.png": "886a4c8f3330ea09cd1d43fffc4c66be6a072908570d36d376ddec111f9ca993",
+    "browser-phone.png": "a02caee7777a7d7ec6779e21d808f37288222fabe021523b527adc95667da265",
+    "browser-tablet.png": "e3bab2113ebda3fc0598bb3da35fa21783735cb94b623bf653a9fbd02e458c81",
+    "detail-desktop.png": "f54e649e845891e052c4c69f78fa29337969edff157dc2bbec101fe18a18caa6",
+    "detail-phone-catalogue-only.png": "06f8f10635300d56f8ceb00bff5242b002aa363b8573f5c0a2c69d10d42c6491",
+    "letter-desktop-compare.png": "cf2c288765d1e506c64f786ce52be345265f9248dc65a981a7f1cf86f3a77360",
+    "letter-phone.png": "c12c376dc2f69659dba02d8bc26033fa5ffc2e151bd5a3d893eb9936e68c1d01",
+    "feature-tablet.png": "c257b4692b7e1ac97b01c220c8c179a41bbc4dbb3976c6957f0a7052bb91451d"
   }
 }

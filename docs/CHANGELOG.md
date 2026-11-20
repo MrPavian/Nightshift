@@ -1,5 +1,14 @@
 # Changelog
 
+
+## 2026-11-20 — Letterform comparison library, Gate 3 (Claude)
+
+- Owner started Gate 3 after the pilot gate opened (20 eligible glyph observations, 3 institutions).
+- New views in `archive/comparison.js`: letter comparison `#/vergleich/buchstabe/<A–Z>` (identical observation cards, selection via `?auswahl=`, side-by-side comparison with tag overlap and an independence note), feature comparison `#/vergleich/merkmal/<tag>` with a „what this comparison shows and what not“ panel, findings shown separately as interpretation with basis and limits. Landing lists letters A–Z (letters without observations are not linked), features by group and findings. Object detail links each glyph to its comparison.
+- Builder: German labels for the README feature tags; tags outside the list stay exported, are shown with their original name and produce the build warning `CMP_UNLISTED_FEATURE` (12 warnings, 9 tags). No research data changed.
+- Gate closed → letter and feature views show the gate message, no cards.
+- Tests: 5 new unit tests (232/232); archive smoke covers 6 new routes; proof screenshots in `docs/reports/proof/comparison/` re-captured plus 3 new ones.
+
 ## 2026-11-20 — Integration of #34–#43 into `main` (Claude)
 
 - Integration branch `claude/integrate-2026-11-20` merges, in order: #39 (contains #34, #36, #38), #40, #42, #43.

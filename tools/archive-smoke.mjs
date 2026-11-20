@@ -31,11 +31,14 @@ try {
   const none = await state(`${base}archive/index.html?nosw&selftest#/suche?q=zzzz`);
   if (none.results !== 0 || !none.ready) fails.push('empty search state');
 
-  // ---- letterform comparison library (Gate 2: object browser) ----
+  // ---- letterform comparison library (Gate 2: object browser; Gate 3: glyph and construction comparison) ----
   const C = JSON.parse(readFileSync('data/archive/comparison.v1.de.json', 'utf8'));
   const inspected = C.specimens.filter((s) => s.visualState === 'hi_fi_image_opened_and_inspected');
   const metaOnly = C.specimens.find((s) => s.visualState === 'catalogue_metadata_only');
-  const cmpRoutes = ['/vergleich', '/vergleich/fundstuecke', `/vergleich/fundstueck/${inspected[0].id}`, `/vergleich/fundstueck/${metaOnly.id}`, '/vergleich/fundstueck/GIBT-ES-NICHT'];
+  const xs = C.glyphObservations.filter((g) => g.glyph === 'X').map((g) => g.id);
+  const emptyLetter = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].find((c) => !C.glyphObservations.some((g) => g.glyph === c));
+  const cmpRoutes = ['/vergleich', '/vergleich/fundstuecke', `/vergleich/fundstueck/${inspected[0].id}`, `/vergleich/fundstueck/${metaOnly.id}`, '/vergleich/fundstueck/GIBT-ES-NICHT',
+    ...(C.pilotGate.open ? ['/vergleich/buchstabe/X', `/vergleich/buchstabe/X?auswahl=${xs.slice(0, 2).join(',')}`, `/vergleich/buchstabe/${emptyLetter}`, '/vergleich/buchstabe/1', '/vergleich/merkmal/closed-counter', '/vergleich/merkmal/gibt-es-nicht'] : [])];
   const dom = async (url, size = '360,800') => chrome([`--window-size=${size}`, '--virtual-time-budget=6000', '--dump-dom', url], { timeout: 180000 });
   for (const r of cmpRoutes) {
     const d = await dom(`${base}archive/index.html?nosw&selftest#${r}`);
@@ -46,7 +49,12 @@ try {
     if (/<img\b/i.test(d.split('<main')[1] ?? '')) fails.push(`${r}: an image is embedded`);
     if (!/aria-current="page"[^>]*>Stile/.test(d) && !/data-nav="stile" aria-current="page"/.test(d)) fails.push(`${r}: navigation does not mark „Stile & Buchstaben“`);
     if (r.includes(inspected[0].id) && !d.includes(`href="${inspected[0].itemUrl.replace(/&/g, '&amp;')}"`)) fails.push(`${r}: original source link missing`);
-    if (r.endsWith('GIBT-ES-NICHT') && !d.includes('Diesen Eintrag gibt es nicht')) fails.push(`${r}: missing specimen not reported`);
+    if (/GIBT-ES-NICHT|buchstabe\/1$|gibt-es-nicht$/.test(r) && !d.includes('Diesen Eintrag gibt es nicht')) fails.push(`${r}: missing record not reported`);
+    if (r === '/vergleich/buchstabe/X' && st.results !== xs.length) fails.push(`${r}: ${st.results} cards, expected ${xs.length}`);
+    if (r.includes('auswahl=') && st.selected !== 2) fails.push(`${r}: ${st.selected} compared, expected 2`);
+    if (r.startsWith('/vergleich/buchstabe/X')) for (const id of xs) { const sp = C.specimens.find((s) => s.glyphObservationIds.includes(id)); if (!d.includes(`href="${sp.itemUrl.replace(/&/g, '&amp;')}"`)) fails.push(`${r}: original source link missing for ${id}`); }
+    if (r.endsWith(`/${emptyLetter}`) && !d.includes('noch keine geprüfte Beobachtung')) fails.push(`${r}: empty letter not reported`);
+    if (r.endsWith('closed-counter') && st.results !== C.glyphObservations.filter((g) => g.features.includes('closed-counter')).length) fails.push(`${r}: wrong feature result count`);
   }
   const filtered = await state(`${base}archive/index.html?nosw&selftest#/vergleich/fundstuecke?sichtung=hi_fi_image_opened_and_inspected`);
   if (filtered.results !== inspected.length) fails.push(`filter Sichtung returned ${filtered.results}, expected ${inspected.length}`);
@@ -90,14 +98,15 @@ try {
     writeFileSync(`${dir}/manifest.json`, JSON.stringify({ package: 'C06', result: 'pass', routes: routes.length, claimSheets: sheets, bridgeTargets: bridges, inputs, screenshots: out }, null, 2) + '\n');
     const cdir = 'docs/reports/proof/comparison';
     mkdirSync(cdir, { recursive: true });
-    const cshots = [['landing-phone', '/vergleich', '390,1400'], ['browser-phone', '/vergleich/fundstuecke', '390,2400'], ['browser-tablet', '/vergleich/fundstuecke?sichtung=hi_fi_image_opened_and_inspected', '820,1600'], ['detail-desktop', `/vergleich/fundstueck/${inspected[0].id}`, '1280,1100'], ['detail-phone-catalogue-only', `/vergleich/fundstueck/${metaOnly.id}`, '390,1500']];
+    const cshots = [['landing-phone', '/vergleich', '390,1400'], ['browser-phone', '/vergleich/fundstuecke', '390,2400'], ['browser-tablet', '/vergleich/fundstuecke?sichtung=hi_fi_image_opened_and_inspected', '820,1600'], ['detail-desktop', `/vergleich/fundstueck/${inspected[0].id}`, '1280,1100'], ['detail-phone-catalogue-only', `/vergleich/fundstueck/${metaOnly.id}`, '390,1500'],
+      ...(C.pilotGate.open ? [['letter-desktop-compare', `/vergleich/buchstabe/X?auswahl=${xs.slice(0, 3).join(',')}`, '1280,2200'], ['letter-phone', '/vergleich/buchstabe/O', '390,2600'], ['feature-tablet', '/vergleich/merkmal/closed-counter', '820,2200']] : [])];
     const cout = {};
     for (const [name, hash, size] of cshots) {
       await chrome([`--window-size=${size}`, '--virtual-time-budget=6000', `--screenshot=${cdir}/${name}.png`, `${base}archive/index.html?nosw#${hash}`], { timeout: 180000 });
       cout[`${name}.png`] = createHash('sha256').update(rf(`${cdir}/${name}.png`)).digest('hex');
     }
-    const cinputs = Object.fromEntries(['data/archive/comparison.v1.de.json', 'archive/comparison.js', 'archive/app.js'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
-    writeFileSync(`${cdir}/manifest.json`, JSON.stringify({ package: 'letterform-comparison Gate 2', result: 'pass', routes: cmpRoutes.length, inputs: cinputs, screenshots: cout }, null, 2) + '\n');
+    const cinputs = Object.fromEntries(['data/archive/comparison.v1.de.json', 'archive/comparison.js', 'archive/app.js', 'archive/app.css'].map((f) => [f, createHash('sha256').update(rf(f)).digest('hex')]));
+    writeFileSync(`${cdir}/manifest.json`, JSON.stringify({ package: 'letterform-comparison Gates 2 and 3', result: 'pass', routes: cmpRoutes.length, inputs: cinputs, screenshots: cout }, null, 2) + '\n');
     console.log(`Wrote ${dir}/manifest.json and ${shots.length} screenshots`);
   }
   const summary = { routes: routes.length, claimSheets: sheets, bridgeTargets: bridges, fails };

@@ -1,6 +1,6 @@
 # NIGHTSHIFT — Aktueller Stand
 
-**Stand:** 20. November 2026, nach der Integration von #34, #36, #38, #39, #40, #42 und #43 (Integrationsbranch `claude/integrate-2026-11-20`)
+**Stand:** 20. November 2026, Gate 3 der Vergleichsbibliothek umgesetzt (Branch `claude/gate3-comparison`, noch nicht in `main`)
 **Zweck:** die *eine* Stelle, an der der aktuelle Projektstand steht. Gilt für ChatGPT, Claude und den Owner gleichermaßen.
 
 > **Regel:** Wer etwas nach `main` bringt, aktualisiert diese Datei im selben Pull Request: Zeile in der Tabelle anpassen, offene Entscheidungen nachziehen, Datum oben ändern. Historie gehört ins [CHANGELOG](CHANGELOG.md), Entscheidungen ins [DECISIONS](DECISIONS.md), nicht hierher.
@@ -22,7 +22,7 @@
 | **Academy Großbuchstaben A–Z** (Referenzblätter v1, Entwurf) | Galerie unter `/academy/`, Heft-PDF, 72 Korrekturen | Claude | Korrekturliste menschlich prüfen | Owner |
 | **Academy Kleinbuchstaben a–z & Ziffern 0–9** | Inhaltspaket v1 (Entwurf) in `main`: `data/academy/lowercase-numerals.v1.json`, 36 Zeichen, je 5 Strukturvarianten, 3 Graffiti-Richtungen und Lernaufgaben; noch keine SVG-Blätter | ChatGPT | Inhalt in 2 Proof-Blättern (a und 0) visuell validieren, danach restliche 34 Blätter erzeugen und QA | Owner: spätere Sichtung |
 | **Style Reference Library** (`docs/lettering/style-library/`) | vollständige Sammlung: 12 Familien / 38 dokumentierte Templates, Katalog + JSON-Registry; alle Templates `documented-draft`. Resolver 1.1: Neutral, Straight, Bubble, Block-fit, Bounce; Wildstyle-Interlocking blockiert durch C04. **Phase A-01** (eingefroren): Owner-Review 19.11. — technischer Proof ok, gestalterisch nicht abgenommen; Straight/Blockbuster neu konzipieren. **Phase A-02** (`phase-a-02/`, Issue #24): Bubble-Punzenschutz (A/B/R jetzt 42–47 % statt 16–20 % Punzenfläche) und kollisionsfreies Bounce; vorläufig, nur ablehnend, `measured-uncalibrated` | ChatGPT (Research/Brief), Claude (Engine) | Owner-Sichtung Phase A-02; Letterform-Grammatiken für Straight/Blockbuster neu definieren (PR #25) | Owner: Sichtung A-02 (Schwellen, ungleiche Masse im Wort); Stildefinition vor dem nächsten Proof |
-| **Letterform-Vergleichsbibliothek** (Spec `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md`) | **Gate 1 und 2 umgesetzt:** Datenvertrag `contracts/letterform-comparison.v1.json` (1.1.0), Daten unter `research/archive/comparison/`, Fundstück-Browser unter `#/vergleich`. Stand nach #34–#40 (INGRID-Prüfung, Rali, Gate-3-Datenkorrektur, Woshe/Getty/Roth): 60 Fundstücke, 27 gesichtet, **20 zulässige Buchstabenbeobachtungen aus 3 Archiven/Plattformen** (Bombing Science 13, Evan Roth / MoMA 4, Letterform Archive 3); 1 Befund. **Pilot-Gate laut Build offen**; Gate 3 noch nicht begonnen | **Recherche nur ChatGPT**; Claude prüft und integriert | Owner: Gate 3 freigeben; ChatGPT: Tags `curved-stroke`, `vertical-stem`, `irregular-proportions`, `heavy-mass` in die Tag-Liste aufnehmen oder ersetzen | Owner: Start Gate 3 |
+| **Letterform-Vergleichsbibliothek** (Spec `LETTERFORM_COMPARISON_LIBRARY_SPEC_01.md`) | **Gate 1–3 umgesetzt:** Datenvertrag `contracts/letterform-comparison.v1.json` (1.1.0), Daten unter `research/archive/comparison/`, Fundstück-Browser unter `#/vergleich`. **Gate 3** (Owner-Freigabe 20.11.): Buchstabenvergleich `#/vergleich/buchstabe/<A–Z>` mit Auswahl und Gegenüberstellung (`?auswahl=`), Merkmalsvergleich `#/vergleich/merkmal/<tag>`, Befunde getrennt als Deutung. Datenstand: 60 Fundstücke, 27 gesichtet, 20 zulässige Buchstabenbeobachtungen aus 3 Archiven/Plattformen an 10 Buchstaben; 1 Befund. Technisch getestet; nicht visuell vom Owner geprüft | **Recherche nur ChatGPT**; Claude prüft und integriert | Owner: Sichtung Gate 3; ChatGPT: 9 Merkmals-Tags außerhalb der Tag-Liste klären (Build-Warnung `CMP_UNLISTED_FEATURE`), mehr Buchstaben je Plattform; Claude: Gate 4 erst nach Freigabe | Owner: Sichtung Gate 3 |
 | **Recherche Dortmund / Ruhrgebiet** | 5 Dortmund-Fotos aus Pixelprojekt *Lost Spaces Graffiti* (2010) auf Seitenebene gesichtet; keine Einzelglyphen transkribiert. *ALL SURFACE*-Vorschaubilder geprüft; INGRID Q01–Q06 weiterhin ohne Resultatzeilen | ChatGPT | Rechteklärung/physische Quellenprüfung und INGRID-Abfrage; erst dann repräsentative Stichprobe | Quellenzugang / Repräsentativität |
 
 ## Abnahmestufen der Integration vom 20. November
@@ -42,14 +42,14 @@ Eine grüne CI ist keine gestalterische oder inhaltliche Abnahme.
 2. **Design-Freigabe C02-Master** und Bewertung der Stil-Optik (C03 / Creator 0.2).
 3. **Tag in 1.0?** (HST-01). Bis dahin wird Tag im Creator als „nicht verfügbar“ angezeigt.
 4. **Archiv-Brücke auf alle 26 Buchstaben erweitern?** Der Editor kann seit C02 alle 26 bearbeiten, die Brücke verlinkt nur A/B/G/R/S. Das wäre ein Minor-Bump des Vertrags.
-5. **Gate 3 der Vergleichsbibliothek starten?** Das Pilot-Gate ist laut Build offen (20 Beobachtungen, 3 Institutionen).
+5. **Gate 3 sichten** (Buchstaben- und Merkmalsvergleich); danach Entscheidung über Gate 4 (Lern- und Generator-Brücke).
 6. **Wandstärke im Editor:** wird gemessen, aber nicht erzwungen, bis Schwellen kalibriert sind (D-013).
 
 ## Wie geprüft wird
 
 ```bash
 npm ci
-npm test                 # Unit- und Abnahmetests (227 am 20.11., nach der Integration)
+npm test                 # Unit- und Abnahmetests (232 am 20.11., nach Gate 3)
 npm run test:browser     # Prüfstand, Editor, Creator, Archiv, Academy (CHROME=<pfad> setzen)
 npm run perf:editor      # Editor-Antwortzeiten
 ```
